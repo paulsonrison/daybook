@@ -1,0 +1,30 @@
+{
+  "name": "@daybook/ui",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./styles.css": "./src/styles.css"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "storybook": "^10.6.6",
+    "@storybook/react-vite": "^10.6.6",
+    "@storybook/addon-docs": "^10.6.6",
+    "@storybook/addon-a11y": "^10.6.6",
+    "vite": "^7.2.2"
+  }
+}

@@ -1,0 +1,35 @@
+:root {
+  --db-primary: #173f35;
+  --db-surface: #ffffff;
+  --db-text: #17251f;
+  --db-border: #cbd5cf;
+  --db-radius: 0.5rem;
+}
+.db-button {
+  font: inherit;
+  font-weight: 600;
+  padding: 0.65rem 1rem;
+  border-radius: var(--db-radius);
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.db-button--primary {
+  background: var(--db-primary);
+  color: white;
+}
+.db-button--secondary {
+  background: var(--db-surface);
+  color: var(--db-text);
+  border-color: var(--db-border);
+}
+.db-button:hover:not(:disabled) {
+  filter: brightness(0.92);
+}
+.db-button:focus-visible {
+  outline: 3px solid #588873;
+  outline-offset: 3px;
+}
+.db-button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}

@@ -1,0 +1,32 @@
+{
+  "name": "daybook",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=22.12.0",
+    "npm": ">=10"
+  },
+  "scripts": {
+    "dev": "concurrently -k -n frontend,backend \"npm run dev -w @daybook/frontend\" \"npm run dev -w @daybook/backend\"",
+    "build": "npm run build --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "storybook": "npm run storybook -w @daybook/ui",
+    "build-storybook": "npm run build-storybook -w @daybook/ui",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "db:check": "npm run db:check -w @daybook/backend",
+    "db:migrate": "npm run db:migrate -w @daybook/backend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.3",
+    "@types/node": "^22.19.0"
+  }
+}
