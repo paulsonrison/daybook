@@ -1,0 +1,725 @@
+{
+  "branch": "codex/complete-daybook",
+  "baseCommit": "0f11c03",
+  "designStatus": "Approved",
+  "implementationPlanStatus": "Approved",
+  "statuses": ["Not started", "To do", "In review", "Done"],
+  "transitionRules": {
+    "start": "Not started -> To do before implementation",
+    "submit": "To do -> In review only after implementation and checks",
+    "fix": "In review -> To do when actionable findings require changes",
+    "finish": "In review -> Done only after independent review is clean and merge to main is verified"
+  },
+  "tasks": [
+    {
+      "id": "P00",
+      "title": "Preserve UI foundation, baseline and tracking",
+      "status": "In review",
+      "dependencies": [],
+      "evidence": [
+        "18 unit/SSR tests passed; typecheck and lint passed",
+        "Production and Storybook builds passed after generated-output permission retry",
+        "3 browser regressions passed after RED -> GREEN fixes for contrast and hover",
+        "Independent foundation_review rereview: no remaining actionable findings"
+      ],
+      "review": {
+        "reviewer": "foundation_review",
+        "findings": 2,
+        "resolved": 2,
+        "outstanding": 0,
+        "result": "Clear; final production and Storybook builds passed"
+      },
+      "mergeCommit": null
+    },
+    {
+      "id": "US-001",
+      "title": "Area Jurisdiction",
+      "planTask": "P02",
+      "sourceRow": 9,
+      "priority": "High",
+      "status": "Not started",
+      "criteria": [
+        "1. Agent can register/update locality, pin codes, and sector boundaries.",
+        "2. Prevent duplicate territory overlap without authorization.",
+        "3. Display territory summary on agent dashboard."
+      ],
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "US-002",
+      "title": "Staff Management",
+      "planTask": "P02",
+      "sourceRow": 10,
+      "priority": "High",
+      "status": "Not started",
+      "criteria": [
+        "1. Agent can add, edit, deactivate delivery boys with phone & ID.",
+        "2. View active delivery staff count and assigned sectors.",
+        "3. Track delivery boy status (Active/On Leave)."
+      ],
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "US-003",
+      "title": "Route Division",
+      "planTask": "P02",
+      "sourceRow": 11,
+      "priority": "High",
+      "status": "Not started",
+      "criteria": [
+        "1. Divide coverage area into distinct routes/streets/lines with configured delivery drop sequence.",
+        "2. Assign each route to a specific delivery boy with door-to-door delivery order.",
+        "3. Support daily substitute re-assignment when a delivery boy is absent."
+      ],
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "US-004",
+      "title": "Catalog & Inventory",
+      "planTask": "P03",
+      "sourceRow": 12,
+      "priority": "Medium",
+      "status": "Not started",
+      "criteria": [
+        "1. Agent can add multiple newspapers/magazines with weekday/weekend rates.",
+        "2. Track daily required copy counts per publication.",
+        "3. Generate consolidated morning indent for publishers."
+      ],
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "US-005",
+      "title": "Resident Management",
+      "planTask": "P03",
+      "sourceRow": 13,
+      "priority": "High",
+      "status": "Not started",
+      "criteria": [
+        "1. Agent can create, edit, and deactivate resident profiles with name, address, contact, and sector.",
+        "2. Record refundable caution / security deposit per resident account upon onboarding.",
+        "3. Link each resident directly to an active delivery line/route with assigned drop order."
+      ],
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "US-006",
+      "title": "Multi-Subscription Master",
+      "planTask": "P04",
+      "sourceRow": 14,
+      "priority": "High",
+      "status": "Not started",
+      "criteria": [
+        "1. Resident/Agent can add multiple active publications (daily newspapers, weekend editions, periodicals, magazines) per account.",
+        "2. Magazine subscriptions handled as standard publication items.",
+        "3. Display aggregated active subscription list per resident."
+      ],
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "US-007",
+      "title": "Custom Cadence & Schedules",
+      "planTask": "P04",
+      "sourceRow": 15,
+      "priority": "High",
+      "status": "Not started",
+      "criteria": [
+        "1. Schedule options: All Days (Daily), Custom Days (e.g., Mon/Wed/Fri), Sundays only, One-time/Single day, Once a week, Fortnightly (alternate weeks), Once a month, Once a year.",
+        "2. Start date and optional end date / recurrence rules.",
+        "3. Validate publication publishing frequency against selected schedule."
+      ],
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "US-008",
+      "title": "Agent Subscription Assignment",
+      "planTask": "P04",
+      "sourceRow": 16,
+      "priority": "Medium",
+      "status": "Not started",
+      "criteria": [
+        "1. Agent can select any resident and assign new subscriptions with custom cadences.",
+        "2. Agent can override, pause (vacation mode), or cancel existing subscriptions.",
+        "3. Maintain audit trail of agent-initiated changes with timestamp."
+      ],
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "US-009",
+      "title": "Daily Dispatch & Manifest",
+      "planTask": "P05",
+      "sourceRow": 17,
+      "priority": "High",
+      "status": "Not started",
+      "criteria": [
+        "1. Agent can generate daily run-sheets and depot bag-packing slips filtered by active delivery schedules.",
+        "2. Group deliveries by route sequence, assigned delivery boy, and resident door number.",
+        "3. Display exact publication titles and copy counts for morning publisher pickup indent and bag-packing distribution."
+      ],
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "US-010",
+      "title": "Schedule-Aware Billing",
+      "planTask": "P07",
+      "sourceRow": 18,
+      "priority": "Medium",
+      "status": "Not started",
+      "criteria": [
+        "1. Invoice engine counts actual delivery instances per publication based on schedule cadence in the billing cycle.",
+        "2. Apply weekday vs. weekend pricing and one-time single-day fees.",
+        "3. Produce consolidated monthly bill combining all resident subscriptions."
+      ],
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "US-011",
+      "title": "Automated Delivery",
+      "planTask": "P05",
+      "sourceRow": 19,
+      "priority": "High",
+      "status": "Not started",
+      "criteria": [
+        "1. Midnight cron job auto-marks deliveries, automatically skipping publisher press holidays and non-printing days.",
+        "2. Agent can view daily log and edit/override delivery status (e.g., Un-delivered, Damaged).",
+        "3. System maintains audit log of agent overrides against auto-marked deliveries."
+      ],
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "US-012",
+      "title": "Dynamic Pricing Engine",
+      "planTask": "P04",
+      "sourceRow": 20,
+      "priority": "High",
+      "status": "Not started",
+      "criteria": [
+        "1. Agent can set date-range pricing rules or recurring day-of-week rate overrides for any publication.",
+        "2. Rule scope supports temporary validity (e.g., 1 month promo/festival) or permanent override.",
+        "3. Billing engine matches delivery calendar dates against active rate rules when calculating totals."
+      ],
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "US-013",
+      "title": "Flexible Billing & Arrears",
+      "planTask": "P07",
+      "sourceRow": 21,
+      "priority": "High",
+      "status": "Not started",
+      "criteria": [
+        "1. Invoicing engine supports billing frequencies: Monthly, Weekly, Specific Date Range, or Selected Past Months.",
+        "2. Rollover previous unpaid balances (up to 3+ months of past arrears) into current invoice total.",
+        "3. Resident bill displays itemized current deliveries alongside previous outstanding balance and payments received."
+      ],
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "US-014",
+      "title": "Trilingual UI Localization",
+      "planTask": "P11",
+      "sourceRow": 22,
+      "priority": "Medium",
+      "status": "Not started",
+      "criteria": [
+        "1. UI language switcher accessible on agent console (English, Malayalam, Hindi).",
+        "2. All labels, table headers, validation messages, and invoice exports localized via i18n dictionaries.",
+        "3. Persist selected language preference per browser session / agent profile."
+      ],
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "US-015",
+      "title": "Vacation & Temporary Holds",
+      "planTask": "P04",
+      "sourceRow": 23,
+      "priority": "High",
+      "status": "Not started",
+      "criteria": [
+        "1. Agent can set vacation pause start date and end/resume date per resident or specific publication.",
+        "2. Daily manifest engine automatically skips paused copies and adjusts morning publisher indents.",
+        "3. Billing calculation automatically credits or excludes paused delivery dates from invoice generation."
+      ],
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "US-016",
+      "title": "Payment & Reconciliation",
+      "planTask": "P08",
+      "sourceRow": 24,
+      "priority": "High",
+      "status": "Not started",
+      "criteria": [
+        "1. Agent records full or partial invoice payments and caution deposits with payment method, date, receipt number, and UPI reference.",
+        "2. System instantly updates resident account balance, clearing current dues and historical arrears.",
+        "3. Automatically generates digital payment receipts and maintains audit ledger of collections."
+      ],
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "US-017",
+      "title": "Publisher Indents & Returns",
+      "planTask": "P06",
+      "sourceRow": 25,
+      "priority": "Medium",
+      "status": "Not started",
+      "criteria": [
+        "1. Agent logs daily unsold/returned copy counts per publication before publisher return cutoff deadline.",
+        "2. Calculate publisher credit margin and net payable based on supply indent minus validated returns.",
+        "3. Generate monthly publisher reconciliation summary statement showing supply, returns, and net payable."
+      ],
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "US-018",
+      "title": "Staff Payroll & Commission",
+      "planTask": "P09",
+      "sourceRow": 26,
+      "priority": "High",
+      "status": "Not started",
+      "criteria": [
+        "1. Configure pay rules per delivery boy: fixed monthly salary, commission per delivered paper, or blended rate.",
+        "2. Auto-compute monthly staff earnings factoring route assignment, actual delivery days, and attendance logs.",
+        "3. Record salary advance deductions, expense reimbursements, and generate monthly payslips."
+      ],
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "US-019",
+      "title": "WhatsApp & SMS Dispatch",
+      "planTask": "P10",
+      "sourceRow": 27,
+      "priority": "High",
+      "status": "Not started",
+      "criteria": [
+        "1. Agent can trigger batch or single WhatsApp messages containing monthly invoice PDF links and UPI payment QR codes.",
+        "2. Automated overdue payment reminder alerts sent to accounts with unpaid arrears.",
+        "3. Support trilingual message templates formatted in Malayalam, English, and Hindi."
+      ],
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "US-020",
+      "title": "Agency Analytics & Reporting",
+      "planTask": "P11",
+      "sourceRow": 28,
+      "priority": "Medium",
+      "status": "Not started",
+      "criteria": [
+        "1. Display KPI cards for gross monthly revenue, collected cash, outstanding arrears, and active daily circulation count.",
+        "2. Visual breakdown charts for publication-wise readership, delivery line profitability, and default/arrears aging.",
+        "3. Export comprehensive monthly operations, tax, and sales summaries to Excel/PDF."
+      ],
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "US-021",
+      "title": "Delivery Exceptions & Grievances",
+      "planTask": "P05",
+      "sourceRow": 29,
+      "priority": "Medium",
+      "status": "Not started",
+      "criteria": [
+        "1. Agent logs delivery exception tickets linked to resident, delivery route, and assigned delivery boy.",
+        "2. Mark ticket resolution as replacement dispatched, billing credit adjustment issued, or unsubstantiated.",
+        "3. Track delivery boy error frequency and customer satisfaction metrics on agent dashboard."
+      ],
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "US-022",
+      "title": "Daily Cash Register & Closing",
+      "planTask": "P09",
+      "sourceRow": 30,
+      "priority": "High",
+      "status": "Not started",
+      "criteria": [
+        "1. Daily closing screen compares physical cash received from each delivery boy against digital/cash collection logs.",
+        "2. Record cash drawer opening balance, daily cash inflows, petty cash expenditures, and closing deposit balance.",
+        "3. Flag discrepancies or cash shortages with required agent closing sign-off and historical ledger audit."
+      ],
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "US-023",
+      "title": "Pamphlet & Insert Operations",
+      "planTask": "P06",
+      "sourceRow": 31,
+      "priority": "High",
+      "status": "Not started",
+      "criteria": [
+        "1. Agent can record advertiser details, insert quantity, scheduled drop date, and target delivery routes.",
+        "2. Include pamphlet insertion count in daily depot packing manifests for delivery boys.",
+        "3. Compute insert revenue and generate advertiser billing invoices with delivery completion proof."
+      ],
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "US-024",
+      "title": "Automated Ledger Closing",
+      "planTask": "P07",
+      "sourceRow": 32,
+      "priority": "High",
+      "status": "Not started",
+      "criteria": [
+        "1. Automated cron triggers on monthly cycle date to close active delivery ledger.",
+        "2. Aggregate previous unpaid balances and rollover into current cycle arrears.",
+        "3. Lock cycle transactions and generate ledger closing audit summary."
+      ],
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "US-025",
+      "title": "Automated Payment Alerts",
+      "planTask": "P10",
+      "sourceRow": 33,
+      "priority": "Medium",
+      "status": "Not started",
+      "criteria": [
+        "1. Midnight cron evaluates overdue resident balances against reminder frequency rules.",
+        "2. Auto-dispatch trilingual WhatsApp message templates with dynamic payment links.",
+        "3. Log communication history and suppress repeated alerts within cooldown periods."
+      ],
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "US-026",
+      "title": "Automated Daily Manifest Cron",
+      "planTask": "P05",
+      "sourceRow": 34,
+      "priority": "High",
+      "status": "Not started",
+      "criteria": [
+        "1. 4:00 AM cron executes schedule expansion excluding paused accounts and press holidays.",
+        "2. Auto-generates publisher pickup copy counts and route-wise bag-packing slips.",
+        "3. Alerts agent dashboard if indent count deviates significantly from moving average."
+      ],
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "US-027",
+      "title": "Field Delivery UI",
+      "planTask": "P05",
+      "sourceRow": 35,
+      "priority": "High",
+      "status": "Not started",
+      "criteria": [
+        "1. Single-tap delivery toggle and swipe-to-flag actions optimized for one-handed mobile use.",
+        "2. High-contrast dark/light theme designed for early morning visibility.",
+        "3. Fast resident search and sequential door-to-door delivery order display."
+      ],
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "US-028",
+      "title": "Offline Delivery Sync",
+      "planTask": "P12",
+      "sourceRow": 36,
+      "priority": "High",
+      "status": "Not started",
+      "criteria": [
+        "1. Offline IndexedDB storage caches active daily route manifest and resident records.",
+        "2. Queue field actions locally with optimistic UI updates during network dropouts.",
+        "3. Auto-reconcile and sync queued updates on network reconnection with timestamp conflict resolution."
+      ],
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "US-029",
+      "title": "Rapid Cash Handover UI",
+      "planTask": "P09",
+      "sourceRow": 37,
+      "priority": "Medium",
+      "status": "Not started",
+      "criteria": [
+        "1. Route summary view displaying expected cash collection, handed-over cash, and returned copies.",
+        "2. One-click discrepancy flagging and automated debit/credit memo creation.",
+        "3. Generates instant digital shift handover sign-off and updates daily cash register."
+      ],
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "US-030",
+      "title": "UI Customization",
+      "planTask": "P11",
+      "sourceRow": 38,
+      "priority": "Medium",
+      "status": "Not started",
+      "criteria": [
+        "1. Toggle between Table/Grid view, Detailed Card view, and Map/Sequence route view.",
+        "2. Persist layout view preference per user session/device in local storage.",
+        "3. Responsive design adapting automatically across mobile, tablet, and wide desktop screens."
+      ],
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "US-031",
+      "title": "Multi-Tenant Architecture",
+      "planTask": "P01",
+      "sourceRow": 39,
+      "priority": "High",
+      "status": "Not started",
+      "criteria": [
+        "1. Tenant boundary enforced via agency_id / tenant_id on all database queries and ORM scopes.",
+        "2. Multi-tenant row-level security (RLS) preventing cross-tenant data leakage.",
+        "3. Strict session authorization validating tenant boundaries on every API request."
+      ],
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "US-032",
+      "title": "Direct Communications",
+      "planTask": "P10",
+      "sourceRow": 40,
+      "priority": "Medium",
+      "status": "Not started",
+      "criteria": [
+        "1. Click-to-call deep link (tel:) on customer phone numbers in run-sheets and profiles.",
+        "2. Quick WhatsApp direct chat link pre-filling greeting and agency identification.",
+        "3. Log communication attempt timestamps in resident activity audit trail."
+      ],
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "US-033",
+      "title": "Regional Publications",
+      "planTask": "P03",
+      "sourceRow": 41,
+      "priority": "Medium",
+      "status": "Not started",
+      "criteria": [
+        "1. Publication catalog supports regional weekly/bi-weekly publication cadences and evening editions.",
+        "2. Dynamic delivery manifests filter morning vs. evening dispatch schedules.",
+        "3. Publisher reconciliation tracks separate procurement rates and trade margins for regional media."
+      ],
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "US-034",
+      "title": "Seasonal Merchandise",
+      "planTask": "P06",
+      "sourceRow": 42,
+      "priority": "Medium",
+      "status": "Not started",
+      "criteria": [
+        "1. Create seasonal non-recurring merchandise items (calendars, annual diaries, festival specials).",
+        "2. Record resident calendar pre-orders and assign drop counts to route manifests.",
+        "3. Automatically append one-time merchandise charges to resident monthly bills or record immediate cash settlement."
+      ],
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "US-035",
+      "title": "Credit Control & Suspension",
+      "planTask": "P08",
+      "sourceRow": 43,
+      "priority": "High",
+      "status": "Not started",
+      "criteria": [
+        "1. Configurable agency credit threshold (e.g., maximum unpaid arrears amount or 60+ days overdue).",
+        "2. Automated visual alert on agent dashboard highlighting high-risk overdue accounts.",
+        "3. One-click delivery suspension with automated WhatsApp notification of service hold sent to the resident."
+      ],
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "US-036",
+      "title": "AI Assistant & Support",
+      "planTask": "P13",
+      "sourceRow": 44,
+      "priority": "High",
+      "status": "Not started",
+      "criteria": [
+        "1. AI assistant answers operational, billing, and route queries strictly scoped to the authenticated agent's tenant ID.",
+        "2. Complete data isolation preventing leakage or cross-referencing of other agencies' metrics, customer lists, or data.",
+        "3. Content safety guardrails enforcing zero offensive, abusive, or inappropriate language with polite deflection.",
+        "4. Natural language queries for overdue balances, daily run-sheet counts, and publisher reconciliation summaries."
+      ],
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "US-037",
+      "title": "Emergency & Route Reallocation",
+      "planTask": "P05",
+      "sourceRow": 45,
+      "priority": "High",
+      "status": "Not started",
+      "criteria": [
+        "1. Agent can initiate emergency route reassignment to one or multiple substitute delivery staff for single or multi-day absences.",
+        "2. Automatically split or transfer route run-sheets and bag-packing manifests to assigned substitutes.",
+        "3. Track temporary assignment history and auto-revert route allocation upon regular staff return."
+      ],
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "US-038",
+      "title": "Resident Settlement & Clearance",
+      "planTask": "P08",
+      "sourceRow": 46,
+      "priority": "High",
+      "status": "Not started",
+      "criteria": [
+        "1. Agent can trigger resident vacating/clearance workflow with termination effective date.",
+        "2. Automatically reconcile refundable caution deposit against pending delivery arrears and unpaid invoices.",
+        "3. Generate deposit refund receipt or balance collection notice and archive resident account."
+      ],
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "US-039",
+      "title": "Field Collection Run-Sheets",
+      "planTask": "P08",
+      "sourceRow": 47,
+      "priority": "High",
+      "status": "Not started",
+      "criteria": [
+        "1. Generate route-wise collection sheets displaying door sequence, resident name, contact, total dues, and arrears aging.",
+        "2. Include dynamic UPI payment QR codes and payment mode tick-boxes for physical field collection.",
+        "3. Fast-entry batch interface for agent to log collections directly from returned field collection sheets."
+      ],
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "US-040",
+      "title": "Automated Cloud Backup",
+      "planTask": "P13",
+      "sourceRow": 48,
+      "priority": "High",
+      "status": "Not started",
+      "criteria": [
+        "1. Nightly automated cron dumps tenant databases and transaction ledgers with AES-256 encryption.",
+        "2. Upload backups to multi-region cloud object storage with configurable retention policies (daily, weekly, monthly).",
+        "3. Automated backup health check verification and agent-facing system status alert in case of backup failure."
+      ],
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "P14",
+      "title": "Whole-project acceptance review and merge",
+      "status": "Not started",
+      "dependencies": [
+        "P00",
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05",
+        "P06",
+        "P07",
+        "P08",
+        "P09",
+        "P10",
+        "P11",
+        "P12",
+        "P13"
+      ],
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    }
+  ],
+  "history": [
+    {
+      "date": "2026-11-09",
+      "event": "Owner approved design and defaults; created implementation branch preserving existing UI work; created plan and 40-story board. Product implementation has not started."
+    },
+    {
+      "date": "2026-11-09",
+      "task": "P00",
+      "from": "Not started",
+      "to": "To do",
+      "event": "Owner approved detailed plan; current baseline tests and independent foundation review started."
+    },
+    {
+      "date": "2026-11-09",
+      "task": "P00",
+      "from": "To do",
+      "to": "In review",
+      "event": "Both independent review findings fixed and 3 Chrome regressions passed; final baseline build rerun pending before foundation commit."
+    },
+    {
+      "date": "2026-11-09",
+      "task": "P00",
+      "event": "Reviewed foundation gates passed: 18 tests, typecheck, lint, application and Storybook builds, 3 Chrome regressions. Ready for foundation commit."
+    }
+  ]
+}

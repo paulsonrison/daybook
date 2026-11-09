@@ -1,0 +1,59 @@
+<svg width="1440" height="772" viewBox="0 0 1440 772" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Component coverage / Badge">
+<rect width="1440" height="772" fill="#F5F6F3"/>
+<text id="Text / Badge" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="28" font-weight="600" letter-spacing="0em"><tspan x="32" y="63.1818">Badge</tspan></text>
+<text id="Text / 5 applicable states &#194;&#183; editable native comp" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="32" y="117.591">5 applicable states &#xb7; editable native component variants. Loading, empty and failure behavior is visible in the control itself.</tspan></text>
+<g id="Daybook/Edge/Badge">
+<g id="State=Paid">
+<rect x="48.5" y="167.5" width="639" height="166" rx="7.5" fill="white"/>
+<rect x="48.5" y="167.5" width="639" height="166" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / PAID" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="204.5">PAID</tspan></text>
+<g id="Status badge">
+<rect width="450" height="42" transform="translate(73 229)" fill="#F5F6F3"/>
+<text id="Text / Paid" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" font-weight="600" letter-spacing="0em"><tspan x="83" y="252.364">Paid</tspan></text>
+</g>
+<text id="Text / Status text carries the meaning independen" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="73" y="300.364">Status text carries the meaning independently of color.</tspan></text>
+</g>
+<g id="State=Partial">
+<rect x="720.5" y="167.5" width="639" height="166" rx="7.5" fill="white"/>
+<rect x="720.5" y="167.5" width="639" height="166" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / PARTIAL" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="204.5">PARTIAL</tspan></text>
+<g id="Status badge_2">
+<rect width="450" height="42" transform="translate(745 229)" fill="#F5F6F3"/>
+<text id="Text / Partial" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" font-weight="600" letter-spacing="0em"><tspan x="755" y="252.364">Partial</tspan></text>
+</g>
+<text id="Text / Status text carries the meaning independen_2" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="745" y="300.364">Status text carries the meaning independently of color.</tspan></text>
+</g>
+<g id="State=Unknown">
+<rect x="48.5" y="358.5" width="639" height="166" rx="7.5" fill="white"/>
+<rect x="48.5" y="358.5" width="639" height="166" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / UNKNOWN" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="395.5">UNKNOWN</tspan></text>
+<g id="Status badge_3">
+<rect width="450" height="42" transform="translate(73 420)" fill="#D9E3DE"/>
+<text id="Text / Unknown" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" font-weight="600" letter-spacing="0em"><tspan x="83" y="443.364">Unknown</tspan></text>
+</g>
+<text id="Text / Status text carries the meaning independen_3" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="73" y="491.364">Status text carries the meaning independently of color.</tspan></text>
+</g>
+<g id="State=Pending sync">
+<rect x="720.5" y="358.5" width="639" height="166" rx="7.5" fill="white"/>
+<rect x="720.5" y="358.5" width="639" height="166" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / PENDING SYNC" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="395.5">PENDING SYNC</tspan></text>
+<g id="Status badge_4">
+<rect width="450" height="42" transform="translate(745 420)" fill="#F5F6F3"/>
+<text id="Text / Pending sync" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" font-weight="600" letter-spacing="0em"><tspan x="755" y="443.364">Pending sync</tspan></text>
+</g>
+<text id="Text / Status text carries the meaning independen_4" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="745" y="491.364">Status text carries the meaning independently of color.</tspan></text>
+</g>
+<g id="State=Long status">
+<rect x="48.5" y="549.5" width="639" height="166" rx="7.5" fill="white"/>
+<rect x="48.5" y="549.5" width="639" height="166" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / LONG STATUS" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="586.5">LONG STATUS</tspan></text>
+<g id="Status badge_5">
+<rect width="450" height="42" transform="translate(73 611)" fill="#F5F6F3"/>
+<text id="Text / Awaiting bank confirmation &#194;&#183; delayed" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" font-weight="600" letter-spacing="0em"><tspan x="83" y="634.364">Awaiting bank confirmation &#xb7; delayed</tspan></text>
+</g>
+<text id="Text / Status text carries the meaning independen_5" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="73" y="682.364">Status text carries the meaning independently of color.</tspan></text>
+</g>
+</g>
+</g>
+</svg>

@@ -1,0 +1,93 @@
+<svg width="1440" height="1113" viewBox="0 0 1440 1113" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Component coverage / Confirmation/Paid">
+<rect width="1440" height="1113" fill="#F5F6F3"/>
+<text id="Text / Confirmation/Paid" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="28" font-weight="600" letter-spacing="0em"><tspan x="32" y="63.1818">Confirmation/Paid</tspan></text>
+<text id="Text / 5 applicable states &#194;&#183; editable native comp" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="32" y="117.591">5 applicable states &#xb7; editable native component variants. Loading, empty and failure behavior is visible in the control itself.</tspan></text>
+<g id="Daybook/Edge/Confirmation/Paid">
+<g id="State=Confirmed">
+<rect x="48.5" y="167.5" width="639" height="243" rx="7.5" fill="white"/>
+<rect x="48.5" y="167.5" width="639" height="243" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / CONFIRMED" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="204.5">CONFIRMED</tspan></text>
+<text id="Text / Payment recorded &#194;&#183; &#226;&#130;&#185;661.00" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="22" font-weight="600" letter-spacing="0em"><tspan x="73" y="253.5">Payment recorded &#xb7; &#x20b9;661.00</tspan></text>
+<text id="Text / DB-2026-1048 &#194;&#183; Receipt linked to the bill" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="73" y="297.591">DB-2026-1048 &#xb7; Receipt linked to the bill</tspan></text>
+<g id="Action / View receipt">
+<rect x="73" y="323" width="134" height="63" rx="6" fill="#087F73"/>
+<text id="Text / View receipt" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="89" y="347.727">View receipt</tspan></text>
+</g>
+</g>
+<g id="State=Checking status">
+<rect x="720.5" y="167.5" width="639" height="353" rx="7.5" fill="white"/>
+<rect x="720.5" y="167.5" width="639" height="353" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / CHECKING STATUS" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="204.5">CHECKING STATUS</tspan></text>
+<g id="Loading skeleton / table">
+<rect x="745.5" y="229.5" width="591" height="266" rx="7.5" fill="white"/>
+<rect x="745.5" y="229.5" width="591" height="266" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / Loading records&#226;&#128;&#166;" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" font-weight="600" letter-spacing="0em"><tspan x="770" y="269.591">Loading records&#x2026;</tspan></text>
+<g id="Skeleton row 1">
+<rect id="Skeleton placeholder" x="770" y="299" width="121" height="12" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_2" x="911" y="299" width="121" height="12" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_3" x="1052" y="299" width="121" height="12" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_4" x="1193" y="299" width="121" height="12" rx="4" fill="#E0E8E6"/>
+</g>
+<g id="Skeleton row 2">
+<rect id="Skeleton placeholder_5" x="770" y="331" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_6" x="911" y="331" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_7" x="1052" y="331" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_8" x="1193" y="331" width="121" height="20" rx="4" fill="#E0E8E6"/>
+</g>
+<g id="Skeleton row 3">
+<rect id="Skeleton placeholder_9" x="770" y="371" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_10" x="911" y="371" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_11" x="1052" y="371" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_12" x="1193" y="371" width="121" height="20" rx="4" fill="#E0E8E6"/>
+</g>
+<g id="Skeleton row 4">
+<rect id="Skeleton placeholder_13" x="770" y="411" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_14" x="911" y="411" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_15" x="1052" y="411" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_16" x="1193" y="411" width="121" height="20" rx="4" fill="#E0E8E6"/>
+</g>
+<g id="Skeleton row 5">
+<rect id="Skeleton placeholder_17" x="770" y="451" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_18" x="911" y="451" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_19" x="1052" y="451" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_20" x="1193" y="451" width="121" height="20" rx="4" fill="#E0E8E6"/>
+</g>
+</g>
+</g>
+<g id="State=Not confirmed">
+<rect x="48.5" y="545.5" width="639" height="224" rx="7.5" fill="white"/>
+<rect x="48.5" y="545.5" width="639" height="224" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / NOT CONFIRMED" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="582.5">NOT CONFIRMED</tspan></text>
+<text id="Text / Payment not confirmed" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="22" font-weight="600" letter-spacing="0em"><tspan x="73" y="631.5">Payment not confirmed</tspan></text>
+<text id="Text / Check the original request before allowing" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="73" y="675.591">Check the original request before allowing a new payment.</tspan></text>
+<g id="Action / Check payment status">
+<rect x="73" y="701" width="202" height="44" rx="6" fill="#087F73"/>
+<text id="Text / Check payment status" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="89" y="725.727">Check payment status</tspan></text>
+</g>
+</g>
+<g id="State=Partial payment">
+<rect x="720.5" y="545.5" width="639" height="243" rx="7.5" fill="white"/>
+<rect x="720.5" y="545.5" width="639" height="243" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / PARTIAL PAYMENT" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="582.5">PARTIAL PAYMENT</tspan></text>
+<text id="Text / &#226;&#130;&#185;200.00 received &#194;&#183; &#226;&#130;&#185;461.00 remaining" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="22" font-weight="600" letter-spacing="0em"><tspan x="745" y="631.5">&#x20b9;200.00 received &#xb7; &#x20b9;461.00 remaining</tspan></text>
+<text id="Text / DB-2026-1048 &#194;&#183; Receipt linked to the bill_2" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="745" y="675.591">DB-2026-1048 &#xb7; Receipt linked to the bill</tspan></text>
+<g id="Action / View receipt_2">
+<rect x="745" y="701" width="134" height="63" rx="6" fill="#087F73"/>
+<text id="Text / View receipt_2" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="761" y="725.727">View receipt</tspan></text>
+</g>
+</g>
+<g id="State=Duplicate receipt">
+<rect x="48.5" y="813.5" width="639" height="243" rx="7.5" fill="white"/>
+<rect x="48.5" y="813.5" width="639" height="243" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / DUPLICATE RECEIPT" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="850.5">DUPLICATE RECEIPT</tspan></text>
+<text id="Text / Receipt already recorded" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="22" font-weight="600" letter-spacing="0em"><tspan x="73" y="899.5">Receipt already recorded</tspan></text>
+<text id="Text / DB-2026-1048 &#194;&#183; Receipt linked to the bill_3" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="73" y="943.591">DB-2026-1048 &#xb7; Receipt linked to the bill</tspan></text>
+<g id="Action / View receipt_3">
+<rect x="73" y="969" width="134" height="63" rx="6" fill="#087F73"/>
+<text id="Text / View receipt_3" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="89" y="993.727">View receipt</tspan></text>
+</g>
+</g>
+</g>
+</g>
+</svg>

@@ -1,0 +1,88 @@
+<svg width="1440" height="1241" viewBox="0 0 1440 1241" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Component coverage / Charts &#38; metrics">
+<rect width="1440" height="1241" fill="#F5F6F3"/>
+<text id="Text / Charts &#38; metrics" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="28" font-weight="600" letter-spacing="0em"><tspan x="32" y="63.1818">Charts &#38; metrics</tspan></text>
+<text id="Text / 6 applicable states &#194;&#183; editable native comp" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="32" y="117.591">6 applicable states &#xb7; editable native component variants. Loading, empty and failure behavior is visible in the control itself.</tspan></text>
+<g id="Daybook/Edge/Charts &#38; metrics">
+<g id="State=Loaded">
+<rect x="48.5" y="167.5" width="639" height="233" rx="7.5" fill="white"/>
+<rect x="48.5" y="167.5" width="639" height="233" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / LOADED" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="204.5">LOADED</tspan></text>
+<text id="Text / &#226;&#130;&#185;2,21,400 collected" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="22" font-weight="600" letter-spacing="0em"><tspan x="73" y="253.5">&#x20b9;2,21,400 collected</tspan></text>
+<g id="Chart columns">
+<rect id="Skeleton placeholder" x="73" y="282" width="65" height="42" rx="4" fill="#087F73"/>
+<rect id="Skeleton placeholder_2" x="156" y="282" width="65" height="72" rx="4" fill="#087F73"/>
+<rect id="Skeleton placeholder_3" x="239" y="282" width="65" height="94" rx="4" fill="#087F73"/>
+<rect id="Skeleton placeholder_4" x="322" y="282" width="65" height="64" rx="4" fill="#087F73"/>
+</g>
+</g>
+<g id="State=Skeleton">
+<rect x="720.5" y="167.5" width="639" height="461" rx="7.5" fill="white"/>
+<rect x="720.5" y="167.5" width="639" height="461" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / SKELETON" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="204.5">SKELETON</tspan></text>
+<g id="Loading skeleton / overview">
+<rect x="745.5" y="229.5" width="591" height="374" rx="7.5" fill="white"/>
+<rect x="745.5" y="229.5" width="591" height="374" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / Loading overview&#226;&#128;&#166;" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" font-weight="600" letter-spacing="0em"><tspan x="770" y="269.591">Loading overview&#x2026;</tspan></text>
+<g id="Metric skeletons">
+<g id="Metric placeholder">
+<rect width="170.667" height="90" transform="translate(770 299)" fill="white"/>
+<rect id="Skeleton placeholder_5" x="786" y="315" width="138.667" height="14" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_6" x="786" y="341" width="90" height="32" rx="4" fill="#E0E8E6"/>
+</g>
+<g id="Metric placeholder_2">
+<rect width="170.667" height="90" transform="translate(956.667 299)" fill="white"/>
+<rect id="Skeleton placeholder_7" x="972.667" y="315" width="138.667" height="14" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_8" x="972.667" y="341" width="90" height="32" rx="4" fill="#E0E8E6"/>
+</g>
+<g id="Metric placeholder_3">
+<rect width="170.667" height="90" transform="translate(1143.33 299)" fill="white"/>
+<rect id="Skeleton placeholder_9" x="1159.33" y="315" width="138.667" height="14" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_10" x="1159.33" y="341" width="90" height="32" rx="4" fill="#E0E8E6"/>
+</g>
+</g>
+<rect id="Skeleton placeholder_11" x="770" y="409" width="544" height="170" rx="4" fill="#E0E8E6"/>
+</g>
+</g>
+<g id="State=No data">
+<rect x="48.5" y="653.5" width="639" height="163" rx="7.5" fill="white"/>
+<rect x="48.5" y="653.5" width="639" height="163" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / NO DATA" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="690.5">NO DATA</tspan></text>
+<text id="Text / No collection history" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="22" font-weight="600" letter-spacing="0em"><tspan x="73" y="739.5">No collection history</tspan></text>
+<text id="Text / Do not draw a zero-value chart for missing" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="73" y="782.727">Do not draw a zero-value chart for missing data.</tspan></text>
+</g>
+<g id="State=Partial data">
+<rect x="720.5" y="653.5" width="639" height="273" rx="7.5" fill="white"/>
+<rect x="720.5" y="653.5" width="639" height="273" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / PARTIAL DATA" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="690.5">PARTIAL DATA</tspan></text>
+<text id="Text / &#226;&#130;&#185;2,21,400 collected_2" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="22" font-weight="600" letter-spacing="0em"><tspan x="745" y="739.5">&#x20b9;2,21,400 collected</tspan></text>
+<g id="Chart columns_2">
+<rect id="Skeleton placeholder_12" x="745" y="768" width="65" height="42" rx="4" fill="#087F73"/>
+<rect id="Skeleton placeholder_13" x="828" y="768" width="65" height="72" rx="4" fill="#087F73"/>
+<rect id="Skeleton placeholder_14" x="911" y="768" width="65" height="94" rx="4" fill="#087F73"/>
+<rect id="Skeleton placeholder_15" x="994" y="768" width="65" height="64" rx="4" fill="#087F73"/>
+</g>
+<text id="Text / Incomplete period &#194;&#183; total not finalized" fill="#8C5C14" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="745" y="892.727">Incomplete period &#xb7; total not finalized</tspan></text>
+</g>
+<g id="State=Request failed">
+<rect x="48.5" y="951.5" width="639" height="163" rx="7.5" fill="white"/>
+<rect x="48.5" y="951.5" width="639" height="163" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / REQUEST FAILED" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="988.5">REQUEST FAILED</tspan></text>
+<text id="Text / Collection chart unavailable" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="22" font-weight="600" letter-spacing="0em"><tspan x="73" y="1037.5">Collection chart unavailable</tspan></text>
+<text id="Text / Do not draw a zero-value chart for missing_2" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="73" y="1080.73">Do not draw a zero-value chart for missing data.</tspan></text>
+</g>
+<g id="State=Zero confirmed">
+<rect x="720.5" y="951.5" width="639" height="233" rx="7.5" fill="white"/>
+<rect x="720.5" y="951.5" width="639" height="233" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / ZERO CONFIRMED" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="988.5">ZERO CONFIRMED</tspan></text>
+<text id="Text / &#226;&#130;&#185;0.00 &#194;&#183; Confirmed total" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="22" font-weight="600" letter-spacing="0em"><tspan x="745" y="1037.5">&#x20b9;0.00 &#xb7; Confirmed total</tspan></text>
+<g id="Chart columns_3">
+<rect id="Skeleton placeholder_16" x="745" y="1066" width="65" height="42" rx="4" fill="#087F73"/>
+<rect id="Skeleton placeholder_17" x="828" y="1066" width="65" height="72" rx="4" fill="#087F73"/>
+<rect id="Skeleton placeholder_18" x="911" y="1066" width="65" height="94" rx="4" fill="#087F73"/>
+<rect id="Skeleton placeholder_19" x="994" y="1066" width="65" height="64" rx="4" fill="#087F73"/>
+</g>
+</g>
+</g>
+</g>
+</svg>

@@ -13,13 +13,14 @@
     "db:migrate": "node --import tsx src/db/migrate.ts"
   },
   "dependencies": {
+    "dotenv": "^17.2.3",
     "graphql": "^16.11.0",
     "graphql-yoga": "^5.16.0",
-    "pg": "^8.16.3",
-    "dotenv": "^17.2.3"
+    "pg": "^8.16.3"
   },
   "devDependencies": {
-    "tsx": "^4.20.6",
-    "@types/pg": "^8.15.6"
+    "@types/pg": "^8.15.6",
+    "embedded-postgres": "^17.11.0-beta.19",
+    "tsx": "^4.20.6"
   }
 }

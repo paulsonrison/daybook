@@ -1,0 +1,69 @@
+<svg width="1440" height="873" viewBox="0 0 1440 873" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Component coverage / Export &#38; sharing">
+<rect width="1440" height="873" fill="#F5F6F3"/>
+<text id="Text / Export &#38; sharing" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="28" font-weight="600" letter-spacing="0em"><tspan x="32" y="63.1818">Export &#38; sharing</tspan></text>
+<text id="Text / 6 applicable states &#194;&#183; editable native comp" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="32" y="117.591">6 applicable states &#xb7; editable native component variants. Loading, empty and failure behavior is visible in the control itself.</tspan></text>
+<g id="Daybook/Edge/Export &#38; sharing">
+<g id="State=Ready">
+<rect x="48.5" y="167.5" width="639" height="199" rx="7.5" fill="white"/>
+<rect x="48.5" y="167.5" width="639" height="199" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / READY" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="204.5">READY</tspan></text>
+<text id="Text / Saved invoice &#194;&#183; DB-2026-1048" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="20" font-weight="600" letter-spacing="0em"><tspan x="73" y="251.273">Saved invoice &#xb7; DB-2026-1048</tspan></text>
+<g id="Action / Download PDF">
+<rect x="73" y="279" width="134" height="63" rx="6" fill="#087F73"/>
+<text id="Text / Download PDF" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="89" y="303.727">Download PDF</tspan></text>
+</g>
+</g>
+<g id="State=Preparing">
+<rect x="720.5" y="167.5" width="639" height="111" rx="7.5" fill="white"/>
+<rect x="720.5" y="167.5" width="639" height="111" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / PREPARING" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="204.5">PREPARING</tspan></text>
+<g id="Progress status">
+<path id="Ellipse" d="M765.5 240C765.5 241.793 764.993 243.55 764.036 245.066C763.08 246.583 761.714 247.798 760.096 248.572C758.478 249.345 756.675 249.644 754.894 249.435C753.113 249.227 751.428 248.518 750.032 247.392C748.637 246.265 747.589 244.767 747.01 243.07C746.43 241.373 746.343 239.547 746.758 237.803C747.172 236.058 748.072 234.467 749.353 233.212C750.635 231.958 752.245 231.091 753.997 230.713" stroke-width="3" stroke="#087F73"/>
+<text id="Text / Preparing PDF&#226;&#128;&#166;" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" font-weight="600" letter-spacing="0em"><tspan x="779" y="244.591">Preparing PDF&#x2026;</tspan></text>
+</g>
+</g>
+<g id="State=Download ready">
+<rect x="48.5" y="391.5" width="639" height="199" rx="7.5" fill="white"/>
+<rect x="48.5" y="391.5" width="639" height="199" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / DOWNLOAD READY" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="428.5">DOWNLOAD READY</tspan></text>
+<text id="Text / PDF ready to download" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="20" font-weight="600" letter-spacing="0em"><tspan x="73" y="475.273">PDF ready to download</tspan></text>
+<g id="Action / Download PDF_2">
+<rect x="73" y="503" width="134" height="63" rx="6" fill="#087F73"/>
+<text id="Text / Download PDF_2" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="89" y="527.727">Download PDF</tspan></text>
+</g>
+</g>
+<g id="State=Request failed">
+<rect x="720.5" y="391.5" width="639" height="199" rx="7.5" fill="white"/>
+<rect x="720.5" y="391.5" width="639" height="199" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / REQUEST FAILED" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="428.5">REQUEST FAILED</tspan></text>
+<text id="Text / Export failed" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="20" font-weight="600" letter-spacing="0em"><tspan x="745" y="475.273">Export failed</tspan></text>
+<g id="Action / Retry export">
+<rect x="745" y="503" width="134" height="63" rx="6" fill="#087F73"/>
+<text id="Text / Retry export" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="761" y="527.727">Retry export</tspan></text>
+</g>
+</g>
+<g id="State=Share unavailable">
+<rect x="48.5" y="615.5" width="639" height="199" rx="7.5" fill="white"/>
+<rect x="48.5" y="615.5" width="639" height="199" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / SHARE UNAVAILABLE" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="652.5">SHARE UNAVAILABLE</tspan></text>
+<text id="Text / Sharing service unavailable" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="20" font-weight="600" letter-spacing="0em"><tspan x="73" y="699.273">Sharing service unavailable</tspan></text>
+<g id="Action / Download PDF_3">
+<rect x="73" y="727" width="134" height="63" rx="6" fill="#087F73"/>
+<text id="Text / Download PDF_3" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="89" y="751.727">Download PDF</tspan></text>
+</g>
+</g>
+<g id="State=Permission denied">
+<rect x="720.5" y="615.5" width="639" height="201" rx="7.5" fill="white"/>
+<rect x="720.5" y="615.5" width="639" height="201" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / PERMISSION DENIED" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="652.5">PERMISSION DENIED</tspan></text>
+<text id="Text / Export permission required" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="20" font-weight="600" letter-spacing="0em"><tspan x="745" y="699.273">Export permission required</tspan></text>
+<g id="Action / Back to ledger">
+<rect x="745.5" y="727.5" width="152" height="64" rx="5.5" fill="white"/>
+<rect x="745.5" y="727.5" width="152" height="64" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Back to ledger" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="762" y="752.727">Back to ledger</tspan></text>
+</g>
+</g>
+</g>
+</g>
+</svg>

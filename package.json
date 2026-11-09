@@ -21,12 +21,14 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "db:check": "npm run db:check -w @daybook/backend",
-    "db:migrate": "npm run db:migrate -w @daybook/backend"
+    "db:migrate": "npm run db:migrate -w @daybook/backend",
+    "test:browser": "playwright test"
   },
   "devDependencies": {
+    "@playwright/test": "^1.65.0",
+    "@types/node": "^22.19.0",
     "concurrently": "^9.2.1",
     "prettier": "^3.6.2",
-    "typescript": "^5.9.3",
-    "@types/node": "^22.19.0"
+    "typescript": "^5.9.3"
   }
 }

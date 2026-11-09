@@ -1,0 +1,758 @@
+<svg width="1440" height="1071" viewBox="0 0 1440 1071" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Agency overview" clip-path="url(#clip0_4_27540)">
+<rect width="1440" height="1071" fill="#F5F6F3"/>
+<g id="Agency navigation">
+<mask id="path-1-inside-1_4_27540" fill="white">
+<path d="M0 0H224V1071H0V0Z"/>
+</mask>
+<path d="M0 0H224V1071H0V0Z" fill="#FDFEFC"/>
+<path d="M224 0H223V1071H224H225V0H224Z" fill="#D3DEDA" mask="url(#path-1-inside-1_4_27540)"/>
+<g id="Brand">
+<g id="Brand mark">
+<rect x="24" y="28.5" width="33" height="36" rx="4" fill="#087F73"/>
+<g id="newspaper">
+<path id="Vector" d="M43.2506 52.0004H38.6669M46.0008 48.3335H38.6669M33.1665 55.6674H47.8343C48.3206 55.6674 48.787 55.4742 49.1308 55.1304C49.4746 54.7865 49.6678 54.3202 49.6678 53.8339V39.1661C49.6678 38.6798 49.4746 38.2135 49.1308 37.8696C48.787 37.5258 48.3206 37.3326 47.8343 37.3326H36.8334C36.3472 37.3326 35.8808 37.5258 35.537 37.8696C35.1931 38.2135 35 38.6798 35 39.1661V43.7498M33.1665 55.6674C33.6528 55.6674 34.1191 55.4742 34.463 55.1304C34.8068 54.7865 35 54.3202 35 53.8339V43.7498M33.1665 55.6674C32.6802 55.6674 32.2139 55.4742 31.87 55.1304C31.5262 54.7865 31.333 54.3202 31.333 53.8339V45.5833C31.333 45.097 31.5262 44.6306 31.87 44.2868C32.2139 43.943 32.6802 43.7498 33.1665 43.7498H35M39.5837 40.9996H45.0841C45.5904 40.9996 46.0008 41.41 46.0008 41.9163V43.7498C46.0008 44.2561 45.5904 44.6665 45.0841 44.6665H39.5837C39.0774 44.6665 38.6669 44.2561 38.6669 43.7498V41.9163C38.6669 41.41 39.0774 40.9996 39.5837 40.9996Z" stroke-width="1.7" stroke-linecap="round" stroke="white"/>
+</g>
+</g>
+<g id="Brand identity" clip-path="url(#clip1_4_27540)">
+<text id="Agency brand" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="23" letter-spacing="-0.8px"><tspan x="67" y="47.3636">daybook</tspan></text>
+<text id="Label" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="67" y="64.1364">THE AGENCY WORKSPACE</tspan></text>
+</g>
+</g>
+<g id="Navigation groups" clip-path="url(#clip2_4_27540)">
+<g id="Navigation group" clip-path="url(#clip3_4_27540)">
+<text id="Group label" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="600" letter-spacing="1.2px"><tspan x="16" y="104.636">WORKSPACE</tspan></text>
+<g id="Navigation item">
+<rect x="16" y="114" width="192" height="39" rx="6" fill="#E2F2ED"/>
+<g id="layout-dashboard">
+<path id="Vector_2" d="M28.8333 127.125H32.375C32.7662 127.125 33.0833 127.442 33.0833 127.833V132.792C33.0833 133.183 32.7662 133.5 32.375 133.5H28.8333C28.4421 133.5 28.125 133.183 28.125 132.792V127.833C28.125 127.442 28.4421 127.125 28.8333 127.125ZM36.625 127.125H40.1667C40.5579 127.125 40.875 127.442 40.875 127.833V129.958C40.875 130.35 40.5579 130.667 40.1667 130.667H36.625C36.2338 130.667 35.9167 130.35 35.9167 129.958V127.833C35.9167 127.442 36.2338 127.125 36.625 127.125ZM36.625 133.5H40.1667C40.5579 133.5 40.875 133.817 40.875 134.208V139.167C40.875 139.558 40.5579 139.875 40.1667 139.875H36.625C36.2338 139.875 35.9167 139.558 35.9167 139.167V134.208C35.9167 133.817 36.2338 133.5 36.625 133.5ZM28.8333 136.333H32.375C32.7662 136.333 33.0833 136.65 33.0833 137.042V139.167C33.0833 139.558 32.7662 139.875 32.375 139.875H28.8333C28.4421 139.875 28.125 139.558 28.125 139.167V137.042C28.125 136.65 28.4421 136.333 28.8333 136.333Z" stroke-width="1.7" stroke-linecap="round" stroke="#087F73"/>
+</g>
+<text id="Label_2" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" font-weight="600" letter-spacing="0em"><tspan x="53" y="137.864">Overview</tspan></text>
+</g>
+<g id="Navigation item_2">
+<g id="users">
+<path id="Vector_3" d="M37.3335 185.875V184.458C37.3335 183.707 37.0349 182.986 36.5035 182.455C35.9721 181.924 35.2514 181.625 34.4999 181.625H30.2496C29.4981 181.625 28.7773 181.924 28.2459 182.455C27.7146 182.986 27.416 183.707 27.416 184.458V185.875M37.3335 173.216C37.9411 173.373 38.4792 173.728 38.8634 174.224C39.2475 174.721 39.456 175.331 39.456 175.958C39.456 176.586 39.2475 177.196 38.8634 177.692C38.4792 178.189 37.9411 178.543 37.3335 178.701M41.5838 185.875V184.458C41.5833 183.83 41.3744 183.221 40.9897 182.724C40.6051 182.228 40.0665 181.874 39.4586 181.717M35.2083 175.958C35.2083 177.523 33.9397 178.792 32.3747 178.792C30.8098 178.792 29.5412 177.523 29.5412 175.958C29.5412 174.394 30.8098 173.125 32.3747 173.125C33.9397 173.125 35.2083 174.394 35.2083 175.958Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_3" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="183.864">Residents &#38; subscriptions</tspan></text>
+</g>
+<g id="Navigation item_3">
+<g id="route">
+<path id="Vector_4" d="M32.375 230.459C32.375 231.632 31.4236 232.584 30.25 232.584C29.0764 232.584 28.125 231.632 28.125 230.459C28.125 229.285 29.0764 228.334 30.25 228.334C31.4236 228.334 32.375 229.285 32.375 230.459ZM32.375 230.459H38.3958C39.0533 230.459 39.6839 230.198 40.1489 229.733C40.6138 229.268 40.875 228.637 40.875 227.979C40.875 227.322 40.6138 226.691 40.1489 226.226C39.6839 225.761 39.0533 225.5 38.3958 225.5H30.6042C29.9467 225.5 29.3161 225.239 28.8511 224.774C28.3862 224.309 28.125 223.678 28.125 223.021C28.125 222.363 28.3862 221.732 28.8511 221.267C29.3161 220.802 29.9467 220.541 30.6042 220.541H36.625M36.625 220.541C36.625 221.715 37.5764 222.666 38.75 222.666C39.9236 222.666 40.875 221.715 40.875 220.541C40.875 219.368 39.9236 218.416 38.75 218.416C37.5764 218.416 36.625 219.368 36.625 220.541Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_4" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="229.864">Routes &#38; delivery</tspan></text>
+</g>
+<g id="Navigation item_4">
+<g id="newspaper_2" clip-path="url(#clip4_4_27540)">
+<path id="Vector_5" d="M36.6251 275.75H33.0831M38.7503 272.917H33.0831M28.8328 278.584H40.167C40.5428 278.584 40.9032 278.435 41.1688 278.169C41.4345 277.903 41.5838 277.543 41.5838 277.167V265.833C41.5838 265.457 41.4345 265.097 41.1688 264.831C40.9032 264.565 40.5428 264.416 40.167 264.416H31.6664C31.2906 264.416 30.9302 264.565 30.6645 264.831C30.3988 265.097 30.2496 265.457 30.2496 265.833V269.375M28.8328 278.584C29.2085 278.584 29.5689 278.435 29.8346 278.169C30.1003 277.903 30.2496 277.543 30.2496 277.167V269.375M28.8328 278.584C28.457 278.584 28.0967 278.435 27.831 278.169C27.5653 277.903 27.416 277.543 27.416 277.167V270.792C27.416 270.416 27.5653 270.056 27.831 269.79C28.0967 269.524 28.457 269.375 28.8328 269.375H30.2496M33.7915 267.25H38.0419C38.4331 267.25 38.7503 267.567 38.7503 267.958V269.375C38.7503 269.766 38.4331 270.083 38.0419 270.083H33.7915C33.4003 270.083 33.0831 269.766 33.0831 269.375V267.958C33.0831 267.567 33.4003 267.25 33.7915 267.25Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_5" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="275.864">Publications &#38; pricing</tspan></text>
+</g>
+</g>
+<g id="Navigation group_2" clip-path="url(#clip5_4_27540)">
+<text id="Group label_2" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="600" letter-spacing="1.2px"><tspan x="16" y="323.636">FINANCE</tspan></text>
+<g id="Navigation item_5">
+<g id="receipt-text">
+<path id="Vector_6" d="M35.2083 355.333H31.667M35.9166 349.666H31.667M37.3331 352.499H31.667M28.834 346.124C28.834 345.936 28.9086 345.756 29.0414 345.623C29.1743 345.491 29.3544 345.416 29.5422 345.416C29.7176 345.415 29.8896 345.464 30.038 345.558L30.6988 345.983C30.8469 346.077 31.0189 346.127 31.1946 346.127C31.3703 346.127 31.5424 346.077 31.6904 345.983L32.3519 345.558C32.5 345.463 32.672 345.413 32.8477 345.413C33.0234 345.413 33.1954 345.463 33.3435 345.558L34.0043 345.983C34.1524 346.077 34.3244 346.127 34.5001 346.127C34.6758 346.127 34.8478 346.077 34.9959 345.983L35.6567 345.558C35.8047 345.463 35.9768 345.413 36.1525 345.413C36.3282 345.413 36.5002 345.463 36.6482 345.558L37.3098 345.983C37.4578 346.077 37.6298 346.127 37.8055 346.127C37.9812 346.127 38.1533 346.077 38.3013 345.983L38.9621 345.558C39.1105 345.464 39.2825 345.415 39.4579 345.416C39.6458 345.416 39.8259 345.491 39.9587 345.623C40.0916 345.756 40.1662 345.936 40.1662 346.124V358.874C40.1662 359.062 40.0916 359.242 39.9587 359.375C39.8259 359.508 39.6458 359.582 39.4579 359.582C39.2825 359.583 39.1105 359.534 38.9621 359.441L38.3013 359.016C38.1533 358.921 37.9812 358.871 37.8055 358.871C37.6298 358.871 37.4578 358.921 37.3098 359.016L36.6482 359.441C36.5002 359.535 36.3282 359.586 36.1525 359.586C35.9768 359.586 35.8047 359.535 35.6567 359.441L34.9959 359.016C34.8478 358.921 34.6758 358.871 34.5001 358.871C34.3244 358.871 34.1524 358.921 34.0043 359.016L33.3435 359.441C33.1954 359.535 33.0234 359.586 32.8477 359.586C32.672 359.586 32.5 359.535 32.3519 359.441L31.6904 359.016C31.5424 358.921 31.3703 358.871 31.1946 358.871C31.0189 358.871 30.8469 358.921 30.6988 359.016L30.038 359.441C29.8896 359.534 29.7176 359.583 29.5422 359.582C29.3544 359.582 29.1743 359.508 29.0414 359.375C28.9086 359.242 28.834 359.062 28.834 358.874V346.124Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_6" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="356.864">Billing / Collection</tspan></text>
+</g>
+<g id="Navigation item_6">
+<g id="wallet">
+<path id="Vector_7" d="M39.4583 394.958V392.833C39.4583 392.645 39.3837 392.465 39.2509 392.332C39.118 392.2 38.9379 392.125 38.75 392.125H29.5417C29.1659 392.125 28.8056 392.274 28.5399 392.54C28.2743 392.806 28.125 393.166 28.125 393.542M39.4583 394.958H29.5417C29.1659 394.958 28.8056 394.809 28.5399 394.543C28.2743 394.278 28.125 393.917 28.125 393.542M39.4583 394.958H40.1667C40.3545 394.958 40.5347 395.033 40.6675 395.166C40.8004 395.299 40.875 395.479 40.875 395.667V398.5M28.125 393.542V403.458C28.125 403.834 28.2743 404.194 28.5399 404.46C28.8056 404.726 29.1659 404.875 29.5417 404.875H40.1667C40.3545 404.875 40.5347 404.8 40.6675 404.668C40.8004 404.535 40.875 404.355 40.875 404.167V401.333M40.875 398.5H38.75C38.3743 398.5 38.0139 398.649 37.7483 398.915C37.4826 399.181 37.3333 399.541 37.3333 399.917C37.3333 400.292 37.4826 400.653 37.7483 400.918C38.0139 401.184 38.3743 401.333 38.75 401.333H40.875M40.875 398.5C41.0629 398.5 41.243 398.575 41.3759 398.707C41.5087 398.84 41.5833 399.02 41.5833 399.208V400.625C41.5833 400.813 41.5087 400.993 41.3759 401.126C41.243 401.259 41.0629 401.333 40.875 401.333" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_7" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="402.864">Payments &#38; ledger</tspan></text>
+</g>
+<g id="Navigation item_7">
+<g id="landmark">
+<path id="Vector_8" d="M33.0833 448.75V443.792M35.9165 448.75V443.792M38.7498 448.75V443.792M28.1251 451.584H40.8747M30.2501 448.75V443.792M33.8767 437.557C34.071 437.462 34.2844 437.414 34.5005 437.414C34.7166 437.415 34.9296 437.465 35.1233 437.561L40.6949 440.286C41.032 440.451 40.9145 440.958 40.5391 440.958H28.4609C28.0855 440.958 27.9687 440.451 28.3051 440.286L33.8767 437.557Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_8" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="448.864">Cash closing</tspan></text>
+</g>
+<g id="Navigation item_8">
+<g id="chart-no-axes-combined">
+<path id="Vector_9" d="M34.4999 493.333V496.875M37.3335 491.917V496.875M40.167 489.083V496.875M41.5838 484.125L35.4591 490.249C35.4262 490.282 35.3871 490.308 35.3441 490.326C35.301 490.344 35.2549 490.353 35.2083 490.353C35.1617 490.353 35.1156 490.344 35.0726 490.326C35.0295 490.308 34.9904 490.282 34.9575 490.249L32.6255 487.917C32.5591 487.851 32.469 487.814 32.3751 487.814C32.2812 487.814 32.1911 487.851 32.1247 487.917L27.416 492.625M28.8328 494.75V496.875M31.6664 491.917V496.875" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_9" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="494.864">Reports &#38; analytics</tspan></text>
+</g>
+</g>
+<g id="Navigation group_3" clip-path="url(#clip6_4_27540)">
+<text id="Group label_3" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="600" letter-spacing="1.2px"><tspan x="16" y="542.636">OPERATIONS</tspan></text>
+<g id="Navigation item_9">
+<g id="contact-round">
+<path id="Vector_10" d="M37.3333 564.416V565.833M37.3333 565.833H31.6667M37.3333 565.833H39.4583C40.2407 565.833 40.875 566.467 40.875 567.25V577.167C40.875 577.95 40.2407 578.584 39.4583 578.584H38.6898M38.6898 578.584C38.6898 577.457 38.2421 576.376 37.445 575.578C36.648 574.781 35.567 574.334 34.4398 574.334C33.3126 574.334 32.2316 574.781 31.4346 575.578C30.6376 576.376 30.1898 577.457 30.1898 578.584M38.6898 578.584H30.1898M30.1898 578.584H29.5417C28.7593 578.584 28.125 577.95 28.125 577.167V567.25C28.125 566.467 28.7593 565.833 29.5417 565.833H31.6667M31.6667 564.416V565.833M37.3333 571.5C37.3333 573.065 36.0648 574.334 34.5 574.334C32.9352 574.334 31.6667 573.065 31.6667 571.5C31.6667 569.935 32.9352 568.666 34.5 568.666C36.0648 568.666 37.3333 569.935 37.3333 571.5Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_10" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="575.864">Staff &#38; payroll</tspan></text>
+</g>
+<g id="Navigation item_10">
+<g id="package">
+<path id="Vector_11" d="M34.5 624.584V624.582M34.5 624.582V617.5M34.5 624.582C34.2513 624.582 34.007 624.517 33.7917 624.393L28.8333 621.559C28.6182 621.435 28.4395 621.256 28.3152 621.041C28.1908 620.826 28.1253 620.582 28.125 620.334V614.667C28.1253 614.418 28.1908 614.174 28.3152 613.959C28.4395 613.744 28.6182 613.565 28.8333 613.441L31.3127 612.024M34.5 624.582C34.7487 624.582 34.993 624.517 35.2083 624.393L40.1667 621.559C40.3818 621.435 40.5605 621.256 40.6848 621.041C40.8092 620.826 40.8747 620.582 40.875 620.334V614.667C40.8747 614.418 40.8092 614.174 40.6848 613.959C40.5605 613.744 40.3818 613.565 40.1667 613.441L35.2083 610.608C34.993 610.483 34.7487 610.418 34.5 610.418C34.2513 610.418 34.007 610.483 33.7917 610.608L31.3127 612.024M34.5 617.5L28.3304 613.958M34.5 617.5L37.6858 615.671M37.6858 615.671L40.6696 613.958M37.6858 615.671L31.3127 612.024M37.6858 615.671L37.6875 615.672M31.3125 612.024L31.3127 612.024" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_11" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="621.864">Indents &#38; returns</tspan></text>
+</g>
+<g id="Navigation item_11">
+<g id="messages-square" clip-path="url(#clip7_4_27540)">
+<path id="Vector_12" d="M40.167 661.375C40.5428 661.375 40.9032 661.524 41.1688 661.79C41.4345 662.055 41.5838 662.416 41.5838 662.791V670.078C41.5838 670.177 41.5543 670.274 41.499 670.357C41.4438 670.44 41.3652 670.504 41.2733 670.542C41.1814 670.58 41.0803 670.59 40.9828 670.571C40.8852 670.551 40.7956 670.504 40.7252 670.433L39.1654 668.873C38.8997 668.608 38.5394 668.458 38.1637 668.458H33.0831C32.7074 668.458 32.347 668.309 32.0813 668.043C31.8156 667.778 31.6664 667.417 31.6664 667.042V666.333M37.3335 662.083C37.3335 662.459 37.1842 662.819 36.9185 663.085C36.6528 663.35 36.2924 663.5 35.9167 663.5H30.8361C30.4604 663.5 30.1001 663.649 29.8345 663.915L28.2746 665.475C28.2042 665.545 28.1146 665.593 28.0171 665.612C27.9195 665.632 27.8184 665.622 27.7265 665.584C27.6346 665.546 27.5561 665.481 27.5008 665.398C27.4455 665.316 27.416 665.219 27.416 665.119V657.833C27.416 657.457 27.5653 657.097 27.831 656.831C28.0967 656.565 28.457 656.416 28.8328 656.416H35.9167C36.2924 656.416 36.6528 656.565 36.9185 656.831C37.1842 657.097 37.3335 657.457 37.3335 657.833V662.083Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_12" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="667.864">Communications</tspan></text>
+</g>
+</g>
+</g>
+<g id="Workspace tools" clip-path="url(#clip8_4_27540)">
+<g id="Settings navigation">
+<g id="settings-2">
+<path id="Vector_13" d="M35.9166 733.541H29.5422M35.9166 733.541C35.9166 734.715 36.8679 735.666 38.0414 735.666C39.2149 735.666 40.1662 734.715 40.1662 733.541C40.1662 732.368 39.2149 731.417 38.0414 731.417C36.8679 731.417 35.9166 732.368 35.9166 733.541ZM39.4579 726.459H33.0836M33.0836 726.459C33.0836 727.632 32.1323 728.583 30.9588 728.583C29.7853 728.583 28.834 727.632 28.834 726.459C28.834 725.285 29.7853 724.334 30.9588 724.334C32.1323 724.334 33.0836 725.285 33.0836 726.459Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_13" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="734.364">Settings</tspan></text>
+</g>
+<g id="Support navigation">
+<g id="circle-help" clip-path="url(#clip9_4_27540)">
+<path id="Vector_14" d="M32.4384 774.375C32.6049 773.901 32.9337 773.502 33.3663 773.248C33.799 772.993 34.3078 772.9 34.8024 772.985C35.2971 773.07 35.7457 773.327 36.0689 773.711C36.3922 774.095 36.5691 774.581 36.5683 775.083C36.5683 776.5 34.4431 777.208 34.4431 777.208M34.4999 780.042H34.507M41.5838 776.5C41.5838 780.412 38.4122 783.584 34.4999 783.584C30.5876 783.584 27.416 780.412 27.416 776.5C27.416 772.588 30.5876 769.416 34.4999 769.416C38.4122 769.416 41.5838 772.588 41.5838 776.5Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_14" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="780.864">Help &#38; assistant</tspan></text>
+</g>
+</g>
+<g id="Agent workspace">
+<mask id="path-48-inside-2_4_27540" fill="white">
+<path d="M16 822H208V897H16V822Z"/>
+</mask>
+<path d="M16 822V823H208V822V821H16V822Z" fill="#D3DEDA" mask="url(#path-48-inside-2_4_27540)"/>
+<g id="Agency identity" clip-path="url(#clip10_4_27540)">
+<g id="Agent avatar">
+<rect x="24" y="841" width="30" height="30" rx="15" fill="#EEF3F0"/>
+<text id="Label_15" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="31.5" y="860">RK</tspan></text>
+</g>
+<g id="Agent details" clip-path="url(#clip11_4_27540)">
+<text id="Label_16" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" font-weight="600" letter-spacing="0em"><tspan x="64" y="852.864">Ravi Kumar</tspan></text>
+<text id="Label_17" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="64" y="868.136">Daybreak Agency &#xb7; Kochi</tspan></text>
+</g>
+</g>
+<text id="Label_18" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="24" y="893.136">DEMO WORKSPACE &#xb7; SAMPLE DATA</tspan></text>
+</g>
+</g>
+<g id="Main workspace" clip-path="url(#clip12_4_27540)">
+<g id="Workspace bar">
+<mask id="path-55-inside-3_4_27540" fill="white">
+<path d="M224 0H1440V74H224V0Z"/>
+</mask>
+<path d="M224 0H1440V74H224V0Z" fill="white"/>
+<path d="M1440 74V73H224V74V75H1440V74Z" fill="#D3DEDA" mask="url(#path-55-inside-3_4_27540)"/>
+<g id="Workspace location" clip-path="url(#clip13_4_27540)">
+<text id="Label_19" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="260" y="41.3636">Daybreak Agency</tspan></text>
+<text id="Label_20" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="371" y="41.7273">/</tspan></text>
+<text id="Label_21" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" font-weight="600" letter-spacing="0em"><tspan x="386" y="41.3636">Overview</tspan></text>
+</g>
+<g id="Workspace utilities" clip-path="url(#clip14_4_27540)">
+<g id="Global search" clip-path="url(#clip15_4_27540)">
+<g id="search">
+<path id="Vector_15" d="M1060 43.0001L1057.11 40.1068M1058.67 36.3333C1058.67 39.2789 1056.28 41.6667 1053.33 41.6667C1050.39 41.6667 1048 39.2789 1048 36.3333C1048 33.3878 1050.39 31 1053.33 31C1056.28 31 1058.67 33.3878 1058.67 36.3333Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_22" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="1070" y="41.3636">Search anything</tspan></text>
+<text id="Label_23" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="1170" y="40.6364">&#x2318; K</tspan></text>
+</g>
+<text id="Label_24" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="1210" y="41.3636">EN&#x2304;</tspan></text>
+<g id="bell">
+<path id="Vector_16" d="M1260.7 43.7506C1260.83 43.9786 1261.02 44.168 1261.25 44.2996C1261.48 44.4313 1261.74 44.5006 1262 44.5006C1262.26 44.5006 1262.52 44.4313 1262.75 44.2996C1262.98 44.168 1263.17 43.9786 1263.3 43.7506M1255.45 39.4947C1255.35 39.6021 1255.28 39.7357 1255.26 39.8792C1255.24 40.0226 1255.26 40.1698 1255.31 40.3029C1255.37 40.4359 1255.47 40.549 1255.59 40.6284C1255.71 40.7079 1255.85 40.7502 1256 40.7503H1268C1268.15 40.7504 1268.29 40.7082 1268.41 40.6289C1268.53 40.5496 1268.63 40.4366 1268.69 40.3037C1268.74 40.1708 1268.76 40.0236 1268.74 39.8801C1268.72 39.7366 1268.65 39.603 1268.55 39.4955C1267.56 38.4672 1266.5 37.3743 1266.5 33.9998C1266.5 32.8062 1266.03 31.6615 1265.18 30.8175C1264.34 29.9735 1263.19 29.4994 1262 29.4994C1260.81 29.4994 1259.66 29.9735 1258.82 30.8175C1257.97 31.6615 1257.5 32.8062 1257.5 33.9998C1257.5 37.3743 1256.44 38.4672 1255.45 39.4947Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<g id="Connection status" clip-path="url(#clip16_4_27540)">
+<rect id="Online indicator" x="1291" y="34" width="6" height="6" rx="3" fill="#087F73"/>
+<text id="Label_25" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" letter-spacing="0em"><tspan x="1303" y="41">All changes synced</tspan></text>
+</g>
+</g>
+</g>
+<g id="Page content">
+<g id="Page introduction" clip-path="url(#clip17_4_27540)">
+<text id="Eyebrow" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="600" letter-spacing="1.5px"><tspan x="260" y="113.636">SUNDAY, 01 NOVEMBER 2026</tspan></text>
+<g id="Title and action" clip-path="url(#clip18_4_27540)">
+<text id="Page title" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="32" letter-spacing="-1px"><tspan x="260" y="156.636">A clear start to your day.</tspan></text>
+<g id="Action">
+<rect x="1247.5" y="125.5" width="156" height="39" rx="5.5" fill="white"/>
+<rect x="1247.5" y="125.5" width="156" height="39" rx="5.5" stroke="#D3DEDA"/>
+<g id="download">
+<path id="Vector_17" d="M1269.5 146.875V139.375M1272.62 143.75L1269.5 146.875L1266.38 143.75M1275.12 146.875V149.375C1275.12 149.707 1274.99 150.024 1274.76 150.259C1274.52 150.493 1274.21 150.625 1273.88 150.625H1265.12C1264.79 150.625 1264.48 150.493 1264.24 150.259C1264.01 150.024 1263.88 149.707 1263.88 149.375V146.875" stroke-width="1.7" stroke-linecap="round" stroke="#172D2B"/>
+</g>
+<text id="Label_26" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="1285" y="149.727">Export summary</tspan></text>
+</g>
+</g>
+<text id="Label_27" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="260" y="188.227">October is ready to close. Keep collections moving and tomorrow&#x2019;s deliveries on track.</tspan></text>
+</g>
+<g id="Summary metrics" clip-path="url(#clip19_4_27540)">
+<g id="Summary metric">
+<rect x="260.5" y="217.5" width="273" height="126" rx="7.5" fill="white"/>
+<rect x="260.5" y="217.5" width="273" height="126" rx="7.5" stroke="#D3DEDA"/>
+<text id="Label_28" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="280" y="249.864">Gross monthly revenue</tspan></text>
+<text id="Metric value" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="30" font-weight="600" letter-spacing="-1px"><tspan x="280" y="291.909">&#x20b9;2,84,650</tspan></text>
+<text id="Label_29" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" letter-spacing="0em"><tspan x="280" y="320">October 2026 &#xb7; +6.2% vs September</tspan></text>
+</g>
+<g id="Summary metric_2">
+<rect x="550.5" y="217.5" width="273" height="126" rx="7.5" fill="white"/>
+<rect x="550.5" y="217.5" width="273" height="126" rx="7.5" stroke="#D3DEDA"/>
+<text id="Label_30" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="570" y="249.864">Payments collected</tspan></text>
+<text id="Metric value_2" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="30" font-weight="600" letter-spacing="-1px"><tspan x="570" y="291.909">&#x20b9;2,21,400</tspan></text>
+<text id="Label_31" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" letter-spacing="0em"><tspan x="570" y="320">77.8% of billed revenue &#xb7; cash &#x20b9;84,200</tspan></text>
+</g>
+<g id="Summary metric_3">
+<rect x="840.5" y="217.5" width="273" height="126" rx="7.5" fill="white"/>
+<rect x="840.5" y="217.5" width="273" height="126" rx="7.5" stroke="#D3DEDA"/>
+<text id="Label_32" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="860" y="249.864">Outstanding arrears</tspan></text>
+<text id="Metric value_3" fill="#936321" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="30" font-weight="600" letter-spacing="-1px"><tspan x="860" y="291.909">&#x20b9;63,250</tspan></text>
+<text id="Label_33" fill="#936321" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" letter-spacing="0em"><tspan x="860" y="320">&#x20b9;18,450 older than 30 days</tspan></text>
+</g>
+<g id="Summary metric_4">
+<rect x="1130.5" y="217.5" width="273" height="126" rx="7.5" fill="white"/>
+<rect x="1130.5" y="217.5" width="273" height="126" rx="7.5" stroke="#D3DEDA"/>
+<text id="Label_34" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="1150" y="249.864">Active daily circulation</tspan></text>
+<text id="Metric value_4" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="30" font-weight="600" letter-spacing="-1px"><tspan x="1150" y="291.909">1,264</tspan></text>
+<text id="Label_35" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" letter-spacing="0em"><tspan x="1150" y="320">1,086 residents across 4 routes</tspan></text>
+</g>
+</g>
+<g id="Daily operational pulse" clip-path="url(#clip20_4_27540)">
+<g id="Detail panel">
+<g clip-path="url(#clip21_4_27540)">
+<rect x="260" y="368" width="714" height="243" rx="8" fill="white"/>
+<g id="Panel heading">
+<text id="Label_36" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="15" font-weight="600" letter-spacing="0em"><tspan x="280" y="401.455">Collections, at a glance</tspan></text>
+<text id="Label_37" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="874" y="400.364">October 2026</tspan></text>
+</g>
+<g id="Collection visualization">
+<g id="Collection trend" clip-path="url(#clip22_4_27540)">
+<g id="Chart legend" clip-path="url(#clip23_4_27540)">
+<g id="Collected legend" clip-path="url(#clip24_4_27540)">
+<rect id="Legend marker" x="282" y="432.5" width="7" height="7" fill="#087F73"/>
+<text id="Label_38" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" letter-spacing="0em"><tspan x="295" y="440">Collected</tspan></text>
+</g>
+<g id="Pending legend" clip-path="url(#clip25_4_27540)">
+<rect id="Legend marker_2" x="363" y="432.5" width="7" height="7" fill="#D3DEDA"/>
+<text id="Label_39" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" letter-spacing="0em"><tspan x="376" y="440">Pending</tspan></text>
+</g>
+</g>
+<g id="Weekly collection bars">
+<g id="Weekly bar" clip-path="url(#clip26_4_27540)">
+<path id="Outstanding amount" d="M304 480C304 478.343 305.343 477 307 477H367C368.657 477 370 478.343 370 480V505H304V480Z" fill="#D3DEDA"/>
+<rect id="Collected amount" x="304" y="505" width="66" height="61" fill="#087F73"/>
+</g>
+<g id="Weekly bar_2" clip-path="url(#clip27_4_27540)">
+<path id="Outstanding amount_2" d="M404 464C404 462.343 405.343 461 407 461H467C468.657 461 470 462.343 470 464V484H404V464Z" fill="#D3DEDA"/>
+<rect id="Collected amount_2" x="404" y="484" width="66" height="82" fill="#087F73"/>
+</g>
+<g id="Weekly bar_3" clip-path="url(#clip28_4_27540)">
+<path id="Outstanding amount_3" d="M504 482C504 480.343 505.343 479 507 479H567C568.657 479 570 480.343 570 482V497H504V482Z" fill="#D3DEDA"/>
+<rect id="Collected amount_3" x="504" y="497" width="66" height="69" fill="#087F73"/>
+</g>
+<g id="Weekly bar_4" clip-path="url(#clip29_4_27540)">
+<path id="Outstanding amount_4" d="M604 457C604 455.343 605.343 454 607 454H667C668.657 454 670 455.343 670 457V471H604V457Z" fill="#D3DEDA"/>
+<rect id="Collected amount_4" x="604" y="471" width="66" height="95" fill="#087F73"/>
+</g>
+</g>
+<g id="Week labels">
+<text id="Label_40" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="313.343" y="587.136">01&#x2013;07 Oct</tspan></text>
+<text id="Label_41" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="412.938" y="587.136">08&#x2013;14 Oct</tspan></text>
+<text id="Label_42" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="513.958" y="587.136">15&#x2013;21 Oct</tspan></text>
+<text id="Label_43" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="613.113" y="587.136">22&#x2013;31 Oct</tspan></text>
+</g>
+</g>
+<g id="Collection rate">
+<text id="Collection percentage" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="35" font-weight="600" letter-spacing="-1px"><tspan x="780" y="504.727">77.8%</tspan></text>
+<text id="Label_44" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" letter-spacing="0em"><tspan x="780" y="534">of October dues collected</tspan></text>
+<g id="Status">
+<rect x="780" y="547" width="105" height="24" rx="4" fill="#E2F2ED"/>
+<text id="Label_45" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="788" y="563">&#x2191; 4.6 pts vs Sep</tspan></text>
+</g>
+</g>
+</g>
+</g>
+<rect x="260.5" y="368.5" width="713" height="242" rx="7.5" stroke="#D3DEDA"/>
+</g>
+<g id="Detail panel_2">
+<g clip-path="url(#clip30_4_27540)">
+<rect x="994" y="368" width="410" height="222" rx="8" fill="white"/>
+<g id="Panel heading_2">
+<text id="Label_46" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="15" font-weight="600" letter-spacing="0em"><tspan x="1014" y="401.455">Today&#x2019;s dispatch</tspan></text>
+<text id="Label_47" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="1344" y="400.364">01 Nov</tspan></text>
+</g>
+<g id="Dispatch progress">
+<g id="Delivery completion" clip-path="url(#clip31_4_27540)">
+<text id="Delivery total" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="28" font-weight="600" letter-spacing="0em"><tspan x="1014" y="451.182">1,248  </tspan></text>
+<g id="Status_2">
+<rect x="1283" y="429" width="101" height="24" rx="4" fill="#E2F2ED"/>
+<text id="Label_48" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="1291" y="445">98.7% delivered</tspan></text>
+</g>
+</g>
+<g id="Delivery progress bar">
+<rect x="1014" y="473" width="370" height="6" rx="3" fill="#EEF3F0"/>
+<rect id="Completed progress" x="1014" y="473" width="363" height="6" rx="3" fill="#087F73"/>
+</g>
+<g id="Dispatch detail" clip-path="url(#clip32_4_27540)">
+<g id="Hold count" clip-path="url(#clip33_4_27540)">
+<text id="Label_49" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="1014" y="513.545">12</tspan></text>
+<text id="Label_50" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" letter-spacing="0em"><tspan x="1014" y="535">On vacation hold</tspan></text>
+</g>
+<g id="Exception count" clip-path="url(#clip34_4_27540)">
+<text id="Label_51" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="1138" y="513.545">4</tspan></text>
+<text id="Label_52" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" letter-spacing="0em"><tspan x="1138" y="535">Open exceptions</tspan></text>
+</g>
+</g>
+<text id="Label_53" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" letter-spacing="0em"><tspan x="1014" y="566">View delivery manifest &#x2192;</tspan></text>
+</g>
+</g>
+<rect x="994.5" y="368.5" width="409" height="221" rx="7.5" stroke="#D3DEDA"/>
+</g>
+</g>
+<g id="Route performance" clip-path="url(#clip35_4_27540)">
+<g id="Section heading" clip-path="url(#clip36_4_27540)">
+<text id="Label_54" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="17" font-weight="600" letter-spacing="0em"><tspan x="260" y="653.682">Route performance</tspan></text>
+<text id="Label_55" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="1105" y="647.864">October 2026 &#xb7; Net after publication &#38; delivery costs</tspan></text>
+</g>
+<g id="Data table">
+<g clip-path="url(#clip37_4_27540)">
+<g id="Column headings" clip-path="url(#clip38_4_27540)">
+<rect width="1144" height="42" transform="translate(260 672)" fill="#EEF3F0"/>
+<g id="Column heading">
+<mask id="path-131-inside-4_4_27540" fill="white">
+<path d="M260 672H530V714H260V672Z"/>
+</mask>
+<path d="M530 714V715H531V714H530ZM530 672H529V714H530H531V672H530ZM530 714V713H260V714V715H530V714Z" fill="#D3DEDA" mask="url(#path-131-inside-4_4_27540)"/>
+<text id="Label_56" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="272" y="697">ROUTE</tspan></text>
+</g>
+<g id="Column heading_2">
+<mask id="path-134-inside-5_4_27540" fill="white">
+<path d="M530 672H660V714H530V672Z"/>
+</mask>
+<path d="M660 714V715H661V714H660ZM660 672H659V714H660H661V672H660ZM660 714V713H530V714V715H660V714Z" fill="#D3DEDA" mask="url(#path-134-inside-5_4_27540)"/>
+<text id="Label_57" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="542" y="697">COPIES / DAY</tspan></text>
+</g>
+<g id="Column heading_3">
+<mask id="path-137-inside-6_4_27540" fill="white">
+<path d="M660 672H810V714H660V672Z"/>
+</mask>
+<path d="M810 714V715H811V714H810ZM810 672H809V714H810H811V672H810ZM810 714V713H660V714V715H810V714Z" fill="#D3DEDA" mask="url(#path-137-inside-6_4_27540)"/>
+<text id="Label_58" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="672" y="697">BILLED</tspan></text>
+</g>
+<g id="Column heading_4">
+<mask id="path-140-inside-7_4_27540" fill="white">
+<path d="M810 672H960V714H810V672Z"/>
+</mask>
+<path d="M960 714V715H961V714H960ZM960 672H959V714H960H961V672H960ZM960 714V713H810V714V715H960V714Z" fill="#D3DEDA" mask="url(#path-140-inside-7_4_27540)"/>
+<text id="Label_59" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="822" y="697">COLLECTED</tspan></text>
+</g>
+<g id="Column heading_5">
+<mask id="path-143-inside-8_4_27540" fill="white">
+<path d="M960 672H1110V714H960V672Z"/>
+</mask>
+<path d="M1110 714V715H1111V714H1110ZM1110 672H1109V714H1110H1111V672H1110ZM1110 714V713H960V714V715H1110V714Z" fill="#D3DEDA" mask="url(#path-143-inside-8_4_27540)"/>
+<text id="Label_60" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="972" y="697">OUTSTANDING</tspan></text>
+</g>
+<g id="Column heading_6">
+<mask id="path-146-inside-9_4_27540" fill="white">
+<path d="M1110 672H1244V714H1110V672Z"/>
+</mask>
+<path d="M1244 714V715H1245V714H1244ZM1244 672H1243V714H1244H1245V672H1244ZM1244 714V713H1110V714V715H1244V714Z" fill="#D3DEDA" mask="url(#path-146-inside-9_4_27540)"/>
+<text id="Label_61" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="1122" y="697">COLLECTION</tspan></text>
+</g>
+<g id="Column heading_7">
+<mask id="path-149-inside-10_4_27540" fill="white">
+<path d="M1244 672H1404V714H1244V672Z"/>
+</mask>
+<path d="M1404 714V715H1405V714H1404ZM1404 672H1403V714H1404H1405V672H1404ZM1404 714V713H1244V714V715H1404V714Z" fill="#D3DEDA" mask="url(#path-149-inside-10_4_27540)"/>
+<text id="Label_62" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="1256" y="697">NET PROFIT</tspan></text>
+</g>
+</g>
+<g id="Record" clip-path="url(#clip39_4_27540)">
+<rect width="1144" height="51" transform="translate(260 714)" fill="white"/>
+<g id="Data cell">
+<mask id="path-152-inside-11_4_27540" fill="white">
+<path d="M260 714H530V765H260V714Z"/>
+</mask>
+<path d="M530 765V766H531V765H530ZM530 714H529V765H530H531V714H530ZM530 765V764H260V765V766H530V765Z" fill="#D3DEDA" mask="url(#path-152-inside-11_4_27540)"/>
+<text id="Label_63" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="272" y="744.227">R01 &#xb7; Panampilly Nagar</tspan></text>
+</g>
+<g id="Data cell_2">
+<mask id="path-155-inside-12_4_27540" fill="white">
+<path d="M530 714H660V765H530V714Z"/>
+</mask>
+<path d="M660 765V766H661V765H660ZM660 714H659V765H660H661V714H660ZM660 765V764H530V765V766H660V765Z" fill="#D3DEDA" mask="url(#path-155-inside-12_4_27540)"/>
+<text id="Label_64" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="542" y="744.227">380</tspan></text>
+</g>
+<g id="Data cell_3">
+<mask id="path-158-inside-13_4_27540" fill="white">
+<path d="M660 714H810V765H660V714Z"/>
+</mask>
+<path d="M810 765V766H811V765H810ZM810 714H809V765H810H811V714H810ZM810 765V764H660V765V766H810V765Z" fill="#D3DEDA" mask="url(#path-158-inside-13_4_27540)"/>
+<text id="Label_65" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="672" y="744.227">&#x20b9;84,200</tspan></text>
+</g>
+<g id="Data cell_4">
+<mask id="path-161-inside-14_4_27540" fill="white">
+<path d="M810 714H960V765H810V714Z"/>
+</mask>
+<path d="M960 765V766H961V765H960ZM960 714H959V765H960H961V714H960ZM960 765V764H810V765V766H960V765Z" fill="#D3DEDA" mask="url(#path-161-inside-14_4_27540)"/>
+<text id="Label_66" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="822" y="744.227">&#x20b9;68,400</tspan></text>
+</g>
+<g id="Data cell_5">
+<mask id="path-164-inside-15_4_27540" fill="white">
+<path d="M960 714H1110V765H960V714Z"/>
+</mask>
+<path d="M1110 765V766H1111V765H1110ZM1110 714H1109V765H1110H1111V714H1110ZM1110 765V764H960V765V766H1110V765Z" fill="#D3DEDA" mask="url(#path-164-inside-15_4_27540)"/>
+<text id="Label_67" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="972" y="744.227">&#x20b9;15,800</tspan></text>
+</g>
+<g id="Data cell_6">
+<mask id="path-167-inside-16_4_27540" fill="white">
+<path d="M1110 714H1244V765H1110V714Z"/>
+</mask>
+<path d="M1244 765V766H1245V765H1244ZM1244 714H1243V765H1244H1245V714H1244ZM1244 765V764H1110V765V766H1244V765Z" fill="#D3DEDA" mask="url(#path-167-inside-16_4_27540)"/>
+<text id="Label_68" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="1122" y="744.227">81%</tspan></text>
+</g>
+<g id="Data cell_7">
+<mask id="path-170-inside-17_4_27540" fill="white">
+<path d="M1244 714H1404V765H1244V714Z"/>
+</mask>
+<path d="M1404 765V766H1405V765H1404ZM1404 714H1403V765H1404H1405V714H1404ZM1404 765V764H1244V765V766H1404V765Z" fill="#D3DEDA" mask="url(#path-170-inside-17_4_27540)"/>
+<text id="Label_69" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="1256" y="744.227">&#x20b9;18,420</tspan></text>
+</g>
+</g>
+<g id="Record_2" clip-path="url(#clip40_4_27540)">
+<rect width="1144" height="51" transform="translate(260 765)" fill="white"/>
+<g id="Data cell_8">
+<mask id="path-173-inside-18_4_27540" fill="white">
+<path d="M260 765H530V816H260V765Z"/>
+</mask>
+<path d="M530 816V817H531V816H530ZM530 765H529V816H530H531V765H530ZM530 816V815H260V816V817H530V816Z" fill="#D3DEDA" mask="url(#path-173-inside-18_4_27540)"/>
+<text id="Label_70" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="272" y="795.227">R02 &#xb7; Kadavanthra</tspan></text>
+</g>
+<g id="Data cell_9">
+<mask id="path-176-inside-19_4_27540" fill="white">
+<path d="M530 765H660V816H530V765Z"/>
+</mask>
+<path d="M660 816V817H661V816H660ZM660 765H659V816H660H661V765H660ZM660 816V815H530V816V817H660V816Z" fill="#D3DEDA" mask="url(#path-176-inside-19_4_27540)"/>
+<text id="Label_71" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="542" y="795.227">326</tspan></text>
+</g>
+<g id="Data cell_10">
+<mask id="path-179-inside-20_4_27540" fill="white">
+<path d="M660 765H810V816H660V765Z"/>
+</mask>
+<path d="M810 816V817H811V816H810ZM810 765H809V816H810H811V765H810ZM810 816V815H660V816V817H810V816Z" fill="#D3DEDA" mask="url(#path-179-inside-20_4_27540)"/>
+<text id="Label_72" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="672" y="795.227">&#x20b9;74,800</tspan></text>
+</g>
+<g id="Data cell_11">
+<mask id="path-182-inside-21_4_27540" fill="white">
+<path d="M810 765H960V816H810V765Z"/>
+</mask>
+<path d="M960 816V817H961V816H960ZM960 765H959V816H960H961V765H960ZM960 816V815H810V816V817H960V816Z" fill="#D3DEDA" mask="url(#path-182-inside-21_4_27540)"/>
+<text id="Label_73" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="822" y="795.227">&#x20b9;59,200</tspan></text>
+</g>
+<g id="Data cell_12">
+<mask id="path-185-inside-22_4_27540" fill="white">
+<path d="M960 765H1110V816H960V765Z"/>
+</mask>
+<path d="M1110 816V817H1111V816H1110ZM1110 765H1109V816H1110H1111V765H1110ZM1110 816V815H960V816V817H1110V816Z" fill="#D3DEDA" mask="url(#path-185-inside-22_4_27540)"/>
+<text id="Label_74" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="972" y="795.227">&#x20b9;15,600</tspan></text>
+</g>
+<g id="Data cell_13">
+<mask id="path-188-inside-23_4_27540" fill="white">
+<path d="M1110 765H1244V816H1110V765Z"/>
+</mask>
+<path d="M1244 816V817H1245V816H1244ZM1244 765H1243V816H1244H1245V765H1244ZM1244 816V815H1110V816V817H1244V816Z" fill="#D3DEDA" mask="url(#path-188-inside-23_4_27540)"/>
+<text id="Label_75" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="1122" y="795.227">79%</tspan></text>
+</g>
+<g id="Data cell_14">
+<mask id="path-191-inside-24_4_27540" fill="white">
+<path d="M1244 765H1404V816H1244V765Z"/>
+</mask>
+<path d="M1404 816V817H1405V816H1404ZM1404 765H1403V816H1404H1405V765H1404ZM1404 816V815H1244V816V817H1404V816Z" fill="#D3DEDA" mask="url(#path-191-inside-24_4_27540)"/>
+<text id="Label_76" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="1256" y="795.227">&#x20b9;16,260</tspan></text>
+</g>
+</g>
+<g id="Record_3" clip-path="url(#clip41_4_27540)">
+<rect width="1144" height="51" transform="translate(260 816)" fill="white"/>
+<g id="Data cell_15">
+<mask id="path-194-inside-25_4_27540" fill="white">
+<path d="M260 816H530V867H260V816Z"/>
+</mask>
+<path d="M530 867V868H531V867H530ZM530 816H529V867H530H531V816H530ZM530 867V866H260V867V868H530V867Z" fill="#D3DEDA" mask="url(#path-194-inside-25_4_27540)"/>
+<text id="Label_77" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="272" y="846.227">R03 &#xb7; Thevara</tspan></text>
+</g>
+<g id="Data cell_16">
+<mask id="path-197-inside-26_4_27540" fill="white">
+<path d="M530 816H660V867H530V816Z"/>
+</mask>
+<path d="M660 867V868H661V867H660ZM660 816H659V867H660H661V816H660ZM660 867V866H530V867V868H660V867Z" fill="#D3DEDA" mask="url(#path-197-inside-26_4_27540)"/>
+<text id="Label_78" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="542" y="846.227">310</tspan></text>
+</g>
+<g id="Data cell_17">
+<mask id="path-200-inside-27_4_27540" fill="white">
+<path d="M660 816H810V867H660V816Z"/>
+</mask>
+<path d="M810 867V868H811V867H810ZM810 816H809V867H810H811V816H810ZM810 867V866H660V867V868H810V867Z" fill="#D3DEDA" mask="url(#path-200-inside-27_4_27540)"/>
+<text id="Label_79" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="672" y="846.227">&#x20b9;68,900</tspan></text>
+</g>
+<g id="Data cell_18">
+<mask id="path-203-inside-28_4_27540" fill="white">
+<path d="M810 816H960V867H810V816Z"/>
+</mask>
+<path d="M960 867V868H961V867H960ZM960 816H959V867H960H961V816H960ZM960 867V866H810V867V868H960V867Z" fill="#D3DEDA" mask="url(#path-203-inside-28_4_27540)"/>
+<text id="Label_80" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="822" y="846.227">&#x20b9;53,800</tspan></text>
+</g>
+<g id="Data cell_19">
+<mask id="path-206-inside-29_4_27540" fill="white">
+<path d="M960 816H1110V867H960V816Z"/>
+</mask>
+<path d="M1110 867V868H1111V867H1110ZM1110 816H1109V867H1110H1111V816H1110ZM1110 867V866H960V867V868H1110V867Z" fill="#D3DEDA" mask="url(#path-206-inside-29_4_27540)"/>
+<text id="Label_81" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="972" y="846.227">&#x20b9;15,100</tspan></text>
+</g>
+<g id="Data cell_20">
+<mask id="path-209-inside-30_4_27540" fill="white">
+<path d="M1110 816H1244V867H1110V816Z"/>
+</mask>
+<path d="M1244 867V868H1245V867H1244ZM1244 816H1243V867H1244H1245V816H1244ZM1244 867V866H1110V867V868H1244V867Z" fill="#D3DEDA" mask="url(#path-209-inside-30_4_27540)"/>
+<text id="Label_82" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="1122" y="846.227">78%</tspan></text>
+</g>
+<g id="Data cell_21">
+<mask id="path-212-inside-31_4_27540" fill="white">
+<path d="M1244 816H1404V867H1244V816Z"/>
+</mask>
+<path d="M1404 867V868H1405V867H1404ZM1404 816H1403V867H1404H1405V816H1404ZM1404 867V866H1244V867V868H1404V867Z" fill="#D3DEDA" mask="url(#path-212-inside-31_4_27540)"/>
+<text id="Label_83" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="1256" y="846.227">&#x20b9;14,870</tspan></text>
+</g>
+</g>
+<g id="Record_4" clip-path="url(#clip42_4_27540)">
+<rect width="1144" height="51" transform="translate(260 867)" fill="white"/>
+<g id="Data cell_22">
+<mask id="path-215-inside-32_4_27540" fill="white">
+<path d="M260 867H530V918H260V867Z"/>
+</mask>
+<path d="M530 918V919H531V918H530ZM530 867H529V918H530H531V867H530ZM530 918V917H260V918V919H530V918Z" fill="#D3DEDA" mask="url(#path-215-inside-32_4_27540)"/>
+<text id="Label_84" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="272" y="897.227">R04 &#xb7; Elamkulam</tspan></text>
+</g>
+<g id="Data cell_23">
+<mask id="path-218-inside-33_4_27540" fill="white">
+<path d="M530 867H660V918H530V867Z"/>
+</mask>
+<path d="M660 918V919H661V918H660ZM660 867H659V918H660H661V867H660ZM660 918V917H530V918V919H660V918Z" fill="#D3DEDA" mask="url(#path-218-inside-33_4_27540)"/>
+<text id="Label_85" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="542" y="897.227">248</tspan></text>
+</g>
+<g id="Data cell_24">
+<mask id="path-221-inside-34_4_27540" fill="white">
+<path d="M660 867H810V918H660V867Z"/>
+</mask>
+<path d="M810 918V919H811V918H810ZM810 867H809V918H810H811V867H810ZM810 918V917H660V918V919H810V918Z" fill="#D3DEDA" mask="url(#path-221-inside-34_4_27540)"/>
+<text id="Label_86" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="672" y="897.227">&#x20b9;56,750</tspan></text>
+</g>
+<g id="Data cell_25">
+<mask id="path-224-inside-35_4_27540" fill="white">
+<path d="M810 867H960V918H810V867Z"/>
+</mask>
+<path d="M960 918V919H961V918H960ZM960 867H959V918H960H961V867H960ZM960 918V917H810V918V919H960V918Z" fill="#D3DEDA" mask="url(#path-224-inside-35_4_27540)"/>
+<text id="Label_87" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="822" y="897.227">&#x20b9;40,000</tspan></text>
+</g>
+<g id="Data cell_26">
+<mask id="path-227-inside-36_4_27540" fill="white">
+<path d="M960 867H1110V918H960V867Z"/>
+</mask>
+<path d="M1110 918V919H1111V918H1110ZM1110 867H1109V918H1110H1111V867H1110ZM1110 918V917H960V918V919H1110V918Z" fill="#D3DEDA" mask="url(#path-227-inside-36_4_27540)"/>
+<text id="Label_88" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="972" y="897.227">&#x20b9;16,750</tspan></text>
+</g>
+<g id="Data cell_27">
+<mask id="path-230-inside-37_4_27540" fill="white">
+<path d="M1110 867H1244V918H1110V867Z"/>
+</mask>
+<path d="M1244 918V919H1245V918H1244ZM1244 867H1243V918H1244H1245V867H1244ZM1244 918V917H1110V918V919H1244V918Z" fill="#D3DEDA" mask="url(#path-230-inside-37_4_27540)"/>
+<text id="Label_89" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="1122" y="897.227">70%</tspan></text>
+</g>
+<g id="Data cell_28">
+<mask id="path-233-inside-38_4_27540" fill="white">
+<path d="M1244 867H1404V918H1244V867Z"/>
+</mask>
+<path d="M1404 918V919H1405V918H1404ZM1404 867H1403V918H1404H1405V867H1404ZM1404 918V917H1244V918V919H1404V918Z" fill="#D3DEDA" mask="url(#path-233-inside-38_4_27540)"/>
+<text id="Label_90" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="1256" y="897.227">&#x20b9;11,340</tspan></text>
+</g>
+</g>
+</g>
+<rect x="260.5" y="672.5" width="1143" height="245" stroke="#D3DEDA"/>
+</g>
+</g>
+<g id="Operational alerts" clip-path="url(#clip43_4_27540)">
+<g id="Operational alert">
+<rect x="260.5" y="942.5" width="369.667" height="96" rx="7.5" fill="white"/>
+<rect x="260.5" y="942.5" width="369.667" height="96" rx="7.5" stroke="#D3DEDA"/>
+<g id="triangle-alert">
+<path id="Vector_18" d="M287 966.749V969.749M287 972.749H287.007M294.297 973.5L288.297 963C288.166 962.769 287.977 962.577 287.748 962.443C287.518 962.31 287.258 962.239 286.992 962.239C286.727 962.239 286.466 962.31 286.237 962.443C286.008 962.577 285.818 962.769 285.687 963L279.687 973.5C279.555 973.729 279.486 973.989 279.486 974.253C279.487 974.517 279.557 974.777 279.691 975.005C279.824 975.234 280.015 975.423 280.245 975.554C280.475 975.684 280.735 975.752 281 975.75H293C293.263 975.749 293.521 975.68 293.749 975.548C293.977 975.416 294.166 975.227 294.298 974.999C294.429 974.771 294.498 974.512 294.498 974.249C294.498 973.986 294.429 973.728 294.297 973.5Z" stroke-width="1.7" stroke-linecap="round" stroke="#087F73"/>
+</g>
+<g id="Alert content" clip-path="url(#clip44_4_27540)">
+<text id="Label_91" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" font-weight="600" letter-spacing="0em"><tspan x="308" y="972.864">4 delivery exceptions</tspan></text>
+<text id="Label_92" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" letter-spacing="0em"><tspan x="308" y="995">Two missed papers and two wet copies need review.</tspan></text>
+<text id="Label_93" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="308" y="1017">Review exceptions &#x2192;</tspan></text>
+</g>
+</g>
+<g id="Operational alert_2">
+<rect x="647.167" y="942.5" width="369.667" height="96" rx="7.5" fill="white"/>
+<rect x="647.167" y="942.5" width="369.667" height="96" rx="7.5" stroke="#D3DEDA"/>
+<g id="calendar-clock" clip-path="url(#clip45_4_27540)">
+<path id="Vector_19" d="M676.667 970.5V972.15L677.867 972.9M676.667 961.499V963M676.667 963V964.5M676.667 963H678.917C679.315 963 679.697 963.158 679.978 963.439C680.26 963.72 680.418 964.102 680.418 964.5V965.625M676.667 963H670.667M670.667 963H668.417C668.019 963 667.638 963.158 667.356 963.439C667.075 963.72 666.917 964.102 666.917 964.5V967.5M670.667 963V961.499M670.667 963V964.5M666.917 967.5V975C666.917 975.398 667.075 975.78 667.356 976.061C667.638 976.343 668.019 976.501 668.417 976.501H671.042M666.917 967.5H670.667M681.168 972C681.168 974.486 679.153 976.501 676.667 976.501C674.182 976.501 672.167 974.486 672.167 972C672.167 969.515 674.182 967.5 676.667 967.5C679.153 967.5 681.168 969.515 681.168 972Z" stroke-width="1.7" stroke-linecap="round" stroke="#087F73"/>
+</g>
+<g id="Alert content_2" clip-path="url(#clip46_4_27540)">
+<text id="Label_94" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" font-weight="600" letter-spacing="0em"><tspan x="694.667" y="972.864">October billing is ready</tspan></text>
+<text id="Label_95" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" letter-spacing="0em"><tspan x="694.667" y="995">Vacation holds and delivered dates are reconciled.</tspan></text>
+<text id="Label_96" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="694.667" y="1017">Start route collection &#x2192;</tspan></text>
+</g>
+</g>
+<g id="Operational alert_3">
+<rect x="1033.83" y="942.5" width="369.667" height="96" rx="7.5" fill="white"/>
+<rect x="1033.83" y="942.5" width="369.667" height="96" rx="7.5" stroke="#D3DEDA"/>
+<g id="shield-check">
+<path id="Vector_20" d="M1058.08 969L1059.58 970.5L1062.58 967.5M1066.33 969.75C1066.33 973.5 1063.71 975.375 1060.59 976.463C1060.42 976.518 1060.25 976.515 1060.09 976.455C1056.96 975.375 1054.33 973.5 1054.33 969.75V964.5C1054.33 964.301 1054.41 964.11 1054.55 963.969C1054.69 963.829 1054.89 963.75 1055.08 963.75C1056.58 963.75 1058.46 962.85 1059.76 961.71C1059.92 961.574 1060.12 961.499 1060.33 961.499C1060.54 961.499 1060.74 961.574 1060.9 961.71C1062.22 962.857 1064.08 963.75 1065.58 963.75C1065.78 963.75 1065.97 963.829 1066.11 963.969C1066.25 964.11 1066.33 964.301 1066.33 964.5V969.75Z" stroke-width="1.7" stroke-linecap="round" stroke="#087F73"/>
+</g>
+<g id="Alert content_3" clip-path="url(#clip47_4_27540)">
+<text id="Label_97" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" font-weight="600" letter-spacing="0em"><tspan x="1081.33" y="972.864">Your records are protected</tspan></text>
+<text id="Label_98" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" letter-spacing="0em"><tspan x="1081.33" y="995">Cloud backup completed today at 04:15 AM.</tspan></text>
+<text id="Label_99" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="1081.33" y="1017">View backup history &#x2192;</tspan></text>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_4_27540">
+<rect width="1440" height="1071" fill="white"/>
+</clipPath>
+<clipPath id="clip1_4_27540">
+<rect width="129" height="43" fill="white" transform="translate(67 25)"/>
+</clipPath>
+<clipPath id="clip2_4_27540">
+<rect width="192" height="588" fill="white" transform="translate(16 95)"/>
+</clipPath>
+<clipPath id="clip3_4_27540">
+<rect width="192" height="196" fill="white" transform="translate(16 95)"/>
+</clipPath>
+<clipPath id="clip4_4_27540">
+<rect width="17" height="17" fill="white" transform="translate(26 263)"/>
+</clipPath>
+<clipPath id="clip5_4_27540">
+<rect width="192" height="196" fill="white" transform="translate(16 314)"/>
+</clipPath>
+<clipPath id="clip6_4_27540">
+<rect width="192" height="150" fill="white" transform="translate(16 533)"/>
+</clipPath>
+<clipPath id="clip7_4_27540">
+<rect width="17" height="17" fill="white" transform="translate(26 655)"/>
+</clipPath>
+<clipPath id="clip8_4_27540">
+<rect width="192" height="85" fill="white" transform="translate(16 710)"/>
+</clipPath>
+<clipPath id="clip9_4_27540">
+<rect width="17" height="17" fill="white" transform="translate(26 768)"/>
+</clipPath>
+<clipPath id="clip10_4_27540">
+<rect width="158" height="32" fill="white" transform="translate(24 840)"/>
+</clipPath>
+<clipPath id="clip11_4_27540">
+<rect width="118" height="32" fill="white" transform="translate(64 840)"/>
+</clipPath>
+<clipPath id="clip12_4_27540">
+<rect width="1216" height="1071" fill="white" transform="translate(224)"/>
+</clipPath>
+<clipPath id="clip13_4_27540">
+<rect width="182" height="19" fill="white" transform="translate(260 27.5)"/>
+</clipPath>
+<clipPath id="clip14_4_27540">
+<rect width="358" height="18" fill="white" transform="translate(1046 28)"/>
+</clipPath>
+<clipPath id="clip15_4_27540">
+<rect width="144" height="17" fill="white" transform="translate(1046 28.5)"/>
+</clipPath>
+<clipPath id="clip16_4_27540">
+<rect width="113" height="16" fill="white" transform="translate(1291 29)"/>
+</clipPath>
+<clipPath id="clip17_4_27540">
+<rect width="1144" height="89" fill="white" transform="translate(260 104)"/>
+</clipPath>
+<clipPath id="clip18_4_27540">
+<rect width="1144" height="40" fill="white" transform="translate(260 125)"/>
+</clipPath>
+<clipPath id="clip19_4_27540">
+<rect width="1144" height="127" fill="white" transform="translate(260 217)"/>
+</clipPath>
+<clipPath id="clip20_4_27540">
+<rect width="1144" height="243" fill="white" transform="translate(260 368)"/>
+</clipPath>
+<clipPath id="clip21_4_27540">
+<rect x="260" y="368" width="714" height="243" rx="8" fill="white"/>
+</clipPath>
+<clipPath id="clip22_4_27540">
+<rect width="470" height="163" fill="white" transform="translate(282 428)"/>
+</clipPath>
+<clipPath id="clip23_4_27540">
+<rect width="137" height="16" fill="white" transform="translate(282 428)"/>
+</clipPath>
+<clipPath id="clip24_4_27540">
+<rect width="63" height="16" fill="white" transform="translate(282 428)"/>
+</clipPath>
+<clipPath id="clip25_4_27540">
+<rect width="56" height="16" fill="white" transform="translate(363 428)"/>
+</clipPath>
+<clipPath id="clip26_4_27540">
+<rect width="66" height="89" fill="white" transform="translate(304 477)"/>
+</clipPath>
+<clipPath id="clip27_4_27540">
+<rect width="66" height="105" fill="white" transform="translate(404 461)"/>
+</clipPath>
+<clipPath id="clip28_4_27540">
+<rect width="66" height="87" fill="white" transform="translate(504 479)"/>
+</clipPath>
+<clipPath id="clip29_4_27540">
+<rect width="66" height="112" fill="white" transform="translate(604 454)"/>
+</clipPath>
+<clipPath id="clip30_4_27540">
+<rect x="994" y="368" width="410" height="222" rx="8" fill="white"/>
+</clipPath>
+<clipPath id="clip31_4_27540">
+<rect width="370" height="34" fill="white" transform="translate(1014 424)"/>
+</clipPath>
+<clipPath id="clip32_4_27540">
+<rect width="212" height="45" fill="white" transform="translate(1014 494)"/>
+</clipPath>
+<clipPath id="clip33_4_27540">
+<rect width="88" height="45" fill="white" transform="translate(1014 494)"/>
+</clipPath>
+<clipPath id="clip34_4_27540">
+<rect width="88" height="45" fill="white" transform="translate(1138 494)"/>
+</clipPath>
+<clipPath id="clip35_4_27540">
+<rect width="1144" height="283" fill="white" transform="translate(260 635)"/>
+</clipPath>
+<clipPath id="clip36_4_27540">
+<rect width="1144" height="25" fill="white" transform="translate(260 635)"/>
+</clipPath>
+<clipPath id="clip37_4_27540">
+<rect x="260" y="672" width="1144" height="246" fill="white"/>
+</clipPath>
+<clipPath id="clip38_4_27540">
+<rect width="1144" height="42" fill="white" transform="translate(260 672)"/>
+</clipPath>
+<clipPath id="clip39_4_27540">
+<rect width="1144" height="51" fill="white" transform="translate(260 714)"/>
+</clipPath>
+<clipPath id="clip40_4_27540">
+<rect width="1144" height="51" fill="white" transform="translate(260 765)"/>
+</clipPath>
+<clipPath id="clip41_4_27540">
+<rect width="1144" height="51" fill="white" transform="translate(260 816)"/>
+</clipPath>
+<clipPath id="clip42_4_27540">
+<rect width="1144" height="51" fill="white" transform="translate(260 867)"/>
+</clipPath>
+<clipPath id="clip43_4_27540">
+<rect width="1144" height="97" fill="white" transform="translate(260 942)"/>
+</clipPath>
+<clipPath id="clip44_4_27540">
+<rect width="304.667" height="61" fill="white" transform="translate(308 960)"/>
+</clipPath>
+<clipPath id="clip45_4_27540">
+<rect width="18" height="18" fill="white" transform="translate(664.667 960)"/>
+</clipPath>
+<clipPath id="clip46_4_27540">
+<rect width="304.667" height="61" fill="white" transform="translate(694.667 960)"/>
+</clipPath>
+<clipPath id="clip47_4_27540">
+<rect width="304.667" height="61" fill="white" transform="translate(1081.33 960)"/>
+</clipPath>
+</defs>
+</svg>

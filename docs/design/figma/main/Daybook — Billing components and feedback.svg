@@ -1,0 +1,703 @@
+<svg width="1440" height="1677" viewBox="0 0 1440 1677" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Daybook &#226;&#128;&#148; Billing components and feedback">
+<rect width="1440" height="1677" fill="#F5F6F3"/>
+<g id="Documentation header" clip-path="url(#clip0_11_3010)">
+<g id="Brand and edition" clip-path="url(#clip1_11_3010)">
+<g id="Brand" clip-path="url(#clip2_11_3010)">
+<g id="Brand mark">
+<rect x="48" y="48" width="33" height="36" rx="4" fill="#087F73"/>
+<g id="Icon">
+<mask id="stroke0_11_3010" fill="white">
+<path d="M72.5 76H56.5C55.9696 76 55.4609 75.7893 55.0858 75.4142C54.7107 75.0391 54.5 74.5304 54.5 74V65C54.5 64.4696 54.7107 63.9609 55.0858 63.5858C55.4609 63.2107 55.9696 63 56.5 63H58.5V58C58.5 57.4696 58.7107 56.9609 59.0858 56.5858C59.4609 56.2107 59.9696 56 60.5 56H72.5C73.0304 56 73.5391 56.2107 73.9142 56.5858C74.2893 56.9609 74.5 57.4696 74.5 58V74C74.5 74.5304 74.2893 75.0391 73.9142 75.4142C73.5391 75.7893 73.0304 76 72.5 76Z"/>
+</mask>
+<path id="Glyph" d="M67.5 72.85C67.9694 72.85 68.35 72.4694 68.35 72C68.35 71.5306 67.9694 71.15 67.5 71.15V72V72.85ZM62.5 71.15C62.0306 71.15 61.65 71.5306 61.65 72C61.65 72.4694 62.0306 72.85 62.5 72.85V72V71.15ZM70.5 68.85C70.9694 68.85 71.35 68.4694 71.35 68C71.35 67.5306 70.9694 67.15 70.5 67.15V68V68.85ZM62.5 67.15C62.0306 67.15 61.65 67.5306 61.65 68C61.65 68.4694 62.0306 68.85 62.5 68.85V68V67.15ZM56.5 75.15C56.0306 75.15 55.65 75.5306 55.65 76C55.65 76.4694 56.0306 76.85 56.5 76.85V76V75.15ZM59.35 63C59.35 62.5306 58.9694 62.15 58.5 62.15C58.0306 62.15 57.65 62.5306 57.65 63H58.5H59.35ZM67.5 72V71.15H62.5V72V72.85H67.5V72ZM70.5 68V67.15H62.5V68V68.85H70.5V68ZM58.5 63H57.65V74H58.5H59.35V63H58.5ZM58.5 74H57.65C57.65 74.305 57.5288 74.5975 57.3132 74.8132L57.9142 75.4142L58.5153 76.0153C59.0497 75.4808 59.35 74.7559 59.35 74H58.5ZM57.9142 75.4142L57.3132 74.8132C57.0975 75.0288 56.805 75.15 56.5 75.15V76V76.85C57.2559 76.85 57.9808 76.5497 58.5153 76.0153L57.9142 75.4142ZM63.5 60V60.85H69.5V60V59.15H63.5V60ZM69.5 60V60.85C69.5828 60.85 69.65 60.9172 69.65 61H70.5H71.35C71.35 59.9783 70.5217 59.15 69.5 59.15V60ZM70.5 61H69.65V63H70.5H71.35V61H70.5ZM70.5 63H69.65C69.65 63.0828 69.5828 63.15 69.5 63.15V64V64.85C70.5217 64.85 71.35 64.0217 71.35 63H70.5ZM69.5 64V63.15H63.5V64V64.85H69.5V64ZM63.5 64V63.15C63.4172 63.15 63.35 63.0828 63.35 63H62.5H61.65C61.65 64.0217 62.4783 64.85 63.5 64.85V64ZM62.5 63H63.35V61H62.5H61.65V63H62.5ZM62.5 61H63.35C63.35 60.9172 63.4172 60.85 63.5 60.85V60V59.15C62.4783 59.15 61.65 59.9783 61.65 61H62.5ZM73.9142 56.5858L72.7121 57.7879V57.7879L73.9142 56.5858ZM59.0858 56.5858L60.2879 57.7879V57.7879L59.0858 56.5858ZM58.5 63V64.7H60.2V63H58.5ZM55.0858 75.4142L56.2879 74.2121H56.2879L55.0858 75.4142ZM55.0858 63.5858L56.2879 64.7879V64.7879L55.0858 63.5858ZM56.5 76V77.7H72.5V76V74.3H56.5V76ZM72.5 76V77.7C73.4813 77.7 74.4224 77.3102 75.1163 76.6163L73.9142 75.4142L72.7121 74.2121C72.6559 74.2684 72.5796 74.3 72.5 74.3V76ZM73.9142 75.4142L75.1163 76.6163C75.8102 75.9224 76.2 74.9813 76.2 74H74.5H72.8C72.8 74.0796 72.7684 74.1559 72.7121 74.2121L73.9142 75.4142ZM74.5 74H76.2V58H74.5H72.8V74H74.5ZM74.5 58H76.2C76.2 57.0187 75.8102 56.0776 75.1163 55.3837L73.9142 56.5858L72.7121 57.7879C72.7684 57.8441 72.8 57.9204 72.8 58H74.5ZM73.9142 56.5858L75.1163 55.3837C74.4224 54.6898 73.4813 54.3 72.5 54.3V56V57.7C72.5796 57.7 72.6559 57.7316 72.7121 57.7879L73.9142 56.5858ZM72.5 56V54.3H60.5V56V57.7H72.5V56ZM60.5 56V54.3C59.5187 54.3 58.5776 54.6898 57.8837 55.3837L59.0858 56.5858L60.2879 57.7879C60.3441 57.7316 60.4204 57.7 60.5 57.7V56ZM59.0858 56.5858L57.8837 55.3837C57.1898 56.0776 56.8 57.0187 56.8 58H58.5H60.2C60.2 57.9204 60.2316 57.8441 60.2879 57.7879L59.0858 56.5858ZM58.5 58H56.8V63H58.5H60.2V58H58.5ZM56.5 76V74.3C56.4204 74.3 56.3441 74.2684 56.2879 74.2121L55.0858 75.4142L53.8837 76.6163C54.5776 77.3102 55.5187 77.7 56.5 77.7V76ZM55.0858 75.4142L56.2879 74.2121C56.2316 74.1559 56.2 74.0796 56.2 74H54.5H52.8C52.8 74.9813 53.1898 75.9224 53.8837 76.6163L55.0858 75.4142ZM54.5 74H56.2V65H54.5H52.8V74H54.5ZM54.5 65H56.2C56.2 64.9204 56.2316 64.8441 56.2879 64.7879L55.0858 63.5858L53.8837 62.3837C53.1898 63.0776 52.8 64.0187 52.8 65H54.5ZM55.0858 63.5858L56.2879 64.7879C56.3441 64.7316 56.4204 64.7 56.5 64.7V63V61.3C55.5187 61.3 54.5776 61.6898 53.8837 62.3837L55.0858 63.5858ZM56.5 63V64.7H58.5V63V61.3H56.5V63Z" fill="white" mask="url(#stroke0_11_3010)"/>
+</g>
+</g>
+<text id="Brand name" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="23" letter-spacing="-0.8px"><tspan x="91" y="74.3636">daybook</tspan></text>
+</g>
+<text id="Edition" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="600" letter-spacing="1.5px"><tspan x="1209" y="69.6364">02 / OPERATIONAL PATTERNS</tspan></text>
+</g>
+<text id="Title" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="32" letter-spacing="-1px"><tspan x="48" y="131.136">Built for the collection run.</tspan></text>
+<text id="Introduction" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="48" y="169.227">Resident context, route progress, bill arithmetic and clear feedback &#x2014; composed in the same Daybook language.</tspan></text>
+</g>
+<g id="Operational components" clip-path="url(#clip3_11_3010)">
+<g id="Section heading" clip-path="url(#clip4_11_3010)">
+<g id="Heading" clip-path="url(#clip5_11_3010)">
+<text id="Section marker" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="48" y="221">05</tspan></text>
+<text id="Title_2" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="75" y="223.545">Resident &#38; route context</tspan></text>
+</g>
+<text id="Label" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" letter-spacing="0em"><tspan x="1133" y="221">Consistent context before, during and after billing</tspan></text>
+</g>
+<g id="Context cards" clip-path="url(#clip6_11_3010)">
+<g id="Reusable/Card/Resident">
+<rect x="48.5" y="252.5" width="659" height="211" rx="7.5" fill="white"/>
+<rect x="48.5" y="252.5" width="659" height="211" rx="7.5" stroke="#D3DEDA"/>
+<g id="Resident identity" clip-path="url(#clip7_11_3010)">
+<g id="Initials">
+<rect x="72" y="277" width="40" height="40" rx="20" fill="#E2F2ED"/>
+<text id="Label_2" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="82" y="301.727">AN</tspan></text>
+</g>
+<g id="Resident details">
+<text id="Name" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="124" y="293.545">Anitha Nair</tspan></text>
+<text id="Label_3" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" letter-spacing="0em"><tspan x="124" y="314">R-0101 &#xb7; Drop 001 &#xb7; R01</tspan></text>
+</g>
+<g id="Status">
+<rect x="625" y="286.5" width="59" height="21" rx="4" fill="#E2F2ED"/>
+<circle id="Status indicator" cx="635" cy="297" r="2" fill="#087F73"/>
+<text id="Label_4" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="642" y="301">Active</tspan></text>
+</g>
+</g>
+<text id="Label_5" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="72" y="350.227">12, Lotus Lane &#xb7; Sector A &#xb7; Kochi 682036</tspan></text>
+<text id="Label_6" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="72" y="385.864">Malayala Manorama &#xb7; The Hindu</tspan></text>
+<g id="Resident actions" clip-path="url(#clip8_11_3010)">
+<text id="Label_7" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="72" y="428.727">&#x20b9;661.00 due &#xb7; October 2026</tspan></text>
+<g id="Action">
+<rect x="617.5" y="408.5" width="66" height="31" rx="5.5" fill="white"/>
+<rect x="617.5" y="408.5" width="66" height="31" rx="5.5" stroke="#D3DEDA"/>
+<g id="Icon_2">
+<g id="phone" clip-path="url(#clip9_11_3010)">
+<path id="Vector" d="M635.916 426.284C636.02 426.332 636.136 426.342 636.246 426.315C636.357 426.287 636.454 426.223 636.523 426.133L636.701 425.9C636.794 425.776 636.914 425.675 637.053 425.606C637.192 425.536 637.345 425.5 637.501 425.5H639.001C639.266 425.5 639.52 425.605 639.708 425.793C639.895 425.98 640.001 426.235 640.001 426.5V428C640.001 428.265 639.895 428.52 639.708 428.707C639.52 428.895 639.266 429 639.001 429C636.614 429 634.324 428.052 632.636 426.364C630.948 424.676 630 422.387 630 420C630 419.734 630.105 419.48 630.293 419.292C630.48 419.105 630.735 419 631 419H632.5C632.765 419 633.02 419.105 633.207 419.292C633.395 419.48 633.5 419.734 633.5 420V421.5C633.5 421.655 633.464 421.808 633.395 421.947C633.325 422.086 633.224 422.207 633.1 422.3L632.866 422.475C632.774 422.545 632.71 422.645 632.683 422.757C632.656 422.87 632.67 422.988 632.72 423.092C633.404 424.48 634.528 425.602 635.916 426.284Z" stroke-width="1.7" stroke-linecap="round" stroke="#172D2B"/>
+</g>
+</g>
+<text id="Label_8" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" font-weight="600" letter-spacing="0em"><tspan x="651" y="428.364">Call</tspan></text>
+</g>
+</g>
+</g>
+<g id="Reusable/Card/Route">
+<rect x="732.5" y="252.5" width="659" height="199" rx="7.5" fill="white"/>
+<rect x="732.5" y="252.5" width="659" height="199" rx="7.5" stroke="#D3DEDA"/>
+<g id="Route identity" clip-path="url(#clip10_11_3010)">
+<g id="Route marker">
+<rect x="756" y="277" width="40" height="40" rx="6" fill="#E2F2ED"/>
+<g id="Icon_3">
+<g id="route">
+<path id="Vector_2" d="M773.75 302.251C773.75 303.493 772.743 304.501 771.5 304.501C770.257 304.501 769.25 303.493 769.25 302.251C769.25 301.008 770.257 300 771.5 300C772.743 300 773.75 301.008 773.75 302.251ZM773.75 302.251H780.125C780.821 302.251 781.489 301.974 781.981 301.482C782.473 300.989 782.75 300.322 782.75 299.625C782.75 298.929 782.473 298.261 781.981 297.769C781.489 297.277 780.821 297 780.125 297H771.875C771.179 297 770.511 296.724 770.019 296.231C769.527 295.739 769.25 295.071 769.25 294.375C769.25 293.679 769.527 293.011 770.019 292.519C770.511 292.026 771.179 291.75 771.875 291.75H778.25M778.25 291.75C778.25 292.992 779.257 294 780.5 294C781.743 294 782.75 292.992 782.75 291.75C782.75 290.507 781.743 289.5 780.5 289.5C779.257 289.5 778.25 290.507 778.25 291.75Z" stroke-width="1.7" stroke-linecap="round" stroke="#087F73"/>
+</g>
+</g>
+</g>
+<g id="Route name">
+<text id="Title_3" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="808" y="293.545">R01 &#xb7; Panampilly Nagar</tspan></text>
+<text id="Label_9" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" letter-spacing="0em"><tspan x="808" y="314">326 residents &#xb7; October 2026 &#xb7; Delivery order</tspan></text>
+</g>
+<g id="Status_2">
+<rect x="1309" y="286.5" width="59" height="21" rx="4" fill="#E2F2ED"/>
+<circle id="Status indicator_2" cx="1319" cy="297" r="2" fill="#087F73"/>
+<text id="Label_10" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="1326" y="301">Active</tspan></text>
+</g>
+</g>
+<g id="Collection metrics" clip-path="url(#clip11_11_3010)">
+<g id="Metric" clip-path="url(#clip12_11_3010)">
+<text id="Label_11" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" letter-spacing="0em"><tspan x="756" y="348">Billable</tspan></text>
+<text id="Value" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="20" font-weight="600" letter-spacing="0em"><tspan x="756" y="377.273">&#x20b9;84,200</tspan></text>
+</g>
+<g id="Metric_2" clip-path="url(#clip13_11_3010)">
+<text id="Label_12" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" letter-spacing="0em"><tspan x="1023" y="348">Collected</tspan></text>
+<text id="Value_2" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="20" font-weight="600" letter-spacing="0em"><tspan x="1023" y="377.273">&#x20b9;68,400</tspan></text>
+</g>
+<g id="Metric_3" clip-path="url(#clip14_11_3010)">
+<text id="Label_13" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" letter-spacing="0em"><tspan x="1290" y="348">Remaining</tspan></text>
+<text id="Value_3" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="20" font-weight="600" letter-spacing="0em"><tspan x="1290" y="377.273">&#x20b9;15,800</tspan></text>
+</g>
+</g>
+<g id="Progress" clip-path="url(#clip15_11_3010)">
+<g id="Progress track">
+<rect x="756" y="400" width="612" height="4" rx="2" fill="#EEF3F0"/>
+<rect id="Collected share" x="756" y="400" width="488" height="4" fill="#087F73"/>
+</g>
+<text id="Label_14" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" letter-spacing="0em"><tspan x="756" y="424">81% collected &#xb7; 268 paid &#xb7; 58 remaining</tspan></text>
+</g>
+</g>
+</g>
+<g id="Section heading_2" clip-path="url(#clip16_11_3010)">
+<g id="Heading_2" clip-path="url(#clip17_11_3010)">
+<text id="Section marker_2" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="48" y="503">06</tspan></text>
+<text id="Title_4" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="75" y="505.545">Saved bill &#38; paid confirmation</tspan></text>
+</g>
+<text id="Label_15" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" letter-spacing="0em"><tspan x="1218" y="503">&#x20b9;541 + &#x20b9;240 &#x2212; &#x20b9;100 &#x2212; &#x20b9;20 = &#x20b9;661</tspan></text>
+</g>
+<g id="Bill examples" clip-path="url(#clip18_11_3010)">
+<g id="Saved bill specimen" clip-path="url(#clip19_11_3010)">
+<g id="Reusable/Bill/Summary">
+<rect x="48.5" y="534.5" width="799" height="634" rx="7.5" fill="white"/>
+<rect x="48.5" y="534.5" width="799" height="634" rx="7.5" stroke="#D3DEDA"/>
+<g id="Invoice heading" clip-path="url(#clip20_11_3010)">
+<g id="Recipient" clip-path="url(#clip21_11_3010)">
+<text id="Label_16" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="600" letter-spacing="0em"><tspan x="72" y="569.136">BILL TO &#xb7; R-0101</tspan></text>
+<text id="Resident name" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="22" font-weight="600" letter-spacing="0em"><tspan x="72" y="599.5">Anitha Nair</tspan></text>
+<text id="Label_17" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="72" y="622.864">12, Lotus Lane &#xb7; Sector A &#xb7; Kochi 682036</tspan></text>
+</g>
+<g id="Invoice identity" clip-path="url(#clip22_11_3010)">
+<g id="Status_3">
+<rect x="766" y="561.5" width="58" height="21" rx="4" fill="#E2F2ED"/>
+<circle id="Status indicator_3" cx="776" cy="572" r="2" fill="#087F73"/>
+<text id="Label_18" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="783" y="576">Saved</tspan></text>
+</g>
+<text id="Label_19" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" letter-spacing="0em"><tspan x="746" y="599.5">DB-2026-1048</tspan></text>
+<text id="Label_20" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="666" y="619.636">Issued 01 Nov &#xb7; Due 07 Nov 2026</tspan></text>
+</g>
+</g>
+<g id="Period">
+<mask id="path-53-inside-1_11_3010" fill="white">
+<path d="M72 645H824V688H72V645Z"/>
+</mask>
+<path d="M72 645V646H824V645V644H72V645ZM824 688V687H72V688V689H824V688Z" fill="#D3DEDA" mask="url(#path-53-inside-1_11_3010)"/>
+<text id="Label_21" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="72" y="671.227">01&#x2013;31 October 2026</tspan></text>
+<text id="Label_22" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" letter-spacing="0em"><tspan x="675" y="669">Actual delivered copies &#xb7; INR</tspan></text>
+</g>
+<g id="Itemized deliveries">
+<g clip-path="url(#clip23_11_3010)">
+<g id="Column headings" clip-path="url(#clip24_11_3010)">
+<rect width="752" height="38" transform="translate(72 706)" fill="#EEF3F0"/>
+<g id="Data cell">
+<mask id="path-59-inside-2_11_3010" fill="white">
+<path d="M72 706H580V744H72V706Z"/>
+</mask>
+<path d="M580 744V745H581V744H580ZM580 706H579V744H580H581V706H580ZM580 744V743H72V744V745H580V744Z" fill="#D3DEDA" mask="url(#path-59-inside-2_11_3010)"/>
+<text id="Value_4" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="600" letter-spacing="0em"><tspan x="84" y="728.636">PUBLICATION / DELIVERY</tspan></text>
+</g>
+<g id="Data cell_2">
+<mask id="path-62-inside-3_11_3010" fill="white">
+<path d="M580 706H648V744H580V706Z"/>
+</mask>
+<path d="M648 744V745H649V744H648ZM648 706H647V744H648H649V706H648ZM648 744V743H580V744V745H648V744Z" fill="#D3DEDA" mask="url(#path-62-inside-3_11_3010)"/>
+<text id="Value_5" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="600" letter-spacing="0em"><tspan x="592" y="728.636">QTY</tspan></text>
+</g>
+<g id="Data cell_3">
+<mask id="path-65-inside-4_11_3010" fill="white">
+<path d="M648 706H716V744H648V706Z"/>
+</mask>
+<path d="M716 744V745H717V744H716ZM716 706H715V744H716H717V706H716ZM716 744V743H648V744V745H716V744Z" fill="#D3DEDA" mask="url(#path-65-inside-4_11_3010)"/>
+<text id="Value_6" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="600" letter-spacing="0em"><tspan x="660" y="728.636">RATE &#x20b9;</tspan></text>
+</g>
+<g id="Data cell_4">
+<mask id="path-68-inside-5_11_3010" fill="white">
+<path d="M716 706H824V744H716V706Z"/>
+</mask>
+<path d="M824 744V745H825V744H824ZM824 706H823V744H824H825V706H824ZM824 744V743H716V744V745H824V744Z" fill="#D3DEDA" mask="url(#path-68-inside-5_11_3010)"/>
+<text id="Value_7" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="600" letter-spacing="0em"><tspan x="758.504" y="728.636">AMOUNT &#x20b9;</tspan></text>
+</g>
+</g>
+<g id="Delivery record" clip-path="url(#clip25_11_3010)">
+<rect width="752" height="52" transform="translate(72 744)" fill="white"/>
+<g id="Data cell_5">
+<mask id="path-71-inside-6_11_3010" fill="white">
+<path d="M72 744H580V796H72V744Z"/>
+</mask>
+<path d="M580 796V797H581V796H580ZM580 744H579V796H580H581V744H580ZM580 796V795H72V796V797H580V796Z" fill="#D3DEDA" mask="url(#path-71-inside-6_11_3010)"/>
+<text id="Value_8" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="84" y="774.364">Malayala Manorama &#xb7; Weekdays</tspan></text>
+</g>
+<g id="Data cell_6">
+<mask id="path-74-inside-7_11_3010" fill="white">
+<path d="M580 744H648V796H580V744Z"/>
+</mask>
+<path d="M648 796V797H649V796H648ZM648 744H647V796H648H649V744H648ZM648 796V795H580V796V797H648V796Z" fill="#D3DEDA" mask="url(#path-74-inside-7_11_3010)"/>
+<text id="Value_9" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="592" y="774.364">21</tspan></text>
+</g>
+<g id="Data cell_7">
+<mask id="path-77-inside-8_11_3010" fill="white">
+<path d="M648 744H716V796H648V744Z"/>
+</mask>
+<path d="M716 796V797H717V796H716ZM716 744H715V796H716H717V744H716ZM716 796V795H648V796V797H716V796Z" fill="#D3DEDA" mask="url(#path-77-inside-8_11_3010)"/>
+<text id="Value_10" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="660" y="774.364">7.00</tspan></text>
+</g>
+<g id="Data cell_8">
+<mask id="path-80-inside-9_11_3010" fill="white">
+<path d="M716 744H824V796H716V744Z"/>
+</mask>
+<path d="M824 796V797H825V796H824ZM824 744H823V796H824H825V744H824ZM824 796V795H716V796V797H824V796Z" fill="#D3DEDA" mask="url(#path-80-inside-9_11_3010)"/>
+<text id="Value_11" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" font-weight="600" letter-spacing="0em"><tspan x="773.551" y="774.364">147.00</tspan></text>
+</g>
+</g>
+<g id="Delivery record_2" clip-path="url(#clip26_11_3010)">
+<rect width="752" height="52" transform="translate(72 796)" fill="white"/>
+<g id="Data cell_9">
+<mask id="path-83-inside-10_11_3010" fill="white">
+<path d="M72 796H580V848H72V796Z"/>
+</mask>
+<path d="M580 848V849H581V848H580ZM580 796H579V848H580H581V796H580ZM580 848V847H72V848V849H580V848Z" fill="#D3DEDA" mask="url(#path-83-inside-10_11_3010)"/>
+<text id="Value_12" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="84" y="826.364">Malayala Manorama &#xb7; Weekends</tspan></text>
+</g>
+<g id="Data cell_10">
+<mask id="path-86-inside-11_11_3010" fill="white">
+<path d="M580 796H648V848H580V796Z"/>
+</mask>
+<path d="M648 848V849H649V848H648ZM648 796H647V848H648H649V796H648ZM648 848V847H580V848V849H648V848Z" fill="#D3DEDA" mask="url(#path-86-inside-11_11_3010)"/>
+<text id="Value_13" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="592" y="826.364">8</tspan></text>
+</g>
+<g id="Data cell_11">
+<mask id="path-89-inside-12_11_3010" fill="white">
+<path d="M648 796H716V848H648V796Z"/>
+</mask>
+<path d="M716 848V849H717V848H716ZM716 796H715V848H716H717V796H716ZM716 848V847H648V848V849H716V848Z" fill="#D3DEDA" mask="url(#path-89-inside-12_11_3010)"/>
+<text id="Value_14" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="660" y="826.364">8.00</tspan></text>
+</g>
+<g id="Data cell_12">
+<mask id="path-92-inside-13_11_3010" fill="white">
+<path d="M716 796H824V848H716V796Z"/>
+</mask>
+<path d="M824 848V849H825V848H824ZM824 796H823V848H824H825V796H824ZM824 848V847H716V848V849H824V848Z" fill="#D3DEDA" mask="url(#path-92-inside-13_11_3010)"/>
+<text id="Value_15" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" font-weight="600" letter-spacing="0em"><tspan x="777.324" y="826.364">64.00</tspan></text>
+</g>
+</g>
+<g id="Delivery record_3" clip-path="url(#clip27_11_3010)">
+<rect width="752" height="52" transform="translate(72 848)" fill="white"/>
+<g id="Data cell_13">
+<mask id="path-95-inside-14_11_3010" fill="white">
+<path d="M72 848H580V900H72V848Z"/>
+</mask>
+<path d="M580 900V901H581V900H580ZM580 848H579V900H580H581V848H580ZM580 900V899H72V900V901H580V900Z" fill="#D3DEDA" mask="url(#path-95-inside-14_11_3010)"/>
+<text id="Value_16" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="84" y="878.364">The Hindu &#xb7; Daily</tspan></text>
+</g>
+<g id="Data cell_14">
+<mask id="path-98-inside-15_11_3010" fill="white">
+<path d="M580 848H648V900H580V848Z"/>
+</mask>
+<path d="M648 900V901H649V900H648ZM648 848H647V900H648H649V848H648ZM648 900V899H580V900V901H648V900Z" fill="#D3DEDA" mask="url(#path-98-inside-15_11_3010)"/>
+<text id="Value_17" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="592" y="878.364">30</tspan></text>
+</g>
+<g id="Data cell_15">
+<mask id="path-101-inside-16_11_3010" fill="white">
+<path d="M648 848H716V900H648V848Z"/>
+</mask>
+<path d="M716 900V901H717V900H716ZM716 848H715V900H716H717V848H716ZM716 900V899H648V900V901H716V900Z" fill="#D3DEDA" mask="url(#path-101-inside-16_11_3010)"/>
+<text id="Value_18" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="660" y="878.364">11.00</tspan></text>
+</g>
+<g id="Data cell_16">
+<mask id="path-104-inside-17_11_3010" fill="white">
+<path d="M716 848H824V900H716V848Z"/>
+</mask>
+<path d="M824 900V901H825V900H824ZM824 848H823V900H824H825V848H824ZM824 900V899H716V900V901H824V900Z" fill="#D3DEDA" mask="url(#path-104-inside-17_11_3010)"/>
+<text id="Value_19" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" font-weight="600" letter-spacing="0em"><tspan x="769.555" y="878.364">330.00</tspan></text>
+</g>
+</g>
+</g>
+<rect x="72.5" y="706.5" width="751" height="193" stroke="#D3DEDA"/>
+</g>
+<text id="Delivery note" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" letter-spacing="0em"><tspan x="72" y="930.5">12 Oct vacation hold excluded from both daily papers. 25 Oct delivery removed; The Hindu rate updated to &#x20b9;11. No tax added.</tspan></text>
+<g id="Calculation">
+<rect x="72" y="953" width="752" height="192" rx="6" fill="#EEF3F0"/>
+<g id="Amount breakdown" clip-path="url(#clip28_11_3010)">
+<text id="Description" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="88" y="980.864">Current deliveries</tspan></text>
+<text id="Amount" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="759" y="981.727">&#x20b9;541.00</tspan></text>
+</g>
+<g id="Amount breakdown_2" clip-path="url(#clip29_11_3010)">
+<text id="Description_2" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="88" y="1008.86">Previous balance</tspan></text>
+<text id="Amount_2" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="757" y="1009.73">&#x20b9;240.00</tspan></text>
+</g>
+<g id="Amount breakdown_3" clip-path="url(#clip30_11_3010)">
+<text id="Description_3" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="88" y="1036.86">Payments already received</tspan></text>
+<text id="Amount_3" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="750" y="1037.73">&#x2212;&#x20b9;100.00</tspan></text>
+</g>
+<g id="Amount breakdown_4" clip-path="url(#clip31_11_3010)">
+<text id="Description_4" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="88" y="1064.86">Delivery credits / adjustments</tspan></text>
+<text id="Amount_4" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="757" y="1065.73">&#x2212;&#x20b9;20.00</tspan></text>
+</g>
+<g id="Total due">
+<mask id="path-117-inside-18_11_3010" fill="white">
+<path d="M88 1081H808V1129H88V1081Z"/>
+</mask>
+<path d="M88 1081V1082H808V1081V1080H88V1081Z" fill="#D3DEDA" mask="url(#path-117-inside-18_11_3010)"/>
+<text id="Label_23" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="88" y="1115">TOTAL AMOUNT DUE</tspan></text>
+<text id="Total amount" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="30" font-weight="600" letter-spacing="-1px"><tspan x="697" y="1121.91">&#x20b9;661.00</tspan></text>
+</g>
+</g>
+</g>
+<text id="Label_24" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" letter-spacing="0em"><tspan x="48" y="1193">Saved bill before payment &#xb7; Amounts mirror the existing Anitha Nair invoice.</tspan></text>
+</g>
+<g id="Paid state and continuity" clip-path="url(#clip32_11_3010)">
+<g id="Reusable/Confirmation/Paid">
+<rect x="872.5" y="534.5" width="519" height="473" rx="11.5" fill="white"/>
+<rect x="872.5" y="534.5" width="519" height="473" rx="11.5" stroke="#D3DEDA"/>
+<g id="Success symbol">
+<rect x="1106" y="562" width="52" height="52" rx="26" fill="#E2F2ED"/>
+<g id="Icon_4">
+<mask id="stroke1_11_3010" fill="white">
+<path d="M1132 602C1139.73 602 1146 595.732 1146 588C1146 580.268 1139.73 574 1132 574C1124.27 574 1118 580.268 1118 588C1118 595.732 1124.27 602 1132 602Z"/>
+</mask>
+<path id="Glyph_2" d="M1128.4 587.399C1128.07 587.067 1127.53 587.067 1127.2 587.399C1126.87 587.731 1126.87 588.269 1127.2 588.601L1127.8 588L1128.4 587.399ZM1130.6 590.8L1130 591.401L1130.6 592.002L1131.2 591.401L1130.6 590.8ZM1136.8 585.801C1137.13 585.469 1137.13 584.931 1136.8 584.599C1136.47 584.267 1135.93 584.267 1135.6 584.599L1136.2 585.2L1136.8 585.801ZM1127.8 588L1127.2 588.601L1130 591.401L1130.6 590.8L1131.2 590.199L1128.4 587.399L1127.8 588ZM1130.6 590.8L1131.2 591.401L1136.8 585.801L1136.2 585.2L1135.6 584.599L1130 590.199L1130.6 590.8ZM1146 588H1144.3C1144.3 594.793 1138.79 600.3 1132 600.3V602V603.7C1140.67 603.7 1147.7 596.671 1147.7 588H1146ZM1132 602V600.3C1125.21 600.3 1119.7 594.793 1119.7 588H1118H1116.3C1116.3 596.671 1123.33 603.7 1132 603.7V602ZM1118 588H1119.7C1119.7 581.207 1125.21 575.7 1132 575.7V574V572.3C1123.33 572.3 1116.3 579.329 1116.3 588H1118ZM1132 574V575.7C1138.79 575.7 1144.3 581.207 1144.3 588H1146H1147.7C1147.7 579.329 1140.67 572.3 1132 572.3V574Z" fill="#087F73" mask="url(#stroke1_11_3010)"/>
+</g>
+</g>
+<text id="Title_5" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="23" font-weight="600" letter-spacing="0em"><tspan x="1029.5" y="654.364">Payment recorded</tspan></text>
+<text id="Description_5" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="917.284" y="693.227">Anitha Nair&#x2019;s October bill is paid. Your collection position stays on R01.</tspan></text>
+<g id="Status_4">
+<rect x="1107.5" y="717" width="49" height="21" rx="4" fill="#E2F2ED"/>
+<circle id="Status indicator_4" cx="1117.5" cy="727.5" r="2" fill="#087F73"/>
+<text id="Label_25" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="1124.5" y="731.5">Paid</tspan></text>
+</g>
+<text id="Payment amount" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="36" font-weight="600" letter-spacing="0em"><tspan x="1061.5" y="791.091">&#x20b9;661.00</tspan></text>
+<g id="Receipt details">
+<mask id="path-131-inside-19_11_3010" fill="white">
+<path d="M900 818H1364V922H900V818Z"/>
+</mask>
+<path d="M900 818V819H1364V818V817H900V818ZM1364 922V921H900V922V923H1364V922Z" fill="#D3DEDA" mask="url(#path-131-inside-19_11_3010)"/>
+<g id="Amount breakdown_5" clip-path="url(#clip33_11_3010)">
+<text id="Description_6" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="900" y="845.864">Invoice</tspan></text>
+<text id="Amount_5" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="1272" y="846.727">DB-2026-1048</tspan></text>
+</g>
+<g id="Amount breakdown_6" clip-path="url(#clip34_11_3010)">
+<text id="Description_7" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="900" y="873.864">Cash &#xb7; 01 Nov 2026</tspan></text>
+<text id="Amount_6" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="1303" y="874.727">09:48 AM</tspan></text>
+</g>
+<g id="Amount breakdown_7" clip-path="url(#clip35_11_3010)">
+<text id="Description_8" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="900" y="901.864">Balance remaining</tspan></text>
+<text id="Amount_7" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="1327" y="902.727">&#x20b9;0.00</tspan></text>
+</g>
+</g>
+<g id="Confirmation actions">
+<g id="Action_2">
+<rect x="900.5" y="940.5" width="131" height="39" rx="5.5" fill="white"/>
+<rect x="900.5" y="940.5" width="131" height="39" rx="5.5" stroke="#D3DEDA"/>
+<g id="Icon_5">
+<mask id="stroke2_11_3010" fill="white">
+<path d="M919.4 963.6H918.2C917.882 963.6 917.577 963.474 917.351 963.249C917.126 963.023 917 962.718 917 962.4V959.4C917 959.082 917.126 958.777 917.351 958.551C917.577 958.326 917.882 958.2 918.2 958.2H919.4V954.6C919.4 954.441 919.463 954.288 919.576 954.176C919.688 954.063 919.841 954 920 954H926C926.159 954 926.312 954.063 926.424 954.176C926.537 954.288 926.6 954.441 926.6 954.6V958.2H927.8C928.118 958.2 928.423 958.326 928.649 958.551C928.874 958.777 929 959.082 929 959.4V962.4C929 962.718 928.874 963.023 928.649 963.249C928.423 963.474 928.118 963.6 927.8 963.6H926.6V965.4C926.6 965.731 926.331 966 926 966H920C919.669 966 919.4 965.731 919.4 965.4V963.6Z"/>
+</mask>
+<path id="Glyph_3" d="M918.55 963.6C918.55 964.069 918.931 964.45 919.4 964.45C919.869 964.45 920.25 964.069 920.25 963.6H919.4H918.55ZM919.4 957.35C918.931 957.35 918.55 957.731 918.55 958.2C918.55 958.669 918.931 959.05 919.4 959.05V958.2V957.35ZM926.6 959.05C927.069 959.05 927.45 958.669 927.45 958.2C927.45 957.731 927.069 957.35 926.6 957.35V958.2V959.05ZM925.75 963.6C925.75 964.069 926.131 964.45 926.6 964.45C927.069 964.45 927.45 964.069 927.45 963.6H926.6H925.75ZM919.4 958.2V959.05H926.6V958.2V957.35H919.4V958.2ZM920 961.2V962.05H926V961.2V960.35H920V961.2ZM926 961.2V962.05C925.862 962.05 925.75 961.938 925.75 961.8H926.6H927.45C927.45 960.999 926.801 960.35 926 960.35V961.2ZM926.6 961.8H925.75V963.6H926.6H927.45V961.8H926.6ZM919.4 963.6H920.25V961.8H919.4H918.55V963.6H919.4ZM919.4 961.8H920.25C920.25 961.938 920.138 962.05 920 962.05V961.2V960.35C919.199 960.35 918.55 960.999 918.55 961.8H919.4ZM919.4 963.6H921.1V961.9H919.4V963.6ZM917.351 963.249L916.149 964.451L916.149 964.451L917.351 963.249ZM917.351 958.551L916.149 957.349H916.149L917.351 958.551ZM919.4 958.2V959.9H921.1V958.2H919.4ZM926.6 958.2H924.9V959.9H926.6V958.2ZM928.649 958.551L927.446 959.754L927.446 959.754L928.649 958.551ZM926.6 963.6V961.9H924.9V963.6H926.6ZM919.576 954.176L918.374 952.974L918.374 952.974L919.576 954.176ZM926.424 954.176L927.626 952.974V952.974L926.424 954.176ZM919.4 963.6V961.9H918.2V963.6V965.3H919.4V963.6ZM918.2 963.6V961.9C918.333 961.9 918.46 961.953 918.554 962.046L917.351 963.249L916.149 964.451C916.693 964.994 917.431 965.3 918.2 965.3V963.6ZM917.351 963.249L918.554 962.046C918.647 962.14 918.7 962.267 918.7 962.4H917H915.3C915.3 963.169 915.606 963.907 916.149 964.451L917.351 963.249ZM917 962.4H918.7V959.4H917H915.3V962.4H917ZM917 959.4H918.7C918.7 959.533 918.647 959.66 918.554 959.754L917.351 958.551L916.149 957.349C915.606 957.893 915.3 958.631 915.3 959.4H917ZM917.351 958.551L918.554 959.754C918.46 959.847 918.333 959.9 918.2 959.9V958.2V956.5C917.431 956.5 916.693 956.806 916.149 957.349L917.351 958.551ZM918.2 958.2V959.9H919.4V958.2V956.5H918.2V958.2ZM926.6 958.2V959.9H927.8V958.2V956.5H926.6V958.2ZM927.8 958.2V959.9C927.667 959.9 927.54 959.847 927.446 959.754L928.649 958.551L929.851 957.349C929.307 956.806 928.569 956.5 927.8 956.5V958.2ZM928.649 958.551L927.446 959.754C927.353 959.66 927.3 959.533 927.3 959.4H929H930.7C930.7 958.631 930.394 957.893 929.851 957.349L928.649 958.551ZM929 959.4H927.3V962.4H929H930.7V959.4H929ZM929 962.4H927.3C927.3 962.267 927.353 962.14 927.446 962.046L928.649 963.249L929.851 964.451C930.394 963.907 930.7 963.169 930.7 962.4H929ZM928.649 963.249L927.446 962.046C927.54 961.953 927.667 961.9 927.8 961.9V963.6V965.3C928.569 965.3 929.307 964.994 929.851 964.451L928.649 963.249ZM927.8 963.6V961.9H926.6V963.6V965.3H927.8V963.6ZM919.4 958.2H921.1V954.6H919.4H917.7V958.2H919.4ZM919.4 954.6H921.1C921.1 954.892 920.984 955.172 920.778 955.378L919.576 954.176L918.374 952.974C917.942 953.405 917.7 953.99 917.7 954.6H919.4ZM919.576 954.176L920.778 955.378C920.572 955.584 920.292 955.7 920 955.7V954V952.3C919.39 952.3 918.805 952.542 918.374 952.974L919.576 954.176ZM920 954V955.7H926V954V952.3H920V954ZM926 954V955.7C925.708 955.7 925.428 955.584 925.222 955.378L926.424 954.176L927.626 952.974C927.195 952.542 926.61 952.3 926 952.3V954ZM926.424 954.176L925.222 955.378C925.016 955.172 924.9 954.892 924.9 954.6H926.6H928.3C928.3 953.99 928.058 953.405 927.626 952.974L926.424 954.176ZM926.6 954.6H924.9V958.2H926.6H928.3V954.6H926.6ZM926.6 963.6H924.9V965.4H926.6H928.3V963.6H926.6ZM926.6 965.4H924.9C924.9 964.792 925.392 964.3 926 964.3V966V967.7C927.27 967.7 928.3 966.67 928.3 965.4H926.6ZM926 966V964.3H920V966V967.7H926V966ZM920 966V964.3C920.608 964.3 921.1 964.792 921.1 965.4H919.4H917.7C917.7 966.67 918.73 967.7 920 967.7V966ZM919.4 965.4H921.1V963.6H919.4H917.7V965.4H919.4Z" fill="#172D2B" mask="url(#stroke2_11_3010)"/>
+</g>
+<text id="Label_26" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="939" y="964.727">Print receipt</tspan></text>
+</g>
+<g id="Action_3">
+<rect x="1042" y="940" width="136" height="40" rx="6" fill="#087F73"/>
+<g id="Icon_6">
+<path id="Glyph_4" d="M1059 960H1071M1065 966L1071 960L1065 954" stroke-width="1.7" stroke-linecap="round" stroke="white"/>
+</g>
+<text id="Label_27" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="1081" y="964.727">Move to next</tspan></text>
+</g>
+</g>
+</g>
+<g id="Reusable/Collection/NextResident">
+<rect x="872" y="1028" width="520" height="128" rx="6" fill="#E2F2ED"/>
+<text id="Eyebrow" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="600" letter-spacing="0em"><tspan x="892" y="1057.64">NEXT IN DELIVERY ORDER</tspan></text>
+<text id="Resident" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="16" font-weight="600" letter-spacing="0em"><tspan x="892" y="1083.32">Leela Menon</tspan></text>
+<text id="Label_28" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="892" y="1107.86">Drop 002 &#xb7; 14, Lotus Lane &#xb7; &#x20b9;359 due</tspan></text>
+<text id="Label_29" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" letter-spacing="0em"><tspan x="892" y="1132">R01 &#xb7; Panampilly Nagar &#xb7; Resident 002 of 326</tspan></text>
+</g>
+</g>
+</g>
+<g id="Workflow actions">
+<rect x="48.5" y="1221.5" width="1343" height="127" rx="7.5" fill="white"/>
+<rect x="48.5" y="1221.5" width="1343" height="127" rx="7.5" stroke="#D3DEDA"/>
+<g id="Section heading_3" clip-path="url(#clip36_11_3010)">
+<g id="Heading_3" clip-path="url(#clip37_11_3010)">
+<text id="Section marker_3" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="72" y="1260">07</tspan></text>
+<text id="Title_6" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="98" y="1262.55">Bill workflow actions</tspan></text>
+</g>
+<text id="Label_30" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" letter-spacing="0em"><tspan x="1183" y="1260">Keep the next resident within reach</tspan></text>
+</g>
+<g id="Bill action specimens">
+<g id="Reusable/Button/Workflow/Generate bill">
+<rect x="72" y="1285" width="134" height="40" rx="6" fill="#087F73"/>
+<g id="Icon_7">
+<mask id="stroke3_11_3010" fill="white">
+<path d="M89.2197 1299.18C89.079 1299.29 89 1299.44 89 1299.6V1310.4C89 1310.56 89.079 1310.71 89.2197 1310.82C89.3603 1310.93 89.5511 1311 89.75 1311C89.9357 1311 90.1179 1310.96 90.275 1310.88L90.9747 1310.52C91.1315 1310.44 91.3137 1310.39 91.4998 1310.39C91.6858 1310.39 91.868 1310.44 92.0247 1310.52L92.7253 1310.88C92.882 1310.96 93.0642 1311 93.2502 1311C93.4363 1311 93.6185 1310.96 93.7752 1310.88L94.475 1310.52C94.6318 1310.44 94.8139 1310.39 95 1310.39C95.1861 1310.39 95.3682 1310.44 95.525 1310.52L96.2248 1310.88C96.3815 1310.96 96.5637 1311 96.7498 1311C96.9358 1311 97.118 1310.96 97.2747 1310.88L97.9753 1310.52C98.132 1310.44 98.3142 1310.39 98.5002 1310.39C98.6863 1310.39 98.8685 1310.44 99.0253 1310.52L99.725 1310.88C99.8821 1310.96 100.064 1311 100.25 1311C100.449 1311 100.64 1310.93 100.78 1310.82C100.921 1310.71 101 1310.56 101 1310.4V1299.6C101 1299.44 100.921 1299.29 100.78 1299.18C100.64 1299.07 100.449 1299 100.25 1299C100.064 1299 99.8821 1299.04 99.725 1299.12L99.0253 1299.48C98.8685 1299.56 98.6863 1299.61 98.5002 1299.61C98.3142 1299.61 98.132 1299.56 97.9753 1299.48L97.2747 1299.12C97.118 1299.04 96.9358 1299 96.7498 1299C96.5637 1299 96.3815 1299.04 96.2248 1299.12L95.525 1299.48C95.3682 1299.56 95.1861 1299.61 95 1299.61C94.8139 1299.61 94.6318 1299.56 94.475 1299.48L93.7752 1299.12C93.6185 1299.04 93.4363 1299 93.2502 1299C93.0642 1299 92.882 1299.04 92.7253 1299.12L92.0247 1299.48C91.868 1299.56 91.6858 1299.61 91.4998 1299.61C91.3137 1299.61 91.1315 1299.56 90.9747 1299.48L90.275 1299.12C90.1179 1299.04 89.9357 1299 89.75 1299C89.5511 1299 89.3603 1299.07 89.2197 1299.18Z"/>
+</mask>
+<path id="Glyph_5" d="M95.75 1308.25C96.2194 1308.25 96.6 1307.87 96.6 1307.4C96.6 1306.93 96.2194 1306.55 95.75 1306.55V1307.4V1308.25ZM92 1306.55C91.5306 1306.55 91.15 1306.93 91.15 1307.4C91.15 1307.87 91.5306 1308.25 92 1308.25V1307.4V1306.55ZM96.5 1303.45C96.9694 1303.45 97.35 1303.07 97.35 1302.6C97.35 1302.13 96.9694 1301.75 96.5 1301.75V1302.6V1303.45ZM92 1301.75C91.5306 1301.75 91.15 1302.13 91.15 1302.6C91.15 1303.07 91.5306 1303.45 92 1303.45V1302.6V1301.75ZM98 1305.85C98.4694 1305.85 98.85 1305.47 98.85 1305C98.85 1304.53 98.4694 1304.15 98 1304.15V1305V1305.85ZM92 1304.15C91.5306 1304.15 91.15 1304.53 91.15 1305C91.15 1305.47 91.5306 1305.85 92 1305.85V1305V1304.15ZM95.75 1307.4V1306.55H92V1307.4V1308.25H95.75V1307.4ZM96.5 1302.6V1301.75H92V1302.6V1303.45H96.5V1302.6ZM98 1305V1304.15H92V1305V1305.85H98V1305ZM89.2197 1299.18L90.2814 1300.51H90.2814L89.2197 1299.18ZM89.75 1299V1300.7L89.7575 1300.7L89.75 1299ZM90.275 1299.12L91.0524 1297.61L91.0461 1297.61L91.0397 1297.6L90.275 1299.12ZM90.9747 1299.48L90.1973 1300.99L90.2012 1301L90.9747 1299.48ZM92.0247 1299.48L92.7983 1301L92.8015 1300.99L92.0247 1299.48ZM92.7253 1299.12L91.9517 1297.61L91.9485 1297.61L92.7253 1299.12ZM93.7752 1299.12L94.5527 1297.61L94.5488 1297.61L93.7752 1299.12ZM94.475 1299.48L93.6976 1300.99L93.7015 1301L94.475 1299.48ZM95.525 1299.48L96.2985 1301L96.3024 1300.99L95.525 1299.48ZM96.2248 1299.12L95.4512 1297.61L95.4473 1297.61L96.2248 1299.12ZM97.2747 1299.12L98.0515 1297.61L98.0483 1297.61L97.2747 1299.12ZM97.9753 1299.48L97.1985 1300.99L97.2017 1301L97.9753 1299.48ZM99.0253 1299.48L99.7988 1301L99.8027 1300.99L99.0253 1299.48ZM99.725 1299.12L98.9603 1297.6L98.9539 1297.61L98.9476 1297.61L99.725 1299.12ZM100.25 1299L100.243 1300.7H100.25V1299ZM100.78 1299.18L99.7186 1300.51V1300.51L100.78 1299.18ZM100.25 1311V1309.3L100.243 1309.3L100.25 1311ZM99.725 1310.88L98.9476 1312.39L98.9539 1312.39L98.9603 1312.4L99.725 1310.88ZM99.0253 1310.52L99.8027 1309.01L99.7988 1309L99.0253 1310.52ZM97.9753 1310.52L97.2017 1309L97.1985 1309.01L97.9753 1310.52ZM97.2747 1310.88L98.0483 1312.39L98.0515 1312.39L97.2747 1310.88ZM96.2248 1310.88L95.4473 1312.39L95.4512 1312.39L96.2248 1310.88ZM95.525 1310.52L96.3024 1309.01L96.2985 1309L95.525 1310.52ZM94.475 1310.52L93.7015 1309L93.6976 1309.01L94.475 1310.52ZM93.7752 1310.88L94.5488 1312.39L94.5527 1312.39L93.7752 1310.88ZM92.7253 1310.88L91.9485 1312.39L91.9517 1312.39L92.7253 1310.88ZM92.0247 1310.52L92.8015 1309.01L92.7983 1309L92.0247 1310.52ZM90.9747 1310.52L90.2012 1309L90.1973 1309.01L90.9747 1310.52ZM90.275 1310.88L91.0397 1312.4L91.0461 1312.39L91.0524 1312.39L90.275 1310.88ZM89.75 1311L89.7575 1309.3H89.75V1311ZM89.2197 1310.82L90.2814 1309.49H90.2814L89.2197 1310.82ZM89 1299.6H90.7C90.7 1300.03 90.4838 1300.34 90.2814 1300.51L89.2197 1299.18L88.158 1297.85C87.6742 1298.24 87.3 1298.85 87.3 1299.6H89ZM89.2197 1299.18L90.2814 1300.51C90.0888 1300.66 89.8941 1300.7 89.75 1300.7V1299V1297.3C89.2081 1297.3 88.6319 1297.47 88.158 1297.85L89.2197 1299.18ZM89.75 1299L89.7575 1300.7C89.6904 1300.7 89.6059 1300.69 89.5103 1300.64L90.275 1299.12L91.0397 1297.6C90.6298 1297.4 90.1811 1297.3 89.7425 1297.3L89.75 1299ZM90.275 1299.12L89.4976 1300.63L90.1973 1300.99L90.9747 1299.48L91.7522 1297.97L91.0524 1297.61L90.275 1299.12ZM90.9747 1299.48L90.2012 1301C90.6111 1301.21 91.0605 1301.31 91.4998 1301.31V1299.61V1297.91C91.5669 1297.91 91.652 1297.92 91.7483 1297.97L90.9747 1299.48ZM91.4998 1299.61V1301.31C91.939 1301.31 92.3884 1301.21 92.7983 1301L92.0247 1299.48L91.2512 1297.97C91.3475 1297.92 91.4326 1297.91 91.4998 1297.91V1299.61ZM92.0247 1299.48L92.8015 1300.99L93.502 1300.63L92.7253 1299.12L91.9485 1297.61L91.248 1297.97L92.0247 1299.48ZM92.7253 1299.12L93.4988 1300.64C93.4025 1300.69 93.3174 1300.7 93.2502 1300.7V1299V1297.3C92.811 1297.3 92.3616 1297.4 91.9517 1297.61L92.7253 1299.12ZM93.2502 1299V1300.7C93.1831 1300.7 93.098 1300.69 93.0017 1300.64L93.7752 1299.12L94.5488 1297.61C94.1389 1297.4 93.6895 1297.3 93.2502 1297.3V1299ZM93.7752 1299.12L92.9978 1300.63L93.6976 1300.99L94.475 1299.48L95.2524 1297.97L94.5527 1297.61L93.7752 1299.12ZM94.475 1299.48L93.7015 1301C94.1113 1301.21 94.5607 1301.31 95 1301.31V1299.61V1297.91C95.0672 1297.91 95.1522 1297.92 95.2485 1297.97L94.475 1299.48ZM95 1299.61V1301.31C95.4393 1301.31 95.8887 1301.21 96.2985 1301L95.525 1299.48L94.7515 1297.97C94.8478 1297.92 94.9328 1297.91 95 1297.91V1299.61ZM95.525 1299.48L96.3024 1300.99L97.0022 1300.63L96.2248 1299.12L95.4473 1297.61L94.7476 1297.97L95.525 1299.48ZM96.2248 1299.12L96.9983 1300.64C96.902 1300.69 96.8169 1300.7 96.7498 1300.7V1299V1297.3C96.3105 1297.3 95.8611 1297.4 95.4512 1297.61L96.2248 1299.12ZM96.7498 1299V1300.7C96.6826 1300.7 96.5975 1300.69 96.5012 1300.64L97.2747 1299.12L98.0483 1297.61C97.6384 1297.4 97.189 1297.3 96.7498 1297.3V1299ZM97.2747 1299.12L96.498 1300.63L97.1985 1300.99L97.9753 1299.48L98.752 1297.97L98.0515 1297.61L97.2747 1299.12ZM97.9753 1299.48L97.2017 1301C97.6116 1301.21 98.061 1301.31 98.5002 1301.31V1299.61V1297.91C98.5674 1297.91 98.6525 1297.92 98.7488 1297.97L97.9753 1299.48ZM98.5002 1299.61V1301.31C98.9395 1301.31 99.3889 1301.21 99.7988 1301L99.0253 1299.48L98.2517 1297.97C98.348 1297.92 98.4331 1297.91 98.5002 1297.91V1299.61ZM99.0253 1299.48L99.8027 1300.99L100.502 1300.63L99.725 1299.12L98.9476 1297.61L98.2478 1297.97L99.0253 1299.48ZM99.725 1299.12L100.49 1300.64C100.394 1300.69 100.31 1300.7 100.243 1300.7L100.25 1299L100.257 1297.3C99.8189 1297.3 99.3702 1297.4 98.9603 1297.6L99.725 1299.12ZM100.25 1299V1300.7C100.106 1300.7 99.9112 1300.66 99.7186 1300.51L100.78 1299.18L101.842 1297.85C101.368 1297.47 100.792 1297.3 100.25 1297.3V1299ZM100.78 1299.18L99.7186 1300.51C99.5162 1300.34 99.3 1300.03 99.3 1299.6H101H102.7C102.7 1298.85 102.326 1298.24 101.842 1297.85L100.78 1299.18ZM101 1299.6H99.3V1310.4H101H102.7V1299.6H101ZM101 1310.4H99.3C99.3 1309.97 99.5162 1309.66 99.7186 1309.49L100.78 1310.82L101.842 1312.15C102.326 1311.76 102.7 1311.15 102.7 1310.4H101ZM100.78 1310.82L99.7186 1309.49C99.9112 1309.34 100.106 1309.3 100.25 1309.3V1311V1312.7C100.792 1312.7 101.368 1312.53 101.842 1312.15L100.78 1310.82ZM100.25 1311L100.243 1309.3C100.31 1309.3 100.394 1309.31 100.49 1309.36L99.725 1310.88L98.9603 1312.4C99.3702 1312.6 99.8189 1312.7 100.257 1312.7L100.25 1311ZM99.725 1310.88L100.502 1309.37L99.8027 1309.01L99.0253 1310.52L98.2478 1312.03L98.9476 1312.39L99.725 1310.88ZM99.0253 1310.52L99.7988 1309C99.3889 1308.79 98.9395 1308.69 98.5002 1308.69V1310.39V1312.09C98.4331 1312.09 98.348 1312.08 98.2517 1312.03L99.0253 1310.52ZM98.5002 1310.39V1308.69C98.061 1308.69 97.6116 1308.79 97.2017 1309L97.9753 1310.52L98.7488 1312.03C98.6525 1312.08 98.5674 1312.09 98.5002 1312.09V1310.39ZM97.9753 1310.52L97.1985 1309.01L96.498 1309.37L97.2747 1310.88L98.0515 1312.39L98.752 1312.03L97.9753 1310.52ZM97.2747 1310.88L96.5012 1309.36C96.5975 1309.31 96.6826 1309.3 96.7498 1309.3V1311V1312.7C97.189 1312.7 97.6384 1312.6 98.0483 1312.39L97.2747 1310.88ZM96.7498 1311V1309.3C96.8169 1309.3 96.902 1309.31 96.9983 1309.36L96.2248 1310.88L95.4512 1312.39C95.8611 1312.6 96.3105 1312.7 96.7498 1312.7V1311ZM96.2248 1310.88L97.0022 1309.37L96.3024 1309.01L95.525 1310.52L94.7476 1312.03L95.4473 1312.39L96.2248 1310.88ZM95.525 1310.52L96.2985 1309C95.8887 1308.79 95.4393 1308.69 95 1308.69V1310.39V1312.09C94.9328 1312.09 94.8478 1312.08 94.7515 1312.03L95.525 1310.52ZM95 1310.39V1308.69C94.5607 1308.69 94.1113 1308.79 93.7015 1309L94.475 1310.52L95.2485 1312.03C95.1522 1312.08 95.0672 1312.09 95 1312.09V1310.39ZM94.475 1310.52L93.6976 1309.01L92.9978 1309.37L93.7752 1310.88L94.5527 1312.39L95.2524 1312.03L94.475 1310.52ZM93.7752 1310.88L93.0017 1309.36C93.098 1309.31 93.1831 1309.3 93.2502 1309.3V1311V1312.7C93.6895 1312.7 94.1389 1312.6 94.5488 1312.39L93.7752 1310.88ZM93.2502 1311V1309.3C93.3174 1309.3 93.4025 1309.31 93.4988 1309.36L92.7253 1310.88L91.9517 1312.39C92.3616 1312.6 92.811 1312.7 93.2502 1312.7V1311ZM92.7253 1310.88L93.502 1309.37L92.8015 1309.01L92.0247 1310.52L91.248 1312.03L91.9485 1312.39L92.7253 1310.88ZM92.0247 1310.52L92.7983 1309C92.3884 1308.79 91.939 1308.69 91.4998 1308.69V1310.39V1312.09C91.4326 1312.09 91.3475 1312.08 91.2512 1312.03L92.0247 1310.52ZM91.4998 1310.39V1308.69C91.0605 1308.69 90.6111 1308.79 90.2012 1309L90.9747 1310.52L91.7483 1312.03C91.652 1312.08 91.5669 1312.09 91.4998 1312.09V1310.39ZM90.9747 1310.52L90.1973 1309.01L89.4976 1309.37L90.275 1310.88L91.0524 1312.39L91.7522 1312.03L90.9747 1310.52ZM90.275 1310.88L89.5103 1309.36C89.6059 1309.31 89.6904 1309.3 89.7575 1309.3L89.75 1311L89.7425 1312.7C90.1811 1312.7 90.6298 1312.6 91.0397 1312.4L90.275 1310.88ZM89.75 1311V1309.3C89.8941 1309.3 90.0888 1309.34 90.2814 1309.49L89.2197 1310.82L88.158 1312.15C88.6319 1312.53 89.2081 1312.7 89.75 1312.7V1311ZM89.2197 1310.82L90.2814 1309.49C90.4838 1309.66 90.7 1309.97 90.7 1310.4H89H87.3C87.3 1311.15 87.6742 1311.76 88.158 1312.15L89.2197 1310.82ZM89 1310.4H90.7V1299.6H89H87.3V1310.4H89Z" fill="white" mask="url(#stroke3_11_3010)"/>
+</g>
+<text id="Label_31" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="111" y="1309.73">Generate bill</tspan></text>
+</g>
+<g id="Reusable/Button/Workflow/Save bill">
+<rect x="218" y="1285" width="107" height="40" rx="6" fill="#087F73"/>
+<g id="Icon_8">
+<path id="Glyph_6" d="M247 1299L238.75 1311L235 1305.55" stroke-width="1.7" stroke-linecap="round" stroke="white"/>
+</g>
+<text id="Label_32" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="257" y="1309.73">Save bill</tspan></text>
+</g>
+<g id="Reusable/Button/Workflow/Edit">
+<rect x="337.5" y="1285.5" width="78" height="39" rx="5.5" fill="white"/>
+<rect x="337.5" y="1285.5" width="78" height="39" rx="5.5" stroke="#D3DEDA"/>
+<g id="Icon_9">
+<mask id="stroke4_11_3010" fill="white">
+<path d="M366 1300.69C366 1301.14 365.822 1301.57 365.504 1301.89L364.196 1303.2L357.496 1309.9C357.357 1310.04 357.186 1310.14 356.998 1310.2L354.386 1310.99C354.334 1311 354.279 1311 354.227 1310.99C354.174 1310.98 354.126 1310.95 354.088 1310.91C354.05 1310.87 354.022 1310.83 354.009 1310.77C353.996 1310.72 353.997 1310.67 354.013 1310.61L354.805 1308C354.863 1307.81 354.966 1307.64 355.105 1307.5L361.804 1300.8L363.113 1299.5C363.43 1299.18 363.86 1299 364.309 1299C364.757 1299 365.188 1299.18 365.505 1299.5C365.822 1299.81 366 1300.24 366 1300.69Z"/>
+</mask>
+<path id="Glyph_7" d="M362.401 1300.2C362.069 1299.87 361.531 1299.87 361.199 1300.2C360.867 1300.53 360.867 1301.07 361.199 1301.4L361.8 1300.8L362.401 1300.2ZM361.804 1300.8L361.203 1301.41L361.203 1301.41L361.804 1300.8ZM364.196 1303.2L364.797 1302.6L364.797 1302.6L364.196 1303.2ZM363.599 1303.8C363.931 1304.13 364.469 1304.13 364.801 1303.8C365.133 1303.47 365.133 1302.93 364.801 1302.6L364.2 1303.2L363.599 1303.8ZM361.8 1300.8L361.199 1301.4L361.203 1301.41L361.804 1300.8L362.405 1300.2L362.401 1300.2L361.8 1300.8ZM361.804 1300.8L361.203 1301.41L363.595 1303.8L364.196 1303.2L364.797 1302.6L362.405 1300.2L361.804 1300.8ZM364.196 1303.2L363.595 1303.8L363.599 1303.8L364.2 1303.2L364.801 1302.6L364.797 1302.6L364.196 1303.2ZM361.804 1300.8L363.006 1302.01V1302.01L361.804 1300.8ZM364.196 1303.2L365.398 1304.4V1304.4L364.196 1303.2ZM365.504 1301.89L364.303 1300.69L364.302 1300.69L365.504 1301.89ZM366 1300.69L364.3 1300.69L366 1300.69ZM365.505 1299.5L366.707 1298.29V1298.29L365.505 1299.5ZM364.309 1299L364.309 1297.3V1297.3L364.309 1299ZM363.113 1299.5L361.911 1298.29L361.911 1298.29L363.113 1299.5ZM355.105 1307.5L356.305 1308.71L356.307 1308.71L355.105 1307.5ZM354.805 1308L353.18 1307.5L353.178 1307.51L354.805 1308ZM354.013 1310.61L352.386 1310.12L352.384 1310.13L354.013 1310.61ZM354.088 1310.91L352.887 1312.12L352.887 1312.12L354.088 1310.91ZM354.386 1310.99L354.876 1312.62L354.88 1312.61L354.386 1310.99ZM356.998 1310.2L357.492 1311.82L357.493 1311.82L356.998 1310.2ZM357.496 1309.9L358.696 1311.1L358.698 1311.1L357.496 1309.9ZM365.504 1301.89L366.706 1303.09C367.342 1302.45 367.7 1301.59 367.7 1300.69L366 1300.69L364.3 1300.69C364.3 1300.69 364.301 1300.69 364.303 1300.69L365.504 1301.89ZM366 1300.69L367.7 1300.69C367.7 1299.79 367.343 1298.93 366.707 1298.29L365.505 1299.5L364.303 1300.7C364.301 1300.7 364.3 1300.69 364.3 1300.69L366 1300.69ZM365.505 1299.5L366.707 1298.29C366.071 1297.66 365.209 1297.3 364.309 1297.3L364.309 1299L364.309 1300.7C364.306 1300.7 364.304 1300.7 364.303 1300.7L365.505 1299.5ZM364.309 1299L364.309 1297.3C363.41 1297.3 362.547 1297.66 361.911 1298.29L363.113 1299.5L364.315 1300.7C364.313 1300.7 364.311 1300.7 364.309 1300.7L364.309 1299ZM363.113 1299.5L361.911 1298.29L360.602 1299.6L361.804 1300.8L363.006 1302.01L364.315 1300.7L363.113 1299.5ZM361.804 1300.8L360.602 1299.6L353.903 1306.3L355.105 1307.5L356.307 1308.71L363.006 1302.01L361.804 1300.8ZM355.105 1307.5L353.905 1306.3C353.568 1306.64 353.319 1307.05 353.18 1307.5L354.805 1308L356.43 1308.5C356.406 1308.58 356.364 1308.65 356.305 1308.71L355.105 1307.5ZM354.805 1308L353.178 1307.51L352.386 1310.12L354.013 1310.61L355.639 1311.11L356.432 1308.5L354.805 1308ZM354.013 1310.61L352.384 1310.13C352.28 1310.47 352.273 1310.84 352.361 1311.19L354.009 1310.77L355.657 1310.36C355.719 1310.6 355.714 1310.86 355.641 1311.1L354.013 1310.61ZM354.009 1310.77L352.361 1311.19C352.45 1311.54 352.631 1311.86 352.887 1312.12L354.088 1310.91L355.289 1309.71C355.468 1309.89 355.595 1310.11 355.657 1310.36L354.009 1310.77ZM354.088 1310.91L352.887 1312.12C353.142 1312.37 353.462 1312.55 353.812 1312.64L354.227 1310.99L354.641 1309.34C354.886 1309.4 355.11 1309.53 355.289 1309.71L354.088 1310.91ZM354.227 1310.99L353.812 1312.64C354.163 1312.73 354.53 1312.72 354.876 1312.62L354.386 1310.99L353.897 1309.36C354.139 1309.29 354.396 1309.28 354.641 1309.34L354.227 1310.99ZM354.386 1310.99L354.88 1312.61L357.492 1311.82L356.998 1310.2L356.505 1308.57L353.893 1309.36L354.386 1310.99ZM356.998 1310.2L357.493 1311.82C357.947 1311.68 358.36 1311.44 358.696 1311.1L357.496 1309.9L356.296 1308.69C356.354 1308.64 356.425 1308.59 356.504 1308.57L356.998 1310.2ZM357.496 1309.9L358.698 1311.1L365.398 1304.4L364.196 1303.2L362.994 1301.99L356.294 1308.7L357.496 1309.9ZM364.196 1303.2L365.398 1304.4L366.707 1303.09L365.504 1301.89L364.302 1300.69L362.994 1301.99L364.196 1303.2Z" fill="#172D2B" mask="url(#stroke4_11_3010)"/>
+</g>
+<text id="Label_33" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="376" y="1309.73">Edit</tspan></text>
+</g>
+<g id="Reusable/Button/Workflow/Print">
+<rect x="428.5" y="1285.5" width="83" height="39" rx="5.5" fill="white"/>
+<rect x="428.5" y="1285.5" width="83" height="39" rx="5.5" stroke="#D3DEDA"/>
+<g id="Icon_10">
+<mask id="stroke5_11_3010" fill="white">
+<path d="M447.4 1308.6H446.2C445.882 1308.6 445.577 1308.47 445.351 1308.25C445.126 1308.02 445 1307.72 445 1307.4V1304.4C445 1304.08 445.126 1303.78 445.351 1303.55C445.577 1303.33 445.882 1303.2 446.2 1303.2H447.4V1299.6C447.4 1299.44 447.463 1299.29 447.576 1299.18C447.688 1299.06 447.841 1299 448 1299H454C454.159 1299 454.312 1299.06 454.424 1299.18C454.537 1299.29 454.6 1299.44 454.6 1299.6V1303.2H455.8C456.118 1303.2 456.423 1303.33 456.649 1303.55C456.874 1303.78 457 1304.08 457 1304.4V1307.4C457 1307.72 456.874 1308.02 456.649 1308.25C456.423 1308.47 456.118 1308.6 455.8 1308.6H454.6V1310.4C454.6 1310.73 454.331 1311 454 1311H448C447.669 1311 447.4 1310.73 447.4 1310.4V1308.6Z"/>
+</mask>
+<path id="Glyph_8" d="M446.55 1308.6C446.55 1309.07 446.931 1309.45 447.4 1309.45C447.869 1309.45 448.25 1309.07 448.25 1308.6H447.4H446.55ZM447.4 1302.35C446.931 1302.35 446.55 1302.73 446.55 1303.2C446.55 1303.67 446.931 1304.05 447.4 1304.05V1303.2V1302.35ZM454.6 1304.05C455.069 1304.05 455.45 1303.67 455.45 1303.2C455.45 1302.73 455.069 1302.35 454.6 1302.35V1303.2V1304.05ZM453.75 1308.6C453.75 1309.07 454.131 1309.45 454.6 1309.45C455.069 1309.45 455.45 1309.07 455.45 1308.6H454.6H453.75ZM447.4 1303.2V1304.05H454.6V1303.2V1302.35H447.4V1303.2ZM448 1306.2V1307.05H454V1306.2V1305.35H448V1306.2ZM454 1306.2V1307.05C453.862 1307.05 453.75 1306.94 453.75 1306.8H454.6H455.45C455.45 1306 454.801 1305.35 454 1305.35V1306.2ZM454.6 1306.8H453.75V1308.6H454.6H455.45V1306.8H454.6ZM447.4 1308.6H448.25V1306.8H447.4H446.55V1308.6H447.4ZM447.4 1306.8H448.25C448.25 1306.94 448.138 1307.05 448 1307.05V1306.2V1305.35C447.199 1305.35 446.55 1306 446.55 1306.8H447.4ZM447.4 1308.6H449.1V1306.9H447.4V1308.6ZM445.351 1308.25L444.149 1309.45L444.149 1309.45L445.351 1308.25ZM445.351 1303.55L444.149 1302.35H444.149L445.351 1303.55ZM447.4 1303.2V1304.9H449.1V1303.2H447.4ZM454.6 1303.2H452.9V1304.9H454.6V1303.2ZM456.649 1303.55L455.446 1304.75L455.446 1304.75L456.649 1303.55ZM454.6 1308.6V1306.9H452.9V1308.6H454.6ZM447.576 1299.18L446.374 1297.97L446.374 1297.97L447.576 1299.18ZM454.424 1299.18L455.626 1297.97V1297.97L454.424 1299.18ZM447.4 1308.6V1306.9H446.2V1308.6V1310.3H447.4V1308.6ZM446.2 1308.6V1306.9C446.333 1306.9 446.46 1306.95 446.554 1307.05L445.351 1308.25L444.149 1309.45C444.693 1309.99 445.431 1310.3 446.2 1310.3V1308.6ZM445.351 1308.25L446.554 1307.05C446.647 1307.14 446.7 1307.27 446.7 1307.4H445H443.3C443.3 1308.17 443.606 1308.91 444.149 1309.45L445.351 1308.25ZM445 1307.4H446.7V1304.4H445H443.3V1307.4H445ZM445 1304.4H446.7C446.7 1304.53 446.647 1304.66 446.554 1304.75L445.351 1303.55L444.149 1302.35C443.606 1302.89 443.3 1303.63 443.3 1304.4H445ZM445.351 1303.55L446.554 1304.75C446.46 1304.85 446.333 1304.9 446.2 1304.9V1303.2V1301.5C445.431 1301.5 444.693 1301.81 444.149 1302.35L445.351 1303.55ZM446.2 1303.2V1304.9H447.4V1303.2V1301.5H446.2V1303.2ZM454.6 1303.2V1304.9H455.8V1303.2V1301.5H454.6V1303.2ZM455.8 1303.2V1304.9C455.667 1304.9 455.54 1304.85 455.446 1304.75L456.649 1303.55L457.851 1302.35C457.307 1301.81 456.569 1301.5 455.8 1301.5V1303.2ZM456.649 1303.55L455.446 1304.75C455.353 1304.66 455.3 1304.53 455.3 1304.4H457H458.7C458.7 1303.63 458.394 1302.89 457.851 1302.35L456.649 1303.55ZM457 1304.4H455.3V1307.4H457H458.7V1304.4H457ZM457 1307.4H455.3C455.3 1307.27 455.353 1307.14 455.446 1307.05L456.649 1308.25L457.851 1309.45C458.394 1308.91 458.7 1308.17 458.7 1307.4H457ZM456.649 1308.25L455.446 1307.05C455.54 1306.95 455.667 1306.9 455.8 1306.9V1308.6V1310.3C456.569 1310.3 457.307 1309.99 457.851 1309.45L456.649 1308.25ZM455.8 1308.6V1306.9H454.6V1308.6V1310.3H455.8V1308.6ZM447.4 1303.2H449.1V1299.6H447.4H445.7V1303.2H447.4ZM447.4 1299.6H449.1C449.1 1299.89 448.984 1300.17 448.778 1300.38L447.576 1299.18L446.374 1297.97C445.942 1298.4 445.7 1298.99 445.7 1299.6H447.4ZM447.576 1299.18L448.778 1300.38C448.572 1300.58 448.292 1300.7 448 1300.7V1299V1297.3C447.39 1297.3 446.805 1297.54 446.374 1297.97L447.576 1299.18ZM448 1299V1300.7H454V1299V1297.3H448V1299ZM454 1299V1300.7C453.708 1300.7 453.428 1300.58 453.222 1300.38L454.424 1299.18L455.626 1297.97C455.195 1297.54 454.61 1297.3 454 1297.3V1299ZM454.424 1299.18L453.222 1300.38C453.016 1300.17 452.9 1299.89 452.9 1299.6H454.6H456.3C456.3 1298.99 456.058 1298.4 455.626 1297.97L454.424 1299.18ZM454.6 1299.6H452.9V1303.2H454.6H456.3V1299.6H454.6ZM454.6 1308.6H452.9V1310.4H454.6H456.3V1308.6H454.6ZM454.6 1310.4H452.9C452.9 1309.79 453.392 1309.3 454 1309.3V1311V1312.7C455.27 1312.7 456.3 1311.67 456.3 1310.4H454.6ZM454 1311V1309.3H448V1311V1312.7H454V1311ZM448 1311V1309.3C448.608 1309.3 449.1 1309.79 449.1 1310.4H447.4H445.7C445.7 1311.67 446.73 1312.7 448 1312.7V1311ZM447.4 1310.4H449.1V1308.6H447.4H445.7V1310.4H447.4Z" fill="#172D2B" mask="url(#stroke5_11_3010)"/>
+</g>
+<text id="Label_34" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="467" y="1309.73">Print</tspan></text>
+</g>
+<g id="Reusable/Button/Workflow/Download &#38; share">
+<rect x="524.5" y="1285.5" width="167" height="39" rx="5.5" fill="white"/>
+<rect x="524.5" y="1285.5" width="167" height="39" rx="5.5" stroke="#D3DEDA"/>
+<g id="Icon_11">
+<g id="share-2" clip-path="url(#clip38_11_3010)">
+<path id="Vector_3" d="M545.295 1305.75L545.296 1305.76M545.296 1305.76L548.705 1307.74M545.296 1305.76C545.426 1305.53 545.5 1305.28 545.5 1305C545.5 1304.72 545.426 1304.47 545.296 1304.24M545.296 1305.76C545.036 1306.2 544.553 1306.5 544 1306.5C543.172 1306.5 542.5 1305.83 542.5 1305C542.5 1304.17 543.172 1303.5 544 1303.5C544.553 1303.5 545.036 1303.8 545.296 1304.24M548.705 1307.74L548.71 1307.75M548.705 1307.74C548.575 1307.96 548.5 1308.22 548.5 1308.5C548.5 1309.33 549.172 1310 550 1310C550.828 1310 551.5 1309.33 551.5 1308.5C551.5 1307.67 550.828 1307 550 1307C549.448 1307 548.966 1307.3 548.705 1307.74ZM548.705 1302.25L548.704 1302.26M548.704 1302.26L545.296 1304.24M548.704 1302.26C548.964 1302.7 549.447 1303 550 1303C550.828 1303 551.5 1302.33 551.5 1301.5C551.5 1300.67 550.828 1300 550 1300C549.172 1300 548.5 1300.67 548.5 1301.5C548.5 1301.78 548.574 1302.03 548.704 1302.26ZM545.296 1304.24L545.295 1304.24" stroke-width="1.7" stroke-linecap="round" stroke="#172D2B"/>
+</g>
+</g>
+<text id="Label_35" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="563" y="1309.73">Download &#38; share</tspan></text>
+</g>
+<g id="Reusable/Button/Workflow/Mark as paid">
+<rect x="704.5" y="1285.5" width="134" height="39" rx="5.5" fill="white"/>
+<rect x="704.5" y="1285.5" width="134" height="39" rx="5.5" stroke="#D3DEDA"/>
+<g id="Icon_12">
+<mask id="stroke6_11_3010" fill="white">
+<path d="M727 1311C730.314 1311 733 1308.31 733 1305C733 1301.69 730.314 1299 727 1299C723.686 1299 721 1301.69 721 1305C721 1308.31 723.686 1311 727 1311Z"/>
+</mask>
+<path id="Glyph_9" d="M725.801 1304.4C725.469 1304.07 724.931 1304.07 724.599 1304.4C724.267 1304.73 724.267 1305.27 724.599 1305.6L725.2 1305L725.801 1304.4ZM726.4 1306.2L725.799 1306.8L726.4 1307.4L727.001 1306.8L726.4 1306.2ZM729.401 1304.4C729.733 1304.07 729.733 1303.53 729.401 1303.2C729.069 1302.87 728.531 1302.87 728.199 1303.2L728.8 1303.8L729.401 1304.4ZM725.2 1305L724.599 1305.6L725.799 1306.8L726.4 1306.2L727.001 1305.6L725.801 1304.4L725.2 1305ZM726.4 1306.2L727.001 1306.8L729.401 1304.4L728.8 1303.8L728.199 1303.2L725.799 1305.6L726.4 1306.2ZM733 1305H731.3C731.3 1307.37 729.375 1309.3 727 1309.3V1311V1312.7C731.253 1312.7 734.7 1309.25 734.7 1305H733ZM727 1311V1309.3C724.625 1309.3 722.7 1307.37 722.7 1305H721H719.3C719.3 1309.25 722.747 1312.7 727 1312.7V1311ZM721 1305H722.7C722.7 1302.63 724.625 1300.7 727 1300.7V1299V1297.3C722.747 1297.3 719.3 1300.75 719.3 1305H721ZM727 1299V1300.7C729.375 1300.7 731.3 1302.63 731.3 1305H733H734.7C734.7 1300.75 731.253 1297.3 727 1297.3V1299Z" fill="#172D2B" mask="url(#stroke6_11_3010)"/>
+</g>
+<text id="Label_36" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="743" y="1309.73">Mark as paid</tspan></text>
+</g>
+<g id="Reusable/Button/Workflow/Move to next">
+<rect x="851" y="1285" width="136" height="40" rx="6" fill="#087F73"/>
+<g id="Icon_13">
+<path id="Glyph_10" d="M868 1305H880M874 1311L880 1305L874 1299" stroke-width="1.7" stroke-linecap="round" stroke="white"/>
+</g>
+<text id="Label_37" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="890" y="1309.73">Move to next</tspan></text>
+</g>
+</g>
+</g>
+<g id="Section heading_4" clip-path="url(#clip39_11_3010)">
+<g id="Heading_4" clip-path="url(#clip40_11_3010)">
+<text id="Section marker_4" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="48" y="1388">08</tspan></text>
+<text id="Title_7" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="75" y="1390.55">Notification feedback</tspan></text>
+</g>
+<text id="Label_38" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" letter-spacing="0em"><tspan x="1208" y="1388">Explain the result and the next step</tspan></text>
+</g>
+<g id="Notification examples" clip-path="url(#clip41_11_3010)">
+<g id="Positive and informative feedback" clip-path="url(#clip42_11_3010)">
+<g id="Reusable/Notification/Success">
+<rect x="48" y="1419" width="660" height="68" rx="6" fill="#E2F2ED"/>
+<g id="Icon_14">
+<mask id="stroke7_11_3010" fill="white">
+<path d="M73 1451C76.866 1451 80 1447.87 80 1444C80 1440.13 76.866 1437 73 1437C69.134 1437 66 1440.13 66 1444C66 1447.87 69.134 1451 73 1451Z"/>
+</mask>
+<path id="Glyph_11" d="M71.501 1443.4C71.1691 1443.07 70.6309 1443.07 70.299 1443.4C69.967 1443.73 69.967 1444.27 70.299 1444.6L70.9 1444L71.501 1443.4ZM72.3 1445.4L71.699 1446L72.3 1446.6L72.901 1446L72.3 1445.4ZM75.701 1443.2C76.033 1442.87 76.033 1442.33 75.701 1442C75.3691 1441.67 74.8309 1441.67 74.499 1442L75.1 1442.6L75.701 1443.2ZM70.9 1444L70.299 1444.6L71.699 1446L72.3 1445.4L72.901 1444.8L71.501 1443.4L70.9 1444ZM72.3 1445.4L72.901 1446L75.701 1443.2L75.1 1442.6L74.499 1442L71.699 1444.8L72.3 1445.4ZM80 1444H78.3C78.3 1446.93 75.9271 1449.3 73 1449.3V1451V1452.7C77.8049 1452.7 81.7 1448.8 81.7 1444H80ZM73 1451V1449.3C70.0729 1449.3 67.7 1446.93 67.7 1444H66H64.3C64.3 1448.8 68.1951 1452.7 73 1452.7V1451ZM66 1444H67.7C67.7 1441.07 70.0729 1438.7 73 1438.7V1437V1435.3C68.1951 1435.3 64.3 1439.2 64.3 1444H66ZM73 1437V1438.7C75.9271 1438.7 78.3 1441.07 78.3 1444H80H81.7C81.7 1439.2 77.8049 1435.3 73 1435.3V1437Z" fill="#087F73" mask="url(#stroke7_11_3010)"/>
+</g>
+<g id="Message" clip-path="url(#clip43_11_3010)">
+<text id="Title_8" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" font-weight="600" letter-spacing="0em"><tspan x="94" y="1446.86">Bill saved successfully</tspan></text>
+<text id="Description_9" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" letter-spacing="0em"><tspan x="94" y="1466.5">DB-2026-1048 is ready to print or share. &#x20b9;661.00 remains due.</tspan></text>
+</g>
+<g id="Icon_15">
+<g id="x">
+<path id="Vector_4" d="M687.5 1439.5L685 1442M685 1442L682.5 1444.5M685 1442L682.5 1439.5M685 1442L687.5 1444.5" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+</g>
+</g>
+<g id="Reusable/Notification/Info">
+<rect x="48" y="1503" width="660" height="68" rx="6" fill="#ECF3F8"/>
+<g id="Icon_16">
+<g id="info" clip-path="url(#clip44_11_3010)">
+<path id="Vector_5" d="M72.9998 1530.33V1528M72.9998 1525.67H73.0057M78.8336 1528C78.8336 1531.22 76.2217 1533.83 72.9998 1533.83C69.7779 1533.83 67.166 1531.22 67.166 1528C67.166 1524.78 69.7779 1522.17 72.9998 1522.17C76.2217 1522.17 78.8336 1524.78 78.8336 1528Z" stroke-width="1.7" stroke-linecap="round" stroke="#386A8A"/>
+</g>
+</g>
+<g id="Message_2" clip-path="url(#clip45_11_3010)">
+<text id="Title_9" fill="#386A8A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" font-weight="600" letter-spacing="0em"><tspan x="94" y="1530.86">Your route stays in context</tspan></text>
+<text id="Description_10" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" letter-spacing="0em"><tspan x="94" y="1550.5">Move to next keeps R01, October 2026 and delivery order selected.</tspan></text>
+</g>
+<g id="Icon_17">
+<g id="x_2">
+<path id="Vector_6" d="M687.5 1523.5L685 1526M685 1526L682.5 1528.5M685 1526L682.5 1523.5M685 1526L687.5 1528.5" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+</g>
+</g>
+</g>
+<g id="Warning and error feedback" clip-path="url(#clip46_11_3010)">
+<g id="Reusable/Notification/Warning">
+<rect x="732" y="1419" width="660" height="68" rx="6" fill="#FBF1DD"/>
+<g id="Icon_18">
+<g id="triangle-alert" clip-path="url(#clip47_11_3010)">
+<path id="Vector_7" d="M757 1442.25V1444.58M757 1446.92H757.006M762.676 1447.5L758.009 1439.33C757.907 1439.15 757.76 1439 757.582 1438.9C757.403 1438.8 757.201 1438.74 756.994 1438.74C756.788 1438.74 756.585 1438.8 756.407 1438.9C756.229 1439 756.081 1439.15 755.979 1439.33L751.313 1447.5C751.21 1447.68 751.156 1447.88 751.156 1448.09C751.157 1448.29 751.212 1448.49 751.315 1448.67C751.419 1448.85 751.568 1449 751.746 1449.1C751.925 1449.2 752.128 1449.25 752.333 1449.25H761.667C761.871 1449.25 762.072 1449.2 762.25 1449.09C762.427 1448.99 762.574 1448.84 762.676 1448.67C762.778 1448.49 762.832 1448.29 762.832 1448.08C762.832 1447.88 762.778 1447.68 762.676 1447.5Z" stroke-width="1.7" stroke-linecap="round" stroke="#936321"/>
+</g>
+</g>
+<g id="Message_3" clip-path="url(#clip48_11_3010)">
+<text id="Title_10" fill="#936321" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" font-weight="600" letter-spacing="0em"><tspan x="778" y="1446.86">Review before recording payment</tspan></text>
+<text id="Description_11" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" letter-spacing="0em"><tspan x="778" y="1466.5">Confirm the amount and payment method before marking this bill as paid.</tspan></text>
+</g>
+<g id="Icon_19">
+<g id="x_3">
+<path id="Vector_8" d="M1371.5 1439.5L1369 1442M1369 1442L1366.5 1444.5M1369 1442L1366.5 1439.5M1369 1442L1371.5 1444.5" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+</g>
+</g>
+<g id="Reusable/Notification/Error">
+<rect x="732" y="1503" width="660" height="68" rx="6" fill="#FBEDEC"/>
+<g id="Icon_20">
+<g id="circle-alert" clip-path="url(#clip49_11_3010)">
+<path id="Vector_9" d="M757 1525.67V1528M757 1530.33H757.006M762.834 1528C762.834 1531.22 760.222 1533.83 757 1533.83C753.778 1533.83 751.166 1531.22 751.166 1528C751.166 1524.78 753.778 1522.17 757 1522.17C760.222 1522.17 762.834 1524.78 762.834 1528Z" stroke-width="1.7" stroke-linecap="round" stroke="#B13F3F"/>
+</g>
+</g>
+<g id="Message_4" clip-path="url(#clip50_11_3010)">
+<text id="Title_11" fill="#B13F3F" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" font-weight="600" letter-spacing="0em"><tspan x="778" y="1530.86">Payment could not be saved</tspan></text>
+<text id="Description_12" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" letter-spacing="0em"><tspan x="778" y="1550.5">No payment was recorded. Check the connection and try again.</tspan></text>
+</g>
+<g id="Icon_21">
+<g id="x_4">
+<path id="Vector_10" d="M1371.5 1523.5L1369 1526M1369 1526L1366.5 1528.5M1369 1526L1366.5 1523.5M1369 1526L1371.5 1528.5" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g id="Documentation footer">
+<mask id="path-198-inside-20_11_3010" fill="white">
+<path d="M48 1595H1392V1629H48V1595Z"/>
+</mask>
+<path d="M48 1595V1596H1392V1595V1594H48V1595Z" fill="#D3DEDA" mask="url(#path-198-inside-20_11_3010)"/>
+<text id="Label_39" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" letter-spacing="0em"><tspan x="48" y="1625">Daybreak Agency &#xb7; Kochi &#xb7; Sample data</tspan></text>
+<text id="Label_40" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" letter-spacing="0em"><tspan x="1039" y="1625">Designed states only &#xb7; Route card shows the pre-payment snapshot</tspan></text>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_11_3010">
+<rect width="1344" height="126" fill="white" transform="translate(48 48)"/>
+</clipPath>
+<clipPath id="clip1_11_3010">
+<rect width="1344" height="36" fill="white" transform="translate(48 48)"/>
+</clipPath>
+<clipPath id="clip2_11_3010">
+<rect width="133" height="36" fill="white" transform="translate(48 48)"/>
+</clipPath>
+<clipPath id="clip3_11_3010">
+<rect width="1344" height="1423" fill="white" transform="translate(48 206)"/>
+</clipPath>
+<clipPath id="clip4_11_3010">
+<rect width="1344" height="22" fill="white" transform="translate(48 206)"/>
+</clipPath>
+<clipPath id="clip5_11_3010">
+<rect width="242" height="22" fill="white" transform="translate(48 206)"/>
+</clipPath>
+<clipPath id="clip6_11_3010">
+<rect width="1344" height="212" fill="white" transform="translate(48 252)"/>
+</clipPath>
+<clipPath id="clip7_11_3010">
+<rect width="612" height="42" fill="white" transform="translate(72 276)"/>
+</clipPath>
+<clipPath id="clip8_11_3010">
+<rect width="612" height="32" fill="white" transform="translate(72 408)"/>
+</clipPath>
+<clipPath id="clip9_11_3010">
+<rect width="12" height="12" fill="white" transform="translate(629 418)"/>
+</clipPath>
+<clipPath id="clip10_11_3010">
+<rect width="612" height="42" fill="white" transform="translate(756 276)"/>
+</clipPath>
+<clipPath id="clip11_11_3010">
+<rect width="612" height="46" fill="white" transform="translate(756 336)"/>
+</clipPath>
+<clipPath id="clip12_11_3010">
+<rect width="83" height="46" fill="white" transform="translate(756 336)"/>
+</clipPath>
+<clipPath id="clip13_11_3010">
+<rect width="83" height="46" fill="white" transform="translate(1023 336)"/>
+</clipPath>
+<clipPath id="clip14_11_3010">
+<rect width="78" height="46" fill="white" transform="translate(1290 336)"/>
+</clipPath>
+<clipPath id="clip15_11_3010">
+<rect width="612" height="28" fill="white" transform="translate(756 400)"/>
+</clipPath>
+<clipPath id="clip16_11_3010">
+<rect width="1344" height="22" fill="white" transform="translate(48 488)"/>
+</clipPath>
+<clipPath id="clip17_11_3010">
+<rect width="285" height="22" fill="white" transform="translate(48 488)"/>
+</clipPath>
+<clipPath id="clip18_11_3010">
+<rect width="1344" height="663" fill="white" transform="translate(48 534)"/>
+</clipPath>
+<clipPath id="clip19_11_3010">
+<rect width="800" height="663" fill="white" transform="translate(48 534)"/>
+</clipPath>
+<clipPath id="clip20_11_3010">
+<rect width="752" height="69" fill="white" transform="translate(72 558)"/>
+</clipPath>
+<clipPath id="clip21_11_3010">
+<rect width="231" height="69" fill="white" transform="translate(72 558)"/>
+</clipPath>
+<clipPath id="clip22_11_3010">
+<rect width="158" height="62" fill="white" transform="translate(666 561.5)"/>
+</clipPath>
+<clipPath id="clip23_11_3010">
+<rect x="72" y="706" width="752" height="194" fill="white"/>
+</clipPath>
+<clipPath id="clip24_11_3010">
+<rect width="752" height="38" fill="white" transform="translate(72 706)"/>
+</clipPath>
+<clipPath id="clip25_11_3010">
+<rect width="752" height="52" fill="white" transform="translate(72 744)"/>
+</clipPath>
+<clipPath id="clip26_11_3010">
+<rect width="752" height="52" fill="white" transform="translate(72 796)"/>
+</clipPath>
+<clipPath id="clip27_11_3010">
+<rect width="752" height="52" fill="white" transform="translate(72 848)"/>
+</clipPath>
+<clipPath id="clip28_11_3010">
+<rect width="720" height="16" fill="white" transform="translate(88 969)"/>
+</clipPath>
+<clipPath id="clip29_11_3010">
+<rect width="720" height="16" fill="white" transform="translate(88 997)"/>
+</clipPath>
+<clipPath id="clip30_11_3010">
+<rect width="720" height="16" fill="white" transform="translate(88 1025)"/>
+</clipPath>
+<clipPath id="clip31_11_3010">
+<rect width="720" height="16" fill="white" transform="translate(88 1053)"/>
+</clipPath>
+<clipPath id="clip32_11_3010">
+<rect width="520" height="622" fill="white" transform="translate(872 534)"/>
+</clipPath>
+<clipPath id="clip33_11_3010">
+<rect width="464" height="16" fill="white" transform="translate(900 834)"/>
+</clipPath>
+<clipPath id="clip34_11_3010">
+<rect width="464" height="16" fill="white" transform="translate(900 862)"/>
+</clipPath>
+<clipPath id="clip35_11_3010">
+<rect width="464" height="16" fill="white" transform="translate(900 890)"/>
+</clipPath>
+<clipPath id="clip36_11_3010">
+<rect width="1296" height="22" fill="white" transform="translate(72 1245)"/>
+</clipPath>
+<clipPath id="clip37_11_3010">
+<rect width="206" height="22" fill="white" transform="translate(72 1245)"/>
+</clipPath>
+<clipPath id="clip38_11_3010">
+<rect width="12" height="12" fill="white" transform="translate(541 1299)"/>
+</clipPath>
+<clipPath id="clip39_11_3010">
+<rect width="1344" height="22" fill="white" transform="translate(48 1373)"/>
+</clipPath>
+<clipPath id="clip40_11_3010">
+<rect width="215" height="22" fill="white" transform="translate(48 1373)"/>
+</clipPath>
+<clipPath id="clip41_11_3010">
+<rect width="1344" height="152" fill="white" transform="translate(48 1419)"/>
+</clipPath>
+<clipPath id="clip42_11_3010">
+<rect width="660" height="152" fill="white" transform="translate(48 1419)"/>
+</clipPath>
+<clipPath id="clip43_11_3010">
+<rect width="572" height="36" fill="white" transform="translate(94 1435)"/>
+</clipPath>
+<clipPath id="clip44_11_3010">
+<rect width="14" height="14" fill="white" transform="translate(66 1521)"/>
+</clipPath>
+<clipPath id="clip45_11_3010">
+<rect width="572" height="36" fill="white" transform="translate(94 1519)"/>
+</clipPath>
+<clipPath id="clip46_11_3010">
+<rect width="660" height="152" fill="white" transform="translate(732 1419)"/>
+</clipPath>
+<clipPath id="clip47_11_3010">
+<rect width="14" height="14" fill="white" transform="translate(750 1437)"/>
+</clipPath>
+<clipPath id="clip48_11_3010">
+<rect width="572" height="36" fill="white" transform="translate(778 1435)"/>
+</clipPath>
+<clipPath id="clip49_11_3010">
+<rect width="14" height="14" fill="white" transform="translate(750 1521)"/>
+</clipPath>
+<clipPath id="clip50_11_3010">
+<rect width="572" height="36" fill="white" transform="translate(778 1519)"/>
+</clipPath>
+</defs>
+</svg>

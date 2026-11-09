@@ -1,0 +1,123 @@
+<svg width="1440" height="1571" viewBox="0 0 1440 1571" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Component coverage / Table">
+<rect width="1440" height="1571" fill="#F5F6F3"/>
+<text id="Text / Table" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="28" font-weight="600" letter-spacing="0em"><tspan x="32" y="63.1818">Table</tspan></text>
+<text id="Text / 7 applicable states &#194;&#183; editable native comp" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="32" y="117.591">7 applicable states &#xb7; editable native component variants. Loading, empty and failure behavior is visible in the control itself.</tspan></text>
+<g id="Daybook/Edge/Table">
+<g id="State=Loaded">
+<rect x="48.5" y="167.5" width="639" height="193" rx="7.5" fill="white"/>
+<rect x="48.5" y="167.5" width="639" height="193" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / LOADED" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="204.5">LOADED</tspan></text>
+<text id="Text / RESIDENT / DUE" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" font-weight="600" letter-spacing="0em"><tspan x="73" y="244.591">RESIDENT / DUE</tspan></text>
+<text id="Text / Anitha Nair / &#226;&#130;&#185;661" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="73" y="285.591">Anitha Nair / &#x20b9;661</tspan></text>
+<text id="Text / Leela Menon / &#226;&#130;&#185;359" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="73" y="326.591">Leela Menon / &#x20b9;359</tspan></text>
+</g>
+<g id="State=Skeleton">
+<rect x="720.5" y="167.5" width="639" height="353" rx="7.5" fill="white"/>
+<rect x="720.5" y="167.5" width="639" height="353" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / SKELETON" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="204.5">SKELETON</tspan></text>
+<g id="Loading skeleton / table">
+<rect x="745.5" y="229.5" width="591" height="266" rx="7.5" fill="white"/>
+<rect x="745.5" y="229.5" width="591" height="266" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / Loading records&#226;&#128;&#166;" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" font-weight="600" letter-spacing="0em"><tspan x="770" y="269.591">Loading records&#x2026;</tspan></text>
+<g id="Skeleton row 1">
+<rect id="Skeleton placeholder" x="770" y="299" width="121" height="12" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_2" x="911" y="299" width="121" height="12" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_3" x="1052" y="299" width="121" height="12" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_4" x="1193" y="299" width="121" height="12" rx="4" fill="#E0E8E6"/>
+</g>
+<g id="Skeleton row 2">
+<rect id="Skeleton placeholder_5" x="770" y="331" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_6" x="911" y="331" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_7" x="1052" y="331" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_8" x="1193" y="331" width="121" height="20" rx="4" fill="#E0E8E6"/>
+</g>
+<g id="Skeleton row 3">
+<rect id="Skeleton placeholder_9" x="770" y="371" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_10" x="911" y="371" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_11" x="1052" y="371" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_12" x="1193" y="371" width="121" height="20" rx="4" fill="#E0E8E6"/>
+</g>
+<g id="Skeleton row 4">
+<rect id="Skeleton placeholder_13" x="770" y="411" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_14" x="911" y="411" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_15" x="1052" y="411" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_16" x="1193" y="411" width="121" height="20" rx="4" fill="#E0E8E6"/>
+</g>
+<g id="Skeleton row 5">
+<rect id="Skeleton placeholder_17" x="770" y="451" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_18" x="911" y="451" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_19" x="1052" y="451" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_20" x="1193" y="451" width="121" height="20" rx="4" fill="#E0E8E6"/>
+</g>
+</g>
+</g>
+<g id="State=No data">
+<rect x="48.5" y="545.5" width="639" height="343" rx="7.5" fill="white"/>
+<rect x="48.5" y="545.5" width="639" height="343" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / NO DATA" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="582.5">NO DATA</tspan></text>
+<g id="Inline state / No residents yet">
+<rect x="73.5" y="607.5" width="591" height="256" rx="7.5" fill="white"/>
+<rect x="73.5" y="607.5" width="591" height="256" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / EMPTY" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="102" y="648.5">EMPTY</tspan></text>
+<text id="Text / No residents yet" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="600" letter-spacing="0em"><tspan x="102" y="699.727">No residents yet</tspan></text>
+<text id="Text / Add a resident or clear the current search" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="15" letter-spacing="0em"><tspan x="102" y="745.955">Add a resident or clear the current search.</tspan></text>
+<g id="Action / Add resident">
+<rect x="102" y="772" width="134" height="63" rx="6" fill="#087F73"/>
+<text id="Text / Add resident" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="118" y="796.727">Add resident</tspan></text>
+</g>
+</g>
+</g>
+<g id="State=No matching rows">
+<rect x="720.5" y="545.5" width="639" height="343" rx="7.5" fill="white"/>
+<rect x="720.5" y="545.5" width="639" height="343" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / NO MATCHING ROWS" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="582.5">NO MATCHING ROWS</tspan></text>
+<g id="Inline state / No matching residents">
+<rect x="745.5" y="607.5" width="591" height="256" rx="7.5" fill="white"/>
+<rect x="745.5" y="607.5" width="591" height="256" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / EMPTY_2" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="774" y="648.5">EMPTY</tspan></text>
+<text id="Text / No matching residents" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="600" letter-spacing="0em"><tspan x="774" y="699.727">No matching residents</tspan></text>
+<text id="Text / Add a resident or clear the current search_2" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="15" letter-spacing="0em"><tspan x="774" y="745.955">Add a resident or clear the current search.</tspan></text>
+<g id="Action / Clear filters">
+<rect x="774" y="772" width="143" height="63" rx="6" fill="#087F73"/>
+<text id="Text / Clear filters" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="790" y="796.727">Clear filters</tspan></text>
+</g>
+</g>
+</g>
+<g id="State=Request failed">
+<rect x="48.5" y="913.5" width="639" height="343" rx="7.5" fill="white"/>
+<rect x="48.5" y="913.5" width="639" height="343" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / REQUEST FAILED" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="950.5">REQUEST FAILED</tspan></text>
+<g id="Inline state / Records unavailable">
+<rect x="73.5" y="975.5" width="591" height="256" rx="7.5" fill="white"/>
+<rect x="73.5" y="975.5" width="591" height="256" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / ERROR" fill="#AD2B30" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="102" y="1016.5">ERROR</tspan></text>
+<text id="Text / Records unavailable" fill="#AD2B30" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="600" letter-spacing="0em"><tspan x="102" y="1067.73">Records unavailable</tspan></text>
+<text id="Text / Keep the current route and retry loading t" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="15" letter-spacing="0em"><tspan x="102" y="1113.95">Keep the current route and retry loading this table.</tspan></text>
+<g id="Action / Retry table">
+<rect x="102" y="1140" width="126" height="63" rx="6" fill="#087F73"/>
+<text id="Text / Retry table" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="118" y="1164.73">Retry table</tspan></text>
+</g>
+</g>
+</g>
+<g id="State=Partial rows">
+<rect x="720.5" y="913.5" width="639" height="233" rx="7.5" fill="white"/>
+<rect x="720.5" y="913.5" width="639" height="233" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / PARTIAL ROWS" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="950.5">PARTIAL ROWS</tspan></text>
+<text id="Text / RESIDENT / DUE_2" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" font-weight="600" letter-spacing="0em"><tspan x="745" y="990.591">RESIDENT / DUE</tspan></text>
+<text id="Text / Anitha Nair / &#226;&#130;&#185;661_2" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="745" y="1031.59">Anitha Nair / &#x20b9;661</tspan></text>
+<text id="Text / Leela Menon / &#226;&#130;&#185;359_2" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="745" y="1072.59">Leela Menon / &#x20b9;359</tspan></text>
+<text id="Text / 2 records loaded &#194;&#183; remaining rows unavaila" fill="#8C5C14" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="745" y="1112.73">2 records loaded &#xb7; remaining rows unavailable</tspan></text>
+</g>
+<g id="State=Last page">
+<rect x="48.5" y="1281.5" width="639" height="233" rx="7.5" fill="white"/>
+<rect x="48.5" y="1281.5" width="639" height="233" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / LAST PAGE" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="1318.5">LAST PAGE</tspan></text>
+<text id="Text / RESIDENT / DUE_3" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" font-weight="600" letter-spacing="0em"><tspan x="73" y="1358.59">RESIDENT / DUE</tspan></text>
+<text id="Text / Anitha Nair / &#226;&#130;&#185;661_3" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="73" y="1399.59">Anitha Nair / &#x20b9;661</tspan></text>
+<text id="Text / Leela Menon / &#226;&#130;&#185;359_3" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="73" y="1440.59">Leela Menon / &#x20b9;359</tspan></text>
+<text id="Text / Showing 326&#226;&#128;&#147;326 of 326 &#194;&#183; Next disabled" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="73" y="1480.73">Showing 326&#x2013;326 of 326 &#xb7; Next disabled</tspan></text>
+</g>
+</g>
+</g>
+</svg>

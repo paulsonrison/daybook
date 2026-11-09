@@ -1,0 +1,55 @@
+<svg width="1440" height="759" viewBox="0 0 1440 759" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Component coverage / Button/Tertiary">
+<rect width="1440" height="759" fill="#F5F6F3"/>
+<text id="Text / Button/Tertiary" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="28" font-weight="600" letter-spacing="0em"><tspan x="32" y="63.1818">Button/Tertiary</tspan></text>
+<text id="Text / 5 applicable states &#194;&#183; editable native comp" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="32" y="117.591">5 applicable states &#xb7; editable native component variants. Loading, empty and failure behavior is visible in the control itself.</tspan></text>
+<g id="Daybook/Edge/Button/Tertiary">
+<g id="State=Default">
+<rect x="48.5" y="167.5" width="639" height="149" rx="7.5" fill="white"/>
+<rect x="48.5" y="167.5" width="639" height="149" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / DEFAULT" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="204.5">DEFAULT</tspan></text>
+<g id="Action / Save bill">
+<rect x="73" y="229" width="109" height="63" rx="6" fill="#087F73"/>
+<text id="Text / Save bill" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="89" y="253.727">Save bill</tspan></text>
+</g>
+</g>
+<g id="State=Hover">
+<rect x="720.5" y="167.5" width="639" height="149" rx="7.5" fill="white"/>
+<rect x="720.5" y="167.5" width="639" height="149" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / HOVER" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="204.5">HOVER</tspan></text>
+<g id="Action / Save bill_2">
+<rect x="745" y="229" width="109" height="63" rx="6" fill="#087F73"/>
+<text id="Text / Save bill_2" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="761" y="253.727">Save bill</tspan></text>
+</g>
+</g>
+<g id="State=Keyboard focus">
+<rect x="48.5" y="341.5" width="639" height="187" rx="7.5" fill="white"/>
+<rect x="48.5" y="341.5" width="639" height="187" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / KEYBOARD FOCUS" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="378.5">KEYBOARD FOCUS</tspan></text>
+<g id="Action / Save bill_3">
+<rect x="73" y="403" width="109" height="63" rx="6" fill="#087F73"/>
+<text id="Text / Save bill_3" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="89" y="427.727">Save bill</tspan></text>
+</g>
+<text id="Text / Visible focus ring &#194;&#183; keyboard activation" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="73" y="495.364">Visible focus ring &#xb7; keyboard activation</tspan></text>
+</g>
+<g id="State=Disabled">
+<rect x="720.5" y="341.5" width="639" height="149" rx="7.5" fill="white"/>
+<rect x="720.5" y="341.5" width="639" height="149" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / DISABLED" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="378.5">DISABLED</tspan></text>
+<g id="Action / Save bill_4">
+<rect x="745" y="403" width="109" height="63" rx="6" fill="#D9E3DE"/>
+<text id="Text / Save bill_4" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="761" y="427.727">Save bill</tspan></text>
+</g>
+</g>
+<g id="State=Loading">
+<rect x="48.5" y="553.5" width="639" height="149" rx="7.5" fill="white"/>
+<rect x="48.5" y="553.5" width="639" height="149" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / LOADING" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="590.5">LOADING</tspan></text>
+<g id="Action / Working&#226;&#128;&#166;">
+<rect x="73" y="615" width="102" height="63" rx="6" fill="#087F73"/>
+<text id="Text / Working&#226;&#128;&#166;" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="89" y="639.727">Working&#x2026;</tspan></text>
+</g>
+</g>
+</g>
+</g>
+</svg>

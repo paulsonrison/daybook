@@ -1,0 +1,56 @@
+<svg width="1440" height="801" viewBox="0 0 1440 801" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Component coverage / Button/Destructive">
+<rect width="1440" height="801" fill="#F5F6F3"/>
+<text id="Text / Button/Destructive" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="28" font-weight="600" letter-spacing="0em"><tspan x="32" y="63.1818">Button/Destructive</tspan></text>
+<text id="Text / 5 applicable states &#194;&#183; editable native comp" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="32" y="117.591">5 applicable states &#xb7; editable native component variants. Loading, empty and failure behavior is visible in the control itself.</tspan></text>
+<g id="Daybook/Edge/Button/Destructive">
+<g id="State=Default">
+<rect x="48.5" y="167.5" width="639" height="149" rx="7.5" fill="white"/>
+<rect x="48.5" y="167.5" width="639" height="149" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / DEFAULT" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="204.5">DEFAULT</tspan></text>
+<g id="Action / Delete draft">
+<rect x="73" y="229" width="134" height="63" rx="6" fill="#AD2B30"/>
+<text id="Text / Delete draft" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="89" y="253.727">Delete draft</tspan></text>
+</g>
+</g>
+<g id="State=Confirm required">
+<rect x="720.5" y="167.5" width="639" height="189" rx="7.5" fill="white"/>
+<rect x="720.5" y="167.5" width="639" height="189" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / CONFIRM REQUIRED" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="204.5">CONFIRM REQUIRED</tspan></text>
+<g id="Action / Delete draft_2">
+<rect x="745" y="229" width="134" height="63" rx="6" fill="#AD2B30"/>
+<text id="Text / Delete draft_2" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="761" y="253.727">Delete draft</tspan></text>
+</g>
+<text id="Text / Delete this draft? Cancel keeps all change" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="745" y="322.727">Delete this draft? Cancel keeps all changes.</tspan></text>
+</g>
+<g id="State=Disabled">
+<rect x="48.5" y="381.5" width="639" height="149" rx="7.5" fill="white"/>
+<rect x="48.5" y="381.5" width="639" height="149" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / DISABLED" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="418.5">DISABLED</tspan></text>
+<g id="Action / Delete draft_3">
+<rect x="73" y="443" width="134" height="63" rx="6" fill="#D9E3DE"/>
+<text id="Text / Delete draft_3" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="89" y="467.727">Delete draft</tspan></text>
+</g>
+</g>
+<g id="State=Deleting">
+<rect x="720.5" y="381.5" width="639" height="149" rx="7.5" fill="white"/>
+<rect x="720.5" y="381.5" width="639" height="149" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / DELETING" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="418.5">DELETING</tspan></text>
+<g id="Action / Working&#226;&#128;&#166;">
+<rect x="745" y="443" width="102" height="63" rx="6" fill="#AD2B30"/>
+<text id="Text / Working&#226;&#128;&#166;" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="761" y="467.727">Working&#x2026;</tspan></text>
+</g>
+</g>
+<g id="State=Delete failed">
+<rect x="48.5" y="555.5" width="639" height="189" rx="7.5" fill="white"/>
+<rect x="48.5" y="555.5" width="639" height="189" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / DELETE FAILED" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="592.5">DELETE FAILED</tspan></text>
+<g id="Action / Retry delete">
+<rect x="73" y="617" width="134" height="63" rx="6" fill="#AD2B30"/>
+<text id="Text / Retry delete" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="89" y="641.727">Retry delete</tspan></text>
+</g>
+<text id="Text / The action failed. Your input is preserved" fill="#AD2B30" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="73" y="710.727">The action failed. Your input is preserved.</tspan></text>
+</g>
+</g>
+</g>
+</svg>

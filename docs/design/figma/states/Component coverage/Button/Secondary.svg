@@ -1,0 +1,70 @@
+<svg width="1440" height="805" viewBox="0 0 1440 805" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Component coverage / Button/Secondary">
+<rect width="1440" height="805" fill="#F5F6F3"/>
+<text id="Text / Button/Secondary" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="28" font-weight="600" letter-spacing="0em"><tspan x="32" y="63.1818">Button/Secondary</tspan></text>
+<text id="Text / 6 applicable states &#194;&#183; editable native comp" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="32" y="117.591">6 applicable states &#xb7; editable native component variants. Loading, empty and failure behavior is visible in the control itself.</tspan></text>
+<g id="Daybook/Edge/Button/Secondary">
+<g id="State=Default">
+<rect x="48.5" y="167.5" width="639" height="151" rx="7.5" fill="white"/>
+<rect x="48.5" y="167.5" width="639" height="151" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / DEFAULT" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="204.5">DEFAULT</tspan></text>
+<g id="Action / Save bill">
+<rect x="73.5" y="229.5" width="110" height="64" rx="5.5" fill="white"/>
+<rect x="73.5" y="229.5" width="110" height="64" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Save bill" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="90" y="254.727">Save bill</tspan></text>
+</g>
+</g>
+<g id="State=Hover">
+<rect x="720.5" y="167.5" width="639" height="151" rx="7.5" fill="white"/>
+<rect x="720.5" y="167.5" width="639" height="151" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / HOVER" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="204.5">HOVER</tspan></text>
+<g id="Action / Save bill_2">
+<rect x="745.5" y="229.5" width="110" height="64" rx="5.5" fill="white"/>
+<rect x="745.5" y="229.5" width="110" height="64" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Save bill_2" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="762" y="254.727">Save bill</tspan></text>
+</g>
+</g>
+<g id="State=Keyboard focus">
+<rect x="48.5" y="343.5" width="639" height="189" rx="7.5" fill="white"/>
+<rect x="48.5" y="343.5" width="639" height="189" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / KEYBOARD FOCUS" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="380.5">KEYBOARD FOCUS</tspan></text>
+<g id="Action / Save bill_3">
+<rect x="73.5" y="405.5" width="110" height="64" rx="5.5" fill="white"/>
+<rect x="73.5" y="405.5" width="110" height="64" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Save bill_3" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="90" y="430.727">Save bill</tspan></text>
+</g>
+<text id="Text / Visible focus ring &#194;&#183; keyboard activation" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="73" y="499.364">Visible focus ring &#xb7; keyboard activation</tspan></text>
+</g>
+<g id="State=Disabled">
+<rect x="720.5" y="343.5" width="639" height="149" rx="7.5" fill="white"/>
+<rect x="720.5" y="343.5" width="639" height="149" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / DISABLED" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="380.5">DISABLED</tspan></text>
+<g id="Action / Save bill_4">
+<rect x="745" y="405" width="109" height="63" rx="6" fill="#D9E3DE"/>
+<text id="Text / Save bill_4" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="761" y="429.727">Save bill</tspan></text>
+</g>
+</g>
+<g id="State=Loading">
+<rect x="48.5" y="557.5" width="639" height="151" rx="7.5" fill="white"/>
+<rect x="48.5" y="557.5" width="639" height="151" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / LOADING" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="594.5">LOADING</tspan></text>
+<g id="Action / Working&#226;&#128;&#166;">
+<rect x="73.5" y="619.5" width="103" height="64" rx="5.5" fill="white"/>
+<rect x="73.5" y="619.5" width="103" height="64" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Working&#226;&#128;&#166;" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="90" y="644.727">Working&#x2026;</tspan></text>
+</g>
+</g>
+<g id="State=Failure">
+<rect x="720.5" y="557.5" width="639" height="191" rx="7.5" fill="white"/>
+<rect x="720.5" y="557.5" width="639" height="191" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / FAILURE" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="594.5">FAILURE</tspan></text>
+<g id="Action / Try again">
+<rect x="745.5" y="619.5" width="110" height="64" rx="5.5" fill="white"/>
+<rect x="745.5" y="619.5" width="110" height="64" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Try again" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="762" y="644.727">Try again</tspan></text>
+</g>
+<text id="Text / The action failed. Your input is preserved" fill="#AD2B30" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="745" y="714.727">The action failed. Your input is preserved.</tspan></text>
+</g>
+</g>
+</g>
+</svg>

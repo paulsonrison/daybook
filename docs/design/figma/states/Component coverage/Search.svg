@@ -1,0 +1,119 @@
+<svg width="1440" height="1271" viewBox="0 0 1440 1271" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Component coverage / Search">
+<rect width="1440" height="1271" fill="#F5F6F3"/>
+<text id="Text / Search" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="28" font-weight="600" letter-spacing="0em"><tspan x="32" y="63.1818">Search</tspan></text>
+<text id="Text / 7 applicable states &#194;&#183; editable native comp" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="32" y="117.591">7 applicable states &#xb7; editable native component variants. Loading, empty and failure behavior is visible in the control itself.</tspan></text>
+<g id="Daybook/Edge/Search">
+<g id="State=Empty">
+<rect x="48.5" y="167.5" width="639" height="248" rx="7.5" fill="white"/>
+<rect x="48.5" y="167.5" width="639" height="248" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / EMPTY" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="204.5">EMPTY</tspan></text>
+<g id="Field / Find a resident">
+<text id="Text / FIND A RESIDENT" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="241.5">FIND A RESIDENT</tspan></text>
+<g id="Input">
+<rect x="73.5" y="258.5" width="591" height="50" rx="5.5" fill="white"/>
+<rect x="73.5" y="258.5" width="591" height="50" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Enter find a resident" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="86" y="286.591">Enter find a resident</tspan></text>
+</g>
+</g>
+<text id="Text / Anitha Nair &#194;&#183; 12, Lotus Lane" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="73" y="340.591">Anitha Nair &#xb7; 12, Lotus Lane</tspan></text>
+<text id="Text / Leela Menon &#194;&#183; 14, Lotus Lane" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="73" y="381.591">Leela Menon &#xb7; 14, Lotus Lane</tspan></text>
+</g>
+<g id="State=Typing">
+<rect x="720.5" y="167.5" width="639" height="248" rx="7.5" fill="white"/>
+<rect x="720.5" y="167.5" width="639" height="248" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / TYPING" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="204.5">TYPING</tspan></text>
+<g id="Field / Find a resident_2">
+<text id="Text / FIND A RESIDENT_2" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="241.5">FIND A RESIDENT</tspan></text>
+<g id="Input_2">
+<rect x="745.5" y="258.5" width="591" height="50" rx="5.5" fill="white"/>
+<rect x="745.5" y="258.5" width="591" height="50" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Lotus 99" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="758" y="286.591">Lotus 99</tspan></text>
+</g>
+</g>
+<text id="Text / Anitha Nair &#194;&#183; 12, Lotus Lane_2" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="745" y="340.591">Anitha Nair &#xb7; 12, Lotus Lane</tspan></text>
+<text id="Text / Leela Menon &#194;&#183; 14, Lotus Lane_2" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="745" y="381.591">Leela Menon &#xb7; 14, Lotus Lane</tspan></text>
+</g>
+<g id="State=Loading results">
+<rect x="48.5" y="440.5" width="639" height="207" rx="7.5" fill="white"/>
+<rect x="48.5" y="440.5" width="639" height="207" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / LOADING RESULTS" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="477.5">LOADING RESULTS</tspan></text>
+<g id="Field / Find a resident_3">
+<text id="Text / FIND A RESIDENT_3" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="514.5">FIND A RESIDENT</tspan></text>
+<g id="Input_3">
+<rect x="73.5" y="531.5" width="591" height="50" rx="5.5" fill="white"/>
+<rect x="73.5" y="531.5" width="591" height="50" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Lotus 99_2" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="86" y="559.591">Lotus 99</tspan></text>
+</g>
+</g>
+<g id="Progress status">
+<path id="Ellipse" d="M93.5 609C93.5 610.793 92.9925 612.55 92.0363 614.066C91.08 615.583 89.714 616.798 88.0962 617.572C86.4783 618.345 84.6747 618.644 82.8938 618.435C81.1129 618.227 79.4275 617.518 78.0324 616.392C76.6372 615.265 75.5893 613.767 75.0098 612.07C74.4303 610.373 74.3429 608.547 74.7576 606.803C75.1723 605.058 76.0723 603.467 77.3535 602.212C78.6346 600.958 80.2446 600.091 81.9974 599.713" stroke-width="3" stroke="#087F73"/>
+<text id="Text / Loading options&#226;&#128;&#166;" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" font-weight="600" letter-spacing="0em"><tspan x="107" y="613.591">Loading options&#x2026;</tspan></text>
+</g>
+</g>
+<g id="State=No results">
+<rect x="720.5" y="440.5" width="639" height="207" rx="7.5" fill="white"/>
+<rect x="720.5" y="440.5" width="639" height="207" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / NO RESULTS" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="477.5">NO RESULTS</tspan></text>
+<g id="Field / Find a resident_4">
+<text id="Text / FIND A RESIDENT_4" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="514.5">FIND A RESIDENT</tspan></text>
+<g id="Input_4">
+<rect x="745.5" y="531.5" width="591" height="50" rx="5.5" fill="white"/>
+<rect x="745.5" y="531.5" width="591" height="50" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Lotus 99_3" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="758" y="559.591">Lotus 99</tspan></text>
+</g>
+</g>
+<text id="Text / No matches. Change your search or clear fi" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="745" y="613.591">No matches. Change your search or clear filters.</tspan></text>
+</g>
+<g id="State=Request failed">
+<rect x="48.5" y="672.5" width="639" height="268" rx="7.5" fill="white"/>
+<rect x="48.5" y="672.5" width="639" height="268" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / REQUEST FAILED" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="709.5">REQUEST FAILED</tspan></text>
+<g id="Field / Find a resident_5">
+<text id="Text / FIND A RESIDENT_5" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="746.5">FIND A RESIDENT</tspan></text>
+<g id="Input_5">
+<rect x="73.5" y="763.5" width="591" height="50" rx="5.5" fill="white"/>
+<rect x="73.5" y="763.5" width="591" height="50" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Lotus 99_4" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="86" y="791.591">Lotus 99</tspan></text>
+</g>
+</g>
+<text id="Text / Couldn&#226;&#128;&#153;t load results. Your query is prese" fill="#AD2B30" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="73" y="844.727">Couldn&#x2019;t load results. Your query is preserved.</tspan></text>
+<g id="Action / Retry">
+<rect x="73.5" y="870.5" width="103" height="45" rx="5.5" fill="white"/>
+<rect x="73.5" y="870.5" width="103" height="45" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Retry" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="90" y="895.727">Retry</tspan></text>
+</g>
+</g>
+<g id="State=Long query">
+<rect x="720.5" y="672.5" width="639" height="269" rx="7.5" fill="white"/>
+<rect x="720.5" y="672.5" width="639" height="269" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / LONG QUERY" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="709.5">LONG QUERY</tspan></text>
+<g id="Field / Find a resident_6">
+<text id="Text / FIND A RESIDENT_6" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="746.5">FIND A RESIDENT</tspan></text>
+<g id="Input_6">
+<rect x="745.5" y="763.5" width="591" height="71" rx="5.5" fill="white"/>
+<rect x="745.5" y="763.5" width="591" height="71" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Panampilly Nagar &#194;&#183; Sunrise Apartments &#194;&#183; Se" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="758" y="791.591">Panampilly Nagar &#xb7; Sunrise Apartments &#xb7; Sector A &#x2014; delivery group 12</tspan></text>
+</g>
+</g>
+<text id="Text / Anitha Nair &#194;&#183; 12, Lotus Lane_3" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="745" y="866.591">Anitha Nair &#xb7; 12, Lotus Lane</tspan></text>
+<text id="Text / Leela Menon &#194;&#183; 14, Lotus Lane_3" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="745" y="907.591">Leela Menon &#xb7; 14, Lotus Lane</tspan></text>
+</g>
+<g id="State=Cleared">
+<rect x="48.5" y="966.5" width="639" height="248" rx="7.5" fill="white"/>
+<rect x="48.5" y="966.5" width="639" height="248" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / CLEARED" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="1003.5">CLEARED</tspan></text>
+<g id="Field / Find a resident_7">
+<text id="Text / FIND A RESIDENT_7" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="1040.5">FIND A RESIDENT</tspan></text>
+<g id="Input_7">
+<rect x="73.5" y="1057.5" width="591" height="50" rx="5.5" fill="white"/>
+<rect x="73.5" y="1057.5" width="591" height="50" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Lotus 99_5" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="86" y="1085.59">Lotus 99</tspan></text>
+</g>
+</g>
+<text id="Text / Anitha Nair &#194;&#183; 12, Lotus Lane_4" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="73" y="1139.59">Anitha Nair &#xb7; 12, Lotus Lane</tspan></text>
+<text id="Text / Leela Menon &#194;&#183; 14, Lotus Lane_4" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="73" y="1180.59">Leela Menon &#xb7; 14, Lotus Lane</tspan></text>
+</g>
+</g>
+</g>
+</svg>

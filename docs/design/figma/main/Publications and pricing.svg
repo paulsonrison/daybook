@@ -1,0 +1,935 @@
+<svg width="1440" height="1185" viewBox="0 0 1440 1185" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Publications and pricing" clip-path="url(#clip0_4_28339)">
+<rect width="1440" height="1185" fill="#F5F6F3"/>
+<g id="Agency navigation">
+<mask id="path-1-inside-1_4_28339" fill="white">
+<path d="M0 0H224V1185H0V0Z"/>
+</mask>
+<path d="M0 0H224V1185H0V0Z" fill="#FDFEFC"/>
+<path d="M224 0H223V1185H224H225V0H224Z" fill="#D3DEDA" mask="url(#path-1-inside-1_4_28339)"/>
+<g id="Brand">
+<g id="Brand mark">
+<rect x="24" y="28.5" width="33" height="36" rx="4" fill="#087F73"/>
+<g id="newspaper">
+<path id="Vector" d="M43.2506 52.0005H38.6669M46.0008 48.3335H38.6669M33.1665 55.6674H47.8343C48.3206 55.6674 48.787 55.4743 49.1308 55.1304C49.4746 54.7866 49.6678 54.3202 49.6678 53.834V39.1661C49.6678 38.6799 49.4746 38.2135 49.1308 37.8697C48.787 37.5258 48.3206 37.3326 47.8343 37.3326H36.8334C36.3472 37.3326 35.8808 37.5258 35.537 37.8697C35.1931 38.2135 35 38.6799 35 39.1661V43.7498M33.1665 55.6674C33.6528 55.6674 34.1191 55.4743 34.463 55.1304C34.8068 54.7866 35 54.3202 35 53.834V43.7498M33.1665 55.6674C32.6802 55.6674 32.2139 55.4743 31.87 55.1304C31.5262 54.7866 31.333 54.3202 31.333 53.834V45.5833C31.333 45.097 31.5262 44.6307 31.87 44.2868C32.2139 43.943 32.6802 43.7498 33.1665 43.7498H35M39.5837 40.9996H45.0841C45.5904 40.9996 46.0008 41.41 46.0008 41.9163V43.7498C46.0008 44.2561 45.5904 44.6666 45.0841 44.6666H39.5837C39.0774 44.6666 38.6669 44.2561 38.6669 43.7498V41.9163C38.6669 41.41 39.0774 40.9996 39.5837 40.9996Z" stroke-width="1.7" stroke-linecap="round" stroke="white"/>
+</g>
+</g>
+<g id="Brand identity" clip-path="url(#clip1_4_28339)">
+<text id="Agency brand" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="23" letter-spacing="-0.8px"><tspan x="67" y="47.3636">daybook</tspan></text>
+<text id="Label" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="67" y="64.1364">THE AGENCY WORKSPACE</tspan></text>
+</g>
+</g>
+<g id="Navigation groups" clip-path="url(#clip2_4_28339)">
+<g id="Navigation group" clip-path="url(#clip3_4_28339)">
+<text id="Group label" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="600" letter-spacing="1.2px"><tspan x="16" y="104.636">WORKSPACE</tspan></text>
+<g id="Navigation item">
+<g id="layout-dashboard">
+<path id="Vector_2" d="M28.8333 127.125H32.375C32.7662 127.125 33.0833 127.442 33.0833 127.833V132.792C33.0833 133.183 32.7662 133.5 32.375 133.5H28.8333C28.4421 133.5 28.125 133.183 28.125 132.792V127.833C28.125 127.442 28.4421 127.125 28.8333 127.125ZM36.625 127.125H40.1667C40.5579 127.125 40.875 127.442 40.875 127.833V129.958C40.875 130.35 40.5579 130.667 40.1667 130.667H36.625C36.2338 130.667 35.9167 130.35 35.9167 129.958V127.833C35.9167 127.442 36.2338 127.125 36.625 127.125ZM36.625 133.5H40.1667C40.5579 133.5 40.875 133.817 40.875 134.208V139.167C40.875 139.558 40.5579 139.875 40.1667 139.875H36.625C36.2338 139.875 35.9167 139.558 35.9167 139.167V134.208C35.9167 133.817 36.2338 133.5 36.625 133.5ZM28.8333 136.333H32.375C32.7662 136.333 33.0833 136.65 33.0833 137.042V139.167C33.0833 139.558 32.7662 139.875 32.375 139.875H28.8333C28.4421 139.875 28.125 139.558 28.125 139.167V137.042C28.125 136.65 28.4421 136.333 28.8333 136.333Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_2" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="137.864">Overview</tspan></text>
+</g>
+<g id="Navigation item_2">
+<g id="users">
+<path id="Vector_3" d="M37.3335 185.875V184.458C37.3335 183.707 37.0349 182.986 36.5035 182.455C35.9721 181.924 35.2514 181.625 34.4999 181.625H30.2496C29.4981 181.625 28.7773 181.924 28.2459 182.455C27.7146 182.986 27.416 183.707 27.416 184.458V185.875M37.3335 173.216C37.9411 173.373 38.4792 173.728 38.8634 174.224C39.2475 174.721 39.456 175.331 39.456 175.958C39.456 176.586 39.2475 177.196 38.8634 177.692C38.4792 178.189 37.9411 178.543 37.3335 178.701M41.5838 185.875V184.458C41.5833 183.83 41.3744 183.221 40.9897 182.724C40.6051 182.228 40.0665 181.874 39.4586 181.717M35.2083 175.958C35.2083 177.523 33.9397 178.792 32.3747 178.792C30.8098 178.792 29.5412 177.523 29.5412 175.958C29.5412 174.394 30.8098 173.125 32.3747 173.125C33.9397 173.125 35.2083 174.394 35.2083 175.958Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_3" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="183.864">Residents &#38; subscriptions</tspan></text>
+</g>
+<g id="Navigation item_3">
+<g id="route">
+<path id="Vector_4" d="M32.375 230.459C32.375 231.632 31.4236 232.584 30.25 232.584C29.0764 232.584 28.125 231.632 28.125 230.459C28.125 229.285 29.0764 228.334 30.25 228.334C31.4236 228.334 32.375 229.285 32.375 230.459ZM32.375 230.459H38.3958C39.0533 230.459 39.6839 230.198 40.1489 229.733C40.6138 229.268 40.875 228.637 40.875 227.979C40.875 227.322 40.6138 226.691 40.1489 226.226C39.6839 225.761 39.0533 225.5 38.3958 225.5H30.6042C29.9467 225.5 29.3161 225.239 28.8511 224.774C28.3862 224.309 28.125 223.678 28.125 223.021C28.125 222.363 28.3862 221.732 28.8511 221.267C29.3161 220.803 29.9467 220.541 30.6042 220.541H36.625M36.625 220.541C36.625 221.715 37.5764 222.666 38.75 222.666C39.9236 222.666 40.875 221.715 40.875 220.541C40.875 219.368 39.9236 218.416 38.75 218.416C37.5764 218.416 36.625 219.368 36.625 220.541Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_4" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="229.864">Routes &#38; delivery</tspan></text>
+</g>
+<g id="Navigation item_4">
+<rect x="16" y="252" width="192" height="39" rx="6" fill="#E2F2ED"/>
+<g id="newspaper_2" clip-path="url(#clip4_4_28339)">
+<path id="Vector_5" d="M36.6251 275.75H33.0831M38.7503 272.917H33.0831M28.8328 278.584H40.167C40.5428 278.584 40.9032 278.435 41.1688 278.169C41.4345 277.903 41.5838 277.543 41.5838 277.167V265.833C41.5838 265.457 41.4345 265.097 41.1688 264.831C40.9032 264.565 40.5428 264.416 40.167 264.416H31.6664C31.2906 264.416 30.9302 264.565 30.6645 264.831C30.3988 265.097 30.2496 265.457 30.2496 265.833V269.375M28.8328 278.584C29.2085 278.584 29.5689 278.435 29.8346 278.169C30.1003 277.903 30.2496 277.543 30.2496 277.167V269.375M28.8328 278.584C28.457 278.584 28.0967 278.435 27.831 278.169C27.5653 277.903 27.416 277.543 27.416 277.167V270.792C27.416 270.416 27.5653 270.056 27.831 269.79C28.0967 269.524 28.457 269.375 28.8328 269.375H30.2496M33.7915 267.25H38.0419C38.4331 267.25 38.7503 267.567 38.7503 267.958V269.375C38.7503 269.766 38.4331 270.083 38.0419 270.083H33.7915C33.4003 270.083 33.0831 269.766 33.0831 269.375V267.958C33.0831 267.567 33.4003 267.25 33.7915 267.25Z" stroke-width="1.7" stroke-linecap="round" stroke="#087F73"/>
+</g>
+<text id="Label_5" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" font-weight="600" letter-spacing="0em"><tspan x="53" y="275.864">Publications &#38; pricing</tspan></text>
+</g>
+</g>
+<g id="Navigation group_2" clip-path="url(#clip5_4_28339)">
+<text id="Group label_2" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="600" letter-spacing="1.2px"><tspan x="16" y="323.636">FINANCE</tspan></text>
+<g id="Navigation item_5">
+<g id="receipt-text">
+<path id="Vector_6" d="M35.2083 355.333H31.667M35.9166 349.666H31.667M37.3331 352.499H31.667M28.834 346.124C28.834 345.936 28.9086 345.756 29.0414 345.623C29.1743 345.491 29.3544 345.416 29.5422 345.416C29.7176 345.415 29.8896 345.464 30.038 345.558L30.6988 345.983C30.8469 346.077 31.0189 346.127 31.1946 346.127C31.3703 346.127 31.5424 346.077 31.6904 345.983L32.3519 345.558C32.5 345.463 32.672 345.413 32.8477 345.413C33.0234 345.413 33.1954 345.463 33.3435 345.558L34.0043 345.983C34.1524 346.077 34.3244 346.127 34.5001 346.127C34.6758 346.127 34.8478 346.077 34.9959 345.983L35.6567 345.558C35.8047 345.463 35.9768 345.413 36.1525 345.413C36.3282 345.413 36.5002 345.463 36.6482 345.558L37.3098 345.983C37.4578 346.077 37.6298 346.127 37.8055 346.127C37.9812 346.127 38.1533 346.077 38.3013 345.983L38.9621 345.558C39.1105 345.464 39.2825 345.415 39.4579 345.416C39.6458 345.416 39.8259 345.491 39.9587 345.623C40.0916 345.756 40.1662 345.936 40.1662 346.124V358.874C40.1662 359.062 40.0916 359.242 39.9587 359.375C39.8259 359.508 39.6458 359.582 39.4579 359.582C39.2825 359.583 39.1105 359.534 38.9621 359.441L38.3013 359.016C38.1533 358.921 37.9812 358.871 37.8055 358.871C37.6298 358.871 37.4578 358.921 37.3098 359.016L36.6482 359.441C36.5002 359.535 36.3282 359.586 36.1525 359.586C35.9768 359.586 35.8047 359.535 35.6567 359.441L34.9959 359.016C34.8478 358.921 34.6758 358.871 34.5001 358.871C34.3244 358.871 34.1524 358.921 34.0043 359.016L33.3435 359.441C33.1954 359.535 33.0234 359.586 32.8477 359.586C32.672 359.586 32.5 359.535 32.3519 359.441L31.6904 359.016C31.5424 358.921 31.3703 358.871 31.1946 358.871C31.0189 358.871 30.8469 358.921 30.6988 359.016L30.038 359.441C29.8896 359.534 29.7176 359.583 29.5422 359.582C29.3544 359.582 29.1743 359.508 29.0414 359.375C28.9086 359.242 28.834 359.062 28.834 358.874V346.124Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_6" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="356.864">Billing / Collection</tspan></text>
+</g>
+<g id="Navigation item_6">
+<g id="wallet">
+<path id="Vector_7" d="M39.4583 394.958V392.833C39.4583 392.645 39.3837 392.465 39.2509 392.332C39.118 392.2 38.9379 392.125 38.75 392.125H29.5417C29.1659 392.125 28.8056 392.274 28.5399 392.54C28.2743 392.806 28.125 393.166 28.125 393.542M39.4583 394.958H29.5417C29.1659 394.958 28.8056 394.809 28.5399 394.543C28.2743 394.278 28.125 393.917 28.125 393.542M39.4583 394.958H40.1667C40.3545 394.958 40.5347 395.033 40.6675 395.166C40.8004 395.299 40.875 395.479 40.875 395.667V398.5M28.125 393.542V403.458C28.125 403.834 28.2743 404.194 28.5399 404.46C28.8056 404.726 29.1659 404.875 29.5417 404.875H40.1667C40.3545 404.875 40.5347 404.8 40.6675 404.668C40.8004 404.535 40.875 404.355 40.875 404.167V401.333M40.875 398.5H38.75C38.3743 398.5 38.0139 398.649 37.7483 398.915C37.4826 399.181 37.3333 399.541 37.3333 399.917C37.3333 400.292 37.4826 400.653 37.7483 400.918C38.0139 401.184 38.3743 401.333 38.75 401.333H40.875M40.875 398.5C41.0629 398.5 41.243 398.575 41.3759 398.707C41.5087 398.84 41.5833 399.02 41.5833 399.208V400.625C41.5833 400.813 41.5087 400.993 41.3759 401.126C41.243 401.259 41.0629 401.333 40.875 401.333" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_7" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="402.864">Payments &#38; ledger</tspan></text>
+</g>
+<g id="Navigation item_7">
+<g id="landmark">
+<path id="Vector_8" d="M33.0833 448.75V443.792M35.9165 448.75V443.792M38.7498 448.75V443.792M28.1251 451.584H40.8747M30.2501 448.75V443.792M33.8767 437.557C34.071 437.462 34.2844 437.414 34.5005 437.414C34.7166 437.415 34.9296 437.465 35.1233 437.561L40.6949 440.286C41.032 440.451 40.9145 440.958 40.5391 440.958H28.4609C28.0855 440.958 27.9687 440.451 28.3051 440.286L33.8767 437.557Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_8" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="448.864">Cash closing</tspan></text>
+</g>
+<g id="Navigation item_8">
+<g id="chart-no-axes-combined">
+<path id="Vector_9" d="M34.4999 493.333V496.875M37.3335 491.917V496.875M40.167 489.083V496.875M41.5838 484.125L35.4591 490.249C35.4262 490.282 35.3871 490.308 35.3441 490.326C35.301 490.344 35.2549 490.353 35.2083 490.353C35.1617 490.353 35.1156 490.344 35.0726 490.326C35.0295 490.308 34.9904 490.282 34.9575 490.249L32.6255 487.917C32.5591 487.851 32.469 487.814 32.3751 487.814C32.2812 487.814 32.1911 487.851 32.1247 487.917L27.416 492.625M28.8328 494.75V496.875M31.6664 491.917V496.875" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_9" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="494.864">Reports &#38; analytics</tspan></text>
+</g>
+</g>
+<g id="Navigation group_3" clip-path="url(#clip6_4_28339)">
+<text id="Group label_3" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="600" letter-spacing="1.2px"><tspan x="16" y="542.636">OPERATIONS</tspan></text>
+<g id="Navigation item_9">
+<g id="contact-round">
+<path id="Vector_10" d="M37.3333 564.416V565.833M37.3333 565.833H31.6667M37.3333 565.833H39.4583C40.2407 565.833 40.875 566.467 40.875 567.25V577.167C40.875 577.95 40.2407 578.584 39.4583 578.584H38.6898M38.6898 578.584C38.6898 577.457 38.2421 576.376 37.445 575.578C36.648 574.781 35.567 574.334 34.4398 574.334C33.3126 574.334 32.2316 574.781 31.4346 575.578C30.6376 576.376 30.1898 577.457 30.1898 578.584M38.6898 578.584H30.1898M30.1898 578.584H29.5417C28.7593 578.584 28.125 577.95 28.125 577.167V567.25C28.125 566.467 28.7593 565.833 29.5417 565.833H31.6667M31.6667 564.416V565.833M37.3333 571.5C37.3333 573.065 36.0648 574.334 34.5 574.334C32.9352 574.334 31.6667 573.065 31.6667 571.5C31.6667 569.935 32.9352 568.666 34.5 568.666C36.0648 568.666 37.3333 569.935 37.3333 571.5Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_10" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="575.864">Staff &#38; payroll</tspan></text>
+</g>
+<g id="Navigation item_10">
+<g id="package">
+<path id="Vector_11" d="M34.5 624.584V624.582M34.5 624.582V617.5M34.5 624.582C34.2513 624.582 34.007 624.517 33.7917 624.393L28.8333 621.559C28.6182 621.435 28.4395 621.256 28.3152 621.041C28.1908 620.826 28.1253 620.582 28.125 620.334V614.667C28.1253 614.418 28.1908 614.174 28.3152 613.959C28.4395 613.744 28.6182 613.565 28.8333 613.441L31.3127 612.024M34.5 624.582C34.7487 624.582 34.993 624.517 35.2083 624.393L40.1667 621.559C40.3818 621.435 40.5605 621.256 40.6848 621.041C40.8092 620.826 40.8747 620.582 40.875 620.334V614.667C40.8747 614.418 40.8092 614.174 40.6848 613.959C40.5605 613.744 40.3818 613.565 40.1667 613.441L35.2083 610.608C34.993 610.483 34.7487 610.418 34.5 610.418C34.2513 610.418 34.007 610.483 33.7917 610.608L31.3127 612.024M34.5 617.5L28.3304 613.958M34.5 617.5L37.6858 615.671M37.6858 615.671L40.6696 613.958M37.6858 615.671L31.3127 612.024M37.6858 615.671L37.6875 615.672M31.3125 612.024L31.3127 612.024" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_11" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="621.864">Indents &#38; returns</tspan></text>
+</g>
+<g id="Navigation item_11">
+<g id="messages-square" clip-path="url(#clip7_4_28339)">
+<path id="Vector_12" d="M40.167 661.375C40.5428 661.375 40.9032 661.524 41.1688 661.79C41.4345 662.055 41.5838 662.416 41.5838 662.791V670.078C41.5838 670.177 41.5543 670.274 41.499 670.357C41.4438 670.44 41.3652 670.504 41.2733 670.542C41.1814 670.58 41.0803 670.59 40.9828 670.571C40.8852 670.551 40.7956 670.503 40.7252 670.433L39.1654 668.873C38.8997 668.608 38.5394 668.458 38.1637 668.458H33.0831C32.7074 668.458 32.347 668.309 32.0813 668.043C31.8156 667.778 31.6664 667.417 31.6664 667.041V666.333M37.3335 662.083C37.3335 662.459 37.1842 662.819 36.9185 663.085C36.6528 663.35 36.2924 663.5 35.9167 663.5H30.8361C30.4604 663.5 30.1001 663.649 29.8345 663.915L28.2746 665.475C28.2042 665.545 28.1146 665.593 28.0171 665.612C27.9195 665.632 27.8184 665.622 27.7265 665.584C27.6346 665.546 27.5561 665.481 27.5008 665.398C27.4455 665.316 27.416 665.218 27.416 665.119V657.833C27.416 657.457 27.5653 657.097 27.831 656.831C28.0967 656.565 28.457 656.416 28.8328 656.416H35.9167C36.2924 656.416 36.6528 656.565 36.9185 656.831C37.1842 657.097 37.3335 657.457 37.3335 657.833V662.083Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_12" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="667.864">Communications</tspan></text>
+</g>
+</g>
+</g>
+<g id="Workspace tools" clip-path="url(#clip8_4_28339)">
+<g id="Settings navigation">
+<g id="settings-2">
+<path id="Vector_13" d="M35.9166 733.541H29.5422M35.9166 733.541C35.9166 734.715 36.8679 735.666 38.0414 735.666C39.2149 735.666 40.1662 734.715 40.1662 733.541C40.1662 732.368 39.2149 731.417 38.0414 731.417C36.8679 731.417 35.9166 732.368 35.9166 733.541ZM39.4579 726.459H33.0836M33.0836 726.459C33.0836 727.632 32.1323 728.584 30.9588 728.584C29.7853 728.584 28.834 727.632 28.834 726.459C28.834 725.285 29.7853 724.334 30.9588 724.334C32.1323 724.334 33.0836 725.285 33.0836 726.459Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_13" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="734.364">Settings</tspan></text>
+</g>
+<g id="Support navigation">
+<g id="circle-help" clip-path="url(#clip9_4_28339)">
+<path id="Vector_14" d="M32.4384 774.374C32.6049 773.901 32.9337 773.502 33.3663 773.248C33.799 772.993 34.3078 772.9 34.8024 772.985C35.2971 773.07 35.7457 773.327 36.0689 773.711C36.3922 774.095 36.5691 774.581 36.5683 775.083C36.5683 776.5 34.4431 777.208 34.4431 777.208M34.4999 780.042H34.507M41.5838 776.5C41.5838 780.412 38.4122 783.584 34.4999 783.584C30.5876 783.584 27.416 780.412 27.416 776.5C27.416 772.588 30.5876 769.416 34.4999 769.416C38.4122 769.416 41.5838 772.588 41.5838 776.5Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_14" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="780.864">Help &#38; assistant</tspan></text>
+</g>
+</g>
+<g id="Agent workspace">
+<mask id="path-48-inside-2_4_28339" fill="white">
+<path d="M16 822H208V897H16V822Z"/>
+</mask>
+<path d="M16 822V823H208V822V821H16V822Z" fill="#D3DEDA" mask="url(#path-48-inside-2_4_28339)"/>
+<g id="Agency identity" clip-path="url(#clip10_4_28339)">
+<g id="Agent avatar">
+<rect x="24" y="841" width="30" height="30" rx="15" fill="#EEF3F0"/>
+<text id="Label_15" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="31.5" y="860">RK</tspan></text>
+</g>
+<g id="Agent details" clip-path="url(#clip11_4_28339)">
+<text id="Label_16" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" font-weight="600" letter-spacing="0em"><tspan x="64" y="852.864">Ravi Kumar</tspan></text>
+<text id="Label_17" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="64" y="868.136">Daybreak Agency &#xb7; Kochi</tspan></text>
+</g>
+</g>
+<text id="Label_18" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="24" y="893.136">DEMO WORKSPACE &#xb7; SAMPLE DATA</tspan></text>
+</g>
+</g>
+<g id="Main workspace" clip-path="url(#clip12_4_28339)">
+<g id="Workspace bar">
+<mask id="path-55-inside-3_4_28339" fill="white">
+<path d="M224 0H1440V74H224V0Z"/>
+</mask>
+<path d="M224 0H1440V74H224V0Z" fill="white"/>
+<path d="M1440 74V73H224V74V75H1440V74Z" fill="#D3DEDA" mask="url(#path-55-inside-3_4_28339)"/>
+<g id="Workspace location" clip-path="url(#clip13_4_28339)">
+<text id="Label_19" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="260" y="41.3636">Daybreak Agency</tspan></text>
+<text id="Label_20" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="371" y="41.7273">/</tspan></text>
+<text id="Label_21" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" font-weight="600" letter-spacing="0em"><tspan x="386" y="41.3636">Publications &#38; pricing</tspan></text>
+</g>
+<g id="Workspace utilities" clip-path="url(#clip14_4_28339)">
+<g id="Global search" clip-path="url(#clip15_4_28339)">
+<g id="search">
+<path id="Vector_15" d="M1060 43.0001L1057.11 40.1068M1058.67 36.3333C1058.67 39.2789 1056.28 41.6667 1053.33 41.6667C1050.39 41.6667 1048 39.2789 1048 36.3333C1048 33.3878 1050.39 31 1053.33 31C1056.28 31 1058.67 33.3878 1058.67 36.3333Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_22" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="1070" y="41.3636">Search anything</tspan></text>
+<text id="Label_23" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="1170" y="40.6364">&#x2318; K</tspan></text>
+</g>
+<text id="Label_24" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="1210" y="41.3636">EN&#x2304;</tspan></text>
+<g id="bell">
+<path id="Vector_16" d="M1260.7 43.7506C1260.83 43.9786 1261.02 44.168 1261.25 44.2996C1261.48 44.4313 1261.74 44.5006 1262 44.5006C1262.26 44.5006 1262.52 44.4313 1262.75 44.2996C1262.98 44.168 1263.17 43.9786 1263.3 43.7506M1255.45 39.4947C1255.35 39.6021 1255.28 39.7357 1255.26 39.8792C1255.24 40.0226 1255.26 40.1698 1255.31 40.3029C1255.37 40.4359 1255.47 40.549 1255.59 40.6284C1255.71 40.7079 1255.85 40.7502 1256 40.7503H1268C1268.15 40.7504 1268.29 40.7082 1268.41 40.6289C1268.53 40.5496 1268.63 40.4366 1268.69 40.3037C1268.74 40.1707 1268.76 40.0236 1268.74 39.8801C1268.72 39.7366 1268.65 39.603 1268.55 39.4955C1267.56 38.4671 1266.5 37.3743 1266.5 33.9998C1266.5 32.8062 1266.03 31.6615 1265.18 30.8175C1264.34 29.9735 1263.19 29.4994 1262 29.4994C1260.81 29.4994 1259.66 29.9735 1258.82 30.8175C1257.97 31.6615 1257.5 32.8062 1257.5 33.9998C1257.5 37.3743 1256.44 38.4671 1255.45 39.4947Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<g id="Connection status" clip-path="url(#clip16_4_28339)">
+<rect id="Online indicator" x="1291" y="34" width="6" height="6" rx="3" fill="#087F73"/>
+<text id="Label_25" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" letter-spacing="0em"><tspan x="1303" y="41">All changes synced</tspan></text>
+</g>
+</g>
+</g>
+<g id="Page content">
+<g id="Page introduction" clip-path="url(#clip17_4_28339)">
+<text id="Eyebrow" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="600" letter-spacing="1.5px"><tspan x="260" y="113.636">CATALOG &#38; INVENTORY</tspan></text>
+<g id="Title and action" clip-path="url(#clip18_4_28339)">
+<text id="Page title" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="32" letter-spacing="-1px"><tspan x="260" y="156.636">Publications &#38; pricing</tspan></text>
+<g id="Action">
+<rect x="1252" y="125" width="152" height="40" rx="6" fill="#087F73"/>
+<g id="plus">
+<path id="Vector_17" d="M1270.12 145H1274.5M1274.5 145H1278.88M1274.5 145V140.625M1274.5 145V149.376" stroke-width="1.7" stroke-linecap="round" stroke="white"/>
+</g>
+<text id="Label_26" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="1290" y="149.727">Add publication</tspan></text>
+</g>
+</g>
+<text id="Label_27" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="260" y="188.227">Maintain regional editions, delivery cadences and date-aware rates. Changes stay traceable.</tspan></text>
+</g>
+<g id="Section navigation">
+<mask id="path-73-inside-4_4_28339" fill="white">
+<path d="M260 217H1404V258H260V217Z"/>
+</mask>
+<path d="M1404 258V257H260V258V259H1404V258Z" fill="#D3DEDA" mask="url(#path-73-inside-4_4_28339)"/>
+<g id="Section tab">
+<mask id="path-75-inside-5_4_28339" fill="white">
+<path d="M260 217H381V258H260V217Z"/>
+</mask>
+<path d="M381 258V256H260V258V260H381V258Z" fill="#087F73" mask="url(#path-75-inside-5_4_28339)"/>
+<text id="Label_28" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="260" y="242.227">Publication catalog</tspan></text>
+</g>
+<g id="Section tab_2">
+<text id="Label_29" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="409" y="242.227">Rate overrides</tspan></text>
+</g>
+<g id="Section tab_3">
+<text id="Label_30" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="526" y="242.227">Inventory &#38; returns</tspan></text>
+</g>
+<g id="Section tab_4">
+<text id="Label_31" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="671" y="242.227">Inserts &#38; merchandise</tspan></text>
+</g>
+</g>
+<g id="Table tools" clip-path="url(#clip19_4_28339)">
+<g id="Filters" clip-path="url(#clip20_4_28339)">
+<g id="Action_2">
+<rect x="260.5" y="282.5" width="177" height="39" rx="5.5" fill="white"/>
+<rect x="260.5" y="282.5" width="177" height="39" rx="5.5" stroke="#D3DEDA"/>
+<g id="search_2">
+<path id="Vector_18" d="M288.125 307.625L285.413 304.913M286.875 301.375C286.875 304.136 284.636 306.375 281.875 306.375C279.114 306.375 276.875 304.136 276.875 301.375C276.875 298.614 279.114 296.375 281.875 296.375C284.636 296.375 286.875 298.614 286.875 301.375Z" stroke-width="1.7" stroke-linecap="round" stroke="#172D2B"/>
+</g>
+<text id="Label_32" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="298" y="306.727">Search publications</tspan></text>
+</g>
+<g id="Action_3">
+<rect x="448.5" y="282.5" width="121" height="39" rx="5.5" fill="white"/>
+<rect x="448.5" y="282.5" width="121" height="39" rx="5.5" stroke="#D3DEDA"/>
+<text id="Label_33" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="463" y="306.727">All languages&#x2304;</tspan></text>
+</g>
+<g id="Action_4">
+<rect x="580.5" y="282.5" width="130" height="39" rx="5.5" fill="white"/>
+<rect x="580.5" y="282.5" width="130" height="39" rx="5.5" stroke="#D3DEDA"/>
+<text id="Label_34" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="595" y="306.727">Active editions&#x2304;</tspan></text>
+</g>
+</g>
+<g id="Saved view" clip-path="url(#clip21_4_28339)">
+<g id="Action_5">
+<rect x="1243.5" y="286.5" width="74" height="31" rx="5.5" fill="white"/>
+<rect x="1243.5" y="286.5" width="74" height="31" rx="5.5" stroke="#D3DEDA"/>
+<g id="table-2">
+<path id="Vector_19" d="M1258.62 296.375H1256.12C1255.79 296.375 1255.48 296.507 1255.24 296.741C1255.01 296.976 1254.88 297.293 1254.88 297.625V300.125M1258.62 296.375H1264.88C1265.21 296.375 1265.52 296.507 1265.76 296.741C1265.99 296.976 1266.12 297.293 1266.12 297.625V300.125M1258.62 296.375V300.125M1254.88 300.125V306.375C1254.88 306.707 1255.01 307.024 1255.24 307.259C1255.48 307.493 1255.79 307.625 1256.12 307.625H1258.62M1254.88 300.125H1258.62M1266.12 300.125H1258.62M1266.12 300.125V306.375C1266.12 306.707 1265.99 307.024 1265.76 307.259C1265.52 307.493 1265.21 307.625 1264.88 307.625H1258.62M1258.62 300.125V307.625" stroke-width="1.7" stroke-linecap="round" stroke="#172D2B"/>
+</g>
+<text id="Label_35" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" font-weight="600" letter-spacing="0em"><tspan x="1276" y="306.364">Table</tspan></text>
+</g>
+<g id="Action_6">
+<rect x="1326.5" y="286.5" width="77" height="31" rx="5.5" fill="white"/>
+<rect x="1326.5" y="286.5" width="77" height="31" rx="5.5" stroke="#D3DEDA"/>
+<g id="layout-grid">
+<path id="Vector_20" d="M1338.5 296.375H1341.62C1341.97 296.375 1342.25 296.655 1342.25 297V300.125C1342.25 300.47 1341.97 300.75 1341.62 300.75H1338.5C1338.15 300.75 1337.88 300.47 1337.88 300.125V297C1337.88 296.655 1338.15 296.375 1338.5 296.375ZM1345.38 296.375H1348.5C1348.85 296.375 1349.12 296.655 1349.12 297V300.125C1349.12 300.47 1348.85 300.75 1348.5 300.75H1345.38C1345.03 300.75 1344.75 300.47 1344.75 300.125V297C1344.75 296.655 1345.03 296.375 1345.38 296.375ZM1345.38 303.25H1348.5C1348.85 303.25 1349.12 303.53 1349.12 303.875V307C1349.12 307.345 1348.85 307.625 1348.5 307.625H1345.38C1345.03 307.625 1344.75 307.345 1344.75 307V303.875C1344.75 303.53 1345.03 303.25 1345.38 303.25ZM1338.5 303.25H1341.62C1341.97 303.25 1342.25 303.53 1342.25 303.875V307C1342.25 307.345 1341.97 307.625 1341.62 307.625H1338.5C1338.15 307.625 1337.88 307.345 1337.88 307V303.875C1337.88 303.53 1338.15 303.25 1338.5 303.25Z" stroke-width="1.7" stroke-linecap="round" stroke="#172D2B"/>
+</g>
+<text id="Label_36" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" font-weight="600" letter-spacing="0em"><tspan x="1359" y="306.364">Cards</tspan></text>
+</g>
+</g>
+</g>
+<g id="Data table">
+<g clip-path="url(#clip22_4_28339)">
+<g id="Column headings" clip-path="url(#clip23_4_28339)">
+<rect width="1144" height="42" transform="translate(260 346)" fill="#EEF3F0"/>
+<g id="Column heading">
+<mask id="path-96-inside-6_4_28339" fill="white">
+<path d="M260 346H560V388H260V346Z"/>
+</mask>
+<path d="M560 388V389H561V388H560ZM560 346H559V388H560H561V346H560ZM560 388V387H260V388V389H560V388Z" fill="#D3DEDA" mask="url(#path-96-inside-6_4_28339)"/>
+<text id="Label_37" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="272" y="371">PUBLICATION / EDITION</tspan></text>
+</g>
+<g id="Column heading_2">
+<mask id="path-99-inside-7_4_28339" fill="white">
+<path d="M560 346H690V388H560V346Z"/>
+</mask>
+<path d="M690 388V389H691V388H690ZM690 346H689V388H690H691V346H690ZM690 388V387H560V388V389H690V388Z" fill="#D3DEDA" mask="url(#path-99-inside-7_4_28339)"/>
+<text id="Label_38" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="572" y="371">LANGUAGE</tspan></text>
+</g>
+<g id="Column heading_3">
+<mask id="path-102-inside-8_4_28339" fill="white">
+<path d="M690 346H860V388H690V346Z"/>
+</mask>
+<path d="M860 388V389H861V388H860ZM860 346H859V388H860H861V346H860ZM860 388V387H690V388V389H860V388Z" fill="#D3DEDA" mask="url(#path-102-inside-8_4_28339)"/>
+<text id="Label_39" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="702" y="371">CADENCE</tspan></text>
+</g>
+<g id="Column heading_4">
+<mask id="path-105-inside-9_4_28339" fill="white">
+<path d="M860 346H985V388H860V346Z"/>
+</mask>
+<path d="M985 388V389H986V388H985ZM985 346H984V388H985H986V346H985ZM985 388V387H860V388V389H985V388Z" fill="#D3DEDA" mask="url(#path-105-inside-9_4_28339)"/>
+<text id="Label_40" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="872" y="371">WEEKDAY</tspan></text>
+</g>
+<g id="Column heading_5">
+<mask id="path-108-inside-10_4_28339" fill="white">
+<path d="M985 346H1110V388H985V346Z"/>
+</mask>
+<path d="M1110 388V389H1111V388H1110ZM1110 346H1109V388H1110H1111V346H1110ZM1110 388V387H985V388V389H1110V388Z" fill="#D3DEDA" mask="url(#path-108-inside-10_4_28339)"/>
+<text id="Label_41" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="997" y="371">WEEKEND</tspan></text>
+</g>
+<g id="Column heading_6">
+<mask id="path-111-inside-11_4_28339" fill="white">
+<path d="M1110 346H1250V388H1110V346Z"/>
+</mask>
+<path d="M1250 388V389H1251V388H1250ZM1250 346H1249V388H1250H1251V346H1250ZM1250 388V387H1110V388V389H1250V388Z" fill="#D3DEDA" mask="url(#path-111-inside-11_4_28339)"/>
+<text id="Label_42" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="1122" y="371">COPIES / DAY</tspan></text>
+</g>
+<g id="Column heading_7">
+<mask id="path-114-inside-12_4_28339" fill="white">
+<path d="M1250 346H1404V388H1250V346Z"/>
+</mask>
+<path d="M1404 388V389H1405V388H1404ZM1404 346H1403V388H1404H1405V346H1404ZM1404 388V387H1250V388V389H1404V388Z" fill="#D3DEDA" mask="url(#path-114-inside-12_4_28339)"/>
+<text id="Label_43" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="1262" y="371">STATUS</tspan></text>
+</g>
+</g>
+<g id="Record" clip-path="url(#clip24_4_28339)">
+<rect width="1144" height="67" transform="translate(260 388)" fill="white"/>
+<g id="Data cell">
+<mask id="path-117-inside-13_4_28339" fill="white">
+<path d="M260 388H560V455H260V388Z"/>
+</mask>
+<path d="M560 455V456H561V455H560ZM560 388H559V455H560H561V388H560ZM560 455V454H260V455V456H560V455Z" fill="#D3DEDA" mask="url(#path-117-inside-13_4_28339)"/>
+<text id="Label_44" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="272" y="416.727">Malayala Manorama&#10;</tspan><tspan x="272" y="435.727">Kochi &#xb7; Morning edition</tspan></text>
+</g>
+<g id="Data cell_2">
+<mask id="path-120-inside-14_4_28339" fill="white">
+<path d="M560 388H690V455H560V388Z"/>
+</mask>
+<path d="M690 455V456H691V455H690ZM690 388H689V455H690H691V388H690ZM690 455V454H560V455V456H690V455Z" fill="#D3DEDA" mask="url(#path-120-inside-14_4_28339)"/>
+<text id="Label_45" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="572" y="426.227">Malayalam</tspan></text>
+</g>
+<g id="Data cell_3">
+<mask id="path-123-inside-15_4_28339" fill="white">
+<path d="M690 388H860V455H690V388Z"/>
+</mask>
+<path d="M860 455V456H861V455H860ZM860 388H859V455H860H861V388H860ZM860 455V454H690V455V456H860V455Z" fill="#D3DEDA" mask="url(#path-123-inside-15_4_28339)"/>
+<text id="Label_46" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="702" y="426.227">Daily</tspan></text>
+</g>
+<g id="Data cell_4">
+<mask id="path-126-inside-16_4_28339" fill="white">
+<path d="M860 388H985V455H860V388Z"/>
+</mask>
+<path d="M985 455V456H986V455H985ZM985 388H984V455H985H986V388H985ZM985 455V454H860V455V456H985V455Z" fill="#D3DEDA" mask="url(#path-126-inside-16_4_28339)"/>
+<text id="Label_47" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="872" y="426.227">&#x20b9;7.00</tspan></text>
+</g>
+<g id="Data cell_5">
+<mask id="path-129-inside-17_4_28339" fill="white">
+<path d="M985 388H1110V455H985V388Z"/>
+</mask>
+<path d="M1110 455V456H1111V455H1110ZM1110 388H1109V455H1110H1111V388H1110ZM1110 455V454H985V455V456H1110V455Z" fill="#D3DEDA" mask="url(#path-129-inside-17_4_28339)"/>
+<text id="Label_48" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="997" y="426.227">&#x20b9;8.00</tspan></text>
+</g>
+<g id="Data cell_6">
+<mask id="path-132-inside-18_4_28339" fill="white">
+<path d="M1110 388H1250V455H1110V388Z"/>
+</mask>
+<path d="M1250 455V456H1251V455H1250ZM1250 388H1249V455H1250H1251V388H1250ZM1250 455V454H1110V455V456H1250V455Z" fill="#D3DEDA" mask="url(#path-132-inside-18_4_28339)"/>
+<text id="Label_49" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="1122" y="426.227">526</tspan></text>
+</g>
+<g id="Data cell_7">
+<mask id="path-135-inside-19_4_28339" fill="white">
+<path d="M1250 388H1404V455H1250V388Z"/>
+</mask>
+<path d="M1404 455V456H1405V455H1404ZM1404 388H1403V455H1404H1405V388H1404ZM1404 455V454H1250V455V456H1404V455Z" fill="#D3DEDA" mask="url(#path-135-inside-19_4_28339)"/>
+<g id="Status">
+<rect x="1262" y="409.5" width="50" height="24" rx="4" fill="#E2F2ED"/>
+<text id="Label_50" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="1270" y="425.5">Active</tspan></text>
+</g>
+</g>
+</g>
+<g id="Record_2" clip-path="url(#clip25_4_28339)">
+<rect width="1144" height="67" transform="translate(260 455)" fill="white"/>
+<g id="Data cell_8">
+<mask id="path-139-inside-20_4_28339" fill="white">
+<path d="M260 455H560V522H260V455Z"/>
+</mask>
+<path d="M560 522V523H561V522H560ZM560 455H559V522H560H561V455H560ZM560 522V521H260V522V523H560V522Z" fill="#D3DEDA" mask="url(#path-139-inside-20_4_28339)"/>
+<text id="Label_51" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="272" y="483.727">The Hindu&#10;</tspan><tspan x="272" y="502.727">Kochi &#xb7; City edition</tspan></text>
+</g>
+<g id="Data cell_9">
+<mask id="path-142-inside-21_4_28339" fill="white">
+<path d="M560 455H690V522H560V455Z"/>
+</mask>
+<path d="M690 522V523H691V522H690ZM690 455H689V522H690H691V455H690ZM690 522V521H560V522V523H690V522Z" fill="#D3DEDA" mask="url(#path-142-inside-21_4_28339)"/>
+<text id="Label_52" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="572" y="493.227">English</tspan></text>
+</g>
+<g id="Data cell_10">
+<mask id="path-145-inside-22_4_28339" fill="white">
+<path d="M690 455H860V522H690V455Z"/>
+</mask>
+<path d="M860 522V523H861V522H860ZM860 455H859V522H860H861V455H860ZM860 522V521H690V522V523H860V522Z" fill="#D3DEDA" mask="url(#path-145-inside-22_4_28339)"/>
+<text id="Label_53" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="702" y="493.227">Daily</tspan></text>
+</g>
+<g id="Data cell_11">
+<mask id="path-148-inside-23_4_28339" fill="white">
+<path d="M860 455H985V522H860V455Z"/>
+</mask>
+<path d="M985 522V523H986V522H985ZM985 455H984V522H985H986V455H985ZM985 522V521H860V522V523H985V522Z" fill="#D3DEDA" mask="url(#path-148-inside-23_4_28339)"/>
+<text id="Label_54" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="872" y="493.227">&#x20b9;10.00</tspan></text>
+</g>
+<g id="Data cell_12">
+<mask id="path-151-inside-24_4_28339" fill="white">
+<path d="M985 455H1110V522H985V455Z"/>
+</mask>
+<path d="M1110 522V523H1111V522H1110ZM1110 455H1109V522H1110H1111V455H1110ZM1110 522V521H985V522V523H1110V522Z" fill="#D3DEDA" mask="url(#path-151-inside-24_4_28339)"/>
+<text id="Label_55" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="997" y="493.227">&#x20b9;10.00</tspan></text>
+</g>
+<g id="Data cell_13">
+<mask id="path-154-inside-25_4_28339" fill="white">
+<path d="M1110 455H1250V522H1110V455Z"/>
+</mask>
+<path d="M1250 522V523H1251V522H1250ZM1250 455H1249V522H1250H1251V455H1250ZM1250 522V521H1110V522V523H1250V522Z" fill="#D3DEDA" mask="url(#path-154-inside-25_4_28339)"/>
+<text id="Label_56" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="1122" y="493.227">310</tspan></text>
+</g>
+<g id="Data cell_14">
+<mask id="path-157-inside-26_4_28339" fill="white">
+<path d="M1250 455H1404V522H1250V455Z"/>
+</mask>
+<path d="M1404 522V523H1405V522H1404ZM1404 455H1403V522H1404H1405V455H1404ZM1404 522V521H1250V522V523H1404V522Z" fill="#D3DEDA" mask="url(#path-157-inside-26_4_28339)"/>
+<g id="Status_2">
+<rect x="1262" y="476.5" width="50" height="24" rx="4" fill="#E2F2ED"/>
+<text id="Label_57" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="1270" y="492.5">Active</tspan></text>
+</g>
+</g>
+</g>
+<g id="Record_3" clip-path="url(#clip26_4_28339)">
+<rect width="1144" height="67" transform="translate(260 522)" fill="white"/>
+<g id="Data cell_15">
+<mask id="path-161-inside-27_4_28339" fill="white">
+<path d="M260 522H560V589H260V522Z"/>
+</mask>
+<path d="M560 589V590H561V589H560ZM560 522H559V589H560H561V522H560ZM560 589V588H260V589V590H560V589Z" fill="#D3DEDA" mask="url(#path-161-inside-27_4_28339)"/>
+<text id="Label_58" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="272" y="550.727">Mathrubhumi&#10;</tspan><tspan x="272" y="569.727">Ernakulam &#xb7; Morning</tspan></text>
+</g>
+<g id="Data cell_16">
+<mask id="path-164-inside-28_4_28339" fill="white">
+<path d="M560 522H690V589H560V522Z"/>
+</mask>
+<path d="M690 589V590H691V589H690ZM690 522H689V589H690H691V522H690ZM690 589V588H560V589V590H690V589Z" fill="#D3DEDA" mask="url(#path-164-inside-28_4_28339)"/>
+<text id="Label_59" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="572" y="560.227">Malayalam</tspan></text>
+</g>
+<g id="Data cell_17">
+<mask id="path-167-inside-29_4_28339" fill="white">
+<path d="M690 522H860V589H690V522Z"/>
+</mask>
+<path d="M860 589V590H861V589H860ZM860 522H859V589H860H861V522H860ZM860 589V588H690V589V590H860V589Z" fill="#D3DEDA" mask="url(#path-167-inside-29_4_28339)"/>
+<text id="Label_60" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="702" y="560.227">Daily</tspan></text>
+</g>
+<g id="Data cell_18">
+<mask id="path-170-inside-30_4_28339" fill="white">
+<path d="M860 522H985V589H860V522Z"/>
+</mask>
+<path d="M985 589V590H986V589H985ZM985 522H984V589H985H986V522H985ZM985 589V588H860V589V590H985V589Z" fill="#D3DEDA" mask="url(#path-170-inside-30_4_28339)"/>
+<text id="Label_61" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="872" y="560.227">&#x20b9;7.00</tspan></text>
+</g>
+<g id="Data cell_19">
+<mask id="path-173-inside-31_4_28339" fill="white">
+<path d="M985 522H1110V589H985V522Z"/>
+</mask>
+<path d="M1110 589V590H1111V589H1110ZM1110 522H1109V589H1110H1111V522H1110ZM1110 589V588H985V589V590H1110V589Z" fill="#D3DEDA" mask="url(#path-173-inside-31_4_28339)"/>
+<text id="Label_62" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="997" y="560.227">&#x20b9;8.00</tspan></text>
+</g>
+<g id="Data cell_20">
+<mask id="path-176-inside-32_4_28339" fill="white">
+<path d="M1110 522H1250V589H1110V522Z"/>
+</mask>
+<path d="M1250 589V590H1251V589H1250ZM1250 522H1249V589H1250H1251V522H1250ZM1250 589V588H1110V589V590H1250V589Z" fill="#D3DEDA" mask="url(#path-176-inside-32_4_28339)"/>
+<text id="Label_63" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="1122" y="560.227">242</tspan></text>
+</g>
+<g id="Data cell_21">
+<mask id="path-179-inside-33_4_28339" fill="white">
+<path d="M1250 522H1404V589H1250V522Z"/>
+</mask>
+<path d="M1404 589V590H1405V589H1404ZM1404 522H1403V589H1404H1405V522H1404ZM1404 589V588H1250V589V590H1404V589Z" fill="#D3DEDA" mask="url(#path-179-inside-33_4_28339)"/>
+<g id="Status_3">
+<rect x="1262" y="543.5" width="50" height="24" rx="4" fill="#E2F2ED"/>
+<text id="Label_64" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="1270" y="559.5">Active</tspan></text>
+</g>
+</g>
+</g>
+<g id="Record_4" clip-path="url(#clip27_4_28339)">
+<rect width="1144" height="67" transform="translate(260 589)" fill="white"/>
+<g id="Data cell_22">
+<mask id="path-183-inside-34_4_28339" fill="white">
+<path d="M260 589H560V656H260V589Z"/>
+</mask>
+<path d="M560 656V657H561V656H560ZM560 589H559V656H560H561V589H560ZM560 656V655H260V656V657H560V656Z" fill="#D3DEDA" mask="url(#path-183-inside-34_4_28339)"/>
+<text id="Label_65" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="272" y="617.727">Business Line&#10;</tspan><tspan x="272" y="636.727">Kerala edition</tspan></text>
+</g>
+<g id="Data cell_23">
+<mask id="path-186-inside-35_4_28339" fill="white">
+<path d="M560 589H690V656H560V589Z"/>
+</mask>
+<path d="M690 656V657H691V656H690ZM690 589H689V656H690H691V589H690ZM690 656V655H560V656V657H690V656Z" fill="#D3DEDA" mask="url(#path-186-inside-35_4_28339)"/>
+<text id="Label_66" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="572" y="627.227">English</tspan></text>
+</g>
+<g id="Data cell_24">
+<mask id="path-189-inside-36_4_28339" fill="white">
+<path d="M690 589H860V656H690V589Z"/>
+</mask>
+<path d="M860 656V657H861V656H860ZM860 589H859V656H860H861V589H860ZM860 656V655H690V656V657H860V656Z" fill="#D3DEDA" mask="url(#path-189-inside-36_4_28339)"/>
+<text id="Label_67" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="702" y="627.227">Mon&#x2013;Sat</tspan></text>
+</g>
+<g id="Data cell_25">
+<mask id="path-192-inside-37_4_28339" fill="white">
+<path d="M860 589H985V656H860V589Z"/>
+</mask>
+<path d="M985 656V657H986V656H985ZM985 589H984V656H985H986V589H985ZM985 656V655H860V656V657H985V656Z" fill="#D3DEDA" mask="url(#path-192-inside-37_4_28339)"/>
+<text id="Label_68" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="872" y="627.227">&#x20b9;12.00</tspan></text>
+</g>
+<g id="Data cell_26">
+<mask id="path-195-inside-38_4_28339" fill="white">
+<path d="M985 589H1110V656H985V589Z"/>
+</mask>
+<path d="M1110 656V657H1111V656H1110ZM1110 589H1109V656H1110H1111V589H1110ZM1110 656V655H985V656V657H1110V656Z" fill="#D3DEDA" mask="url(#path-195-inside-38_4_28339)"/>
+<text id="Label_69" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="997" y="627.227">&#x20b9;12.00 Sat</tspan></text>
+</g>
+<g id="Data cell_27">
+<mask id="path-198-inside-39_4_28339" fill="white">
+<path d="M1110 589H1250V656H1110V589Z"/>
+</mask>
+<path d="M1250 656V657H1251V656H1250ZM1250 589H1249V656H1250H1251V589H1250ZM1250 656V655H1110V656V657H1250V656Z" fill="#D3DEDA" mask="url(#path-198-inside-39_4_28339)"/>
+<text id="Label_70" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="1122" y="627.227">90</tspan></text>
+</g>
+<g id="Data cell_28">
+<mask id="path-201-inside-40_4_28339" fill="white">
+<path d="M1250 589H1404V656H1250V589Z"/>
+</mask>
+<path d="M1404 656V657H1405V656H1404ZM1404 589H1403V656H1404H1405V589H1404ZM1404 656V655H1250V656V657H1404V656Z" fill="#D3DEDA" mask="url(#path-201-inside-40_4_28339)"/>
+<g id="Status_4">
+<rect x="1262" y="610.5" width="50" height="24" rx="4" fill="#E2F2ED"/>
+<text id="Label_71" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="1270" y="626.5">Active</tspan></text>
+</g>
+</g>
+</g>
+<g id="Record_5" clip-path="url(#clip28_4_28339)">
+<rect width="1144" height="67" transform="translate(260 656)" fill="white"/>
+<g id="Data cell_29">
+<mask id="path-205-inside-41_4_28339" fill="white">
+<path d="M260 656H560V723H260V656Z"/>
+</mask>
+<path d="M560 723V724H561V723H560ZM560 656H559V723H560H561V656H560ZM560 723V722H260V723V724H560V723Z" fill="#D3DEDA" mask="url(#path-205-inside-41_4_28339)"/>
+<text id="Label_72" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="272" y="684.727">The New Indian Express&#10;</tspan><tspan x="272" y="703.727">Kochi edition</tspan></text>
+</g>
+<g id="Data cell_30">
+<mask id="path-208-inside-42_4_28339" fill="white">
+<path d="M560 656H690V723H560V656Z"/>
+</mask>
+<path d="M690 723V724H691V723H690ZM690 656H689V723H690H691V656H690ZM690 723V722H560V723V724H690V723Z" fill="#D3DEDA" mask="url(#path-208-inside-42_4_28339)"/>
+<text id="Label_73" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="572" y="694.227">English</tspan></text>
+</g>
+<g id="Data cell_31">
+<mask id="path-211-inside-43_4_28339" fill="white">
+<path d="M690 656H860V723H690V656Z"/>
+</mask>
+<path d="M860 723V724H861V723H860ZM860 656H859V723H860H861V656H860ZM860 723V722H690V723V724H860V723Z" fill="#D3DEDA" mask="url(#path-211-inside-43_4_28339)"/>
+<text id="Label_74" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="702" y="694.227">Daily</tspan></text>
+</g>
+<g id="Data cell_32">
+<mask id="path-214-inside-44_4_28339" fill="white">
+<path d="M860 656H985V723H860V656Z"/>
+</mask>
+<path d="M985 723V724H986V723H985ZM985 656H984V723H985H986V656H985ZM985 723V722H860V723V724H985V723Z" fill="#D3DEDA" mask="url(#path-214-inside-44_4_28339)"/>
+<text id="Label_75" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="872" y="694.227">&#x20b9;8.00</tspan></text>
+</g>
+<g id="Data cell_33">
+<mask id="path-217-inside-45_4_28339" fill="white">
+<path d="M985 656H1110V723H985V656Z"/>
+</mask>
+<path d="M1110 723V724H1111V723H1110ZM1110 656H1109V723H1110H1111V656H1110ZM1110 723V722H985V723V724H1110V723Z" fill="#D3DEDA" mask="url(#path-217-inside-45_4_28339)"/>
+<text id="Label_76" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="997" y="694.227">&#x20b9;10.00</tspan></text>
+</g>
+<g id="Data cell_34">
+<mask id="path-220-inside-46_4_28339" fill="white">
+<path d="M1110 656H1250V723H1110V656Z"/>
+</mask>
+<path d="M1250 723V724H1251V723H1250ZM1250 656H1249V723H1250H1251V656H1250ZM1250 723V722H1110V723V724H1250V723Z" fill="#D3DEDA" mask="url(#path-220-inside-46_4_28339)"/>
+<text id="Label_77" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="1122" y="694.227">96</tspan></text>
+</g>
+<g id="Data cell_35">
+<mask id="path-223-inside-47_4_28339" fill="white">
+<path d="M1250 656H1404V723H1250V656Z"/>
+</mask>
+<path d="M1404 723V724H1405V723H1404ZM1404 656H1403V723H1404H1405V656H1404ZM1404 723V722H1250V723V724H1404V723Z" fill="#D3DEDA" mask="url(#path-223-inside-47_4_28339)"/>
+<g id="Status_5">
+<rect x="1262" y="677.5" width="50" height="24" rx="4" fill="#E2F2ED"/>
+<text id="Label_78" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="1270" y="693.5">Active</tspan></text>
+</g>
+</g>
+</g>
+<g id="Record_6" clip-path="url(#clip29_4_28339)">
+<rect width="1144" height="67" transform="translate(260 723)" fill="white"/>
+<g id="Data cell_36">
+<mask id="path-227-inside-48_4_28339" fill="white">
+<path d="M260 723H560V790H260V723Z"/>
+</mask>
+<path d="M560 790V791H561V790H560ZM560 723H559V790H560H561V723H560ZM560 790V789H260V790V791H560V790Z" fill="#D3DEDA" mask="url(#path-227-inside-48_4_28339)"/>
+<text id="Label_79" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="272" y="751.727">Manorama Weekly&#10;</tspan><tspan x="272" y="770.727">Regional magazine</tspan></text>
+</g>
+<g id="Data cell_37">
+<mask id="path-230-inside-49_4_28339" fill="white">
+<path d="M560 723H690V790H560V723Z"/>
+</mask>
+<path d="M690 790V791H691V790H690ZM690 723H689V790H690H691V723H690ZM690 790V789H560V790V791H690V790Z" fill="#D3DEDA" mask="url(#path-230-inside-49_4_28339)"/>
+<text id="Label_80" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="572" y="761.227">Malayalam</tspan></text>
+</g>
+<g id="Data cell_38">
+<mask id="path-233-inside-50_4_28339" fill="white">
+<path d="M690 723H860V790H690V723Z"/>
+</mask>
+<path d="M860 790V791H861V790H860ZM860 723H859V790H860H861V723H860ZM860 790V789H690V790V791H860V790Z" fill="#D3DEDA" mask="url(#path-233-inside-50_4_28339)"/>
+<text id="Label_81" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="702" y="761.227">Sunday</tspan></text>
+</g>
+<g id="Data cell_39">
+<mask id="path-236-inside-51_4_28339" fill="white">
+<path d="M860 723H985V790H860V723Z"/>
+</mask>
+<path d="M985 790V791H986V790H985ZM985 723H984V790H985H986V723H985ZM985 790V789H860V790V791H985V790Z" fill="#D3DEDA" mask="url(#path-236-inside-51_4_28339)"/>
+<text id="Label_82" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="872" y="761.227">&#x2014;</tspan></text>
+</g>
+<g id="Data cell_40">
+<mask id="path-239-inside-52_4_28339" fill="white">
+<path d="M985 723H1110V790H985V723Z"/>
+</mask>
+<path d="M1110 790V791H1111V790H1110ZM1110 723H1109V790H1110H1111V723H1110ZM1110 790V789H985V790V791H1110V790Z" fill="#D3DEDA" mask="url(#path-239-inside-52_4_28339)"/>
+<text id="Label_83" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="997" y="761.227">&#x20b9;15.00</tspan></text>
+</g>
+<g id="Data cell_41">
+<mask id="path-242-inside-53_4_28339" fill="white">
+<path d="M1110 723H1250V790H1110V723Z"/>
+</mask>
+<path d="M1250 790V791H1251V790H1250ZM1250 723H1249V790H1250H1251V723H1250ZM1250 790V789H1110V790V791H1250V790Z" fill="#D3DEDA" mask="url(#path-242-inside-53_4_28339)"/>
+<text id="Label_84" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="1122" y="761.227">84 / week</tspan></text>
+</g>
+<g id="Data cell_42">
+<mask id="path-245-inside-54_4_28339" fill="white">
+<path d="M1250 723H1404V790H1250V723Z"/>
+</mask>
+<path d="M1404 790V791H1405V790H1404ZM1404 723H1403V790H1404H1405V723H1404ZM1404 790V789H1250V790V791H1404V790Z" fill="#D3DEDA" mask="url(#path-245-inside-54_4_28339)"/>
+<g id="Status_6">
+<rect x="1262" y="744.5" width="50" height="24" rx="4" fill="#E2F2ED"/>
+<text id="Label_85" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="1270" y="760.5">Active</tspan></text>
+</g>
+</g>
+</g>
+<g id="Record_7" clip-path="url(#clip30_4_28339)">
+<rect width="1144" height="67" transform="translate(260 790)" fill="white"/>
+<g id="Data cell_43">
+<mask id="path-249-inside-55_4_28339" fill="white">
+<path d="M260 790H560V857H260V790Z"/>
+</mask>
+<path d="M560 857V858H561V857H560ZM560 790H559V857H560H561V790H560ZM560 857V856H260V857V858H560V857Z" fill="#D3DEDA" mask="url(#path-249-inside-55_4_28339)"/>
+<text id="Label_86" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="272" y="818.727">Dainik Jagran&#10;</tspan><tspan x="272" y="837.727">National edition</tspan></text>
+</g>
+<g id="Data cell_44">
+<mask id="path-252-inside-56_4_28339" fill="white">
+<path d="M560 790H690V857H560V790Z"/>
+</mask>
+<path d="M690 857V858H691V857H690ZM690 790H689V857H690H691V790H690ZM690 857V856H560V857V858H690V857Z" fill="#D3DEDA" mask="url(#path-252-inside-56_4_28339)"/>
+<text id="Label_87" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="572" y="828.227">Hindi</tspan></text>
+</g>
+<g id="Data cell_45">
+<mask id="path-255-inside-57_4_28339" fill="white">
+<path d="M690 790H860V857H690V790Z"/>
+</mask>
+<path d="M860 857V858H861V857H860ZM860 790H859V857H860H861V790H860ZM860 857V856H690V857V858H860V857Z" fill="#D3DEDA" mask="url(#path-255-inside-57_4_28339)"/>
+<text id="Label_88" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="702" y="828.227">On request</tspan></text>
+</g>
+<g id="Data cell_46">
+<mask id="path-258-inside-58_4_28339" fill="white">
+<path d="M860 790H985V857H860V790Z"/>
+</mask>
+<path d="M985 857V858H986V857H985ZM985 790H984V857H985H986V790H985ZM985 857V856H860V857V858H985V857Z" fill="#D3DEDA" mask="url(#path-258-inside-58_4_28339)"/>
+<text id="Label_89" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="872" y="828.227">&#x20b9;6.00</tspan></text>
+</g>
+<g id="Data cell_47">
+<mask id="path-261-inside-59_4_28339" fill="white">
+<path d="M985 790H1110V857H985V790Z"/>
+</mask>
+<path d="M1110 857V858H1111V857H1110ZM1110 790H1109V857H1110H1111V790H1110ZM1110 857V856H985V857V858H1110V857Z" fill="#D3DEDA" mask="url(#path-261-inside-59_4_28339)"/>
+<text id="Label_90" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="997" y="828.227">&#x20b9;7.00</tspan></text>
+</g>
+<g id="Data cell_48">
+<mask id="path-264-inside-60_4_28339" fill="white">
+<path d="M1110 790H1250V857H1110V790Z"/>
+</mask>
+<path d="M1250 857V858H1251V857H1250ZM1250 790H1249V857H1250H1251V790H1250ZM1250 857V856H1110V857V858H1250V857Z" fill="#D3DEDA" mask="url(#path-264-inside-60_4_28339)"/>
+<text id="Label_91" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="1122" y="828.227">0</tspan></text>
+</g>
+<g id="Data cell_49">
+<mask id="path-267-inside-61_4_28339" fill="white">
+<path d="M1250 790H1404V857H1250V790Z"/>
+</mask>
+<path d="M1404 857V858H1405V857H1404ZM1404 790H1403V857H1404H1405V790H1404ZM1404 857V856H1250V857V858H1404V857Z" fill="#D3DEDA" mask="url(#path-267-inside-61_4_28339)"/>
+<g id="Status_7">
+<rect x="1262" y="811.5" width="72" height="24" rx="4" fill="#EEF3F0"/>
+<text id="Label_92" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="1270" y="827.5">Order only</tspan></text>
+</g>
+</g>
+</g>
+</g>
+<rect x="260.5" y="346.5" width="1143" height="510" stroke="#D3DEDA"/>
+</g>
+<g id="Pricing management" clip-path="url(#clip31_4_28339)">
+<g id="Detail panel">
+<g clip-path="url(#clip32_4_28339)">
+<rect x="260" y="881" width="714" height="272" rx="8" fill="white"/>
+<g id="Panel heading">
+<text id="Label_93" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="15" font-weight="600" letter-spacing="0em"><tspan x="280" y="914.455">Date-range overrides</tspan></text>
+<text id="Label_94" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="847" y="913.364">Upcoming &#38; active</tspan></text>
+</g>
+<g id="Data table_2">
+<g clip-path="url(#clip33_4_28339)">
+<g id="Column headings_2" clip-path="url(#clip34_4_28339)">
+<rect width="714" height="42" transform="translate(260 937)" fill="#EEF3F0"/>
+<g id="Column heading_8">
+<mask id="path-277-inside-62_4_28339" fill="white">
+<path d="M260 937H520V979H260V937Z"/>
+</mask>
+<path d="M520 979V980H521V979H520ZM520 937H519V979H520H521V937H520ZM520 979V978H260V979V980H520V979Z" fill="#D3DEDA" mask="url(#path-277-inside-62_4_28339)"/>
+<text id="Label_95" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="272" y="962">EDITION / REASON</tspan></text>
+</g>
+<g id="Column heading_9">
+<mask id="path-280-inside-63_4_28339" fill="white">
+<path d="M520 937H710V979H520V937Z"/>
+</mask>
+<path d="M710 979V980H711V979H710ZM710 937H709V979H710H711V937H710ZM710 979V978H520V979V980H710V979Z" fill="#D3DEDA" mask="url(#path-280-inside-63_4_28339)"/>
+<text id="Label_96" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="532" y="962">EFFECTIVE DATES</tspan></text>
+</g>
+<g id="Column heading_10">
+<mask id="path-283-inside-64_4_28339" fill="white">
+<path d="M710 937H815V979H710V937Z"/>
+</mask>
+<path d="M815 979V980H816V979H815ZM815 937H814V979H815H816V937H815ZM815 979V978H710V979V980H815V979Z" fill="#D3DEDA" mask="url(#path-283-inside-64_4_28339)"/>
+<text id="Label_97" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="722" y="962">RATE</tspan></text>
+</g>
+<g id="Column heading_11">
+<mask id="path-286-inside-65_4_28339" fill="white">
+<path d="M815 937H974V979H815V937Z"/>
+</mask>
+<path d="M974 979V980H975V979H974ZM974 937H973V979H974H975V937H974ZM974 979V978H815V979V980H974V979Z" fill="#D3DEDA" mask="url(#path-286-inside-65_4_28339)"/>
+<text id="Label_98" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="827" y="962">SCOPE</tspan></text>
+</g>
+</g>
+<g id="Record_8" clip-path="url(#clip35_4_28339)">
+<rect width="714" height="55" transform="translate(260 979)" fill="white"/>
+<g id="Data cell_50">
+<mask id="path-289-inside-66_4_28339" fill="white">
+<path d="M260 979H520V1034H260V979Z"/>
+</mask>
+<path d="M520 1034V1035H521V1034H520ZM520 979H519V1034H520H521V979H520ZM520 1034V1033H260V1034V1035H520V1034Z" fill="#D3DEDA" mask="url(#path-289-inside-66_4_28339)"/>
+<text id="Label_99" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="272" y="1011.23">Manorama &#xb7; Festival edition</tspan></text>
+</g>
+<g id="Data cell_51">
+<mask id="path-292-inside-67_4_28339" fill="white">
+<path d="M520 979H710V1034H520V979Z"/>
+</mask>
+<path d="M710 1034V1035H711V1034H710ZM710 979H709V1034H710H711V979H710ZM710 1034V1033H520V1034V1035H710V1034Z" fill="#D3DEDA" mask="url(#path-292-inside-67_4_28339)"/>
+<text id="Label_100" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="532" y="1011.23">14&#x2013;15 Nov 2026</tspan></text>
+</g>
+<g id="Data cell_52">
+<mask id="path-295-inside-68_4_28339" fill="white">
+<path d="M710 979H815V1034H710V979Z"/>
+</mask>
+<path d="M815 1034V1035H816V1034H815ZM815 979H814V1034H815H816V979H815ZM815 1034V1033H710V1034V1035H815V1034Z" fill="#D3DEDA" mask="url(#path-295-inside-68_4_28339)"/>
+<text id="Label_101" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="722" y="1011.23">&#x20b9;12.00</tspan></text>
+</g>
+<g id="Data cell_53">
+<mask id="path-298-inside-69_4_28339" fill="white">
+<path d="M815 979H974V1034H815V979Z"/>
+</mask>
+<path d="M974 1034V1035H975V1034H974ZM974 979H973V1034H974H975V979H974ZM974 1034V1033H815V1034V1035H974V1034Z" fill="#D3DEDA" mask="url(#path-298-inside-69_4_28339)"/>
+<text id="Label_102" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="827" y="1011.23">All subscribers</tspan></text>
+</g>
+</g>
+<g id="Record_9" clip-path="url(#clip36_4_28339)">
+<rect width="714" height="55" transform="translate(260 1034)" fill="white"/>
+<g id="Data cell_54">
+<mask id="path-301-inside-70_4_28339" fill="white">
+<path d="M260 1034H520V1089H260V1034Z"/>
+</mask>
+<path d="M520 1089V1090H521V1089H520ZM520 1034H519V1089H520H521V1034H520ZM520 1089V1088H260V1089V1090H520V1089Z" fill="#D3DEDA" mask="url(#path-301-inside-70_4_28339)"/>
+<text id="Label_103" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="272" y="1066.23">The Hindu &#xb7; Agreed rate</tspan></text>
+</g>
+<g id="Data cell_55">
+<mask id="path-304-inside-71_4_28339" fill="white">
+<path d="M520 1034H710V1089H520V1034Z"/>
+</mask>
+<path d="M710 1089V1090H711V1089H710ZM710 1034H709V1089H710H711V1034H710ZM710 1089V1088H520V1089V1090H710V1089Z" fill="#D3DEDA" mask="url(#path-304-inside-71_4_28339)"/>
+<text id="Label_104" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="532" y="1066.23">01&#x2013;31 Oct 2026</tspan></text>
+</g>
+<g id="Data cell_56">
+<mask id="path-307-inside-72_4_28339" fill="white">
+<path d="M710 1034H815V1089H710V1034Z"/>
+</mask>
+<path d="M815 1089V1090H816V1089H815ZM815 1034H814V1089H815H816V1034H815ZM815 1089V1088H710V1089V1090H815V1089Z" fill="#D3DEDA" mask="url(#path-307-inside-72_4_28339)"/>
+<text id="Label_105" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="722" y="1066.23">&#x20b9;11.00</tspan></text>
+</g>
+<g id="Data cell_57">
+<mask id="path-310-inside-73_4_28339" fill="white">
+<path d="M815 1034H974V1089H815V1034Z"/>
+</mask>
+<path d="M974 1089V1090H975V1089H974ZM974 1034H973V1089H974H975V1034H974ZM974 1089V1088H815V1089V1090H974V1089Z" fill="#D3DEDA" mask="url(#path-310-inside-73_4_28339)"/>
+<text id="Label_106" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="827" y="1066.23">Anitha Nair</tspan></text>
+</g>
+</g>
+</g>
+<rect x="260.5" y="937.5" width="713" height="151" stroke="#D3DEDA"/>
+</g>
+<g id="Override action">
+<g id="Action_7">
+<rect x="276.5" y="1105.5" width="143" height="31" rx="5.5" fill="white"/>
+<rect x="276.5" y="1105.5" width="143" height="31" rx="5.5" stroke="#D3DEDA"/>
+<g id="plus_2">
+<path id="Vector_21" d="M289.124 1121H293.5M293.5 1121H297.875M293.5 1121V1116.62M293.5 1121V1125.38" stroke-width="1.7" stroke-linecap="round" stroke="#172D2B"/>
+</g>
+<text id="Label_107" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" font-weight="600" letter-spacing="0em"><tspan x="309" y="1125.36">Add rate override</tspan></text>
+</g>
+</g>
+</g>
+<rect x="260.5" y="881.5" width="713" height="271" rx="7.5" stroke="#D3DEDA"/>
+</g>
+<g id="Detail panel_2">
+<g clip-path="url(#clip37_4_28339)">
+<rect x="994" y="881" width="410" height="195" rx="8" fill="white"/>
+<g id="Panel heading_2">
+<text id="Label_108" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="15" font-weight="600" letter-spacing="0em"><tspan x="1014" y="914.455">How rates are applied</tspan></text>
+</g>
+<g id="Rate hierarchy">
+<text id="Label_109" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="1014" y="949.864">1   Resident-specific agreed rate</tspan></text>
+<text id="Label_110" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="1014" y="978.864">2   Date-range edition override</tspan></text>
+<text id="Label_111" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="1014" y="1007.86">3   Standard weekday / weekend rate</tspan></text>
+<text id="Label_112" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" letter-spacing="0em"><tspan x="1014" y="1036">The delivery date determines the rate, not the day the bill is </tspan><tspan x="1014" y="1052">generated. Saved bills keep their applied rate history.</tspan></text>
+</g>
+</g>
+<rect x="994.5" y="881.5" width="409" height="194" rx="7.5" stroke="#D3DEDA"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_4_28339">
+<rect width="1440" height="1185" fill="white"/>
+</clipPath>
+<clipPath id="clip1_4_28339">
+<rect width="129" height="43" fill="white" transform="translate(67 25)"/>
+</clipPath>
+<clipPath id="clip2_4_28339">
+<rect width="192" height="588" fill="white" transform="translate(16 95)"/>
+</clipPath>
+<clipPath id="clip3_4_28339">
+<rect width="192" height="196" fill="white" transform="translate(16 95)"/>
+</clipPath>
+<clipPath id="clip4_4_28339">
+<rect width="17" height="17" fill="white" transform="translate(26 263)"/>
+</clipPath>
+<clipPath id="clip5_4_28339">
+<rect width="192" height="196" fill="white" transform="translate(16 314)"/>
+</clipPath>
+<clipPath id="clip6_4_28339">
+<rect width="192" height="150" fill="white" transform="translate(16 533)"/>
+</clipPath>
+<clipPath id="clip7_4_28339">
+<rect width="17" height="17" fill="white" transform="translate(26 655)"/>
+</clipPath>
+<clipPath id="clip8_4_28339">
+<rect width="192" height="85" fill="white" transform="translate(16 710)"/>
+</clipPath>
+<clipPath id="clip9_4_28339">
+<rect width="17" height="17" fill="white" transform="translate(26 768)"/>
+</clipPath>
+<clipPath id="clip10_4_28339">
+<rect width="158" height="32" fill="white" transform="translate(24 840)"/>
+</clipPath>
+<clipPath id="clip11_4_28339">
+<rect width="118" height="32" fill="white" transform="translate(64 840)"/>
+</clipPath>
+<clipPath id="clip12_4_28339">
+<rect width="1216" height="1185" fill="white" transform="translate(224)"/>
+</clipPath>
+<clipPath id="clip13_4_28339">
+<rect width="252" height="19" fill="white" transform="translate(260 27.5)"/>
+</clipPath>
+<clipPath id="clip14_4_28339">
+<rect width="358" height="18" fill="white" transform="translate(1046 28)"/>
+</clipPath>
+<clipPath id="clip15_4_28339">
+<rect width="144" height="17" fill="white" transform="translate(1046 28.5)"/>
+</clipPath>
+<clipPath id="clip16_4_28339">
+<rect width="113" height="16" fill="white" transform="translate(1291 29)"/>
+</clipPath>
+<clipPath id="clip17_4_28339">
+<rect width="1144" height="89" fill="white" transform="translate(260 104)"/>
+</clipPath>
+<clipPath id="clip18_4_28339">
+<rect width="1144" height="40" fill="white" transform="translate(260 125)"/>
+</clipPath>
+<clipPath id="clip19_4_28339">
+<rect width="1144" height="40" fill="white" transform="translate(260 282)"/>
+</clipPath>
+<clipPath id="clip20_4_28339">
+<rect width="451" height="40" fill="white" transform="translate(260 282)"/>
+</clipPath>
+<clipPath id="clip21_4_28339">
+<rect width="161" height="32" fill="white" transform="translate(1243 286)"/>
+</clipPath>
+<clipPath id="clip22_4_28339">
+<rect x="260" y="346" width="1144" height="511" fill="white"/>
+</clipPath>
+<clipPath id="clip23_4_28339">
+<rect width="1144" height="42" fill="white" transform="translate(260 346)"/>
+</clipPath>
+<clipPath id="clip24_4_28339">
+<rect width="1144" height="67" fill="white" transform="translate(260 388)"/>
+</clipPath>
+<clipPath id="clip25_4_28339">
+<rect width="1144" height="67" fill="white" transform="translate(260 455)"/>
+</clipPath>
+<clipPath id="clip26_4_28339">
+<rect width="1144" height="67" fill="white" transform="translate(260 522)"/>
+</clipPath>
+<clipPath id="clip27_4_28339">
+<rect width="1144" height="67" fill="white" transform="translate(260 589)"/>
+</clipPath>
+<clipPath id="clip28_4_28339">
+<rect width="1144" height="67" fill="white" transform="translate(260 656)"/>
+</clipPath>
+<clipPath id="clip29_4_28339">
+<rect width="1144" height="67" fill="white" transform="translate(260 723)"/>
+</clipPath>
+<clipPath id="clip30_4_28339">
+<rect width="1144" height="67" fill="white" transform="translate(260 790)"/>
+</clipPath>
+<clipPath id="clip31_4_28339">
+<rect width="1144" height="272" fill="white" transform="translate(260 881)"/>
+</clipPath>
+<clipPath id="clip32_4_28339">
+<rect x="260" y="881" width="714" height="272" rx="8" fill="white"/>
+</clipPath>
+<clipPath id="clip33_4_28339">
+<rect x="260" y="937" width="714" height="152" fill="white"/>
+</clipPath>
+<clipPath id="clip34_4_28339">
+<rect width="714" height="42" fill="white" transform="translate(260 937)"/>
+</clipPath>
+<clipPath id="clip35_4_28339">
+<rect width="714" height="55" fill="white" transform="translate(260 979)"/>
+</clipPath>
+<clipPath id="clip36_4_28339">
+<rect width="714" height="55" fill="white" transform="translate(260 1034)"/>
+</clipPath>
+<clipPath id="clip37_4_28339">
+<rect x="994" y="881" width="410" height="195" rx="8" fill="white"/>
+</clipPath>
+</defs>
+</svg>

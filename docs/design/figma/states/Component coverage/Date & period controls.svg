@@ -1,0 +1,142 @@
+<svg width="1440" height="1141" viewBox="0 0 1440 1141" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Component coverage / Date &#38; period controls">
+<rect width="1440" height="1141" fill="#F5F6F3"/>
+<text id="Text / Date &#38; period controls" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="28" font-weight="600" letter-spacing="0em"><tspan x="32" y="63.1818">Date &#38; period controls</tspan></text>
+<text id="Text / 6 applicable states &#194;&#183; editable native comp" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="32" y="117.591">6 applicable states &#xb7; editable native component variants. Loading, empty and failure behavior is visible in the control itself.</tspan></text>
+<g id="Daybook/Edge/Date &#38; period controls">
+<g id="State=Valid range">
+<rect x="48.5" y="167.5" width="639" height="262" rx="7.5" fill="white"/>
+<rect x="48.5" y="167.5" width="639" height="262" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / VALID RANGE" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="204.5">VALID RANGE</tspan></text>
+<g id="Field / From date">
+<text id="Text / FROM DATE" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="241.5">FROM DATE</tspan></text>
+<g id="Input">
+<rect x="73.5" y="258.5" width="591" height="50" rx="5.5" fill="white"/>
+<rect x="73.5" y="258.5" width="591" height="50" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / 01 Nov 2026" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="86" y="286.591">01 Nov 2026</tspan></text>
+</g>
+</g>
+<g id="Field / To date">
+<text id="Text / TO DATE" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="337.5">TO DATE</tspan></text>
+<g id="Input_2">
+<rect x="73.5" y="354.5" width="591" height="50" rx="5.5" fill="white"/>
+<rect x="73.5" y="354.5" width="591" height="50" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / 30 Nov 2026" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="86" y="382.591">30 Nov 2026</tspan></text>
+</g>
+</g>
+</g>
+<g id="State=Empty">
+<rect x="720.5" y="167.5" width="639" height="262" rx="7.5" fill="white"/>
+<rect x="720.5" y="167.5" width="639" height="262" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / EMPTY" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="204.5">EMPTY</tspan></text>
+<g id="Field / From date_2">
+<text id="Text / FROM DATE_2" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="241.5">FROM DATE</tspan></text>
+<g id="Input_3">
+<rect x="745.5" y="258.5" width="591" height="50" rx="5.5" fill="white"/>
+<rect x="745.5" y="258.5" width="591" height="50" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Enter from date" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="758" y="286.591">Enter from date</tspan></text>
+</g>
+</g>
+<g id="Field / To date_2">
+<text id="Text / TO DATE_2" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="337.5">TO DATE</tspan></text>
+<g id="Input_4">
+<rect x="745.5" y="354.5" width="591" height="50" rx="5.5" fill="white"/>
+<rect x="745.5" y="354.5" width="591" height="50" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / 30 Nov 2026_2" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="758" y="382.591">30 Nov 2026</tspan></text>
+</g>
+</g>
+</g>
+<g id="State=Reversed dates">
+<rect x="48.5" y="454.5" width="639" height="294" rx="7.5" fill="white"/>
+<rect x="48.5" y="454.5" width="639" height="294" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / REVERSED DATES" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="491.5">REVERSED DATES</tspan></text>
+<g id="Field / From date_3">
+<text id="Text / FROM DATE_3" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="528.5">FROM DATE</tspan></text>
+<g id="Input_5">
+<rect x="74" y="546" width="590" height="51" rx="5" fill="white"/>
+<rect x="74" y="546" width="590" height="51" rx="5" stroke="#AD2B30" stroke-width="2"/>
+<text id="Text / 01 Nov 2026_2" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="87" y="574.591">01 Nov 2026</tspan></text>
+</g>
+<text id="Text / Start date must be on or before end date." fill="#AD2B30" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="73" y="619.364">Start date must be on or before end date.</tspan></text>
+</g>
+<g id="Field / To date_3">
+<text id="Text / TO DATE_3" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="656.5">TO DATE</tspan></text>
+<g id="Input_6">
+<rect x="73.5" y="673.5" width="591" height="50" rx="5.5" fill="white"/>
+<rect x="73.5" y="673.5" width="591" height="50" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / 31 Oct 2026" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="86" y="701.591">31 Oct 2026</tspan></text>
+</g>
+</g>
+</g>
+<g id="State=Future period">
+<rect x="720.5" y="454.5" width="639" height="302" rx="7.5" fill="white"/>
+<rect x="720.5" y="454.5" width="639" height="302" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / FUTURE PERIOD" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="491.5">FUTURE PERIOD</tspan></text>
+<g id="Field / From date_4">
+<text id="Text / FROM DATE_4" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="528.5">FROM DATE</tspan></text>
+<g id="Input_7">
+<rect x="745.5" y="545.5" width="591" height="50" rx="5.5" fill="white"/>
+<rect x="745.5" y="545.5" width="591" height="50" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / 01 Nov 2026_3" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="758" y="573.591">01 Nov 2026</tspan></text>
+</g>
+</g>
+<g id="Field / To date_4">
+<text id="Text / TO DATE_4" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="624.5">TO DATE</tspan></text>
+<g id="Input_8">
+<rect x="745.5" y="641.5" width="591" height="50" rx="5.5" fill="white"/>
+<rect x="745.5" y="641.5" width="591" height="50" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / 30 Nov 2026_3" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="758" y="669.591">30 Nov 2026</tspan></text>
+</g>
+</g>
+<text id="Text / Future deliveries cannot be billed as comp" fill="#8C5C14" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="745" y="722.727">Future deliveries cannot be billed as completed.</tspan></text>
+</g>
+<g id="State=Loading periods">
+<rect x="48.5" y="781.5" width="639" height="303" rx="7.5" fill="white"/>
+<rect x="48.5" y="781.5" width="639" height="303" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / LOADING PERIODS" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="818.5">LOADING PERIODS</tspan></text>
+<g id="Field / From date_5">
+<text id="Text / FROM DATE_5" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="855.5">FROM DATE</tspan></text>
+<g id="Input_9">
+<rect x="73.5" y="872.5" width="591" height="50" rx="5.5" fill="white"/>
+<rect x="73.5" y="872.5" width="591" height="50" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / 01 Nov 2026_4" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="86" y="900.591">01 Nov 2026</tspan></text>
+</g>
+</g>
+<g id="Field / To date_5">
+<text id="Text / TO DATE_5" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="951.5">TO DATE</tspan></text>
+<g id="Input_10">
+<rect x="73.5" y="968.5" width="591" height="50" rx="5.5" fill="white"/>
+<rect x="73.5" y="968.5" width="591" height="50" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / 30 Nov 2026_4" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="86" y="996.591">30 Nov 2026</tspan></text>
+</g>
+</g>
+<g id="Progress status">
+<path id="Ellipse" d="M93.5 1046C93.5 1047.79 92.9925 1049.55 92.0363 1051.07C91.08 1052.58 89.714 1053.8 88.0962 1054.57C86.4783 1055.34 84.6747 1055.64 82.8938 1055.44C81.1129 1055.23 79.4275 1054.52 78.0324 1053.39C76.6372 1052.27 75.5893 1050.77 75.0098 1049.07C74.4303 1047.37 74.3429 1045.55 74.7576 1043.8C75.1723 1042.06 76.0723 1040.47 77.3535 1039.21C78.6346 1037.96 80.2446 1037.09 81.9974 1036.71" stroke-width="3" stroke="#087F73"/>
+<text id="Text / Loading available periods&#226;&#128;&#166;" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" font-weight="600" letter-spacing="0em"><tspan x="107" y="1050.59">Loading available periods&#x2026;</tspan></text>
+</g>
+</g>
+<g id="State=No periods">
+<rect x="720.5" y="781.5" width="639" height="302" rx="7.5" fill="white"/>
+<rect x="720.5" y="781.5" width="639" height="302" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / NO PERIODS" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="818.5">NO PERIODS</tspan></text>
+<g id="Field / From date_6">
+<text id="Text / FROM DATE_6" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="855.5">FROM DATE</tspan></text>
+<g id="Input_11">
+<rect x="745.5" y="872.5" width="591" height="50" rx="5.5" fill="white"/>
+<rect x="745.5" y="872.5" width="591" height="50" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / 01 Nov 2026_5" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="758" y="900.591">01 Nov 2026</tspan></text>
+</g>
+</g>
+<g id="Field / To date_6">
+<text id="Text / TO DATE_6" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="951.5">TO DATE</tspan></text>
+<g id="Input_12">
+<rect x="745.5" y="968.5" width="591" height="50" rx="5.5" fill="white"/>
+<rect x="745.5" y="968.5" width="591" height="50" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / 30 Nov 2026_5" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="758" y="996.591">30 Nov 2026</tspan></text>
+</g>
+</g>
+<text id="Text / No billing periods are available for this " fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="745" y="1049.73">No billing periods are available for this agency.</tspan></text>
+</g>
+</g>
+</g>
+</svg>

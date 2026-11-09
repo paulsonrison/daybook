@@ -1,0 +1,1039 @@
+<svg width="1440" height="1335" viewBox="0 0 1440 1335" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Payments and collection ledger" clip-path="url(#clip0_4_30373)">
+<rect width="1440" height="1335" fill="#F5F6F3"/>
+<g id="Agency navigation">
+<mask id="path-1-inside-1_4_30373" fill="white">
+<path d="M0 0H224V1335H0V0Z"/>
+</mask>
+<path d="M0 0H224V1335H0V0Z" fill="#FDFEFC"/>
+<path d="M224 0H223V1335H224H225V0H224Z" fill="#D3DEDA" mask="url(#path-1-inside-1_4_30373)"/>
+<g id="Brand">
+<g id="Brand mark">
+<rect x="24" y="28.5" width="33" height="36" rx="4" fill="#087F73"/>
+<g id="newspaper">
+<path id="Vector" d="M43.2506 52.0004H38.6669M46.0008 48.3334H38.6669M33.1665 55.6673H47.8343C48.3206 55.6673 48.787 55.4742 49.1308 55.1303C49.4746 54.7865 49.6678 54.3201 49.6678 53.8338V39.166C49.6678 38.6797 49.4746 38.2134 49.1308 37.8695C48.787 37.5257 48.3206 37.3325 47.8343 37.3325H36.8334C36.3472 37.3325 35.8808 37.5257 35.537 37.8695C35.1931 38.2134 35 38.6797 35 39.166V43.7497M33.1665 55.6673C33.6528 55.6673 34.1191 55.4742 34.463 55.1303C34.8068 54.7865 35 54.3201 35 53.8338V43.7497M33.1665 55.6673C32.6802 55.6673 32.2139 55.4742 31.87 55.1303C31.5262 54.7865 31.333 54.3201 31.333 53.8338V45.5832C31.333 45.0969 31.5262 44.6306 31.87 44.2867C32.2139 43.9429 32.6802 43.7497 33.1665 43.7497H35M39.5837 40.9995H45.0841C45.5904 40.9995 46.0008 41.4099 46.0008 41.9162V43.7497C46.0008 44.256 45.5904 44.6664 45.0841 44.6664H39.5837C39.0774 44.6664 38.6669 44.256 38.6669 43.7497V41.9162C38.6669 41.4099 39.0774 40.9995 39.5837 40.9995Z" stroke-width="1.7" stroke-linecap="round" stroke="white"/>
+</g>
+</g>
+<g id="Brand identity" clip-path="url(#clip1_4_30373)">
+<text id="Agency brand" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="23" letter-spacing="-0.8px"><tspan x="67" y="47.3636">daybook</tspan></text>
+<text id="Label" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="67" y="64.1364">THE AGENCY WORKSPACE</tspan></text>
+</g>
+</g>
+<g id="Navigation groups" clip-path="url(#clip2_4_30373)">
+<g id="Navigation group" clip-path="url(#clip3_4_30373)">
+<text id="Group label" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="600" letter-spacing="1.2px"><tspan x="16" y="104.636">WORKSPACE</tspan></text>
+<g id="Navigation item">
+<g id="layout-dashboard">
+<path id="Vector_2" d="M28.8333 127.125H32.375C32.7662 127.125 33.0833 127.442 33.0833 127.833V132.792C33.0833 133.183 32.7662 133.5 32.375 133.5H28.8333C28.4421 133.5 28.125 133.183 28.125 132.792V127.833C28.125 127.442 28.4421 127.125 28.8333 127.125ZM36.625 127.125H40.1667C40.5579 127.125 40.875 127.442 40.875 127.833V129.958C40.875 130.35 40.5579 130.667 40.1667 130.667H36.625C36.2338 130.667 35.9167 130.35 35.9167 129.958V127.833C35.9167 127.442 36.2338 127.125 36.625 127.125ZM36.625 133.5H40.1667C40.5579 133.5 40.875 133.817 40.875 134.208V139.167C40.875 139.558 40.5579 139.875 40.1667 139.875H36.625C36.2338 139.875 35.9167 139.558 35.9167 139.167V134.208C35.9167 133.817 36.2338 133.5 36.625 133.5ZM28.8333 136.333H32.375C32.7662 136.333 33.0833 136.65 33.0833 137.042V139.167C33.0833 139.558 32.7662 139.875 32.375 139.875H28.8333C28.4421 139.875 28.125 139.558 28.125 139.167V137.042C28.125 136.65 28.4421 136.333 28.8333 136.333Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_2" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="137.864">Overview</tspan></text>
+</g>
+<g id="Navigation item_2">
+<g id="users">
+<path id="Vector_3" d="M37.3335 185.875V184.458C37.3335 183.707 37.0349 182.986 36.5035 182.455C35.9721 181.924 35.2514 181.625 34.4999 181.625H30.2496C29.4981 181.625 28.7773 181.924 28.2459 182.455C27.7146 182.986 27.416 183.707 27.416 184.458V185.875M37.3335 173.216C37.9411 173.373 38.4792 173.728 38.8634 174.224C39.2475 174.721 39.456 175.331 39.456 175.958C39.456 176.586 39.2475 177.196 38.8634 177.692C38.4792 178.189 37.9411 178.543 37.3335 178.701M41.5838 185.875V184.458C41.5833 183.83 41.3744 183.221 40.9897 182.724C40.6051 182.228 40.0665 181.874 39.4586 181.717M35.2083 175.958C35.2083 177.523 33.9397 178.792 32.3747 178.792C30.8098 178.792 29.5412 177.523 29.5412 175.958C29.5412 174.394 30.8098 173.125 32.3747 173.125C33.9397 173.125 35.2083 174.394 35.2083 175.958Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_3" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="183.864">Residents &#38; subscriptions</tspan></text>
+</g>
+<g id="Navigation item_3">
+<g id="route">
+<path id="Vector_4" d="M32.375 230.459C32.375 231.632 31.4236 232.584 30.25 232.584C29.0764 232.584 28.125 231.632 28.125 230.459C28.125 229.285 29.0764 228.333 30.25 228.333C31.4236 228.333 32.375 229.285 32.375 230.459ZM32.375 230.459H38.3958C39.0533 230.459 39.6839 230.197 40.1489 229.732C40.6138 229.267 40.875 228.637 40.875 227.979C40.875 227.322 40.6138 226.691 40.1489 226.226C39.6839 225.761 39.0533 225.5 38.3958 225.5H30.6042C29.9467 225.5 29.3161 225.239 28.8511 224.774C28.3862 224.309 28.125 223.678 28.125 223.021C28.125 222.363 28.3862 221.732 28.8511 221.267C29.3161 220.802 29.9467 220.541 30.6042 220.541H36.625M36.625 220.541C36.625 221.715 37.5764 222.666 38.75 222.666C39.9236 222.666 40.875 221.715 40.875 220.541C40.875 219.367 39.9236 218.416 38.75 218.416C37.5764 218.416 36.625 219.367 36.625 220.541Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_4" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="229.864">Routes &#38; delivery</tspan></text>
+</g>
+<g id="Navigation item_4">
+<g id="newspaper_2" clip-path="url(#clip4_4_30373)">
+<path id="Vector_5" d="M36.6251 275.75H33.0831M38.7503 272.917H33.0831M28.8328 278.584H40.167C40.5428 278.584 40.9032 278.435 41.1688 278.169C41.4345 277.903 41.5838 277.543 41.5838 277.167V265.833C41.5838 265.457 41.4345 265.097 41.1688 264.831C40.9032 264.565 40.5428 264.416 40.167 264.416H31.6664C31.2906 264.416 30.9302 264.565 30.6645 264.831C30.3988 265.097 30.2496 265.457 30.2496 265.833V269.375M28.8328 278.584C29.2085 278.584 29.5689 278.435 29.8346 278.169C30.1003 277.903 30.2496 277.543 30.2496 277.167V269.375M28.8328 278.584C28.457 278.584 28.0967 278.435 27.831 278.169C27.5653 277.903 27.416 277.543 27.416 277.167V270.792C27.416 270.416 27.5653 270.055 27.831 269.79C28.0967 269.524 28.457 269.375 28.8328 269.375H30.2496M33.7915 267.25H38.0419C38.4331 267.25 38.7503 267.567 38.7503 267.958V269.375C38.7503 269.766 38.4331 270.083 38.0419 270.083H33.7915C33.4003 270.083 33.0831 269.766 33.0831 269.375V267.958C33.0831 267.567 33.4003 267.25 33.7915 267.25Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_5" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="275.864">Publications &#38; pricing</tspan></text>
+</g>
+</g>
+<g id="Navigation group_2" clip-path="url(#clip5_4_30373)">
+<text id="Group label_2" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="600" letter-spacing="1.2px"><tspan x="16" y="323.636">FINANCE</tspan></text>
+<g id="Navigation item_5">
+<g id="receipt-text">
+<path id="Vector_6" d="M35.2083 355.333H31.667M35.9166 349.666H31.667M37.3331 352.499H31.667M28.834 346.124C28.834 345.936 28.9086 345.756 29.0414 345.623C29.1743 345.49 29.3544 345.416 29.5422 345.416C29.7176 345.415 29.8896 345.464 30.038 345.557L30.6988 345.982C30.8469 346.077 31.0189 346.127 31.1946 346.127C31.3703 346.127 31.5424 346.077 31.6904 345.982L32.3519 345.557C32.5 345.463 32.672 345.413 32.8477 345.413C33.0234 345.413 33.1954 345.463 33.3435 345.557L34.0043 345.982C34.1524 346.077 34.3244 346.127 34.5001 346.127C34.6758 346.127 34.8478 346.077 34.9959 345.982L35.6567 345.557C35.8047 345.463 35.9768 345.413 36.1525 345.413C36.3282 345.413 36.5002 345.463 36.6482 345.557L37.3098 345.982C37.4578 346.077 37.6298 346.127 37.8055 346.127C37.9812 346.127 38.1533 346.077 38.3013 345.982L38.9621 345.557C39.1105 345.464 39.2825 345.415 39.4579 345.416C39.6458 345.416 39.8259 345.49 39.9587 345.623C40.0916 345.756 40.1662 345.936 40.1662 346.124V358.874C40.1662 359.062 40.0916 359.242 39.9587 359.375C39.8259 359.508 39.6458 359.582 39.4579 359.582C39.2825 359.583 39.1105 359.534 38.9621 359.441L38.3013 359.016C38.1533 358.921 37.9812 358.871 37.8055 358.871C37.6298 358.871 37.4578 358.921 37.3098 359.016L36.6482 359.441C36.5002 359.535 36.3282 359.585 36.1525 359.585C35.9768 359.585 35.8047 359.535 35.6567 359.441L34.9959 359.016C34.8478 358.921 34.6758 358.871 34.5001 358.871C34.3244 358.871 34.1524 358.921 34.0043 359.016L33.3435 359.441C33.1954 359.535 33.0234 359.585 32.8477 359.585C32.672 359.585 32.5 359.535 32.3519 359.441L31.6904 359.016C31.5424 358.921 31.3703 358.871 31.1946 358.871C31.0189 358.871 30.8469 358.921 30.6988 359.016L30.038 359.441C29.8896 359.534 29.7176 359.583 29.5422 359.582C29.3544 359.582 29.1743 359.508 29.0414 359.375C28.9086 359.242 28.834 359.062 28.834 358.874V346.124Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_6" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="356.864">Billing / Collection</tspan></text>
+</g>
+<g id="Navigation item_6">
+<rect x="16" y="379" width="192" height="39" rx="6" fill="#E2F2ED"/>
+<g id="wallet">
+<path id="Vector_7" d="M39.4583 394.958V392.833C39.4583 392.645 39.3837 392.465 39.2509 392.332C39.118 392.2 38.9379 392.125 38.75 392.125H29.5417C29.1659 392.125 28.8056 392.274 28.5399 392.54C28.2743 392.806 28.125 393.166 28.125 393.542M39.4583 394.958H29.5417C29.1659 394.958 28.8056 394.809 28.5399 394.543C28.2743 394.278 28.125 393.917 28.125 393.542M39.4583 394.958H40.1667C40.3545 394.958 40.5347 395.033 40.6675 395.166C40.8004 395.299 40.875 395.479 40.875 395.667V398.5M28.125 393.542V403.458C28.125 403.834 28.2743 404.194 28.5399 404.46C28.8056 404.726 29.1659 404.875 29.5417 404.875H40.1667C40.3545 404.875 40.5347 404.8 40.6675 404.668C40.8004 404.535 40.875 404.355 40.875 404.167V401.333M40.875 398.5H38.75C38.3743 398.5 38.0139 398.649 37.7483 398.915C37.4826 399.181 37.3333 399.541 37.3333 399.917C37.3333 400.292 37.4826 400.653 37.7483 400.918C38.0139 401.184 38.3743 401.333 38.75 401.333H40.875M40.875 398.5C41.0629 398.5 41.243 398.575 41.3759 398.707C41.5087 398.84 41.5833 399.02 41.5833 399.208V400.625C41.5833 400.813 41.5087 400.993 41.3759 401.126C41.243 401.259 41.0629 401.333 40.875 401.333" stroke-width="1.7" stroke-linecap="round" stroke="#087F73"/>
+</g>
+<text id="Label_7" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" font-weight="600" letter-spacing="0em"><tspan x="53" y="402.864">Payments &#38; ledger</tspan></text>
+</g>
+<g id="Navigation item_7">
+<g id="landmark">
+<path id="Vector_8" d="M33.0833 448.751V443.792M35.9165 448.751V443.792M38.7498 448.751V443.792M28.1251 451.584H40.8747M30.2501 448.751V443.792M33.8767 437.557C34.071 437.463 34.2844 437.414 34.5005 437.415C34.7166 437.415 34.9296 437.465 35.1233 437.561L40.6949 440.286C41.032 440.451 40.9145 440.959 40.5391 440.959H28.4609C28.0855 440.959 27.9687 440.451 28.3051 440.286L33.8767 437.557Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_8" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="448.864">Cash closing</tspan></text>
+</g>
+<g id="Navigation item_8">
+<g id="chart-no-axes-combined">
+<path id="Vector_9" d="M34.4999 493.333V496.875M37.3335 491.917V496.875M40.167 489.083V496.875M41.5838 484.125L35.4591 490.249C35.4262 490.282 35.3871 490.308 35.3441 490.326C35.301 490.344 35.2549 490.353 35.2083 490.353C35.1617 490.353 35.1156 490.344 35.0726 490.326C35.0295 490.308 34.9904 490.282 34.9575 490.249L32.6255 487.917C32.5591 487.851 32.469 487.814 32.3751 487.814C32.2812 487.814 32.1911 487.851 32.1247 487.917L27.416 492.625M28.8328 494.75V496.875M31.6664 491.917V496.875" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_9" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="494.864">Reports &#38; analytics</tspan></text>
+</g>
+</g>
+<g id="Navigation group_3" clip-path="url(#clip6_4_30373)">
+<text id="Group label_3" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="600" letter-spacing="1.2px"><tspan x="16" y="542.636">OPERATIONS</tspan></text>
+<g id="Navigation item_9">
+<g id="contact-round">
+<path id="Vector_10" d="M37.3333 564.416V565.833M37.3333 565.833H31.6667M37.3333 565.833H39.4583C40.2407 565.833 40.875 566.467 40.875 567.25V577.167C40.875 577.95 40.2407 578.584 39.4583 578.584H38.6898M38.6898 578.584C38.6898 577.457 38.2421 576.375 37.445 575.578C36.648 574.781 35.567 574.333 34.4398 574.333C33.3126 574.333 32.2316 574.781 31.4346 575.578C30.6376 576.375 30.1898 577.457 30.1898 578.584M38.6898 578.584H30.1898M30.1898 578.584H29.5417C28.7593 578.584 28.125 577.95 28.125 577.167V567.25C28.125 566.467 28.7593 565.833 29.5417 565.833H31.6667M31.6667 564.416V565.833M37.3333 571.5C37.3333 573.065 36.0648 574.333 34.5 574.333C32.9352 574.333 31.6667 573.065 31.6667 571.5C31.6667 569.935 32.9352 568.666 34.5 568.666C36.0648 568.666 37.3333 569.935 37.3333 571.5Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_10" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="575.864">Staff &#38; payroll</tspan></text>
+</g>
+<g id="Navigation item_10">
+<g id="package">
+<path id="Vector_11" d="M34.5 624.584V624.583M34.5 624.583V617.5M34.5 624.583C34.2513 624.583 34.007 624.517 33.7917 624.393L28.8333 621.559C28.6182 621.435 28.4395 621.256 28.3152 621.041C28.1908 620.826 28.1253 620.582 28.125 620.334V614.667C28.1253 614.418 28.1908 614.174 28.3152 613.959C28.4395 613.744 28.6182 613.565 28.8333 613.441L31.3127 612.024M34.5 624.583C34.7487 624.583 34.993 624.517 35.2083 624.393L40.1667 621.559C40.3818 621.435 40.5605 621.256 40.6848 621.041C40.8092 620.826 40.8747 620.582 40.875 620.334V614.667C40.8747 614.418 40.8092 614.174 40.6848 613.959C40.5605 613.744 40.3818 613.565 40.1667 613.441L35.2083 610.608C34.993 610.483 34.7487 610.418 34.5 610.418C34.2513 610.418 34.007 610.483 33.7917 610.608L31.3127 612.024M34.5 617.5L28.3304 613.958M34.5 617.5L37.6858 615.671M37.6858 615.671L40.6696 613.958M37.6858 615.671L31.3127 612.024M37.6858 615.671L37.6875 615.672M31.3125 612.024L31.3127 612.024" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_11" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="621.864">Indents &#38; returns</tspan></text>
+</g>
+<g id="Navigation item_11">
+<g id="messages-square" clip-path="url(#clip7_4_30373)">
+<path id="Vector_12" d="M40.167 661.375C40.5428 661.375 40.9032 661.524 41.1688 661.79C41.4345 662.055 41.5838 662.416 41.5838 662.791V670.078C41.5838 670.177 41.5543 670.274 41.499 670.357C41.4438 670.44 41.3652 670.504 41.2733 670.542C41.1814 670.58 41.0803 670.59 40.9828 670.571C40.8852 670.551 40.7956 670.503 40.7252 670.433L39.1654 668.873C38.8997 668.608 38.5394 668.458 38.1637 668.458H33.0831C32.7074 668.458 32.347 668.309 32.0813 668.043C31.8156 667.778 31.6664 667.417 31.6664 667.041V666.333M37.3335 662.083C37.3335 662.459 37.1842 662.819 36.9185 663.085C36.6528 663.35 36.2924 663.5 35.9167 663.5H30.8361C30.4604 663.5 30.1001 663.649 29.8345 663.915L28.2746 665.475C28.2042 665.545 28.1146 665.593 28.0171 665.612C27.9195 665.632 27.8184 665.622 27.7265 665.584C27.6346 665.546 27.5561 665.481 27.5008 665.398C27.4455 665.316 27.416 665.218 27.416 665.119V657.833C27.416 657.457 27.5653 657.097 27.831 656.831C28.0967 656.565 28.457 656.416 28.8328 656.416H35.9167C36.2924 656.416 36.6528 656.565 36.9185 656.831C37.1842 657.097 37.3335 657.457 37.3335 657.833V662.083Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_12" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="667.864">Communications</tspan></text>
+</g>
+</g>
+</g>
+<g id="Workspace tools" clip-path="url(#clip8_4_30373)">
+<g id="Settings navigation">
+<g id="settings-2">
+<path id="Vector_13" d="M35.9166 733.541H29.5422M35.9166 733.541C35.9166 734.715 36.8679 735.666 38.0414 735.666C39.2149 735.666 40.1662 734.715 40.1662 733.541C40.1662 732.368 39.2149 731.417 38.0414 731.417C36.8679 731.417 35.9166 732.368 35.9166 733.541ZM39.4579 726.459H33.0836M33.0836 726.459C33.0836 727.632 32.1323 728.584 30.9588 728.584C29.7853 728.584 28.834 727.632 28.834 726.459C28.834 725.285 29.7853 724.334 30.9588 724.334C32.1323 724.334 33.0836 725.285 33.0836 726.459Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_13" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="734.364">Settings</tspan></text>
+</g>
+<g id="Support navigation">
+<g id="circle-help" clip-path="url(#clip9_4_30373)">
+<path id="Vector_14" d="M32.4384 774.374C32.6049 773.901 32.9337 773.502 33.3663 773.248C33.799 772.993 34.3078 772.9 34.8024 772.985C35.2971 773.07 35.7457 773.327 36.0689 773.711C36.3922 774.095 36.5691 774.581 36.5683 775.083C36.5683 776.5 34.4431 777.208 34.4431 777.208M34.4999 780.042H34.507M41.5838 776.5C41.5838 780.412 38.4122 783.584 34.4999 783.584C30.5876 783.584 27.416 780.412 27.416 776.5C27.416 772.588 30.5876 769.416 34.4999 769.416C38.4122 769.416 41.5838 772.588 41.5838 776.5Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_14" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="780.864">Help &#38; assistant</tspan></text>
+</g>
+</g>
+<g id="Agent workspace">
+<mask id="path-48-inside-2_4_30373" fill="white">
+<path d="M16 822H208V897H16V822Z"/>
+</mask>
+<path d="M16 822V823H208V822V821H16V822Z" fill="#D3DEDA" mask="url(#path-48-inside-2_4_30373)"/>
+<g id="Agency identity" clip-path="url(#clip10_4_30373)">
+<g id="Agent avatar">
+<rect x="24" y="841" width="30" height="30" rx="15" fill="#EEF3F0"/>
+<text id="Label_15" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="31.5" y="860">RK</tspan></text>
+</g>
+<g id="Agent details" clip-path="url(#clip11_4_30373)">
+<text id="Label_16" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" font-weight="600" letter-spacing="0em"><tspan x="64" y="852.864">Ravi Kumar</tspan></text>
+<text id="Label_17" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="64" y="868.136">Daybreak Agency &#xb7; Kochi</tspan></text>
+</g>
+</g>
+<text id="Label_18" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="24" y="893.136">DEMO WORKSPACE &#xb7; SAMPLE DATA</tspan></text>
+</g>
+</g>
+<g id="Main workspace" clip-path="url(#clip12_4_30373)">
+<g id="Workspace bar">
+<mask id="path-55-inside-3_4_30373" fill="white">
+<path d="M224 0H1440V74H224V0Z"/>
+</mask>
+<path d="M224 0H1440V74H224V0Z" fill="white"/>
+<path d="M1440 74V73H224V74V75H1440V74Z" fill="#D3DEDA" mask="url(#path-55-inside-3_4_30373)"/>
+<g id="Workspace location" clip-path="url(#clip13_4_30373)">
+<text id="Label_19" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="260" y="41.3636">Daybreak Agency</tspan></text>
+<text id="Label_20" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="371" y="41.7273">/</tspan></text>
+<text id="Label_21" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" font-weight="600" letter-spacing="0em"><tspan x="386" y="41.3636">Payments &#38; ledger</tspan></text>
+</g>
+<g id="Workspace utilities" clip-path="url(#clip14_4_30373)">
+<g id="Global search" clip-path="url(#clip15_4_30373)">
+<g id="search">
+<path id="Vector_15" d="M1060 43.0001L1057.11 40.1068M1058.67 36.3333C1058.67 39.2789 1056.28 41.6667 1053.33 41.6667C1050.39 41.6667 1048 39.2789 1048 36.3333C1048 33.3878 1050.39 31 1053.33 31C1056.28 31 1058.67 33.3878 1058.67 36.3333Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_22" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="1070" y="41.3636">Search anything</tspan></text>
+<text id="Label_23" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="1170" y="40.6364">&#x2318; K</tspan></text>
+</g>
+<text id="Label_24" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="1210" y="41.3636">EN&#x2304;</tspan></text>
+<g id="bell">
+<path id="Vector_16" d="M1260.7 43.7507C1260.83 43.9787 1261.02 44.1681 1261.25 44.2998C1261.48 44.4314 1261.74 44.5007 1262 44.5007C1262.26 44.5007 1262.52 44.4314 1262.75 44.2998C1262.98 44.1681 1263.17 43.9787 1263.3 43.7507M1255.45 39.4949C1255.35 39.6023 1255.28 39.7358 1255.26 39.8793C1255.24 40.0227 1255.26 40.1699 1255.31 40.303C1255.37 40.436 1255.47 40.5491 1255.59 40.6286C1255.71 40.708 1255.85 40.7504 1256 40.7505H1268C1268.15 40.7505 1268.29 40.7083 1268.41 40.629C1268.53 40.5497 1268.63 40.4367 1268.69 40.3038C1268.74 40.1709 1268.76 40.0237 1268.74 39.8802C1268.72 39.7367 1268.65 39.6031 1268.55 39.4956C1267.56 38.4673 1266.5 37.3744 1266.5 33.9999C1266.5 32.8063 1266.03 31.6616 1265.18 30.8176C1264.34 29.9737 1263.19 29.4995 1262 29.4995C1260.81 29.4995 1259.66 29.9737 1258.82 30.8176C1257.97 31.6616 1257.5 32.8063 1257.5 33.9999C1257.5 37.3744 1256.44 38.4673 1255.45 39.4949Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<g id="Connection status" clip-path="url(#clip16_4_30373)">
+<rect id="Online indicator" x="1291" y="34" width="6" height="6" rx="3" fill="#087F73"/>
+<text id="Label_25" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" letter-spacing="0em"><tspan x="1303" y="41">All changes synced</tspan></text>
+</g>
+</g>
+</g>
+<g id="Page content">
+<g id="Page introduction" clip-path="url(#clip17_4_30373)">
+<text id="Eyebrow" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="600" letter-spacing="1.5px"><tspan x="260" y="113.636">FINANCE / RECONCILIATION</tspan></text>
+<g id="Title and action" clip-path="url(#clip18_4_30373)">
+<text id="Page title" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="32" letter-spacing="-1px"><tspan x="260" y="156.636">Payments &#38; ledger</tspan></text>
+<g id="Payment actions" clip-path="url(#clip19_4_30373)">
+<g id="Action">
+<rect x="1099.5" y="125.5" width="138" height="39" rx="5.5" fill="white"/>
+<rect x="1099.5" y="125.5" width="138" height="39" rx="5.5" stroke="#D3DEDA"/>
+<g id="download">
+<path id="Vector_17" d="M1121.5 146.875V139.375M1124.62 143.75L1121.5 146.875L1118.38 143.75M1127.12 146.875V149.375C1127.12 149.707 1126.99 150.024 1126.76 150.259C1126.52 150.493 1126.21 150.625 1125.88 150.625H1117.12C1116.79 150.625 1116.48 150.493 1116.24 150.259C1116.01 150.024 1115.88 149.707 1115.88 149.375V146.875" stroke-width="1.7" stroke-linecap="round" stroke="#172D2B"/>
+</g>
+<text id="Label_26" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="1137" y="149.727">Export ledger</tspan></text>
+</g>
+<g id="Action_2">
+<rect x="1248" y="125" width="156" height="40" rx="6" fill="#087F73"/>
+<g id="plus">
+<path id="Vector_18" d="M1266.12 145H1270.5M1270.5 145H1274.88M1270.5 145V140.625M1270.5 145V149.376" stroke-width="1.7" stroke-linecap="round" stroke="white"/>
+</g>
+<text id="Label_27" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="1286" y="149.727">Record payment</tspan></text>
+</g>
+</g>
+</g>
+<text id="Label_28" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="260" y="188.227">Trace every receipt, partial payment and settlement back to the resident&#x2019;s bill.</tspan></text>
+</g>
+<g id="Section navigation">
+<mask id="path-76-inside-4_4_30373" fill="white">
+<path d="M260 217H1404V258H260V217Z"/>
+</mask>
+<path d="M1404 258V257H260V258V259H1404V258Z" fill="#D3DEDA" mask="url(#path-76-inside-4_4_30373)"/>
+<g id="Section tab">
+<mask id="path-78-inside-5_4_30373" fill="white">
+<path d="M260 217H368V258H260V217Z"/>
+</mask>
+<path d="M368 258V256H260V258V260H368V258Z" fill="#087F73" mask="url(#path-78-inside-5_4_30373)"/>
+<text id="Label_29" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="260" y="242.227">Collection ledger</tspan></text>
+</g>
+<g id="Section tab_2">
+<text id="Label_30" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="396" y="242.227">Bank reconciliation</tspan></text>
+</g>
+<g id="Section tab_3">
+<text id="Label_31" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="540" y="242.227">Payment alerts</tspan></text>
+</g>
+<g id="Section tab_4">
+<text id="Label_32" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="661" y="242.227">Daily cash closing</tspan></text>
+</g>
+</g>
+<g id="Summary metrics" clip-path="url(#clip20_4_30373)">
+<g id="Summary metric">
+<rect x="260.5" y="282.5" width="273" height="126" rx="7.5" fill="white"/>
+<rect x="260.5" y="282.5" width="273" height="126" rx="7.5" stroke="#D3DEDA"/>
+<text id="Label_33" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="280" y="314.864">Collected today</tspan></text>
+<text id="Metric value" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="30" font-weight="600" letter-spacing="-1px"><tspan x="280" y="356.909">&#x20b9;8,421</tspan></text>
+<text id="Label_34" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" letter-spacing="0em"><tspan x="280" y="385">18 receipts &#xb7; 01 Nov 2026</tspan></text>
+</g>
+<g id="Summary metric_2">
+<rect x="550.5" y="282.5" width="273" height="126" rx="7.5" fill="white"/>
+<rect x="550.5" y="282.5" width="273" height="126" rx="7.5" stroke="#D3DEDA"/>
+<text id="Label_35" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="570" y="314.864">Cash in hand</tspan></text>
+<text id="Metric value_2" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="30" font-weight="600" letter-spacing="-1px"><tspan x="570" y="356.909">&#x20b9;3,260</tspan></text>
+<text id="Label_36" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" letter-spacing="0em"><tspan x="570" y="385">7 receipts &#xb7; Handover pending</tspan></text>
+</g>
+<g id="Summary metric_3">
+<rect x="840.5" y="282.5" width="273" height="126" rx="7.5" fill="white"/>
+<rect x="840.5" y="282.5" width="273" height="126" rx="7.5" stroke="#D3DEDA"/>
+<text id="Label_37" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="860" y="314.864">Digital &#38; bank</tspan></text>
+<text id="Metric value_3" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="30" font-weight="600" letter-spacing="-1px"><tspan x="860" y="356.909">&#x20b9;5,161</tspan></text>
+<text id="Label_38" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" letter-spacing="0em"><tspan x="860" y="385">&#x20b9;4,661 UPI + &#x20b9;500 bank transfer</tspan></text>
+</g>
+<g id="Summary metric_4">
+<rect x="1130.5" y="282.5" width="273" height="126" rx="7.5" fill="white"/>
+<rect x="1130.5" y="282.5" width="273" height="126" rx="7.5" stroke="#D3DEDA"/>
+<text id="Label_39" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="1150" y="314.864">Cheque awaiting clearance</tspan></text>
+<text id="Metric value_4" fill="#936321" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="30" font-weight="600" letter-spacing="-1px"><tspan x="1150" y="356.909">&#x20b9;1,200</tspan></text>
+<text id="Label_40" fill="#936321" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" letter-spacing="0em"><tspan x="1150" y="385">Not included in collected total</tspan></text>
+</g>
+</g>
+<g id="Table tools" clip-path="url(#clip21_4_30373)">
+<g id="Filters" clip-path="url(#clip22_4_30373)">
+<g id="Action_3">
+<rect x="260.5" y="433.5" width="215" height="39" rx="5.5" fill="white"/>
+<rect x="260.5" y="433.5" width="215" height="39" rx="5.5" stroke="#D3DEDA"/>
+<g id="search_2">
+<path id="Vector_19" d="M288.125 458.625L285.413 455.913M286.875 452.375C286.875 455.136 284.636 457.375 281.875 457.375C279.114 457.375 276.875 455.136 276.875 452.375C276.875 449.614 279.114 447.375 281.875 447.375C284.636 447.375 286.875 449.614 286.875 452.375Z" stroke-width="1.7" stroke-linecap="round" stroke="#172D2B"/>
+</g>
+<text id="Label_41" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="298" y="457.727">Search resident or receipt</tspan></text>
+</g>
+<g id="Action_4">
+<rect x="486.5" y="433.5" width="116" height="39" rx="5.5" fill="white"/>
+<rect x="486.5" y="433.5" width="116" height="39" rx="5.5" stroke="#D3DEDA"/>
+<text id="Label_42" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="501" y="457.727">01 Nov 2026&#x2304;</tspan></text>
+</g>
+<g id="Action_5">
+<rect x="613.5" y="433.5" width="96" height="39" rx="5.5" fill="white"/>
+<rect x="613.5" y="433.5" width="96" height="39" rx="5.5" stroke="#D3DEDA"/>
+<text id="Label_43" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="628" y="457.727">All routes&#x2304;</tspan></text>
+</g>
+<g id="Action_6">
+<rect x="720.5" y="433.5" width="170" height="39" rx="5.5" fill="white"/>
+<rect x="720.5" y="433.5" width="170" height="39" rx="5.5" stroke="#D3DEDA"/>
+<text id="Label_44" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="735" y="457.727">All payment methods&#x2304;</tspan></text>
+</g>
+</g>
+<g id="Action_7">
+<rect x="1232.5" y="433.5" width="171" height="39" rx="5.5" fill="white"/>
+<rect x="1232.5" y="433.5" width="171" height="39" rx="5.5" stroke="#D3DEDA"/>
+<g id="sliders-horizontal">
+<path id="Vector_20" d="M1253.25 448.625H1248.88M1254.5 457.375H1248.88M1255.75 447.375V448.625M1255.75 448.625V449.875M1255.75 448.625H1260.12M1257 456.125V457.375M1257 457.375V458.625M1257 457.375H1260.12M1260.12 453H1254.5M1252 451.75V453M1252 453V454.25M1252 453H1248.88" stroke-width="1.7" stroke-linecap="round" stroke="#172D2B"/>
+</g>
+<text id="Label_45" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="1270" y="457.727">Reconcile selected</tspan></text>
+</g>
+</g>
+<g id="Data table">
+<g clip-path="url(#clip23_4_30373)">
+<g id="Column headings" clip-path="url(#clip24_4_30373)">
+<rect width="1144" height="42" transform="translate(260 497)" fill="#EEF3F0"/>
+<g id="Column heading">
+<mask id="path-114-inside-6_4_30373" fill="white">
+<path d="M260 497H416V539H260V497Z"/>
+</mask>
+<path d="M416 539V540H417V539H416ZM416 497H415V539H416H417V497H416ZM416 539V538H260V539V540H416V539Z" fill="#D3DEDA" mask="url(#path-114-inside-6_4_30373)"/>
+<text id="Label_46" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="272" y="522">RECEIPT / DATE</tspan></text>
+</g>
+<g id="Column heading_2">
+<mask id="path-117-inside-7_4_30373" fill="white">
+<path d="M416 497H656V539H416V497Z"/>
+</mask>
+<path d="M656 539V540H657V539H656ZM656 497H655V539H656H657V497H656ZM656 539V538H416V539V540H656V539Z" fill="#D3DEDA" mask="url(#path-117-inside-7_4_30373)"/>
+<text id="Label_47" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="428" y="522">RESIDENT / BILL</tspan></text>
+</g>
+<g id="Column heading_3">
+<mask id="path-120-inside-8_4_30373" fill="white">
+<path d="M656 497H791V539H656V497Z"/>
+</mask>
+<path d="M791 539V540H792V539H791ZM791 497H790V539H791H792V497H791ZM791 539V538H656V539V540H791V539Z" fill="#D3DEDA" mask="url(#path-120-inside-8_4_30373)"/>
+<text id="Label_48" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="668" y="522">METHOD</tspan></text>
+</g>
+<g id="Column heading_4">
+<mask id="path-123-inside-9_4_30373" fill="white">
+<path d="M791 497H901V539H791V497Z"/>
+</mask>
+<path d="M901 539V540H902V539H901ZM901 497H900V539H901H902V497H901ZM901 539V538H791V539V540H901V539Z" fill="#D3DEDA" mask="url(#path-123-inside-9_4_30373)"/>
+<text id="Label_49" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="803" y="522">PAID</tspan></text>
+</g>
+<g id="Column heading_5">
+<mask id="path-126-inside-10_4_30373" fill="white">
+<path d="M901 497H1011V539H901V497Z"/>
+</mask>
+<path d="M1011 539V540H1012V539H1011ZM1011 497H1010V539H1011H1012V497H1011ZM1011 539V538H901V539V540H1011V539Z" fill="#D3DEDA" mask="url(#path-126-inside-10_4_30373)"/>
+<text id="Label_50" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="913" y="522">BALANCE</tspan></text>
+</g>
+<g id="Column heading_6">
+<mask id="path-129-inside-11_4_30373" fill="white">
+<path d="M1011 497H1236V539H1011V497Z"/>
+</mask>
+<path d="M1236 539V540H1237V539H1236ZM1236 497H1235V539H1236H1237V497H1236ZM1236 539V538H1011V539V540H1236V539Z" fill="#D3DEDA" mask="url(#path-129-inside-11_4_30373)"/>
+<text id="Label_51" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="1023" y="522">REFERENCE</tspan></text>
+</g>
+<g id="Column heading_7">
+<mask id="path-132-inside-12_4_30373" fill="white">
+<path d="M1236 497H1404V539H1236V497Z"/>
+</mask>
+<path d="M1404 539V540H1405V539H1404ZM1404 497H1403V539H1404H1405V497H1404ZM1404 539V538H1236V539V540H1404V539Z" fill="#D3DEDA" mask="url(#path-132-inside-12_4_30373)"/>
+<text id="Label_52" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="1248" y="522">STATUS</tspan></text>
+</g>
+</g>
+<g id="Record" clip-path="url(#clip25_4_30373)">
+<rect width="1144" height="66" transform="translate(260 539)" fill="white"/>
+<g id="Data cell">
+<mask id="path-135-inside-13_4_30373" fill="white">
+<path d="M260 539H416V605H260V539Z"/>
+</mask>
+<path d="M416 605V606H417V605H416ZM416 539H415V605H416H417V539H416ZM416 605V604H260V605V606H416V605Z" fill="#D3DEDA" mask="url(#path-135-inside-13_4_30373)"/>
+<text id="Label_53" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="272" y="567.227">RC-1101&#10;</tspan><tspan x="272" y="586.227">01 Nov &#xb7; 09:45</tspan></text>
+</g>
+<g id="Data cell_2">
+<mask id="path-138-inside-14_4_30373" fill="white">
+<path d="M416 539H656V605H416V539Z"/>
+</mask>
+<path d="M656 605V606H657V605H656ZM656 539H655V605H656H657V539H656ZM656 605V604H416V605V606H656V605Z" fill="#D3DEDA" mask="url(#path-138-inside-14_4_30373)"/>
+<text id="Label_54" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="428" y="567.227">Anitha Nair&#10;</tspan><tspan x="428" y="586.227">DB-2026-1048 &#xb7; R01</tspan></text>
+</g>
+<g id="Data cell_3">
+<mask id="path-141-inside-15_4_30373" fill="white">
+<path d="M656 539H791V605H656V539Z"/>
+</mask>
+<path d="M791 605V606H792V605H791ZM791 539H790V605H791H792V539H791ZM791 605V604H656V605V606H791V605Z" fill="#D3DEDA" mask="url(#path-141-inside-15_4_30373)"/>
+<text id="Label_55" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="668" y="576.727">UPI-QR</tspan></text>
+</g>
+<g id="Data cell_4">
+<mask id="path-144-inside-16_4_30373" fill="white">
+<path d="M791 539H901V605H791V539Z"/>
+</mask>
+<path d="M901 605V606H902V605H901ZM901 539H900V605H901H902V539H901ZM901 605V604H791V605V606H901V605Z" fill="#D3DEDA" mask="url(#path-144-inside-16_4_30373)"/>
+<text id="Label_56" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="803" y="576.727">&#x20b9;661</tspan></text>
+</g>
+<g id="Data cell_5">
+<mask id="path-147-inside-17_4_30373" fill="white">
+<path d="M901 539H1011V605H901V539Z"/>
+</mask>
+<path d="M1011 605V606H1012V605H1011ZM1011 539H1010V605H1011H1012V539H1011ZM1011 605V604H901V605V606H1011V605Z" fill="#D3DEDA" mask="url(#path-147-inside-17_4_30373)"/>
+<text id="Label_57" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="913" y="576.727">&#x20b9;0</tspan></text>
+</g>
+<g id="Data cell_6">
+<mask id="path-150-inside-18_4_30373" fill="white">
+<path d="M1011 539H1236V605H1011V539Z"/>
+</mask>
+<path d="M1236 605V606H1237V605H1236ZM1236 539H1235V605H1236H1237V539H1236ZM1236 605V604H1011V605V606H1236V605Z" fill="#D3DEDA" mask="url(#path-150-inside-18_4_30373)"/>
+<text id="Label_58" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="1023" y="576.727">DEMO-661-1048</tspan></text>
+</g>
+<g id="Data cell_7">
+<mask id="path-153-inside-19_4_30373" fill="white">
+<path d="M1236 539H1404V605H1236V539Z"/>
+</mask>
+<path d="M1404 605V606H1405V605H1404ZM1404 539H1403V605H1404H1405V539H1404ZM1404 605V604H1236V605V606H1404V605Z" fill="#D3DEDA" mask="url(#path-153-inside-19_4_30373)"/>
+<g id="Status">
+<rect x="1248" y="560" width="103" height="24" rx="4" fill="#E2F2ED"/>
+<text id="Label_59" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="1256" y="576">Full &#xb7; Reconciled</tspan></text>
+</g>
+</g>
+</g>
+<g id="Record_2" clip-path="url(#clip26_4_30373)">
+<rect width="1144" height="66" transform="translate(260 605)" fill="white"/>
+<g id="Data cell_8">
+<mask id="path-157-inside-20_4_30373" fill="white">
+<path d="M260 605H416V671H260V605Z"/>
+</mask>
+<path d="M416 671V672H417V671H416ZM416 605H415V671H416H417V605H416ZM416 671V670H260V671V672H416V671Z" fill="#D3DEDA" mask="url(#path-157-inside-20_4_30373)"/>
+<text id="Label_60" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="272" y="633.227">RC-1100&#10;</tspan><tspan x="272" y="652.227">01 Nov &#xb7; 09:32</tspan></text>
+</g>
+<g id="Data cell_9">
+<mask id="path-160-inside-21_4_30373" fill="white">
+<path d="M416 605H656V671H416V605Z"/>
+</mask>
+<path d="M656 671V672H657V671H656ZM656 605H655V671H656H657V605H656ZM656 671V670H416V671V672H656V671Z" fill="#D3DEDA" mask="url(#path-160-inside-21_4_30373)"/>
+<text id="Label_61" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="428" y="633.227">Joseph Mathew&#10;</tspan><tspan x="428" y="652.227">DB-2026-1032 &#xb7; R01</tspan></text>
+</g>
+<g id="Data cell_10">
+<mask id="path-163-inside-22_4_30373" fill="white">
+<path d="M656 605H791V671H656V605Z"/>
+</mask>
+<path d="M791 671V672H792V671H791ZM791 605H790V671H791H792V605H791ZM791 671V670H656V671V672H791V671Z" fill="#D3DEDA" mask="url(#path-163-inside-22_4_30373)"/>
+<text id="Label_62" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="668" y="642.727">Cash</tspan></text>
+</g>
+<g id="Data cell_11">
+<mask id="path-166-inside-23_4_30373" fill="white">
+<path d="M791 605H901V671H791V605Z"/>
+</mask>
+<path d="M901 671V672H902V671H901ZM901 605H900V671H901H902V605H901ZM901 671V670H791V671V672H901V671Z" fill="#D3DEDA" mask="url(#path-166-inside-23_4_30373)"/>
+<text id="Label_63" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="803" y="642.727">&#x20b9;200</tspan></text>
+</g>
+<g id="Data cell_12">
+<mask id="path-169-inside-24_4_30373" fill="white">
+<path d="M901 605H1011V671H901V605Z"/>
+</mask>
+<path d="M1011 671V672H1012V671H1011ZM1011 605H1010V671H1011H1012V605H1011ZM1011 671V670H901V671V672H1011V671Z" fill="#D3DEDA" mask="url(#path-169-inside-24_4_30373)"/>
+<text id="Label_64" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="913" y="642.727">&#x20b9;30</tspan></text>
+</g>
+<g id="Data cell_13">
+<mask id="path-172-inside-25_4_30373" fill="white">
+<path d="M1011 605H1236V671H1011V605Z"/>
+</mask>
+<path d="M1236 671V672H1237V671H1236ZM1236 605H1235V671H1236H1237V605H1236ZM1236 671V670H1011V671V672H1236V671Z" fill="#D3DEDA" mask="url(#path-172-inside-25_4_30373)"/>
+<text id="Label_65" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="1023" y="642.727">Collector: Ravi Kumar</tspan></text>
+</g>
+<g id="Data cell_14">
+<mask id="path-175-inside-26_4_30373" fill="white">
+<path d="M1236 605H1404V671H1236V605Z"/>
+</mask>
+<path d="M1404 671V672H1405V671H1404ZM1404 605H1403V671H1404H1405V605H1404ZM1404 671V670H1236V671V672H1404V671Z" fill="#D3DEDA" mask="url(#path-175-inside-26_4_30373)"/>
+<g id="Status_2">
+<rect x="1248" y="626" width="100" height="24" rx="4" fill="#FBF1DE"/>
+<text id="Label_66" fill="#936321" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="1256" y="642">Partial payment</tspan></text>
+</g>
+</g>
+</g>
+<g id="Record_3" clip-path="url(#clip27_4_30373)">
+<rect width="1144" height="66" transform="translate(260 671)" fill="white"/>
+<g id="Data cell_15">
+<mask id="path-179-inside-27_4_30373" fill="white">
+<path d="M260 671H416V737H260V671Z"/>
+</mask>
+<path d="M416 737V738H417V737H416ZM416 671H415V737H416H417V671H416ZM416 737V736H260V737V738H416V737Z" fill="#D3DEDA" mask="url(#path-179-inside-27_4_30373)"/>
+<text id="Label_67" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="272" y="699.227">RC-1099&#10;</tspan><tspan x="272" y="718.227">01 Nov &#xb7; 09:20</tspan></text>
+</g>
+<g id="Data cell_16">
+<mask id="path-182-inside-28_4_30373" fill="white">
+<path d="M416 671H656V737H416V671Z"/>
+</mask>
+<path d="M656 737V738H657V737H656ZM656 671H655V737H656H657V671H656ZM656 737V736H416V737V738H656V737Z" fill="#D3DEDA" mask="url(#path-182-inside-28_4_30373)"/>
+<text id="Label_68" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="428" y="699.227">Suresh Kumar&#10;</tspan><tspan x="428" y="718.227">DB-2026-1028 &#xb7; R01</tspan></text>
+</g>
+<g id="Data cell_17">
+<mask id="path-185-inside-29_4_30373" fill="white">
+<path d="M656 671H791V737H656V671Z"/>
+</mask>
+<path d="M791 737V738H792V737H791ZM791 671H790V737H791H792V671H791ZM791 737V736H656V737V738H791V737Z" fill="#D3DEDA" mask="url(#path-185-inside-29_4_30373)"/>
+<text id="Label_69" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="668" y="708.727">UPI-QR</tspan></text>
+</g>
+<g id="Data cell_18">
+<mask id="path-188-inside-30_4_30373" fill="white">
+<path d="M791 671H901V737H791V671Z"/>
+</mask>
+<path d="M901 737V738H902V737H901ZM901 671H900V737H901H902V671H901ZM901 737V736H791V737V738H901V737Z" fill="#D3DEDA" mask="url(#path-188-inside-30_4_30373)"/>
+<text id="Label_70" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="803" y="708.727">&#x20b9;800</tspan></text>
+</g>
+<g id="Data cell_19">
+<mask id="path-191-inside-31_4_30373" fill="white">
+<path d="M901 671H1011V737H901V671Z"/>
+</mask>
+<path d="M1011 737V738H1012V737H1011ZM1011 671H1010V737H1011H1012V671H1011ZM1011 737V736H901V737V738H1011V737Z" fill="#D3DEDA" mask="url(#path-191-inside-31_4_30373)"/>
+<text id="Label_71" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="913" y="708.727">&#x20b9;0</tspan></text>
+</g>
+<g id="Data cell_20">
+<mask id="path-194-inside-32_4_30373" fill="white">
+<path d="M1011 671H1236V737H1011V671Z"/>
+</mask>
+<path d="M1236 737V738H1237V737H1236ZM1236 671H1235V737H1236H1237V671H1236ZM1236 737V736H1011V737V738H1236V737Z" fill="#D3DEDA" mask="url(#path-194-inside-32_4_30373)"/>
+<text id="Label_72" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="1023" y="708.727">DEMO-UPI-1099</tspan></text>
+</g>
+<g id="Data cell_21">
+<mask id="path-197-inside-33_4_30373" fill="white">
+<path d="M1236 671H1404V737H1236V671Z"/>
+</mask>
+<path d="M1404 737V738H1405V737H1404ZM1404 671H1403V737H1404H1405V671H1404ZM1404 737V736H1236V737V738H1404V737Z" fill="#D3DEDA" mask="url(#path-197-inside-33_4_30373)"/>
+<g id="Status_3">
+<rect x="1248" y="692" width="103" height="24" rx="4" fill="#E2F2ED"/>
+<text id="Label_73" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="1256" y="708">Full &#xb7; Reconciled</tspan></text>
+</g>
+</g>
+</g>
+<g id="Record_4" clip-path="url(#clip28_4_30373)">
+<rect width="1144" height="66" transform="translate(260 737)" fill="white"/>
+<g id="Data cell_22">
+<mask id="path-201-inside-34_4_30373" fill="white">
+<path d="M260 737H416V803H260V737Z"/>
+</mask>
+<path d="M416 803V804H417V803H416ZM416 737H415V803H416H417V737H416ZM416 803V802H260V803V804H416V803Z" fill="#D3DEDA" mask="url(#path-201-inside-34_4_30373)"/>
+<text id="Label_74" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="272" y="765.227">RC-1098&#10;</tspan><tspan x="272" y="784.227">01 Nov &#xb7; 09:04</tspan></text>
+</g>
+<g id="Data cell_23">
+<mask id="path-204-inside-35_4_30373" fill="white">
+<path d="M416 737H656V803H416V737Z"/>
+</mask>
+<path d="M656 803V804H657V803H656ZM656 737H655V803H656H657V737H656ZM656 803V802H416V803V804H656V803Z" fill="#D3DEDA" mask="url(#path-204-inside-35_4_30373)"/>
+<text id="Label_75" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="428" y="765.227">Meera Thomas&#10;</tspan><tspan x="428" y="784.227">DB-2026-1024 &#xb7; R02</tspan></text>
+</g>
+<g id="Data cell_24">
+<mask id="path-207-inside-36_4_30373" fill="white">
+<path d="M656 737H791V803H656V737Z"/>
+</mask>
+<path d="M791 803V804H792V803H791ZM791 737H790V803H791H792V737H791ZM791 803V802H656V803V804H791V803Z" fill="#D3DEDA" mask="url(#path-207-inside-36_4_30373)"/>
+<text id="Label_76" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="668" y="774.727">Bank transfer</tspan></text>
+</g>
+<g id="Data cell_25">
+<mask id="path-210-inside-37_4_30373" fill="white">
+<path d="M791 737H901V803H791V737Z"/>
+</mask>
+<path d="M901 803V804H902V803H901ZM901 737H900V803H901H902V737H901ZM901 803V802H791V803V804H901V803Z" fill="#D3DEDA" mask="url(#path-210-inside-37_4_30373)"/>
+<text id="Label_77" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="803" y="774.727">&#x20b9;500</tspan></text>
+</g>
+<g id="Data cell_26">
+<mask id="path-213-inside-38_4_30373" fill="white">
+<path d="M901 737H1011V803H901V737Z"/>
+</mask>
+<path d="M1011 803V804H1012V803H1011ZM1011 737H1010V803H1011H1012V737H1011ZM1011 803V802H901V803V804H1011V803Z" fill="#D3DEDA" mask="url(#path-213-inside-38_4_30373)"/>
+<text id="Label_78" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="913" y="774.727">&#x20b9;120</tspan></text>
+</g>
+<g id="Data cell_27">
+<mask id="path-216-inside-39_4_30373" fill="white">
+<path d="M1011 737H1236V803H1011V737Z"/>
+</mask>
+<path d="M1236 803V804H1237V803H1236ZM1236 737H1235V803H1236H1237V737H1236ZM1236 803V802H1011V803V804H1236V803Z" fill="#D3DEDA" mask="url(#path-216-inside-39_4_30373)"/>
+<text id="Label_79" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="1023" y="774.727">DEMO-BNK-1098</tspan></text>
+</g>
+<g id="Data cell_28">
+<mask id="path-219-inside-40_4_30373" fill="white">
+<path d="M1236 737H1404V803H1236V737Z"/>
+</mask>
+<path d="M1404 803V804H1405V803H1404ZM1404 737H1403V803H1404H1405V737H1404ZM1404 803V802H1236V803V804H1404V803Z" fill="#D3DEDA" mask="url(#path-219-inside-40_4_30373)"/>
+<g id="Status_4">
+<rect x="1248" y="758" width="100" height="24" rx="4" fill="#FBF1DE"/>
+<text id="Label_80" fill="#936321" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="1256" y="774">Partial payment</tspan></text>
+</g>
+</g>
+</g>
+<g id="Record_5" clip-path="url(#clip29_4_30373)">
+<rect width="1144" height="66" transform="translate(260 803)" fill="white"/>
+<g id="Data cell_29">
+<mask id="path-223-inside-41_4_30373" fill="white">
+<path d="M260 803H416V869H260V803Z"/>
+</mask>
+<path d="M416 869V870H417V869H416ZM416 803H415V869H416H417V803H416ZM416 869V868H260V869V870H416V869Z" fill="#D3DEDA" mask="url(#path-223-inside-41_4_30373)"/>
+<text id="Label_81" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="272" y="831.227">CH-0107&#10;</tspan><tspan x="272" y="850.227">01 Nov &#xb7; 08:51</tspan></text>
+</g>
+<g id="Data cell_30">
+<mask id="path-226-inside-42_4_30373" fill="white">
+<path d="M416 803H656V869H416V803Z"/>
+</mask>
+<path d="M656 869V870H657V869H656ZM656 803H655V869H656H657V803H656ZM656 869V868H416V869V870H656V869Z" fill="#D3DEDA" mask="url(#path-226-inside-42_4_30373)"/>
+<text id="Label_82" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="428" y="831.227">Sunrise Apartments&#10;</tspan><tspan x="428" y="850.227">DB-2026-1020 &#xb7; R03</tspan></text>
+</g>
+<g id="Data cell_31">
+<mask id="path-229-inside-43_4_30373" fill="white">
+<path d="M656 803H791V869H656V803Z"/>
+</mask>
+<path d="M791 869V870H792V869H791ZM791 803H790V869H791H792V803H791ZM791 869V868H656V869V870H791V869Z" fill="#D3DEDA" mask="url(#path-229-inside-43_4_30373)"/>
+<text id="Label_83" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="668" y="840.727">Cheque</tspan></text>
+</g>
+<g id="Data cell_32">
+<mask id="path-232-inside-44_4_30373" fill="white">
+<path d="M791 803H901V869H791V803Z"/>
+</mask>
+<path d="M901 869V870H902V869H901ZM901 803H900V869H901H902V803H901ZM901 869V868H791V869V870H901V869Z" fill="#D3DEDA" mask="url(#path-232-inside-44_4_30373)"/>
+<text id="Label_84" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="803" y="840.727">&#x20b9;1,200</tspan></text>
+</g>
+<g id="Data cell_33">
+<mask id="path-235-inside-45_4_30373" fill="white">
+<path d="M901 803H1011V869H901V803Z"/>
+</mask>
+<path d="M1011 869V870H1012V869H1011ZM1011 803H1010V869H1011H1012V803H1011ZM1011 869V868H901V869V870H1011V869Z" fill="#D3DEDA" mask="url(#path-235-inside-45_4_30373)"/>
+<text id="Label_85" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="913" y="840.727">&#x20b9;1,200</tspan></text>
+</g>
+<g id="Data cell_34">
+<mask id="path-238-inside-46_4_30373" fill="white">
+<path d="M1011 803H1236V869H1011V803Z"/>
+</mask>
+<path d="M1236 869V870H1237V869H1236ZM1236 803H1235V869H1236H1237V803H1236ZM1236 869V868H1011V869V870H1236V869Z" fill="#D3DEDA" mask="url(#path-238-inside-46_4_30373)"/>
+<text id="Label_86" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="1023" y="840.727">DEMO-CHQ-0107</tspan></text>
+</g>
+<g id="Data cell_35">
+<mask id="path-241-inside-47_4_30373" fill="white">
+<path d="M1236 803H1404V869H1236V803Z"/>
+</mask>
+<path d="M1404 869V870H1405V869H1404ZM1404 803H1403V869H1404H1405V803H1404ZM1404 869V868H1236V869V870H1404V869Z" fill="#D3DEDA" mask="url(#path-241-inside-47_4_30373)"/>
+<g id="Status_5">
+<rect x="1248" y="824" width="115" height="24" rx="4" fill="#EEF3F0"/>
+<text id="Label_87" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="1256" y="840">Pending clearance</tspan></text>
+</g>
+</g>
+</g>
+<g id="Record_6" clip-path="url(#clip30_4_30373)">
+<rect width="1144" height="66" transform="translate(260 869)" fill="white"/>
+<g id="Data cell_36">
+<mask id="path-245-inside-48_4_30373" fill="white">
+<path d="M260 869H416V935H260V869Z"/>
+</mask>
+<path d="M416 935V936H417V935H416ZM416 869H415V935H416H417V869H416ZM416 935V934H260V935V936H416V935Z" fill="#D3DEDA" mask="url(#path-245-inside-48_4_30373)"/>
+<text id="Label_88" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="272" y="897.227">RC-1097&#10;</tspan><tspan x="272" y="916.227">01 Nov &#xb7; 08:46</tspan></text>
+</g>
+<g id="Data cell_37">
+<mask id="path-248-inside-49_4_30373" fill="white">
+<path d="M416 869H656V935H416V869Z"/>
+</mask>
+<path d="M656 935V936H657V935H656ZM656 869H655V935H656H657V869H656ZM656 935V934H416V935V936H656V935Z" fill="#D3DEDA" mask="url(#path-248-inside-49_4_30373)"/>
+<text id="Label_89" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="428" y="897.227">Devika S.&#10;</tspan><tspan x="428" y="916.227">DB-2026-1019 &#xb7; R04</tspan></text>
+</g>
+<g id="Data cell_38">
+<mask id="path-251-inside-50_4_30373" fill="white">
+<path d="M656 869H791V935H656V869Z"/>
+</mask>
+<path d="M791 935V936H792V935H791ZM791 869H790V935H791H792V869H791ZM791 935V934H656V935V936H791V935Z" fill="#D3DEDA" mask="url(#path-251-inside-50_4_30373)"/>
+<text id="Label_90" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="668" y="906.727">Cash</tspan></text>
+</g>
+<g id="Data cell_39">
+<mask id="path-254-inside-51_4_30373" fill="white">
+<path d="M791 869H901V935H791V869Z"/>
+</mask>
+<path d="M901 935V936H902V935H901ZM901 869H900V935H901H902V869H901ZM901 935V934H791V935V936H901V935Z" fill="#D3DEDA" mask="url(#path-254-inside-51_4_30373)"/>
+<text id="Label_91" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="803" y="906.727">&#x20b9;450</tspan></text>
+</g>
+<g id="Data cell_40">
+<mask id="path-257-inside-52_4_30373" fill="white">
+<path d="M901 869H1011V935H901V869Z"/>
+</mask>
+<path d="M1011 935V936H1012V935H1011ZM1011 869H1010V935H1011H1012V869H1011ZM1011 935V934H901V935V936H1011V935Z" fill="#D3DEDA" mask="url(#path-257-inside-52_4_30373)"/>
+<text id="Label_92" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="913" y="906.727">&#x20b9;0</tspan></text>
+</g>
+<g id="Data cell_41">
+<mask id="path-260-inside-53_4_30373" fill="white">
+<path d="M1011 869H1236V935H1011V869Z"/>
+</mask>
+<path d="M1236 935V936H1237V935H1236ZM1236 869H1235V935H1236H1237V869H1236ZM1236 935V934H1011V935V936H1236V935Z" fill="#D3DEDA" mask="url(#path-260-inside-53_4_30373)"/>
+<text id="Label_93" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="1023" y="906.727">Collector: Asha V.</tspan></text>
+</g>
+<g id="Data cell_42">
+<mask id="path-263-inside-54_4_30373" fill="white">
+<path d="M1236 869H1404V935H1236V869Z"/>
+</mask>
+<path d="M1404 935V936H1405V935H1404ZM1404 869H1403V935H1404H1405V869H1404ZM1404 935V934H1236V935V936H1404V935Z" fill="#D3DEDA" mask="url(#path-263-inside-54_4_30373)"/>
+<g id="Status_6">
+<rect x="1248" y="890" width="95" height="24" rx="4" fill="#E2F2ED"/>
+<text id="Label_94" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="1256" y="906">Full &#xb7; Recorded</tspan></text>
+</g>
+</g>
+</g>
+</g>
+<rect x="260.5" y="497.5" width="1143" height="437" stroke="#D3DEDA"/>
+</g>
+<g id="Ledger pagination" clip-path="url(#clip31_4_30373)">
+<text id="Label_95" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" letter-spacing="0em"><tspan x="260" y="971">6 of 19 entries &#xb7; 18 receipts + 1 pending cheque &#xb7; Sample references</tspan></text>
+<text id="Label_96" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="1186" y="971.864">&#x2190; Previous     1     2     3     4     Next &#x2192;</tspan></text>
+</g>
+<g id="Account reconciliation" clip-path="url(#clip32_4_30373)">
+<g id="Detail panel">
+<g clip-path="url(#clip33_4_30373)">
+<rect x="260" y="1000" width="714" height="303" rx="8" fill="white"/>
+<g id="Panel heading">
+<text id="Label_97" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="15" font-weight="600" letter-spacing="0em"><tspan x="280" y="1033.45">Selected account &#xb7; Anitha Nair</tspan></text>
+<text id="Label_98" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="846" y="1032.36">October statement</tspan></text>
+</g>
+<g id="Data table_2">
+<g clip-path="url(#clip34_4_30373)">
+<g id="Column headings_2" clip-path="url(#clip35_4_30373)">
+<rect width="714" height="42" transform="translate(260 1056)" fill="#EEF3F0"/>
+<g id="Column heading_8">
+<mask id="path-275-inside-55_4_30373" fill="white">
+<path d="M260 1056H584V1098H260V1056Z"/>
+</mask>
+<path d="M584 1098V1099H585V1098H584ZM584 1056H583V1098H584H585V1056H584ZM584 1098V1097H260V1098V1099H584V1098Z" fill="#D3DEDA" mask="url(#path-275-inside-55_4_30373)"/>
+<text id="Label_99" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="272" y="1081">LEDGER ENTRY</tspan></text>
+</g>
+<g id="Column heading_9">
+<mask id="path-278-inside-56_4_30373" fill="white">
+<path d="M584 1056H714V1098H584V1056Z"/>
+</mask>
+<path d="M714 1098V1099H715V1098H714ZM714 1056H713V1098H714H715V1056H714ZM714 1098V1097H584V1098V1099H714V1098Z" fill="#D3DEDA" mask="url(#path-278-inside-56_4_30373)"/>
+<text id="Label_100" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="596" y="1081">DEBIT</tspan></text>
+</g>
+<g id="Column heading_10">
+<mask id="path-281-inside-57_4_30373" fill="white">
+<path d="M714 1056H844V1098H714V1056Z"/>
+</mask>
+<path d="M844 1098V1099H845V1098H844ZM844 1056H843V1098H844H845V1056H844ZM844 1098V1097H714V1098V1099H844V1098Z" fill="#D3DEDA" mask="url(#path-281-inside-57_4_30373)"/>
+<text id="Label_101" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="726" y="1081">CREDIT</tspan></text>
+</g>
+<g id="Column heading_11">
+<mask id="path-284-inside-58_4_30373" fill="white">
+<path d="M844 1056H974V1098H844V1056Z"/>
+</mask>
+<path d="M974 1098V1099H975V1098H974ZM974 1056H973V1098H974H975V1056H974ZM974 1098V1097H844V1098V1099H974V1098Z" fill="#D3DEDA" mask="url(#path-284-inside-58_4_30373)"/>
+<text id="Label_102" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="856" y="1081">BALANCE</tspan></text>
+</g>
+</g>
+<g id="Record_7" clip-path="url(#clip36_4_30373)">
+<rect width="714" height="41" transform="translate(260 1098)" fill="white"/>
+<g id="Data cell_43">
+<mask id="path-287-inside-59_4_30373" fill="white">
+<path d="M260 1098H584V1139H260V1098Z"/>
+</mask>
+<path d="M584 1139V1140H585V1139H584ZM584 1098H583V1139H584H585V1098H584ZM584 1139V1138H260V1139V1140H584V1139Z" fill="#D3DEDA" mask="url(#path-287-inside-59_4_30373)"/>
+<text id="Label_103" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="272" y="1123.23">01 Oct &#xb7; Opening balance</tspan></text>
+</g>
+<g id="Data cell_44">
+<mask id="path-290-inside-60_4_30373" fill="white">
+<path d="M584 1098H714V1139H584V1098Z"/>
+</mask>
+<path d="M714 1139V1140H715V1139H714ZM714 1098H713V1139H714H715V1098H714ZM714 1139V1138H584V1139V1140H714V1139Z" fill="#D3DEDA" mask="url(#path-290-inside-60_4_30373)"/>
+<text id="Label_104" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="596" y="1123.23">&#x20b9;240</tspan></text>
+</g>
+<g id="Data cell_45">
+<mask id="path-293-inside-61_4_30373" fill="white">
+<path d="M714 1098H844V1139H714V1098Z"/>
+</mask>
+<path d="M844 1139V1140H845V1139H844ZM844 1098H843V1139H844H845V1098H844ZM844 1139V1138H714V1139V1140H844V1139Z" fill="#D3DEDA" mask="url(#path-293-inside-61_4_30373)"/>
+<text id="Label_105" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="726" y="1123.23">&#x2014;</tspan></text>
+</g>
+<g id="Data cell_46">
+<mask id="path-296-inside-62_4_30373" fill="white">
+<path d="M844 1098H974V1139H844V1098Z"/>
+</mask>
+<path d="M974 1139V1140H975V1139H974ZM974 1098H973V1139H974H975V1098H974ZM974 1139V1138H844V1139V1140H974V1139Z" fill="#D3DEDA" mask="url(#path-296-inside-62_4_30373)"/>
+<text id="Label_106" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="856" y="1123.23">&#x20b9;240</tspan></text>
+</g>
+</g>
+<g id="Record_8" clip-path="url(#clip37_4_30373)">
+<rect width="714" height="41" transform="translate(260 1139)" fill="white"/>
+<g id="Data cell_47">
+<mask id="path-299-inside-63_4_30373" fill="white">
+<path d="M260 1139H584V1180H260V1139Z"/>
+</mask>
+<path d="M584 1180V1181H585V1180H584ZM584 1139H583V1180H584H585V1139H584ZM584 1180V1179H260V1180V1181H584V1180Z" fill="#D3DEDA" mask="url(#path-299-inside-63_4_30373)"/>
+<text id="Label_107" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="272" y="1164.23">15 Oct &#xb7; Cash &#xb7; RC-0991</tspan></text>
+</g>
+<g id="Data cell_48">
+<mask id="path-302-inside-64_4_30373" fill="white">
+<path d="M584 1139H714V1180H584V1139Z"/>
+</mask>
+<path d="M714 1180V1181H715V1180H714ZM714 1139H713V1180H714H715V1139H714ZM714 1180V1179H584V1180V1181H714V1180Z" fill="#D3DEDA" mask="url(#path-302-inside-64_4_30373)"/>
+<text id="Label_108" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="596" y="1164.23">&#x2014;</tspan></text>
+</g>
+<g id="Data cell_49">
+<mask id="path-305-inside-65_4_30373" fill="white">
+<path d="M714 1139H844V1180H714V1139Z"/>
+</mask>
+<path d="M844 1180V1181H845V1180H844ZM844 1139H843V1180H844H845V1139H844ZM844 1180V1179H714V1180V1181H844V1180Z" fill="#D3DEDA" mask="url(#path-305-inside-65_4_30373)"/>
+<text id="Label_109" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="726" y="1164.23">&#x20b9;100</tspan></text>
+</g>
+<g id="Data cell_50">
+<mask id="path-308-inside-66_4_30373" fill="white">
+<path d="M844 1139H974V1180H844V1139Z"/>
+</mask>
+<path d="M974 1180V1181H975V1180H974ZM974 1139H973V1180H974H975V1139H974ZM974 1180V1179H844V1180V1181H974V1180Z" fill="#D3DEDA" mask="url(#path-308-inside-66_4_30373)"/>
+<text id="Label_110" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="856" y="1164.23">&#x20b9;140</tspan></text>
+</g>
+</g>
+<g id="Record_9" clip-path="url(#clip38_4_30373)">
+<rect width="714" height="41" transform="translate(260 1180)" fill="white"/>
+<g id="Data cell_51">
+<mask id="path-311-inside-67_4_30373" fill="white">
+<path d="M260 1180H584V1221H260V1180Z"/>
+</mask>
+<path d="M584 1221V1222H585V1221H584ZM584 1180H583V1221H584H585V1180H584ZM584 1221V1220H260V1221V1222H584V1221Z" fill="#D3DEDA" mask="url(#path-311-inside-67_4_30373)"/>
+<text id="Label_111" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="272" y="1205.23">31 Oct &#xb7; Current deliveries</tspan></text>
+</g>
+<g id="Data cell_52">
+<mask id="path-314-inside-68_4_30373" fill="white">
+<path d="M584 1180H714V1221H584V1180Z"/>
+</mask>
+<path d="M714 1221V1222H715V1221H714ZM714 1180H713V1221H714H715V1180H714ZM714 1221V1220H584V1221V1222H714V1221Z" fill="#D3DEDA" mask="url(#path-314-inside-68_4_30373)"/>
+<text id="Label_112" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="596" y="1205.23">&#x20b9;541</tspan></text>
+</g>
+<g id="Data cell_53">
+<mask id="path-317-inside-69_4_30373" fill="white">
+<path d="M714 1180H844V1221H714V1180Z"/>
+</mask>
+<path d="M844 1221V1222H845V1221H844ZM844 1180H843V1221H844H845V1180H844ZM844 1221V1220H714V1221V1222H844V1221Z" fill="#D3DEDA" mask="url(#path-317-inside-69_4_30373)"/>
+<text id="Label_113" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="726" y="1205.23">&#x2014;</tspan></text>
+</g>
+<g id="Data cell_54">
+<mask id="path-320-inside-70_4_30373" fill="white">
+<path d="M844 1180H974V1221H844V1180Z"/>
+</mask>
+<path d="M974 1221V1222H975V1221H974ZM974 1180H973V1221H974H975V1180H974ZM974 1221V1220H844V1221V1222H974V1221Z" fill="#D3DEDA" mask="url(#path-320-inside-70_4_30373)"/>
+<text id="Label_114" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="856" y="1205.23">&#x20b9;681</tspan></text>
+</g>
+</g>
+<g id="Record_10" clip-path="url(#clip39_4_30373)">
+<rect width="714" height="41" transform="translate(260 1221)" fill="white"/>
+<g id="Data cell_55">
+<mask id="path-323-inside-71_4_30373" fill="white">
+<path d="M260 1221H584V1262H260V1221Z"/>
+</mask>
+<path d="M584 1262V1263H585V1262H584ZM584 1221H583V1262H584H585V1221H584ZM584 1262V1261H260V1262V1263H584V1262Z" fill="#D3DEDA" mask="url(#path-323-inside-71_4_30373)"/>
+<text id="Label_115" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="272" y="1246.23">31 Oct &#xb7; Goodwill delivery credit</tspan></text>
+</g>
+<g id="Data cell_56">
+<mask id="path-326-inside-72_4_30373" fill="white">
+<path d="M584 1221H714V1262H584V1221Z"/>
+</mask>
+<path d="M714 1262V1263H715V1262H714ZM714 1221H713V1262H714H715V1221H714ZM714 1262V1261H584V1262V1263H714V1262Z" fill="#D3DEDA" mask="url(#path-326-inside-72_4_30373)"/>
+<text id="Label_116" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="596" y="1246.23">&#x2014;</tspan></text>
+</g>
+<g id="Data cell_57">
+<mask id="path-329-inside-73_4_30373" fill="white">
+<path d="M714 1221H844V1262H714V1221Z"/>
+</mask>
+<path d="M844 1262V1263H845V1262H844ZM844 1221H843V1262H844H845V1221H844ZM844 1262V1261H714V1262V1263H844V1262Z" fill="#D3DEDA" mask="url(#path-329-inside-73_4_30373)"/>
+<text id="Label_117" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="726" y="1246.23">&#x20b9;20</tspan></text>
+</g>
+<g id="Data cell_58">
+<mask id="path-332-inside-74_4_30373" fill="white">
+<path d="M844 1221H974V1262H844V1221Z"/>
+</mask>
+<path d="M974 1262V1263H975V1262H974ZM974 1221H973V1262H974H975V1221H974ZM974 1262V1261H844V1262V1263H974V1262Z" fill="#D3DEDA" mask="url(#path-332-inside-74_4_30373)"/>
+<text id="Label_118" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="856" y="1246.23">&#x20b9;661</tspan></text>
+</g>
+</g>
+<g id="Record_11" clip-path="url(#clip40_4_30373)">
+<rect width="714" height="41" transform="translate(260 1262)" fill="white"/>
+<g id="Data cell_59">
+<mask id="path-335-inside-75_4_30373" fill="white">
+<path d="M260 1262H584V1303H260V1262Z"/>
+</mask>
+<path d="M584 1303V1304H585V1303H584ZM584 1262H583V1303H584H585V1262H584ZM584 1303V1302H260V1303V1304H584V1303Z" fill="#D3DEDA" mask="url(#path-335-inside-75_4_30373)"/>
+<text id="Label_119" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="272" y="1287.23">01 Nov &#xb7; UPI-QR &#xb7; RC-1101</tspan></text>
+</g>
+<g id="Data cell_60">
+<mask id="path-338-inside-76_4_30373" fill="white">
+<path d="M584 1262H714V1303H584V1262Z"/>
+</mask>
+<path d="M714 1303V1304H715V1303H714ZM714 1262H713V1303H714H715V1262H714ZM714 1303V1302H584V1303V1304H714V1303Z" fill="#D3DEDA" mask="url(#path-338-inside-76_4_30373)"/>
+<text id="Label_120" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="596" y="1287.23">&#x2014;</tspan></text>
+</g>
+<g id="Data cell_61">
+<mask id="path-341-inside-77_4_30373" fill="white">
+<path d="M714 1262H844V1303H714V1262Z"/>
+</mask>
+<path d="M844 1303V1304H845V1303H844ZM844 1262H843V1303H844H845V1262H844ZM844 1303V1302H714V1303V1304H844V1303Z" fill="#D3DEDA" mask="url(#path-341-inside-77_4_30373)"/>
+<text id="Label_121" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="726" y="1287.23">&#x20b9;661</tspan></text>
+</g>
+<g id="Data cell_62">
+<mask id="path-344-inside-78_4_30373" fill="white">
+<path d="M844 1262H974V1303H844V1262Z"/>
+</mask>
+<path d="M974 1303V1304H975V1303H974ZM974 1262H973V1303H974H975V1262H974ZM974 1303V1302H844V1303V1304H974V1303Z" fill="#D3DEDA" mask="url(#path-344-inside-78_4_30373)"/>
+<text id="Label_122" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="856" y="1287.23">&#x20b9;0</tspan></text>
+</g>
+</g>
+</g>
+<rect x="260.5" y="1056.5" width="713" height="246" stroke="#D3DEDA"/>
+</g>
+</g>
+<rect x="260.5" y="1000.5" width="713" height="302" rx="7.5" stroke="#D3DEDA"/>
+</g>
+<g id="Detail panel_2">
+<g clip-path="url(#clip41_4_30373)">
+<rect x="994" y="1000" width="410" height="222" rx="8" fill="white"/>
+<g id="Panel heading_2">
+<text id="Label_123" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="15" font-weight="600" letter-spacing="0em"><tspan x="1014" y="1033.45">Cash closing checkpoint</tspan></text>
+</g>
+<g id="Closing details">
+<text id="Label_124" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="1014" y="1068.86">&#x20b9;3,260 cash collected today is awaiting staff handover. Match </tspan><tspan x="1014" y="1085.86">physical cash before locking the day&#x2019;s register.</tspan></text>
+<g id="Closing state" clip-path="url(#clip42_4_30373)">
+<text id="Label_125" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="1014" y="1115.86">Today&#x2019;s register</tspan></text>
+<g id="Status_7">
+<rect x="1339" y="1103" width="45" height="24" rx="4" fill="#FBF1DE"/>
+<text id="Label_126" fill="#936321" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="1347" y="1119">Open</tspan></text>
+</g>
+</g>
+<g id="Last ledger closure" clip-path="url(#clip43_4_30373)">
+<text id="Label_127" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="1014" y="1152.86">Last ledger close</tspan></text>
+<text id="Label_128" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="1284" y="1152.86">31 Oct &#xb7; 08:15 PM</tspan></text>
+</g>
+<g id="Action_8">
+<rect x="1014.5" y="1170.5" width="153" height="31" rx="5.5" fill="white"/>
+<rect x="1014.5" y="1170.5" width="153" height="31" rx="5.5" stroke="#D3DEDA"/>
+<g id="landmark_2" clip-path="url(#clip44_4_30373)">
+<path id="Vector_21" d="M1030.25 1189.75V1185.38M1032.75 1189.75V1185.38M1035.25 1189.75V1185.38M1025.87 1192.25H1037.12M1027.75 1189.75V1185.38M1030.95 1179.87C1031.12 1179.79 1031.31 1179.75 1031.5 1179.75C1031.69 1179.75 1031.88 1179.79 1032.05 1179.88L1036.97 1182.28C1037.26 1182.43 1037.16 1182.88 1036.83 1182.88H1026.17C1025.84 1182.88 1025.74 1182.43 1026.03 1182.28L1030.95 1179.87Z" stroke-width="1.7" stroke-linecap="round" stroke="#172D2B"/>
+</g>
+<text id="Label_129" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" font-weight="600" letter-spacing="0em"><tspan x="1047" y="1190.36">Open cash register</tspan></text>
+</g>
+</g>
+</g>
+<rect x="994.5" y="1000.5" width="409" height="221" rx="7.5" stroke="#D3DEDA"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_4_30373">
+<rect width="1440" height="1335" fill="white"/>
+</clipPath>
+<clipPath id="clip1_4_30373">
+<rect width="129" height="43" fill="white" transform="translate(67 25)"/>
+</clipPath>
+<clipPath id="clip2_4_30373">
+<rect width="192" height="588" fill="white" transform="translate(16 95)"/>
+</clipPath>
+<clipPath id="clip3_4_30373">
+<rect width="192" height="196" fill="white" transform="translate(16 95)"/>
+</clipPath>
+<clipPath id="clip4_4_30373">
+<rect width="17" height="17" fill="white" transform="translate(26 263)"/>
+</clipPath>
+<clipPath id="clip5_4_30373">
+<rect width="192" height="196" fill="white" transform="translate(16 314)"/>
+</clipPath>
+<clipPath id="clip6_4_30373">
+<rect width="192" height="150" fill="white" transform="translate(16 533)"/>
+</clipPath>
+<clipPath id="clip7_4_30373">
+<rect width="17" height="17" fill="white" transform="translate(26 655)"/>
+</clipPath>
+<clipPath id="clip8_4_30373">
+<rect width="192" height="85" fill="white" transform="translate(16 710)"/>
+</clipPath>
+<clipPath id="clip9_4_30373">
+<rect width="17" height="17" fill="white" transform="translate(26 768)"/>
+</clipPath>
+<clipPath id="clip10_4_30373">
+<rect width="158" height="32" fill="white" transform="translate(24 840)"/>
+</clipPath>
+<clipPath id="clip11_4_30373">
+<rect width="118" height="32" fill="white" transform="translate(64 840)"/>
+</clipPath>
+<clipPath id="clip12_4_30373">
+<rect width="1216" height="1335" fill="white" transform="translate(224)"/>
+</clipPath>
+<clipPath id="clip13_4_30373">
+<rect width="235" height="19" fill="white" transform="translate(260 27.5)"/>
+</clipPath>
+<clipPath id="clip14_4_30373">
+<rect width="358" height="18" fill="white" transform="translate(1046 28)"/>
+</clipPath>
+<clipPath id="clip15_4_30373">
+<rect width="144" height="17" fill="white" transform="translate(1046 28.5)"/>
+</clipPath>
+<clipPath id="clip16_4_30373">
+<rect width="113" height="16" fill="white" transform="translate(1291 29)"/>
+</clipPath>
+<clipPath id="clip17_4_30373">
+<rect width="1144" height="89" fill="white" transform="translate(260 104)"/>
+</clipPath>
+<clipPath id="clip18_4_30373">
+<rect width="1144" height="40" fill="white" transform="translate(260 125)"/>
+</clipPath>
+<clipPath id="clip19_4_30373">
+<rect width="305" height="40" fill="white" transform="translate(1099 125)"/>
+</clipPath>
+<clipPath id="clip20_4_30373">
+<rect width="1144" height="127" fill="white" transform="translate(260 282)"/>
+</clipPath>
+<clipPath id="clip21_4_30373">
+<rect width="1144" height="40" fill="white" transform="translate(260 433)"/>
+</clipPath>
+<clipPath id="clip22_4_30373">
+<rect width="631" height="40" fill="white" transform="translate(260 433)"/>
+</clipPath>
+<clipPath id="clip23_4_30373">
+<rect x="260" y="497" width="1144" height="438" fill="white"/>
+</clipPath>
+<clipPath id="clip24_4_30373">
+<rect width="1144" height="42" fill="white" transform="translate(260 497)"/>
+</clipPath>
+<clipPath id="clip25_4_30373">
+<rect width="1144" height="66" fill="white" transform="translate(260 539)"/>
+</clipPath>
+<clipPath id="clip26_4_30373">
+<rect width="1144" height="66" fill="white" transform="translate(260 605)"/>
+</clipPath>
+<clipPath id="clip27_4_30373">
+<rect width="1144" height="66" fill="white" transform="translate(260 671)"/>
+</clipPath>
+<clipPath id="clip28_4_30373">
+<rect width="1144" height="66" fill="white" transform="translate(260 737)"/>
+</clipPath>
+<clipPath id="clip29_4_30373">
+<rect width="1144" height="66" fill="white" transform="translate(260 803)"/>
+</clipPath>
+<clipPath id="clip30_4_30373">
+<rect width="1144" height="66" fill="white" transform="translate(260 869)"/>
+</clipPath>
+<clipPath id="clip31_4_30373">
+<rect width="1144" height="17" fill="white" transform="translate(260 959)"/>
+</clipPath>
+<clipPath id="clip32_4_30373">
+<rect width="1144" height="303" fill="white" transform="translate(260 1000)"/>
+</clipPath>
+<clipPath id="clip33_4_30373">
+<rect x="260" y="1000" width="714" height="303" rx="8" fill="white"/>
+</clipPath>
+<clipPath id="clip34_4_30373">
+<rect x="260" y="1056" width="714" height="247" fill="white"/>
+</clipPath>
+<clipPath id="clip35_4_30373">
+<rect width="714" height="42" fill="white" transform="translate(260 1056)"/>
+</clipPath>
+<clipPath id="clip36_4_30373">
+<rect width="714" height="41" fill="white" transform="translate(260 1098)"/>
+</clipPath>
+<clipPath id="clip37_4_30373">
+<rect width="714" height="41" fill="white" transform="translate(260 1139)"/>
+</clipPath>
+<clipPath id="clip38_4_30373">
+<rect width="714" height="41" fill="white" transform="translate(260 1180)"/>
+</clipPath>
+<clipPath id="clip39_4_30373">
+<rect width="714" height="41" fill="white" transform="translate(260 1221)"/>
+</clipPath>
+<clipPath id="clip40_4_30373">
+<rect width="714" height="41" fill="white" transform="translate(260 1262)"/>
+</clipPath>
+<clipPath id="clip41_4_30373">
+<rect x="994" y="1000" width="410" height="222" rx="8" fill="white"/>
+</clipPath>
+<clipPath id="clip42_4_30373">
+<rect width="370" height="24" fill="white" transform="translate(1014 1103)"/>
+</clipPath>
+<clipPath id="clip43_4_30373">
+<rect width="370" height="17" fill="white" transform="translate(1014 1140)"/>
+</clipPath>
+<clipPath id="clip44_4_30373">
+<rect width="15" height="15" fill="white" transform="translate(1024 1178.5)"/>
+</clipPath>
+</defs>
+</svg>

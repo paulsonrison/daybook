@@ -1,0 +1,49 @@
+<svg width="1440" height="841" viewBox="0 0 1440 841" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Component coverage / Typography/Specimen">
+<rect width="1440" height="841" fill="#F5F6F3"/>
+<text id="Text / Typography/Specimen" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="28" font-weight="600" letter-spacing="0em"><tspan x="32" y="63.1818">Typography/Specimen</tspan></text>
+<text id="Text / 5 applicable states &#194;&#183; editable native comp" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="32" y="117.591">5 applicable states &#xb7; editable native component variants. Loading, empty and failure behavior is visible in the control itself.</tspan></text>
+<g id="Daybook/Edge/Typography/Specimen">
+<g id="State=Default">
+<rect x="48.5" y="167.5" width="639" height="158" rx="7.5" fill="white"/>
+<rect x="48.5" y="167.5" width="639" height="158" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / DEFAULT" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="204.5">DEFAULT</tspan></text>
+<text id="Text / Every collection, in order." fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="73" y="249.045">Every collection, in order.</tspan></text>
+<text id="Text / Aa Bb Cc &#194;&#183; 0123456789 &#194;&#183; &#226;&#130;&#185;661.00" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="73" y="291.591">Aa Bb Cc &#xb7; 0123456789 &#xb7; &#x20b9;661.00</tspan></text>
+</g>
+<g id="State=Long content">
+<rect x="720.5" y="167.5" width="639" height="158" rx="7.5" fill="white"/>
+<rect x="720.5" y="167.5" width="639" height="158" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / LONG CONTENT" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="204.5">LONG CONTENT</tspan></text>
+<text id="Text / Every collection, in order._2" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="745" y="249.045">Every collection, in order.</tspan></text>
+<text id="Text / Aa Bb Cc &#194;&#183; 0123456789 &#194;&#183; &#226;&#130;&#185;661.00_2" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="745" y="291.591">Aa Bb Cc &#xb7; 0123456789 &#xb7; &#x20b9;661.00</tspan></text>
+</g>
+<g id="State=Fallback font">
+<rect x="48.5" y="350.5" width="639" height="158" rx="7.5" fill="white"/>
+<rect x="48.5" y="350.5" width="639" height="158" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / FALLBACK FONT" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="387.5">FALLBACK FONT</tspan></text>
+<text id="Text / Every collection, in order._3" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="73" y="432.045">Every collection, in order.</tspan></text>
+<text id="Text / Aa Bb Cc &#194;&#183; 0123456789 &#194;&#183; &#226;&#130;&#185;661.00_3" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="73" y="474.591">Aa Bb Cc &#xb7; 0123456789 &#xb7; &#x20b9;661.00</tspan></text>
+</g>
+<g id="State=Large reading size">
+<rect x="720.5" y="350.5" width="639" height="167" rx="7.5" fill="white"/>
+<rect x="720.5" y="350.5" width="639" height="167" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / LARGE READING SIZE" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="387.5">LARGE READING SIZE</tspan></text>
+<text id="Text / Every collection, in order._4" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="600" letter-spacing="0em"><tspan x="745" y="438.727">Every collection, in order.</tspan></text>
+<text id="Text / Aa Bb Cc &#194;&#183; 0123456789 &#194;&#183; &#226;&#130;&#185;661.00_4" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="745" y="483.591">Aa Bb Cc &#xb7; 0123456789 &#xb7; &#x20b9;661.00</tspan></text>
+</g>
+<g id="State=Missing preview">
+<rect x="48.5" y="542.5" width="639" height="242" rx="7.5" fill="white"/>
+<rect x="48.5" y="542.5" width="639" height="242" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / MISSING PREVIEW" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="579.5">MISSING PREVIEW</tspan></text>
+<text id="Text / Font preview unavailable" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="20" font-weight="600" letter-spacing="0em"><tspan x="73" y="626.273">Font preview unavailable</tspan></text>
+<text id="Text / Use Inter fallback while retaining your se" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="73" y="669.591">Use Inter fallback while retaining your selected font preference.</tspan></text>
+<g id="Action / Retry font load">
+<rect x="73.5" y="695.5" width="161" height="64" rx="5.5" fill="white"/>
+<rect x="73.5" y="695.5" width="161" height="64" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Retry font load" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="90" y="720.727">Retry font load</tspan></text>
+</g>
+</g>
+</g>
+</g>
+</svg>

@@ -1,0 +1,93 @@
+<svg width="1440" height="1128" viewBox="0 0 1440 1128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Component coverage / Collection/NextResident">
+<rect width="1440" height="1128" fill="#F5F6F3"/>
+<text id="Text / Collection/NextResident" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="28" font-weight="600" letter-spacing="0em"><tspan x="32" y="63.1818">Collection/NextResident</tspan></text>
+<text id="Text / 5 applicable states &#194;&#183; editable native comp" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="32" y="117.591">5 applicable states &#xb7; editable native component variants. Loading, empty and failure behavior is visible in the control itself.</tspan></text>
+<g id="Daybook/Edge/Collection/NextResident">
+<g id="State=Next available">
+<rect x="48.5" y="167.5" width="639" height="240" rx="7.5" fill="white"/>
+<rect x="48.5" y="167.5" width="639" height="240" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / NEXT AVAILABLE" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="204.5">NEXT AVAILABLE</tspan></text>
+<text id="Text / Next: Leela Menon &#194;&#183; Drop 002" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="20" font-weight="600" letter-spacing="0em"><tspan x="73" y="251.273">Next: Leela Menon &#xb7; Drop 002</tspan></text>
+<text id="Text / Keep the same route, month and collection " fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="73" y="294.591">Keep the same route, month and collection position.</tspan></text>
+<g id="Action / Move to next">
+<rect x="73" y="320" width="134" height="63" rx="6" fill="#087F73"/>
+<text id="Text / Move to next" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="89" y="344.727">Move to next</tspan></text>
+</g>
+</g>
+<g id="State=Loading next">
+<rect x="720.5" y="167.5" width="639" height="353" rx="7.5" fill="white"/>
+<rect x="720.5" y="167.5" width="639" height="353" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / LOADING NEXT" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="204.5">LOADING NEXT</tspan></text>
+<g id="Loading skeleton / table">
+<rect x="745.5" y="229.5" width="591" height="266" rx="7.5" fill="white"/>
+<rect x="745.5" y="229.5" width="591" height="266" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / Loading records&#226;&#128;&#166;" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" font-weight="600" letter-spacing="0em"><tspan x="770" y="269.591">Loading records&#x2026;</tspan></text>
+<g id="Skeleton row 1">
+<rect id="Skeleton placeholder" x="770" y="299" width="121" height="12" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_2" x="911" y="299" width="121" height="12" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_3" x="1052" y="299" width="121" height="12" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_4" x="1193" y="299" width="121" height="12" rx="4" fill="#E0E8E6"/>
+</g>
+<g id="Skeleton row 2">
+<rect id="Skeleton placeholder_5" x="770" y="331" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_6" x="911" y="331" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_7" x="1052" y="331" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_8" x="1193" y="331" width="121" height="20" rx="4" fill="#E0E8E6"/>
+</g>
+<g id="Skeleton row 3">
+<rect id="Skeleton placeholder_9" x="770" y="371" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_10" x="911" y="371" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_11" x="1052" y="371" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_12" x="1193" y="371" width="121" height="20" rx="4" fill="#E0E8E6"/>
+</g>
+<g id="Skeleton row 4">
+<rect id="Skeleton placeholder_13" x="770" y="411" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_14" x="911" y="411" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_15" x="1052" y="411" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_16" x="1193" y="411" width="121" height="20" rx="4" fill="#E0E8E6"/>
+</g>
+<g id="Skeleton row 5">
+<rect id="Skeleton placeholder_17" x="770" y="451" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_18" x="911" y="451" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_19" x="1052" y="451" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_20" x="1193" y="451" width="121" height="20" rx="4" fill="#E0E8E6"/>
+</g>
+</g>
+</g>
+<g id="State=End of route">
+<rect x="48.5" y="545.5" width="639" height="240" rx="7.5" fill="white"/>
+<rect x="48.5" y="545.5" width="639" height="240" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / END OF ROUTE" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="582.5">END OF ROUTE</tspan></text>
+<text id="Text / End of this delivery order" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="20" font-weight="600" letter-spacing="0em"><tspan x="73" y="629.273">End of this delivery order</tspan></text>
+<text id="Text / Keep the same route, month and collection _2" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="73" y="672.591">Keep the same route, month and collection position.</tspan></text>
+<g id="Action / View route summary">
+<rect x="73" y="698" width="185" height="63" rx="6" fill="#087F73"/>
+<text id="Text / View route summary" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="89" y="722.727">View route summary</tspan></text>
+</g>
+</g>
+<g id="State=Skipped accounts">
+<rect x="720.5" y="545.5" width="639" height="261" rx="7.5" fill="white"/>
+<rect x="720.5" y="545.5" width="639" height="261" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / SKIPPED ACCOUNTS" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="582.5">SKIPPED ACCOUNTS</tspan></text>
+<text id="Text / Next: Leela Menon &#194;&#183; Drop 002_2" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="20" font-weight="600" letter-spacing="0em"><tspan x="745" y="629.273">Next: Leela Menon &#xb7; Drop 002</tspan></text>
+<text id="Text / 3 skipped accounts remain unpaid. Review t" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="745" y="672.591">3 skipped accounts remain unpaid. Review them before closing the run.</tspan></text>
+<g id="Action / Move to next_2">
+<rect x="745" y="719" width="134" height="63" rx="6" fill="#087F73"/>
+<text id="Text / Move to next_2" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="761" y="743.727">Move to next</tspan></text>
+</g>
+</g>
+<g id="State=Resident removed">
+<rect x="48.5" y="831.5" width="639" height="240" rx="7.5" fill="white"/>
+<rect x="48.5" y="831.5" width="639" height="240" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / RESIDENT REMOVED" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="868.5">RESIDENT REMOVED</tspan></text>
+<text id="Text / Resident no longer on this route" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="20" font-weight="600" letter-spacing="0em"><tspan x="73" y="915.273">Resident no longer on this route</tspan></text>
+<text id="Text / Keep the same route, month and collection _3" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="73" y="958.591">Keep the same route, month and collection position.</tspan></text>
+<g id="Action / View route summary_2">
+<rect x="73" y="984" width="185" height="63" rx="6" fill="#087F73"/>
+<text id="Text / View route summary_2" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="89" y="1008.73">View route summary</tspan></text>
+</g>
+</g>
+</g>
+</g>
+</svg>

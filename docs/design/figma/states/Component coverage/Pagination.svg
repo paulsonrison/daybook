@@ -1,0 +1,142 @@
+<svg width="1440" height="850" viewBox="0 0 1440 850" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Component coverage / Pagination">
+<rect width="1440" height="850" fill="#F5F6F3"/>
+<text id="Text / Pagination" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="28" font-weight="600" letter-spacing="0em"><tspan x="32" y="63.1818">Pagination</tspan></text>
+<text id="Text / 6 applicable states &#194;&#183; editable native comp" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="32" y="117.591">6 applicable states &#xb7; editable native component variants. Loading, empty and failure behavior is visible in the control itself.</tspan></text>
+<g id="Daybook/Edge/Pagination">
+<g id="State=First page">
+<rect x="48.5" y="167.5" width="639" height="190" rx="7.5" fill="white"/>
+<rect x="48.5" y="167.5" width="639" height="190" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / FIRST PAGE" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="204.5">FIRST PAGE</tspan></text>
+<text id="Text / Showing 1&#226;&#128;&#147;5 of 326 residents" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="73" y="244.591">Showing 1&#x2013;5 of 326 residents</tspan></text>
+<g id="Pagination actions">
+<g id="Action / Previous">
+<rect x="73" y="270" width="102" height="63" rx="6" fill="#D9E3DE"/>
+<text id="Text / Previous" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="89" y="294.727">Previous</tspan></text>
+</g>
+<g id="Action / 1">
+<rect x="187.5" y="270.5" width="103" height="45" rx="5.5" fill="white"/>
+<rect x="187.5" y="270.5" width="103" height="45" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / 1" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="204" y="295.727">1</tspan></text>
+</g>
+<g id="Action / Next">
+<rect x="303.5" y="270.5" width="103" height="45" rx="5.5" fill="white"/>
+<rect x="303.5" y="270.5" width="103" height="45" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Next" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="320" y="295.727">Next</tspan></text>
+</g>
+</g>
+</g>
+<g id="State=Middle page">
+<rect x="720.5" y="167.5" width="639" height="192" rx="7.5" fill="white"/>
+<rect x="720.5" y="167.5" width="639" height="192" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / MIDDLE PAGE" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="204.5">MIDDLE PAGE</tspan></text>
+<text id="Text / Showing 1&#226;&#128;&#147;5 of 326 residents_2" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="745" y="244.591">Showing 1&#x2013;5 of 326 residents</tspan></text>
+<g id="Pagination actions_2">
+<g id="Action / Previous_2">
+<rect x="745.5" y="270.5" width="103" height="64" rx="5.5" fill="white"/>
+<rect x="745.5" y="270.5" width="103" height="64" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Previous_2" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="762" y="295.727">Previous</tspan></text>
+</g>
+<g id="Action / 1_2">
+<rect x="861.5" y="270.5" width="103" height="45" rx="5.5" fill="white"/>
+<rect x="861.5" y="270.5" width="103" height="45" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / 1_2" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="878" y="295.727">1</tspan></text>
+</g>
+<g id="Action / Next_2">
+<rect x="977.5" y="270.5" width="103" height="45" rx="5.5" fill="white"/>
+<rect x="977.5" y="270.5" width="103" height="45" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Next_2" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="994" y="295.727">Next</tspan></text>
+</g>
+</g>
+</g>
+<g id="State=Last page">
+<rect x="48.5" y="384.5" width="639" height="192" rx="7.5" fill="white"/>
+<rect x="48.5" y="384.5" width="639" height="192" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / LAST PAGE" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="421.5">LAST PAGE</tspan></text>
+<text id="Text / Showing 1&#226;&#128;&#147;5 of 326 residents_3" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="73" y="461.591">Showing 1&#x2013;5 of 326 residents</tspan></text>
+<g id="Pagination actions_3">
+<g id="Action / Previous_3">
+<rect x="73.5" y="487.5" width="103" height="64" rx="5.5" fill="white"/>
+<rect x="73.5" y="487.5" width="103" height="64" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Previous_3" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="90" y="512.727">Previous</tspan></text>
+</g>
+<g id="Action / 1_3">
+<rect x="189.5" y="487.5" width="103" height="45" rx="5.5" fill="white"/>
+<rect x="189.5" y="487.5" width="103" height="45" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / 1_3" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="206" y="512.727">1</tspan></text>
+</g>
+<g id="Action / Next_3">
+<rect x="305" y="487" width="102" height="44" rx="6" fill="#D9E3DE"/>
+<text id="Text / Next_3" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="321" y="511.727">Next</tspan></text>
+</g>
+</g>
+</g>
+<g id="State=No results">
+<rect x="720.5" y="384.5" width="639" height="190" rx="7.5" fill="white"/>
+<rect x="720.5" y="384.5" width="639" height="190" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / NO RESULTS" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="421.5">NO RESULTS</tspan></text>
+<text id="Text / 0 results &#194;&#183; pagination hidden" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="745" y="461.591">0 results &#xb7; pagination hidden</tspan></text>
+<g id="Pagination actions_4">
+<g id="Action / Previous_4">
+<rect x="745" y="487" width="102" height="63" rx="6" fill="#D9E3DE"/>
+<text id="Text / Previous_4" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="761" y="511.727">Previous</tspan></text>
+</g>
+<g id="Action / 1_4">
+<rect x="859.5" y="487.5" width="103" height="45" rx="5.5" fill="white"/>
+<rect x="859.5" y="487.5" width="103" height="45" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / 1_4" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="876" y="512.727">1</tspan></text>
+</g>
+<g id="Action / Next_4">
+<rect x="975" y="487" width="102" height="44" rx="6" fill="#D9E3DE"/>
+<text id="Text / Next_4" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="991" y="511.727">Next</tspan></text>
+</g>
+</g>
+</g>
+<g id="State=Loading">
+<rect x="48.5" y="601.5" width="639" height="192" rx="7.5" fill="white"/>
+<rect x="48.5" y="601.5" width="639" height="192" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / LOADING" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="638.5">LOADING</tspan></text>
+<text id="Text / Showing 1&#226;&#128;&#147;5 of 326 residents_4" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="73" y="678.591">Showing 1&#x2013;5 of 326 residents</tspan></text>
+<g id="Pagination actions_5">
+<g id="Action / Previous_5">
+<rect x="73.5" y="704.5" width="103" height="64" rx="5.5" fill="white"/>
+<rect x="73.5" y="704.5" width="103" height="64" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Previous_5" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="90" y="729.727">Previous</tspan></text>
+</g>
+<g id="Action / 1_5">
+<rect x="189.5" y="704.5" width="103" height="45" rx="5.5" fill="white"/>
+<rect x="189.5" y="704.5" width="103" height="45" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / 1_5" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="206" y="729.727">1</tspan></text>
+</g>
+<g id="Action / Next_5">
+<rect x="305" y="704" width="102" height="44" rx="6" fill="#D9E3DE"/>
+<text id="Text / Next_5" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="321" y="728.727">Next</tspan></text>
+</g>
+</g>
+</g>
+<g id="State=Page removed">
+<rect x="720.5" y="601.5" width="639" height="192" rx="7.5" fill="white"/>
+<rect x="720.5" y="601.5" width="639" height="192" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / PAGE REMOVED" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="638.5">PAGE REMOVED</tspan></text>
+<text id="Text / This page no longer exists; return to the " fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="745" y="678.591">This page no longer exists; return to the last available page.</tspan></text>
+<g id="Pagination actions_6">
+<g id="Action / Previous_6">
+<rect x="745.5" y="704.5" width="103" height="64" rx="5.5" fill="white"/>
+<rect x="745.5" y="704.5" width="103" height="64" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Previous_6" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="762" y="729.727">Previous</tspan></text>
+</g>
+<g id="Action / 1_6">
+<rect x="861.5" y="704.5" width="103" height="45" rx="5.5" fill="white"/>
+<rect x="861.5" y="704.5" width="103" height="45" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / 1_6" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="878" y="729.727">1</tspan></text>
+</g>
+<g id="Action / Next_6">
+<rect x="977.5" y="704.5" width="103" height="45" rx="5.5" fill="white"/>
+<rect x="977.5" y="704.5" width="103" height="45" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Next_6" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="994" y="729.727">Next</tspan></text>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>

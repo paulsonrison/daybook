@@ -1,0 +1,53 @@
+<svg width="1440" height="873" viewBox="0 0 1440 873" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Component coverage / Typography/Family">
+<rect width="1440" height="873" fill="#F5F6F3"/>
+<text id="Text / Typography/Family" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="28" font-weight="600" letter-spacing="0em"><tspan x="32" y="63.1818">Typography/Family</tspan></text>
+<text id="Text / 5 applicable states &#194;&#183; editable native comp" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="32" y="117.591">5 applicable states &#xb7; editable native component variants. Loading, empty and failure behavior is visible in the control itself.</tspan></text>
+<g id="Daybook/Edge/Typography/Family">
+<g id="State=Default">
+<rect x="48.5" y="167.5" width="639" height="158" rx="7.5" fill="white"/>
+<rect x="48.5" y="167.5" width="639" height="158" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / DEFAULT" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="204.5">DEFAULT</tspan></text>
+<text id="Text / Every collection, in order." fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="73" y="249.045">Every collection, in order.</tspan></text>
+<text id="Text / Aa Bb Cc &#194;&#183; 0123456789 &#194;&#183; &#226;&#130;&#185;661.00" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="73" y="291.591">Aa Bb Cc &#xb7; 0123456789 &#xb7; &#x20b9;661.00</tspan></text>
+</g>
+<g id="State=Loading fonts">
+<rect x="720.5" y="167.5" width="639" height="159" rx="7.5" fill="white"/>
+<rect x="720.5" y="167.5" width="639" height="159" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / LOADING FONTS" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="204.5">LOADING FONTS</tspan></text>
+<g id="Progress status">
+<path id="Ellipse" d="M765.5 240C765.5 241.793 764.993 243.55 764.036 245.066C763.08 246.583 761.714 247.798 760.096 248.572C758.478 249.345 756.675 249.644 754.894 249.435C753.113 249.227 751.428 248.518 750.032 247.392C748.637 246.265 747.589 244.767 747.01 243.07C746.43 241.373 746.343 239.547 746.758 237.803C747.172 236.058 748.072 234.467 749.353 233.212C750.635 231.958 752.245 231.091 753.997 230.713" stroke-width="3" stroke="#087F73"/>
+<text id="Text / Loading font preview&#226;&#128;&#166;" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" font-weight="600" letter-spacing="0em"><tspan x="779" y="244.591">Loading font preview&#x2026;</tspan></text>
+</g>
+<rect id="Skeleton placeholder" x="745" y="270" width="592" height="32" rx="4" fill="#E0E8E6"/>
+</g>
+<g id="State=Font unavailable">
+<rect x="48.5" y="351.5" width="639" height="242" rx="7.5" fill="white"/>
+<rect x="48.5" y="351.5" width="639" height="242" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / FONT UNAVAILABLE" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="388.5">FONT UNAVAILABLE</tspan></text>
+<text id="Text / Font preview unavailable" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="20" font-weight="600" letter-spacing="0em"><tspan x="73" y="435.273">Font preview unavailable</tspan></text>
+<text id="Text / Use Inter fallback while retaining your se" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="73" y="478.591">Use Inter fallback while retaining your selected font preference.</tspan></text>
+<g id="Action / Retry font load">
+<rect x="73.5" y="504.5" width="161" height="64" rx="5.5" fill="white"/>
+<rect x="73.5" y="504.5" width="161" height="64" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Retry font load" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="90" y="529.727">Retry font load</tspan></text>
+</g>
+</g>
+<g id="State=Long family label">
+<rect x="720.5" y="351.5" width="639" height="158" rx="7.5" fill="white"/>
+<rect x="720.5" y="351.5" width="639" height="158" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / LONG FAMILY LABEL" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="388.5">LONG FAMILY LABEL</tspan></text>
+<text id="Text / Noto Sans Malayalam &#194;&#183; Extended multilingua" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="745" y="433.045">Noto Sans Malayalam &#xb7; Extended multilingual family</tspan></text>
+<text id="Text / Aa Bb Cc &#194;&#183; 0123456789 &#194;&#183; &#226;&#130;&#185;661.00_2" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="745" y="475.591">Aa Bb Cc &#xb7; 0123456789 &#xb7; &#x20b9;661.00</tspan></text>
+</g>
+<g id="State=Save failed">
+<rect x="48.5" y="618.5" width="639" height="198" rx="7.5" fill="white"/>
+<rect x="48.5" y="618.5" width="639" height="198" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / SAVE FAILED" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="655.5">SAVE FAILED</tspan></text>
+<text id="Text / Every collection, in order._2" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="73" y="700.045">Every collection, in order.</tspan></text>
+<text id="Text / Aa Bb Cc &#194;&#183; 0123456789 &#194;&#183; &#226;&#130;&#185;661.00_3" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="73" y="742.591">Aa Bb Cc &#xb7; 0123456789 &#xb7; &#x20b9;661.00</tspan></text>
+<text id="Text / Preview kept. Preferences were not saved." fill="#AD2B30" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="73" y="782.727">Preview kept. Preferences were not saved.</tspan></text>
+</g>
+</g>
+</g>
+</svg>

@@ -1,0 +1,255 @@
+<svg width="1440" height="1106" viewBox="0 0 1440 1106" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Publications &#38; pricing / Offline / stale">
+<rect width="1440" height="1106" fill="#F5F6F3"/>
+<g id="Agency navigation">
+<mask id="path-1-inside-1_40_9163" fill="white">
+<path d="M0 0H224V1106H0V0Z"/>
+</mask>
+<path d="M0 0H224V1106H0V0Z" fill="#FDFEFC"/>
+<path d="M224 0H223V1106H224H225V0H224Z" fill="#D3DEDA" mask="url(#path-1-inside-1_40_9163)"/>
+<g id="Brand">
+<g id="Brand mark">
+<rect x="24" y="28.5" width="33" height="36" rx="4" fill="#087F73"/>
+<g id="newspaper">
+<path id="Vector" d="M43.2503 51.9999H38.6666M46.0005 48.3329H38.6666M33.1661 55.6668H47.834C48.3202 55.6668 48.7866 55.4737 49.1304 55.1298C49.4743 54.786 49.6674 54.3196 49.6674 53.8334V39.1655C49.6674 38.6792 49.4743 38.2129 49.1304 37.869C48.7866 37.5252 48.3202 37.332 47.834 37.332H36.8331C36.3468 37.332 35.8805 37.5252 35.5366 37.869C35.1928 38.2129 34.9996 38.6792 34.9996 39.1655V43.7492M33.1661 55.6668C33.6524 55.6668 34.1187 55.4737 34.4626 55.1298C34.8064 54.786 34.9996 54.3196 34.9996 53.8334V43.7492M33.1661 55.6668C32.6799 55.6668 32.2135 55.4737 31.8697 55.1298C31.5258 54.786 31.3326 54.3196 31.3326 53.8334V45.5827C31.3326 45.0964 31.5258 44.6301 31.8697 44.2862C32.2135 43.9424 32.6799 43.7492 33.1661 43.7492H34.9996M39.5833 40.999H45.0837C45.59 40.999 46.0005 41.4094 46.0005 41.9157V43.7492C46.0005 44.2555 45.59 44.666 45.0837 44.666H39.5833C39.077 44.666 38.6666 44.2555 38.6666 43.7492V41.9157C38.6666 41.4094 39.077 40.999 39.5833 40.999Z" stroke-width="1.7" stroke-linecap="round" stroke="white"/>
+</g>
+</g>
+<g id="Brand identity" clip-path="url(#clip0_40_9163)">
+<text id="Agency brand" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="23" letter-spacing="-0.8px"><tspan x="67" y="47.3636">daybook</tspan></text>
+<text id="Label" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="67" y="64.1364">THE AGENCY WORKSPACE</tspan></text>
+</g>
+</g>
+<g id="Navigation groups" clip-path="url(#clip1_40_9163)">
+<g id="Navigation group" clip-path="url(#clip2_40_9163)">
+<text id="Group label" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="600" letter-spacing="1.2px"><tspan x="16" y="104.636">WORKSPACE</tspan></text>
+<g id="Navigation item">
+<g id="layout-dashboard">
+<path id="Vector_2" d="M28.8333 127.125H32.375C32.7662 127.125 33.0833 127.442 33.0833 127.833V132.792C33.0833 133.183 32.7662 133.5 32.375 133.5H28.8333C28.4421 133.5 28.125 133.183 28.125 132.792V127.833C28.125 127.442 28.4421 127.125 28.8333 127.125ZM36.625 127.125H40.1667C40.5579 127.125 40.875 127.442 40.875 127.833V129.958C40.875 130.35 40.5579 130.667 40.1667 130.667H36.625C36.2338 130.667 35.9167 130.35 35.9167 129.958V127.833C35.9167 127.442 36.2338 127.125 36.625 127.125ZM36.625 133.5H40.1667C40.5579 133.5 40.875 133.817 40.875 134.208V139.167C40.875 139.558 40.5579 139.875 40.1667 139.875H36.625C36.2338 139.875 35.9167 139.558 35.9167 139.167V134.208C35.9167 133.817 36.2338 133.5 36.625 133.5ZM28.8333 136.333H32.375C32.7662 136.333 33.0833 136.65 33.0833 137.042V139.167C33.0833 139.558 32.7662 139.875 32.375 139.875H28.8333C28.4421 139.875 28.125 139.558 28.125 139.167V137.042C28.125 136.65 28.4421 136.333 28.8333 136.333Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_2" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="137.864">Overview</tspan></text>
+</g>
+<g id="Navigation item_2">
+<g id="users">
+<path id="Vector_3" d="M37.3336 185.875V184.458C37.3336 183.707 37.0351 182.986 36.5037 182.455C35.9723 181.924 35.2515 181.625 34.5 181.625H30.2497C29.4982 181.625 28.7775 181.924 28.2461 182.455C27.7147 182.986 27.4161 183.707 27.4161 184.458V185.875M37.3336 173.216C37.9412 173.373 38.4793 173.728 38.8635 174.224C39.2476 174.721 39.4561 175.331 39.4561 175.958C39.4561 176.586 39.2476 177.196 38.8635 177.692C38.4793 178.189 37.9412 178.543 37.3336 178.701M41.5839 185.875V184.458C41.5835 183.83 41.3745 183.221 40.9899 182.724C40.6052 182.228 40.0667 181.874 39.4588 181.717M35.2084 175.958C35.2084 177.523 33.9398 178.792 32.3749 178.792C30.8099 178.792 29.5413 177.523 29.5413 175.958C29.5413 174.394 30.8099 173.125 32.3749 173.125C33.9398 173.125 35.2084 174.394 35.2084 175.958Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_3" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="183.864">Residents &#38; subscriptions</tspan></text>
+</g>
+<g id="Navigation item_3">
+<g id="route">
+<path id="Vector_4" d="M32.375 230.459C32.375 231.632 31.4236 232.584 30.25 232.584C29.0764 232.584 28.125 231.632 28.125 230.459C28.125 229.285 29.0764 228.333 30.25 228.333C31.4236 228.333 32.375 229.285 32.375 230.459ZM32.375 230.459H38.3958C39.0533 230.459 39.6839 230.197 40.1489 229.732C40.6138 229.267 40.875 228.637 40.875 227.979C40.875 227.322 40.6138 226.691 40.1489 226.226C39.6839 225.761 39.0533 225.5 38.3958 225.5H30.6042C29.9467 225.5 29.3161 225.239 28.8511 224.774C28.3862 224.309 28.125 223.678 28.125 223.021C28.125 222.363 28.3862 221.732 28.8511 221.267C29.3161 220.802 29.9467 220.541 30.6042 220.541H36.625M36.625 220.541C36.625 221.715 37.5764 222.666 38.75 222.666C39.9236 222.666 40.875 221.715 40.875 220.541C40.875 219.367 39.9236 218.416 38.75 218.416C37.5764 218.416 36.625 219.367 36.625 220.541Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_4" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="229.864">Routes &#38; delivery</tspan></text>
+</g>
+<g id="Navigation item_4">
+<rect x="16" y="252" width="192" height="39" rx="6" fill="#E2F2ED"/>
+<g id="newspaper_2" clip-path="url(#clip3_40_9163)">
+<path id="Vector_5" d="M36.6252 275.75H33.0833M38.7504 272.917H33.0833M28.8329 278.584H40.1672C40.5429 278.584 40.9033 278.435 41.169 278.169C41.4347 277.903 41.5839 277.543 41.5839 277.167V265.833C41.5839 265.457 41.4347 265.097 41.169 264.831C40.9033 264.565 40.5429 264.416 40.1672 264.416H31.6665C31.2907 264.416 30.9304 264.565 30.6647 264.831C30.399 265.097 30.2497 265.457 30.2497 265.833V269.375M28.8329 278.584C29.2087 278.584 29.569 278.435 29.8347 278.169C30.1004 277.903 30.2497 277.543 30.2497 277.167V269.375M28.8329 278.584C28.4572 278.584 28.0968 278.435 27.8311 278.169C27.5654 277.903 27.4161 277.543 27.4161 277.167V270.792C27.4161 270.416 27.5654 270.055 27.8311 269.79C28.0968 269.524 28.4572 269.375 28.8329 269.375H30.2497M33.7916 267.25H38.042C38.4332 267.25 38.7504 267.567 38.7504 267.958V269.375C38.7504 269.766 38.4332 270.083 38.042 270.083H33.7916C33.4004 270.083 33.0833 269.766 33.0833 269.375V267.958C33.0833 267.567 33.4004 267.25 33.7916 267.25Z" stroke-width="1.7" stroke-linecap="round" stroke="#087F73"/>
+</g>
+<text id="Label_5" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" font-weight="600" letter-spacing="0em"><tspan x="53" y="275.864">Publications &#38; pricing</tspan></text>
+</g>
+</g>
+<g id="Navigation group_2" clip-path="url(#clip4_40_9163)">
+<text id="Group label_2" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="600" letter-spacing="1.2px"><tspan x="16" y="323.636">FINANCE</tspan></text>
+<g id="Navigation item_5">
+<g id="receipt-text">
+<path id="Vector_6" d="M35.2082 355.332H31.6669M35.9165 349.666H31.6669M37.333 352.499H31.6669M28.8339 346.124C28.8339 345.936 28.9085 345.756 29.0413 345.623C29.1741 345.49 29.3543 345.415 29.5421 345.415C29.7175 345.414 29.8895 345.464 30.0379 345.557L30.6987 345.982C30.8468 346.077 31.0188 346.127 31.1945 346.127C31.3702 346.127 31.5422 346.077 31.6903 345.982L32.3518 345.557C32.4999 345.462 32.6719 345.412 32.8476 345.412C33.0233 345.412 33.1953 345.462 33.3434 345.557L34.0042 345.982C34.1522 346.077 34.3243 346.127 34.5 346.127C34.6757 346.127 34.8477 346.077 34.9957 345.982L35.6566 345.557C35.8046 345.462 35.9766 345.412 36.1523 345.412C36.328 345.412 36.5001 345.462 36.6481 345.557L37.3096 345.982C37.4577 346.077 37.6297 346.127 37.8054 346.127C37.9811 346.127 38.1532 346.077 38.3012 345.982L38.962 345.557C39.1104 345.464 39.2824 345.414 39.4578 345.415C39.6456 345.415 39.8258 345.49 39.9586 345.623C40.0914 345.756 40.1661 345.936 40.1661 346.124V358.873C40.1661 359.061 40.0914 359.241 39.9586 359.374C39.8258 359.507 39.6456 359.582 39.4578 359.582C39.2824 359.583 39.1104 359.534 38.962 359.44L38.3012 359.015C38.1532 358.921 37.9811 358.87 37.8054 358.87C37.6297 358.87 37.4577 358.921 37.3096 359.015L36.6481 359.44C36.5001 359.535 36.328 359.585 36.1523 359.585C35.9766 359.585 35.8046 359.535 35.6566 359.44L34.9957 359.015C34.8477 358.921 34.6757 358.87 34.5 358.87C34.3243 358.87 34.1522 358.921 34.0042 359.015L33.3434 359.44C33.1953 359.535 33.0233 359.585 32.8476 359.585C32.6719 359.585 32.4999 359.535 32.3518 359.44L31.6903 359.015C31.5422 358.921 31.3702 358.87 31.1945 358.87C31.0188 358.87 30.8468 358.921 30.6987 359.015L30.0379 359.44C29.8895 359.534 29.7175 359.583 29.5421 359.582C29.3543 359.582 29.1741 359.507 29.0413 359.374C28.9085 359.241 28.8339 359.061 28.8339 358.873V346.124Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_6" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="356.864">Billing / Collection</tspan></text>
+</g>
+<g id="Navigation item_6">
+<g id="wallet">
+<path id="Vector_7" d="M39.4583 394.958V392.833C39.4583 392.645 39.3837 392.465 39.2509 392.332C39.118 392.2 38.9379 392.125 38.75 392.125H29.5417C29.1659 392.125 28.8056 392.274 28.5399 392.54C28.2743 392.806 28.125 393.166 28.125 393.542M39.4583 394.958H29.5417C29.1659 394.958 28.8056 394.809 28.5399 394.543C28.2743 394.278 28.125 393.917 28.125 393.542M39.4583 394.958H40.1667C40.3545 394.958 40.5347 395.033 40.6675 395.166C40.8004 395.299 40.875 395.479 40.875 395.667V398.5M28.125 393.542V403.458C28.125 403.834 28.2743 404.194 28.5399 404.46C28.8056 404.726 29.1659 404.875 29.5417 404.875H40.1667C40.3545 404.875 40.5347 404.8 40.6675 404.668C40.8004 404.535 40.875 404.355 40.875 404.167V401.333M40.875 398.5H38.75C38.3743 398.5 38.0139 398.649 37.7483 398.915C37.4826 399.181 37.3333 399.541 37.3333 399.917C37.3333 400.292 37.4826 400.653 37.7483 400.918C38.0139 401.184 38.3743 401.333 38.75 401.333H40.875M40.875 398.5C41.0629 398.5 41.243 398.575 41.3759 398.707C41.5087 398.84 41.5833 399.02 41.5833 399.208V400.625C41.5833 400.813 41.5087 400.993 41.3759 401.126C41.243 401.259 41.0629 401.333 40.875 401.333" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_7" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="402.864">Payments &#38; ledger</tspan></text>
+</g>
+<g id="Navigation item_7">
+<g id="landmark">
+<path id="Vector_8" d="M33.0832 448.75V443.791M35.9164 448.75V443.791M38.7497 448.75V443.791M28.125 451.584H40.8746M30.2499 448.75V443.791M33.8766 437.556C34.0709 437.462 34.2843 437.413 34.5004 437.414C34.7164 437.415 34.9295 437.465 35.1232 437.561L40.6948 440.286C41.0319 440.451 40.9143 440.958 40.5389 440.958H28.4608C28.0854 440.958 27.9685 440.451 28.305 440.286L33.8766 437.556Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_8" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="448.864">Cash closing</tspan></text>
+</g>
+<g id="Navigation item_8">
+<g id="chart-no-axes-combined">
+<path id="Vector_9" d="M34.5 493.333V496.875M37.3336 491.917V496.875M40.1672 489.083V496.875M41.5839 484.125L35.4592 490.249C35.4263 490.282 35.3872 490.308 35.3442 490.326C35.3011 490.344 35.255 490.353 35.2084 490.353C35.1618 490.353 35.1157 490.344 35.0727 490.326C35.0296 490.308 34.9906 490.282 34.9577 490.249L32.6256 487.917C32.5592 487.851 32.4691 487.814 32.3752 487.814C32.2813 487.814 32.1912 487.851 32.1248 487.917L27.4161 492.625M28.8329 494.75V496.875M31.6665 491.917V496.875" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_9" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="494.864">Reports &#38; analytics</tspan></text>
+</g>
+</g>
+<g id="Navigation group_3" clip-path="url(#clip5_40_9163)">
+<text id="Group label_3" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="600" letter-spacing="1.2px"><tspan x="16" y="542.636">OPERATIONS</tspan></text>
+<g id="Navigation item_9">
+<g id="contact-round">
+<path id="Vector_10" d="M37.3333 564.416V565.833M37.3333 565.833H31.6667M37.3333 565.833H39.4583C40.2407 565.833 40.875 566.467 40.875 567.25V577.167C40.875 577.95 40.2407 578.584 39.4583 578.584H38.6898M38.6898 578.584C38.6898 577.457 38.2421 576.375 37.445 575.578C36.648 574.781 35.567 574.333 34.4398 574.333C33.3126 574.333 32.2316 574.781 31.4346 575.578C30.6376 576.375 30.1898 577.457 30.1898 578.584M38.6898 578.584H30.1898M30.1898 578.584H29.5417C28.7593 578.584 28.125 577.95 28.125 577.167V567.25C28.125 566.467 28.7593 565.833 29.5417 565.833H31.6667M31.6667 564.416V565.833M37.3333 571.5C37.3333 573.065 36.0648 574.333 34.5 574.333C32.9352 574.333 31.6667 573.065 31.6667 571.5C31.6667 569.935 32.9352 568.666 34.5 568.666C36.0648 568.666 37.3333 569.935 37.3333 571.5Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_10" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="575.864">Staff &#38; payroll</tspan></text>
+</g>
+<g id="Navigation item_10">
+<g id="package">
+<path id="Vector_11" d="M34.5 624.584V624.583M34.5 624.583V617.5M34.5 624.583C34.2513 624.583 34.007 624.517 33.7917 624.393L28.8333 621.559C28.6182 621.435 28.4395 621.256 28.3152 621.041C28.1908 620.826 28.1253 620.582 28.125 620.334V614.667C28.1253 614.418 28.1908 614.174 28.3152 613.959C28.4395 613.744 28.6182 613.565 28.8333 613.441L31.3127 612.024M34.5 624.583C34.7487 624.583 34.993 624.517 35.2083 624.393L40.1667 621.559C40.3818 621.435 40.5605 621.256 40.6848 621.041C40.8092 620.826 40.8747 620.582 40.875 620.334V614.667C40.8747 614.418 40.8092 614.174 40.6848 613.959C40.5605 613.744 40.3818 613.565 40.1667 613.441L35.2083 610.608C34.993 610.483 34.7487 610.418 34.5 610.418C34.2513 610.418 34.007 610.483 33.7917 610.608L31.3127 612.024M34.5 617.5L28.3304 613.958M34.5 617.5L37.6858 615.671M37.6858 615.671L40.6696 613.958M37.6858 615.671L31.3127 612.024M37.6858 615.671L37.6875 615.672M31.3125 612.024L31.3127 612.024" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_11" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="621.864">Indents &#38; returns</tspan></text>
+</g>
+<g id="Navigation item_11">
+<g id="messages-square" clip-path="url(#clip6_40_9163)">
+<path id="Vector_12" d="M40.1672 661.375C40.5429 661.375 40.9033 661.524 41.169 661.79C41.4347 662.055 41.5839 662.416 41.5839 662.791V670.078C41.5839 670.177 41.5544 670.274 41.4992 670.357C41.4439 670.44 41.3653 670.504 41.2734 670.542C41.1816 670.58 41.0804 670.59 40.9829 670.571C40.8853 670.551 40.7957 670.503 40.7254 670.433L39.1655 668.873C38.8999 668.608 38.5396 668.458 38.1638 668.458H33.0833C32.7075 668.458 32.3471 668.309 32.0814 668.043C31.8157 667.778 31.6665 667.417 31.6665 667.041V666.333M37.3336 662.083C37.3336 662.459 37.1843 662.819 36.9186 663.085C36.6529 663.35 36.2926 663.5 35.9168 663.5H30.8362C30.4605 663.5 30.1002 663.649 29.8346 663.915L28.2747 665.475C28.2044 665.545 28.1148 665.593 28.0172 665.612C27.9196 665.632 27.8185 665.622 27.7266 665.584C27.6347 665.546 27.5562 665.481 27.5009 665.398C27.4457 665.316 27.4162 665.218 27.4161 665.119V657.833C27.4161 657.457 27.5654 657.097 27.8311 656.831C28.0968 656.565 28.4572 656.416 28.8329 656.416H35.9168C36.2926 656.416 36.6529 656.565 36.9186 656.831C37.1843 657.097 37.3336 657.457 37.3336 657.833V662.083Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_12" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="667.864">Communications</tspan></text>
+</g>
+</g>
+</g>
+<g id="Workspace tools" clip-path="url(#clip7_40_9163)">
+<g id="Settings navigation">
+<g id="settings-2">
+<path id="Vector_13" d="M35.9165 733.541H29.5421M35.9165 733.541C35.9165 734.715 36.8678 735.666 38.0413 735.666C39.2148 735.666 40.1661 734.715 40.1661 733.541C40.1661 732.368 39.2148 731.417 38.0413 731.417C36.8678 731.417 35.9165 732.368 35.9165 733.541ZM39.4578 726.459H33.0834M33.0834 726.459C33.0834 727.632 32.1321 728.584 30.9586 728.584C29.7852 728.584 28.8339 727.632 28.8339 726.459C28.8339 725.285 29.7852 724.334 30.9586 724.334C32.1321 724.334 33.0834 725.285 33.0834 726.459Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_13" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="734.364">Settings</tspan></text>
+</g>
+<g id="Support navigation">
+<g id="circle-help" clip-path="url(#clip8_40_9163)">
+<path id="Vector_14" d="M32.4385 774.374C32.6051 773.901 32.9338 773.502 33.3665 773.248C33.7992 772.993 34.3079 772.9 34.8025 772.985C35.2972 773.07 35.7459 773.327 36.0691 773.711C36.3923 774.095 36.5692 774.581 36.5684 775.083C36.5684 776.5 34.4433 777.208 34.4433 777.208M34.5 780.042H34.5071M41.5839 776.5C41.5839 780.412 38.4124 783.584 34.5 783.584C30.5877 783.584 27.4161 780.412 27.4161 776.5C27.4161 772.588 30.5877 769.416 34.5 769.416C38.4124 769.416 41.5839 772.588 41.5839 776.5Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_14" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="780.864">Help &#38; assistant</tspan></text>
+</g>
+</g>
+<g id="Agent workspace">
+<mask id="path-48-inside-2_40_9163" fill="white">
+<path d="M16 822H208V897H16V822Z"/>
+</mask>
+<path d="M16 822V823H208V822V821H16V822Z" fill="#D3DEDA" mask="url(#path-48-inside-2_40_9163)"/>
+<g id="Agency identity" clip-path="url(#clip9_40_9163)">
+<g id="Agent avatar">
+<rect x="24" y="841" width="30" height="30" rx="15" fill="#EEF3F0"/>
+<text id="Label_15" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="31.5" y="860">RK</tspan></text>
+</g>
+<g id="Agent details" clip-path="url(#clip10_40_9163)">
+<text id="Label_16" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" font-weight="600" letter-spacing="0em"><tspan x="64" y="852.864">Ravi Kumar</tspan></text>
+<text id="Label_17" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="64" y="868.136">Daybreak Agency &#xb7; Kochi</tspan></text>
+</g>
+</g>
+<text id="Label_18" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="24" y="893.136">DEMO WORKSPACE &#xb7; SAMPLE DATA</tspan></text>
+</g>
+</g>
+<g id="Main workspace">
+<g id="Workspace bar">
+<mask id="path-55-inside-3_40_9163" fill="white">
+<path d="M224 0H1440V74H224V0Z"/>
+</mask>
+<path d="M224 0H1440V74H224V0Z" fill="white"/>
+<path d="M1440 74V73H224V74V75H1440V74Z" fill="#D3DEDA" mask="url(#path-55-inside-3_40_9163)"/>
+<g id="Workspace location" clip-path="url(#clip11_40_9163)">
+<text id="Label_19" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="260" y="41.3636">Daybreak Agency</tspan></text>
+<text id="Label_20" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="371" y="41.7273">/</tspan></text>
+<text id="Label_21" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" font-weight="600" letter-spacing="0em"><tspan x="386" y="41.3636">Publications &#38; pricing</tspan></text>
+</g>
+<g id="Workspace utilities" clip-path="url(#clip12_40_9163)">
+<g id="Global search" clip-path="url(#clip13_40_9163)">
+<g id="search">
+<path id="Vector_15" d="M1060 43.0001L1057.11 40.1068M1058.67 36.3333C1058.67 39.2789 1056.28 41.6667 1053.33 41.6667C1050.39 41.6667 1048 39.2789 1048 36.3333C1048 33.3878 1050.39 31 1053.33 31C1056.28 31 1058.67 33.3878 1058.67 36.3333Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_22" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="1070" y="41.3636">Search anything</tspan></text>
+<text id="Label_23" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="1170" y="40.6364">&#x2318; K</tspan></text>
+</g>
+<text id="Label_24" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="1210" y="41.3636">EN&#x2304;</tspan></text>
+<g id="bell">
+<path id="Vector_16" d="M1260.7 43.7512C1260.83 43.9792 1261.02 44.1686 1261.25 44.3002C1261.48 44.4319 1261.74 44.5012 1262 44.5012C1262.26 44.5012 1262.52 44.4319 1262.75 44.3002C1262.98 44.1686 1263.17 43.9792 1263.3 43.7512M1255.45 39.4953C1255.35 39.6027 1255.28 39.7363 1255.26 39.8798C1255.24 40.0232 1255.26 40.1704 1255.31 40.3035C1255.37 40.4365 1255.47 40.5496 1255.59 40.629C1255.71 40.7085 1255.85 40.7508 1256 40.7509H1268C1268.15 40.751 1268.29 40.7088 1268.41 40.6295C1268.53 40.5502 1268.63 40.4372 1268.69 40.3043C1268.74 40.1714 1268.76 40.0242 1268.74 39.8807C1268.72 39.7372 1268.65 39.6036 1268.55 39.4961C1267.56 38.4678 1266.5 37.3749 1266.5 34.0004C1266.5 32.8068 1266.03 31.6621 1265.18 30.8181C1264.34 29.9741 1263.19 29.5 1262 29.5C1260.81 29.5 1259.66 29.9741 1258.82 30.8181C1257.97 31.6621 1257.5 32.8068 1257.5 34.0004C1257.5 37.3749 1256.44 38.4678 1255.45 39.4953Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<g id="Connection status" clip-path="url(#clip14_40_9163)">
+<rect id="Online indicator" x="1291" y="34" width="6" height="6" rx="3" fill="#087F73"/>
+<text id="Label_25" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" letter-spacing="0em"><tspan x="1303" y="41">All changes synced</tspan></text>
+</g>
+</g>
+</g>
+<g id="Page content">
+<rect width="1216" height="958" transform="translate(224 74)" fill="#F5F6F3"/>
+<text id="Text / Publications &#38; pricing" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="30" font-weight="600" letter-spacing="0em"><tspan x="260" y="137.409">Publications &#38; pricing</tspan></text>
+<text id="Text / DAYBOOK / OFFLINE / STALE" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" font-weight="600" letter-spacing="0em"><tspan x="260" y="190.364">DAYBOOK / OFFLINE / STALE</tspan></text>
+<g id="Persistent context controls">
+<g id="Action / R01 &#194;&#183; Panampilly Nagar">
+<rect x="260.5" y="223.5" width="220" height="45" rx="5.5" fill="white"/>
+<rect x="260.5" y="223.5" width="220" height="45" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / R01 &#194;&#183; Panampilly Nagar" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="277" y="248.727">R01 &#xb7; Panampilly Nagar</tspan></text>
+</g>
+<g id="Action / October 2026">
+<rect x="497.5" y="223.5" width="135" height="64" rx="5.5" fill="white"/>
+<rect x="497.5" y="223.5" width="135" height="64" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / October 2026" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="514" y="248.727">October 2026</tspan></text>
+</g>
+</g>
+<g id="Inline state / Offline &#194;&#183; showing saved data">
+<rect x="260.5" y="312.5" width="1143" height="256" rx="7.5" fill="white"/>
+<rect x="260.5" y="312.5" width="1143" height="256" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / WARNING" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="289" y="353.5">WARNING</tspan></text>
+<text id="Text / Offline &#194;&#183; showing saved data" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="600" letter-spacing="0em"><tspan x="289" y="404.727">Offline &#xb7; showing saved data</tspan></text>
+<text id="Text / Last synced 01 Nov 2026 at 07:42 AM. Read " fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="15" letter-spacing="0em"><tspan x="289" y="450.955">Last synced 01 Nov 2026 at 07:42 AM. Read cached records below. Financial writes wait for reconnection.</tspan></text>
+<g id="Action / Check connection">
+<rect x="289" y="477" width="168" height="63" rx="6" fill="#087F73"/>
+<text id="Text / Check connection" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="305" y="501.727">Check connection</tspan></text>
+</g>
+</g>
+<g id="Cached content">
+<rect width="1144" height="263" transform="translate(260 593)" fill="white"/>
+<text id="Text / SAVED SNAPSHOT &#194;&#183; NOT LIVE" fill="#8C5C14" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" font-weight="600" letter-spacing="0em"><tspan x="284" y="630.364">SAVED SNAPSHOT &#xb7; NOT LIVE</tspan></text>
+<text id="Text / R01 &#194;&#183; Panampilly Nagar &#194;&#183; Saved snapshot" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="284" y="675.045">R01 &#xb7; Panampilly Nagar &#xb7; Saved snapshot</tspan></text>
+<text id="Text / Anitha Nair &#194;&#183; Drop 001 &#194;&#183; Last known due &#226;&#130;&#185;6" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="15" letter-spacing="0em"><tspan x="284" y="718.955">Anitha Nair &#xb7; Drop 001 &#xb7; Last known due &#x20b9;661.00</tspan></text>
+<text id="Text / Leela Menon &#194;&#183; Drop 002 &#194;&#183; Last known due &#226;&#130;&#185;3" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="15" letter-spacing="0em"><tspan x="284" y="761.955">Leela Menon &#xb7; Drop 002 &#xb7; Last known due &#x20b9;359.00</tspan></text>
+<g id="Action / Save unavailable offline">
+<rect x="284" y="788" width="236" height="44" rx="6" fill="#D9E3DE"/>
+<text id="Text / Save unavailable offline" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="300" y="812.727">Save unavailable offline</tspan></text>
+</g>
+</g>
+<g id="State behavior">
+<rect x="260" y="880" width="1144" height="116" rx="8" fill="white"/>
+<text id="Text / BEHAVIOR / OFFLINE / STALE" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="280" y="912.5">BEHAVIOR / OFFLINE / STALE</tspan></text>
+<text id="Text / Focus stays on the invoking control. Annou" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="280" y="947.727">Focus stays on the invoking control. Announce the state once; keep labels and recovery actions visible. Skeletons reserve the content layout and use reduced-motion-safe static </tspan><tspan x="280" y="967.727">placeholders.</tspan></text>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_40_9163">
+<rect width="129" height="43" fill="white" transform="translate(67 25)"/>
+</clipPath>
+<clipPath id="clip1_40_9163">
+<rect width="192" height="588" fill="white" transform="translate(16 95)"/>
+</clipPath>
+<clipPath id="clip2_40_9163">
+<rect width="192" height="196" fill="white" transform="translate(16 95)"/>
+</clipPath>
+<clipPath id="clip3_40_9163">
+<rect width="17" height="17" fill="white" transform="translate(26 263)"/>
+</clipPath>
+<clipPath id="clip4_40_9163">
+<rect width="192" height="196" fill="white" transform="translate(16 314)"/>
+</clipPath>
+<clipPath id="clip5_40_9163">
+<rect width="192" height="150" fill="white" transform="translate(16 533)"/>
+</clipPath>
+<clipPath id="clip6_40_9163">
+<rect width="17" height="17" fill="white" transform="translate(26 655)"/>
+</clipPath>
+<clipPath id="clip7_40_9163">
+<rect width="192" height="85" fill="white" transform="translate(16 710)"/>
+</clipPath>
+<clipPath id="clip8_40_9163">
+<rect width="17" height="17" fill="white" transform="translate(26 768)"/>
+</clipPath>
+<clipPath id="clip9_40_9163">
+<rect width="158" height="32" fill="white" transform="translate(24 840)"/>
+</clipPath>
+<clipPath id="clip10_40_9163">
+<rect width="118" height="32" fill="white" transform="translate(64 840)"/>
+</clipPath>
+<clipPath id="clip11_40_9163">
+<rect width="252" height="19" fill="white" transform="translate(260 27.5)"/>
+</clipPath>
+<clipPath id="clip12_40_9163">
+<rect width="358" height="18" fill="white" transform="translate(1046 28)"/>
+</clipPath>
+<clipPath id="clip13_40_9163">
+<rect width="144" height="17" fill="white" transform="translate(1046 28.5)"/>
+</clipPath>
+<clipPath id="clip14_40_9163">
+<rect width="113" height="16" fill="white" transform="translate(1291 29)"/>
+</clipPath>
+</defs>
+</svg>

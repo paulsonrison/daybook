@@ -1,0 +1,1527 @@
+[
+  {
+    "Component": "Daybook/Button/Primary",
+    "Variants": [
+      {
+        "Variant": "Variant=Default",
+        "Rects": [
+          "<rect x=\"72\" y=\"224\" width=\"83\" height=\"40\" rx=\"6\" fill=\"#087F73\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Save bill",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "white"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Hover",
+        "Rects": [
+          "<rect x=\"179\" y=\"224\" width=\"83\" height=\"40\" rx=\"6\" fill=\"#06695F\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Save bill",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "white"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Focus",
+        "Rects": [
+          "<rect x=\"287.5\" y=\"225.5\" width=\"80\" height=\"37\" rx=\"4.5\" fill=\"#087F73\" />",
+          "<rect x=\"287.5\" y=\"225.5\" width=\"80\" height=\"37\" rx=\"4.5\" stroke=\"#9BCBC3\" stroke-width=\"3\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Save bill",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "white"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Disabled",
+        "Rects": [
+          "<rect x=\"393\" y=\"224\" width=\"83\" height=\"40\" rx=\"6\" fill=\"#E8ECE9\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Save bill",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "#929E9A"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Loading",
+        "Rects": [
+          "<rect x=\"500\" y=\"224\" width=\"108\" height=\"40\" rx=\"6\" fill=\"#087F73\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Saving…",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "white"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Small",
+        "Rects": [
+          "<rect x=\"632\" y=\"224\" width=\"69\" height=\"32\" rx=\"6\" fill=\"#087F73\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Save bill",
+            "Font": "Inter",
+            "Size": "12",
+            "Fill": "white"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Medium",
+        "Rects": [
+          "<rect x=\"725\" y=\"224\" width=\"83\" height=\"40\" rx=\"6\" fill=\"#087F73\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Save bill",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "white"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Large",
+        "Rects": [
+          "<rect x=\"832\" y=\"224\" width=\"83\" height=\"48\" rx=\"6\" fill=\"#087F73\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Save bill",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "white"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Component": "Daybook/Button/Secondary",
+    "Variants": [
+      {
+        "Variant": "Variant=Default_2",
+        "Rects": [
+          "<rect x=\"72.5\" y=\"390.5\" width=\"82\" height=\"39\" rx=\"5.5\" fill=\"white\" />",
+          "<rect x=\"72.5\" y=\"390.5\" width=\"82\" height=\"39\" rx=\"5.5\" stroke=\"#D3DEDA\" />"
+        ],
+        "Text": [
+          {
+            "Text": "View bill",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "#172D2B"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Hover_2",
+        "Rects": [
+          "<rect x=\"179.5\" y=\"390.5\" width=\"82\" height=\"39\" rx=\"5.5\" fill=\"#EEF3F0\" />",
+          "<rect x=\"179.5\" y=\"390.5\" width=\"82\" height=\"39\" rx=\"5.5\" stroke=\"#D3DEDA\" />"
+        ],
+        "Text": [
+          {
+            "Text": "View bill",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "#172D2B"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Focus_2",
+        "Rects": [
+          "<rect x=\"287.5\" y=\"391.5\" width=\"80\" height=\"37\" rx=\"4.5\" fill=\"white\" />",
+          "<rect x=\"287.5\" y=\"391.5\" width=\"80\" height=\"37\" rx=\"4.5\" stroke=\"#9BCBC3\" stroke-width=\"3\" />"
+        ],
+        "Text": [
+          {
+            "Text": "View bill",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "#172D2B"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Disabled_2",
+        "Rects": [
+          "<rect x=\"393.5\" y=\"390.5\" width=\"82\" height=\"39\" rx=\"5.5\" fill=\"#E8ECE9\" />",
+          "<rect x=\"393.5\" y=\"390.5\" width=\"82\" height=\"39\" rx=\"5.5\" stroke=\"#D3DEDA\" />"
+        ],
+        "Text": [
+          {
+            "Text": "View bill",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "#929E9A"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Loading_2",
+        "Rects": [
+          "<rect x=\"500.5\" y=\"390.5\" width=\"117\" height=\"39\" rx=\"5.5\" fill=\"white\" />",
+          "<rect x=\"500.5\" y=\"390.5\" width=\"117\" height=\"39\" rx=\"5.5\" stroke=\"#D3DEDA\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Opening…",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "#172D2B"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Small_2",
+        "Rects": [
+          "<rect x=\"642.5\" y=\"390.5\" width=\"68\" height=\"31\" rx=\"5.5\" fill=\"white\" />",
+          "<rect x=\"642.5\" y=\"390.5\" width=\"68\" height=\"31\" rx=\"5.5\" stroke=\"#D3DEDA\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Save bill",
+            "Font": "Inter",
+            "Size": "12",
+            "Fill": "#172D2B"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Medium_2",
+        "Rects": [
+          "<rect x=\"735.5\" y=\"390.5\" width=\"82\" height=\"39\" rx=\"5.5\" fill=\"white\" />",
+          "<rect x=\"735.5\" y=\"390.5\" width=\"82\" height=\"39\" rx=\"5.5\" stroke=\"#D3DEDA\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Save bill",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "#172D2B"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Large_2",
+        "Rects": [
+          "<rect x=\"842.5\" y=\"390.5\" width=\"82\" height=\"47\" rx=\"5.5\" fill=\"white\" />",
+          "<rect x=\"842.5\" y=\"390.5\" width=\"82\" height=\"47\" rx=\"5.5\" stroke=\"#D3DEDA\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Save bill",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "#172D2B"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Component": "Daybook/Button/Tertiary",
+    "Variants": [
+      {
+        "Variant": "Variant=Default_3",
+        "Rects": [],
+        "Text": [
+          {
+            "Text": "View details",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "#087F73"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Hover_3",
+        "Rects": [
+          "<rect x=\"203\" y=\"556\" width=\"107\" height=\"40\" rx=\"6\" fill=\"#EEF3F0\" />"
+        ],
+        "Text": [
+          {
+            "Text": "View details",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "#087F73"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Focus_3",
+        "Rects": [
+          "<rect x=\"335.5\" y=\"557.5\" width=\"104\" height=\"37\" rx=\"4.5\" fill=\"white\" />",
+          "<rect x=\"335.5\" y=\"557.5\" width=\"104\" height=\"37\" rx=\"4.5\" stroke=\"#9BCBC3\" stroke-width=\"3\" />"
+        ],
+        "Text": [
+          {
+            "Text": "View details",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "#087F73"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Disabled_3",
+        "Rects": [
+          "<rect x=\"465\" y=\"556\" width=\"107\" height=\"40\" rx=\"6\" fill=\"#E8ECE9\" />"
+        ],
+        "Text": [
+          {
+            "Text": "View details",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "#929E9A"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Loading_3",
+        "Rects": [
+          "<rect x=\"596\" y=\"556\" width=\"115\" height=\"40\" rx=\"6\" fill=\"white\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Loading…",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "#087F73"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Small_3",
+        "Rects": [],
+        "Text": [
+          {
+            "Text": "Save bill",
+            "Font": "Inter",
+            "Size": "12",
+            "Fill": "#087F73"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Medium_3",
+        "Rects": [],
+        "Text": [
+          {
+            "Text": "Save bill",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "#087F73"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Large_3",
+        "Rects": [],
+        "Text": [
+          {
+            "Text": "Save bill",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "#087F73"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Component": "Daybook/Button/Destructive",
+    "Variants": [
+      {
+        "Variant": "Variant=Default_4",
+        "Rects": [
+          "<rect x=\"72\" y=\"722\" width=\"105\" height=\"40\" rx=\"6\" fill=\"#B13F3F\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Delete draft",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "white"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Hover_4",
+        "Rects": [
+          "<rect x=\"201\" y=\"722\" width=\"105\" height=\"40\" rx=\"6\" fill=\"#943232\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Delete draft",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "white"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Focus_4",
+        "Rects": [
+          "<rect x=\"331.5\" y=\"723.5\" width=\"102\" height=\"37\" rx=\"4.5\" fill=\"#B13F3F\" />",
+          "<rect x=\"331.5\" y=\"723.5\" width=\"102\" height=\"37\" rx=\"4.5\" stroke=\"#9BCBC3\" stroke-width=\"3\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Delete draft",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "white"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Disabled_4",
+        "Rects": [
+          "<rect x=\"459\" y=\"722\" width=\"105\" height=\"40\" rx=\"6\" fill=\"#E8ECE9\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Delete draft",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "#929E9A"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Loading_4",
+        "Rects": [
+          "<rect x=\"588\" y=\"722\" width=\"118\" height=\"40\" rx=\"6\" fill=\"#B13F3F\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Deleting…",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "white"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Small_4",
+        "Rects": [
+          "<rect x=\"730\" y=\"722\" width=\"58\" height=\"32\" rx=\"6\" fill=\"#B13F3F\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Delete",
+            "Font": "Inter",
+            "Size": "12",
+            "Fill": "white"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Medium_4",
+        "Rects": [
+          "<rect x=\"812\" y=\"722\" width=\"71\" height=\"40\" rx=\"6\" fill=\"#B13F3F\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Delete",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "white"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Large_4",
+        "Rects": [
+          "<rect x=\"907\" y=\"722\" width=\"71\" height=\"48\" rx=\"6\" fill=\"#B13F3F\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Delete",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "white"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Component": "Daybook/IconButton",
+    "Variants": [
+      {
+        "Variant": "Variant=Default_5",
+        "Rects": [
+          "<rect x=\"72.5\" y=\"888.5\" width=\"39\" height=\"39\" rx=\"5.5\" fill=\"white\" />",
+          "<rect x=\"72.5\" y=\"888.5\" width=\"39\" height=\"39\" rx=\"5.5\" stroke=\"#D3DEDA\" />"
+        ],
+        "Text": []
+      },
+      {
+        "Variant": "Variant=Hover_5",
+        "Rects": [
+          "<rect x=\"136.5\" y=\"888.5\" width=\"39\" height=\"39\" rx=\"5.5\" fill=\"#EEF3F0\" />",
+          "<rect x=\"136.5\" y=\"888.5\" width=\"39\" height=\"39\" rx=\"5.5\" stroke=\"#D3DEDA\" />"
+        ],
+        "Text": []
+      },
+      {
+        "Variant": "Variant=Focus_5",
+        "Rects": [
+          "<rect x=\"201.5\" y=\"889.5\" width=\"37\" height=\"37\" rx=\"4.5\" fill=\"white\" />",
+          "<rect x=\"201.5\" y=\"889.5\" width=\"37\" height=\"37\" rx=\"4.5\" stroke=\"#9BCBC3\" stroke-width=\"3\" />"
+        ],
+        "Text": []
+      },
+      {
+        "Variant": "Variant=Disabled_5",
+        "Rects": [
+          "<rect x=\"264.5\" y=\"888.5\" width=\"39\" height=\"39\" rx=\"5.5\" fill=\"#EEF3F0\" />",
+          "<rect x=\"264.5\" y=\"888.5\" width=\"39\" height=\"39\" rx=\"5.5\" stroke=\"#D3DEDA\" />"
+        ],
+        "Text": []
+      },
+      {
+        "Variant": "Variant=Loading_5",
+        "Rects": [
+          "<rect x=\"328.5\" y=\"888.5\" width=\"39\" height=\"39\" rx=\"5.5\" fill=\"white\" />",
+          "<rect x=\"328.5\" y=\"888.5\" width=\"39\" height=\"39\" rx=\"5.5\" stroke=\"#D3DEDA\" />"
+        ],
+        "Text": []
+      }
+    ]
+  },
+  {
+    "Component": "Daybook/Tooltip/Print",
+    "Variants": []
+  },
+  {
+    "Component": "Daybook/Icon",
+    "Variants": [
+      {
+        "Variant": "Variant=Bill",
+        "Rects": [],
+        "Text": []
+      },
+      {
+        "Variant": "Variant=Edit",
+        "Rects": [],
+        "Text": []
+      },
+      {
+        "Variant": "Variant=Print",
+        "Rects": [],
+        "Text": []
+      },
+      {
+        "Variant": "Variant=Download",
+        "Rects": [],
+        "Text": []
+      },
+      {
+        "Variant": "Variant=Share",
+        "Rects": [],
+        "Text": []
+      },
+      {
+        "Variant": "Variant=Call",
+        "Rects": [],
+        "Text": []
+      },
+      {
+        "Variant": "Variant=Paid",
+        "Rects": [],
+        "Text": []
+      },
+      {
+        "Variant": "Variant=Next",
+        "Rects": [],
+        "Text": []
+      },
+      {
+        "Variant": "Variant=Route",
+        "Rects": [],
+        "Text": []
+      },
+      {
+        "Variant": "Variant=Resident",
+        "Rects": [],
+        "Text": []
+      },
+      {
+        "Variant": "Variant=Settings",
+        "Rects": [],
+        "Text": []
+      },
+      {
+        "Variant": "Variant=Type",
+        "Rects": [],
+        "Text": []
+      }
+    ]
+  },
+  {
+    "Component": "Daybook/Badge",
+    "Variants": [
+      {
+        "Variant": "Variant=Paid_2",
+        "Rects": [
+          "<rect x=\"72\" y=\"1291\" width=\"49\" height=\"21\" rx=\"4\" fill=\"#E2F2ED\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Paid",
+            "Font": "Inter",
+            "Size": "11",
+            "Fill": "#087F73"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Unpaid",
+        "Rects": [
+          "<rect x=\"145\" y=\"1291\" width=\"63\" height=\"21\" rx=\"4\" fill=\"#FBF1DD\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Unpaid",
+            "Font": "Inter",
+            "Size": "11",
+            "Fill": "#936321"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Overdue",
+        "Rects": [
+          "<rect x=\"232\" y=\"1291\" width=\"71\" height=\"21\" rx=\"4\" fill=\"#FBEDEC\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Overdue",
+            "Font": "Inter",
+            "Size": "11",
+            "Fill": "#B13F3F"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Draft",
+        "Rects": [
+          "<rect x=\"327\" y=\"1291\" width=\"52\" height=\"21\" rx=\"4\" fill=\"#EEF3F0\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Draft",
+            "Font": "Inter",
+            "Size": "11",
+            "Fill": "#697775"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Saved",
+        "Rects": [
+          "<rect x=\"403\" y=\"1291\" width=\"58\" height=\"21\" rx=\"4\" fill=\"#E2F2ED\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Saved",
+            "Font": "Inter",
+            "Size": "11",
+            "Fill": "#087F73"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=On hold",
+        "Rects": [
+          "<rect x=\"485\" y=\"1291\" width=\"67\" height=\"21\" rx=\"4\" fill=\"#FBF1DD\" />"
+        ],
+        "Text": [
+          {
+            "Text": "On hold",
+            "Font": "Inter",
+            "Size": "11",
+            "Fill": "#936321"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Active",
+        "Rects": [
+          "<rect x=\"576\" y=\"1291\" width=\"59\" height=\"21\" rx=\"4\" fill=\"#E2F2ED\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Active",
+            "Font": "Inter",
+            "Size": "11",
+            "Fill": "#087F73"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Component": "Daybook/Field",
+    "Variants": [
+      {
+        "Variant": "Variant=Default_6",
+        "Rects": [
+          "<rect x=\"72.5\" y=\"1430.5\" width=\"1343\" height=\"39\" rx=\"5.5\" fill=\"white\" />",
+          "<rect x=\"72.5\" y=\"1430.5\" width=\"1343\" height=\"39\" rx=\"5.5\" stroke=\"#D3DEDA\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Anitha Nair",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "#172D2B"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Focus_6",
+        "Rects": [
+          "<rect x=\"73\" y=\"1495\" width=\"1342\" height=\"38\" rx=\"5\" fill=\"white\" />",
+          "<rect x=\"73\" y=\"1495\" width=\"1342\" height=\"38\" rx=\"5\" stroke=\"#087F73\" stroke-width=\"2\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Anitha Nair",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "#172D2B"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Error",
+        "Rects": [
+          "<rect x=\"72.5\" y=\"1558.5\" width=\"1343\" height=\"39\" rx=\"5.5\" fill=\"white\" />",
+          "<rect x=\"72.5\" y=\"1558.5\" width=\"1343\" height=\"39\" rx=\"5.5\" stroke=\"#B13F3F\" />"
+        ],
+        "Text": []
+      },
+      {
+        "Variant": "Variant=Disabled_6",
+        "Rects": [
+          "<rect x=\"72.5\" y=\"1622.5\" width=\"1343\" height=\"39\" rx=\"5.5\" fill=\"#EEF3F0\" />",
+          "<rect x=\"72.5\" y=\"1622.5\" width=\"1343\" height=\"39\" rx=\"5.5\" stroke=\"#D3DEDA\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Anitha Nair",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "#929E9A"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Component": "Daybook/Select",
+    "Variants": [
+      {
+        "Variant": "Variant=Default_7",
+        "Rects": [
+          "<rect x=\"72.5\" y=\"1780.5\" width=\"1343\" height=\"39\" rx=\"5.5\" fill=\"white\" />",
+          "<rect x=\"72.5\" y=\"1780.5\" width=\"1343\" height=\"39\" rx=\"5.5\" stroke=\"#D3DEDA\" />"
+        ],
+        "Text": [
+          {
+            "Text": "R01 · Panampilly Nagar",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "#172D2B"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Focus_7",
+        "Rects": [
+          "<rect x=\"73\" y=\"1845\" width=\"1342\" height=\"38\" rx=\"5\" fill=\"white\" />",
+          "<rect x=\"73\" y=\"1845\" width=\"1342\" height=\"38\" rx=\"5\" stroke=\"#087F73\" stroke-width=\"2\" />"
+        ],
+        "Text": [
+          {
+            "Text": "R01 · Panampilly Nagar",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "#172D2B"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Error_2",
+        "Rects": [
+          "<rect x=\"72.5\" y=\"1908.5\" width=\"1343\" height=\"39\" rx=\"5.5\" fill=\"white\" />",
+          "<rect x=\"72.5\" y=\"1908.5\" width=\"1343\" height=\"39\" rx=\"5.5\" stroke=\"#B13F3F\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Select a route",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "#172D2B"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Disabled_7",
+        "Rects": [
+          "<rect x=\"72.5\" y=\"1972.5\" width=\"1343\" height=\"39\" rx=\"5.5\" fill=\"#EEF3F0\" />",
+          "<rect x=\"72.5\" y=\"1972.5\" width=\"1343\" height=\"39\" rx=\"5.5\" stroke=\"#D3DEDA\" />"
+        ],
+        "Text": [
+          {
+            "Text": "R01 · Panampilly Nagar",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "#929E9A"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=CustomSize",
+        "Rects": [
+          "<rect x=\"72.5\" y=\"2036.5\" width=\"1343\" height=\"39\" rx=\"5.5\" fill=\"white\" />",
+          "<rect x=\"72.5\" y=\"2036.5\" width=\"1343\" height=\"39\" rx=\"5.5\" stroke=\"#D3DEDA\" />"
+        ],
+        "Text": [
+          {
+            "Text": "16",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "#172D2B"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=FontWeight",
+        "Rects": [
+          "<rect x=\"72.5\" y=\"2100.5\" width=\"1343\" height=\"39\" rx=\"5.5\" fill=\"white\" />",
+          "<rect x=\"72.5\" y=\"2100.5\" width=\"1343\" height=\"39\" rx=\"5.5\" stroke=\"#D3DEDA\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Medium · 500",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "#172D2B"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Component": "Daybook/Search",
+    "Variants": [
+      {
+        "Variant": "Variant=Default_8",
+        "Rects": [
+          "<rect x=\"72.5\" y=\"2258.5\" width=\"1343\" height=\"39\" rx=\"5.5\" fill=\"white\" />",
+          "<rect x=\"72.5\" y=\"2258.5\" width=\"1343\" height=\"39\" rx=\"5.5\" stroke=\"#D3DEDA\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Name or address",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "#172D2B"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Focus_8",
+        "Rects": [
+          "<rect x=\"73\" y=\"2323\" width=\"1342\" height=\"38\" rx=\"5\" fill=\"white\" />",
+          "<rect x=\"73\" y=\"2323\" width=\"1342\" height=\"38\" rx=\"5\" stroke=\"#087F73\" stroke-width=\"2\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Anitha",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "#172D2B"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Error_3",
+        "Rects": [
+          "<rect x=\"72.5\" y=\"2386.5\" width=\"1343\" height=\"39\" rx=\"5.5\" fill=\"white\" />",
+          "<rect x=\"72.5\" y=\"2386.5\" width=\"1343\" height=\"39\" rx=\"5.5\" stroke=\"#B13F3F\" />"
+        ],
+        "Text": [
+          {
+            "Text": "%#",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "#172D2B"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Disabled_8",
+        "Rects": [
+          "<rect x=\"72.5\" y=\"2450.5\" width=\"1343\" height=\"39\" rx=\"5.5\" fill=\"#EEF3F0\" />",
+          "<rect x=\"72.5\" y=\"2450.5\" width=\"1343\" height=\"39\" rx=\"5.5\" stroke=\"#D3DEDA\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Anitha",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "#929E9A"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Component": "Daybook/Checkbox",
+    "Variants": [
+      {
+        "Variant": "Variant=Checked",
+        "Rects": [
+          "<rect x=\"72.5\" y=\"2608.5\" width=\"19\" height=\"19\" rx=\"3.5\" fill=\"#087F73\" />",
+          "<rect x=\"72.5\" y=\"2608.5\" width=\"19\" height=\"19\" rx=\"3.5\" stroke=\"#087F73\" />"
+        ],
+        "Text": []
+      },
+      {
+        "Variant": "Variant=Unchecked",
+        "Rects": [
+          "<rect x=\"116.5\" y=\"2608.5\" width=\"19\" height=\"19\" rx=\"3.5\" fill=\"white\" />",
+          "<rect x=\"116.5\" y=\"2608.5\" width=\"19\" height=\"19\" rx=\"3.5\" stroke=\"#D3DEDA\" />"
+        ],
+        "Text": []
+      }
+    ]
+  },
+  {
+    "Component": "Daybook/Radio",
+    "Variants": [
+      {
+        "Variant": "Variant=Selected",
+        "Rects": [
+          "<rect x=\"73\" y=\"2747\" width=\"18\" height=\"18\" rx=\"9\" stroke=\"#087F73\" stroke-width=\"2\" />"
+        ],
+        "Text": []
+      },
+      {
+        "Variant": "Variant=Unselected",
+        "Rects": [
+          "<rect x=\"116.5\" y=\"2746.5\" width=\"19\" height=\"19\" rx=\"9.5\" stroke=\"#D3DEDA\" />"
+        ],
+        "Text": []
+      }
+    ]
+  },
+  {
+    "Component": "Daybook/Toggle",
+    "Variants": [
+      {
+        "Variant": "Variant=On",
+        "Rects": [
+          "<rect x=\"72\" y=\"2884\" width=\"36\" height=\"20\" rx=\"10\" fill=\"#087F73\" />"
+        ],
+        "Text": []
+      },
+      {
+        "Variant": "Variant=Off",
+        "Rects": [
+          "<rect x=\"132\" y=\"2884\" width=\"36\" height=\"20\" rx=\"10\" fill=\"#D3DEDA\" />"
+        ],
+        "Text": []
+      }
+    ]
+  },
+  {
+    "Component": "Daybook/Card",
+    "Variants": [
+      {
+        "Variant": "Variant=Resident_2",
+        "Rects": [
+          "<rect x=\"72.5\" y=\"3022.5\" width=\"659\" height=\"49\" rx=\"7.5\" stroke=\"#D3DEDA\" />"
+        ],
+        "Text": [
+          {
+            "Text": "AN",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "#172D2B"
+          },
+          {
+            "Text": "Anitha Nair",
+            "Font": "Inter",
+            "Size": "18",
+            "Fill": "#172D2B"
+          },
+          {
+            "Text": "Active",
+            "Font": "Inter",
+            "Size": "11",
+            "Fill": "#087F73"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Route_2",
+        "Rects": [
+          "<rect x=\"72.5\" y=\"3096.5\" width=\"659\" height=\"49\" rx=\"7.5\" stroke=\"#D3DEDA\" />"
+        ],
+        "Text": [
+          {
+            "Text": "R01 · Panampilly Nagar",
+            "Font": "Inter",
+            "Size": "18",
+            "Fill": "#172D2B"
+          },
+          {
+            "Text": "Active",
+            "Font": "Inter",
+            "Size": "11",
+            "Fill": "#087F73"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Component": "Daybook/Bill/Summary",
+    "Variants": []
+  },
+  {
+    "Component": "Daybook/Confirmation/Paid",
+    "Variants": []
+  },
+  {
+    "Component": "Daybook/Collection/NextResident",
+    "Variants": []
+  },
+  {
+    "Component": "Daybook/Button/Workflow",
+    "Variants": [
+      {
+        "Variant": "Variant=Generate bill",
+        "Rects": [
+          "<rect x=\"72\" y=\"4711\" width=\"134\" height=\"40\" rx=\"6\" fill=\"#087F73\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Generate bill",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "white"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Save bill",
+        "Rects": [
+          "<rect x=\"230\" y=\"4711\" width=\"107\" height=\"40\" rx=\"6\" fill=\"#087F73\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Save bill",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "white"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Edit_2",
+        "Rects": [
+          "<rect x=\"361.5\" y=\"4711.5\" width=\"78\" height=\"39\" rx=\"5.5\" fill=\"white\" />",
+          "<rect x=\"361.5\" y=\"4711.5\" width=\"78\" height=\"39\" rx=\"5.5\" stroke=\"#D3DEDA\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Edit",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "#172D2B"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Print_2",
+        "Rects": [
+          "<rect x=\"464.5\" y=\"4711.5\" width=\"83\" height=\"39\" rx=\"5.5\" fill=\"white\" />",
+          "<rect x=\"464.5\" y=\"4711.5\" width=\"83\" height=\"39\" rx=\"5.5\" stroke=\"#D3DEDA\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Print",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "#172D2B"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Download & share",
+        "Rects": [
+          "<rect x=\"572.5\" y=\"4711.5\" width=\"167\" height=\"39\" rx=\"5.5\" fill=\"white\" />",
+          "<rect x=\"572.5\" y=\"4711.5\" width=\"167\" height=\"39\" rx=\"5.5\" stroke=\"#D3DEDA\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Download & share",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "#172D2B"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Mark as paid",
+        "Rects": [
+          "<rect x=\"764.5\" y=\"4711.5\" width=\"134\" height=\"39\" rx=\"5.5\" fill=\"white\" />",
+          "<rect x=\"764.5\" y=\"4711.5\" width=\"134\" height=\"39\" rx=\"5.5\" stroke=\"#D3DEDA\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Mark as paid",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "#172D2B"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Move to next",
+        "Rects": [
+          "<rect x=\"923\" y=\"4711\" width=\"136\" height=\"40\" rx=\"6\" fill=\"#087F73\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Move to next",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "white"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Component": "Daybook/Notification",
+    "Variants": [
+      {
+        "Variant": "Variant=Success",
+        "Rects": [
+          "<rect x=\"72\" y=\"4869\" width=\"1344\" height=\"68\" rx=\"6\" fill=\"#E2F2ED\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Bill saved successfully",
+            "Font": "Inter",
+            "Size": "12",
+            "Fill": "#087F73"
+          },
+          {
+            "Text": "DB-2026-1048 is ready to print or share. ₹661.00 remains due.",
+            "Font": "Inter",
+            "Size": "11",
+            "Fill": "#697775"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Info",
+        "Rects": [
+          "<rect x=\"72\" y=\"4961\" width=\"1344\" height=\"68\" rx=\"6\" fill=\"#ECF3F8\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Your route stays in context",
+            "Font": "Inter",
+            "Size": "12",
+            "Fill": "#386A8A"
+          },
+          {
+            "Text": "Move to next keeps R01, October 2026 and delivery order selected.",
+            "Font": "Inter",
+            "Size": "11",
+            "Fill": "#697775"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Warning",
+        "Rects": [
+          "<rect x=\"72\" y=\"5053\" width=\"1344\" height=\"68\" rx=\"6\" fill=\"#FBF1DD\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Review before recording payment",
+            "Font": "Inter",
+            "Size": "12",
+            "Fill": "#936321"
+          },
+          {
+            "Text": "Confirm the amount and payment method before marking this bill as paid.",
+            "Font": "Inter",
+            "Size": "11",
+            "Fill": "#697775"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Error_4",
+        "Rects": [
+          "<rect x=\"72\" y=\"5145\" width=\"1344\" height=\"68\" rx=\"6\" fill=\"#FBEDEC\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Payment could not be saved",
+            "Font": "Inter",
+            "Size": "12",
+            "Fill": "#B13F3F"
+          },
+          {
+            "Text": "No payment was recorded. Check the connection and try again.",
+            "Font": "Inter",
+            "Size": "11",
+            "Fill": "#697775"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Component": "Daybook/Typography/Family",
+    "Variants": [
+      {
+        "Variant": "Variant=Inter",
+        "Rects": [
+          "<rect x=\"72.5\" y=\"5331.5\" width=\"175\" height=\"55\" rx=\"4.5\" fill=\"white\" />",
+          "<rect x=\"72.5\" y=\"5331.5\" width=\"175\" height=\"55\" rx=\"4.5\" stroke=\"#D3DEDA\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Inter",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "#172D2B"
+          },
+          {
+            "Text": "Default",
+            "Font": "Inter",
+            "Size": "10",
+            "Fill": "#697775"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Manrope",
+        "Rects": [
+          "<rect x=\"272.5\" y=\"5331.5\" width=\"175\" height=\"55\" rx=\"4.5\" fill=\"white\" />",
+          "<rect x=\"272.5\" y=\"5331.5\" width=\"175\" height=\"55\" rx=\"4.5\" stroke=\"#D3DEDA\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Manrope",
+            "Font": "Manrope",
+            "Size": "13",
+            "Fill": "#172D2B"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Nunito",
+        "Rects": [
+          "<rect x=\"472.5\" y=\"5331.5\" width=\"174\" height=\"55\" rx=\"4.5\" fill=\"white\" />",
+          "<rect x=\"472.5\" y=\"5331.5\" width=\"174\" height=\"55\" rx=\"4.5\" stroke=\"#D3DEDA\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Nunito",
+            "Font": "Nunito Sans",
+            "Size": "13",
+            "Fill": "#172D2B"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Lora",
+        "Rects": [
+          "<rect x=\"672\" y=\"5332\" width=\"175\" height=\"54\" rx=\"4\" fill=\"#E2F2ED\" />",
+          "<rect x=\"672\" y=\"5332\" width=\"175\" height=\"54\" rx=\"4\" stroke=\"#087F73\" stroke-width=\"2\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Lora",
+            "Font": "Lora",
+            "Size": "13",
+            "Fill": "#172D2B"
+          },
+          {
+            "Text": "Selected",
+            "Font": "Inter",
+            "Size": "10",
+            "Fill": "#697775"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Component": "Daybook/Typography/Size",
+    "Variants": [
+      {
+        "Variant": "Variant=Compact",
+        "Rects": [
+          "<rect x=\"72.5\" y=\"5505.5\" width=\"113.667\" height=\"55\" rx=\"4.5\" fill=\"white\" />",
+          "<rect x=\"72.5\" y=\"5505.5\" width=\"113.667\" height=\"55\" rx=\"4.5\" stroke=\"#D3DEDA\" />"
+        ],
+        "Text": [
+          {
+            "Text": "12 px",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "#172D2B"
+          },
+          {
+            "Text": "Compact",
+            "Font": "Inter",
+            "Size": "10",
+            "Fill": "#697775"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Standard",
+        "Rects": [
+          "<rect x=\"211.167\" y=\"5505.5\" width=\"113.667\" height=\"55\" rx=\"4.5\" fill=\"white\" />",
+          "<rect x=\"211.167\" y=\"5505.5\" width=\"113.667\" height=\"55\" rx=\"4.5\" stroke=\"#D3DEDA\" />"
+        ],
+        "Text": [
+          {
+            "Text": "14 px",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "#172D2B"
+          },
+          {
+            "Text": "Standard",
+            "Font": "Inter",
+            "Size": "10",
+            "Fill": "#697775"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Large_5",
+        "Rects": [
+          "<rect x=\"349.833\" y=\"5505.5\" width=\"113.667\" height=\"55\" rx=\"4.5\" fill=\"white\" />",
+          "<rect x=\"349.833\" y=\"5505.5\" width=\"113.667\" height=\"55\" rx=\"4.5\" stroke=\"#D3DEDA\" />"
+        ],
+        "Text": [
+          {
+            "Text": "18 px",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "#172D2B"
+          },
+          {
+            "Text": "Large",
+            "Font": "Inter",
+            "Size": "10",
+            "Fill": "#697775"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Component": "Daybook/Typography/Style",
+    "Variants": [
+      {
+        "Variant": "Variant=Regular",
+        "Rects": [
+          "<rect x=\"72.5\" y=\"5679.5\" width=\"174\" height=\"55\" rx=\"4.5\" fill=\"white\" />",
+          "<rect x=\"72.5\" y=\"5679.5\" width=\"174\" height=\"55\" rx=\"4.5\" stroke=\"#D3DEDA\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Regular",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "#172D2B"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Italic",
+        "Rects": [
+          "<rect x=\"272\" y=\"5680\" width=\"175\" height=\"54\" rx=\"4\" fill=\"#E2F2ED\" />",
+          "<rect x=\"272\" y=\"5680\" width=\"175\" height=\"54\" rx=\"4\" stroke=\"#087F73\" stroke-width=\"2\" />"
+        ],
+        "Text": [
+          {
+            "Text": "Italic",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "#172D2B"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Component": "Daybook/Typography/LineSpacing",
+    "Variants": [
+      {
+        "Variant": "Variant=Tight",
+        "Rects": [
+          "<rect x=\"72.5\" y=\"5853.5\" width=\"113\" height=\"55\" rx=\"4.5\" fill=\"white\" />",
+          "<rect x=\"72.5\" y=\"5853.5\" width=\"113\" height=\"55\" rx=\"4.5\" stroke=\"#D3DEDA\" />"
+        ],
+        "Text": [
+          {
+            "Text": "1.25",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "#172D2B"
+          },
+          {
+            "Text": "Tight",
+            "Font": "Inter",
+            "Size": "10",
+            "Fill": "#697775"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Standard_2",
+        "Rects": [
+          "<rect x=\"210.5\" y=\"5853.5\" width=\"113\" height=\"55\" rx=\"4.5\" fill=\"white\" />",
+          "<rect x=\"210.5\" y=\"5853.5\" width=\"113\" height=\"55\" rx=\"4.5\" stroke=\"#D3DEDA\" />"
+        ],
+        "Text": [
+          {
+            "Text": "1.45",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "#172D2B"
+          },
+          {
+            "Text": "Standard",
+            "Font": "Inter",
+            "Size": "10",
+            "Fill": "#697775"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=Relaxed",
+        "Rects": [
+          "<rect x=\"349\" y=\"5854\" width=\"114\" height=\"54\" rx=\"4\" fill=\"#E2F2ED\" />",
+          "<rect x=\"349\" y=\"5854\" width=\"114\" height=\"54\" rx=\"4\" stroke=\"#087F73\" stroke-width=\"2\" />"
+        ],
+        "Text": [
+          {
+            "Text": "1.6",
+            "Font": "Inter",
+            "Size": "13",
+            "Fill": "#172D2B"
+          },
+          {
+            "Text": "Relaxed",
+            "Font": "Inter",
+            "Size": "10",
+            "Fill": "#697775"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Component": "Daybook/Typography/Specimen",
+    "Variants": []
+  },
+  {
+    "Component": "Daybook/Table",
+    "Variants": [
+      {
+        "Variant": "Variant=ResidentRow",
+        "Rects": [],
+        "Text": [
+          {
+            "Text": "Anitha Nair",
+            "Font": "Lora",
+            "Size": "16",
+            "Fill": "#172D2B"
+          },
+          {
+            "Text": "Manorama · The Hindu",
+            "Font": "Lora",
+            "Size": "16",
+            "Fill": "#172D2B"
+          },
+          {
+            "Text": "₹661",
+            "Font": "Lora",
+            "Size": "16",
+            "Fill": "#172D2B"
+          }
+        ]
+      },
+      {
+        "Variant": "Variant=ResidentRow 2",
+        "Rects": [],
+        "Text": [
+          {
+            "Text": "Leela Menon",
+            "Font": "Lora",
+            "Size": "16",
+            "Fill": "#172D2B"
+          },
+          {
+            "Text": "Manorama · Weekly",
+            "Font": "Lora",
+            "Size": "16",
+            "Fill": "#172D2B"
+          },
+          {
+            "Text": "₹359",
+            "Font": "Lora",
+            "Size": "16",
+            "Fill": "#172D2B"
+          }
+        ]
+      }
+    ]
+  }
+]

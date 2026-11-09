@@ -1,0 +1,183 @@
+<svg width="1440" height="1323" viewBox="0 0 1440 1323" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Component coverage / Tabs &#38; navigation">
+<rect width="1440" height="1323" fill="#F5F6F3"/>
+<text id="Text / Tabs &#38; navigation" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="28" font-weight="600" letter-spacing="0em"><tspan x="32" y="63.1818">Tabs &#38; navigation</tspan></text>
+<text id="Text / 6 applicable states &#194;&#183; editable native comp" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="32" y="117.591">6 applicable states &#xb7; editable native component variants. Loading, empty and failure behavior is visible in the control itself.</tspan></text>
+<g id="Daybook/Edge/Tabs &#38; navigation">
+<g id="State=Active">
+<rect x="48.5" y="167.5" width="639" height="191" rx="7.5" fill="white"/>
+<rect x="48.5" y="167.5" width="639" height="191" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / ACTIVE" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="204.5">ACTIVE</tspan></text>
+<g id="Tab list">
+<g id="Action / Overview">
+<rect x="73" y="229" width="102" height="63" rx="6" fill="#087F73"/>
+<text id="Text / Overview" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="89" y="253.727">Overview</tspan></text>
+</g>
+<g id="Action / Subscriptions">
+<rect x="187.5" y="229.5" width="144" height="64" rx="5.5" fill="white"/>
+<rect x="187.5" y="229.5" width="144" height="64" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Subscriptions" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="204" y="254.727">Subscriptions</tspan></text>
+</g>
+<g id="Action / Holds">
+<rect x="344.5" y="229.5" width="103" height="45" rx="5.5" fill="white"/>
+<rect x="344.5" y="229.5" width="103" height="45" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Holds" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="361" y="254.727">Holds</tspan></text>
+</g>
+</g>
+<text id="Text / Selected tab is indicated by text and a vi" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="73" y="324.727">Selected tab is indicated by text and a visible active treatment.</tspan></text>
+</g>
+<g id="State=Keyboard focus">
+<rect x="720.5" y="167.5" width="639" height="191" rx="7.5" fill="white"/>
+<rect x="720.5" y="167.5" width="639" height="191" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / KEYBOARD FOCUS" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="204.5">KEYBOARD FOCUS</tspan></text>
+<g id="Tab list_2">
+<g id="Action / Overview_2">
+<rect x="745" y="229" width="102" height="63" rx="6" fill="#087F73"/>
+<text id="Text / Overview_2" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="761" y="253.727">Overview</tspan></text>
+</g>
+<g id="Action / Subscriptions_2">
+<rect x="859.5" y="229.5" width="144" height="64" rx="5.5" fill="white"/>
+<rect x="859.5" y="229.5" width="144" height="64" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Subscriptions_2" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="876" y="254.727">Subscriptions</tspan></text>
+</g>
+<g id="Action / Holds_2">
+<rect x="1016.5" y="229.5" width="103" height="45" rx="5.5" fill="white"/>
+<rect x="1016.5" y="229.5" width="103" height="45" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Holds_2" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="1033" y="254.727">Holds</tspan></text>
+</g>
+</g>
+<text id="Text / Selected tab is indicated by text and a vi_2" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="745" y="324.727">Selected tab is indicated by text and a visible active treatment.</tspan></text>
+</g>
+<g id="State=Disabled">
+<rect x="48.5" y="383.5" width="639" height="189" rx="7.5" fill="white"/>
+<rect x="48.5" y="383.5" width="639" height="189" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / DISABLED" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="420.5">DISABLED</tspan></text>
+<g id="Tab list_3">
+<g id="Action / Overview_3">
+<rect x="73" y="445" width="102" height="63" rx="6" fill="#D9E3DE"/>
+<text id="Text / Overview_3" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="89" y="469.727">Overview</tspan></text>
+</g>
+<g id="Action / Subscriptions_3">
+<rect x="187" y="445" width="143" height="63" rx="6" fill="#D9E3DE"/>
+<text id="Text / Subscriptions_3" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="203" y="469.727">Subscriptions</tspan></text>
+</g>
+<g id="Action / Holds_3">
+<rect x="342" y="445" width="102" height="44" rx="6" fill="#D9E3DE"/>
+<text id="Text / Holds_3" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="358" y="469.727">Holds</tspan></text>
+</g>
+</g>
+<text id="Text / Selected tab is indicated by text and a vi_3" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="73" y="538.727">Selected tab is indicated by text and a visible active treatment.</tspan></text>
+</g>
+<g id="State=Loading panel">
+<rect x="720.5" y="383.5" width="639" height="434" rx="7.5" fill="white"/>
+<rect x="720.5" y="383.5" width="639" height="434" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / LOADING PANEL" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="420.5">LOADING PANEL</tspan></text>
+<g id="Tab list_4">
+<g id="Action / Overview_4">
+<rect x="745" y="445" width="102" height="63" rx="6" fill="#087F73"/>
+<text id="Text / Overview_4" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="761" y="469.727">Overview</tspan></text>
+</g>
+<g id="Action / Subscriptions_4">
+<rect x="859.5" y="445.5" width="144" height="64" rx="5.5" fill="white"/>
+<rect x="859.5" y="445.5" width="144" height="64" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Subscriptions_4" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="876" y="470.727">Subscriptions</tspan></text>
+</g>
+<g id="Action / Holds_4">
+<rect x="1016.5" y="445.5" width="103" height="45" rx="5.5" fill="white"/>
+<rect x="1016.5" y="445.5" width="103" height="45" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Holds_4" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="1033" y="470.727">Holds</tspan></text>
+</g>
+</g>
+<g id="Loading skeleton / table">
+<rect x="745.5" y="526.5" width="591" height="266" rx="7.5" fill="white"/>
+<rect x="745.5" y="526.5" width="591" height="266" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / Loading records&#226;&#128;&#166;" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" font-weight="600" letter-spacing="0em"><tspan x="770" y="566.591">Loading records&#x2026;</tspan></text>
+<g id="Skeleton row 1">
+<rect id="Skeleton placeholder" x="770" y="596" width="121" height="12" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_2" x="911" y="596" width="121" height="12" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_3" x="1052" y="596" width="121" height="12" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_4" x="1193" y="596" width="121" height="12" rx="4" fill="#E0E8E6"/>
+</g>
+<g id="Skeleton row 2">
+<rect id="Skeleton placeholder_5" x="770" y="628" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_6" x="911" y="628" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_7" x="1052" y="628" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_8" x="1193" y="628" width="121" height="20" rx="4" fill="#E0E8E6"/>
+</g>
+<g id="Skeleton row 3">
+<rect id="Skeleton placeholder_9" x="770" y="668" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_10" x="911" y="668" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_11" x="1052" y="668" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_12" x="1193" y="668" width="121" height="20" rx="4" fill="#E0E8E6"/>
+</g>
+<g id="Skeleton row 4">
+<rect id="Skeleton placeholder_13" x="770" y="708" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_14" x="911" y="708" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_15" x="1052" y="708" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_16" x="1193" y="708" width="121" height="20" rx="4" fill="#E0E8E6"/>
+</g>
+<g id="Skeleton row 5">
+<rect id="Skeleton placeholder_17" x="770" y="748" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_18" x="911" y="748" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_19" x="1052" y="748" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_20" x="1193" y="748" width="121" height="20" rx="4" fill="#E0E8E6"/>
+</g>
+</g>
+</g>
+<g id="State=Panel failed">
+<rect x="48.5" y="842.5" width="639" height="424" rx="7.5" fill="white"/>
+<rect x="48.5" y="842.5" width="639" height="424" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / PANEL FAILED" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="879.5">PANEL FAILED</tspan></text>
+<g id="Tab list_5">
+<g id="Action / Overview_5">
+<rect x="73" y="904" width="102" height="63" rx="6" fill="#087F73"/>
+<text id="Text / Overview_5" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="89" y="928.727">Overview</tspan></text>
+</g>
+<g id="Action / Subscriptions_5">
+<rect x="187.5" y="904.5" width="144" height="64" rx="5.5" fill="white"/>
+<rect x="187.5" y="904.5" width="144" height="64" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Subscriptions_5" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="204" y="929.727">Subscriptions</tspan></text>
+</g>
+<g id="Action / Holds_5">
+<rect x="344.5" y="904.5" width="103" height="45" rx="5.5" fill="white"/>
+<rect x="344.5" y="904.5" width="103" height="45" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Holds_5" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="361" y="929.727">Holds</tspan></text>
+</g>
+</g>
+<g id="Inline state / Panel unavailable">
+<rect x="73.5" y="985.5" width="591" height="256" rx="7.5" fill="white"/>
+<rect x="73.5" y="985.5" width="591" height="256" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / ERROR" fill="#AD2B30" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="102" y="1026.5">ERROR</tspan></text>
+<text id="Text / Panel unavailable" fill="#AD2B30" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="600" letter-spacing="0em"><tspan x="102" y="1077.73">Panel unavailable</tspan></text>
+<text id="Text / Other tabs remain available." fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="15" letter-spacing="0em"><tspan x="102" y="1123.95">Other tabs remain available.</tspan></text>
+<g id="Action / Retry panel">
+<rect x="102" y="1150" width="126" height="63" rx="6" fill="#087F73"/>
+<text id="Text / Retry panel" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="118" y="1174.73">Retry panel</tspan></text>
+</g>
+</g>
+</g>
+<g id="State=Long labels">
+<rect x="720.5" y="842.5" width="639" height="210" rx="7.5" fill="white"/>
+<rect x="720.5" y="842.5" width="639" height="210" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / LONG LABELS" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="879.5">LONG LABELS</tspan></text>
+<g id="Tab list_6">
+<g id="Action / Overview_6">
+<rect x="745" y="904" width="102" height="63" rx="6" fill="#087F73"/>
+<text id="Text / Overview_6" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="761" y="928.727">Overview</tspan></text>
+</g>
+<g id="Action / Subscriptions_6">
+<rect x="859.5" y="904.5" width="144" height="64" rx="5.5" fill="white"/>
+<rect x="859.5" y="904.5" width="144" height="64" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Subscriptions_6" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="876" y="929.727">Subscriptions</tspan></text>
+</g>
+<g id="Action / Holds_6">
+<rect x="1016.5" y="904.5" width="103" height="45" rx="5.5" fill="white"/>
+<rect x="1016.5" y="904.5" width="103" height="45" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Holds_6" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="1033" y="929.727">Holds</tspan></text>
+</g>
+</g>
+<text id="Text / Long tab names wrap within their tab inste" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="745" y="999.727">Long tab names wrap within their tab instead of overlapping the next tab.</tspan></text>
+</g>
+</g>
+</g>
+</svg>

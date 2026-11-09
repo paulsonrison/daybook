@@ -1,0 +1,132 @@
+<svg width="1440" height="1582" viewBox="0 0 1440 1582" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Component coverage / Bill/Summary">
+<rect width="1440" height="1582" fill="#F5F6F3"/>
+<text id="Text / Bill/Summary" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="28" font-weight="600" letter-spacing="0em"><tspan x="32" y="63.1818">Bill/Summary</tspan></text>
+<text id="Text / 7 applicable states &#194;&#183; editable native comp" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="32" y="117.591">7 applicable states &#xb7; editable native component variants. Loading, empty and failure behavior is visible in the control itself.</tspan></text>
+<g id="Daybook/Edge/Bill/Summary">
+<g id="State=Loaded">
+<rect x="48.5" y="167.5" width="639" height="176" rx="7.5" fill="white"/>
+<rect x="48.5" y="167.5" width="639" height="176" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / LOADED" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="204.5">LOADED</tspan></text>
+<text id="Text / Anitha Nair &#194;&#183; October 2026" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="20" font-weight="600" letter-spacing="0em"><tspan x="73" y="251.273">Anitha Nair &#xb7; October 2026</tspan></text>
+<text id="Text / Total amount due &#226;&#130;&#185;661.00" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="600" letter-spacing="0em"><tspan x="73" y="305.727">Total amount due &#x20b9;661.00</tspan></text>
+</g>
+<g id="State=Skeleton">
+<rect x="720.5" y="167.5" width="639" height="417" rx="7.5" fill="white"/>
+<rect x="720.5" y="167.5" width="639" height="417" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / SKELETON" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="204.5">SKELETON</tspan></text>
+<g id="Loading skeleton / bill">
+<rect x="745.5" y="229.5" width="591" height="330" rx="7.5" fill="white"/>
+<rect x="745.5" y="229.5" width="591" height="330" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / Loading bill details&#226;&#128;&#166;" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" font-weight="600" letter-spacing="0em"><tspan x="770" y="269.591">Loading bill details&#x2026;</tspan></text>
+<g id="Resident and invoice skeleton">
+<g id="Bill context">
+<rect width="256" height="44" transform="translate(770 299)" fill="white"/>
+<rect id="Skeleton placeholder" x="770" y="299" width="180" height="18" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_2" x="770" y="329" width="256" height="14" rx="4" fill="#E0E8E6"/>
+</g>
+<g id="Bill context_2">
+<rect width="256" height="44" transform="translate(1058 299)" fill="white"/>
+<rect id="Skeleton placeholder_3" x="1058" y="299" width="180" height="18" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_4" x="1058" y="329" width="256" height="14" rx="4" fill="#E0E8E6"/>
+</g>
+</g>
+<g id="Skeleton row 1">
+<rect id="Skeleton placeholder_5" x="770" y="363" width="121" height="12" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_6" x="911" y="363" width="121" height="12" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_7" x="1052" y="363" width="121" height="12" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_8" x="1193" y="363" width="121" height="12" rx="4" fill="#E0E8E6"/>
+</g>
+<g id="Skeleton row 2">
+<rect id="Skeleton placeholder_9" x="770" y="395" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_10" x="911" y="395" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_11" x="1052" y="395" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_12" x="1193" y="395" width="121" height="20" rx="4" fill="#E0E8E6"/>
+</g>
+<g id="Skeleton row 3">
+<rect id="Skeleton placeholder_13" x="770" y="435" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_14" x="911" y="435" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_15" x="1052" y="435" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_16" x="1193" y="435" width="121" height="20" rx="4" fill="#E0E8E6"/>
+</g>
+<g id="Skeleton row 4">
+<rect id="Skeleton placeholder_17" x="770" y="475" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_18" x="911" y="475" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_19" x="1052" y="475" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_20" x="1193" y="475" width="121" height="20" rx="4" fill="#E0E8E6"/>
+</g>
+<g id="Skeleton row 5">
+<rect id="Skeleton placeholder_21" x="770" y="515" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_22" x="911" y="515" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_23" x="1052" y="515" width="121" height="20" rx="4" fill="#E0E8E6"/>
+<rect id="Skeleton placeholder_24" x="1193" y="515" width="121" height="20" rx="4" fill="#E0E8E6"/>
+</g>
+</g>
+</g>
+<g id="State=No deliveries">
+<rect x="48.5" y="609.5" width="639" height="161" rx="7.5" fill="white"/>
+<rect x="48.5" y="609.5" width="639" height="161" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / NO DELIVERIES" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="646.5">NO DELIVERIES</tspan></text>
+<text id="Text / Anitha Nair &#194;&#183; October 2026_2" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="20" font-weight="600" letter-spacing="0em"><tspan x="73" y="693.273">Anitha Nair &#xb7; October 2026</tspan></text>
+<text id="Text / No current deliveries &#194;&#183; previous balance &#226;&#130;&#185;" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="73" y="736.591">No current deliveries &#xb7; previous balance &#x20b9;240.00 still applies.</tspan></text>
+</g>
+<g id="State=Invalid quantity">
+<rect x="720.5" y="609.5" width="639" height="327" rx="7.5" fill="white"/>
+<rect x="720.5" y="609.5" width="639" height="327" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / INVALID QUANTITY" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="646.5">INVALID QUANTITY</tspan></text>
+<text id="Text / Anitha Nair &#194;&#183; October 2026_3" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="20" font-weight="600" letter-spacing="0em"><tspan x="745" y="693.273">Anitha Nair &#xb7; October 2026</tspan></text>
+<g id="Field / Delivered copies">
+<text id="Text / DELIVERED COPIES" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="733.5">DELIVERED COPIES</tspan></text>
+<g id="Input">
+<rect x="746" y="751" width="590" height="51" rx="5" fill="white"/>
+<rect x="746" y="751" width="590" height="51" rx="5" stroke="#AD2B30" stroke-width="2"/>
+<text id="Text / &#226;&#136;&#146;1" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="759" y="779.591">&#x2212;1</tspan></text>
+</g>
+<text id="Text / Use a whole number between 0 and 30." fill="#AD2B30" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="745" y="824.364">Use a whole number between 0 and 30.</tspan></text>
+</g>
+<g id="Action / Save bill">
+<rect x="745" y="849" width="109" height="63" rx="6" fill="#D9E3DE"/>
+<text id="Text / Save bill" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="761" y="873.727">Save bill</tspan></text>
+</g>
+</g>
+<g id="State=Missing rate">
+<rect x="48.5" y="961.5" width="639" height="327" rx="7.5" fill="white"/>
+<rect x="48.5" y="961.5" width="639" height="327" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / MISSING RATE" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="998.5">MISSING RATE</tspan></text>
+<text id="Text / Anitha Nair &#194;&#183; October 2026_4" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="20" font-weight="600" letter-spacing="0em"><tspan x="73" y="1045.27">Anitha Nair &#xb7; October 2026</tspan></text>
+<g id="Field / Rate for 14&#226;&#128;&#147;15 Oct">
+<text id="Text / RATE FOR 14&#226;&#128;&#147;15 OCT" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="1085.5">RATE FOR 14&#x2013;15 OCT</tspan></text>
+<g id="Input_2">
+<rect x="74" y="1103" width="590" height="51" rx="5" fill="white"/>
+<rect x="74" y="1103" width="590" height="51" rx="5" stroke="#AD2B30" stroke-width="2"/>
+<text id="Text / Enter rate for 14&#226;&#128;&#147;15 oct" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="87" y="1131.59">Enter rate for 14&#x2013;15 oct</tspan></text>
+</g>
+<text id="Text / A confirmed rate is required." fill="#AD2B30" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="73" y="1176.36">A confirmed rate is required.</tspan></text>
+</g>
+<g id="Action / Review rates">
+<rect x="73" y="1201" width="134" height="63" rx="6" fill="#087F73"/>
+<text id="Text / Review rates" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="89" y="1225.73">Review rates</tspan></text>
+</g>
+</g>
+<g id="State=Save failed">
+<rect x="720.5" y="961.5" width="639" height="295" rx="7.5" fill="white"/>
+<rect x="720.5" y="961.5" width="639" height="295" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / SAVE FAILED" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="998.5">SAVE FAILED</tspan></text>
+<text id="Text / Anitha Nair &#194;&#183; October 2026_5" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="20" font-weight="600" letter-spacing="0em"><tspan x="745" y="1045.27">Anitha Nair &#xb7; October 2026</tspan></text>
+<text id="Text / Total amount due &#226;&#130;&#185;661.00_2" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="600" letter-spacing="0em"><tspan x="745" y="1099.73">Total amount due &#x20b9;661.00</tspan></text>
+<text id="Text / Draft preserved. No saved invoice was conf" fill="#AD2B30" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="745" y="1143.73">Draft preserved. No saved invoice was confirmed.</tspan></text>
+<g id="Action / Retry save">
+<rect x="745" y="1169" width="117" height="63" rx="6" fill="#087F73"/>
+<text id="Text / Retry save" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="761" y="1193.73">Retry save</tspan></text>
+</g>
+</g>
+<g id="State=Credit balance">
+<rect x="48.5" y="1313.5" width="639" height="212" rx="7.5" fill="white"/>
+<rect x="48.5" y="1313.5" width="639" height="212" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / CREDIT BALANCE" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="1350.5">CREDIT BALANCE</tspan></text>
+<text id="Text / Anitha Nair &#194;&#183; October 2026_6" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="20" font-weight="600" letter-spacing="0em"><tspan x="73" y="1397.27">Anitha Nair &#xb7; October 2026</tspan></text>
+<text id="Text / Account credit &#226;&#130;&#185;39.00 &#194;&#183; Amount due &#226;&#130;&#185;0.00" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="600" letter-spacing="0em"><tspan x="73" y="1451.73">Account credit &#x20b9;39.00 &#xb7; Amount due &#x20b9;0.00</tspan></text>
+</g>
+</g>
+</g>
+</svg>

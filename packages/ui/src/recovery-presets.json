@@ -1,0 +1,242 @@
+[
+  {
+    "id": "01",
+    "name": "Loading route residents",
+    "tone": "info",
+    "title": "Loading residents…",
+    "description": "Keep filters available; disable billing until data arrives. Announce loading once. If it fails, show the retry state.",
+    "actions": [],
+    "loading": true,
+    "behavior": "Keep filters available; disable billing until data arrives. Announce loading once. If it fails, show the retry state."
+  },
+  {
+    "id": "02",
+    "name": "First-use empty route",
+    "tone": "empty",
+    "title": "No residents on this route yet",
+    "description": "Add a resident or import a list to start building your delivery run.",
+    "actions": ["Add resident"],
+    "loading": false,
+    "behavior": "Show only after a successful empty response. Do not show zero balances while loading. Secondary action: Import residents."
+  },
+  {
+    "id": "03",
+    "name": "No search results",
+    "tone": "empty",
+    "title": "No matching residents",
+    "description": "No results for “Lotus 99” in R01. Try another name or clear your filters.",
+    "actions": ["Clear filters"],
+    "loading": false,
+    "behavior": "Preserve the search text and selected route. Clearing search and filters restores the list; an empty result is not an error."
+  },
+  {
+    "id": "04",
+    "name": "API failure with retry",
+    "tone": "error",
+    "title": "We couldn’t load this route",
+    "description": "Your route and October billing period are saved. Check the connection and try again.",
+    "actions": ["Try again"],
+    "loading": false,
+    "behavior": "Retry the same request. Show last-synced data only with a timestamp; never present stale totals as current."
+  },
+  {
+    "id": "05",
+    "name": "Offline field updates",
+    "tone": "warning",
+    "title": "You’re offline · 3 updates waiting",
+    "description": "Delivery updates are saved on this device and will sync when you reconnect.",
+    "actions": ["View pending updates"],
+    "loading": false,
+    "behavior": "Keep local updates visible as Pending sync. Financial actions requiring server confirmation remain unavailable."
+  },
+  {
+    "id": "06",
+    "name": "Sync in progress",
+    "tone": "info",
+    "title": "Syncing 3 delivery updates…",
+    "description": "Prevent duplicate submission. Mark each item synced only after acknowledgement; retain failed items for retry.",
+    "actions": [],
+    "loading": true,
+    "behavior": "Prevent duplicate submission. Mark each item synced only after acknowledgement; retain failed items for retry."
+  },
+  {
+    "id": "07",
+    "name": "Concurrent edit conflict",
+    "tone": "warning",
+    "title": "This bill changed elsewhere",
+    "description": "Another operator saved a newer version of DB-2026-1048. Review both versions before continuing.",
+    "actions": ["Review versions", "Keep local draft"],
+    "loading": false,
+    "behavior": "Preserve local edits. Compare current server values with your changes; do not overwrite automatically or create a second invoice."
+  },
+  {
+    "id": "08",
+    "name": "Session expired",
+    "tone": "warning",
+    "title": "Sign in to continue",
+    "description": "Your session expired. Your unsaved bill stays on this device while you sign in again.",
+    "actions": ["Sign in again"],
+    "loading": false,
+    "behavior": "After authentication, return to the same route, resident and period. Recheck permissions and server version before saving."
+  },
+  {
+    "id": "09",
+    "name": "Invalid delivered quantity",
+    "tone": "error",
+    "title": "Check delivered quantities",
+    "description": "The Hindu · Daily: −1 copies. Enter a whole number from 0 to 30 for the selected delivery dates.",
+    "actions": ["Review quantity"],
+    "loading": false,
+    "behavior": "Show the error beside the quantity field and focus the first invalid field. Keep all other input; Save bill remains disabled."
+  },
+  {
+    "id": "10",
+    "name": "Missing or conflicting rate",
+    "tone": "warning",
+    "title": "A delivery rate needs review",
+    "description": "The Hindu has no confirmed rate for 14–15 October. Resolve the effective date range before generating this bill.",
+    "actions": ["Review rates"],
+    "loading": false,
+    "behavior": "Do not silently treat missing rates as ₹0. Show the affected dates and precedence: resident agreement, date override, standard rate."
+  },
+  {
+    "id": "11",
+    "name": "Duplicate bill",
+    "tone": "warning",
+    "title": "This period already has a bill",
+    "description": "DB-2026-1048 already covers Anitha Nair’s October deliveries.",
+    "actions": ["Open existing bill"],
+    "loading": false,
+    "behavior": "Check resident, period and covered delivery dates. Open the existing bill; do not create a duplicate when Save is clicked twice."
+  },
+  {
+    "id": "12",
+    "name": "Unsaved edits",
+    "tone": "warning",
+    "title": "Leave this bill without saving?",
+    "description": "Your delivery quantity and credit changes have not been saved.",
+    "actions": ["Keep editing", "Discard changes"],
+    "loading": false,
+    "behavior": "Secondary action: Discard changes. Escape and clicking outside keep the editor open. Restore focus to the invoking control."
+  },
+  {
+    "id": "13",
+    "name": "Partial payment",
+    "tone": "warning",
+    "title": "Record a partial payment",
+    "description": "Anitha Nair · DB-2026-1048\nAmount due ₹661.00 · Received ₹200.00\nBalance after payment ₹461.00",
+    "actions": ["Confirm ₹200 payment"],
+    "loading": false,
+    "behavior": "Require method and receipt details. After confirmation show Partially paid, receipt ID and remaining ₹461; keep route position."
+  },
+  {
+    "id": "14",
+    "name": "Overpayment",
+    "tone": "warning",
+    "title": "Payment exceeds the balance",
+    "description": "Amount entered ₹700.00 · Due ₹661.00\nExtra ₹39.00 needs an explicit decision.",
+    "actions": ["Review amount"],
+    "loading": false,
+    "behavior": "Default: correct the amount. Only offer ₹39 account credit if the agency supports it and the operator confirms; never silently change the payment."
+  },
+  {
+    "id": "15",
+    "name": "Submission in progress",
+    "tone": "info",
+    "title": "Recording ₹661 payment…",
+    "description": "Disable the submit action and use one request identity. The bill remains unpaid until confirmation returns.",
+    "actions": [],
+    "loading": true,
+    "behavior": "Disable the submit action and use one request identity. The bill remains unpaid until confirmation returns."
+  },
+  {
+    "id": "16",
+    "name": "Payment outcome unknown",
+    "tone": "warning",
+    "title": "We’re checking this payment",
+    "description": "The connection dropped before confirmation. The payment may already be recorded.",
+    "actions": ["Check payment status"],
+    "loading": false,
+    "behavior": "Look up the original request or receipt before enabling another payment. Never say “No payment recorded” unless the server confirms failure."
+  },
+  {
+    "id": "17",
+    "name": "Overlapping vacation hold",
+    "tone": "warning",
+    "title": "These hold dates overlap",
+    "description": "Joseph Mathew already has a hold from 01–04 Nov. Your new hold starts on 03 Nov.",
+    "actions": ["Review hold dates"],
+    "loading": false,
+    "behavior": "Show affected publications and inclusive dates. Offer merge or date adjustment; each delivery date is excluded from dispatch and billing once."
+  },
+  {
+    "id": "18",
+    "name": "Route without assigned staff",
+    "tone": "warning",
+    "title": "R01 needs a delivery operator",
+    "description": "Biju P. is unavailable for this run. Assign a substitute before confirming dispatch.",
+    "actions": ["Assign substitute"],
+    "loading": false,
+    "behavior": "Keep stops and delivery order. Do not mark the route dispatched until an eligible operator is assigned; retain the assignment history."
+  },
+  {
+    "id": "19",
+    "name": "Delivery update failed",
+    "tone": "error",
+    "title": "Delivery update wasn’t saved",
+    "description": "Fathima Ali · Drop 004 is still marked Missed delivery. Your redelivery note is preserved.",
+    "actions": ["Retry update"],
+    "loading": false,
+    "behavior": "Retain the entered note and original delivery date. Do not issue a credit or count a redelivery until the chosen action is confirmed."
+  },
+  {
+    "id": "20",
+    "name": "End of collection run",
+    "tone": "empty",
+    "title": "You’ve reached the last resident",
+    "description": "R01 collection review is complete. Some accounts may still have unpaid balances.",
+    "actions": ["View route summary"],
+    "loading": false,
+    "behavior": "Replace Move to next with View route summary. Show paid, partial, skipped and remaining totals; never imply every resident has paid."
+  },
+  {
+    "id": "21",
+    "name": "Restricted action",
+    "tone": "warning",
+    "title": "You don’t have access to close cash",
+    "description": "Your current role can view the ledger. An agency administrator can approve cash closing.",
+    "actions": ["Back to ledger"],
+    "loading": false,
+    "behavior": "Explain the required permission. Preserve readable context; do not reveal or enable restricted actions after a failed permission check."
+  },
+  {
+    "id": "22",
+    "name": "Export failure",
+    "tone": "error",
+    "title": "Ledger export failed",
+    "description": "Your ledger is unchanged. Retry the export with the same date range and filters.",
+    "actions": ["Retry export"],
+    "loading": false,
+    "behavior": "Keep date, route and payment-method filters. Show progress during generation and a clear downloadable result after success."
+  },
+  {
+    "id": "23",
+    "name": "Print or share unavailable",
+    "tone": "error",
+    "title": "The bill is saved · sharing failed",
+    "description": "DB-2026-1048 is ready. We couldn’t open the sharing service.",
+    "actions": ["Download PDF"],
+    "loading": false,
+    "behavior": "Keep invoice status Saved. Offer download or retry sharing; do not regenerate or mark the bill paid because sharing failed."
+  },
+  {
+    "id": "24",
+    "name": "Preference save failure",
+    "tone": "error",
+    "title": "Preferences couldn’t be saved",
+    "description": "Your preview is still visible. Retry to save Teal & Turquoise and your reading size to this workspace.",
+    "actions": ["Retry save", "Restore saved preferences"],
+    "loading": false,
+    "behavior": "Keep the preview and edited values. Secondary action: Restore saved preferences. Do not show “Preferences saved” until confirmed."
+  }
+]

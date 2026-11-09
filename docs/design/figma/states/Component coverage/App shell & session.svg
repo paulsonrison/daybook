@@ -1,0 +1,89 @@
+<svg width="1440" height="988" viewBox="0 0 1440 988" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Component coverage / App shell &#38; session">
+<rect width="1440" height="988" fill="#F5F6F3"/>
+<text id="Text / App shell &#38; session" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="28" font-weight="600" letter-spacing="0em"><tspan x="32" y="63.1818">App shell &#38; session</tspan></text>
+<text id="Text / 6 applicable states &#194;&#183; editable native comp" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="32" y="117.591">6 applicable states &#xb7; editable native component variants. Loading, empty and failure behavior is visible in the control itself.</tspan></text>
+<g id="Daybook/Edge/App shell &#38; session">
+<g id="State=Boot loading">
+<rect x="48.5" y="167.5" width="639" height="152" rx="7.5" fill="white"/>
+<rect x="48.5" y="167.5" width="639" height="152" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / BOOT LOADING" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="204.5">BOOT LOADING</tspan></text>
+<g id="Progress status">
+<path id="Ellipse" d="M93.5 240C93.5 241.793 92.9925 243.55 92.0363 245.066C91.08 246.583 89.714 247.798 88.0962 248.572C86.4783 249.345 84.6747 249.644 82.8938 249.435C81.1129 249.227 79.4275 248.518 78.0324 247.392C76.6372 246.265 75.5893 244.767 75.0098 243.07C74.4303 241.373 74.3429 239.547 74.7576 237.803C75.1723 236.058 76.0723 234.467 77.3535 233.212C78.6346 231.958 80.2446 231.091 81.9974 230.713" stroke-width="3" stroke="#087F73"/>
+<text id="Text / Opening Daybook&#226;&#128;&#166;" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" font-weight="600" letter-spacing="0em"><tspan x="107" y="244.591">Opening Daybook&#x2026;</tspan></text>
+</g>
+<text id="Text / Check the connection and retry without los" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="73" y="285.591">Check the connection and retry without losing your workspace.</tspan></text>
+</g>
+<g id="State=Offline">
+<rect x="720.5" y="167.5" width="639" height="252" rx="7.5" fill="white"/>
+<rect x="720.5" y="167.5" width="639" height="252" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / OFFLINE" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="204.5">OFFLINE</tspan></text>
+<g id="Progress status_2">
+<path id="Ellipse_2" d="M765.5 240C765.5 241.793 764.993 243.55 764.036 245.066C763.08 246.583 761.714 247.798 760.096 248.572C758.478 249.345 756.675 249.644 754.894 249.435C753.113 249.227 751.428 248.518 750.032 247.392C748.637 246.265 747.589 244.767 747.01 243.07C746.43 241.373 746.343 239.547 746.758 237.803C747.172 236.058 748.072 234.467 749.353 233.212C750.635 231.958 752.245 231.091 753.997 230.713" stroke-width="3" stroke="#087F73"/>
+<text id="Text / Offline" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" font-weight="600" letter-spacing="0em"><tspan x="779" y="244.591">Offline</tspan></text>
+</g>
+<text id="Text / Saved data stays readable. Server-confirme" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="745" y="285.591">Saved data stays readable. Server-confirmed actions wait for reconnection.</tspan></text>
+<g id="Action / Back to overview">
+<rect x="745" y="332" width="168" height="63" rx="6" fill="#087F73"/>
+<text id="Text / Back to overview" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="761" y="356.727">Back to overview</tspan></text>
+</g>
+</g>
+<g id="State=Session expired">
+<rect x="48.5" y="444.5" width="639" height="231" rx="7.5" fill="white"/>
+<rect x="48.5" y="444.5" width="639" height="231" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / SESSION EXPIRED" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="481.5">SESSION EXPIRED</tspan></text>
+<g id="Progress status_3">
+<path id="Ellipse_3" d="M93.5 517C93.5 518.793 92.9925 520.55 92.0363 522.066C91.08 523.583 89.714 524.798 88.0962 525.572C86.4783 526.345 84.6747 526.644 82.8938 526.435C81.1129 526.227 79.4275 525.518 78.0324 524.392C76.6372 523.265 75.5893 521.767 75.0098 520.07C74.4303 518.373 74.3429 516.547 74.7576 514.803C75.1723 513.058 76.0723 511.467 77.3535 510.212C78.6346 508.958 80.2446 508.091 81.9974 507.713" stroke-width="3" stroke="#087F73"/>
+<text id="Text / Session expired" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" font-weight="600" letter-spacing="0em"><tspan x="107" y="521.591">Session expired</tspan></text>
+</g>
+<text id="Text / Sign in again, then return to your preserv" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="73" y="562.591">Sign in again, then return to your preserved draft.</tspan></text>
+<g id="Action / Sign in again">
+<rect x="73" y="588" width="143" height="63" rx="6" fill="#087F73"/>
+<text id="Text / Sign in again" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="89" y="612.727">Sign in again</tspan></text>
+</g>
+</g>
+<g id="State=Access denied">
+<rect x="720.5" y="444.5" width="639" height="231" rx="7.5" fill="white"/>
+<rect x="720.5" y="444.5" width="639" height="231" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / ACCESS DENIED" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="481.5">ACCESS DENIED</tspan></text>
+<g id="Progress status_4">
+<path id="Ellipse_4" d="M765.5 517C765.5 518.793 764.993 520.55 764.036 522.066C763.08 523.583 761.714 524.798 760.096 525.572C758.478 526.345 756.675 526.644 754.894 526.435C753.113 526.227 751.428 525.518 750.032 524.392C748.637 523.265 747.589 521.767 747.01 520.07C746.43 518.373 746.343 516.547 746.758 514.803C747.172 513.058 748.072 511.467 749.353 510.212C750.635 508.958 752.245 508.091 753.997 507.713" stroke-width="3" stroke="#087F73"/>
+<text id="Text / Access denied" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" font-weight="600" letter-spacing="0em"><tspan x="779" y="521.591">Access denied</tspan></text>
+</g>
+<text id="Text / Your current role cannot open this workspa" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="745" y="562.591">Your current role cannot open this workspace area.</tspan></text>
+<g id="Action / Back to overview_2">
+<rect x="745" y="588" width="168" height="63" rx="6" fill="#087F73"/>
+<text id="Text / Back to overview_2" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="761" y="612.727">Back to overview</tspan></text>
+</g>
+</g>
+<g id="State=Page not found">
+<rect x="48.5" y="700.5" width="639" height="231" rx="7.5" fill="white"/>
+<rect x="48.5" y="700.5" width="639" height="231" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / PAGE NOT FOUND" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="737.5">PAGE NOT FOUND</tspan></text>
+<g id="Progress status_5">
+<path id="Ellipse_5" d="M93.5 773C93.5 774.793 92.9925 776.55 92.0363 778.066C91.08 779.583 89.714 780.798 88.0962 781.572C86.4783 782.345 84.6747 782.644 82.8938 782.435C81.1129 782.227 79.4275 781.518 78.0324 780.392C76.6372 779.265 75.5893 777.767 75.0098 776.07C74.4303 774.373 74.3429 772.547 74.7576 770.803C75.1723 769.058 76.0723 767.467 77.3535 766.212C78.6346 764.958 80.2446 764.091 81.9974 763.713" stroke-width="3" stroke="#087F73"/>
+<text id="Text / Page not found" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" font-weight="600" letter-spacing="0em"><tspan x="107" y="777.591">Page not found</tspan></text>
+</g>
+<text id="Text / This destination is unavailable. Return to" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="73" y="818.591">This destination is unavailable. Return to the overview.</tspan></text>
+<g id="Action / Back to overview_3">
+<rect x="73" y="844" width="168" height="63" rx="6" fill="#087F73"/>
+<text id="Text / Back to overview_3" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="89" y="868.727">Back to overview</tspan></text>
+</g>
+</g>
+<g id="State=Service unavailable">
+<rect x="720.5" y="700.5" width="639" height="231" rx="7.5" fill="white"/>
+<rect x="720.5" y="700.5" width="639" height="231" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / SERVICE UNAVAILABLE" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="737.5">SERVICE UNAVAILABLE</tspan></text>
+<g id="Progress status_6">
+<path id="Ellipse_6" d="M765.5 773C765.5 774.793 764.993 776.55 764.036 778.066C763.08 779.583 761.714 780.798 760.096 781.572C758.478 782.345 756.675 782.644 754.894 782.435C753.113 782.227 751.428 781.518 750.032 780.392C748.637 779.265 747.589 777.767 747.01 776.07C746.43 774.373 746.343 772.547 746.758 770.803C747.172 769.058 748.072 767.467 749.353 766.212C750.635 764.958 752.245 764.091 753.997 763.713" stroke-width="3" stroke="#087F73"/>
+<text id="Text / Service unavailable" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" font-weight="600" letter-spacing="0em"><tspan x="779" y="777.591">Service unavailable</tspan></text>
+</g>
+<text id="Text / Check the connection and retry without los_2" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="745" y="818.591">Check the connection and retry without losing your workspace.</tspan></text>
+<g id="Action / Back to overview_4">
+<rect x="745" y="844" width="168" height="63" rx="6" fill="#087F73"/>
+<text id="Text / Back to overview_4" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="761" y="868.727">Back to overview</tspan></text>
+</g>
+</g>
+</g>
+</g>
+</svg>

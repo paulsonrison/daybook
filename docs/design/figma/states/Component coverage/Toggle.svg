@@ -1,0 +1,59 @@
+<svg width="1440" height="707" viewBox="0 0 1440 707" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Component coverage / Toggle">
+<rect width="1440" height="707" fill="#F5F6F3"/>
+<text id="Text / Toggle" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="28" font-weight="600" letter-spacing="0em"><tspan x="32" y="63.1818">Toggle</tspan></text>
+<text id="Text / 5 applicable states &#194;&#183; editable native comp" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="32" y="117.591">5 applicable states &#xb7; editable native component variants. Loading, empty and failure behavior is visible in the control itself.</tspan></text>
+<g id="Daybook/Edge/Toggle">
+<g id="State=Off">
+<rect x="48.5" y="167.5" width="639" height="111" rx="7.5" fill="white"/>
+<rect x="48.5" y="167.5" width="639" height="111" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / OFF" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="204.5">OFF</tspan></text>
+<g id="Selection control">
+<rect id="Rectangle" x="73.5" y="229.5" width="43" height="21" rx="10.5" fill="white" stroke="#D9E3DE"/>
+<text id="Text / Collection reminders" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="129" y="244.591">Collection reminders</tspan></text>
+</g>
+</g>
+<g id="State=On">
+<rect x="720.5" y="167.5" width="639" height="111" rx="7.5" fill="white"/>
+<rect x="720.5" y="167.5" width="639" height="111" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / ON" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="204.5">ON</tspan></text>
+<g id="Selection control_2">
+<rect id="Rectangle_2" x="745.5" y="229.5" width="43" height="21" rx="10.5" fill="#087F73" stroke="#D9E3DE"/>
+<text id="Text / Collection reminders_2" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="801" y="244.591">Collection reminders</tspan></text>
+</g>
+</g>
+<g id="State=Disabled">
+<rect x="48.5" y="303.5" width="639" height="111" rx="7.5" fill="white"/>
+<rect x="48.5" y="303.5" width="639" height="111" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / DISABLED" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="340.5">DISABLED</tspan></text>
+<g id="Selection control_3">
+<rect id="Rectangle_3" x="73.5" y="365.5" width="43" height="21" rx="10.5" fill="white" stroke="#D9E3DE"/>
+<text id="Text / Collection reminders_3" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="129" y="380.591">Collection reminders</tspan></text>
+</g>
+</g>
+<g id="State=Saving">
+<rect x="720.5" y="303.5" width="639" height="152" rx="7.5" fill="white"/>
+<rect x="720.5" y="303.5" width="639" height="152" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / SAVING" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="340.5">SAVING</tspan></text>
+<g id="Selection control_4">
+<rect id="Rectangle_4" x="745.5" y="365.5" width="43" height="21" rx="10.5" fill="white" stroke="#D9E3DE"/>
+<text id="Text / Collection reminders_4" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="801" y="380.591">Collection reminders</tspan></text>
+</g>
+<g id="Progress status">
+<path id="Ellipse" d="M765.5 417C765.5 418.793 764.993 420.55 764.036 422.066C763.08 423.583 761.714 424.798 760.096 425.572C758.478 426.345 756.675 426.644 754.894 426.435C753.113 426.227 751.428 425.518 750.032 424.392C748.637 423.265 747.589 421.767 747.01 420.07C746.43 418.373 746.343 416.547 746.758 414.803C747.172 413.058 748.072 411.467 749.353 410.212C750.635 408.958 752.245 408.091 753.997 407.713" stroke-width="3" stroke="#087F73"/>
+<text id="Text / Saving selection&#226;&#128;&#166;" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" font-weight="600" letter-spacing="0em"><tspan x="779" y="421.591">Saving selection&#x2026;</tspan></text>
+</g>
+</g>
+<g id="State=Save failed">
+<rect x="48.5" y="480.5" width="639" height="170" rx="7.5" fill="white"/>
+<rect x="48.5" y="480.5" width="639" height="170" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / SAVE FAILED" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="517.5">SAVE FAILED</tspan></text>
+<g id="Selection control_5">
+<rect id="Rectangle_5" x="73.5" y="542.5" width="43" height="21" rx="10.5" fill="white" stroke="#D9E3DE"/>
+<text id="Text / Collection reminders_5" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="129" y="557.591">Collection reminders</tspan></text>
+</g>
+<text id="Text / Couldn&#226;&#128;&#153;t save. The previous selection is r" fill="#AD2B30" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="73" y="597.727">Couldn&#x2019;t save. The previous selection is restored; retry remains available.</tspan></text>
+</g>
+</g>
+</g>
+</svg>

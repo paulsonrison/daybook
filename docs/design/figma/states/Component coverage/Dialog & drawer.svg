@@ -1,0 +1,127 @@
+<svg width="1440" height="1213" viewBox="0 0 1440 1213" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Component coverage / Dialog &#38; drawer">
+<rect width="1440" height="1213" fill="#F5F6F3"/>
+<text id="Text / Dialog &#38; drawer" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="28" font-weight="600" letter-spacing="0em"><tspan x="32" y="63.1818">Dialog &#38; drawer</tspan></text>
+<text id="Text / 6 applicable states &#194;&#183; editable native comp" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="32" y="117.591">6 applicable states &#xb7; editable native component variants. Loading, empty and failure behavior is visible in the control itself.</tspan></text>
+<g id="Daybook/Edge/Dialog &#38; drawer">
+<g id="State=Open">
+<rect x="48.5" y="167.5" width="639" height="243" rx="7.5" fill="white"/>
+<rect x="48.5" y="167.5" width="639" height="243" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / OPEN" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="204.5">OPEN</tspan></text>
+<text id="Text / Review bill changes" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="22" font-weight="600" letter-spacing="0em"><tspan x="73" y="253.5">Review bill changes</tspan></text>
+<text id="Text / Anitha Nair &#194;&#183; October 2026 &#194;&#183; &#226;&#130;&#185;661.00 due" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="73" y="297.591">Anitha Nair &#xb7; October 2026 &#xb7; &#x20b9;661.00 due</tspan></text>
+<g id="Dialog actions">
+<g id="Action / Cancel">
+<rect x="73.5" y="323.5" width="103" height="45" rx="5.5" fill="white"/>
+<rect x="73.5" y="323.5" width="103" height="45" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Cancel" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="90" y="348.727">Cancel</tspan></text>
+</g>
+<g id="Action / Save bill">
+<rect x="189" y="323" width="109" height="63" rx="6" fill="#087F73"/>
+<text id="Text / Save bill" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="205" y="347.727">Save bill</tspan></text>
+</g>
+</g>
+</g>
+<g id="State=Long content">
+<rect x="720.5" y="167.5" width="639" height="285" rx="7.5" fill="white"/>
+<rect x="720.5" y="167.5" width="639" height="285" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / LONG CONTENT" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="204.5">LONG CONTENT</tspan></text>
+<text id="Text / Review bill changes_2" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="22" font-weight="600" letter-spacing="0em"><tspan x="745" y="253.5">Review bill changes</tspan></text>
+<text id="Text / Long dialog content uses a scrollable body" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="745" y="297.591">Long dialog content uses a scrollable body. The heading and actions stay in separate </tspan><tspan x="745" y="318.591">layout regions, with reserved spacing and keyboard focus containment.</tspan></text>
+<g id="Dialog actions_2">
+<g id="Action / Cancel_2">
+<rect x="745.5" y="365.5" width="103" height="45" rx="5.5" fill="white"/>
+<rect x="745.5" y="365.5" width="103" height="45" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Cancel_2" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="762" y="390.727">Cancel</tspan></text>
+</g>
+<g id="Action / Save bill_2">
+<rect x="861" y="365" width="109" height="63" rx="6" fill="#087F73"/>
+<text id="Text / Save bill_2" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="877" y="389.727">Save bill</tspan></text>
+</g>
+</g>
+</g>
+<g id="State=Submitting">
+<rect x="48.5" y="477.5" width="639" height="226" rx="7.5" fill="white"/>
+<rect x="48.5" y="477.5" width="639" height="226" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / SUBMITTING" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="514.5">SUBMITTING</tspan></text>
+<text id="Text / Review bill changes_3" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="22" font-weight="600" letter-spacing="0em"><tspan x="73" y="563.5">Review bill changes</tspan></text>
+<text id="Text / Anitha Nair &#194;&#183; October 2026 &#194;&#183; &#226;&#130;&#185;661.00 due_2" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="73" y="607.591">Anitha Nair &#xb7; October 2026 &#xb7; &#x20b9;661.00 due</tspan></text>
+<g id="Dialog actions_3">
+<g id="Action / Cancel_3">
+<rect x="73.5" y="633.5" width="103" height="45" rx="5.5" fill="white"/>
+<rect x="73.5" y="633.5" width="103" height="45" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Cancel_3" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="90" y="658.727">Cancel</tspan></text>
+</g>
+<g id="Action / Saving&#226;&#128;&#166;">
+<rect x="189" y="633" width="102" height="44" rx="6" fill="#D9E3DE"/>
+<text id="Text / Saving&#226;&#128;&#166;" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="205" y="657.727">Saving&#x2026;</tspan></text>
+</g>
+</g>
+</g>
+<g id="State=Validation errors">
+<rect x="720.5" y="477.5" width="639" height="371" rx="7.5" fill="white"/>
+<rect x="720.5" y="477.5" width="639" height="371" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / VALIDATION ERRORS" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="514.5">VALIDATION ERRORS</tspan></text>
+<text id="Text / Review bill changes_4" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="22" font-weight="600" letter-spacing="0em"><tspan x="745" y="563.5">Review bill changes</tspan></text>
+<text id="Text / Anitha Nair &#194;&#183; October 2026 &#194;&#183; &#226;&#130;&#185;661.00 due_3" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="745" y="607.591">Anitha Nair &#xb7; October 2026 &#xb7; &#x20b9;661.00 due</tspan></text>
+<g id="Field / Quantity">
+<text id="Text / QUANTITY" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="645.5">QUANTITY</tspan></text>
+<g id="Input">
+<rect x="746" y="663" width="590" height="51" rx="5" fill="white"/>
+<rect x="746" y="663" width="590" height="51" rx="5" stroke="#AD2B30" stroke-width="2"/>
+<text id="Text / &#226;&#136;&#146;1" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="759" y="691.591">&#x2212;1</tspan></text>
+</g>
+<text id="Text / Enter a whole number from 0 to 30." fill="#AD2B30" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="745" y="736.364">Enter a whole number from 0 to 30.</tspan></text>
+</g>
+<g id="Dialog actions_4">
+<g id="Action / Cancel_4">
+<rect x="745.5" y="761.5" width="103" height="45" rx="5.5" fill="white"/>
+<rect x="745.5" y="761.5" width="103" height="45" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Cancel_4" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="762" y="786.727">Cancel</tspan></text>
+</g>
+<g id="Action / Save bill_3">
+<rect x="861" y="761" width="109" height="63" rx="6" fill="#087F73"/>
+<text id="Text / Save bill_3" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="877" y="785.727">Save bill</tspan></text>
+</g>
+</g>
+</g>
+<g id="State=Request failed">
+<rect x="48.5" y="873.5" width="639" height="283" rx="7.5" fill="white"/>
+<rect x="48.5" y="873.5" width="639" height="283" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / REQUEST FAILED" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="910.5">REQUEST FAILED</tspan></text>
+<text id="Text / Review bill changes_5" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="22" font-weight="600" letter-spacing="0em"><tspan x="73" y="959.5">Review bill changes</tspan></text>
+<text id="Text / Anitha Nair &#194;&#183; October 2026 &#194;&#183; &#226;&#130;&#185;661.00 due_4" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="73" y="1003.59">Anitha Nair &#xb7; October 2026 &#xb7; &#x20b9;661.00 due</tspan></text>
+<text id="Text / Couldn&#226;&#128;&#153;t save. Your draft is preserved." fill="#AD2B30" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="73" y="1043.73">Couldn&#x2019;t save. Your draft is preserved.</tspan></text>
+<g id="Dialog actions_5">
+<g id="Action / Cancel_5">
+<rect x="73.5" y="1069.5" width="103" height="45" rx="5.5" fill="white"/>
+<rect x="73.5" y="1069.5" width="103" height="45" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Cancel_5" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="90" y="1094.73">Cancel</tspan></text>
+</g>
+<g id="Action / Save bill_4">
+<rect x="189" y="1069" width="109" height="63" rx="6" fill="#087F73"/>
+<text id="Text / Save bill_4" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="205" y="1093.73">Save bill</tspan></text>
+</g>
+</g>
+</g>
+<g id="State=Unsaved changes">
+<rect x="720.5" y="873.5" width="639" height="243" rx="7.5" fill="white"/>
+<rect x="720.5" y="873.5" width="639" height="243" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / UNSAVED CHANGES" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="910.5">UNSAVED CHANGES</tspan></text>
+<text id="Text / Leave without saving?" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="22" font-weight="600" letter-spacing="0em"><tspan x="745" y="959.5">Leave without saving?</tspan></text>
+<text id="Text / Anitha Nair &#194;&#183; October 2026 &#194;&#183; &#226;&#130;&#185;661.00 due_5" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="745" y="1003.59">Anitha Nair &#xb7; October 2026 &#xb7; &#x20b9;661.00 due</tspan></text>
+<g id="Dialog actions_6">
+<g id="Action / Cancel_6">
+<rect x="745.5" y="1029.5" width="103" height="45" rx="5.5" fill="white"/>
+<rect x="745.5" y="1029.5" width="103" height="45" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Cancel_6" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="762" y="1054.73">Cancel</tspan></text>
+</g>
+<g id="Action / Keep editing">
+<rect x="861" y="1029" width="134" height="63" rx="6" fill="#087F73"/>
+<text id="Text / Keep editing" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="877" y="1053.73">Keep editing</tspan></text>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>

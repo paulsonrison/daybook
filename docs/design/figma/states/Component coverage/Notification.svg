@@ -1,0 +1,88 @@
+<svg width="1440" height="1349" viewBox="0 0 1440 1349" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Component coverage / Notification">
+<rect width="1440" height="1349" fill="#F5F6F3"/>
+<text id="Text / Notification" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="28" font-weight="600" letter-spacing="0em"><tspan x="32" y="63.1818">Notification</tspan></text>
+<text id="Text / 6 applicable states &#194;&#183; editable native comp" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="32" y="117.591">6 applicable states &#xb7; editable native component variants. Loading, empty and failure behavior is visible in the control itself.</tspan></text>
+<g id="Daybook/Edge/Notification">
+<g id="State=Success">
+<rect x="48.5" y="167.5" width="639" height="286" rx="7.5" fill="white"/>
+<rect x="48.5" y="167.5" width="639" height="286" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / SUCCESS" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="204.5">SUCCESS</tspan></text>
+<g id="Inline state / Success">
+<rect x="73.5" y="229.5" width="591" height="199" rx="7.5" fill="white"/>
+<rect x="73.5" y="229.5" width="591" height="199" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / INFO" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="102" y="270.5">INFO</tspan></text>
+<text id="Text / Success" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="600" letter-spacing="0em"><tspan x="102" y="321.727">Success</tspan></text>
+<text id="Text / Your route and entered values are preserve" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="15" letter-spacing="0em"><tspan x="102" y="367.955">Your route and entered values are preserved. Review the result before </tspan><tspan x="102" y="390.955">continuing.</tspan></text>
+</g>
+</g>
+<g id="State=Info">
+<rect x="720.5" y="167.5" width="639" height="286" rx="7.5" fill="white"/>
+<rect x="720.5" y="167.5" width="639" height="286" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / INFO_2" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="204.5">INFO</tspan></text>
+<g id="Inline state / Info">
+<rect x="745.5" y="229.5" width="591" height="199" rx="7.5" fill="white"/>
+<rect x="745.5" y="229.5" width="591" height="199" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / INFO_3" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="774" y="270.5">INFO</tspan></text>
+<text id="Text / Info" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="600" letter-spacing="0em"><tspan x="774" y="321.727">Info</tspan></text>
+<text id="Text / Your route and entered values are preserve_2" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="15" letter-spacing="0em"><tspan x="774" y="367.955">Your route and entered values are preserved. Review the result before </tspan><tspan x="774" y="390.955">continuing.</tspan></text>
+</g>
+</g>
+<g id="State=Warning">
+<rect x="48.5" y="478.5" width="639" height="286" rx="7.5" fill="white"/>
+<rect x="48.5" y="478.5" width="639" height="286" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / WARNING" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="515.5">WARNING</tspan></text>
+<g id="Inline state / Warning">
+<rect x="73.5" y="540.5" width="591" height="199" rx="7.5" fill="white"/>
+<rect x="73.5" y="540.5" width="591" height="199" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / WARNING_2" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="102" y="581.5">WARNING</tspan></text>
+<text id="Text / Warning" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="600" letter-spacing="0em"><tspan x="102" y="632.727">Warning</tspan></text>
+<text id="Text / Your route and entered values are preserve_3" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="15" letter-spacing="0em"><tspan x="102" y="678.955">Your route and entered values are preserved. Review the result before </tspan><tspan x="102" y="701.955">continuing.</tspan></text>
+</g>
+</g>
+<g id="State=Error">
+<rect x="720.5" y="478.5" width="639" height="286" rx="7.5" fill="white"/>
+<rect x="720.5" y="478.5" width="639" height="286" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / ERROR" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="515.5">ERROR</tspan></text>
+<g id="Inline state / Error">
+<rect x="745.5" y="540.5" width="591" height="199" rx="7.5" fill="white"/>
+<rect x="745.5" y="540.5" width="591" height="199" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / ERROR_2" fill="#AD2B30" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="774" y="581.5">ERROR</tspan></text>
+<text id="Text / Error" fill="#AD2B30" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="600" letter-spacing="0em"><tspan x="774" y="632.727">Error</tspan></text>
+<text id="Text / Your route and entered values are preserve_4" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="15" letter-spacing="0em"><tspan x="774" y="678.955">Your route and entered values are preserved. Review the result before </tspan><tspan x="774" y="701.955">continuing.</tspan></text>
+</g>
+</g>
+<g id="State=Long message">
+<rect x="48.5" y="789.5" width="639" height="322" rx="7.5" fill="white"/>
+<rect x="48.5" y="789.5" width="639" height="322" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / LONG MESSAGE" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="826.5">LONG MESSAGE</tspan></text>
+<g id="Inline state / Some delivery updates could not be synced">
+<rect x="73.5" y="851.5" width="591" height="235" rx="7.5" fill="white"/>
+<rect x="73.5" y="851.5" width="591" height="235" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / INFO_4" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="102" y="892.5">INFO</tspan></text>
+<text id="Text / Some delivery updates could not be synced" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="600" letter-spacing="0em"><tspan x="102" y="943.727">Some delivery updates could not be synced</tspan></text>
+<text id="Text / Your route and entered values are preserve_5" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="15" letter-spacing="0em"><tspan x="102" y="1025.95">Your route and entered values are preserved. Review the result before </tspan><tspan x="102" y="1048.95">continuing.</tspan></text>
+</g>
+</g>
+<g id="State=Stacked messages">
+<rect x="720.5" y="789.5" width="639" height="503" rx="7.5" fill="white"/>
+<rect x="720.5" y="789.5" width="639" height="503" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / STACKED MESSAGES" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="826.5">STACKED MESSAGES</tspan></text>
+<g id="Inline state / Stacked messages">
+<rect x="745.5" y="851.5" width="591" height="222" rx="7.5" fill="white"/>
+<rect x="745.5" y="851.5" width="591" height="222" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / INFO_5" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="774" y="892.5">INFO</tspan></text>
+<text id="Text / Stacked messages" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="600" letter-spacing="0em"><tspan x="774" y="943.727">Stacked messages</tspan></text>
+<text id="Text / Queue messages vertically with a gap. Pres" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="15" letter-spacing="0em"><tspan x="774" y="989.955">Queue messages vertically with a gap. Preserve separate dismiss actions; </tspan><tspan x="774" y="1012.95">never position toasts on the same coordinates.</tspan></text>
+</g>
+<g id="Inline state / Invoice saved">
+<rect x="745.5" y="1090.5" width="591" height="177" rx="7.5" fill="white"/>
+<rect x="745.5" y="1090.5" width="591" height="177" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / SUCCESS_2" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="774" y="1131.5">SUCCESS</tspan></text>
+<text id="Text / Invoice saved" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="24" font-weight="600" letter-spacing="0em"><tspan x="774" y="1182.73">Invoice saved</tspan></text>
+<text id="Text / The saved invoice is ready to download." fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="15" letter-spacing="0em"><tspan x="774" y="1228.95">The saved invoice is ready to download.</tspan></text>
+</g>
+</g>
+</g>
+</g>
+</svg>

@@ -1,0 +1,69 @@
+<svg width="1440" height="666" viewBox="0 0 1440 666" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Component coverage / Checkbox">
+<rect width="1440" height="666" fill="#F5F6F3"/>
+<text id="Text / Checkbox" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="28" font-weight="600" letter-spacing="0em"><tspan x="32" y="63.1818">Checkbox</tspan></text>
+<text id="Text / 6 applicable states &#194;&#183; editable native comp" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="32" y="117.591">6 applicable states &#xb7; editable native component variants. Loading, empty and failure behavior is visible in the control itself.</tspan></text>
+<g id="Daybook/Edge/Checkbox">
+<g id="State=Unchecked">
+<rect x="48.5" y="167.5" width="639" height="111" rx="7.5" fill="white"/>
+<rect x="48.5" y="167.5" width="639" height="111" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / UNCHECKED" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="204.5">UNCHECKED</tspan></text>
+<g id="Selection control">
+<rect id="Rectangle" x="73.5" y="229.5" width="21" height="21" rx="3.5" fill="white" stroke="#D9E3DE"/>
+<text id="Text / Select residents" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="107" y="244.591">Select residents</tspan></text>
+</g>
+</g>
+<g id="State=Checked">
+<rect x="720.5" y="167.5" width="639" height="111" rx="7.5" fill="white"/>
+<rect x="720.5" y="167.5" width="639" height="111" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / CHECKED" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="204.5">CHECKED</tspan></text>
+<g id="Selection control_2">
+<rect id="Rectangle_2" x="745.5" y="229.5" width="21" height="21" rx="3.5" fill="#087F73" stroke="#D9E3DE"/>
+<text id="Text / Select residents_2" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="779" y="244.591">Select residents</tspan></text>
+</g>
+</g>
+<g id="State=Mixed">
+<rect x="48.5" y="303.5" width="639" height="111" rx="7.5" fill="white"/>
+<rect x="48.5" y="303.5" width="639" height="111" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / MIXED" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="340.5">MIXED</tspan></text>
+<g id="Selection control_3">
+<rect id="Rectangle_3" x="73.5" y="365.5" width="21" height="21" rx="3.5" fill="#087F73" stroke="#D9E3DE"/>
+<rect id="Skeleton placeholder" x="107" y="365" width="12" height="3" rx="1.5" fill="#087F73"/>
+<text id="Text / Select residents_3" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="131" y="380.591">Select residents</tspan></text>
+</g>
+</g>
+<g id="State=Disabled">
+<rect x="720.5" y="303.5" width="639" height="111" rx="7.5" fill="white"/>
+<rect x="720.5" y="303.5" width="639" height="111" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / DISABLED" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="340.5">DISABLED</tspan></text>
+<g id="Selection control_4">
+<rect id="Rectangle_4" x="745.5" y="365.5" width="21" height="21" rx="3.5" fill="white" stroke="#D9E3DE"/>
+<text id="Text / Select residents_4" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="779" y="380.591">Select residents</tspan></text>
+</g>
+</g>
+<g id="State=Pending save">
+<rect x="48.5" y="439.5" width="639" height="152" rx="7.5" fill="white"/>
+<rect x="48.5" y="439.5" width="639" height="152" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / PENDING SAVE" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="476.5">PENDING SAVE</tspan></text>
+<g id="Selection control_5">
+<rect id="Rectangle_5" x="73.5" y="501.5" width="21" height="21" rx="3.5" fill="white" stroke="#D9E3DE"/>
+<text id="Text / Select residents_5" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="107" y="516.591">Select residents</tspan></text>
+</g>
+<g id="Progress status">
+<path id="Ellipse" d="M93.5 553C93.5 554.793 92.9925 556.55 92.0363 558.066C91.08 559.583 89.714 560.798 88.0962 561.572C86.4783 562.345 84.6747 562.644 82.8938 562.435C81.1129 562.227 79.4275 561.518 78.0324 560.392C76.6372 559.265 75.5893 557.767 75.0098 556.07C74.4303 554.373 74.3429 552.547 74.7576 550.803C75.1723 549.058 76.0723 547.467 77.3535 546.212C78.6346 544.958 80.2446 544.091 81.9974 543.713" stroke-width="3" stroke="#087F73"/>
+<text id="Text / Saving selection&#226;&#128;&#166;" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" font-weight="600" letter-spacing="0em"><tspan x="107" y="557.591">Saving selection&#x2026;</tspan></text>
+</g>
+</g>
+<g id="State=Save failed">
+<rect x="720.5" y="439.5" width="639" height="170" rx="7.5" fill="white"/>
+<rect x="720.5" y="439.5" width="639" height="170" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / SAVE FAILED" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="476.5">SAVE FAILED</tspan></text>
+<g id="Selection control_6">
+<rect id="Rectangle_6" x="745.5" y="501.5" width="21" height="21" rx="3.5" fill="white" stroke="#D9E3DE"/>
+<text id="Text / Select residents_6" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="779" y="516.591">Select residents</tspan></text>
+</g>
+<text id="Text / Couldn&#226;&#128;&#153;t save. The previous selection is r" fill="#AD2B30" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="745" y="556.727">Couldn&#x2019;t save. The previous selection is restored; retry remains available.</tspan></text>
+</g>
+</g>
+</g>
+</svg>

@@ -1,0 +1,72 @@
+<svg width="1440" height="876" viewBox="0 0 1440 876" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Component coverage / Button/Workflow">
+<rect width="1440" height="876" fill="#F5F6F3"/>
+<text id="Text / Button/Workflow" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="28" font-weight="600" letter-spacing="0em"><tspan x="32" y="63.1818">Button/Workflow</tspan></text>
+<text id="Text / 7 applicable states &#194;&#183; editable native comp" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="32" y="117.591">7 applicable states &#xb7; editable native component variants. Loading, empty and failure behavior is visible in the control itself.</tspan></text>
+<g id="Daybook/Edge/Button/Workflow">
+<g id="State=Generate bill">
+<rect x="48.5" y="167.5" width="639" height="149" rx="7.5" fill="white"/>
+<rect x="48.5" y="167.5" width="639" height="149" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / GENERATE BILL" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="204.5">GENERATE BILL</tspan></text>
+<g id="Action / Generate bill">
+<rect x="73" y="229" width="143" height="63" rx="6" fill="#087F73"/>
+<text id="Text / Generate bill" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="89" y="253.727">Generate bill</tspan></text>
+</g>
+</g>
+<g id="State=Save bill">
+<rect x="720.5" y="167.5" width="639" height="149" rx="7.5" fill="white"/>
+<rect x="720.5" y="167.5" width="639" height="149" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / SAVE BILL" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="204.5">SAVE BILL</tspan></text>
+<g id="Action / Save bill">
+<rect x="745" y="229" width="109" height="63" rx="6" fill="#087F73"/>
+<text id="Text / Save bill" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="761" y="253.727">Save bill</tspan></text>
+</g>
+</g>
+<g id="State=Edit">
+<rect x="48.5" y="341.5" width="639" height="130" rx="7.5" fill="white"/>
+<rect x="48.5" y="341.5" width="639" height="130" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / EDIT" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="378.5">EDIT</tspan></text>
+<g id="Action / Edit">
+<rect x="73" y="403" width="102" height="44" rx="6" fill="#087F73"/>
+<text id="Text / Edit" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="89" y="427.727">Edit</tspan></text>
+</g>
+</g>
+<g id="State=Print">
+<rect x="720.5" y="341.5" width="639" height="130" rx="7.5" fill="white"/>
+<rect x="720.5" y="341.5" width="639" height="130" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / PRINT" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="378.5">PRINT</tspan></text>
+<g id="Action / Print">
+<rect x="745" y="403" width="102" height="44" rx="6" fill="#087F73"/>
+<text id="Text / Print" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="761" y="427.727">Print</tspan></text>
+</g>
+</g>
+<g id="State=Download &#38; share">
+<rect x="48.5" y="496.5" width="639" height="149" rx="7.5" fill="white"/>
+<rect x="48.5" y="496.5" width="639" height="149" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / DOWNLOAD &#38; SHARE" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="533.5">DOWNLOAD &#38; SHARE</tspan></text>
+<g id="Action / Download &#38; share">
+<rect x="73" y="558" width="168" height="63" rx="6" fill="#087F73"/>
+<text id="Text / Download &#38; share" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="89" y="582.727">Download &#38; share</tspan></text>
+</g>
+</g>
+<g id="State=Mark as paid">
+<rect x="720.5" y="496.5" width="639" height="149" rx="7.5" fill="white"/>
+<rect x="720.5" y="496.5" width="639" height="149" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / MARK AS PAID" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="533.5">MARK AS PAID</tspan></text>
+<g id="Action / Mark as paid">
+<rect x="745" y="558" width="134" height="63" rx="6" fill="#087F73"/>
+<text id="Text / Mark as paid" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="761" y="582.727">Mark as paid</tspan></text>
+</g>
+</g>
+<g id="State=Move to next">
+<rect x="48.5" y="670.5" width="639" height="149" rx="7.5" fill="white"/>
+<rect x="48.5" y="670.5" width="639" height="149" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / MOVE TO NEXT" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="707.5">MOVE TO NEXT</tspan></text>
+<g id="Action / Move to next">
+<rect x="73" y="732" width="134" height="63" rx="6" fill="#087F73"/>
+<text id="Text / Move to next" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="89" y="756.727">Move to next</tspan></text>
+</g>
+</g>
+</g>
+</g>
+</svg>

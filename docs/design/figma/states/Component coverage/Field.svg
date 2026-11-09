@@ -1,0 +1,107 @@
+<svg width="1440" height="1074" viewBox="0 0 1440 1074" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Component coverage / Field">
+<rect width="1440" height="1074" fill="#F5F6F3"/>
+<text id="Text / Field" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="28" font-weight="600" letter-spacing="0em"><tspan x="32" y="63.1818">Field</tspan></text>
+<text id="Text / 7 applicable states &#194;&#183; editable native comp" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="32" y="117.591">7 applicable states &#xb7; editable native component variants. Loading, empty and failure behavior is visible in the control itself.</tspan></text>
+<g id="Daybook/Edge/Field">
+<g id="State=Empty">
+<rect x="48.5" y="167.5" width="639" height="166" rx="7.5" fill="white"/>
+<rect x="48.5" y="167.5" width="639" height="166" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / EMPTY" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="204.5">EMPTY</tspan></text>
+<g id="Field / Resident name">
+<text id="Text / RESIDENT NAME" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="241.5">RESIDENT NAME</tspan></text>
+<g id="Input">
+<rect x="73.5" y="258.5" width="591" height="50" rx="5.5" fill="white"/>
+<rect x="73.5" y="258.5" width="591" height="50" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Enter resident name" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="86" y="286.591">Enter resident name</tspan></text>
+</g>
+</g>
+</g>
+<g id="State=Focused">
+<rect x="720.5" y="167.5" width="639" height="166" rx="7.5" fill="white"/>
+<rect x="720.5" y="167.5" width="639" height="166" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / FOCUSED" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="204.5">FOCUSED</tspan></text>
+<g id="Field / Resident name_2">
+<text id="Text / RESIDENT NAME_2" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="241.5">RESIDENT NAME</tspan></text>
+<g id="Input_2">
+<rect x="745.5" y="258.5" width="591" height="50" rx="5.5" fill="white"/>
+<rect x="745.5" y="258.5" width="591" height="50" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Anitha Nair" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="758" y="286.591">Anitha Nair</tspan></text>
+</g>
+</g>
+</g>
+<g id="State=Invalid">
+<rect x="48.5" y="358.5" width="639" height="198" rx="7.5" fill="white"/>
+<rect x="48.5" y="358.5" width="639" height="198" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / INVALID" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="395.5">INVALID</tspan></text>
+<g id="Field / Resident name_3">
+<text id="Text / RESIDENT NAME_3" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="432.5">RESIDENT NAME</tspan></text>
+<g id="Input_3">
+<rect x="74" y="450" width="590" height="51" rx="5" fill="white"/>
+<rect x="74" y="450" width="590" height="51" rx="5" stroke="#AD2B30" stroke-width="2"/>
+<text id="Text / Anitha Nair_2" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="87" y="478.591">Anitha Nair</tspan></text>
+</g>
+<text id="Text / Enter a name before saving." fill="#AD2B30" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="73" y="523.364">Enter a name before saving.</tspan></text>
+</g>
+</g>
+<g id="State=Disabled">
+<rect x="720.5" y="358.5" width="639" height="204" rx="7.5" fill="white"/>
+<rect x="720.5" y="358.5" width="639" height="204" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / DISABLED" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="395.5">DISABLED</tspan></text>
+<g id="Field / Resident name_4">
+<text id="Text / RESIDENT NAME_4" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="432.5">RESIDENT NAME</tspan></text>
+<g id="Input_4">
+<rect x="745.5" y="449.5" width="591" height="50" rx="5.5" fill="white"/>
+<rect x="745.5" y="449.5" width="591" height="50" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Anitha Nair_3" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="758" y="477.591">Anitha Nair</tspan></text>
+</g>
+</g>
+<text id="Text / Read only &#194;&#183; permission required to edit" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="745" y="529.364">Read only &#xb7; permission required to edit</tspan></text>
+</g>
+<g id="State=Loading">
+<rect x="48.5" y="587.5" width="639" height="207" rx="7.5" fill="white"/>
+<rect x="48.5" y="587.5" width="639" height="207" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / LOADING" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="624.5">LOADING</tspan></text>
+<g id="Field / Resident name_5">
+<text id="Text / RESIDENT NAME_5" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="661.5">RESIDENT NAME</tspan></text>
+<g id="Input_5">
+<rect x="73.5" y="678.5" width="591" height="50" rx="5.5" fill="white"/>
+<rect x="73.5" y="678.5" width="591" height="50" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Anitha Nair_4" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="86" y="706.591">Anitha Nair</tspan></text>
+</g>
+</g>
+<g id="Progress status">
+<path id="Ellipse" d="M93.5 756C93.5 757.793 92.9925 759.55 92.0363 761.066C91.08 762.583 89.714 763.798 88.0962 764.572C86.4783 765.345 84.6747 765.644 82.8938 765.435C81.1129 765.227 79.4275 764.518 78.0324 763.392C76.6372 762.265 75.5893 760.767 75.0098 759.07C74.4303 757.373 74.3429 755.547 74.7576 753.803C75.1723 752.058 76.0723 750.467 77.3535 749.212C78.6346 747.958 80.2446 747.091 81.9974 746.713" stroke-width="3" stroke="#087F73"/>
+<text id="Text / Loading saved value&#226;&#128;&#166;" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" font-weight="600" letter-spacing="0em"><tspan x="107" y="760.591">Loading saved value&#x2026;</tspan></text>
+</g>
+</g>
+<g id="State=Long value">
+<rect x="720.5" y="587.5" width="639" height="166" rx="7.5" fill="white"/>
+<rect x="720.5" y="587.5" width="639" height="166" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / LONG VALUE" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="624.5">LONG VALUE</tspan></text>
+<g id="Field / Resident name_6">
+<text id="Text / RESIDENT NAME_6" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="661.5">RESIDENT NAME</tspan></text>
+<g id="Input_6">
+<rect x="745.5" y="678.5" width="591" height="50" rx="5.5" fill="white"/>
+<rect x="745.5" y="678.5" width="591" height="50" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Anitha Nair &#194;&#183; Sunrise Apartments &#194;&#183; Sector " fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="758" y="706.591">Anitha Nair &#xb7; Sunrise Apartments &#xb7; Sector A &#xb7; Panampilly Nagar</tspan></text>
+</g>
+</g>
+</g>
+<g id="State=Required">
+<rect x="48.5" y="819.5" width="639" height="198" rx="7.5" fill="white"/>
+<rect x="48.5" y="819.5" width="639" height="198" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / REQUIRED" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="856.5">REQUIRED</tspan></text>
+<g id="Field / Resident name_7">
+<text id="Text / RESIDENT NAME_7" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="893.5">RESIDENT NAME</tspan></text>
+<g id="Input_7">
+<rect x="74" y="911" width="590" height="51" rx="5" fill="white"/>
+<rect x="74" y="911" width="590" height="51" rx="5" stroke="#AD2B30" stroke-width="2"/>
+<text id="Text / Enter resident name_2" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="87" y="939.591">Enter resident name</tspan></text>
+</g>
+<text id="Text / This field is required." fill="#AD2B30" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="73" y="984.364">This field is required.</tspan></text>
+</g>
+</g>
+</g>
+</g>
+</svg>

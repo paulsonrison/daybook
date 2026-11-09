@@ -1,0 +1,61 @@
+<svg width="1440" height="801" viewBox="0 0 1440 801" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Component coverage / IconButton">
+<rect width="1440" height="801" fill="#F5F6F3"/>
+<text id="Text / IconButton" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="28" font-weight="600" letter-spacing="0em"><tspan x="32" y="63.1818">IconButton</tspan></text>
+<text id="Text / 5 applicable states &#194;&#183; editable native comp" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="32" y="117.591">5 applicable states &#xb7; editable native component variants. Loading, empty and failure behavior is visible in the control itself.</tspan></text>
+<g id="Daybook/Edge/IconButton">
+<g id="State=Default">
+<rect x="48.5" y="167.5" width="639" height="170" rx="7.5" fill="white"/>
+<rect x="48.5" y="167.5" width="639" height="170" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / DEFAULT" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="204.5">DEFAULT</tspan></text>
+<g id="Action / Print">
+<rect x="73.5" y="229.5" width="103" height="45" rx="5.5" fill="white"/>
+<rect x="73.5" y="229.5" width="103" height="45" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Print" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="90" y="254.727">Print</tspan></text>
+</g>
+<text id="Text / Accessible name: Print saved bill" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="73" y="304.364">Accessible name: Print saved bill</tspan></text>
+</g>
+<g id="State=Keyboard focus">
+<rect x="720.5" y="167.5" width="639" height="170" rx="7.5" fill="white"/>
+<rect x="720.5" y="167.5" width="639" height="170" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / KEYBOARD FOCUS" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="204.5">KEYBOARD FOCUS</tspan></text>
+<g id="Action / Print_2">
+<rect x="745.5" y="229.5" width="103" height="45" rx="5.5" fill="white"/>
+<rect x="745.5" y="229.5" width="103" height="45" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Print_2" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="762" y="254.727">Print</tspan></text>
+</g>
+<text id="Text / Accessible name: Print saved bill_2" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="745" y="304.364">Accessible name: Print saved bill</tspan></text>
+</g>
+<g id="State=Disabled">
+<rect x="48.5" y="362.5" width="639" height="168" rx="7.5" fill="white"/>
+<rect x="48.5" y="362.5" width="639" height="168" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / DISABLED" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="399.5">DISABLED</tspan></text>
+<g id="Action / Print_3">
+<rect x="73" y="424" width="102" height="44" rx="6" fill="#D9E3DE"/>
+<text id="Text / Print_3" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="89" y="448.727">Print</tspan></text>
+</g>
+<text id="Text / Accessible name: Print saved bill_3" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="73" y="497.364">Accessible name: Print saved bill</tspan></text>
+</g>
+<g id="State=Loading">
+<rect x="720.5" y="362.5" width="639" height="111" rx="7.5" fill="white"/>
+<rect x="720.5" y="362.5" width="639" height="111" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / LOADING" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="399.5">LOADING</tspan></text>
+<g id="Progress status">
+<path id="Ellipse" d="M765.5 435C765.5 436.793 764.993 438.55 764.036 440.066C763.08 441.583 761.714 442.798 760.096 443.572C758.478 444.345 756.675 444.644 754.894 444.435C753.113 444.227 751.428 443.518 750.032 442.392C748.637 441.265 747.589 439.767 747.01 438.07C746.43 436.373 746.343 434.547 746.758 432.803C747.172 431.058 748.072 429.467 749.353 428.212C750.635 426.958 752.245 426.091 753.997 425.713" stroke-width="3" stroke="#087F73"/>
+<text id="Text / Loading action&#226;&#128;&#166;" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" font-weight="600" letter-spacing="0em"><tspan x="779" y="439.591">Loading action&#x2026;</tspan></text>
+</g>
+</g>
+<g id="State=Missing icon">
+<rect x="48.5" y="555.5" width="639" height="189" rx="7.5" fill="white"/>
+<rect x="48.5" y="555.5" width="639" height="189" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / MISSING ICON" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="592.5">MISSING ICON</tspan></text>
+<g id="Action / Print (fallback)">
+<rect x="73.5" y="617.5" width="169" height="64" rx="5.5" fill="white"/>
+<rect x="73.5" y="617.5" width="169" height="64" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Print (fallback)" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="90" y="642.727">Print (fallback)</tspan></text>
+</g>
+<text id="Text / Accessible name: Print saved bill_4" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="73" y="711.364">Accessible name: Print saved bill</tspan></text>
+</g>
+</g>
+</g>
+</svg>

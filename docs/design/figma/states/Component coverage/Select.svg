@@ -1,0 +1,117 @@
+<svg width="1440" height="1291" viewBox="0 0 1440 1291" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Component coverage / Select">
+<rect width="1440" height="1291" fill="#F5F6F3"/>
+<text id="Text / Select" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="28" font-weight="600" letter-spacing="0em"><tspan x="32" y="63.1818">Select</tspan></text>
+<text id="Text / 7 applicable states &#194;&#183; editable native comp" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="32" y="117.591">7 applicable states &#xb7; editable native component variants. Loading, empty and failure behavior is visible in the control itself.</tspan></text>
+<g id="Daybook/Edge/Select">
+<g id="State=Empty">
+<rect x="48.5" y="167.5" width="639" height="248" rx="7.5" fill="white"/>
+<rect x="48.5" y="167.5" width="639" height="248" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / EMPTY" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="204.5">EMPTY</tspan></text>
+<g id="Field / Route">
+<text id="Text / ROUTE" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="241.5">ROUTE</tspan></text>
+<g id="Input">
+<rect x="73.5" y="258.5" width="591" height="50" rx="5.5" fill="white"/>
+<rect x="73.5" y="258.5" width="591" height="50" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Enter route" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="86" y="286.591">Enter route</tspan></text>
+</g>
+</g>
+<text id="Text / R01 &#194;&#183; Panampilly Nagar" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="73" y="340.591">R01 &#xb7; Panampilly Nagar</tspan></text>
+<text id="Text / R02 &#194;&#183; Kadavanthra" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="73" y="381.591">R02 &#xb7; Kadavanthra</tspan></text>
+</g>
+<g id="State=Loading options">
+<rect x="720.5" y="167.5" width="639" height="207" rx="7.5" fill="white"/>
+<rect x="720.5" y="167.5" width="639" height="207" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / LOADING OPTIONS" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="204.5">LOADING OPTIONS</tspan></text>
+<g id="Field / Route_2">
+<text id="Text / ROUTE_2" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="241.5">ROUTE</tspan></text>
+<g id="Input_2">
+<rect x="745.5" y="258.5" width="591" height="50" rx="5.5" fill="white"/>
+<rect x="745.5" y="258.5" width="591" height="50" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / R01 &#194;&#183; Panampilly Nagar_2" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="758" y="286.591">R01 &#xb7; Panampilly Nagar</tspan></text>
+</g>
+</g>
+<g id="Progress status">
+<path id="Ellipse" d="M765.5 336C765.5 337.793 764.993 339.55 764.036 341.066C763.08 342.583 761.714 343.798 760.096 344.572C758.478 345.345 756.675 345.644 754.894 345.435C753.113 345.227 751.428 344.518 750.032 343.392C748.637 342.265 747.589 340.767 747.01 339.07C746.43 337.373 746.343 335.547 746.758 333.803C747.172 332.058 748.072 330.467 749.353 329.212C750.635 327.958 752.245 327.091 753.997 326.713" stroke-width="3" stroke="#087F73"/>
+<text id="Text / Loading options&#226;&#128;&#166;" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" font-weight="600" letter-spacing="0em"><tspan x="779" y="340.591">Loading options&#x2026;</tspan></text>
+</g>
+</g>
+<g id="State=No options">
+<rect x="48.5" y="440.5" width="639" height="207" rx="7.5" fill="white"/>
+<rect x="48.5" y="440.5" width="639" height="207" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / NO OPTIONS" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="477.5">NO OPTIONS</tspan></text>
+<g id="Field / Route_3">
+<text id="Text / ROUTE_3" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="514.5">ROUTE</tspan></text>
+<g id="Input_3">
+<rect x="73.5" y="531.5" width="591" height="50" rx="5.5" fill="white"/>
+<rect x="73.5" y="531.5" width="591" height="50" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / R01 &#194;&#183; Panampilly Nagar_3" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="86" y="559.591">R01 &#xb7; Panampilly Nagar</tspan></text>
+</g>
+</g>
+<text id="Text / No routes available. Create a route first." fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="73" y="613.591">No routes available. Create a route first.</tspan></text>
+</g>
+<g id="State=No matches">
+<rect x="720.5" y="440.5" width="639" height="207" rx="7.5" fill="white"/>
+<rect x="720.5" y="440.5" width="639" height="207" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / NO MATCHES" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="477.5">NO MATCHES</tspan></text>
+<g id="Field / Route_4">
+<text id="Text / ROUTE_4" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="514.5">ROUTE</tspan></text>
+<g id="Input_4">
+<rect x="745.5" y="531.5" width="591" height="50" rx="5.5" fill="white"/>
+<rect x="745.5" y="531.5" width="591" height="50" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / R01 &#194;&#183; Panampilly Nagar_4" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="758" y="559.591">R01 &#xb7; Panampilly Nagar</tspan></text>
+</g>
+</g>
+<text id="Text / No matches. Change your search or clear fi" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="745" y="613.591">No matches. Change your search or clear filters.</tspan></text>
+</g>
+<g id="State=Options failed">
+<rect x="48.5" y="672.5" width="639" height="268" rx="7.5" fill="white"/>
+<rect x="48.5" y="672.5" width="639" height="268" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / OPTIONS FAILED" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="709.5">OPTIONS FAILED</tspan></text>
+<g id="Field / Route_5">
+<text id="Text / ROUTE_5" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="746.5">ROUTE</tspan></text>
+<g id="Input_5">
+<rect x="73.5" y="763.5" width="591" height="50" rx="5.5" fill="white"/>
+<rect x="73.5" y="763.5" width="591" height="50" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / R01 &#194;&#183; Panampilly Nagar_5" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="86" y="791.591">R01 &#xb7; Panampilly Nagar</tspan></text>
+</g>
+</g>
+<text id="Text / Couldn&#226;&#128;&#153;t load results. Your query is prese" fill="#AD2B30" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="73" y="844.727">Couldn&#x2019;t load results. Your query is preserved.</tspan></text>
+<g id="Action / Retry">
+<rect x="73.5" y="870.5" width="103" height="45" rx="5.5" fill="white"/>
+<rect x="73.5" y="870.5" width="103" height="45" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Retry" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="90" y="895.727">Retry</tspan></text>
+</g>
+</g>
+<g id="State=Disabled">
+<rect x="720.5" y="672.5" width="639" height="204" rx="7.5" fill="white"/>
+<rect x="720.5" y="672.5" width="639" height="204" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / DISABLED" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="709.5">DISABLED</tspan></text>
+<g id="Field / Route_6">
+<text id="Text / ROUTE_6" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="745" y="746.5">ROUTE</tspan></text>
+<g id="Input_6">
+<rect x="745.5" y="763.5" width="591" height="50" rx="5.5" fill="white"/>
+<rect x="745.5" y="763.5" width="591" height="50" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / R01 &#194;&#183; Panampilly Nagar_6" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="758" y="791.591">R01 &#xb7; Panampilly Nagar</tspan></text>
+</g>
+</g>
+<text id="Text / Select unavailable while parent data loads" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="745" y="843.364">Select unavailable while parent data loads.</tspan></text>
+</g>
+<g id="State=Long label">
+<rect x="48.5" y="965.5" width="639" height="269" rx="7.5" fill="white"/>
+<rect x="48.5" y="965.5" width="639" height="269" rx="7.5" stroke="#D9E3DE"/>
+<text id="Text / LONG LABEL" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="1002.5">LONG LABEL</tspan></text>
+<g id="Field / Route_7">
+<text id="Text / ROUTE_7" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="73" y="1039.5">ROUTE</tspan></text>
+<g id="Input_7">
+<rect x="73.5" y="1056.5" width="591" height="71" rx="5.5" fill="white"/>
+<rect x="73.5" y="1056.5" width="591" height="71" rx="5.5" stroke="#D9E3DE"/>
+<text id="Text / Panampilly Nagar &#194;&#183; Sunrise Apartments &#194;&#183; Se" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="86" y="1084.59">Panampilly Nagar &#xb7; Sunrise Apartments &#xb7; Sector A &#x2014; delivery group 12</tspan></text>
+</g>
+</g>
+<text id="Text / R01 &#194;&#183; Panampilly Nagar_7" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="73" y="1159.59">R01 &#xb7; Panampilly Nagar</tspan></text>
+<text id="Text / R02 &#194;&#183; Kadavanthra_2" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="73" y="1200.59">R02 &#xb7; Kadavanthra</tspan></text>
+</g>
+</g>
+</g>
+</svg>

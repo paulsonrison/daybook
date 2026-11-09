@@ -1,4 +1,5 @@
 import { ServiceStatus } from '@/features/service-status/service-status';
+import Link from 'next/link';
 export default function Home() {
   return (
     <main className="mx-auto max-w-3xl space-y-8 px-6 py-20">
@@ -13,6 +14,9 @@ export default function Home() {
         </p>
       </header>
       <ServiceStatus />
+      <Link href="/ui" className="db-button db-button--secondary">
+        Explore the shared UI library
+      </Link>
       <p className="text-sm text-slate-600">
         This is the initialization screen. Product screens and workflows will
         follow the documented user stories and Figma designs.

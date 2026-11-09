@@ -1,0 +1,814 @@
+<svg width="1440" height="1175" viewBox="0 0 1440 1175" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Residents and subscriptions" clip-path="url(#clip0_4_27801)">
+<rect width="1440" height="1175" fill="#F5F6F3"/>
+<g id="Agency navigation">
+<mask id="path-1-inside-1_4_27801" fill="white">
+<path d="M0 0H224V1175H0V0Z"/>
+</mask>
+<path d="M0 0H224V1175H0V0Z" fill="#FDFEFC"/>
+<path d="M224 0H223V1175H224H225V0H224Z" fill="#D3DEDA" mask="url(#path-1-inside-1_4_27801)"/>
+<g id="Brand">
+<g id="Brand mark">
+<rect x="24" y="28.5" width="33" height="36" rx="4" fill="#087F73"/>
+<g id="newspaper">
+<path id="Vector" d="M43.2506 52.0004H38.6669M46.0008 48.3335H38.6669M33.1665 55.6674H47.8343C48.3206 55.6674 48.787 55.4742 49.1308 55.1304C49.4746 54.7865 49.6678 54.3202 49.6678 53.8339V39.1661C49.6678 38.6798 49.4746 38.2135 49.1308 37.8696C48.787 37.5258 48.3206 37.3326 47.8343 37.3326H36.8334C36.3472 37.3326 35.8808 37.5258 35.537 37.8696C35.1931 38.2135 35 38.6798 35 39.1661V43.7498M33.1665 55.6674C33.6528 55.6674 34.1191 55.4742 34.463 55.1304C34.8068 54.7865 35 54.3202 35 53.8339V43.7498M33.1665 55.6674C32.6802 55.6674 32.2139 55.4742 31.87 55.1304C31.5262 54.7865 31.333 54.3202 31.333 53.8339V45.5833C31.333 45.097 31.5262 44.6306 31.87 44.2868C32.2139 43.943 32.6802 43.7498 33.1665 43.7498H35M39.5837 40.9996H45.0841C45.5904 40.9996 46.0008 41.41 46.0008 41.9163V43.7498C46.0008 44.2561 45.5904 44.6665 45.0841 44.6665H39.5837C39.0774 44.6665 38.6669 44.2561 38.6669 43.7498V41.9163C38.6669 41.41 39.0774 40.9996 39.5837 40.9996Z" stroke-width="1.7" stroke-linecap="round" stroke="white"/>
+</g>
+</g>
+<g id="Brand identity" clip-path="url(#clip1_4_27801)">
+<text id="Agency brand" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="23" letter-spacing="-0.8px"><tspan x="67" y="47.3636">daybook</tspan></text>
+<text id="Label" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="67" y="64.1364">THE AGENCY WORKSPACE</tspan></text>
+</g>
+</g>
+<g id="Navigation groups" clip-path="url(#clip2_4_27801)">
+<g id="Navigation group" clip-path="url(#clip3_4_27801)">
+<text id="Group label" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="600" letter-spacing="1.2px"><tspan x="16" y="104.636">WORKSPACE</tspan></text>
+<g id="Navigation item">
+<g id="layout-dashboard">
+<path id="Vector_2" d="M28.8333 127.125H32.375C32.7662 127.125 33.0833 127.442 33.0833 127.833V132.792C33.0833 133.183 32.7662 133.5 32.375 133.5H28.8333C28.4421 133.5 28.125 133.183 28.125 132.792V127.833C28.125 127.442 28.4421 127.125 28.8333 127.125ZM36.625 127.125H40.1667C40.5579 127.125 40.875 127.442 40.875 127.833V129.958C40.875 130.35 40.5579 130.667 40.1667 130.667H36.625C36.2338 130.667 35.9167 130.35 35.9167 129.958V127.833C35.9167 127.442 36.2338 127.125 36.625 127.125ZM36.625 133.5H40.1667C40.5579 133.5 40.875 133.817 40.875 134.208V139.167C40.875 139.558 40.5579 139.875 40.1667 139.875H36.625C36.2338 139.875 35.9167 139.558 35.9167 139.167V134.208C35.9167 133.817 36.2338 133.5 36.625 133.5ZM28.8333 136.333H32.375C32.7662 136.333 33.0833 136.65 33.0833 137.042V139.167C33.0833 139.558 32.7662 139.875 32.375 139.875H28.8333C28.4421 139.875 28.125 139.558 28.125 139.167V137.042C28.125 136.65 28.4421 136.333 28.8333 136.333Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_2" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="137.864">Overview</tspan></text>
+</g>
+<g id="Navigation item_2">
+<rect x="16" y="160" width="192" height="39" rx="6" fill="#E2F2ED"/>
+<g id="users">
+<path id="Vector_3" d="M37.3335 185.875V184.458C37.3335 183.707 37.0349 182.986 36.5035 182.455C35.9721 181.924 35.2514 181.625 34.4999 181.625H30.2496C29.4981 181.625 28.7773 181.924 28.2459 182.455C27.7146 182.986 27.416 183.707 27.416 184.458V185.875M37.3335 173.216C37.9411 173.373 38.4792 173.728 38.8634 174.224C39.2475 174.721 39.456 175.331 39.456 175.958C39.456 176.586 39.2475 177.196 38.8634 177.692C38.4792 178.189 37.9411 178.543 37.3335 178.701M41.5838 185.875V184.458C41.5833 183.83 41.3744 183.221 40.9897 182.724C40.6051 182.228 40.0665 181.874 39.4586 181.717M35.2083 175.958C35.2083 177.523 33.9397 178.792 32.3747 178.792C30.8098 178.792 29.5412 177.523 29.5412 175.958C29.5412 174.394 30.8098 173.125 32.3747 173.125C33.9397 173.125 35.2083 174.394 35.2083 175.958Z" stroke-width="1.7" stroke-linecap="round" stroke="#087F73"/>
+</g>
+<text id="Label_3" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" font-weight="600" letter-spacing="0em"><tspan x="53" y="183.864">Residents &#38; subscriptions</tspan></text>
+</g>
+<g id="Navigation item_3">
+<g id="route">
+<path id="Vector_4" d="M32.375 230.459C32.375 231.632 31.4236 232.584 30.25 232.584C29.0764 232.584 28.125 231.632 28.125 230.459C28.125 229.285 29.0764 228.334 30.25 228.334C31.4236 228.334 32.375 229.285 32.375 230.459ZM32.375 230.459H38.3958C39.0533 230.459 39.6839 230.198 40.1489 229.733C40.6138 229.268 40.875 228.637 40.875 227.979C40.875 227.322 40.6138 226.691 40.1489 226.226C39.6839 225.761 39.0533 225.5 38.3958 225.5H30.6042C29.9467 225.5 29.3161 225.239 28.8511 224.774C28.3862 224.309 28.125 223.678 28.125 223.021C28.125 222.363 28.3862 221.732 28.8511 221.267C29.3161 220.802 29.9467 220.541 30.6042 220.541H36.625M36.625 220.541C36.625 221.715 37.5764 222.666 38.75 222.666C39.9236 222.666 40.875 221.715 40.875 220.541C40.875 219.368 39.9236 218.416 38.75 218.416C37.5764 218.416 36.625 219.368 36.625 220.541Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_4" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="229.864">Routes &#38; delivery</tspan></text>
+</g>
+<g id="Navigation item_4">
+<g id="newspaper_2" clip-path="url(#clip4_4_27801)">
+<path id="Vector_5" d="M36.6251 275.75H33.0831M38.7503 272.917H33.0831M28.8328 278.584H40.167C40.5428 278.584 40.9032 278.435 41.1688 278.169C41.4345 277.903 41.5838 277.543 41.5838 277.167V265.833C41.5838 265.457 41.4345 265.097 41.1688 264.831C40.9032 264.565 40.5428 264.416 40.167 264.416H31.6664C31.2906 264.416 30.9302 264.565 30.6645 264.831C30.3988 265.097 30.2496 265.457 30.2496 265.833V269.375M28.8328 278.584C29.2085 278.584 29.5689 278.435 29.8346 278.169C30.1003 277.903 30.2496 277.543 30.2496 277.167V269.375M28.8328 278.584C28.457 278.584 28.0967 278.435 27.831 278.169C27.5653 277.903 27.416 277.543 27.416 277.167V270.792C27.416 270.416 27.5653 270.056 27.831 269.79C28.0967 269.524 28.457 269.375 28.8328 269.375H30.2496M33.7915 267.25H38.0419C38.4331 267.25 38.7503 267.567 38.7503 267.958V269.375C38.7503 269.766 38.4331 270.083 38.0419 270.083H33.7915C33.4003 270.083 33.0831 269.766 33.0831 269.375V267.958C33.0831 267.567 33.4003 267.25 33.7915 267.25Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_5" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="275.864">Publications &#38; pricing</tspan></text>
+</g>
+</g>
+<g id="Navigation group_2" clip-path="url(#clip5_4_27801)">
+<text id="Group label_2" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="600" letter-spacing="1.2px"><tspan x="16" y="323.636">FINANCE</tspan></text>
+<g id="Navigation item_5">
+<g id="receipt-text">
+<path id="Vector_6" d="M35.2083 355.333H31.667M35.9166 349.666H31.667M37.3331 352.499H31.667M28.834 346.124C28.834 345.936 28.9086 345.756 29.0414 345.623C29.1743 345.491 29.3544 345.416 29.5422 345.416C29.7176 345.415 29.8896 345.464 30.038 345.558L30.6988 345.983C30.8469 346.077 31.0189 346.127 31.1946 346.127C31.3703 346.127 31.5424 346.077 31.6904 345.983L32.3519 345.558C32.5 345.463 32.672 345.413 32.8477 345.413C33.0234 345.413 33.1954 345.463 33.3435 345.558L34.0043 345.983C34.1524 346.077 34.3244 346.127 34.5001 346.127C34.6758 346.127 34.8478 346.077 34.9959 345.983L35.6567 345.558C35.8047 345.463 35.9768 345.413 36.1525 345.413C36.3282 345.413 36.5002 345.463 36.6482 345.558L37.3098 345.983C37.4578 346.077 37.6298 346.127 37.8055 346.127C37.9812 346.127 38.1533 346.077 38.3013 345.983L38.9621 345.558C39.1105 345.464 39.2825 345.415 39.4579 345.416C39.6458 345.416 39.8259 345.491 39.9587 345.623C40.0916 345.756 40.1662 345.936 40.1662 346.124V358.874C40.1662 359.062 40.0916 359.242 39.9587 359.375C39.8259 359.508 39.6458 359.582 39.4579 359.582C39.2825 359.583 39.1105 359.534 38.9621 359.441L38.3013 359.016C38.1533 358.921 37.9812 358.871 37.8055 358.871C37.6298 358.871 37.4578 358.921 37.3098 359.016L36.6482 359.441C36.5002 359.535 36.3282 359.586 36.1525 359.586C35.9768 359.586 35.8047 359.535 35.6567 359.441L34.9959 359.016C34.8478 358.921 34.6758 358.871 34.5001 358.871C34.3244 358.871 34.1524 358.921 34.0043 359.016L33.3435 359.441C33.1954 359.535 33.0234 359.586 32.8477 359.586C32.672 359.586 32.5 359.535 32.3519 359.441L31.6904 359.016C31.5424 358.921 31.3703 358.871 31.1946 358.871C31.0189 358.871 30.8469 358.921 30.6988 359.016L30.038 359.441C29.8896 359.534 29.7176 359.583 29.5422 359.582C29.3544 359.582 29.1743 359.508 29.0414 359.375C28.9086 359.242 28.834 359.062 28.834 358.874V346.124Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_6" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="356.864">Billing / Collection</tspan></text>
+</g>
+<g id="Navigation item_6">
+<g id="wallet">
+<path id="Vector_7" d="M39.4583 394.958V392.833C39.4583 392.645 39.3837 392.465 39.2509 392.332C39.118 392.2 38.9379 392.125 38.75 392.125H29.5417C29.1659 392.125 28.8056 392.274 28.5399 392.54C28.2743 392.806 28.125 393.166 28.125 393.542M39.4583 394.958H29.5417C29.1659 394.958 28.8056 394.809 28.5399 394.543C28.2743 394.278 28.125 393.917 28.125 393.542M39.4583 394.958H40.1667C40.3545 394.958 40.5347 395.033 40.6675 395.166C40.8004 395.299 40.875 395.479 40.875 395.667V398.5M28.125 393.542V403.458C28.125 403.834 28.2743 404.194 28.5399 404.46C28.8056 404.726 29.1659 404.875 29.5417 404.875H40.1667C40.3545 404.875 40.5347 404.8 40.6675 404.668C40.8004 404.535 40.875 404.355 40.875 404.167V401.333M40.875 398.5H38.75C38.3743 398.5 38.0139 398.649 37.7483 398.915C37.4826 399.181 37.3333 399.541 37.3333 399.917C37.3333 400.292 37.4826 400.653 37.7483 400.918C38.0139 401.184 38.3743 401.333 38.75 401.333H40.875M40.875 398.5C41.0629 398.5 41.243 398.575 41.3759 398.707C41.5087 398.84 41.5833 399.02 41.5833 399.208V400.625C41.5833 400.813 41.5087 400.993 41.3759 401.126C41.243 401.259 41.0629 401.333 40.875 401.333" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_7" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="402.864">Payments &#38; ledger</tspan></text>
+</g>
+<g id="Navigation item_7">
+<g id="landmark">
+<path id="Vector_8" d="M33.0833 448.75V443.792M35.9165 448.75V443.792M38.7498 448.75V443.792M28.1251 451.584H40.8747M30.2501 448.75V443.792M33.8767 437.557C34.071 437.462 34.2844 437.414 34.5005 437.414C34.7166 437.415 34.9296 437.465 35.1233 437.561L40.6949 440.286C41.032 440.451 40.9145 440.958 40.5391 440.958H28.4609C28.0855 440.958 27.9687 440.451 28.3051 440.286L33.8767 437.557Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_8" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="448.864">Cash closing</tspan></text>
+</g>
+<g id="Navigation item_8">
+<g id="chart-no-axes-combined">
+<path id="Vector_9" d="M34.4999 493.333V496.875M37.3335 491.917V496.875M40.167 489.083V496.875M41.5838 484.125L35.4591 490.249C35.4262 490.282 35.3871 490.308 35.3441 490.326C35.301 490.344 35.2549 490.353 35.2083 490.353C35.1617 490.353 35.1156 490.344 35.0726 490.326C35.0295 490.308 34.9904 490.282 34.9575 490.249L32.6255 487.917C32.5591 487.851 32.469 487.814 32.3751 487.814C32.2812 487.814 32.1911 487.851 32.1247 487.917L27.416 492.625M28.8328 494.75V496.875M31.6664 491.917V496.875" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_9" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="494.864">Reports &#38; analytics</tspan></text>
+</g>
+</g>
+<g id="Navigation group_3" clip-path="url(#clip6_4_27801)">
+<text id="Group label_3" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="600" letter-spacing="1.2px"><tspan x="16" y="542.636">OPERATIONS</tspan></text>
+<g id="Navigation item_9">
+<g id="contact-round">
+<path id="Vector_10" d="M37.3333 564.416V565.833M37.3333 565.833H31.6667M37.3333 565.833H39.4583C40.2407 565.833 40.875 566.467 40.875 567.25V577.167C40.875 577.95 40.2407 578.584 39.4583 578.584H38.6898M38.6898 578.584C38.6898 577.457 38.2421 576.376 37.445 575.578C36.648 574.781 35.567 574.334 34.4398 574.334C33.3126 574.334 32.2316 574.781 31.4346 575.578C30.6376 576.376 30.1898 577.457 30.1898 578.584M38.6898 578.584H30.1898M30.1898 578.584H29.5417C28.7593 578.584 28.125 577.95 28.125 577.167V567.25C28.125 566.467 28.7593 565.833 29.5417 565.833H31.6667M31.6667 564.416V565.833M37.3333 571.5C37.3333 573.065 36.0648 574.334 34.5 574.334C32.9352 574.334 31.6667 573.065 31.6667 571.5C31.6667 569.935 32.9352 568.666 34.5 568.666C36.0648 568.666 37.3333 569.935 37.3333 571.5Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_10" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="575.864">Staff &#38; payroll</tspan></text>
+</g>
+<g id="Navigation item_10">
+<g id="package">
+<path id="Vector_11" d="M34.5 624.584V624.582M34.5 624.582V617.5M34.5 624.582C34.2513 624.582 34.007 624.517 33.7917 624.393L28.8333 621.559C28.6182 621.435 28.4395 621.256 28.3152 621.041C28.1908 620.826 28.1253 620.582 28.125 620.334V614.667C28.1253 614.418 28.1908 614.174 28.3152 613.959C28.4395 613.744 28.6182 613.565 28.8333 613.441L31.3127 612.024M34.5 624.582C34.7487 624.582 34.993 624.517 35.2083 624.393L40.1667 621.559C40.3818 621.435 40.5605 621.256 40.6848 621.041C40.8092 620.826 40.8747 620.582 40.875 620.334V614.667C40.8747 614.418 40.8092 614.174 40.6848 613.959C40.5605 613.744 40.3818 613.565 40.1667 613.441L35.2083 610.608C34.993 610.483 34.7487 610.418 34.5 610.418C34.2513 610.418 34.007 610.483 33.7917 610.608L31.3127 612.024M34.5 617.5L28.3304 613.958M34.5 617.5L37.6858 615.671M37.6858 615.671L40.6696 613.958M37.6858 615.671L31.3127 612.024M37.6858 615.671L37.6875 615.672M31.3125 612.024L31.3127 612.024" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_11" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="621.864">Indents &#38; returns</tspan></text>
+</g>
+<g id="Navigation item_11">
+<g id="messages-square" clip-path="url(#clip7_4_27801)">
+<path id="Vector_12" d="M40.167 661.375C40.5428 661.375 40.9032 661.524 41.1688 661.79C41.4345 662.055 41.5838 662.416 41.5838 662.791V670.078C41.5838 670.177 41.5543 670.274 41.499 670.357C41.4438 670.44 41.3652 670.504 41.2733 670.542C41.1814 670.58 41.0803 670.59 40.9828 670.571C40.8852 670.551 40.7956 670.504 40.7252 670.433L39.1654 668.873C38.8997 668.608 38.5394 668.458 38.1637 668.458H33.0831C32.7074 668.458 32.347 668.309 32.0813 668.043C31.8156 667.778 31.6664 667.417 31.6664 667.042V666.333M37.3335 662.083C37.3335 662.459 37.1842 662.819 36.9185 663.085C36.6528 663.35 36.2924 663.5 35.9167 663.5H30.8361C30.4604 663.5 30.1001 663.649 29.8345 663.915L28.2746 665.475C28.2042 665.545 28.1146 665.593 28.0171 665.612C27.9195 665.632 27.8184 665.622 27.7265 665.584C27.6346 665.546 27.5561 665.481 27.5008 665.398C27.4455 665.316 27.416 665.219 27.416 665.119V657.833C27.416 657.457 27.5653 657.097 27.831 656.831C28.0967 656.565 28.457 656.416 28.8328 656.416H35.9167C36.2924 656.416 36.6528 656.565 36.9185 656.831C37.1842 657.097 37.3335 657.457 37.3335 657.833V662.083Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_12" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="667.864">Communications</tspan></text>
+</g>
+</g>
+</g>
+<g id="Workspace tools" clip-path="url(#clip8_4_27801)">
+<g id="Settings navigation">
+<g id="settings-2">
+<path id="Vector_13" d="M35.9166 733.541H29.5422M35.9166 733.541C35.9166 734.715 36.8679 735.666 38.0414 735.666C39.2149 735.666 40.1662 734.715 40.1662 733.541C40.1662 732.368 39.2149 731.417 38.0414 731.417C36.8679 731.417 35.9166 732.368 35.9166 733.541ZM39.4579 726.459H33.0836M33.0836 726.459C33.0836 727.632 32.1323 728.583 30.9588 728.583C29.7853 728.583 28.834 727.632 28.834 726.459C28.834 725.285 29.7853 724.334 30.9588 724.334C32.1323 724.334 33.0836 725.285 33.0836 726.459Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_13" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="734.364">Settings</tspan></text>
+</g>
+<g id="Support navigation">
+<g id="circle-help" clip-path="url(#clip9_4_27801)">
+<path id="Vector_14" d="M32.4384 774.375C32.6049 773.901 32.9337 773.502 33.3663 773.248C33.799 772.993 34.3078 772.9 34.8024 772.985C35.2971 773.07 35.7457 773.327 36.0689 773.711C36.3922 774.095 36.5691 774.581 36.5683 775.083C36.5683 776.5 34.4431 777.208 34.4431 777.208M34.4999 780.042H34.507M41.5838 776.5C41.5838 780.412 38.4122 783.584 34.4999 783.584C30.5876 783.584 27.416 780.412 27.416 776.5C27.416 772.588 30.5876 769.416 34.4999 769.416C38.4122 769.416 41.5838 772.588 41.5838 776.5Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_14" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="53" y="780.864">Help &#38; assistant</tspan></text>
+</g>
+</g>
+<g id="Agent workspace">
+<mask id="path-48-inside-2_4_27801" fill="white">
+<path d="M16 822H208V897H16V822Z"/>
+</mask>
+<path d="M16 822V823H208V822V821H16V822Z" fill="#D3DEDA" mask="url(#path-48-inside-2_4_27801)"/>
+<g id="Agency identity" clip-path="url(#clip10_4_27801)">
+<g id="Agent avatar">
+<rect x="24" y="841" width="30" height="30" rx="15" fill="#EEF3F0"/>
+<text id="Label_15" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="31.5" y="860">RK</tspan></text>
+</g>
+<g id="Agent details" clip-path="url(#clip11_4_27801)">
+<text id="Label_16" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" font-weight="600" letter-spacing="0em"><tspan x="64" y="852.864">Ravi Kumar</tspan></text>
+<text id="Label_17" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="64" y="868.136">Daybreak Agency &#xb7; Kochi</tspan></text>
+</g>
+</g>
+<text id="Label_18" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="24" y="893.136">DEMO WORKSPACE &#xb7; SAMPLE DATA</tspan></text>
+</g>
+</g>
+<g id="Main workspace" clip-path="url(#clip12_4_27801)">
+<g id="Workspace bar">
+<mask id="path-55-inside-3_4_27801" fill="white">
+<path d="M224 0H1440V74H224V0Z"/>
+</mask>
+<path d="M224 0H1440V74H224V0Z" fill="white"/>
+<path d="M1440 74V73H224V74V75H1440V74Z" fill="#D3DEDA" mask="url(#path-55-inside-3_4_27801)"/>
+<g id="Workspace location" clip-path="url(#clip13_4_27801)">
+<text id="Label_19" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="260" y="41.3636">Daybreak Agency</tspan></text>
+<text id="Label_20" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="371" y="41.7273">/</tspan></text>
+<text id="Label_21" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" font-weight="600" letter-spacing="0em"><tspan x="386" y="41.3636">Residents &#38; subscriptions</tspan></text>
+</g>
+<g id="Workspace utilities" clip-path="url(#clip14_4_27801)">
+<g id="Global search" clip-path="url(#clip15_4_27801)">
+<g id="search">
+<path id="Vector_15" d="M1060 43.0001L1057.11 40.1068M1058.67 36.3333C1058.67 39.2789 1056.28 41.6667 1053.33 41.6667C1050.39 41.6667 1048 39.2789 1048 36.3333C1048 33.3878 1050.39 31 1053.33 31C1056.28 31 1058.67 33.3878 1058.67 36.3333Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<text id="Label_22" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="1070" y="41.3636">Search anything</tspan></text>
+<text id="Label_23" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="1170" y="40.6364">&#x2318; K</tspan></text>
+</g>
+<text id="Label_24" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="1210" y="41.3636">EN&#x2304;</tspan></text>
+<g id="bell">
+<path id="Vector_16" d="M1260.7 43.7506C1260.83 43.9786 1261.02 44.168 1261.25 44.2996C1261.48 44.4313 1261.74 44.5006 1262 44.5006C1262.26 44.5006 1262.52 44.4313 1262.75 44.2996C1262.98 44.168 1263.17 43.9786 1263.3 43.7506M1255.45 39.4947C1255.35 39.6021 1255.28 39.7357 1255.26 39.8792C1255.24 40.0226 1255.26 40.1698 1255.31 40.3029C1255.37 40.4359 1255.47 40.549 1255.59 40.6284C1255.71 40.7079 1255.85 40.7502 1256 40.7503H1268C1268.15 40.7504 1268.29 40.7082 1268.41 40.6289C1268.53 40.5496 1268.63 40.4366 1268.69 40.3037C1268.74 40.1708 1268.76 40.0236 1268.74 39.8801C1268.72 39.7366 1268.65 39.603 1268.55 39.4955C1267.56 38.4672 1266.5 37.3743 1266.5 33.9998C1266.5 32.8062 1266.03 31.6615 1265.18 30.8175C1264.34 29.9735 1263.19 29.4994 1262 29.4994C1260.81 29.4994 1259.66 29.9735 1258.82 30.8175C1257.97 31.6615 1257.5 32.8062 1257.5 33.9998C1257.5 37.3743 1256.44 38.4672 1255.45 39.4947Z" stroke-width="1.7" stroke-linecap="round" stroke="#697775"/>
+</g>
+<g id="Connection status" clip-path="url(#clip16_4_27801)">
+<rect id="Online indicator" x="1291" y="34" width="6" height="6" rx="3" fill="#087F73"/>
+<text id="Label_25" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" letter-spacing="0em"><tspan x="1303" y="41">All changes synced</tspan></text>
+</g>
+</g>
+</g>
+<g id="Page content">
+<g id="Page introduction" clip-path="url(#clip17_4_27801)">
+<text id="Eyebrow" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="600" letter-spacing="1.5px"><tspan x="260" y="113.636">PEOPLE &#38; SUBSCRIPTIONS</tspan></text>
+<g id="Title and action" clip-path="url(#clip18_4_27801)">
+<text id="Page title" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="32" letter-spacing="-1px"><tspan x="260" y="156.636">Residents &#38; subscriptions</tspan></text>
+<g id="Resident actions" clip-path="url(#clip19_4_27801)">
+<g id="Action">
+<rect x="1103.5" y="125.5" width="156" height="39" rx="5.5" fill="white"/>
+<rect x="1103.5" y="125.5" width="156" height="39" rx="5.5" stroke="#D3DEDA"/>
+<g id="upload">
+<path id="Vector_17" d="M1125.5 139.375V146.875M1122.38 142.5L1125.5 139.375L1128.62 142.5M1131.12 146.875V149.375C1131.12 149.707 1130.99 150.024 1130.76 150.259C1130.52 150.493 1130.21 150.625 1129.88 150.625H1121.12C1120.79 150.625 1120.48 150.493 1120.24 150.259C1120.01 150.024 1119.88 149.707 1119.88 149.375V146.875" stroke-width="1.7" stroke-linecap="round" stroke="#172D2B"/>
+</g>
+<text id="Label_26" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="1141" y="149.727">Import residents</tspan></text>
+</g>
+<g id="Action_2">
+<rect x="1270" y="125" width="134" height="40" rx="6" fill="#087F73"/>
+<g id="plus">
+<path id="Vector_18" d="M1288.12 145H1292.5M1292.5 145H1296.88M1292.5 145V140.624M1292.5 145V149.375" stroke-width="1.7" stroke-linecap="round" stroke="white"/>
+</g>
+<text id="Label_27" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="1308" y="149.727">Add resident</tspan></text>
+</g>
+</g>
+</g>
+<text id="Label_28" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="260" y="188.227">One resident record. Every paper, delivery preference and account detail in view.</tspan></text>
+</g>
+<g id="Section navigation">
+<mask id="path-76-inside-4_4_27801" fill="white">
+<path d="M260 217H1404V258H260V217Z"/>
+</mask>
+<path d="M1404 258V257H260V258V259H1404V258Z" fill="#D3DEDA" mask="url(#path-76-inside-4_4_27801)"/>
+<g id="Section tab">
+<mask id="path-78-inside-5_4_27801" fill="white">
+<path d="M260 217H377V258H260V217Z"/>
+</mask>
+<path d="M377 258V256H260V258V260H377V258Z" fill="#087F73" mask="url(#path-78-inside-5_4_27801)"/>
+<text id="Label_29" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="260" y="242.227">All residents 1,086</tspan></text>
+</g>
+<g id="Section tab_2">
+<text id="Label_30" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="405" y="242.227">Subscriptions</tspan></text>
+</g>
+<g id="Section tab_3">
+<text id="Label_31" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="517" y="242.227">Schedules &#38; holds</tspan></text>
+</g>
+<g id="Section tab_4">
+<text id="Label_32" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="658" y="242.227">Settlements</tspan></text>
+</g>
+</g>
+<g id="Table tools" clip-path="url(#clip20_4_27801)">
+<g id="Filters" clip-path="url(#clip21_4_27801)">
+<g id="Action_3">
+<rect x="260.5" y="282.5" width="251" height="39" rx="5.5" fill="white"/>
+<rect x="260.5" y="282.5" width="251" height="39" rx="5.5" stroke="#D3DEDA"/>
+<g id="search_2">
+<path id="Vector_19" d="M288.125 307.625L285.413 304.913M286.875 301.375C286.875 304.136 284.636 306.375 281.875 306.375C279.114 306.375 276.875 304.136 276.875 301.375C276.875 298.614 279.114 296.375 281.875 296.375C284.636 296.375 286.875 298.614 286.875 301.375Z" stroke-width="1.7" stroke-linecap="round" stroke="#172D2B"/>
+</g>
+<text id="Label_33" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="298" y="306.727">Search name, phone or address</tspan></text>
+</g>
+<g id="Action_4">
+<rect x="522.5" y="282.5" width="179" height="39" rx="5.5" fill="white"/>
+<rect x="522.5" y="282.5" width="179" height="39" rx="5.5" stroke="#D3DEDA"/>
+<text id="Label_34" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="537" y="306.727">R01 &#xb7; Panampilly Nagar&#x2304;</tspan></text>
+</g>
+<g id="Action_5">
+<rect x="712.5" y="282.5" width="110" height="39" rx="5.5" fill="white"/>
+<rect x="712.5" y="282.5" width="110" height="39" rx="5.5" stroke="#D3DEDA"/>
+<text id="Label_35" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" font-weight="600" letter-spacing="0em"><tspan x="727" y="306.727">All statuses&#x2304;</tspan></text>
+</g>
+</g>
+<g id="View preference" clip-path="url(#clip22_4_27801)">
+<g id="Action_6">
+<rect x="1181.5" y="286.5" width="74" height="31" rx="5.5" fill="white"/>
+<rect x="1181.5" y="286.5" width="74" height="31" rx="5.5" stroke="#D3DEDA"/>
+<g id="table-2">
+<path id="Vector_20" d="M1196.62 296.375H1194.12C1193.79 296.375 1193.48 296.507 1193.24 296.741C1193.01 296.976 1192.88 297.293 1192.88 297.625V300.125M1196.62 296.375H1202.88C1203.21 296.375 1203.52 296.507 1203.76 296.741C1203.99 296.976 1204.12 297.293 1204.12 297.625V300.125M1196.62 296.375V300.125M1192.88 300.125V306.375C1192.88 306.707 1193.01 307.024 1193.24 307.259C1193.48 307.493 1193.79 307.625 1194.12 307.625H1196.62M1192.88 300.125H1196.62M1204.12 300.125H1196.62M1204.12 300.125V306.375C1204.12 306.707 1203.99 307.024 1203.76 307.259C1203.52 307.493 1203.21 307.625 1202.88 307.625H1196.62M1196.62 300.125V307.625" stroke-width="1.7" stroke-linecap="round" stroke="#172D2B"/>
+</g>
+<text id="Label_36" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" font-weight="600" letter-spacing="0em"><tspan x="1214" y="306.364">Table</tspan></text>
+</g>
+<g id="Action_7">
+<rect x="1264.5" y="286.5" width="77" height="31" rx="5.5" fill="white"/>
+<rect x="1264.5" y="286.5" width="77" height="31" rx="5.5" stroke="#D3DEDA"/>
+<g id="layout-grid">
+<path id="Vector_21" d="M1276.5 296.375H1279.62C1279.97 296.375 1280.25 296.655 1280.25 297V300.125C1280.25 300.47 1279.97 300.75 1279.62 300.75H1276.5C1276.15 300.75 1275.88 300.47 1275.88 300.125V297C1275.88 296.655 1276.15 296.375 1276.5 296.375ZM1283.38 296.375H1286.5C1286.85 296.375 1287.12 296.655 1287.12 297V300.125C1287.12 300.47 1286.85 300.75 1286.5 300.75H1283.38C1283.03 300.75 1282.75 300.47 1282.75 300.125V297C1282.75 296.655 1283.03 296.375 1283.38 296.375ZM1283.38 303.25H1286.5C1286.85 303.25 1287.12 303.53 1287.12 303.875V307C1287.12 307.345 1286.85 307.625 1286.5 307.625H1283.38C1283.03 307.625 1282.75 307.345 1282.75 307V303.875C1282.75 303.53 1283.03 303.25 1283.38 303.25ZM1276.5 303.25H1279.62C1279.97 303.25 1280.25 303.53 1280.25 303.875V307C1280.25 307.345 1279.97 307.625 1279.62 307.625H1276.5C1276.15 307.625 1275.88 307.345 1275.88 307V303.875C1275.88 303.53 1276.15 303.25 1276.5 303.25Z" stroke-width="1.7" stroke-linecap="round" stroke="#172D2B"/>
+</g>
+<text id="Label_37" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" font-weight="600" letter-spacing="0em"><tspan x="1297" y="306.364">Cards</tspan></text>
+</g>
+<text id="Label_38" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="1350" y="305.636">View saved</tspan></text>
+</g>
+</g>
+<g id="Resident registry" clip-path="url(#clip23_4_27801)">
+<g id="Data table">
+<g clip-path="url(#clip24_4_27801)">
+<g id="Column headings" clip-path="url(#clip25_4_27801)">
+<rect width="1144" height="42" transform="translate(260 346)" fill="#EEF3F0"/>
+<g id="Column heading">
+<mask id="path-100-inside-6_4_27801" fill="white">
+<path d="M260 346H324V388H260V346Z"/>
+</mask>
+<path d="M324 388V389H325V388H324ZM324 346H323V388H324H325V346H324ZM324 388V387H260V388V389H324V388Z" fill="#D3DEDA" mask="url(#path-100-inside-6_4_27801)"/>
+<text id="Label_39" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="272" y="371">DROP</tspan></text>
+</g>
+<g id="Column heading_2">
+<mask id="path-103-inside-7_4_27801" fill="white">
+<path d="M324 346H534V388H324V346Z"/>
+</mask>
+<path d="M534 388V389H535V388H534ZM534 346H533V388H534H535V346H534ZM534 388V387H324V388V389H534V388Z" fill="#D3DEDA" mask="url(#path-103-inside-7_4_27801)"/>
+<text id="Label_40" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="336" y="371">RESIDENT / CONTACT</tspan></text>
+</g>
+<g id="Column heading_3">
+<mask id="path-106-inside-8_4_27801" fill="white">
+<path d="M534 346H819V388H534V346Z"/>
+</mask>
+<path d="M819 388V389H820V388H819ZM819 346H818V388H819H820V346H819ZM819 388V387H534V388V389H819V388Z" fill="#D3DEDA" mask="url(#path-106-inside-8_4_27801)"/>
+<text id="Label_41" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="546" y="371">ADDRESS / SECTOR</tspan></text>
+</g>
+<g id="Column heading_4">
+<mask id="path-109-inside-9_4_27801" fill="white">
+<path d="M819 346H1084V388H819V346Z"/>
+</mask>
+<path d="M1084 388V389H1085V388H1084ZM1084 346H1083V388H1084H1085V346H1084ZM1084 388V387H819V388V389H1084V388Z" fill="#D3DEDA" mask="url(#path-109-inside-9_4_27801)"/>
+<text id="Label_42" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="831" y="371">PUBLICATIONS / CADENCE</tspan></text>
+</g>
+<g id="Column heading_5">
+<mask id="path-112-inside-10_4_27801" fill="white">
+<path d="M1084 346H1214V388H1084V346Z"/>
+</mask>
+<path d="M1214 388V389H1215V388H1214ZM1214 346H1213V388H1214H1215V346H1214ZM1214 388V387H1084V388V389H1214V388Z" fill="#D3DEDA" mask="url(#path-112-inside-10_4_27801)"/>
+<text id="Label_43" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="1096" y="371">DEPOSIT</tspan></text>
+</g>
+<g id="Column heading_6">
+<mask id="path-115-inside-11_4_27801" fill="white">
+<path d="M1214 346H1404V388H1214V346Z"/>
+</mask>
+<path d="M1404 388V389H1405V388H1404ZM1404 346H1403V388H1404H1405V346H1404ZM1404 388V387H1214V388V389H1404V388Z" fill="#D3DEDA" mask="url(#path-115-inside-11_4_27801)"/>
+<text id="Label_44" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="1226" y="371">STATUS</tspan></text>
+</g>
+</g>
+<g id="Record" clip-path="url(#clip26_4_27801)">
+<rect width="1144" height="69" transform="translate(260 388)" fill="#F0F8F4"/>
+<g id="Data cell">
+<mask id="path-118-inside-12_4_27801" fill="white">
+<path d="M260 388H324V457H260V388Z"/>
+</mask>
+<path d="M324 457V458H325V457H324ZM324 388H323V457H324H325V388H324ZM324 457V456H260V457V458H324V457Z" fill="#D3DEDA" mask="url(#path-118-inside-12_4_27801)"/>
+<text id="Label_45" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="272" y="427.227">001</tspan></text>
+</g>
+<g id="Data cell_2">
+<mask id="path-121-inside-13_4_27801" fill="white">
+<path d="M324 388H534V457H324V388Z"/>
+</mask>
+<path d="M534 457V458H535V457H534ZM534 388H533V457H534H535V388H534ZM534 457V456H324V457V458H534V457Z" fill="#D3DEDA" mask="url(#path-121-inside-13_4_27801)"/>
+<text id="Label_46" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="336" y="417.727">Anitha Nair&#10;</tspan><tspan x="336" y="436.727">98&#x2022;&#x2022;&#x2022; &#x2022;&#x2022;421</tspan></text>
+</g>
+<g id="Data cell_3">
+<mask id="path-124-inside-14_4_27801" fill="white">
+<path d="M534 388H819V457H534V388Z"/>
+</mask>
+<path d="M819 457V458H820V457H819ZM819 388H818V457H819H820V388H819ZM819 457V456H534V457V458H819V457Z" fill="#D3DEDA" mask="url(#path-124-inside-14_4_27801)"/>
+<text id="Label_47" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="546" y="417.727">12, Lotus Lane&#10;</tspan><tspan x="546" y="436.727">Panampilly Nagar</tspan></text>
+</g>
+<g id="Data cell_4">
+<mask id="path-127-inside-15_4_27801" fill="white">
+<path d="M819 388H1084V457H819V388Z"/>
+</mask>
+<path d="M1084 457V458H1085V457H1084ZM1084 388H1083V457H1084H1085V388H1084ZM1084 457V456H819V457V458H1084V457Z" fill="#D3DEDA" mask="url(#path-127-inside-15_4_27801)"/>
+<text id="Label_48" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="831" y="417.727">Manorama + The Hindu&#10;</tspan><tspan x="831" y="436.727">Daily &#xb7; 2 copies</tspan></text>
+</g>
+<g id="Data cell_5">
+<mask id="path-130-inside-16_4_27801" fill="white">
+<path d="M1084 388H1214V457H1084V388Z"/>
+</mask>
+<path d="M1214 457V458H1215V457H1214ZM1214 388H1213V457H1214H1215V388H1214ZM1214 457V456H1084V457V458H1214V457Z" fill="#D3DEDA" mask="url(#path-130-inside-16_4_27801)"/>
+<text id="Label_49" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="1096" y="427.227">&#x20b9;500</tspan></text>
+</g>
+<g id="Data cell_6">
+<mask id="path-133-inside-17_4_27801" fill="white">
+<path d="M1214 388H1404V457H1214V388Z"/>
+</mask>
+<path d="M1404 457V458H1405V457H1404ZM1404 388H1403V457H1404H1405V388H1404ZM1404 457V456H1214V457V458H1404V457Z" fill="#D3DEDA" mask="url(#path-133-inside-17_4_27801)"/>
+<g id="Status">
+<rect x="1226" y="410.5" width="50" height="24" rx="4" fill="#E2F2ED"/>
+<text id="Label_50" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="1234" y="426.5">Active</tspan></text>
+</g>
+</g>
+</g>
+<g id="Record_2" clip-path="url(#clip27_4_27801)">
+<rect width="1144" height="69" transform="translate(260 457)" fill="white"/>
+<g id="Data cell_7">
+<mask id="path-137-inside-18_4_27801" fill="white">
+<path d="M260 457H324V526H260V457Z"/>
+</mask>
+<path d="M324 526V527H325V526H324ZM324 457H323V526H324H325V457H324ZM324 526V525H260V526V527H324V526Z" fill="#D3DEDA" mask="url(#path-137-inside-18_4_27801)"/>
+<text id="Label_51" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="272" y="496.227">002</tspan></text>
+</g>
+<g id="Data cell_8">
+<mask id="path-140-inside-19_4_27801" fill="white">
+<path d="M324 457H534V526H324V457Z"/>
+</mask>
+<path d="M534 526V527H535V526H534ZM534 457H533V526H534H535V457H534ZM534 526V525H324V526V527H534V526Z" fill="#D3DEDA" mask="url(#path-140-inside-19_4_27801)"/>
+<text id="Label_52" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="336" y="486.727">Leela Menon&#10;</tspan><tspan x="336" y="505.727">98&#x2022;&#x2022;&#x2022; &#x2022;&#x2022;082</tspan></text>
+</g>
+<g id="Data cell_9">
+<mask id="path-143-inside-20_4_27801" fill="white">
+<path d="M534 457H819V526H534V457Z"/>
+</mask>
+<path d="M819 526V527H820V526H819ZM819 457H818V526H819H820V457H819ZM819 526V525H534V526V527H819V526Z" fill="#D3DEDA" mask="url(#path-143-inside-20_4_27801)"/>
+<text id="Label_53" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="546" y="486.727">14, Lotus Lane&#10;</tspan><tspan x="546" y="505.727">Panampilly Nagar</tspan></text>
+</g>
+<g id="Data cell_10">
+<mask id="path-146-inside-21_4_27801" fill="white">
+<path d="M819 457H1084V526H819V457Z"/>
+</mask>
+<path d="M1084 526V527H1085V526H1084ZM1084 457H1083V526H1084H1085V457H1084ZM1084 526V525H819V526V527H1084V526Z" fill="#D3DEDA" mask="url(#path-146-inside-21_4_27801)"/>
+<text id="Label_54" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="831" y="486.727">Manorama + Weekly&#10;</tspan><tspan x="831" y="505.727">Daily + Sunday</tspan></text>
+</g>
+<g id="Data cell_11">
+<mask id="path-149-inside-22_4_27801" fill="white">
+<path d="M1084 457H1214V526H1084V457Z"/>
+</mask>
+<path d="M1214 526V527H1215V526H1214ZM1214 457H1213V526H1214H1215V457H1214ZM1214 526V525H1084V526V527H1214V526Z" fill="#D3DEDA" mask="url(#path-149-inside-22_4_27801)"/>
+<text id="Label_55" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="1096" y="496.227">&#x20b9;300</tspan></text>
+</g>
+<g id="Data cell_12">
+<mask id="path-152-inside-23_4_27801" fill="white">
+<path d="M1214 457H1404V526H1214V457Z"/>
+</mask>
+<path d="M1404 526V527H1405V526H1404ZM1404 457H1403V526H1404H1405V457H1404ZM1404 526V525H1214V526V527H1404V526Z" fill="#D3DEDA" mask="url(#path-152-inside-23_4_27801)"/>
+<g id="Status_2">
+<rect x="1226" y="479.5" width="50" height="24" rx="4" fill="#E2F2ED"/>
+<text id="Label_56" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="1234" y="495.5">Active</tspan></text>
+</g>
+</g>
+</g>
+<g id="Record_3" clip-path="url(#clip28_4_27801)">
+<rect width="1144" height="69" transform="translate(260 526)" fill="white"/>
+<g id="Data cell_13">
+<mask id="path-156-inside-24_4_27801" fill="white">
+<path d="M260 526H324V595H260V526Z"/>
+</mask>
+<path d="M324 595V596H325V595H324ZM324 526H323V595H324H325V526H324ZM324 595V594H260V595V596H324V595Z" fill="#D3DEDA" mask="url(#path-156-inside-24_4_27801)"/>
+<text id="Label_57" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="272" y="565.227">003</tspan></text>
+</g>
+<g id="Data cell_14">
+<mask id="path-159-inside-25_4_27801" fill="white">
+<path d="M324 526H534V595H324V526Z"/>
+</mask>
+<path d="M534 595V596H535V595H534ZM534 526H533V595H534H535V526H534ZM534 595V594H324V595V596H534V595Z" fill="#D3DEDA" mask="url(#path-159-inside-25_4_27801)"/>
+<text id="Label_58" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="336" y="555.727">Joseph Mathew&#10;</tspan><tspan x="336" y="574.727">94&#x2022;&#x2022;&#x2022; &#x2022;&#x2022;113</tspan></text>
+</g>
+<g id="Data cell_15">
+<mask id="path-162-inside-26_4_27801" fill="white">
+<path d="M534 526H819V595H534V526Z"/>
+</mask>
+<path d="M819 595V596H820V595H819ZM819 526H818V595H819H820V526H819ZM819 595V594H534V595V596H819V595Z" fill="#D3DEDA" mask="url(#path-162-inside-26_4_27801)"/>
+<text id="Label_59" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="546" y="555.727">16, Lotus Lane&#10;</tspan><tspan x="546" y="574.727">Panampilly Nagar</tspan></text>
+</g>
+<g id="Data cell_16">
+<mask id="path-165-inside-27_4_27801" fill="white">
+<path d="M819 526H1084V595H819V526Z"/>
+</mask>
+<path d="M1084 595V596H1085V595H1084ZM1084 526H1083V595H1084H1085V526H1084ZM1084 595V594H819V595V596H1084V595Z" fill="#D3DEDA" mask="url(#path-165-inside-27_4_27801)"/>
+<text id="Label_60" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="831" y="555.727">The Hindu&#10;</tspan><tspan x="831" y="574.727">Daily &#xb7; 1 copy</tspan></text>
+</g>
+<g id="Data cell_17">
+<mask id="path-168-inside-28_4_27801" fill="white">
+<path d="M1084 526H1214V595H1084V526Z"/>
+</mask>
+<path d="M1214 595V596H1215V595H1214ZM1214 526H1213V595H1214H1215V526H1214ZM1214 595V594H1084V595V596H1214V595Z" fill="#D3DEDA" mask="url(#path-168-inside-28_4_27801)"/>
+<text id="Label_61" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="1096" y="565.227">&#x20b9;300</tspan></text>
+</g>
+<g id="Data cell_18">
+<mask id="path-171-inside-29_4_27801" fill="white">
+<path d="M1214 526H1404V595H1214V526Z"/>
+</mask>
+<path d="M1404 595V596H1405V595H1404ZM1404 526H1403V595H1404H1405V526H1404ZM1404 595V594H1214V595V596H1404V595Z" fill="#D3DEDA" mask="url(#path-171-inside-29_4_27801)"/>
+<g id="Status_3">
+<rect x="1226" y="548.5" width="89" height="24" rx="4" fill="#FBF1DE"/>
+<text id="Label_62" fill="#936321" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="1234" y="564.5">Vacation hold</tspan></text>
+</g>
+</g>
+</g>
+<g id="Record_4" clip-path="url(#clip29_4_27801)">
+<rect width="1144" height="69" transform="translate(260 595)" fill="white"/>
+<g id="Data cell_19">
+<mask id="path-175-inside-30_4_27801" fill="white">
+<path d="M260 595H324V664H260V595Z"/>
+</mask>
+<path d="M324 664V665H325V664H324ZM324 595H323V664H324H325V595H324ZM324 664V663H260V664V665H324V664Z" fill="#D3DEDA" mask="url(#path-175-inside-30_4_27801)"/>
+<text id="Label_63" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="272" y="634.227">004</tspan></text>
+</g>
+<g id="Data cell_20">
+<mask id="path-178-inside-31_4_27801" fill="white">
+<path d="M324 595H534V664H324V595Z"/>
+</mask>
+<path d="M534 664V665H535V664H534ZM534 595H533V664H534H535V595H534ZM534 664V663H324V664V665H534V664Z" fill="#D3DEDA" mask="url(#path-178-inside-31_4_27801)"/>
+<text id="Label_64" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="336" y="624.727">Fathima Ali&#10;</tspan><tspan x="336" y="643.727">96&#x2022;&#x2022;&#x2022; &#x2022;&#x2022;605</tspan></text>
+</g>
+<g id="Data cell_21">
+<mask id="path-181-inside-32_4_27801" fill="white">
+<path d="M534 595H819V664H534V595Z"/>
+</mask>
+<path d="M819 664V665H820V664H819ZM819 595H818V664H819H820V595H819ZM819 664V663H534V664V665H819V664Z" fill="#D3DEDA" mask="url(#path-181-inside-32_4_27801)"/>
+<text id="Label_65" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="546" y="624.727">18, Lotus Lane&#10;</tspan><tspan x="546" y="643.727">Panampilly Nagar</tspan></text>
+</g>
+<g id="Data cell_22">
+<mask id="path-184-inside-33_4_27801" fill="white">
+<path d="M819 595H1084V664H819V595Z"/>
+</mask>
+<path d="M1084 664V665H1085V664H1084ZM1084 595H1083V664H1084H1085V595H1084ZM1084 664V663H819V664V665H1084V664Z" fill="#D3DEDA" mask="url(#path-184-inside-33_4_27801)"/>
+<text id="Label_66" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="831" y="624.727">Mathrubhumi&#10;</tspan><tspan x="831" y="643.727">Daily &#xb7; 1 copy</tspan></text>
+</g>
+<g id="Data cell_23">
+<mask id="path-187-inside-34_4_27801" fill="white">
+<path d="M1084 595H1214V664H1084V595Z"/>
+</mask>
+<path d="M1214 664V665H1215V664H1214ZM1214 595H1213V664H1214H1215V595H1214ZM1214 664V663H1084V664V665H1214V664Z" fill="#D3DEDA" mask="url(#path-187-inside-34_4_27801)"/>
+<text id="Label_67" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="1096" y="634.227">&#x20b9;300</tspan></text>
+</g>
+<g id="Data cell_24">
+<mask id="path-190-inside-35_4_27801" fill="white">
+<path d="M1214 595H1404V664H1214V595Z"/>
+</mask>
+<path d="M1404 664V665H1405V664H1404ZM1404 595H1403V664H1404H1405V595H1404ZM1404 664V663H1214V664V665H1404V664Z" fill="#D3DEDA" mask="url(#path-190-inside-35_4_27801)"/>
+<g id="Status_4">
+<rect x="1226" y="617.5" width="50" height="24" rx="4" fill="#E2F2ED"/>
+<text id="Label_68" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="1234" y="633.5">Active</tspan></text>
+</g>
+</g>
+</g>
+<g id="Record_5" clip-path="url(#clip30_4_27801)">
+<rect width="1144" height="69" transform="translate(260 664)" fill="white"/>
+<g id="Data cell_25">
+<mask id="path-194-inside-36_4_27801" fill="white">
+<path d="M260 664H324V733H260V664Z"/>
+</mask>
+<path d="M324 733V734H325V733H324ZM324 664H323V733H324H325V664H324ZM324 733V732H260V733V734H324V733Z" fill="#D3DEDA" mask="url(#path-194-inside-36_4_27801)"/>
+<text id="Label_69" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="272" y="703.227">005</tspan></text>
+</g>
+<g id="Data cell_26">
+<mask id="path-197-inside-37_4_27801" fill="white">
+<path d="M324 664H534V733H324V664Z"/>
+</mask>
+<path d="M534 733V734H535V733H534ZM534 664H533V733H534H535V664H534ZM534 733V732H324V733V734H534V733Z" fill="#D3DEDA" mask="url(#path-197-inside-37_4_27801)"/>
+<text id="Label_70" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="336" y="693.727">Suresh Kumar&#10;</tspan><tspan x="336" y="712.727">98&#x2022;&#x2022;&#x2022; &#x2022;&#x2022;709</tspan></text>
+</g>
+<g id="Data cell_27">
+<mask id="path-200-inside-38_4_27801" fill="white">
+<path d="M534 664H819V733H534V664Z"/>
+</mask>
+<path d="M819 733V734H820V733H819ZM819 664H818V733H819H820V664H819ZM819 733V732H534V733V734H819V733Z" fill="#D3DEDA" mask="url(#path-200-inside-38_4_27801)"/>
+<text id="Label_71" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="546" y="693.727">20, Lotus Lane&#10;</tspan><tspan x="546" y="712.727">Panampilly Nagar</tspan></text>
+</g>
+<g id="Data cell_28">
+<mask id="path-203-inside-39_4_27801" fill="white">
+<path d="M819 664H1084V733H819V664Z"/>
+</mask>
+<path d="M1084 733V734H1085V733H1084ZM1084 664H1083V733H1084H1085V664H1084ZM1084 733V732H819V733V734H1084V733Z" fill="#D3DEDA" mask="url(#path-203-inside-39_4_27801)"/>
+<text id="Label_72" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="831" y="693.727">Manorama + Business Line&#10;</tspan><tspan x="831" y="712.727">Daily &#xb7; 2 copies</tspan></text>
+</g>
+<g id="Data cell_29">
+<mask id="path-206-inside-40_4_27801" fill="white">
+<path d="M1084 664H1214V733H1084V664Z"/>
+</mask>
+<path d="M1214 733V734H1215V733H1214ZM1214 664H1213V733H1214H1215V664H1214ZM1214 733V732H1084V733V734H1214V733Z" fill="#D3DEDA" mask="url(#path-206-inside-40_4_27801)"/>
+<text id="Label_73" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="1096" y="703.227">&#x20b9;500</tspan></text>
+</g>
+<g id="Data cell_30">
+<mask id="path-209-inside-41_4_27801" fill="white">
+<path d="M1214 664H1404V733H1214V664Z"/>
+</mask>
+<path d="M1404 733V734H1405V733H1404ZM1404 664H1403V733H1404H1405V664H1404ZM1404 733V732H1214V733V734H1404V733Z" fill="#D3DEDA" mask="url(#path-209-inside-41_4_27801)"/>
+<g id="Status_5">
+<rect x="1226" y="686.5" width="50" height="24" rx="4" fill="#E2F2ED"/>
+<text id="Label_74" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="1234" y="702.5">Active</tspan></text>
+</g>
+</g>
+</g>
+</g>
+<rect x="260.5" y="346.5" width="1143" height="386" stroke="#D3DEDA"/>
+</g>
+<g id="Registry pagination">
+<text id="Label_75" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" letter-spacing="0em"><tspan x="260" y="758">Showing 1&#x2013;5 of 326 residents &#xb7; Delivery order</tspan></text>
+<text id="Label_76" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" letter-spacing="0em"><tspan x="1173" y="758">&#x2190; Previous     1     2     3     &#x2026;     66     Next &#x2192;</tspan></text>
+</g>
+</g>
+<g id="Detail panel">
+<g clip-path="url(#clip31_4_27801)">
+<rect x="260" y="799" width="1144" height="304" rx="8" fill="white"/>
+<g id="Panel heading">
+<text id="Label_77" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="15" font-weight="600" letter-spacing="0em"><tspan x="280" y="832.455">Anitha Nair</tspan></text>
+<text id="Label_78" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="1191" y="831.364">Resident R-0101 &#xb7; Selected record</tspan></text>
+</g>
+<g id="Resident detailed record">
+<g id="Resident account" clip-path="url(#clip32_4_27801)">
+<g id="Status_6">
+<rect x="280" y="855" width="157" height="24" rx="4" fill="#E2F2ED"/>
+<text id="Label_79" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="288" y="871">Active &#xb7; Since 12 Jun 2024</tspan></text>
+</g>
+<text id="Label_80" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="280" y="904.864">12, Lotus Lane, Panampilly Nagar, Kochi </tspan><tspan x="280" y="921.864">682036</tspan></text>
+<text id="Label_81" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="280" y="951.864">Phone: 98&#x2022;&#x2022;&#x2022; &#x2022;&#x2022;421 &#xb7; English</tspan></text>
+<text id="Label_82" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="280" y="981.864">Sector A &#xb7; R01 &#xb7; Drop 001</tspan></text>
+<text id="Label_83" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="280" y="1011.86">Caution deposit &#x20b9;500 &#xb7; Refundable</tspan></text>
+<g id="Action_8">
+<rect x="280.5" y="1029.5" width="116" height="31" rx="5.5" fill="white"/>
+<rect x="280.5" y="1029.5" width="116" height="31" rx="5.5" stroke="#D3DEDA"/>
+<g id="pencil" clip-path="url(#clip33_4_27801)">
+<path id="Vector_22" d="M299.375 1040.62L299.379 1040.63M299.379 1040.63L301.871 1043.12M299.379 1040.63L300.742 1039.27C301.073 1038.94 301.521 1038.75 301.988 1038.75C302.456 1038.75 302.904 1038.94 303.234 1039.27C303.565 1039.6 303.75 1040.04 303.75 1040.51C303.75 1040.98 303.564 1041.43 303.234 1041.76L301.871 1043.12M299.379 1040.63L292.4 1047.61C292.255 1047.75 292.148 1047.93 292.088 1048.13L291.262 1050.85C291.246 1050.9 291.245 1050.96 291.259 1051.01C291.272 1051.07 291.301 1051.12 291.341 1051.16C291.381 1051.2 291.431 1051.23 291.485 1051.24C291.54 1051.25 291.597 1051.25 291.652 1051.24L294.372 1050.41C294.568 1050.35 294.746 1050.24 294.891 1050.1L301.871 1043.12M301.871 1043.12L301.875 1043.12" stroke-width="1.7" stroke-linecap="round" stroke="#172D2B"/>
+</g>
+<text id="Label_84" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" font-weight="600" letter-spacing="0em"><tspan x="313" y="1049.36">Edit resident</tspan></text>
+</g>
+</g>
+<g id="Subscription master" clip-path="url(#clip34_4_27801)">
+<g id="Data table_2">
+<g clip-path="url(#clip35_4_27801)">
+<g id="Column headings_2" clip-path="url(#clip36_4_27801)">
+<rect width="812" height="42" transform="translate(572 855)" fill="#EEF3F0"/>
+<g id="Column heading_7">
+<mask id="path-230-inside-42_4_27801" fill="white">
+<path d="M572 855H822V897H572V855Z"/>
+</mask>
+<path d="M822 897V898H823V897H822ZM822 855H821V897H822H823V855H822ZM822 897V896H572V897V898H822V897Z" fill="#D3DEDA" mask="url(#path-230-inside-42_4_27801)"/>
+<text id="Label_85" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="584" y="880">SUBSCRIPTION</tspan></text>
+</g>
+<g id="Column heading_8">
+<mask id="path-233-inside-43_4_27801" fill="white">
+<path d="M822 855H1017V897H822V855Z"/>
+</mask>
+<path d="M1017 897V898H1018V897H1017ZM1017 855H1016V897H1017H1018V855H1017ZM1017 897V896H822V897V898H1017V897Z" fill="#D3DEDA" mask="url(#path-233-inside-43_4_27801)"/>
+<text id="Label_86" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="834" y="880">SCHEDULE</tspan></text>
+</g>
+<g id="Column heading_9">
+<mask id="path-236-inside-44_4_27801" fill="white">
+<path d="M1017 855H1157V897H1017V855Z"/>
+</mask>
+<path d="M1157 897V898H1158V897H1157ZM1157 855H1156V897H1157H1158V855H1157ZM1157 897V896H1017V897V898H1157V897Z" fill="#D3DEDA" mask="url(#path-236-inside-44_4_27801)"/>
+<text id="Label_87" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="1029" y="880">RATE</tspan></text>
+</g>
+<g id="Column heading_10">
+<mask id="path-239-inside-45_4_27801" fill="white">
+<path d="M1157 855H1384V897H1157V855Z"/>
+</mask>
+<path d="M1384 897V898H1385V897H1384ZM1384 855H1383V897H1384H1385V855H1384ZM1384 897V896H1157V897V898H1384V897Z" fill="#D3DEDA" mask="url(#path-239-inside-45_4_27801)"/>
+<text id="Label_88" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="600" letter-spacing="0em"><tspan x="1169" y="880">NEXT DELIVERY</tspan></text>
+</g>
+</g>
+<g id="Record_6" clip-path="url(#clip37_4_27801)">
+<rect width="812" height="56" transform="translate(572 897)" fill="white"/>
+<g id="Data cell_31">
+<mask id="path-242-inside-46_4_27801" fill="white">
+<path d="M572 897H822V953H572V897Z"/>
+</mask>
+<path d="M822 953V954H823V953H822ZM822 897H821V953H822H823V897H822ZM822 953V952H572V953V954H822V953Z" fill="#D3DEDA" mask="url(#path-242-inside-46_4_27801)"/>
+<text id="Label_89" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="584" y="929.727">Malayala Manorama</tspan></text>
+</g>
+<g id="Data cell_32">
+<mask id="path-245-inside-47_4_27801" fill="white">
+<path d="M822 897H1017V953H822V897Z"/>
+</mask>
+<path d="M1017 953V954H1018V953H1017ZM1017 897H1016V953H1017H1018V897H1017ZM1017 953V952H822V953V954H1017V953Z" fill="#D3DEDA" mask="url(#path-245-inside-47_4_27801)"/>
+<text id="Label_90" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="834" y="929.727">Daily &#xb7; 1 copy</tspan></text>
+</g>
+<g id="Data cell_33">
+<mask id="path-248-inside-48_4_27801" fill="white">
+<path d="M1017 897H1157V953H1017V897Z"/>
+</mask>
+<path d="M1157 953V954H1158V953H1157ZM1157 897H1156V953H1157H1158V897H1157ZM1157 953V952H1017V953V954H1157V953Z" fill="#D3DEDA" mask="url(#path-248-inside-48_4_27801)"/>
+<text id="Label_91" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="1029" y="929.727">&#x20b9;7 / &#x20b9;8 weekend</tspan></text>
+</g>
+<g id="Data cell_34">
+<mask id="path-251-inside-49_4_27801" fill="white">
+<path d="M1157 897H1384V953H1157V897Z"/>
+</mask>
+<path d="M1384 953V954H1385V953H1384ZM1384 897H1383V953H1384H1385V897H1384ZM1384 953V952H1157V953V954H1384V953Z" fill="#D3DEDA" mask="url(#path-251-inside-49_4_27801)"/>
+<text id="Label_92" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="1169" y="929.727">02 Nov &#xb7; 06:00 AM</tspan></text>
+</g>
+</g>
+<g id="Record_7" clip-path="url(#clip38_4_27801)">
+<rect width="812" height="56" transform="translate(572 953)" fill="white"/>
+<g id="Data cell_35">
+<mask id="path-254-inside-50_4_27801" fill="white">
+<path d="M572 953H822V1009H572V953Z"/>
+</mask>
+<path d="M822 1009V1010H823V1009H822ZM822 953H821V1009H822H823V953H822ZM822 1009V1008H572V1009V1010H822V1009Z" fill="#D3DEDA" mask="url(#path-254-inside-50_4_27801)"/>
+<text id="Label_93" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="584" y="985.727">The Hindu &#xb7; Kochi</tspan></text>
+</g>
+<g id="Data cell_36">
+<mask id="path-257-inside-51_4_27801" fill="white">
+<path d="M822 953H1017V1009H822V953Z"/>
+</mask>
+<path d="M1017 1009V1010H1018V1009H1017ZM1017 953H1016V1009H1017H1018V953H1017ZM1017 1009V1008H822V1009V1010H1017V1009Z" fill="#D3DEDA" mask="url(#path-257-inside-51_4_27801)"/>
+<text id="Label_94" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="834" y="985.727">Daily &#xb7; 1 copy</tspan></text>
+</g>
+<g id="Data cell_37">
+<mask id="path-260-inside-52_4_27801" fill="white">
+<path d="M1017 953H1157V1009H1017V953Z"/>
+</mask>
+<path d="M1157 1009V1010H1158V1009H1157ZM1157 953H1156V1009H1157H1158V953H1157ZM1157 1009V1008H1017V1009V1010H1157V1009Z" fill="#D3DEDA" mask="url(#path-260-inside-52_4_27801)"/>
+<text id="Label_95" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="1029" y="985.727">&#x20b9;10 per copy</tspan></text>
+</g>
+<g id="Data cell_38">
+<mask id="path-263-inside-53_4_27801" fill="white">
+<path d="M1157 953H1384V1009H1157V953Z"/>
+</mask>
+<path d="M1384 1009V1010H1385V1009H1384ZM1384 953H1383V1009H1384H1385V953H1384ZM1384 1009V1008H1157V1009V1010H1384V1009Z" fill="#D3DEDA" mask="url(#path-263-inside-53_4_27801)"/>
+<text id="Label_96" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="1169" y="985.727">02 Nov &#xb7; 06:00 AM</tspan></text>
+</g>
+</g>
+</g>
+<rect x="572.5" y="855.5" width="811" height="153" stroke="#D3DEDA"/>
+</g>
+<g id="Hold information" clip-path="url(#clip39_4_27801)">
+<text id="Label_97" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" letter-spacing="0em"><tspan x="572" y="1041">Last hold: 12 Oct 2026 &#xb7; 1 day &#xb7; Both publications excluded from billing.</tspan></text>
+<g id="Action_9">
+<rect x="1236.5" y="1021.5" width="147" height="31" rx="5.5" fill="white"/>
+<rect x="1236.5" y="1021.5" width="147" height="31" rx="5.5" stroke="#D3DEDA"/>
+<g id="pause">
+<path id="Vector_23" d="M1255.37 1031.38H1257.25C1257.6 1031.38 1257.88 1031.65 1257.88 1032V1042C1257.88 1042.35 1257.6 1042.62 1257.25 1042.62H1255.37C1255.03 1042.62 1254.75 1042.35 1254.75 1042V1032C1254.75 1031.65 1255.03 1031.38 1255.37 1031.38ZM1249.75 1031.38H1251.62C1251.97 1031.38 1252.25 1031.65 1252.25 1032V1042C1252.25 1042.35 1251.97 1042.62 1251.62 1042.62H1249.75C1249.4 1042.62 1249.12 1042.35 1249.12 1042V1032C1249.12 1031.65 1249.4 1031.38 1249.75 1031.38Z" stroke-width="1.7" stroke-linecap="round" stroke="#172D2B"/>
+</g>
+<text id="Label_98" fill="#172D2B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" font-weight="600" letter-spacing="0em"><tspan x="1269" y="1041.36">Add vacation hold</tspan></text>
+</g>
+</g>
+<text id="Label_99" fill="#087F73" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" letter-spacing="0em"><tspan x="572" y="1077">Delivery note: Leave papers inside the porch. Keep gate latched.</tspan></text>
+</g>
+</g>
+</g>
+<rect x="260.5" y="799.5" width="1143" height="303" rx="7.5" stroke="#D3DEDA"/>
+</g>
+<text id="Label_100" fill="#697775" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" letter-spacing="0em"><tspan x="260" y="1139">Residents and delivery staff are managed records. Only agency operators can access this workspace.</tspan></text>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_4_27801">
+<rect width="1440" height="1175" fill="white"/>
+</clipPath>
+<clipPath id="clip1_4_27801">
+<rect width="129" height="43" fill="white" transform="translate(67 25)"/>
+</clipPath>
+<clipPath id="clip2_4_27801">
+<rect width="192" height="588" fill="white" transform="translate(16 95)"/>
+</clipPath>
+<clipPath id="clip3_4_27801">
+<rect width="192" height="196" fill="white" transform="translate(16 95)"/>
+</clipPath>
+<clipPath id="clip4_4_27801">
+<rect width="17" height="17" fill="white" transform="translate(26 263)"/>
+</clipPath>
+<clipPath id="clip5_4_27801">
+<rect width="192" height="196" fill="white" transform="translate(16 314)"/>
+</clipPath>
+<clipPath id="clip6_4_27801">
+<rect width="192" height="150" fill="white" transform="translate(16 533)"/>
+</clipPath>
+<clipPath id="clip7_4_27801">
+<rect width="17" height="17" fill="white" transform="translate(26 655)"/>
+</clipPath>
+<clipPath id="clip8_4_27801">
+<rect width="192" height="85" fill="white" transform="translate(16 710)"/>
+</clipPath>
+<clipPath id="clip9_4_27801">
+<rect width="17" height="17" fill="white" transform="translate(26 768)"/>
+</clipPath>
+<clipPath id="clip10_4_27801">
+<rect width="158" height="32" fill="white" transform="translate(24 840)"/>
+</clipPath>
+<clipPath id="clip11_4_27801">
+<rect width="118" height="32" fill="white" transform="translate(64 840)"/>
+</clipPath>
+<clipPath id="clip12_4_27801">
+<rect width="1216" height="1175" fill="white" transform="translate(224)"/>
+</clipPath>
+<clipPath id="clip13_4_27801">
+<rect width="277" height="19" fill="white" transform="translate(260 27.5)"/>
+</clipPath>
+<clipPath id="clip14_4_27801">
+<rect width="358" height="18" fill="white" transform="translate(1046 28)"/>
+</clipPath>
+<clipPath id="clip15_4_27801">
+<rect width="144" height="17" fill="white" transform="translate(1046 28.5)"/>
+</clipPath>
+<clipPath id="clip16_4_27801">
+<rect width="113" height="16" fill="white" transform="translate(1291 29)"/>
+</clipPath>
+<clipPath id="clip17_4_27801">
+<rect width="1144" height="89" fill="white" transform="translate(260 104)"/>
+</clipPath>
+<clipPath id="clip18_4_27801">
+<rect width="1144" height="40" fill="white" transform="translate(260 125)"/>
+</clipPath>
+<clipPath id="clip19_4_27801">
+<rect width="301" height="40" fill="white" transform="translate(1103 125)"/>
+</clipPath>
+<clipPath id="clip20_4_27801">
+<rect width="1144" height="40" fill="white" transform="translate(260 282)"/>
+</clipPath>
+<clipPath id="clip21_4_27801">
+<rect width="563" height="40" fill="white" transform="translate(260 282)"/>
+</clipPath>
+<clipPath id="clip22_4_27801">
+<rect width="223" height="32" fill="white" transform="translate(1181 286)"/>
+</clipPath>
+<clipPath id="clip23_4_27801">
+<rect width="1144" height="429" fill="white" transform="translate(260 346)"/>
+</clipPath>
+<clipPath id="clip24_4_27801">
+<rect x="260" y="346" width="1144" height="387" fill="white"/>
+</clipPath>
+<clipPath id="clip25_4_27801">
+<rect width="1144" height="42" fill="white" transform="translate(260 346)"/>
+</clipPath>
+<clipPath id="clip26_4_27801">
+<rect width="1144" height="69" fill="white" transform="translate(260 388)"/>
+</clipPath>
+<clipPath id="clip27_4_27801">
+<rect width="1144" height="69" fill="white" transform="translate(260 457)"/>
+</clipPath>
+<clipPath id="clip28_4_27801">
+<rect width="1144" height="69" fill="white" transform="translate(260 526)"/>
+</clipPath>
+<clipPath id="clip29_4_27801">
+<rect width="1144" height="69" fill="white" transform="translate(260 595)"/>
+</clipPath>
+<clipPath id="clip30_4_27801">
+<rect width="1144" height="69" fill="white" transform="translate(260 664)"/>
+</clipPath>
+<clipPath id="clip31_4_27801">
+<rect x="260" y="799" width="1144" height="304" rx="8" fill="white"/>
+</clipPath>
+<clipPath id="clip32_4_27801">
+<rect width="266" height="206" fill="white" transform="translate(280 855)"/>
+</clipPath>
+<clipPath id="clip33_4_27801">
+<rect width="15" height="15" fill="white" transform="translate(290 1037.5)"/>
+</clipPath>
+<clipPath id="clip34_4_27801">
+<rect width="812" height="226" fill="white" transform="translate(572 855)"/>
+</clipPath>
+<clipPath id="clip35_4_27801">
+<rect x="572" y="855" width="812" height="154" fill="white"/>
+</clipPath>
+<clipPath id="clip36_4_27801">
+<rect width="812" height="42" fill="white" transform="translate(572 855)"/>
+</clipPath>
+<clipPath id="clip37_4_27801">
+<rect width="812" height="56" fill="white" transform="translate(572 897)"/>
+</clipPath>
+<clipPath id="clip38_4_27801">
+<rect width="812" height="56" fill="white" transform="translate(572 953)"/>
+</clipPath>
+<clipPath id="clip39_4_27801">
+<rect width="812" height="32" fill="white" transform="translate(572 1021)"/>
+</clipPath>
+</defs>
+</svg>
