@@ -117,6 +117,18 @@ export function AgencyEntry({ children }: { children?: ReactNode }) {
                   active: pathname === '/',
                 },
                 {
+                  label: 'Residents & subscriptions',
+                  href: '/residents',
+                  icon: 'nav-residents',
+                  active: pathname === '/residents',
+                },
+                {
+                  label: 'Publications & pricing',
+                  href: '/publications',
+                  icon: 'publications',
+                  active: pathname === '/publications',
+                },
+                {
                   label: 'Routes & delivery',
                   href: '/routes',
                   icon: 'nav-route',

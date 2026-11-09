@@ -115,13 +115,20 @@ export const RouteEditor = observer(function RouteEditor({
               onChange={(e) => changeStop(stop.key, 'label', e.target.value)}
               required
               maxLength={160}
+              readOnly={Boolean(stop.residentId)}
+              hint={
+                stop.residentId
+                  ? 'Linked details are managed in the resident profile.'
+                  : undefined
+              }
             />
             <Field
               label={`Door / address ${index + 1}`}
               value={stop.door}
               onChange={(e) => changeStop(stop.key, 'door', e.target.value)}
               required
-              maxLength={120}
+              maxLength={stop.residentId ? 240 : 120}
+              readOnly={Boolean(stop.residentId)}
             />
           </div>
           <div className="db-row">
@@ -144,6 +151,7 @@ export const RouteEditor = observer(function RouteEditor({
             <Button
               variant="tertiary"
               size="small"
+              disabled={Boolean(stop.residentId)}
               onClick={() =>
                 setStops((rows) => rows.filter((r) => r.key !== stop.key))
               }

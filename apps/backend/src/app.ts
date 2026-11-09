@@ -8,6 +8,7 @@ import {
   operationsTypeDefs,
   operationsResolvers,
 } from './modules/operations/schema.js';
+import { catalogTypeDefs, catalogResolvers } from './modules/catalog/schema.js';
 export function createApp({
   databaseReady,
   frontendOrigin = 'http://localhost:3000',
@@ -32,10 +33,12 @@ export function createApp({
       type Agency { id: ID!, name: String! }
       type Agent { id: ID!, agencyId: ID!, name: String!, email: String!, agency: Agency! }
       type Query { health: Health!, me: Agent! }
-      ${operationsTypeDefs}`,
+      ${operationsTypeDefs}
+      ${catalogTypeDefs}`,
       resolvers: {
         Query: {
           ...operationsResolvers.Query,
+          ...catalogResolvers.Query,
           health: () => ({ status: 'ok', service: 'daybook-api' }),
           me: (_root, _args, context) => {
             if (!context.agent)
@@ -45,7 +48,10 @@ export function createApp({
             return context.agent;
           },
         },
-        Mutation: operationsResolvers.Mutation,
+        Mutation: {
+          ...operationsResolvers.Mutation,
+          ...catalogResolvers.Mutation,
+        },
       },
     }),
     plugins: [

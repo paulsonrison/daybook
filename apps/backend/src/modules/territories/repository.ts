@@ -1,4 +1,18 @@
 import type { PoolClient } from 'pg';
+export async function hasResidentsOutsideSectors(
+  client: PoolClient,
+  id: string,
+  keys: string[],
+) {
+  return Boolean(
+    (
+      await client.query(
+        'SELECT r.id FROM daybook.residents r JOIN daybook.routes route ON (route.agency_id,route.id)=(r.agency_id,r.route_id) WHERE route.territory_id=$1 AND NOT(lower(r.sector)=ANY($2::text[])) LIMIT 1',
+        [id, keys],
+      )
+    ).rowCount,
+  );
+}
 export interface TerritoryRecord {
   id: string;
   name: string;

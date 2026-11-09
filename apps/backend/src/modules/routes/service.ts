@@ -17,6 +17,9 @@ import {
   routeStopIds,
   writeRoute,
   replaceStops,
+  linkedStops,
+  hasActiveResidents,
+  incompatibleResidentSector,
 } from './repository.js';
 export interface StopInput {
   id?: string;
@@ -49,8 +52,19 @@ export function saveRoute(ctx: RequestContext, input: RouteInput) {
       versionMatches(old.version, input.version);
     }
     const active = input.active ?? old?.active ?? true;
+    if (!active && old && (await hasActiveResidents(client, id)))
+      return fail(
+        'Move or deactivate active residents before deactivating their route.',
+      );
     const territory = await findTerritory(client, territoryId);
     if (!territory) fail('Territory not found.', 'NOT_FOUND');
+    if (
+      old &&
+      (await incompatibleResidentSector(client, id, territory.sectors))
+    )
+      fail(
+        'Move residents to matching sectors before changing this route territory.',
+      );
     if (
       !territory.active &&
       (active || !old || territoryId !== old.territoryId)
@@ -75,6 +89,12 @@ export function saveRoute(ctx: RequestContext, input: RouteInput) {
       if (!Array.isArray(input.stops) || input.stops.length > 5000)
         fail('A route supports up to 5000 delivery points.');
       const ownIds = await routeStopIds(client, id);
+      const linked = await linkedStops(client, id);
+      const retained = new Set(input.stops.map((stop) => stop.id));
+      if ([...linked.keys()].some((key) => !retained.has(key)))
+        return fail(
+          'Move residents through their profiles before removing linked delivery points.',
+        );
       const seenIds = new Set<string>(),
         positions = new Set<number>();
       const stops = input.stops.map((stop) => {
@@ -91,11 +111,22 @@ export function saveRoute(ctx: RequestContext, input: RouteInput) {
           fail('Use distinct delivery points and positive drop positions.');
         seenIds.add(stopId);
         positions.add(stop.sequence);
+        const label = cleanText(stop.label, 'delivery point', 160),
+          door = cleanText(
+            stop.door,
+            'door/address',
+            linked.has(stopId) ? 240 : 120,
+          );
+        const resident = linked.get(stopId);
+        if (resident && (label !== resident.label || door !== resident.door))
+          return fail(
+            'Edit linked resident details from the resident profile.',
+          );
         return {
           ...stop,
           id: stopId,
-          label: cleanText(stop.label, 'delivery point', 160),
-          door: cleanText(stop.door, 'door/address', 120),
+          label,
+          door,
         };
       });
       await replaceStops(client, ctx.agent!.agencyId, id, stops);

@@ -11,7 +11,7 @@ export const operationsTypeDefs = `
 type Territory {id:ID!,name:String!,locality:String!,pinCodes:[String!]!,sectors:[String!]!,active:Boolean!,version:Int!}
 enum StaffStatus {ACTIVE ON_LEAVE INACTIVE}
 type Staff {id:ID!,name:String!,staffCode:String!,phone:String!,status:StaffStatus!,version:Int!,assignedSectors:[String!]!}
-type RouteStop {id:ID!,label:String!,door:String!,sequence:Int!}
+type RouteStop {id:ID!,label:String!,door:String!,sequence:Int!,residentId:ID}
 type Route {id:ID!,code:String!,name:String!,territoryId:ID!,staffId:ID,staffName:String,active:Boolean!,version:Int!,stops:[RouteStop!]!}
 type OperationsSummary {territories:Int!,activeStaff:Int!,activeRoutes:Int!}
 type AuditEvent {id:ID!,action:String!,entityType:String!,entityId:ID!,actorId:ID!,createdAt:String!}

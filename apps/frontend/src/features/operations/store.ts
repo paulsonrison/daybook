@@ -24,6 +24,7 @@ export interface Stop {
   label: string;
   door: string;
   sequence: number;
+  residentId?: string | null;
 }
 export interface Route {
   id: string;
@@ -46,7 +47,7 @@ interface Data {
     activeRoutes: number;
   };
 }
-const query = `{territories{id name locality pinCodes sectors active version} staff{id name staffCode phone status assignedSectors version} routes{id code name territoryId staffId staffName active version stops{id label door sequence}} operationsSummary{territories activeStaff activeRoutes}}`;
+const query = `{territories{id name locality pinCodes sectors active version} staff{id name staffCode phone status assignedSectors version} routes{id code name territoryId staffId staffName active version stops{id label door sequence residentId}} operationsSummary{territories activeStaff activeRoutes}}`;
 const mutations = {
   territory:
     'mutation($input:TerritoryInput!){saveTerritory(input:$input){id}}',

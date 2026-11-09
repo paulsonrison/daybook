@@ -73,15 +73,23 @@
     {
       "id": "P03",
       "title": "Publications, residents and refundable deposits",
-      "status": "Not started",
-      "evidence": [],
-      "review": null,
+      "status": "In review",
+      "evidence": [
+        "23 PostgreSQL integration tests; 23 unit/SSR tests; 5 Chrome application tests passed",
+        "Lint, typecheck, production and Storybook builds passed",
+        "Three independent review findings reproduced, fixed and rereviewed clear"
+      ],
+      "review": {
+        "reviewer": "operations_review",
+        "status": "clear",
+        "findingsFixed": 3
+      },
       "mergeCommit": null
     },
     {
       "id": "P04",
       "title": "Subscription recurrence, holds and effective pricing",
-      "status": "Not started",
+      "status": "To do",
       "evidence": [],
       "review": null,
       "mergeCommit": null
@@ -264,7 +272,7 @@
       "planTask": "P03",
       "sourceRow": 12,
       "priority": "Medium",
-      "status": "Not started",
+      "status": "To do",
       "criteria": [
         "1. Agent can add multiple newspapers/magazines with weekday/weekend rates.",
         "2. Track daily required copy counts per publication.",
@@ -272,7 +280,8 @@
       ],
       "evidence": [],
       "review": null,
-      "mergeCommit": null
+      "mergeCommit": null,
+      "supportingPlanTasks": ["P05"]
     },
     {
       "id": "US-005",
@@ -280,14 +289,22 @@
       "planTask": "P03",
       "sourceRow": 13,
       "priority": "High",
-      "status": "Not started",
+      "status": "In review",
       "criteria": [
         "1. Agent can create, edit, and deactivate resident profiles with name, address, contact, and sector.",
         "2. Record refundable caution / security deposit per resident account upon onboarding.",
         "3. Link each resident directly to an active delivery line/route with assigned drop order."
       ],
-      "evidence": [],
-      "review": null,
+      "evidence": [
+        "23 PostgreSQL integration tests; 23 unit/SSR tests; 5 Chrome application tests passed",
+        "Lint, typecheck, production and Storybook builds passed",
+        "Three independent review findings reproduced, fixed and rereviewed clear"
+      ],
+      "review": {
+        "reviewer": "operations_review",
+        "status": "clear",
+        "findingsFixed": 3
+      },
       "mergeCommit": null
     },
     {
@@ -296,7 +313,7 @@
       "planTask": "P04",
       "sourceRow": 14,
       "priority": "High",
-      "status": "Not started",
+      "status": "To do",
       "criteria": [
         "1. Resident/Agent can add multiple active publications (daily newspapers, weekend editions, periodicals, magazines) per account.",
         "2. Magazine subscriptions handled as standard publication items.",
@@ -312,7 +329,7 @@
       "planTask": "P04",
       "sourceRow": 15,
       "priority": "High",
-      "status": "Not started",
+      "status": "To do",
       "criteria": [
         "1. Schedule options: All Days (Daily), Custom Days (e.g., Mon/Wed/Fri), Sundays only, One-time/Single day, Once a week, Fortnightly (alternate weeks), Once a month, Once a year.",
         "2. Start date and optional end date / recurrence rules.",
@@ -328,7 +345,7 @@
       "planTask": "P04",
       "sourceRow": 16,
       "priority": "Medium",
-      "status": "Not started",
+      "status": "To do",
       "criteria": [
         "1. Agent can select any resident and assign new subscriptions with custom cadences.",
         "2. Agent can override, pause (vacation mode), or cancel existing subscriptions.",
@@ -392,7 +409,7 @@
       "planTask": "P04",
       "sourceRow": 20,
       "priority": "High",
-      "status": "Not started",
+      "status": "To do",
       "criteria": [
         "1. Agent can set date-range pricing rules or recurring day-of-week rate overrides for any publication.",
         "2. Rule scope supports temporary validity (e.g., 1 month promo/festival) or permanent override.",
@@ -440,7 +457,7 @@
       "planTask": "P04",
       "sourceRow": 23,
       "priority": "High",
-      "status": "Not started",
+      "status": "To do",
       "criteria": [
         "1. Agent can set vacation pause start date and end/resume date per resident or specific publication.",
         "2. Daily manifest engine automatically skips paused copies and adjusts morning publisher indents.",
@@ -739,7 +756,7 @@
       "planTask": "P03",
       "sourceRow": 41,
       "priority": "Medium",
-      "status": "Not started",
+      "status": "To do",
       "criteria": [
         "1. Publication catalog supports regional weekly/bi-weekly publication cadences and evening editions.",
         "2. Dynamic delivery manifests filter morning vs. evening dispatch schedules.",
@@ -747,7 +764,8 @@
       ],
       "evidence": [],
       "review": null,
-      "mergeCommit": null
+      "mergeCommit": null,
+      "supportingPlanTasks": ["P05", "P06"]
     },
     {
       "id": "US-034",
@@ -953,6 +971,90 @@
       "from": "To do",
       "to": "In review",
       "event": "Implementation and all required checks passed; independent operations_review final rereview has no actionable findings. Source US-003 awaits P05 substitutions."
+    },
+    {
+      "date": "2026-11-09T17:36:52.559Z",
+      "task": "P03",
+      "from": "Not started",
+      "to": "To do",
+      "event": "Starting catalog, residents and refundable deposits after verified and independently reviewed P02."
+    },
+    {
+      "date": "2026-11-09T17:36:52.560Z",
+      "task": "US-004",
+      "from": "Not started",
+      "to": "To do",
+      "event": "Starting catalog, residents and refundable deposits after verified and independently reviewed P02."
+    },
+    {
+      "date": "2026-11-09T17:36:52.560Z",
+      "task": "US-005",
+      "from": "Not started",
+      "to": "To do",
+      "event": "Starting catalog, residents and refundable deposits after verified and independently reviewed P02."
+    },
+    {
+      "date": "2026-11-09T17:36:52.560Z",
+      "task": "US-033",
+      "from": "Not started",
+      "to": "To do",
+      "event": "Starting catalog, residents and refundable deposits after verified and independently reviewed P02."
+    },
+    {
+      "date": "2026-11-09T18:12:04.858Z",
+      "task": "P04",
+      "from": "Not started",
+      "to": "To do",
+      "event": "Start approved subscription recurrence, holds and effective pricing work; P03 independently reviewed clear."
+    },
+    {
+      "date": "2026-11-09T18:12:04.859Z",
+      "task": "US-006",
+      "from": "Not started",
+      "to": "To do",
+      "event": "Start approved subscription recurrence, holds and effective pricing work; P03 independently reviewed clear."
+    },
+    {
+      "date": "2026-11-09T18:12:04.859Z",
+      "task": "US-007",
+      "from": "Not started",
+      "to": "To do",
+      "event": "Start approved subscription recurrence, holds and effective pricing work; P03 independently reviewed clear."
+    },
+    {
+      "date": "2026-11-09T18:12:04.859Z",
+      "task": "US-008",
+      "from": "Not started",
+      "to": "To do",
+      "event": "Start approved subscription recurrence, holds and effective pricing work; P03 independently reviewed clear."
+    },
+    {
+      "date": "2026-11-09T18:12:04.859Z",
+      "task": "US-012",
+      "from": "Not started",
+      "to": "To do",
+      "event": "Start approved subscription recurrence, holds and effective pricing work; P03 independently reviewed clear."
+    },
+    {
+      "date": "2026-11-09T18:12:04.859Z",
+      "task": "US-015",
+      "from": "Not started",
+      "to": "To do",
+      "event": "Start approved subscription recurrence, holds and effective pricing work; P03 independently reviewed clear."
+    },
+    {
+      "date": "2026-11-09T18:14:10.976Z",
+      "task": "P03",
+      "from": "To do",
+      "to": "In review",
+      "event": "Implementation and checks passed; independent review fixes rereviewed clear; awaiting final merge."
+    },
+    {
+      "date": "2026-11-09T18:14:10.976Z",
+      "task": "US-005",
+      "from": "To do",
+      "to": "In review",
+      "event": "Implementation and checks passed; independent review fixes rereviewed clear; awaiting final merge."
     }
   ]
 }

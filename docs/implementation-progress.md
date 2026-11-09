@@ -44,4 +44,13 @@ Configuration now uses typed GraphQL inputs, per-agency serialized mutation tran
 
 ## Outstanding
 
-P02 is verified and independently reviewed; P03–P14 remain unimplemented. No merge or remote push has occurred. Provider credentials and live-service acceptance are distinct from local contract tests and must not be reported as verified without evidence.
+P03 is verified and independently reviewed; P04 is in progress and P05–P14 remain unimplemented. No merge or remote push has occurred. Provider credentials and live-service acceptance are distinct from local contract tests and must not be reported as verified without evidence.
+
+## P03 — reviewed catalog, residents and deposits
+
+Catalog supports regional editions, dispatch and calendars with exact decimal prices. Resident profiles synchronize protected route points; onboarding deposits are immutable, tenant-scoped and idempotent. Shared money formatting preserves decimal strings above floating-point precision.
+
+- RED → GREEN: missing catalog/resident APIs, exact deposit receipt retry, route linkage protection, and Chrome catalog/resident CRUD.
+- Independent review found stale resident versions after route reorder, incompatible territory sector edits, and missing UI linking of existing points. Regression assertions reproduced stale overwrite and missing linking control; all three fixed and rereview clear.
+- Final P03 checks: 23 unit/SSR tests, 23 PostgreSQL tests, 5 Chrome app tests, lint/typecheck, production and Storybook builds passed. P03/US-005 In review until merge. US-004 counts/indents and US-033 manifests/reconciliation remain P05/P06 dependencies. Full visual fidelity remains P14.
+- P04 started: all eight recurrence/calendar and price-precedence tests observed RED, then all three GREEN. Subscription persistence, holds and screens still in progress.

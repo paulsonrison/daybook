@@ -18,6 +18,13 @@ import {
   typographyVariables,
 } from '../src';
 
+test('decimal money strings render every paisa without floating-point conversion', () => {
+  assert.equal(formatMoney('90071992547409.93'), '₹9,00,71,99,25,47,409.93');
+  assert.equal(formatMoney('-0.50'), '-₹0.50');
+  assert.equal(formatMoney('0.00'), '₹0.00');
+  assert.equal(formatMoney('missing'), '—');
+});
+
 test('filtered and failed tables do not claim that the dataset is empty', () => {
   for (const state of ['no-results', 'error'] as const) {
     const html = renderToStaticMarkup(

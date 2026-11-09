@@ -21,7 +21,7 @@ export const Editor = observer(function Editor({
 }: {
   title: string;
   label: string;
-  store: OperationsStore;
+  store: Pick<OperationsStore, 'saving' | 'saveError'>;
   onClose: () => void;
   onSave: () => Promise<void>;
   children: ReactNode;

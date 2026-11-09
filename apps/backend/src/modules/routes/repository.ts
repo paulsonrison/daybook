@@ -4,6 +4,7 @@ export interface StopRecord {
   label: string;
   door: string;
   sequence: number;
+  residentId?: string | null;
 }
 export interface RouteRecord {
   id: string;
@@ -24,7 +25,7 @@ export async function readRoutes(client: PoolClient, id?: string) {
     id ? [id] : [],
   );
   const stops = await client.query<StopRecord & { routeId: string }>(
-    'SELECT id,route_id AS "routeId",label,door,sequence FROM daybook.route_stops ORDER BY sequence,id',
+    'SELECT id,route_id AS "routeId",label,door,sequence,resident_id AS "residentId" FROM daybook.route_stops ORDER BY sequence,id',
   );
   return rows.rows.map((row) => ({
     ...row,
@@ -52,6 +53,26 @@ export async function routeStopIds(client: PoolClient, id: string) {
         [id],
       )
     ).rows.map((r) => r.id),
+  );
+}
+export async function linkedStops(client: PoolClient, id: string) {
+  return new Map(
+    (
+      await client.query<StopRecord>(
+        'SELECT id,label,door,sequence,resident_id AS "residentId" FROM daybook.route_stops WHERE route_id=$1 AND resident_id IS NOT NULL',
+        [id],
+      )
+    ).rows.map((row) => [row.id, row]),
+  );
+}
+export async function hasActiveResidents(client: PoolClient, id: string) {
+  return Boolean(
+    (
+      await client.query(
+        "SELECT id FROM daybook.residents WHERE route_id=$1 AND status='ACTIVE' LIMIT 1",
+        [id],
+      )
+    ).rowCount,
   );
 }
 export async function writeRoute(
@@ -87,6 +108,10 @@ export async function replaceStops(
   stops: StopRecord[],
 ) {
   await client.query(
+    `UPDATE daybook.residents r SET version=r.version+1 FROM daybook.route_stops s, jsonb_to_recordset($2::jsonb) AS incoming(id uuid,sequence integer) WHERE r.id=s.resident_id AND r.agency_id=s.agency_id AND s.route_id=$1 AND s.id=incoming.id AND s.sequence<>incoming.sequence`,
+    [routeId, JSON.stringify(stops)],
+  );
+  await client.query(
     'DELETE FROM daybook.route_stops WHERE route_id=$1 AND NOT(id=ANY($2::uuid[]))',
     [routeId, stops.map((s) => s.id)],
   );
@@ -95,4 +120,18 @@ export async function replaceStops(
       'INSERT INTO daybook.route_stops(id,agency_id,route_id,label,door,sequence) VALUES($1,$2,$3,$4,$5,$6) ON CONFLICT(id) DO UPDATE SET label=excluded.label,door=excluded.door,sequence=excluded.sequence WHERE route_stops.agency_id=excluded.agency_id AND route_stops.route_id=excluded.route_id',
       [stop.id, agencyId, routeId, stop.label, stop.door, stop.sequence],
     );
+}
+export async function incompatibleResidentSector(
+  client: PoolClient,
+  routeId: string,
+  sectors: string[],
+) {
+  return Boolean(
+    (
+      await client.query(
+        'SELECT id FROM daybook.residents WHERE route_id=$1 AND NOT(lower(sector)=ANY($2::text[])) LIMIT 1',
+        [routeId, sectors.map((s) => s.toLocaleLowerCase('en'))],
+      )
+    ).rowCount,
+  );
 }

@@ -26,6 +26,7 @@ import {
   overlapsTerritory,
   territoryHasActiveRoutes,
   writeTerritory,
+  hasResidentsOutsideSectors,
 } from './repository.js';
 export const territories = (ctx: RequestContext) =>
   agencyRead(ctx, listTerritories);
@@ -62,6 +63,8 @@ export function saveTerritory(ctx: RequestContext, input: TerritoryInput) {
       versionMatches(old.version, input.version);
       active = input.active ?? old.active;
     }
+    if (input.id && (await hasResidentsOutsideSectors(client, id, keys)))
+      fail('Move residents before removing their territory sectors.');
     const overlap = await overlapsTerritory(
       client,
       id,
