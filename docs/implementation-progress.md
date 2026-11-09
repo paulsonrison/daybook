@@ -20,6 +20,19 @@ Current work covers agent registration/login/logout/me, hashed opaque sessions, 
 - RED → GREEN: runtime role inherited authentication-owner privilege but startup accepted it. Guard now rejects auth-owner membership and administrative attributes. All nine PostgreSQL integration tests passed.
 - Reviewer rereview: no remaining actionable P01 findings. Final post-fix checks passed: 19 unit/SSR tests, typecheck, lint, production build and repository formatting with end-of-line auto. P01 is In review until merge.
 
+## P02 — territory, staff and routes
+
+Configuration now uses typed GraphQL inputs, per-agency serialized mutation transactions, SQL repositories, forced-RLS tables and immutable audit events. UI pages cover territory boundaries/overlap authorization, staff lifecycle and assigned sectors, route division/assignment and ordered delivery points. Overview summaries derive from stored records.
+
+- RED → GREEN: missing configuration schema; normalized overlap rejection/authorization, scoped counts, staff eligibility, ordered stops, stale concurrent updates, cross-agency links and mutation origin checks now pass.
+- RED → GREEN: editing inactive records silently reactivated them; omitted active flags now preserve status.
+- Independent operations_review found an on-leave staff reference blocked route deactivation and archived edits. Added real regression; safe deactivation/archived metadata now retains existing references while new assignments/activation validate availability. Rereview clear.
+- Expanded browser check exposed custom empty-table copy appearing for filtered/failed datasets. Shared DataTable now reserves empty copy/actions for actual empty states; SSR regression covers both no-results and failure.
+- Actual application workflow covers creation, refresh, keyboard traversal, stop reordering, route editing, name/code/address search, no-results recovery, guarded deactivation/reassignment, status filtering and preserved failed-save drafts. A transport abort now produces a clear unconfirmed-request message rather than exposing Axios internals; cancel does not claim a save.
+- Route-address search regression found nested stops were stringified as objects; explicit visible search fields now include stop names/addresses and exclude UUID/version metadata. RED → GREEN verified in Chrome.
+- Current evidence: 20 unit/SSR tests, 16 real PostgreSQL integration tests and 4 application/browser/HTTP tests passed; lint/typecheck and application/Storybook builds passed. The final frontend build after the search fix also passed.
+- Task reviewer explicitly did not judge future P05 daily substitutions or P14 whole-application visual fidelity. Those remain requirements and are not waived. US-003 stays To do until its temporary substitution criterion is implemented in P05; US-001/002 and P02 move to In review after passing final checks.
+
 ## Execution rulings
 
 - Native Windows execution uses the tracked task board and an ignored per-plan ledger instead of POSIX-only skill helper scripts; evidence and checkpoints remain explicit.
@@ -27,8 +40,8 @@ Current work covers agent registration/login/logout/me, hashed opaque sessions, 
 - The user's repeated task-level review requirement overrides executing-plans' single-review and no-rereview defaults. All valid actionable findings are fixed rather than deferred by severity alone.
 - Git identity was absent; the foundation commit used the exact author name and public noreply address already present on the repository's prior commit through per-command options. Global Git configuration was not changed.
 - No Docker/PostgreSQL command was installed on PATH. A test-only npm-distributed PostgreSQL 17.11 runtime supplies real disposable databases; tests do not substitute an in-memory database for RLS/financial checks.
-- Next.js application tests use loopback-only ports 3002/4002 and an isolated ignored build directory. Generated cache output is excluded from lint/format/type discovery. No customer communications, live payments or cloud actions were performed.
+- Next.js application tests now use per-run loopback ports and per-run ignored build directories, one browser worker and explicit Windows child-process tree cleanup to prevent shared-server interference. Generated cache output is excluded from lint/format/type discovery. No customer communications, live payments or cloud actions were performed.
 
 ## Outstanding
 
-P02–P14 remain unimplemented. No merge or remote push has occurred. Provider credentials and live-service acceptance are distinct from local contract tests and must not be reported as verified without evidence.
+P02 is verified and independently reviewed; P03–P14 remain unimplemented. No merge or remote push has occurred. Provider credentials and live-service acceptance are distinct from local contract tests and must not be reported as verified without evidence.

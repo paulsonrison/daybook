@@ -18,6 +18,27 @@ import {
   typographyVariables,
 } from '../src';
 
+test('filtered and failed tables do not claim that the dataset is empty', () => {
+  for (const state of ['no-results', 'error'] as const) {
+    const html = renderToStaticMarkup(
+      <DataTable
+        rows={[]}
+        columns={[]}
+        rowKey={() => 'unused'}
+        caption="Staff"
+        state={state}
+        emptyTitle="No staff profiles yet"
+        emptyAction={<Button>Add first staff</Button>}
+      />,
+    );
+    assert.doesNotMatch(html, /No staff profiles yet|Add first staff/);
+    assert.match(
+      html,
+      state === 'no-results' ? /No matching records/ : /Records unavailable/,
+    );
+  }
+});
+
 test('removed and invalid pages clamp safely; an empty list has no fictitious first row', () => {
   assert.deepEqual(pageWindow(326, 99, 5), {
     current: 66,

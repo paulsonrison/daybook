@@ -14,13 +14,13 @@ test('agent creates agency, refreshes session, logs out and signs back in', asyn
   await page
     .getByRole('button', { name: 'Create agency', exact: true })
     .click();
-  await expect(
-    page.getByRole('heading', { name: 'Browser Agency', exact: true }),
-  ).toBeVisible();
+  await expect(page.getByLabel('Current agency', { exact: true })).toHaveText(
+    'Browser Agency',
+  );
   await page.reload();
-  await expect(
-    page.getByRole('heading', { name: 'Browser Agency', exact: true }),
-  ).toBeVisible();
+  await expect(page.getByLabel('Current agency', { exact: true })).toHaveText(
+    'Browser Agency',
+  );
   await page.getByRole('button', { name: 'Sign out', exact: true }).click();
   await expect(
     page.getByRole('heading', { name: 'Sign in to Daybook', exact: true }),
@@ -33,9 +33,9 @@ test('agent creates agency, refreshes session, logs out and signs back in', asyn
   ).toContainText('Email or password is incorrect');
   await page.getByLabel(/^Password/).fill('Browser test password 123');
   await page.getByRole('button', { name: 'Sign in', exact: true }).click();
-  await expect(
-    page.getByRole('heading', { name: 'Browser Agency', exact: true }),
-  ).toBeVisible();
+  await expect(page.getByLabel('Current agency', { exact: true })).toHaveText(
+    'Browser Agency',
+  );
   const cookies = await page.context().cookies();
   expect(cookies.find((c) => c.name === 'daybook_session')?.httpOnly).toBe(
     true,

@@ -1,5 +1,6 @@
 'use client';
-import { useEffect, useState, type FormEvent } from 'react';
+import { useEffect, useState, type FormEvent, type ReactNode } from 'react';
+import { usePathname } from 'next/navigation';
 import {
   AppShell,
   BrandMark,
@@ -18,7 +19,8 @@ export interface Agent {
   email: string;
   agency: { id: string; name: string };
 }
-export function AgencyEntry() {
+export function AgencyEntry({ children }: { children?: ReactNode }) {
+  const pathname = usePathname();
   const [agent, setAgent] = useState<Agent | null>(null);
   const [checking, setChecking] = useState(true);
   const [register, setRegister] = useState(false);
@@ -107,7 +109,37 @@ export function AgencyEntry() {
           navigation={[
             {
               label: 'Workspace',
-              items: [{ label: 'Overview', href: '/', active: true }],
+              items: [
+                {
+                  label: 'Overview',
+                  href: '/',
+                  icon: 'dashboard',
+                  active: pathname === '/',
+                },
+                {
+                  label: 'Routes & delivery',
+                  href: '/routes',
+                  icon: 'nav-route',
+                  active: pathname === '/routes',
+                },
+              ],
+            },
+            {
+              label: 'Operations',
+              items: [
+                {
+                  label: 'Staff & payroll',
+                  href: '/staff',
+                  icon: 'staff',
+                  active: pathname === '/staff',
+                },
+                {
+                  label: 'Settings',
+                  href: '/settings/territory',
+                  icon: 'nav-settings',
+                  active: pathname.startsWith('/settings'),
+                },
+              ],
             },
           ]}
           header={
@@ -115,7 +147,10 @@ export function AgencyEntry() {
               className="db-row"
               style={{ justifyContent: 'space-between', width: '100%' }}
             >
-              <span>{agent.name}</span>
+              <div>
+                <strong aria-label="Current agency">{agent.agency.name}</strong>
+                <span className="db-muted"> · {agent.name}</span>
+              </div>
               <Button variant="secondary" loading={busy} onClick={logout}>
                 Sign out
               </Button>
@@ -123,8 +158,6 @@ export function AgencyEntry() {
           }
           footer={<span>{agent.agency.name}</span>}
         >
-          <h1>{agent.agency.name}</h1>
-          <p className="db-muted">Your agency workspace</p>
           {error && (
             <Notification
               tone="error"
@@ -132,10 +165,12 @@ export function AgencyEntry() {
               description={error}
             />
           )}
-          <Card>
-            <h2>Set up your delivery territory</h2>
-            <p>Your agency has no delivery territory yet.</p>
-          </Card>
+          {children ?? (
+            <Card>
+              <h2>Set up your delivery territory</h2>
+              <p>Your agency has no delivery territory yet.</p>
+            </Card>
+          )}
         </AppShell>
       ) : (
         <main className="agency-auth">

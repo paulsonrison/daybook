@@ -2,9 +2,9 @@
 
 Branch: `codex/complete-daybook` · Design and implementation plan: approved.
 
-Lifecycle: **Not started → To do → In review → Done**. Start implementation in To do; submit implemented and verified work to In review; findings return to To do. Done requires clean independent review and a verified merge to main.
+Lifecycle: **Not started → To do → In review → Done**. Review findings return work to To do; Done requires clean independent review and verified merge to main.
 
-See [implementation plan](superpowers/plans/2026-11-09-complete-daybook.md), [approved design](superpowers/specs/2026-11-09-complete-daybook-design.md), [structured tasks and history](tasks.json), [acceptance matrix](acceptance-matrix.md), and [verification/review ledger](implementation-progress.md).
+[Plan](superpowers/plans/2026-11-09-complete-daybook.md) · [Design](superpowers/specs/2026-11-09-complete-daybook-design.md) · [Task history](tasks.json) · [Acceptance evidence](acceptance-matrix.md) · [Review ledger](implementation-progress.md)
 
 ## Implementation work packages
 
@@ -12,7 +12,7 @@ See [implementation plan](superpowers/plans/2026-11-09-complete-daybook.md), [ap
 | ---- | ----------------------------------------------------------- | ----------- |
 | P00  | Preserve UI foundation, baseline and tracking               | In review   |
 | P01  | Agent authentication and tenant database boundary           | In review   |
-| P02  | Territory, staff and ordered route management               | Not started |
+| P02  | Territory, staff and ordered route management               | In review   |
 | P03  | Publications, residents and refundable deposits             | Not started |
 | P04  | Subscription recurrence, holds and effective pricing        | Not started |
 | P05  | Delivery operations, substitutions and exceptions           | Not started |
@@ -30,9 +30,9 @@ See [implementation plan](superpowers/plans/2026-11-09-complete-daybook.md), [ap
 
 | Story  | Work                             | Plan | Priority | Status      |
 | ------ | -------------------------------- | ---- | -------- | ----------- |
-| US-001 | Area Jurisdiction                | P02  | High     | Not started |
-| US-002 | Staff Management                 | P02  | High     | Not started |
-| US-003 | Route Division                   | P02  | High     | Not started |
+| US-001 | Area Jurisdiction                | P02  | High     | In review   |
+| US-002 | Staff Management                 | P02  | High     | In review   |
+| US-003 | Route Division                   | P02  | High     | To do       |
 | US-004 | Catalog & Inventory              | P03  | Medium   | Not started |
 | US-005 | Resident Management              | P03  | High     | Not started |
 | US-006 | Multi-Subscription Master        | P04  | High     | Not started |
@@ -70,5 +70,3 @@ See [implementation plan](superpowers/plans/2026-11-09-complete-daybook.md), [ap
 | US-038 | Resident Settlement & Clearance  | P08  | High     | Not started |
 | US-039 | Field Collection Run-Sheets      | P08  | High     | Not started |
 | US-040 | Automated Cloud Backup           | P13  | High     | Not started |
-
-P00 and P01 have clean independent reviews and remain In review until final merge. Later work packages remain Not started. The source story status reflects its acceptance criteria, not merely the existence of a screen.

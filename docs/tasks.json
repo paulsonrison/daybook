@@ -53,9 +53,21 @@
     {
       "id": "P02",
       "title": "Territory, staff and ordered route management",
-      "status": "Not started",
-      "evidence": [],
-      "review": null,
+      "status": "In review",
+      "evidence": [
+        "20 unit/SSR tests passed",
+        "16 real PostgreSQL integration tests passed",
+        "4 complete application/browser/HTTP tests passed, including edit/reorder/filter/deactivation and failed-save preservation",
+        "Independent operations_review final rereview: no actionable findings",
+        "Typecheck and lint passed; application/Storybook builds passed; final frontend build passed"
+      ],
+      "review": {
+        "reviewer": "operations_review",
+        "findings": 1,
+        "resolved": 1,
+        "outstanding": 0,
+        "result": "Final rereview clear; P05 substitutions and P14 visual checks explicitly deferred to their tasks"
+      },
       "mergeCommit": null
     },
     {
@@ -176,14 +188,26 @@
       "planTask": "P02",
       "sourceRow": 9,
       "priority": "High",
-      "status": "Not started",
+      "status": "In review",
       "criteria": [
         "1. Agent can register/update locality, pin codes, and sector boundaries.",
         "2. Prevent duplicate territory overlap without authorization.",
         "3. Display territory summary on agent dashboard."
       ],
-      "evidence": [],
-      "review": null,
+      "evidence": [
+        "20 unit/SSR tests passed",
+        "16 real PostgreSQL integration tests passed",
+        "4 complete application/browser/HTTP tests passed, including edit/reorder/filter/deactivation and failed-save preservation",
+        "Independent operations_review final rereview: no actionable findings",
+        "Typecheck and lint passed; application/Storybook builds passed; final frontend build passed"
+      ],
+      "review": {
+        "reviewer": "operations_review",
+        "findings": 1,
+        "resolved": 1,
+        "outstanding": 0,
+        "result": "Final rereview clear; P05 substitutions and P14 visual checks explicitly deferred to their tasks"
+      },
       "mergeCommit": null
     },
     {
@@ -192,14 +216,26 @@
       "planTask": "P02",
       "sourceRow": 10,
       "priority": "High",
-      "status": "Not started",
+      "status": "In review",
       "criteria": [
         "1. Agent can add, edit, deactivate delivery boys with phone & ID.",
         "2. View active delivery staff count and assigned sectors.",
         "3. Track delivery boy status (Active/On Leave)."
       ],
-      "evidence": [],
-      "review": null,
+      "evidence": [
+        "20 unit/SSR tests passed",
+        "16 real PostgreSQL integration tests passed",
+        "4 complete application/browser/HTTP tests passed, including edit/reorder/filter/deactivation and failed-save preservation",
+        "Independent operations_review final rereview: no actionable findings",
+        "Typecheck and lint passed; application/Storybook builds passed; final frontend build passed"
+      ],
+      "review": {
+        "reviewer": "operations_review",
+        "findings": 1,
+        "resolved": 1,
+        "outstanding": 0,
+        "result": "Final rereview clear; P05 substitutions and P14 visual checks explicitly deferred to their tasks"
+      },
       "mergeCommit": null
     },
     {
@@ -208,15 +244,19 @@
       "planTask": "P02",
       "sourceRow": 11,
       "priority": "High",
-      "status": "Not started",
+      "status": "To do",
       "criteria": [
         "1. Divide coverage area into distinct routes/streets/lines with configured delivery drop sequence.",
         "2. Assign each route to a specific delivery boy with door-to-door delivery order.",
         "3. Support daily substitute re-assignment when a delivery boy is absent."
       ],
-      "evidence": [],
+      "evidence": [
+        "Route division, permanent assignment and ordered stops implemented/tested in P02",
+        "Daily temporary substitute assignment remains P05; story is not complete"
+      ],
       "review": null,
-      "mergeCommit": null
+      "mergeCommit": null,
+      "supportingPlanTasks": ["P05"]
     },
     {
       "id": "US-004",
@@ -864,6 +904,55 @@
     {
       "date": "2026-11-09",
       "event": "Added all 15 plan work packages alongside the 40 source stories so task-level workflow and source acceptance are both tracked."
+    },
+    {
+      "date": "2026-11-09T16:13:43.745Z",
+      "task": "P02",
+      "from": "Not started",
+      "to": "To do",
+      "event": "P01 independently reviewed and committed; starting territory, staff and route management with failing tests."
+    },
+    {
+      "date": "2026-11-09T16:13:43.745Z",
+      "task": "US-001",
+      "from": "Not started",
+      "to": "To do",
+      "event": "P01 independently reviewed and committed; starting territory, staff and route management with failing tests."
+    },
+    {
+      "date": "2026-11-09T16:13:43.745Z",
+      "task": "US-002",
+      "from": "Not started",
+      "to": "To do",
+      "event": "P01 independently reviewed and committed; starting territory, staff and route management with failing tests."
+    },
+    {
+      "date": "2026-11-09T16:13:43.745Z",
+      "task": "US-003",
+      "from": "Not started",
+      "to": "To do",
+      "event": "P01 independently reviewed and committed; starting territory, staff and route management with failing tests."
+    },
+    {
+      "date": "2026-11-09T17:34:40.755Z",
+      "task": "P02",
+      "from": "To do",
+      "to": "In review",
+      "event": "Implementation and all required checks passed; independent operations_review final rereview has no actionable findings. Source US-003 awaits P05 substitutions."
+    },
+    {
+      "date": "2026-11-09T17:34:40.755Z",
+      "task": "US-001",
+      "from": "To do",
+      "to": "In review",
+      "event": "Implementation and all required checks passed; independent operations_review final rereview has no actionable findings. Source US-003 awaits P05 substitutions."
+    },
+    {
+      "date": "2026-11-09T17:34:40.755Z",
+      "task": "US-002",
+      "from": "To do",
+      "to": "In review",
+      "event": "Implementation and all required checks passed; independent operations_review final rereview has no actionable findings. Source US-003 awaits P05 substitutions."
     }
   ]
 }

@@ -33,6 +33,16 @@ const database = new EmbeddedPostgres({
 let admin;
 const servers = [];
 const logs = [];
+async function freePort() {
+  const server = createServer();
+  await new Promise((done, reject) => {
+    server.once('error', reject);
+    server.listen(0, '127.0.0.1', done);
+  });
+  const number = server.address().port;
+  await new Promise((done) => server.close(done));
+  return number;
+}
 try {
   await database.initialise();
   await database.start();
@@ -60,14 +70,31 @@ try {
     TEST_ADMIN_DATABASE_URL: `postgresql://postgres:${password}@127.0.0.1:${port}/postgres`,
   };
   let args = ['--import', 'tsx', '--test', ...process.argv.slice(2)];
+  if (process.argv.length === 2)
+    args = [
+      '--import',
+      'tsx',
+      '--test',
+      ...(await readdir('apps/backend/tests/integration'))
+        .filter((name) => name.endsWith('.test.ts'))
+        .sort()
+        .map((name) => `apps/backend/tests/integration/${name}`),
+    ];
   if (process.argv[2] === '--app') {
-    const frontend = 'http://127.0.0.1:3002';
+    const frontendPort = await freePort(),
+      backendPort = await freePort();
+    const frontend = `http://127.0.0.1:${frontendPort}`;
+    const backend = `http://127.0.0.1:${backendPort}`;
     for (const [name, command, cwd, extra] of [
       [
         'backend',
         ['--import', 'tsx', 'apps/backend/src/server.ts'],
         process.cwd(),
-        { PORT: '4002', DATABASE_URL: runtimeUrl, FRONTEND_ORIGIN: frontend },
+        {
+          PORT: String(backendPort),
+          DATABASE_URL: runtimeUrl,
+          FRONTEND_ORIGIN: frontend,
+        },
       ],
       [
         'frontend',
@@ -75,15 +102,15 @@ try {
           resolve('node_modules/next/dist/bin/next'),
           'dev',
           '--port',
-          '3002',
+          String(frontendPort),
           '--hostname',
           '127.0.0.1',
         ],
         resolve('apps/frontend'),
         {
-          GRAPHQL_SERVER_URL: 'http://127.0.0.1:4002',
+          GRAPHQL_SERVER_URL: backend,
           FRONTEND_ORIGIN: frontend,
-          DAYBOOK_BUILD_DIR: '.cache/next-application-tests',
+          DAYBOOK_BUILD_DIR: `.cache/next-application-tests-${frontendPort}`,
         },
       ],
     ]) {
@@ -95,8 +122,7 @@ try {
         stdio: ['ignore', log.fd, log.fd],
       });
       servers.push(server);
-      const url =
-        name === 'backend' ? 'http://127.0.0.1:4002/health' : frontend;
+      const url = name === 'backend' ? `${backend}/health` : frontend;
       const end = Date.now() + 90000;
       while (true) {
         if (server.exitCode !== null)
@@ -120,6 +146,7 @@ try {
       'test',
       '--config',
       'playwright.app.config.ts',
+      ...process.argv.slice(3),
     ];
   }
   const child = spawn(process.execPath, args, {
@@ -131,7 +158,20 @@ try {
     child.once('exit', (code) => done(code ?? 1));
   });
 } finally {
-  for (const server of servers) server.kill();
+  for (const server of servers) {
+    if (server.exitCode !== null) continue;
+    if (process.platform === 'win32')
+      await new Promise((done) => {
+        const killer = spawn(
+          'taskkill',
+          ['/PID', String(server.pid), '/T', '/F'],
+          { windowsHide: true, stdio: 'ignore' },
+        );
+        killer.once('error', done);
+        killer.once('exit', done);
+      });
+    else server.kill();
+  }
   await Promise.all(logs.map((log) => log.close()));
   await admin?.end();
   await database.stop();

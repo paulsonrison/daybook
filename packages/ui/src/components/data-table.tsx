@@ -44,9 +44,9 @@ export function DataTable<T>({
     return (
       <DataState
         kind={state}
-        title={emptyTitle}
-        onRetry={onRetry}
-        action={emptyAction}
+        title={state === 'empty' ? emptyTitle : undefined}
+        onRetry={state === 'error' || state === 'slow' ? onRetry : undefined}
+        action={state === 'empty' ? emptyAction : undefined}
       />
     );
   if (rows.length === 0 && state === 'ready')
