@@ -3,7 +3,7 @@
 1. Install Node 22.12+ and npm 10+.
 2. Run `npm ci` from the root.
 3. Copy root `.env.example` to `.env`, backend `.env.example` to `apps/backend/.env`, and frontend `.env.example` to `apps/frontend/.env.local`.
-4. Set a local PostgreSQL password and match it in the backend connection URL. Percent-encode special characters in URL credentials.
+4. Set a local PostgreSQL administrative password for MIGRATION_DATABASE_URL. Provision a separate restricted login inheriting daybook_app after migration 002, and put that connection in DATABASE_URL. See [authentication setup](authentication.md). Percent-encode special characters in URL credentials.
 5. Start PostgreSQL with `docker compose up -d --wait`, then run `npm run db:migrate` and `npm run db:check`.
 6. Start both apps with `npm run dev`. Start Storybook separately with `npm run storybook`.
 
@@ -11,7 +11,7 @@ npm workspace scripts execute in each package directory: backend dotenv reads `a
 
 ## Troubleshooting
 
-- API unavailable: confirm backend startup, port 4000 and `NEXT_PUBLIC_GRAPHQL_URL`. Restart Next.js after changing public environment values.
+- API unavailable: confirm backend startup, port 4000 and server-only `GRAPHQL_SERVER_URL`. Frontend requests use the same-origin `/api/graphql` proxy. Restart Next.js after changing environment values.
 - CORS failure: `FRONTEND_ORIGIN` must exactly match the frontend origin, including the port.
 - Readiness 503: PostgreSQL is unavailable, credentials are wrong, or `DATABASE_URL` points at the wrong host. `/health` and GraphQL `health` only report API liveness.
 - Port 5432 busy: use an existing local database, or change Compose's host port and the connection URL together.

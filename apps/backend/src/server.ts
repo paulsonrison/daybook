@@ -2,8 +2,11 @@ import 'dotenv/config';
 import { createServer } from 'node:http';
 import { createApp } from './app.js';
 import { createPool } from './db/pool.js';
+import { assertRuntimeRole } from './db/tenant.js';
 const pool = createPool();
+await assertRuntimeRole(pool);
 const app = createApp({
+  pool,
   frontendOrigin: process.env.FRONTEND_ORIGIN,
   databaseReady: async () => {
     try {

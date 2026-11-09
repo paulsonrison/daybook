@@ -4,3 +4,5 @@ dist
 storybook-static
 package-lock.json
 next-env.d.ts
+.cache
+.superpowers

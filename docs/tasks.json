@@ -32,6 +32,145 @@
       "mergeCommit": null
     },
     {
+      "id": "P01",
+      "title": "Agent authentication and tenant database boundary",
+      "status": "In review",
+      "evidence": [
+        "19 unit/SSR tests passed",
+        "9 real PostgreSQL auth/tenant integration tests passed",
+        "3 application Chrome/HTTP tests passed",
+        "Typecheck, lint, production build and repository formatting (end-of-line auto) passed"
+      ],
+      "review": {
+        "reviewer": "auth_review",
+        "findings": 1,
+        "resolved": 1,
+        "outstanding": 0,
+        "result": "Independent rereview clear"
+      },
+      "mergeCommit": null
+    },
+    {
+      "id": "P02",
+      "title": "Territory, staff and ordered route management",
+      "status": "Not started",
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "P03",
+      "title": "Publications, residents and refundable deposits",
+      "status": "Not started",
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "P04",
+      "title": "Subscription recurrence, holds and effective pricing",
+      "status": "Not started",
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "P05",
+      "title": "Delivery operations, substitutions and exceptions",
+      "status": "Not started",
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "P06",
+      "title": "Supply, returns, seasonal stock and inserts",
+      "status": "Not started",
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "P07",
+      "title": "Invoice engine, arrears and immutable closing",
+      "status": "Not started",
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "P08",
+      "title": "Payments, clearance, credit limits and collection sheets",
+      "status": "Not started",
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "P09",
+      "title": "Staff pay, attendance, handover and cash closing",
+      "status": "Not started",
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "P10",
+      "title": "Durable worker, localized communications and direct contact",
+      "status": "Not started",
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "P11",
+      "title": "Complete localization, reporting, analytics and appearance",
+      "status": "Not started",
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "P12",
+      "title": "Offline field sync and installable app shell",
+      "status": "Not started",
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "P13",
+      "title": "Tenant AI assistant and encrypted cloud backup",
+      "status": "Not started",
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
+      "id": "P14",
+      "title": "Whole-project acceptance review and merge",
+      "status": "Not started",
+      "dependencies": [
+        "P00",
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05",
+        "P06",
+        "P07",
+        "P08",
+        "P09",
+        "P10",
+        "P11",
+        "P12",
+        "P13"
+      ],
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
+    },
+    {
       "id": "US-001",
       "title": "Area Jurisdiction",
       "planTask": "P02",
@@ -517,14 +656,25 @@
       "planTask": "P01",
       "sourceRow": 39,
       "priority": "High",
-      "status": "Not started",
+      "status": "In review",
       "criteria": [
         "1. Tenant boundary enforced via agency_id / tenant_id on all database queries and ORM scopes.",
         "2. Multi-tenant row-level security (RLS) preventing cross-tenant data leakage.",
         "3. Strict session authorization validating tenant boundaries on every API request."
       ],
-      "evidence": [],
-      "review": null,
+      "evidence": [
+        "19 unit/SSR tests passed",
+        "9 real PostgreSQL auth/tenant integration tests passed",
+        "3 application Chrome/HTTP tests passed",
+        "Typecheck, lint, production build and repository formatting (end-of-line auto) passed"
+      ],
+      "review": {
+        "reviewer": "auth_review",
+        "findings": 1,
+        "resolved": 1,
+        "outstanding": 0,
+        "result": "Independent rereview clear"
+      },
       "mergeCommit": null
     },
     {
@@ -671,30 +821,6 @@
       "evidence": [],
       "review": null,
       "mergeCommit": null
-    },
-    {
-      "id": "P14",
-      "title": "Whole-project acceptance review and merge",
-      "status": "Not started",
-      "dependencies": [
-        "P00",
-        "P01",
-        "P02",
-        "P03",
-        "P04",
-        "P05",
-        "P06",
-        "P07",
-        "P08",
-        "P09",
-        "P10",
-        "P11",
-        "P12",
-        "P13"
-      ],
-      "evidence": [],
-      "review": null,
-      "mergeCommit": null
     }
   ],
   "history": [
@@ -720,6 +846,24 @@
       "date": "2026-11-09",
       "task": "P00",
       "event": "Reviewed foundation gates passed: 18 tests, typecheck, lint, application and Storybook builds, 3 Chrome regressions. Ready for foundation commit."
+    },
+    {
+      "date": "2026-11-09",
+      "task": "US-031",
+      "from": "Not started",
+      "to": "To do",
+      "event": "P01 started: four failing auth assertions reproduced against disposable PostgreSQL 17 before production implementation."
+    },
+    {
+      "date": "2026-11-09",
+      "task": "P01 / US-031",
+      "from": "To do",
+      "to": "In review",
+      "event": "Auth implementation and final checks passed; public buffering finding fixed RED -> GREEN and independent rereview is clear. No merge yet."
+    },
+    {
+      "date": "2026-11-09",
+      "event": "Added all 15 plan work packages alongside the 40 source stories so task-level workflow and source acceptance are both tracked."
     }
   ]
 }

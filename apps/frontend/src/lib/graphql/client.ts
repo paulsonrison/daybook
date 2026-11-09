@@ -1,8 +1,7 @@
 import axios from 'axios';
 type GraphQLResponse<T> = { data?: T; errors?: { message: string }[] };
 const http = axios.create({
-  baseURL:
-    process.env.NEXT_PUBLIC_GRAPHQL_URL || 'http://localhost:4000/graphql',
+  baseURL: '/api/graphql',
   timeout: 10000,
 });
 export async function graphqlRequest<T>(

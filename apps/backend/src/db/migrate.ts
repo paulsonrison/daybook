@@ -1,7 +1,9 @@
 import { readdir, readFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { createPool } from './pool.js';
-const pool = createPool();
+const pool = createPool(
+  process.env.MIGRATION_DATABASE_URL || process.env.DATABASE_URL,
+);
 try {
   const client = await pool.connect();
   try {

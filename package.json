@@ -22,7 +22,9 @@
     "format:check": "prettier --check .",
     "db:check": "npm run db:check -w @daybook/backend",
     "db:migrate": "npm run db:migrate -w @daybook/backend",
-    "test:browser": "playwright test"
+    "test:browser": "playwright test",
+    "test:integration": "node scripts/test-database.mjs apps/backend/tests/integration/auth.test.ts apps/backend/tests/integration/tenancy.test.ts",
+    "test:application": "node scripts/test-database.mjs --app"
   },
   "devDependencies": {
     "@playwright/test": "^1.65.0",
