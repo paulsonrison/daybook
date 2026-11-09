@@ -13,6 +13,7 @@ import {
 } from '@daybook/ui';
 import { CatalogStore, type Publication, type Resident } from './store';
 import { PublicationEditor, ResidentEditor } from './editors';
+import { SubscriptionsPanel, PriceRulesPanel } from './subscriptions';
 export const CatalogScreen = observer(function CatalogScreen({
   kind,
 }: {
@@ -28,6 +29,11 @@ export const CatalogScreen = observer(function CatalogScreen({
       Publication | Resident | null | undefined
     >(),
     [notice, setNotice] = useState('');
+  const [subscriptionsResident, setSubscriptionsResident] =
+      useState<Resident | null>(null),
+    [pricingPublication, setPricingPublication] = useState<Publication | null>(
+      null,
+    );
   const title =
     kind === 'publication'
       ? 'Publications & pricing'
@@ -110,9 +116,14 @@ export const CatalogScreen = observer(function CatalogScreen({
       key: 'edit',
       header: 'Action',
       render: (r) => (
-        <Button variant="tertiary" onClick={() => open(r)}>
-          Edit publication
-        </Button>
+        <div className="db-row">
+          <Button variant="tertiary" onClick={() => open(r)}>
+            Edit publication
+          </Button>
+          <Button variant="tertiary" onClick={() => setPricingPublication(r)}>
+            Price rules
+          </Button>
+        </div>
       ),
     },
   ];
@@ -166,9 +177,17 @@ export const CatalogScreen = observer(function CatalogScreen({
       key: 'edit',
       header: 'Action',
       render: (r) => (
-        <Button variant="tertiary" onClick={() => open(r)}>
-          Edit resident
-        </Button>
+        <div className="db-row">
+          <Button variant="tertiary" onClick={() => open(r)}>
+            Edit resident
+          </Button>
+          <Button
+            variant="tertiary"
+            onClick={() => setSubscriptionsResident(r)}
+          >
+            Manage subscriptions
+          </Button>
+        </div>
       ),
     },
   ];
@@ -241,6 +260,19 @@ export const CatalogScreen = observer(function CatalogScreen({
           />
         )}
       </Card>
+      {subscriptionsResident && (
+        <SubscriptionsPanel
+          resident={subscriptionsResident}
+          catalog={store}
+          onClose={() => setSubscriptionsResident(null)}
+        />
+      )}
+      {pricingPublication && (
+        <PriceRulesPanel
+          publication={pricingPublication}
+          onClose={() => setPricingPublication(null)}
+        />
+      )}
       {editing !== undefined &&
         (kind === 'publication' ? (
           <PublicationEditor

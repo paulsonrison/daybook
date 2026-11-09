@@ -44,7 +44,7 @@ Configuration now uses typed GraphQL inputs, per-agency serialized mutation tran
 
 ## Outstanding
 
-P03 is verified and independently reviewed; P04 is in progress and P05–P14 remain unimplemented. No merge or remote push has occurred. Provider credentials and live-service acceptance are distinct from local contract tests and must not be reported as verified without evidence.
+P04 is verified and independently reviewed; P05 is in progress and P06–P14 remain unimplemented. No merge or remote push has occurred. Provider credentials and live-service acceptance are distinct from local contract tests and must not be reported as verified without evidence.
 
 ## P03 — reviewed catalog, residents and deposits
 
@@ -54,3 +54,13 @@ Catalog supports regional editions, dispatch and calendars with exact decimal pr
 - Independent review found stale resident versions after route reorder, incompatible territory sector edits, and missing UI linking of existing points. Regression assertions reproduced stale overwrite and missing linking control; all three fixed and rereview clear.
 - Final P03 checks: 23 unit/SSR tests, 23 PostgreSQL tests, 5 Chrome app tests, lint/typecheck, production and Storybook builds passed. P03/US-005 In review until merge. US-004 counts/indents and US-033 manifests/reconciliation remain P05/P06 dependencies. Full visual fidelity remains P14.
 - P04 started: all eight recurrence/calendar and price-precedence tests observed RED, then all three GREEN. Subscription persistence, holds and screens still in progress.
+
+## P04 — reviewed subscriptions, holds and effective pricing
+
+All eight date-only cadences, anchored month/year clamping, bounded and indefinite vacation holds, concurrent publication subscriptions and price-rule precedence are persisted behind tenant-scoped APIs and shared UI forms. Equal-priority overlapping prices are rejected.
+
+- RED → GREEN: four calendar/hold/price tests, missing subscription/hold/price APIs, and Chrome management controls. Compatibility checks cover the Gregorian/fortnight 800-year cycle; validating once per schedule reduced the slowest initial integration from about 20 seconds to about two seconds.
+- Independent auth_review found duplicate subscription creation after an unconfirmed save and publication calendar edits bypassing subscription compatibility. Both reproduced, fixed using durable scoped request fingerprints and an active-subscription calendar guard; rereview clear.
+- Final checks passed: 27 unit/SSR, 29 PostgreSQL integration, 6 Chrome app tests, lint, typecheck, production build and formatting. Shared UI package was unchanged since its successful P03 Storybook build. P04/US-006–008 In review until merge. US-012 billing and US-015 manifest/billing criteria retain P05/P07 dependencies.
+- Ruling: calendar edits require pausing/cancelling active subscriptions before an explicit validated schedule update/reactivation. This avoids silently changing household delivery commitments; it costs the owner an explicit reassignment step even for compatible calendar additions.
+- P05 started with delivery/manifest/substitution/complaint regression contracts.

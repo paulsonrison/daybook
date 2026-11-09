@@ -14,6 +14,7 @@ import {
   findPublication,
   listPublications,
   writePublication,
+  hasActiveSubscriptions,
 } from './repository.js';
 export interface PublicationInput {
   id?: string;
@@ -73,6 +74,15 @@ export function savePublication(ctx: RequestContext, input: PublicationInput) {
     if (input.id) {
       if (!old) return fail('Publication not found.', 'NOT_FOUND');
       versionMatches(old.version, input.version);
+      const calendarChanged =
+        old.frequency !== input.frequency ||
+        old.anchorDate !== anchor ||
+        JSON.stringify([...old.publishingDays].sort()) !==
+          JSON.stringify([...new Set(input.publishingDays)].sort());
+      if (calendarChanged && (await hasActiveSubscriptions(client, id)))
+        return fail(
+          'Pause or cancel active subscriptions before changing the publication issue calendar, then validate their new schedules.',
+        );
     }
     const result = await writePublication(
       client,

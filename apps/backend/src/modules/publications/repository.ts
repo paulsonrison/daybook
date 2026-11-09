@@ -54,11 +54,27 @@ export async function listPublications(client: PoolClient) {
 }
 export async function findPublication(client: PoolClient, id: string) {
   return (
-    await client.query<{ version: number; active: boolean }>(
-      'SELECT version,active FROM daybook.publications WHERE id=$1 FOR UPDATE',
+    await client.query<{
+      version: number;
+      active: boolean;
+      frequency: string;
+      publishingDays: number[];
+      anchorDate: string | null;
+    }>(
+      `SELECT version,active,frequency,publishing_days AS "publishingDays",to_char(anchor_date,'YYYY-MM-DD') AS "anchorDate" FROM daybook.publications WHERE id=$1 FOR UPDATE`,
       [id],
     )
   ).rows[0];
+}
+export async function hasActiveSubscriptions(client: PoolClient, id: string) {
+  return Boolean(
+    (
+      await client.query(
+        "SELECT id FROM daybook.subscriptions WHERE publication_id=$1 AND status='ACTIVE' LIMIT 1",
+        [id],
+      )
+    ).rowCount,
+  );
 }
 export async function writePublication(
   client: PoolClient,

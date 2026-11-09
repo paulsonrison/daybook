@@ -9,6 +9,10 @@ import {
   operationsResolvers,
 } from './modules/operations/schema.js';
 import { catalogTypeDefs, catalogResolvers } from './modules/catalog/schema.js';
+import {
+  subscriptionTypeDefs,
+  subscriptionResolvers,
+} from './modules/subscriptions/schema.js';
 export function createApp({
   databaseReady,
   frontendOrigin = 'http://localhost:3000',
@@ -34,11 +38,13 @@ export function createApp({
       type Agent { id: ID!, agencyId: ID!, name: String!, email: String!, agency: Agency! }
       type Query { health: Health!, me: Agent! }
       ${operationsTypeDefs}
-      ${catalogTypeDefs}`,
+      ${catalogTypeDefs}
+      ${subscriptionTypeDefs}`,
       resolvers: {
         Query: {
           ...operationsResolvers.Query,
           ...catalogResolvers.Query,
+          ...subscriptionResolvers.Query,
           health: () => ({ status: 'ok', service: 'daybook-api' }),
           me: (_root, _args, context) => {
             if (!context.agent)
@@ -51,6 +57,7 @@ export function createApp({
         Mutation: {
           ...operationsResolvers.Mutation,
           ...catalogResolvers.Mutation,
+          ...subscriptionResolvers.Mutation,
         },
       },
     }),

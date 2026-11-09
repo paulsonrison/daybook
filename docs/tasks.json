@@ -89,15 +89,23 @@
     {
       "id": "P04",
       "title": "Subscription recurrence, holds and effective pricing",
-      "status": "To do",
-      "evidence": [],
-      "review": null,
+      "status": "In review",
+      "evidence": [
+        "27 unit/SSR, 29 PostgreSQL integration and 6 Chrome app tests passed",
+        "Lint, typecheck, production build and formatting passed",
+        "auth_review found two P2 issues; both reproduced, fixed and rereview clear"
+      ],
+      "review": {
+        "reviewer": "auth_review",
+        "status": "clear",
+        "findingsFixed": 2
+      },
       "mergeCommit": null
     },
     {
       "id": "P05",
       "title": "Delivery operations, substitutions and exceptions",
-      "status": "Not started",
+      "status": "To do",
       "evidence": [],
       "review": null,
       "mergeCommit": null
@@ -313,14 +321,22 @@
       "planTask": "P04",
       "sourceRow": 14,
       "priority": "High",
-      "status": "To do",
+      "status": "In review",
       "criteria": [
         "1. Resident/Agent can add multiple active publications (daily newspapers, weekend editions, periodicals, magazines) per account.",
         "2. Magazine subscriptions handled as standard publication items.",
         "3. Display aggregated active subscription list per resident."
       ],
-      "evidence": [],
-      "review": null,
+      "evidence": [
+        "27 unit/SSR, 29 PostgreSQL integration and 6 Chrome app tests passed",
+        "Lint, typecheck, production build and formatting passed",
+        "auth_review found two P2 issues; both reproduced, fixed and rereview clear"
+      ],
+      "review": {
+        "reviewer": "auth_review",
+        "status": "clear",
+        "findingsFixed": 2
+      },
       "mergeCommit": null
     },
     {
@@ -329,14 +345,22 @@
       "planTask": "P04",
       "sourceRow": 15,
       "priority": "High",
-      "status": "To do",
+      "status": "In review",
       "criteria": [
         "1. Schedule options: All Days (Daily), Custom Days (e.g., Mon/Wed/Fri), Sundays only, One-time/Single day, Once a week, Fortnightly (alternate weeks), Once a month, Once a year.",
         "2. Start date and optional end date / recurrence rules.",
         "3. Validate publication publishing frequency against selected schedule."
       ],
-      "evidence": [],
-      "review": null,
+      "evidence": [
+        "27 unit/SSR, 29 PostgreSQL integration and 6 Chrome app tests passed",
+        "Lint, typecheck, production build and formatting passed",
+        "auth_review found two P2 issues; both reproduced, fixed and rereview clear"
+      ],
+      "review": {
+        "reviewer": "auth_review",
+        "status": "clear",
+        "findingsFixed": 2
+      },
       "mergeCommit": null
     },
     {
@@ -345,14 +369,22 @@
       "planTask": "P04",
       "sourceRow": 16,
       "priority": "Medium",
-      "status": "To do",
+      "status": "In review",
       "criteria": [
         "1. Agent can select any resident and assign new subscriptions with custom cadences.",
         "2. Agent can override, pause (vacation mode), or cancel existing subscriptions.",
         "3. Maintain audit trail of agent-initiated changes with timestamp."
       ],
-      "evidence": [],
-      "review": null,
+      "evidence": [
+        "27 unit/SSR, 29 PostgreSQL integration and 6 Chrome app tests passed",
+        "Lint, typecheck, production build and formatting passed",
+        "auth_review found two P2 issues; both reproduced, fixed and rereview clear"
+      ],
+      "review": {
+        "reviewer": "auth_review",
+        "status": "clear",
+        "findingsFixed": 2
+      },
       "mergeCommit": null
     },
     {
@@ -361,7 +393,7 @@
       "planTask": "P05",
       "sourceRow": 17,
       "priority": "High",
-      "status": "Not started",
+      "status": "To do",
       "criteria": [
         "1. Agent can generate daily run-sheets and depot bag-packing slips filtered by active delivery schedules.",
         "2. Group deliveries by route sequence, assigned delivery boy, and resident door number.",
@@ -393,7 +425,7 @@
       "planTask": "P05",
       "sourceRow": 19,
       "priority": "High",
-      "status": "Not started",
+      "status": "To do",
       "criteria": [
         "1. Midnight cron job auto-marks deliveries, automatically skipping publisher press holidays and non-printing days.",
         "2. Agent can view daily log and edit/override delivery status (e.g., Un-delivered, Damaged).",
@@ -417,7 +449,8 @@
       ],
       "evidence": [],
       "review": null,
-      "mergeCommit": null
+      "mergeCommit": null,
+      "supportingPlanTasks": ["P07"]
     },
     {
       "id": "US-013",
@@ -465,7 +498,8 @@
       ],
       "evidence": [],
       "review": null,
-      "mergeCommit": null
+      "mergeCommit": null,
+      "supportingPlanTasks": ["P05", "P07"]
     },
     {
       "id": "US-016",
@@ -553,7 +587,7 @@
       "planTask": "P05",
       "sourceRow": 29,
       "priority": "Medium",
-      "status": "Not started",
+      "status": "To do",
       "criteria": [
         "1. Agent logs delivery exception tickets linked to resident, delivery route, and assigned delivery boy.",
         "2. Mark ticket resolution as replacement dispatched, billing credit adjustment issued, or unsubstantiated.",
@@ -633,7 +667,7 @@
       "planTask": "P05",
       "sourceRow": 34,
       "priority": "High",
-      "status": "Not started",
+      "status": "To do",
       "criteria": [
         "1. 4:00 AM cron executes schedule expansion excluding paused accounts and press holidays.",
         "2. Auto-generates publisher pickup copy counts and route-wise bag-packing slips.",
@@ -649,7 +683,7 @@
       "planTask": "P05",
       "sourceRow": 35,
       "priority": "High",
-      "status": "Not started",
+      "status": "To do",
       "criteria": [
         "1. Single-tap delivery toggle and swipe-to-flag actions optimized for one-handed mobile use.",
         "2. High-contrast dark/light theme designed for early morning visibility.",
@@ -822,7 +856,7 @@
       "planTask": "P05",
       "sourceRow": 45,
       "priority": "High",
-      "status": "Not started",
+      "status": "To do",
       "criteria": [
         "1. Agent can initiate emergency route reassignment to one or multiple substitute delivery staff for single or multi-day absences.",
         "2. Automatically split or transfer route run-sheets and bag-packing manifests to assigned substitutes.",
@@ -1055,6 +1089,83 @@
       "from": "To do",
       "to": "In review",
       "event": "Implementation and checks passed; independent review fixes rereviewed clear; awaiting final merge."
+    },
+    {
+      "date": "2026-11-09T18:32:58.748Z",
+      "task": "P05",
+      "from": "Not started",
+      "to": "To do",
+      "event": "Start approved delivery operations work after subscription review cleared; final P04 regressions running."
+    },
+    {
+      "date": "2026-11-09T18:32:58.749Z",
+      "task": "US-009",
+      "from": "Not started",
+      "to": "To do",
+      "event": "Start approved delivery operations work after subscription review cleared; final P04 regressions running."
+    },
+    {
+      "date": "2026-11-09T18:32:58.749Z",
+      "task": "US-011",
+      "from": "Not started",
+      "to": "To do",
+      "event": "Start approved delivery operations work after subscription review cleared; final P04 regressions running."
+    },
+    {
+      "date": "2026-11-09T18:32:58.749Z",
+      "task": "US-021",
+      "from": "Not started",
+      "to": "To do",
+      "event": "Start approved delivery operations work after subscription review cleared; final P04 regressions running."
+    },
+    {
+      "date": "2026-11-09T18:32:58.749Z",
+      "task": "US-026",
+      "from": "Not started",
+      "to": "To do",
+      "event": "Start approved delivery operations work after subscription review cleared; final P04 regressions running."
+    },
+    {
+      "date": "2026-11-09T18:32:58.749Z",
+      "task": "US-027",
+      "from": "Not started",
+      "to": "To do",
+      "event": "Start approved delivery operations work after subscription review cleared; final P04 regressions running."
+    },
+    {
+      "date": "2026-11-09T18:32:58.749Z",
+      "task": "US-037",
+      "from": "Not started",
+      "to": "To do",
+      "event": "Start approved delivery operations work after subscription review cleared; final P04 regressions running."
+    },
+    {
+      "date": "2026-11-09T18:34:55.303Z",
+      "task": "P04",
+      "from": "To do",
+      "to": "In review",
+      "event": "All implementation checks passed; independent fixes rereviewed clear; awaiting merge."
+    },
+    {
+      "date": "2026-11-09T18:34:55.304Z",
+      "task": "US-006",
+      "from": "To do",
+      "to": "In review",
+      "event": "All implementation checks passed; independent fixes rereviewed clear; awaiting merge."
+    },
+    {
+      "date": "2026-11-09T18:34:55.304Z",
+      "task": "US-007",
+      "from": "To do",
+      "to": "In review",
+      "event": "All implementation checks passed; independent fixes rereviewed clear; awaiting merge."
+    },
+    {
+      "date": "2026-11-09T18:34:55.304Z",
+      "task": "US-008",
+      "from": "To do",
+      "to": "In review",
+      "event": "All implementation checks passed; independent fixes rereviewed clear; awaiting merge."
     }
   ]
 }
