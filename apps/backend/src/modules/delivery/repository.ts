@@ -141,7 +141,7 @@ export async function reconcileAutomatic(
   subscriptionIds: string[],
 ) {
   await client.query(
-    "UPDATE daybook.delivery_logs SET status=CASE WHEN subscription_id=ANY($2::uuid[]) THEN 'DELIVERED' ELSE 'SKIPPED' END,chargeable_quantity=CASE WHEN subscription_id=ANY($2::uuid[]) THEN quantity ELSE 0 END,version=version+1 WHERE delivery_date=$1 AND source='AUTO' AND status<>CASE WHEN subscription_id=ANY($2::uuid[]) THEN 'DELIVERED' ELSE 'SKIPPED' END",
+    "UPDATE daybook.delivery_logs SET status=CASE WHEN subscription_id=ANY($2::uuid[]) THEN 'DELIVERED' ELSE 'SKIPPED' END,chargeable_quantity=CASE WHEN subscription_id=ANY($2::uuid[]) THEN quantity ELSE 0 END,version=version+1 WHERE delivery_date=$1 AND source='AUTO' AND NOT EXISTS(SELECT 1 FROM daybook.invoice_delivery_claims claim WHERE (claim.agency_id,claim.delivery_id)=(delivery_logs.agency_id,delivery_logs.id)) AND status<>CASE WHEN subscription_id=ANY($2::uuid[]) THEN 'DELIVERED' ELSE 'SKIPPED' END",
     [date, subscriptionIds],
   );
 }

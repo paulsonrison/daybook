@@ -26,6 +26,9 @@ import {
   merchandiseResolvers,
 } from './modules/merchandise/schema.js';
 import { insertTypeDefs, insertResolvers } from './modules/inserts/schema.js';
+import { billingTypeDefs, billingResolvers } from './modules/billing/schema.js';
+import { ledgerTypeDefs, ledgerResolvers } from './modules/ledger/api.js';
+import { cycleTypeDefs, cycleResolvers } from './modules/billing/cycles.js';
 export function createApp({
   databaseReady,
   frontendOrigin = 'http://localhost:3000',
@@ -56,7 +59,10 @@ export function createApp({
       ${deliveryTypeDefs}
       ${publisherTypeDefs}
       ${merchandiseTypeDefs}
-      ${insertTypeDefs}`,
+      ${insertTypeDefs}
+      ${billingTypeDefs}
+      ${ledgerTypeDefs}
+      ${cycleTypeDefs}`,
       resolvers: {
         Query: {
           ...operationsResolvers.Query,
@@ -66,6 +72,9 @@ export function createApp({
           ...publisherResolvers.Query,
           ...merchandiseResolvers.Query,
           ...insertResolvers.Query,
+          ...billingResolvers.Query,
+          ...ledgerResolvers.Query,
+          ...cycleResolvers.Query,
           health: () => ({ status: 'ok', service: 'daybook-api' }),
           me: (_root, _args, context) => {
             if (!context.agent)
@@ -83,6 +92,9 @@ export function createApp({
           ...publisherResolvers.Mutation,
           ...merchandiseResolvers.Mutation,
           ...insertResolvers.Mutation,
+          ...billingResolvers.Mutation,
+          ...ledgerResolvers.Mutation,
+          ...cycleResolvers.Mutation,
         },
       },
     }),

@@ -1,30 +1,11 @@
-import { build } from 'vite';
 import { spawnSync } from 'node:child_process';
-await build({
-  configFile: false,
-  logLevel: 'warn',
-  plugins: [
-    {
-      name: 'test-client-directives',
-      transform(code, id) {
-        if (id.includes('/src/') && /\.[jt]sx?$/.test(id))
-          return {
-            code: code.replace(/^['"]use client['"];\s*/, ''),
-            map: null,
-          };
-      },
-    },
-  ],
-  build: {
-    ssr: 'tests/ui.test.tsx',
-    outDir: '.cache/tests',
-    emptyOutDir: true,
-    rollupOptions: { output: { entryFileNames: 'ui.test.mjs' } },
-  },
-});
+import { fileURLToPath } from 'node:url';
+
+const root = fileURLToPath(new URL('../', import.meta.url));
+const runner = fileURLToPath(import.meta.resolve('tsx/cli'));
 const result = spawnSync(
   process.execPath,
-  ['--test', '.cache/tests/ui.test.mjs'],
-  { stdio: 'inherit' },
+  [runner, '--tsconfig', 'tests/tsconfig.json', '--test', 'tests/ui.test.tsx'],
+  { cwd: root, stdio: 'inherit' },
 );
 process.exit(result.status ?? 1);

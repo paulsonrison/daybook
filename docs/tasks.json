@@ -139,9 +139,20 @@
     {
       "id": "P07",
       "title": "Invoice engine, arrears and immutable closing",
-      "status": "Not started",
-      "evidence": [],
-      "review": null,
+      "status": "In review",
+      "evidence": [
+        "64 PostgreSQL regressions passed, including exact arrears, source uniqueness, revisions, cycle locks, complaints and merchandise",
+        "30 unit/SSR assertions; 11 Chrome application tests passed, including credit edit retention and print privacy",
+        "Typecheck, lint and production build passed; full Figma comparison remains P14",
+        "auth_review and operations_review findings reproduced, fixed and rereviewed clear"
+      ],
+      "review": {
+        "reviewer": "auth_review + operations_review",
+        "findings": 5,
+        "resolved": 5,
+        "outstanding": 0,
+        "result": "Clear; final verification passed"
+      },
       "mergeCommit": null
     },
     {
@@ -451,14 +462,25 @@
       "planTask": "P07",
       "sourceRow": 18,
       "priority": "Medium",
-      "status": "Not started",
+      "status": "In review",
       "criteria": [
         "1. Invoice engine counts actual delivery instances per publication based on schedule cadence in the billing cycle.",
         "2. Apply weekday vs. weekend pricing and one-time single-day fees.",
         "3. Produce consolidated monthly bill combining all resident subscriptions."
       ],
-      "evidence": [],
-      "review": null,
+      "evidence": [
+        "64 PostgreSQL regressions passed, including exact arrears, source uniqueness, revisions, cycle locks, complaints and merchandise",
+        "30 unit/SSR assertions; 11 Chrome application tests passed, including credit edit retention and print privacy",
+        "Typecheck, lint and production build passed; full Figma comparison remains P14",
+        "auth_review and operations_review findings reproduced, fixed and rereviewed clear"
+      ],
+      "review": {
+        "reviewer": "auth_review + operations_review",
+        "findings": 5,
+        "resolved": 5,
+        "outstanding": 0,
+        "result": "Clear; final verification passed"
+      },
       "mergeCommit": null
     },
     {
@@ -492,14 +514,25 @@
       "planTask": "P04",
       "sourceRow": 20,
       "priority": "High",
-      "status": "To do",
+      "status": "In review",
       "criteria": [
         "1. Agent can set date-range pricing rules or recurring day-of-week rate overrides for any publication.",
         "2. Rule scope supports temporary validity (e.g., 1 month promo/festival) or permanent override.",
         "3. Billing engine matches delivery calendar dates against active rate rules when calculating totals."
       ],
-      "evidence": [],
-      "review": null,
+      "evidence": [
+        "64 PostgreSQL regressions passed, including exact arrears, source uniqueness, revisions, cycle locks, complaints and merchandise",
+        "30 unit/SSR assertions; 11 Chrome application tests passed, including credit edit retention and print privacy",
+        "Typecheck, lint and production build passed; full Figma comparison remains P14",
+        "auth_review and operations_review findings reproduced, fixed and rereviewed clear"
+      ],
+      "review": {
+        "reviewer": "auth_review + operations_review",
+        "findings": 5,
+        "resolved": 5,
+        "outstanding": 0,
+        "result": "Clear; final verification passed"
+      },
       "mergeCommit": null,
       "supportingPlanTasks": ["P07"]
     },
@@ -509,14 +542,25 @@
       "planTask": "P07",
       "sourceRow": 21,
       "priority": "High",
-      "status": "Not started",
+      "status": "In review",
       "criteria": [
         "1. Invoicing engine supports billing frequencies: Monthly, Weekly, Specific Date Range, or Selected Past Months.",
         "2. Rollover previous unpaid balances (up to 3+ months of past arrears) into current invoice total.",
         "3. Resident bill displays itemized current deliveries alongside previous outstanding balance and payments received."
       ],
-      "evidence": [],
-      "review": null,
+      "evidence": [
+        "64 PostgreSQL regressions passed, including exact arrears, source uniqueness, revisions, cycle locks, complaints and merchandise",
+        "30 unit/SSR assertions; 11 Chrome application tests passed, including credit edit retention and print privacy",
+        "Typecheck, lint and production build passed; full Figma comparison remains P14",
+        "auth_review and operations_review findings reproduced, fixed and rereviewed clear"
+      ],
+      "review": {
+        "reviewer": "auth_review + operations_review",
+        "findings": 5,
+        "resolved": 5,
+        "outstanding": 0,
+        "result": "Clear; final verification passed"
+      },
       "mergeCommit": null
     },
     {
@@ -541,14 +585,25 @@
       "planTask": "P04",
       "sourceRow": 23,
       "priority": "High",
-      "status": "To do",
+      "status": "In review",
       "criteria": [
         "1. Agent can set vacation pause start date and end/resume date per resident or specific publication.",
         "2. Daily manifest engine automatically skips paused copies and adjusts morning publisher indents.",
         "3. Billing calculation automatically credits or excludes paused delivery dates from invoice generation."
       ],
-      "evidence": [],
-      "review": null,
+      "evidence": [
+        "64 PostgreSQL regressions passed, including exact arrears, source uniqueness, revisions, cycle locks, complaints and merchandise",
+        "30 unit/SSR assertions; 11 Chrome application tests passed, including credit edit retention and print privacy",
+        "Typecheck, lint and production build passed; full Figma comparison remains P14",
+        "auth_review and operations_review findings reproduced, fixed and rereviewed clear"
+      ],
+      "review": {
+        "reviewer": "auth_review + operations_review",
+        "findings": 5,
+        "resolved": 5,
+        "outstanding": 0,
+        "result": "Clear; final verification passed"
+      },
       "mergeCommit": null,
       "supportingPlanTasks": ["P05", "P07"]
     },
@@ -647,14 +702,25 @@
       "planTask": "P05",
       "sourceRow": 29,
       "priority": "Medium",
-      "status": "To do",
+      "status": "In review",
       "criteria": [
         "1. Agent logs delivery exception tickets linked to resident, delivery route, and assigned delivery boy.",
         "2. Mark ticket resolution as replacement dispatched, billing credit adjustment issued, or unsubstantiated.",
         "3. Track delivery boy error frequency and customer satisfaction metrics on agent dashboard."
       ],
-      "evidence": [],
-      "review": null,
+      "evidence": [
+        "64 PostgreSQL regressions passed, including exact arrears, source uniqueness, revisions, cycle locks, complaints and merchandise",
+        "30 unit/SSR assertions; 11 Chrome application tests passed, including credit edit retention and print privacy",
+        "Typecheck, lint and production build passed; full Figma comparison remains P14",
+        "auth_review and operations_review findings reproduced, fixed and rereviewed clear"
+      ],
+      "review": {
+        "reviewer": "auth_review + operations_review",
+        "findings": 5,
+        "resolved": 5,
+        "outstanding": 0,
+        "result": "Clear; final verification passed"
+      },
       "mergeCommit": null,
       "supportingPlanTasks": ["P07"]
     },
@@ -705,14 +771,25 @@
       "planTask": "P07",
       "sourceRow": 32,
       "priority": "High",
-      "status": "Not started",
+      "status": "In review",
       "criteria": [
         "1. Automated cron triggers on monthly cycle date to close active delivery ledger.",
         "2. Aggregate previous unpaid balances and rollover into current cycle arrears.",
         "3. Lock cycle transactions and generate ledger closing audit summary."
       ],
-      "evidence": [],
-      "review": null,
+      "evidence": [
+        "64 PostgreSQL regressions passed, including exact arrears, source uniqueness, revisions, cycle locks, complaints and merchandise",
+        "30 unit/SSR assertions; 11 Chrome application tests passed, including credit edit retention and print privacy",
+        "Typecheck, lint and production build passed; full Figma comparison remains P14",
+        "auth_review and operations_review findings reproduced, fixed and rereviewed clear"
+      ],
+      "review": {
+        "reviewer": "auth_review + operations_review",
+        "findings": 5,
+        "resolved": 5,
+        "outstanding": 0,
+        "result": "Clear; final verification passed"
+      },
       "mergeCommit": null
     },
     {
@@ -904,14 +981,25 @@
       "planTask": "P06",
       "sourceRow": 42,
       "priority": "Medium",
-      "status": "To do",
+      "status": "In review",
       "criteria": [
         "1. Create seasonal non-recurring merchandise items (calendars, annual diaries, festival specials).",
         "2. Record resident calendar pre-orders and assign drop counts to route manifests.",
         "3. Automatically append one-time merchandise charges to resident monthly bills or record immediate cash settlement."
       ],
-      "evidence": [],
-      "review": null,
+      "evidence": [
+        "64 PostgreSQL regressions passed, including exact arrears, source uniqueness, revisions, cycle locks, complaints and merchandise",
+        "30 unit/SSR assertions; 11 Chrome application tests passed, including credit edit retention and print privacy",
+        "Typecheck, lint and production build passed; full Figma comparison remains P14",
+        "auth_review and operations_review findings reproduced, fixed and rereviewed clear"
+      ],
+      "review": {
+        "reviewer": "auth_review + operations_review",
+        "findings": 5,
+        "resolved": 5,
+        "outstanding": 0,
+        "result": "Clear; final verification passed"
+      },
       "mergeCommit": null,
       "supportingPlanTasks": ["P07"]
     },
@@ -1385,6 +1473,90 @@
       "from": "To do",
       "to": "In review",
       "event": "All implementation checks passed; independent snapshot fixes rereviewed clear; awaiting merge."
+    },
+    {
+      "date": "2026-11-10T03:04:08.568Z",
+      "task": "P07",
+      "from": "Not started",
+      "to": "To do",
+      "event": "Start approved invoice, ledger and cycle-close implementation after P06 verification and review."
+    },
+    {
+      "date": "2026-11-10T03:04:08.568Z",
+      "task": "US-010",
+      "from": "Not started",
+      "to": "To do",
+      "event": "Start approved invoice, ledger and cycle-close implementation after P06 verification and review."
+    },
+    {
+      "date": "2026-11-10T03:04:08.568Z",
+      "task": "US-013",
+      "from": "Not started",
+      "to": "To do",
+      "event": "Start approved invoice, ledger and cycle-close implementation after P06 verification and review."
+    },
+    {
+      "date": "2026-11-10T03:04:08.568Z",
+      "task": "US-024",
+      "from": "Not started",
+      "to": "To do",
+      "event": "Start approved invoice, ledger and cycle-close implementation after P06 verification and review."
+    },
+    {
+      "date": "2026-11-10T08:03:09.981Z",
+      "task": "P07",
+      "from": "To do",
+      "to": "In review",
+      "event": "Billing implemented and verified; independent review findings fixed and rereviewed clear; awaiting whole-project merge."
+    },
+    {
+      "date": "2026-11-10T08:03:09.982Z",
+      "task": "US-010",
+      "from": "To do",
+      "to": "In review",
+      "event": "Billing implemented and verified; independent review findings fixed and rereviewed clear; awaiting whole-project merge."
+    },
+    {
+      "date": "2026-11-10T08:03:09.982Z",
+      "task": "US-012",
+      "from": "To do",
+      "to": "In review",
+      "event": "Billing implemented and verified; independent review findings fixed and rereviewed clear; awaiting whole-project merge."
+    },
+    {
+      "date": "2026-11-10T08:03:09.982Z",
+      "task": "US-013",
+      "from": "To do",
+      "to": "In review",
+      "event": "Billing implemented and verified; independent review findings fixed and rereviewed clear; awaiting whole-project merge."
+    },
+    {
+      "date": "2026-11-10T08:03:09.982Z",
+      "task": "US-015",
+      "from": "To do",
+      "to": "In review",
+      "event": "Billing implemented and verified; independent review findings fixed and rereviewed clear; awaiting whole-project merge."
+    },
+    {
+      "date": "2026-11-10T08:03:09.982Z",
+      "task": "US-021",
+      "from": "To do",
+      "to": "In review",
+      "event": "Billing implemented and verified; independent review findings fixed and rereviewed clear; awaiting whole-project merge."
+    },
+    {
+      "date": "2026-11-10T08:03:09.982Z",
+      "task": "US-024",
+      "from": "To do",
+      "to": "In review",
+      "event": "Billing implemented and verified; independent review findings fixed and rereviewed clear; awaiting whole-project merge."
+    },
+    {
+      "date": "2026-11-10T08:03:09.982Z",
+      "task": "US-034",
+      "from": "To do",
+      "to": "In review",
+      "event": "Billing implemented and verified; independent review findings fixed and rereviewed clear; awaiting whole-project merge."
     }
   ]
 }

@@ -12,6 +12,9 @@ import {
 import { onceRequest } from '../requests.js';
 import { findDelivery, updateDelivery } from '../delivery/repository.js';
 import { moneyString, parseMoney } from '../money.js';
+import { closedPeriod } from '../billing/repository.js';
+import { agencyToday } from '../delivery/repository.js';
+import { postEntry, settleResident } from '../ledger/service.js';
 import {
   closeComplaint,
   findComplaint,
@@ -101,6 +104,15 @@ export function resolveComplaint(
           delivery = await findDelivery(c, complaint.deliveryId);
         if (!delivery) return fail('Delivery not found.', 'NOT_FOUND');
         if (
+          input.resolution !== 'UNSUBSTANTIATED' &&
+          ((await hasBenefit(c, delivery.id, 'CREDIT')) ||
+            (await hasBenefit(c, delivery.id, 'REPLACEMENT')))
+        )
+          return fail(
+            'This delivery already received a replacement or credit. Record any additional goodwill as an account adjustment.',
+            'CONFLICT',
+          );
+        if (
           input.resolution === 'REPLACEMENT' &&
           (await hasBenefit(c, delivery.id, 'REPLACEMENT'))
         )
@@ -116,14 +128,51 @@ export function resolveComplaint(
             'This delivery already received a credit resolution.',
             'CONFLICT',
           );
+        const claim = (
+            await c.query<{
+              quantity: number;
+              rate: string;
+              invoiceId: string;
+            }>(
+              'SELECT billed_quantity AS quantity,billed_unit_paise::text AS rate,invoice_id AS "invoiceId" FROM daybook.invoice_delivery_claims WHERE delivery_id=$1',
+              [delivery.id],
+            )
+          ).rows[0],
+          frozen = Boolean(claim) || (await closedPeriod(c, delivery.date));
         const copies =
             input.resolution === 'REPLACEMENT' ? delivery.quantity : 0,
           credit =
             input.resolution === 'CREDIT'
-              ? delivery.pricePaise * BigInt(delivery.quantity)
+              ? claim
+                ? BigInt(claim.rate) * BigInt(claim.quantity)
+                : delivery.pricePaise * BigInt(delivery.chargeableQuantity)
               : 0n;
         parseMoney(moneyString(credit));
-        if (input.resolution !== 'UNSUBSTANTIATED')
+        if (frozen && input.resolution !== 'UNSUBSTANTIATED') {
+          const amount =
+              input.resolution === 'CREDIT'
+                ? -credit
+                : claim && claim.quantity === 0
+                  ? delivery.pricePaise * BigInt(delivery.quantity)
+                  : !claim && delivery.chargeableQuantity === 0
+                    ? delivery.pricePaise * BigInt(delivery.quantity)
+                    : 0n,
+            today = await agencyToday(c);
+          await postEntry(c, {
+            agencyId: ctx.agent!.agencyId,
+            residentId: delivery.residentId,
+            kind: 'ADJUSTMENT',
+            sourceKey: `complaint:${complaint.id}`,
+            amountPaise: amount,
+            date: today,
+            dueDate: today,
+            description: note,
+            referenceInvoiceId: claim?.invoiceId,
+            actorId: ctx.agent!.id,
+          });
+          await settleResident(c, delivery.residentId);
+        }
+        if (!frozen && input.resolution !== 'UNSUBSTANTIATED')
           await updateDelivery(
             c,
             delivery.id,

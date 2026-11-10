@@ -9,8 +9,8 @@ export interface BillLine {
   id: string;
   publication: string;
   quantity: number | null;
-  rate: number | null;
-  amount: number | null;
+  rate: number | string | null;
+  amount: number | string | null;
 }
 export interface BillSummaryProps {
   resident: { name: string; reference: string; address: string };
@@ -20,7 +20,7 @@ export interface BillSummaryProps {
   due: string;
   status: 'Draft' | 'Saved' | 'Paid' | 'Unpaid' | 'Overdue';
   lines: readonly BillLine[];
-  totals: readonly { label: string; amount: number | null }[];
+  totals: readonly { label: string; amount: number | string | null }[];
   note?: string;
   state?: 'ready' | 'loading' | 'error';
   onRetry?: () => void;
@@ -104,14 +104,22 @@ export function BillSummary({
                 header: `Rate ${currency === 'INR' ? '₹' : currency}`,
                 align: 'right',
                 render: (line) =>
-                  line.rate === null ? 'Rate required' : line.rate.toFixed(2),
+                  line.rate === null
+                    ? 'Rate required'
+                    : typeof line.rate === 'string'
+                      ? line.rate
+                      : line.rate.toFixed(2),
               },
               {
                 key: 'amount',
                 header: `Amount ${currency === 'INR' ? '₹' : currency}`,
                 align: 'right',
                 render: (line) =>
-                  line.amount === null ? 'Unavailable' : line.amount.toFixed(2),
+                  line.amount === null
+                    ? 'Unavailable'
+                    : typeof line.amount === 'string'
+                      ? line.amount
+                      : line.amount.toFixed(2),
               },
             ]}
           />
@@ -131,7 +139,7 @@ export function BillSummary({
 }
 export interface PaymentConfirmationProps {
   status: 'confirmed' | 'checking' | 'unknown' | 'partial' | 'duplicate';
-  amount: number | null;
+  amount: number | string | null;
   remaining?: number | null;
   invoice: string;
   description?: string;

@@ -146,6 +146,12 @@ export function AgencyEntry({ children }: { children?: ReactNode }) {
               label: 'Operations',
               items: [
                 {
+                  label: 'Collections',
+                  href: '/collections',
+                  icon: 'ledger',
+                  active: pathname === '/collections',
+                },
+                {
                   label: 'Publishers & returns',
                   href: '/publishers',
                   icon: 'publications',

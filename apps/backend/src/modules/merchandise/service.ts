@@ -1,4 +1,6 @@
 import { merchandiseExtras } from './manifest.js';
+import { postEntry } from '../ledger/service.js';
+import { insertSettlement } from '../ledger/repository.js';
 import { randomUUID } from 'node:crypto';
 import {
   agencyRead,
@@ -316,8 +318,9 @@ export function fulfilOrder(
           order.settlement === 'CASH'
             ? await nextCode(c, ctx.agent!.agencyId, 'merchandise_cash', 'MRC-')
             : null;
+        const chargeId = randomUUID();
         await insertCharge(c, ctx.agent!.agencyId, {
-          id: randomUUID(),
+          id: chargeId,
           orderId: order.id,
           residentId: order.residentId,
           amountPaise: order.totalPaise,
@@ -325,6 +328,36 @@ export function fulfilOrder(
           receiptCode,
           date: today,
         });
+        if (order.settlement === 'CASH' && order.totalPaise > 0n) {
+          const common = {
+            agencyId: ctx.agent!.agencyId,
+            residentId: order.residentId,
+            date: today,
+            dueDate: today,
+            actorId: ctx.agent!.id,
+          };
+          const debit = await postEntry(c, {
+              ...common,
+              kind: 'MERCHANDISE_CASH',
+              sourceKey: `merchandise-cash:${chargeId}`,
+              amountPaise: order.totalPaise,
+              description: 'Confirmed seasonal cash sale',
+            }),
+            credit = await postEntry(c, {
+              ...common,
+              kind: 'MERCHANDISE_CASH_PAYMENT',
+              sourceKey: `merchandise-cash-payment:${chargeId}`,
+              amountPaise: -order.totalPaise,
+              description: 'Confirmed seasonal cash receipt',
+            });
+          await insertSettlement(
+            c,
+            ctx.agent!.agencyId,
+            debit!.id,
+            credit!.id,
+            order.totalPaise,
+          );
+        }
         const result = await orderStatus(
           c,
           order.id,

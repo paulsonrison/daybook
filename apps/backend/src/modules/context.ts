@@ -52,6 +52,11 @@ export async function configMutation<T>(
       );
     if (code === '23503')
       fail('A linked record is unavailable or still in use.');
+    if (code === '23514')
+      fail(
+        'This change conflicts with a locked or invalid record. Review the data or record a correction in an open period.',
+        'CONFLICT',
+      );
     throw error;
   }
 }

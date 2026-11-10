@@ -13,3 +13,7 @@ Catch-up is bounded to 31 calendar days per agency per pass. Multiple worker ins
 Recorded past delivery days and existing historical manifests are preserved when present-day profiles or subscriptions change. A first backfill can only use the configuration currently available; it cannot reconstruct unrecorded historical household changes. Dated staff corrections are explicit, audited substitute-assignment operations. Posted financial records receive additional immutable-cycle gates in P07.
 
 Development verification runs disposable databases and synthetic agencies. It does not start a persistent worker for customer data, send communications or publish the application.
+
+The worker also queues monthly source-cycle closing on the first local day of a month, after the agency's first month. Closing records immutable delivery counts and per-resident dated balances; it does not repost arrears. Paid invoices and closed issue/source periods are immutable. Late corrections use open-period financial entries.
+
+Automatic resident invoice issuing is off by default. Explicitly enabling it queues one durable job per resident when a cycle closes. Jobs require prepared eligible dates, count the first month only from agency creation, preserve unique delivery/item claims, and audit system-generated invoices. Failures use the existing bounded queue retry and remain visible. Normal daily catch-up tracks MARK jobs separately from invoice jobs.

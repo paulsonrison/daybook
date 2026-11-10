@@ -1,5 +1,6 @@
 import type { PoolClient } from 'pg';
 export interface Job {
+  payload: Record<string, unknown>;
   id: string;
   kind: string;
   date: string;
@@ -8,7 +9,7 @@ export interface Job {
 export async function latestJobDate(client: PoolClient) {
   return (
     await client.query<{ date: string | null }>(
-      "SELECT to_char(max(run_date),'YYYY-MM-DD') AS date FROM daybook.job_runs",
+      "SELECT to_char(max(run_date),'YYYY-MM-DD') AS date FROM daybook.job_runs WHERE kind='MARK'",
     )
   ).rows[0].date;
 }
@@ -18,10 +19,18 @@ export async function enqueueJob(
   date: string,
   kind: string,
   now: Date,
+  payload: Record<string, unknown> = {},
 ) {
   await client.query(
-    "INSERT INTO daybook.job_runs(id,agency_id,job_key,kind,run_date,status,available_at) VALUES(gen_random_uuid(),$1,$2,$3,$4,'PENDING',$5) ON CONFLICT(agency_id,job_key) DO NOTHING",
-    [agencyId, `${kind}:${date}`, kind, date, now.toISOString()],
+    "INSERT INTO daybook.job_runs(id,agency_id,job_key,kind,run_date,status,available_at,payload) VALUES(gen_random_uuid(),$1,$2,$3,$4,'PENDING',$5,$6) ON CONFLICT(agency_id,job_key) DO NOTHING",
+    [
+      agencyId,
+      `${kind}:${date}`,
+      kind,
+      date,
+      now.toISOString(),
+      JSON.stringify(payload),
+    ],
   );
 }
 export async function claimJob(client: PoolClient, now: Date) {
@@ -31,7 +40,7 @@ export async function claimJob(client: PoolClient, now: Date) {
   );
   return (
     await client.query<Job>(
-      `UPDATE daybook.job_runs j SET status='RUNNING',attempts=j.attempts+1,lease_until=$1::timestamptz+interval '60 seconds' WHERE id=(SELECT id FROM daybook.job_runs WHERE attempts<5 AND ((status IN('PENDING','FAILED') AND available_at<=$1) OR (status='RUNNING' AND lease_until<=$1)) ORDER BY run_date,kind,id FOR UPDATE SKIP LOCKED LIMIT 1) RETURNING id,kind,to_char(run_date,'YYYY-MM-DD') AS date,attempts`,
+      `UPDATE daybook.job_runs j SET status='RUNNING',attempts=j.attempts+1,lease_until=$1::timestamptz+interval '60 seconds' WHERE id=(SELECT id FROM daybook.job_runs WHERE attempts<5 AND ((status IN('PENDING','FAILED') AND available_at<=$1) OR (status='RUNNING' AND lease_until<=$1)) ORDER BY run_date,kind,id FOR UPDATE SKIP LOCKED LIMIT 1) RETURNING id,kind,payload,to_char(run_date,'YYYY-MM-DD') AS date,attempts`,
       [now.toISOString()],
     )
   ).rows[0];

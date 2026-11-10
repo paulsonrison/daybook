@@ -147,6 +147,51 @@ test('seasonal preorders reserve stock safely and fulfilment creates one exact c
       settlement: 'INVOICE',
     },
   ]);
+  await api.query(
+    f.cookie,
+    'mutation{saveBillingPolicy(input:{noTaxConfirmed:true}){version}}',
+  );
+  const billInput = {
+    residentId: f.resident.id,
+    periodMode: 'CUSTOM',
+    periods: [{ from: f.date, to: f.date }],
+  };
+  const preview = (
+    await api.query(
+      f.cookie,
+      'query($input:BillInput!){previewBill(input:$input){fingerprint currentAmount lines{kind quantity amount}}}',
+      { input: billInput },
+    )
+  ).data.previewBill;
+  assert.equal(preview.currentAmount, '199.90');
+  assert.deepEqual(preview.lines, [
+    { kind: 'MERCHANDISE', quantity: 2, amount: '199.90' },
+  ]);
+  const billed = await api.query(
+    f.cookie,
+    'mutation($input:InvoiceInput!){generateInvoice(input:$input){total}}',
+    {
+      input: {
+        ...billInput,
+        requestId: randomUUID(),
+        previewFingerprint: preview.fingerprint,
+        acknowledgeUnmarkedDays: true,
+      },
+    },
+  );
+  assert.equal(
+    billed.data?.generateInvoice.total,
+    '199.90',
+    JSON.stringify(billed),
+  );
+  const repeated = (
+    await api.query(
+      f.cookie,
+      'query($input:BillInput!){previewBill(input:$input){currentAmount}}',
+      { input: billInput },
+    )
+  ).data.previewBill;
+  assert.equal(repeated.currentAmount, '0.00');
 });
 test('concurrent reservations cannot overbook stock and cancellation releases exactly once', async () => {
   const f = await fixture();
@@ -295,6 +340,25 @@ test('cash fulfilment preserves the preorder price and issues only one confirmed
     paid = await api.query(f.cookie, fulfilMutation, { input });
   assert.equal(paid.data?.fulfilOrder.total, '19.95', JSON.stringify(paid));
   assert.match(paid.data.fulfilOrder.receiptCode, /^MRC-/);
+  const account = await api.query(
+    f.cookie,
+    'query($id:ID!){residentLedger(residentId:$id){balance entries{kind amount openAmount}}}',
+    { id: f.resident.id },
+  );
+  account.data.residentLedger.entries.sort(
+    (a: { kind: string }, b: { kind: string }) => a.kind.localeCompare(b.kind),
+  );
+  assert.deepEqual(account.data.residentLedger, {
+    balance: '0.00',
+    entries: [
+      { kind: 'MERCHANDISE_CASH', amount: '19.95', openAmount: '0.00' },
+      {
+        kind: 'MERCHANDISE_CASH_PAYMENT',
+        amount: '-19.95',
+        openAmount: '0.00',
+      },
+    ],
+  });
   const retry = await api.query(f.cookie, fulfilMutation, { input });
   assert.equal(
     retry.data.fulfilOrder.receiptCode,

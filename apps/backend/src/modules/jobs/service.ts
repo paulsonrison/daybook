@@ -1,4 +1,6 @@
+import { closeMonth } from '../billing/cycles.js';
 import { localClock } from '../scheduling/time.js';
+import { issueAutomaticInvoice } from '../billing/automatic.js';
 import type { Pool } from 'pg';
 import { withTenant } from '../../db/tenant.js';
 import { calendarDate } from '../scheduling/calendar.js';
@@ -43,6 +45,19 @@ export async function runAgencyJobs(
     ) {
       const date = new Date(stamp).toISOString().slice(0, 10);
       await enqueueJob(client, tenant.id, date, 'MARK', now);
+      if (date.endsWith('-01')) {
+        const month = new Date(stamp - 86400000).toISOString().slice(0, 7);
+        if (
+          month >=
+          localClock(new Date(tenant.createdAt), tenant.timezone).date.slice(
+            0,
+            7,
+          )
+        )
+          await enqueueJob(client, tenant.id, date, 'MONTH_CLOSE', now, {
+            month,
+          });
+      }
       if (date < clock.date || clock.hour >= 4) {
         await enqueueJob(client, tenant.id, date, 'MANIFEST_MORNING', now);
         await enqueueJob(client, tenant.id, date, 'MANIFEST_EVENING', now);
@@ -75,6 +90,17 @@ export async function runAgencyJobs(
             job.kind === 'MANIFEST_MORNING' ? 'MORNING' : 'EVENING',
             now,
           );
+        else if (job.kind === 'MONTH_CLOSE')
+          await closeMonth(
+            client,
+            tenant.id,
+            String(job.payload.month),
+            false,
+            null,
+            now,
+          );
+        else if (job.kind === 'AUTO_INVOICE')
+          await issueAutomaticInvoice(client, tenant.id, job.payload);
         else throw new Error('Unsupported job kind');
         await finishJob(client, job.id, currentTime(), job.attempts);
       });
