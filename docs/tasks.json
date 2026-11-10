@@ -122,9 +122,18 @@
     {
       "id": "P06",
       "title": "Supply, returns, seasonal stock and inserts",
-      "status": "To do",
-      "evidence": [],
-      "review": null,
+      "status": "In review",
+      "evidence": [
+        "49 PostgreSQL, 28 unit/SSR and 10 Chrome application tests passed",
+        "Lint, typecheck, production build and formatting passed",
+        "foundation_review two allocation-proof findings reproduced/fixed and rereview clear",
+        "Original-lot costs/cutoffs, reservations, one-time charges/cash receipts, immutable completed allocations verified"
+      ],
+      "review": {
+        "reviewer": "foundation_review",
+        "status": "clear",
+        "findingsFixed": 2
+      },
       "mergeCommit": null
     },
     {
@@ -565,14 +574,23 @@
       "planTask": "P06",
       "sourceRow": 25,
       "priority": "Medium",
-      "status": "To do",
+      "status": "In review",
       "criteria": [
         "1. Agent logs daily unsold/returned copy counts per publication before publisher return cutoff deadline.",
         "2. Calculate publisher credit margin and net payable based on supply indent minus validated returns.",
         "3. Generate monthly publisher reconciliation summary statement showing supply, returns, and net payable."
       ],
-      "evidence": [],
-      "review": null,
+      "evidence": [
+        "49 PostgreSQL, 28 unit/SSR and 10 Chrome application tests passed",
+        "Lint, typecheck, production build and formatting passed",
+        "foundation_review two allocation-proof findings reproduced/fixed and rereview clear",
+        "Original-lot costs/cutoffs, reservations, one-time charges/cash receipts, immutable completed allocations verified"
+      ],
+      "review": {
+        "reviewer": "foundation_review",
+        "status": "clear",
+        "findingsFixed": 2
+      },
       "mergeCommit": null
     },
     {
@@ -662,14 +680,23 @@
       "planTask": "P06",
       "sourceRow": 31,
       "priority": "High",
-      "status": "To do",
+      "status": "In review",
       "criteria": [
         "1. Agent can record advertiser details, insert quantity, scheduled drop date, and target delivery routes.",
         "2. Include pamphlet insertion count in daily depot packing manifests for delivery boys.",
         "3. Compute insert revenue and generate advertiser billing invoices with delivery completion proof."
       ],
-      "evidence": [],
-      "review": null,
+      "evidence": [
+        "49 PostgreSQL, 28 unit/SSR and 10 Chrome application tests passed",
+        "Lint, typecheck, production build and formatting passed",
+        "foundation_review two allocation-proof findings reproduced/fixed and rereview clear",
+        "Original-lot costs/cutoffs, reservations, one-time charges/cash receipts, immutable completed allocations verified"
+      ],
+      "review": {
+        "reviewer": "foundation_review",
+        "status": "clear",
+        "findingsFixed": 2
+      },
       "mergeCommit": null
     },
     {
@@ -851,14 +878,23 @@
       "planTask": "P03",
       "sourceRow": 41,
       "priority": "Medium",
-      "status": "To do",
+      "status": "In review",
       "criteria": [
         "1. Publication catalog supports regional weekly/bi-weekly publication cadences and evening editions.",
         "2. Dynamic delivery manifests filter morning vs. evening dispatch schedules.",
         "3. Publisher reconciliation tracks separate procurement rates and trade margins for regional media."
       ],
-      "evidence": [],
-      "review": null,
+      "evidence": [
+        "49 PostgreSQL, 28 unit/SSR and 10 Chrome application tests passed",
+        "Lint, typecheck, production build and formatting passed",
+        "foundation_review two allocation-proof findings reproduced/fixed and rereview clear",
+        "Original-lot costs/cutoffs, reservations, one-time charges/cash receipts, immutable completed allocations verified"
+      ],
+      "review": {
+        "reviewer": "foundation_review",
+        "status": "clear",
+        "findingsFixed": 2
+      },
       "mergeCommit": null,
       "supportingPlanTasks": ["P05", "P06"]
     },
@@ -876,7 +912,8 @@
       ],
       "evidence": [],
       "review": null,
-      "mergeCommit": null
+      "mergeCommit": null,
+      "supportingPlanTasks": ["P07"]
     },
     {
       "id": "US-035",
@@ -1320,6 +1357,34 @@
       "from": "To do",
       "to": "In review",
       "event": "Verified delivery, worker and field workflows; independent rereview clear; awaiting final merge."
+    },
+    {
+      "date": "2026-11-10T02:53:44.340Z",
+      "task": "P06",
+      "from": "To do",
+      "to": "In review",
+      "event": "All implementation checks passed; independent snapshot fixes rereviewed clear; awaiting merge."
+    },
+    {
+      "date": "2026-11-10T02:53:44.341Z",
+      "task": "US-017",
+      "from": "To do",
+      "to": "In review",
+      "event": "All implementation checks passed; independent snapshot fixes rereviewed clear; awaiting merge."
+    },
+    {
+      "date": "2026-11-10T02:53:44.341Z",
+      "task": "US-023",
+      "from": "To do",
+      "to": "In review",
+      "event": "All implementation checks passed; independent snapshot fixes rereviewed clear; awaiting merge."
+    },
+    {
+      "date": "2026-11-10T02:53:44.341Z",
+      "task": "US-033",
+      "from": "To do",
+      "to": "In review",
+      "event": "All implementation checks passed; independent snapshot fixes rereviewed clear; awaiting merge."
     }
   ]
 }

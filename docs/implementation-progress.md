@@ -44,7 +44,7 @@ Configuration now uses typed GraphQL inputs, per-agency serialized mutation tran
 
 ## Outstanding
 
-P05 is verified and independently reviewed; P06 is in progress and P07–P14 remain unimplemented. No merge or remote push has occurred. Provider credentials and live-service acceptance are distinct from local contract tests and must not be reported as verified without evidence.
+P06 is verified and independently reviewed; P07–P14 remain unimplemented. No merge or remote push has occurred. Provider credentials and live-service acceptance are distinct from local contract tests and must not be reported as verified without evidence.
 
 ## P03 — reviewed catalog, residents and deposits
 
@@ -76,3 +76,16 @@ Daily logs and packing manifests partition dispatches, expand active calendars a
 - Ruling: dispatch warning uses at least three prior prepared dispatches, at most seven, with a 30% absolute deviation threshold. Empty history is unknown, not zero.
 - Ruling: historical dates with recorded marking/manifests are preserved; a first backfill uses available configuration and cannot reconstruct absent lifecycle history. Future marking is rejected.
 - US-021 ledger posting remains P07; resolved replacements and approved credits are recorded without claiming a posted paid-invoice correction. P06 begins supply/returns, inventory and insertion work.
+
+## P06 — reviewed publisher supply, seasonal stock and inserts
+
+Publisher receipts snapshot net procurement rates, optional list/margin inputs, edition/dispatch and local return deadlines. Returns credit original lots; monthly statements keep regional/evening costs distinct. Seasonal preorders reserve bounded stock, preserve agreed prices and create one charge or confirmed cash receipt on fulfilment. Advertiser campaigns allocate one leaflet per scheduled household and require recorded proof plus explicit tax treatment before invoicing. Shared UI screens cover all three workflows and manifest extras.
+
+- RED → GREEN: missing supply/stock/insert APIs and pages, exact single-margin cost calculation, original-lot returns, concurrent stock bounds, cancellation release, exact cash confirmation, completion proof and immutable completed allocations.
+- Independent foundation_review found completed insert recipients recomputed from live schedules and obsolete route allocations accepted as proof. Both reproduced and fixed; final rereview clear. An analogous confirmed merchandise address snapshot regression was also fixed.
+- Additional integration regression found that existing temporary cover could be made unavailable through staff edits. Current/upcoming cover must now be reassigned first; the observed failure is fixed and covered.
+- Final checks passed: 49 PostgreSQL tests, 28 unit/SSR, 10 Chrome app tests, lint/typecheck/build/format. All P06 browser workflows use synthetic agencies; no real payments, messages or external invoices were sent.
+- Ruling: each targeted household receives one leaflet per insertion order; route quantities cannot exceed eligible scheduled households. Multiple copies per household would require an explicit future order option.
+- Completion preserves immutable recipient/address/route snapshots. Earlier packing proof must match the campaign title, distinct recipients and exact route quantities; revised allocations cannot reuse unrelated historic proof.
+- Supply records stay immutable; their reads do not request row-update locks, which would require update rights. The shared agency transaction lock serializes return bounds.
+- US-034 invoice append remains P07. Taxed invoice configuration/reporting remains P11; P06 invoices require an explicit no-tax confirmation and make no statutory compliance claim. Full Figma comparison remains P14.

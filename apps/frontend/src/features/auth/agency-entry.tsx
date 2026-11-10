@@ -146,6 +146,24 @@ export function AgencyEntry({ children }: { children?: ReactNode }) {
               label: 'Operations',
               items: [
                 {
+                  label: 'Publishers & returns',
+                  href: '/publishers',
+                  icon: 'publications',
+                  active: pathname === '/publishers',
+                },
+                {
+                  label: 'Seasonal stock',
+                  href: '/inventory',
+                  icon: 'ledger',
+                  active: pathname === '/inventory',
+                },
+                {
+                  label: 'Advertisers & inserts',
+                  href: '/advertisers',
+                  icon: 'share',
+                  active: pathname === '/advertisers',
+                },
+                {
                   label: 'Staff & payroll',
                   href: '/staff',
                   icon: 'staff',

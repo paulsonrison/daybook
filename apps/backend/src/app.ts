@@ -17,6 +17,15 @@ import {
   deliveryTypeDefs,
   deliveryResolvers,
 } from './modules/delivery/schema.js';
+import {
+  publisherTypeDefs,
+  publisherResolvers,
+} from './modules/publishers/schema.js';
+import {
+  merchandiseTypeDefs,
+  merchandiseResolvers,
+} from './modules/merchandise/schema.js';
+import { insertTypeDefs, insertResolvers } from './modules/inserts/schema.js';
 export function createApp({
   databaseReady,
   frontendOrigin = 'http://localhost:3000',
@@ -44,13 +53,19 @@ export function createApp({
       ${operationsTypeDefs}
       ${catalogTypeDefs}
       ${subscriptionTypeDefs}
-      ${deliveryTypeDefs}`,
+      ${deliveryTypeDefs}
+      ${publisherTypeDefs}
+      ${merchandiseTypeDefs}
+      ${insertTypeDefs}`,
       resolvers: {
         Query: {
           ...operationsResolvers.Query,
           ...catalogResolvers.Query,
           ...subscriptionResolvers.Query,
           ...deliveryResolvers.Query,
+          ...publisherResolvers.Query,
+          ...merchandiseResolvers.Query,
+          ...insertResolvers.Query,
           health: () => ({ status: 'ok', service: 'daybook-api' }),
           me: (_root, _args, context) => {
             if (!context.agent)
@@ -65,6 +80,9 @@ export function createApp({
           ...catalogResolvers.Mutation,
           ...subscriptionResolvers.Mutation,
           ...deliveryResolvers.Mutation,
+          ...publisherResolvers.Mutation,
+          ...merchandiseResolvers.Mutation,
+          ...insertResolvers.Mutation,
         },
       },
     }),

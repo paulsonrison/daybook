@@ -1,4 +1,18 @@
 import type { PoolClient } from 'pg';
+export interface ManifestExtraItem {
+  kind: 'MERCHANDISE' | 'INSERT';
+  sourceOrderId: string;
+  residentId: string;
+  name: string;
+  residentName: string;
+  address: string;
+  routeId: string;
+  routeName: string;
+  staffId: string | null;
+  staffName: string | null;
+  dropOrder: number;
+  quantity: number;
+}
 export interface ManifestRow {
   residentId: string;
   publicationId: string;
@@ -15,6 +29,8 @@ export interface ManifestRow {
   price: string;
 }
 export interface Manifest {
+  extraItems: ManifestExtraItem[];
+  extraWarnings: string[];
   id: string;
   date: string;
   dispatch: string;
@@ -35,7 +51,13 @@ export async function readManifests(client: PoolClient, date?: string) {
       `SELECT id,payload,version FROM daybook.manifests ${date ? 'WHERE manifest_date=$1' : ''} ORDER BY manifest_date,dispatch`,
       date ? [date] : [],
     )
-  ).rows.map((r) => ({ ...r.payload, id: r.id, version: r.version }));
+  ).rows.map((r) => ({
+    ...r.payload,
+    extraItems: r.payload.extraItems ?? [],
+    extraWarnings: r.payload.extraWarnings ?? [],
+    id: r.id,
+    version: r.version,
+  }));
 }
 export async function previousTotals(
   client: PoolClient,

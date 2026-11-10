@@ -523,3 +523,51 @@ test('dispatch count warning compares measured copies with the prior seven prepa
     JSON.stringify(result),
   );
 });
+
+test('an active dated substitute must be reassigned before becoming unavailable', async () => {
+  const f = await fixture(),
+    date = (await api.query(f.cookie, '{deliveryMetrics{today}}')).data
+      .deliveryMetrics.today;
+  const person = (
+    await api.query(
+      f.cookie,
+      'mutation($input:StaffInput!){saveStaff(input:$input){id version}}',
+      {
+        input: {
+          name: 'Temporary Courier',
+          staffCode: 'TEMP',
+          phone: '9876543210',
+          status: 'ACTIVE',
+        },
+      },
+    )
+  ).data.saveStaff;
+  const assigned = await api.query(
+    f.cookie,
+    'mutation($input:SubstituteInput!){assignSubstitutes(input:$input){id}}',
+    {
+      input: {
+        routeId: f.route.id,
+        startDate: date,
+        endDate: date,
+        reason: 'Emergency cover',
+        allocations: [{ staffId: person.id, fromDrop: 1, toDrop: 99999 }],
+      },
+    },
+  );
+  assert.ok(assigned.data?.assignSubstitutes);
+  const inactive = await api.query(
+    f.cookie,
+    'mutation($input:StaffInput!){saveStaff(input:$input){id}}',
+    {
+      input: {
+        ...person,
+        name: 'Temporary Courier',
+        staffCode: 'TEMP',
+        phone: '9876543210',
+        status: 'INACTIVE',
+      },
+    },
+  );
+  assert.equal(inactive.errors?.[0].extensions.code, 'BAD_USER_INPUT');
+});

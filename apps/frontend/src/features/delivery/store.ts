@@ -55,6 +55,21 @@ export interface Holiday {
   version: number;
 }
 export interface Manifest {
+  extraItems: {
+    kind: string;
+    sourceOrderId: string;
+    residentId: string;
+    name: string;
+    residentName: string;
+    address: string;
+    routeId: string;
+    routeName: string;
+    staffId: string | null;
+    staffName: string | null;
+    dropOrder: number;
+    quantity: number;
+  }[];
+  extraWarnings: string[];
   id: string;
   date: string;
   dispatch: string;
@@ -75,8 +90,10 @@ export interface Manifest {
     quantity: number;
   }[];
 }
-const query = `query($date:String!){deliveryMetrics{${metricsFields}} deliveryLogs(date:$date){id residentId publicationId routeId staffId residentName address publicationName routeName staffName dropOrder quantity price status reason version dispatch} manifests(date:$date){id date dispatch totalCopies version averageCopies deviation publications{publicationId name copies} rows{subscriptionId residentId publicationName residentName address routeName staffName dropOrder quantity}} complaints{id deliveryId kind note status residentName routeName staffName replacementCopies credit version} substituteAssignments{id routeId startDate endDate reason active version allocations{staffId fromDrop toDrop}} pressHolidays{id publicationId date reason active version} routes{id code name active territoryId version stops{id label door sequence}} staff{id name staffCode status} publications{id name edition active}}`;
+const query = `query($date:String!){merchandiseOrders{id status} insertOrders{id status} deliveryMetrics{${metricsFields}} deliveryLogs(date:$date){id residentId publicationId routeId staffId residentName address publicationName routeName staffName dropOrder quantity price status reason version dispatch} manifests(date:$date){id date dispatch totalCopies version averageCopies deviation extraWarnings extraItems{kind sourceOrderId residentId name residentName address routeId routeName staffId staffName dropOrder quantity} publications{publicationId name copies} rows{subscriptionId residentId publicationName residentName address routeName staffName dropOrder quantity}} complaints{id deliveryId kind note status residentName routeName staffName replacementCopies credit version} substituteAssignments{id routeId startDate endDate reason active version allocations{staffId fromDrop toDrop}} pressHolidays{id publicationId date reason active version} routes{id code name active territoryId version stops{id label door sequence}} staff{id name staffCode status} publications{id name edition active}}`;
 interface Data {
+  merchandiseOrders: { id: string; status: string }[];
+  insertOrders: { id: string; status: string }[];
   deliveryMetrics: DeliveryMetrics;
   deliveryLogs: Delivery[];
   manifests: Manifest[];
@@ -108,6 +125,7 @@ export function defaultDeliveryDate() {
   }).format(new Date());
 }
 export class DeliveryStore {
+  orderStates: Record<string, string> = {};
   date = defaultDeliveryDate();
   dispatch = 'MORNING';
   logs: Delivery[] = [];
@@ -145,6 +163,13 @@ export class DeliveryStore {
         }
         this.dateSelected = true;
         this.metrics = data.deliveryMetrics;
+        this.orderStates = Object.fromEntries([
+          ...data.merchandiseOrders.map((o) => [
+            `MERCHANDISE:${o.id}`,
+            o.status,
+          ]),
+          ...data.insertOrders.map((o) => [`INSERT:${o.id}`, o.status]),
+        ]);
         this.logs = data.deliveryLogs;
         this.manifests = data.manifests;
         this.complaints = data.complaints;

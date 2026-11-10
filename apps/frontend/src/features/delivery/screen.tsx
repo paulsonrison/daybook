@@ -360,6 +360,54 @@ export const DeliveryScreen = observer(function DeliveryScreen() {
                 />
               </Card>
             )}
+            {manifest && (
+              <Card title="Additional depot items">
+                <DataTable
+                  caption="Additional depot items"
+                  rows={manifest.extraItems}
+                  rowKey={(r) => `${r.kind}:${r.sourceOrderId}:${r.residentId}`}
+                  emptyTitle="No seasonal items or leaflets for this dispatch"
+                  columns={[
+                    {
+                      key: 'drop',
+                      header: 'Route / drop',
+                      render: (r) => `${r.routeName} � ${r.dropOrder}`,
+                    },
+                    {
+                      key: 'resident',
+                      header: 'Resident / door',
+                      render: (r) => (
+                        <>
+                          {r.residentName}
+                          <div className="db-muted">{r.address}</div>
+                        </>
+                      ),
+                    },
+                    { key: 'item', header: 'Item', render: (r) => r.name },
+                    {
+                      key: 'qty',
+                      header: 'Quantity',
+                      render: (r) => r.quantity,
+                    },
+                    {
+                      key: 'status',
+                      header: 'Current fulfilment',
+                      render: (r) =>
+                        store.orderStates[`${r.kind}:${r.sourceOrderId}`] ??
+                        'Unknown',
+                    },
+                  ]}
+                />
+                {manifest.extraWarnings.map((warning, index) => (
+                  <Notification
+                    key={index}
+                    tone="warning"
+                    title="Packing allocation needs attention"
+                    description={warning}
+                  />
+                ))}
+              </Card>
+            )}
             <Theme mode={mode} className="delivery-field">
               <header className="agency-page-heading">
                 <h2>Door-to-door delivery</h2>

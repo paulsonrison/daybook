@@ -22,6 +22,7 @@ import {
   listStaff,
   findStaff,
   staffHasActiveRoutes,
+  staffHasLiveSubstitutions,
   writeStaff,
 } from './repository.js';
 export const staff = (ctx: RequestContext) => agencyRead(ctx, listStaff);
@@ -43,6 +44,13 @@ export function saveStaff(ctx: RequestContext, input: StaffInput) {
       const old = await findStaff(client, id, true);
       if (!old) fail('Staff record not found.', 'NOT_FOUND');
       versionMatches(old.version, input.version);
+      if (
+        input.status !== 'ACTIVE' &&
+        (await staffHasLiveSubstitutions(client, id))
+      )
+        fail(
+          'Reassign current or upcoming temporary cover before making this staff member unavailable.',
+        );
       if (input.status === 'INACTIVE') {
         const assigned = await staffHasActiveRoutes(client, id);
         if (assigned)

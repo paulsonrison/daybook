@@ -16,7 +16,7 @@ Lifecycle: **Not started → To do → In review → Done**. Review findings ret
 | P03  | Publications, residents and refundable deposits             | In review   |
 | P04  | Subscription recurrence, holds and effective pricing        | In review   |
 | P05  | Delivery operations, substitutions and exceptions           | In review   |
-| P06  | Supply, returns, seasonal stock and inserts                 | To do       |
+| P06  | Supply, returns, seasonal stock and inserts                 | In review   |
 | P07  | Invoice engine, arrears and immutable closing               | Not started |
 | P08  | Payments, clearance, credit limits and collection sheets    | Not started |
 | P09  | Staff pay, attendance, handover and cash closing            | Not started |
@@ -46,13 +46,13 @@ Lifecycle: **Not started → To do → In review → Done**. Review findings ret
 | US-014 | Trilingual UI Localization       | P11  | Medium   | Not started |
 | US-015 | Vacation & Temporary Holds       | P04  | High     | To do       |
 | US-016 | Payment & Reconciliation         | P08  | High     | Not started |
-| US-017 | Publisher Indents & Returns      | P06  | Medium   | To do       |
+| US-017 | Publisher Indents & Returns      | P06  | Medium   | In review   |
 | US-018 | Staff Payroll & Commission       | P09  | High     | Not started |
 | US-019 | WhatsApp & SMS Dispatch          | P10  | High     | Not started |
 | US-020 | Agency Analytics & Reporting     | P11  | Medium   | Not started |
 | US-021 | Delivery Exceptions & Grievances | P05  | Medium   | To do       |
 | US-022 | Daily Cash Register & Closing    | P09  | High     | Not started |
-| US-023 | Pamphlet & Insert Operations     | P06  | High     | To do       |
+| US-023 | Pamphlet & Insert Operations     | P06  | High     | In review   |
 | US-024 | Automated Ledger Closing         | P07  | High     | Not started |
 | US-025 | Automated Payment Alerts         | P10  | Medium   | Not started |
 | US-026 | Automated Daily Manifest Cron    | P05  | High     | In review   |
@@ -62,7 +62,7 @@ Lifecycle: **Not started → To do → In review → Done**. Review findings ret
 | US-030 | UI Customization                 | P11  | Medium   | Not started |
 | US-031 | Multi-Tenant Architecture        | P01  | High     | In review   |
 | US-032 | Direct Communications            | P10  | Medium   | Not started |
-| US-033 | Regional Publications            | P03  | Medium   | To do       |
+| US-033 | Regional Publications            | P03  | Medium   | In review   |
 | US-034 | Seasonal Merchandise             | P06  | Medium   | To do       |
 | US-035 | Credit Control & Suspension      | P08  | High     | Not started |
 | US-036 | AI Assistant & Support           | P13  | High     | Not started |

@@ -1,4 +1,6 @@
 import { randomUUID } from 'node:crypto';
+import { merchandiseExtras } from '../merchandise/manifest.js';
+import { insertExtras } from '../inserts/manifest.js';
 import type { PoolClient } from 'pg';
 import {
   agencyRead,
@@ -86,7 +88,16 @@ export async function buildForDate(
         : averageCopies === 0
           ? totalCopies > 0
           : Math.abs(totalCopies - averageCopies) / averageCopies >= 0.3;
+  const extras = await merchandiseExtras(client, date, dispatch);
+  const inserts = await insertExtras(client, date, dispatch);
+  extras.items.push(...inserts.items);
+  extras.warnings.push(...inserts.warnings);
   return storeManifest(client, agencyId, {
+    extraItems: extras.items.sort(
+      (a, b) =>
+        a.routeName.localeCompare(b.routeName) || a.dropOrder - b.dropOrder,
+    ),
+    extraWarnings: extras.warnings,
     id: randomUUID(),
     date,
     dispatch,

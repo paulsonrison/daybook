@@ -1,4 +1,17 @@
 import type { PoolClient } from 'pg';
+export async function staffHasLiveSubstitutions(
+  client: PoolClient,
+  id: string,
+) {
+  return Boolean(
+    (
+      await client.query(
+        `SELECT a.id FROM daybook.substitute_allocations a JOIN daybook.substitute_assignments s ON(s.agency_id,s.id)=(a.agency_id,a.assignment_id) JOIN daybook.agencies agency ON agency.id=a.agency_id WHERE a.staff_id=$1 AND s.active AND s.end_date>=(CURRENT_TIMESTAMP AT TIME ZONE agency.timezone)::date LIMIT 1`,
+        [id],
+      )
+    ).rowCount,
+  );
+}
 export interface StaffRecord {
   id: string;
   name: string;
