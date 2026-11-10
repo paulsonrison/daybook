@@ -14,7 +14,7 @@ type Staff {id:ID!,name:String!,staffCode:String!,phone:String!,status:StaffStat
 type RouteStop {id:ID!,label:String!,door:String!,sequence:Int!,residentId:ID}
 type Route {id:ID!,code:String!,name:String!,territoryId:ID!,staffId:ID,staffName:String,active:Boolean!,version:Int!,stops:[RouteStop!]!}
 type OperationsSummary {territories:Int!,activeStaff:Int!,activeRoutes:Int!}
-type AuditEvent {id:ID!,action:String!,entityType:String!,entityId:ID!,actorId:ID!,createdAt:String!}
+type AuditEvent {id:ID!,action:String!,entityType:String!,entityId:ID!,actorId:ID,actorKind:String!,createdAt:String!}
 input TerritoryInput {id:ID,version:Int,name:String!,locality:String!,pinCodes:[String!]!,sectors:[String!]!,active:Boolean,overlapReason:String}
 input StaffInput {id:ID,version:Int,name:String!,staffCode:String!,phone:String!,status:StaffStatus!}
 input RouteStopInput {id:ID,label:String!,door:String!,sequence:Int!}
@@ -40,7 +40,7 @@ export const operationsResolvers = {
       agencyRead(ctx, async (client) =>
         (
           await client.query(
-            'SELECT id,action,entity_type AS "entityType",entity_id AS "entityId",actor_id AS "actorId",created_at AS "createdAt" FROM daybook.audit_events ORDER BY created_at DESC,id LIMIT 200',
+            'SELECT id,action,entity_type AS "entityType",entity_id AS "entityId",actor_id AS "actorId",actor_kind AS "actorKind",created_at AS "createdAt" FROM daybook.audit_events ORDER BY created_at DESC,id LIMIT 200',
           )
         ).rows.map((r) => ({ ...r, createdAt: r.createdAt.toISOString() })),
       ),

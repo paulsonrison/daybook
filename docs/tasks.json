@@ -158,7 +158,7 @@
     {
       "id": "P08",
       "title": "Payments, clearance, credit limits and collection sheets",
-      "status": "Not started",
+      "status": "To do",
       "evidence": [],
       "review": null,
       "mergeCommit": null
@@ -613,7 +613,7 @@
       "planTask": "P08",
       "sourceRow": 24,
       "priority": "High",
-      "status": "Not started",
+      "status": "To do",
       "criteria": [
         "1. Agent records full or partial invoice payments and caution deposits with payment method, date, receipt number, and UPI reference.",
         "2. System instantly updates resident account balance, clearing current dues and historical arrears.",
@@ -1009,7 +1009,7 @@
       "planTask": "P08",
       "sourceRow": 43,
       "priority": "High",
-      "status": "Not started",
+      "status": "To do",
       "criteria": [
         "1. Configurable agency credit threshold (e.g., maximum unpaid arrears amount or 60+ days overdue).",
         "2. Automated visual alert on agent dashboard highlighting high-risk overdue accounts.",
@@ -1067,7 +1067,7 @@
       "planTask": "P08",
       "sourceRow": 46,
       "priority": "High",
-      "status": "Not started",
+      "status": "To do",
       "criteria": [
         "1. Agent can trigger resident vacating/clearance workflow with termination effective date.",
         "2. Automatically reconcile refundable caution deposit against pending delivery arrears and unpaid invoices.",
@@ -1083,7 +1083,7 @@
       "planTask": "P08",
       "sourceRow": 47,
       "priority": "High",
-      "status": "Not started",
+      "status": "To do",
       "criteria": [
         "1. Generate route-wise collection sheets displaying door sequence, resident name, contact, total dues, and arrears aging.",
         "2. Include dynamic UPI payment QR codes and payment mode tick-boxes for physical field collection.",
@@ -1557,6 +1557,55 @@
       "from": "To do",
       "to": "In review",
       "event": "Billing implemented and verified; independent review findings fixed and rereviewed clear; awaiting whole-project merge."
+    },
+    {
+      "date": "2026-11-10T08:06:40.578Z",
+      "task": "P08",
+      "from": "Not started",
+      "to": "To do",
+      "event": "Starting approved payments, clearance, credit controls and collection sheets after reviewed P07 checkpoint."
+    },
+    {
+      "date": "2026-11-10T08:06:40.579Z",
+      "task": "US-016",
+      "from": "Not started",
+      "to": "To do",
+      "event": "Starting approved payments, clearance, credit controls and collection sheets after reviewed P07 checkpoint."
+    },
+    {
+      "date": "2026-11-10T08:06:40.579Z",
+      "task": "US-035",
+      "from": "Not started",
+      "to": "To do",
+      "event": "Starting approved payments, clearance, credit controls and collection sheets after reviewed P07 checkpoint."
+    },
+    {
+      "date": "2026-11-10T08:06:40.579Z",
+      "task": "US-038",
+      "from": "Not started",
+      "to": "To do",
+      "event": "Starting approved payments, clearance, credit controls and collection sheets after reviewed P07 checkpoint."
+    },
+    {
+      "date": "2026-11-10T08:06:40.579Z",
+      "task": "US-039",
+      "from": "Not started",
+      "to": "To do",
+      "event": "Starting approved payments, clearance, credit controls and collection sheets after reviewed P07 checkpoint."
+    },
+    {
+      "date": "2026-11-10T08:19:54.270Z",
+      "task": "P07",
+      "from": "In review",
+      "to": "To do",
+      "event": "Additional integration regression: system audit entries must remain readable through the existing audit API."
+    },
+    {
+      "date": "2026-11-10T08:23:31.980Z",
+      "task": "P07",
+      "from": "To do",
+      "to": "In review",
+      "event": "System audit API regression fixed; 13 billing PostgreSQL tests passed and independent rereview clear."
     }
   ]
 }

@@ -697,6 +697,17 @@ test('monthly worker closes the completed source ledger automatically with an im
   );
   assert.equal(summary.rows.length, 1);
   assert.equal(summary.rows[0].details.month, month);
+  const auditFeed = await api.query(
+    f.cookie,
+    '{auditEvents{id actorId actorKind}}',
+  );
+  assert.ok(auditFeed.data?.auditEvents, JSON.stringify(auditFeed));
+  assert.ok(
+    auditFeed.data.auditEvents.some(
+      (event: { actorId: string | null; actorKind: string }) =>
+        event.actorId === null && event.actorKind === 'SYSTEM',
+    ),
+  );
 });
 
 test('late holds cannot rewrite already billed automatic delivery rows or break daily preparation', async () => {
