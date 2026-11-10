@@ -15,8 +15,8 @@ Lifecycle: **Not started → To do → In review → Done**. Review findings ret
 | P02  | Territory, staff and ordered route management               | In review   |
 | P03  | Publications, residents and refundable deposits             | In review   |
 | P04  | Subscription recurrence, holds and effective pricing        | In review   |
-| P05  | Delivery operations, substitutions and exceptions           | To do       |
-| P06  | Supply, returns, seasonal stock and inserts                 | Not started |
+| P05  | Delivery operations, substitutions and exceptions           | In review   |
+| P06  | Supply, returns, seasonal stock and inserts                 | To do       |
 | P07  | Invoice engine, arrears and immutable closing               | Not started |
 | P08  | Payments, clearance, credit limits and collection sheets    | Not started |
 | P09  | Staff pay, attendance, handover and cash closing            | Not started |
@@ -32,41 +32,41 @@ Lifecycle: **Not started → To do → In review → Done**. Review findings ret
 | ------ | -------------------------------- | ---- | -------- | ----------- |
 | US-001 | Area Jurisdiction                | P02  | High     | In review   |
 | US-002 | Staff Management                 | P02  | High     | In review   |
-| US-003 | Route Division                   | P02  | High     | To do       |
-| US-004 | Catalog & Inventory              | P03  | Medium   | To do       |
+| US-003 | Route Division                   | P02  | High     | In review   |
+| US-004 | Catalog & Inventory              | P03  | Medium   | In review   |
 | US-005 | Resident Management              | P03  | High     | In review   |
 | US-006 | Multi-Subscription Master        | P04  | High     | In review   |
 | US-007 | Custom Cadence & Schedules       | P04  | High     | In review   |
 | US-008 | Agent Subscription Assignment    | P04  | Medium   | In review   |
-| US-009 | Daily Dispatch & Manifest        | P05  | High     | To do       |
+| US-009 | Daily Dispatch & Manifest        | P05  | High     | In review   |
 | US-010 | Schedule-Aware Billing           | P07  | Medium   | Not started |
-| US-011 | Automated Delivery               | P05  | High     | To do       |
+| US-011 | Automated Delivery               | P05  | High     | In review   |
 | US-012 | Dynamic Pricing Engine           | P04  | High     | To do       |
 | US-013 | Flexible Billing & Arrears       | P07  | High     | Not started |
 | US-014 | Trilingual UI Localization       | P11  | Medium   | Not started |
 | US-015 | Vacation & Temporary Holds       | P04  | High     | To do       |
 | US-016 | Payment & Reconciliation         | P08  | High     | Not started |
-| US-017 | Publisher Indents & Returns      | P06  | Medium   | Not started |
+| US-017 | Publisher Indents & Returns      | P06  | Medium   | To do       |
 | US-018 | Staff Payroll & Commission       | P09  | High     | Not started |
 | US-019 | WhatsApp & SMS Dispatch          | P10  | High     | Not started |
 | US-020 | Agency Analytics & Reporting     | P11  | Medium   | Not started |
 | US-021 | Delivery Exceptions & Grievances | P05  | Medium   | To do       |
 | US-022 | Daily Cash Register & Closing    | P09  | High     | Not started |
-| US-023 | Pamphlet & Insert Operations     | P06  | High     | Not started |
+| US-023 | Pamphlet & Insert Operations     | P06  | High     | To do       |
 | US-024 | Automated Ledger Closing         | P07  | High     | Not started |
 | US-025 | Automated Payment Alerts         | P10  | Medium   | Not started |
-| US-026 | Automated Daily Manifest Cron    | P05  | High     | To do       |
-| US-027 | Field Delivery UI                | P05  | High     | To do       |
+| US-026 | Automated Daily Manifest Cron    | P05  | High     | In review   |
+| US-027 | Field Delivery UI                | P05  | High     | In review   |
 | US-028 | Offline Delivery Sync            | P12  | High     | Not started |
 | US-029 | Rapid Cash Handover UI           | P09  | Medium   | Not started |
 | US-030 | UI Customization                 | P11  | Medium   | Not started |
 | US-031 | Multi-Tenant Architecture        | P01  | High     | In review   |
 | US-032 | Direct Communications            | P10  | Medium   | Not started |
 | US-033 | Regional Publications            | P03  | Medium   | To do       |
-| US-034 | Seasonal Merchandise             | P06  | Medium   | Not started |
+| US-034 | Seasonal Merchandise             | P06  | Medium   | To do       |
 | US-035 | Credit Control & Suspension      | P08  | High     | Not started |
 | US-036 | AI Assistant & Support           | P13  | High     | Not started |
-| US-037 | Emergency & Route Reallocation   | P05  | High     | To do       |
+| US-037 | Emergency & Route Reallocation   | P05  | High     | In review   |
 | US-038 | Resident Settlement & Clearance  | P08  | High     | Not started |
 | US-039 | Field Collection Run-Sheets      | P08  | High     | Not started |
 | US-040 | Automated Cloud Backup           | P13  | High     | Not started |

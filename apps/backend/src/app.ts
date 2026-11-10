@@ -13,6 +13,10 @@ import {
   subscriptionTypeDefs,
   subscriptionResolvers,
 } from './modules/subscriptions/schema.js';
+import {
+  deliveryTypeDefs,
+  deliveryResolvers,
+} from './modules/delivery/schema.js';
 export function createApp({
   databaseReady,
   frontendOrigin = 'http://localhost:3000',
@@ -39,12 +43,14 @@ export function createApp({
       type Query { health: Health!, me: Agent! }
       ${operationsTypeDefs}
       ${catalogTypeDefs}
-      ${subscriptionTypeDefs}`,
+      ${subscriptionTypeDefs}
+      ${deliveryTypeDefs}`,
       resolvers: {
         Query: {
           ...operationsResolvers.Query,
           ...catalogResolvers.Query,
           ...subscriptionResolvers.Query,
+          ...deliveryResolvers.Query,
           health: () => ({ status: 'ok', service: 'daybook-api' }),
           me: (_root, _args, context) => {
             if (!context.agent)
@@ -58,6 +64,7 @@ export function createApp({
           ...operationsResolvers.Mutation,
           ...catalogResolvers.Mutation,
           ...subscriptionResolvers.Mutation,
+          ...deliveryResolvers.Mutation,
         },
       },
     }),

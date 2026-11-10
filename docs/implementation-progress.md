@@ -44,7 +44,7 @@ Configuration now uses typed GraphQL inputs, per-agency serialized mutation tran
 
 ## Outstanding
 
-P04 is verified and independently reviewed; P05 is in progress and P06–P14 remain unimplemented. No merge or remote push has occurred. Provider credentials and live-service acceptance are distinct from local contract tests and must not be reported as verified without evidence.
+P05 is verified and independently reviewed; P06 is in progress and P07–P14 remain unimplemented. No merge or remote push has occurred. Provider credentials and live-service acceptance are distinct from local contract tests and must not be reported as verified without evidence.
 
 ## P03 — reviewed catalog, residents and deposits
 
@@ -64,3 +64,15 @@ All eight date-only cadences, anchored month/year clamping, bounded and indefini
 - Final checks passed: 27 unit/SSR, 29 PostgreSQL integration, 6 Chrome app tests, lint, typecheck, production build and formatting. Shared UI package was unchanged since its successful P03 Storybook build. P04/US-006–008 In review until merge. US-012 billing and US-015 manifest/billing criteria retain P05/P07 dependencies.
 - Ruling: calendar edits require pausing/cancelling active subscriptions before an explicit validated schedule update/reactivation. This avoids silently changing household delivery commitments; it costs the owner an explicit reassignment step even for compatible calendar additions.
 - P05 started with delivery/manifest/substitution/complaint regression contracts.
+
+## P05 — reviewed delivery operations and worker foundation
+
+Daily logs and packing manifests partition dispatches, expand active calendars and skip holds/press holidays. Dated substitute ranges cover each drop once and revert to recorded permanent assignments. Field UI includes search, ordered cards, 48px actions, swipe-to-flag and light/dark themes. Complaints retain distinct request fingerprints, durable one-per-delivery benefit guards and optional recorded feedback. Measured staff issue rates and unknown-until-recorded satisfaction appear on the overview.
+
+- RED → GREEN: missing delivery APIs, missing midnight/04:00 work, post-midnight staff attribution, missing field screen, historical cancellation erasing logs, duplicate complaint benefits, stale job completion, narrowing/cancelling substitutes and missing measured metrics.
+- Independent operations_review identified three defects (benefit history guard, lease fencing and changed substitution ranges). All reproduced/fixed; final rereview clear. Historical permanent staff and past packing snapshots remain intact; explicit dated correction reconciles old/new assignment ranges.
+- Durable separate worker has scoped jobs, SKIP LOCKED claims, owned lease/attempt checks, row locks through execution, bounded retry/backoff and catch-up. Context7 retrieved PostgreSQL 17 locking documentation supporting queue and transaction lock behavior. No persistent customer worker was started. See background-worker.md.
+- Final checks: 39 PostgreSQL tests, 27 unit/SSR, 7 Chrome application tests, lint/typecheck/build/format passed. Chrome checks cover field exception/resolution, gesture, dark mode, refresh and mobile action dimensions. Full Figma parity remains P14.
+- Ruling: dispatch warning uses at least three prior prepared dispatches, at most seven, with a 30% absolute deviation threshold. Empty history is unknown, not zero.
+- Ruling: historical dates with recorded marking/manifests are preserved; a first backfill uses available configuration and cannot reconstruct absent lifecycle history. Future marking is rejected.
+- US-021 ledger posting remains P07; resolved replacements and approved credits are recorded without claiming a posted paid-invoice correction. P06 begins supply/returns, inventory and insertion work.

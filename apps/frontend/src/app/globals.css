@@ -74,6 +74,31 @@ body {
   display: grid;
   gap: 12px;
 }
+.delivery-field {
+  padding: 20px;
+  border: 1px solid var(--db-border);
+  border-radius: 8px;
+}
+.delivery-field-list {
+  display: grid;
+  gap: 16px;
+}
+.delivery-field-card {
+  touch-action: pan-y;
+}
+.delivery-field-card h2 {
+  font-size: 20px;
+  margin: 8px 0;
+}
+.delivery-field-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.delivery-field-actions .db-button {
+  min-height: 48px;
+  min-width: 48px;
+}
 @media (max-width: 600px) {
   .agency-metrics,
   .agency-form-grid,

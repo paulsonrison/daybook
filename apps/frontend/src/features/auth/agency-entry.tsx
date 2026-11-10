@@ -134,6 +134,12 @@ export function AgencyEntry({ children }: { children?: ReactNode }) {
                   icon: 'nav-route',
                   active: pathname === '/routes',
                 },
+                {
+                  label: 'Daily delivery log',
+                  href: '/delivery',
+                  icon: 'nav-route',
+                  active: pathname === '/delivery',
+                },
               ],
             },
             {

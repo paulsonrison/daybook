@@ -105,15 +105,24 @@
     {
       "id": "P05",
       "title": "Delivery operations, substitutions and exceptions",
-      "status": "To do",
-      "evidence": [],
-      "review": null,
+      "status": "In review",
+      "evidence": [
+        "39 PostgreSQL, 27 unit/SSR, 7 Chrome application tests passed",
+        "Lint, typecheck, production build and formatting passed",
+        "operations_review found benefit, lease and substitution-cancellation defects; RED->GREEN fixes rereviewed clear",
+        "Historical logs/staff/manifest preservation, optional measured ratings, counts, split expiry and touch/dark/swipe behavior verified"
+      ],
+      "review": {
+        "reviewer": "operations_review",
+        "status": "clear",
+        "findingsFixed": 3
+      },
       "mergeCommit": null
     },
     {
       "id": "P06",
       "title": "Supply, returns, seasonal stock and inserts",
-      "status": "Not started",
+      "status": "To do",
       "evidence": [],
       "review": null,
       "mergeCommit": null
@@ -260,17 +269,23 @@
       "planTask": "P02",
       "sourceRow": 11,
       "priority": "High",
-      "status": "To do",
+      "status": "In review",
       "criteria": [
         "1. Divide coverage area into distinct routes/streets/lines with configured delivery drop sequence.",
         "2. Assign each route to a specific delivery boy with door-to-door delivery order.",
         "3. Support daily substitute re-assignment when a delivery boy is absent."
       ],
       "evidence": [
-        "Route division, permanent assignment and ordered stops implemented/tested in P02",
-        "Daily temporary substitute assignment remains P05; story is not complete"
+        "39 PostgreSQL, 27 unit/SSR, 7 Chrome application tests passed",
+        "Lint, typecheck, production build and formatting passed",
+        "operations_review found benefit, lease and substitution-cancellation defects; RED->GREEN fixes rereviewed clear",
+        "Historical logs/staff/manifest preservation, optional measured ratings, counts, split expiry and touch/dark/swipe behavior verified"
       ],
-      "review": null,
+      "review": {
+        "reviewer": "operations_review",
+        "status": "clear",
+        "findingsFixed": 3
+      },
       "mergeCommit": null,
       "supportingPlanTasks": ["P05"]
     },
@@ -280,14 +295,23 @@
       "planTask": "P03",
       "sourceRow": 12,
       "priority": "Medium",
-      "status": "To do",
+      "status": "In review",
       "criteria": [
         "1. Agent can add multiple newspapers/magazines with weekday/weekend rates.",
         "2. Track daily required copy counts per publication.",
         "3. Generate consolidated morning indent for publishers."
       ],
-      "evidence": [],
-      "review": null,
+      "evidence": [
+        "39 PostgreSQL, 27 unit/SSR, 7 Chrome application tests passed",
+        "Lint, typecheck, production build and formatting passed",
+        "operations_review found benefit, lease and substitution-cancellation defects; RED->GREEN fixes rereviewed clear",
+        "Historical logs/staff/manifest preservation, optional measured ratings, counts, split expiry and touch/dark/swipe behavior verified"
+      ],
+      "review": {
+        "reviewer": "operations_review",
+        "status": "clear",
+        "findingsFixed": 3
+      },
       "mergeCommit": null,
       "supportingPlanTasks": ["P05"]
     },
@@ -393,14 +417,23 @@
       "planTask": "P05",
       "sourceRow": 17,
       "priority": "High",
-      "status": "To do",
+      "status": "In review",
       "criteria": [
         "1. Agent can generate daily run-sheets and depot bag-packing slips filtered by active delivery schedules.",
         "2. Group deliveries by route sequence, assigned delivery boy, and resident door number.",
         "3. Display exact publication titles and copy counts for morning publisher pickup indent and bag-packing distribution."
       ],
-      "evidence": [],
-      "review": null,
+      "evidence": [
+        "39 PostgreSQL, 27 unit/SSR, 7 Chrome application tests passed",
+        "Lint, typecheck, production build and formatting passed",
+        "operations_review found benefit, lease and substitution-cancellation defects; RED->GREEN fixes rereviewed clear",
+        "Historical logs/staff/manifest preservation, optional measured ratings, counts, split expiry and touch/dark/swipe behavior verified"
+      ],
+      "review": {
+        "reviewer": "operations_review",
+        "status": "clear",
+        "findingsFixed": 3
+      },
       "mergeCommit": null
     },
     {
@@ -425,14 +458,23 @@
       "planTask": "P05",
       "sourceRow": 19,
       "priority": "High",
-      "status": "To do",
+      "status": "In review",
       "criteria": [
         "1. Midnight cron job auto-marks deliveries, automatically skipping publisher press holidays and non-printing days.",
         "2. Agent can view daily log and edit/override delivery status (e.g., Un-delivered, Damaged).",
         "3. System maintains audit log of agent overrides against auto-marked deliveries."
       ],
-      "evidence": [],
-      "review": null,
+      "evidence": [
+        "39 PostgreSQL, 27 unit/SSR, 7 Chrome application tests passed",
+        "Lint, typecheck, production build and formatting passed",
+        "operations_review found benefit, lease and substitution-cancellation defects; RED->GREEN fixes rereviewed clear",
+        "Historical logs/staff/manifest preservation, optional measured ratings, counts, split expiry and touch/dark/swipe behavior verified"
+      ],
+      "review": {
+        "reviewer": "operations_review",
+        "status": "clear",
+        "findingsFixed": 3
+      },
       "mergeCommit": null
     },
     {
@@ -523,7 +565,7 @@
       "planTask": "P06",
       "sourceRow": 25,
       "priority": "Medium",
-      "status": "Not started",
+      "status": "To do",
       "criteria": [
         "1. Agent logs daily unsold/returned copy counts per publication before publisher return cutoff deadline.",
         "2. Calculate publisher credit margin and net payable based on supply indent minus validated returns.",
@@ -595,7 +637,8 @@
       ],
       "evidence": [],
       "review": null,
-      "mergeCommit": null
+      "mergeCommit": null,
+      "supportingPlanTasks": ["P07"]
     },
     {
       "id": "US-022",
@@ -619,7 +662,7 @@
       "planTask": "P06",
       "sourceRow": 31,
       "priority": "High",
-      "status": "Not started",
+      "status": "To do",
       "criteria": [
         "1. Agent can record advertiser details, insert quantity, scheduled drop date, and target delivery routes.",
         "2. Include pamphlet insertion count in daily depot packing manifests for delivery boys.",
@@ -667,14 +710,23 @@
       "planTask": "P05",
       "sourceRow": 34,
       "priority": "High",
-      "status": "To do",
+      "status": "In review",
       "criteria": [
         "1. 4:00 AM cron executes schedule expansion excluding paused accounts and press holidays.",
         "2. Auto-generates publisher pickup copy counts and route-wise bag-packing slips.",
         "3. Alerts agent dashboard if indent count deviates significantly from moving average."
       ],
-      "evidence": [],
-      "review": null,
+      "evidence": [
+        "39 PostgreSQL, 27 unit/SSR, 7 Chrome application tests passed",
+        "Lint, typecheck, production build and formatting passed",
+        "operations_review found benefit, lease and substitution-cancellation defects; RED->GREEN fixes rereviewed clear",
+        "Historical logs/staff/manifest preservation, optional measured ratings, counts, split expiry and touch/dark/swipe behavior verified"
+      ],
+      "review": {
+        "reviewer": "operations_review",
+        "status": "clear",
+        "findingsFixed": 3
+      },
       "mergeCommit": null
     },
     {
@@ -683,14 +735,23 @@
       "planTask": "P05",
       "sourceRow": 35,
       "priority": "High",
-      "status": "To do",
+      "status": "In review",
       "criteria": [
         "1. Single-tap delivery toggle and swipe-to-flag actions optimized for one-handed mobile use.",
         "2. High-contrast dark/light theme designed for early morning visibility.",
         "3. Fast resident search and sequential door-to-door delivery order display."
       ],
-      "evidence": [],
-      "review": null,
+      "evidence": [
+        "39 PostgreSQL, 27 unit/SSR, 7 Chrome application tests passed",
+        "Lint, typecheck, production build and formatting passed",
+        "operations_review found benefit, lease and substitution-cancellation defects; RED->GREEN fixes rereviewed clear",
+        "Historical logs/staff/manifest preservation, optional measured ratings, counts, split expiry and touch/dark/swipe behavior verified"
+      ],
+      "review": {
+        "reviewer": "operations_review",
+        "status": "clear",
+        "findingsFixed": 3
+      },
       "mergeCommit": null
     },
     {
@@ -807,7 +868,7 @@
       "planTask": "P06",
       "sourceRow": 42,
       "priority": "Medium",
-      "status": "Not started",
+      "status": "To do",
       "criteria": [
         "1. Create seasonal non-recurring merchandise items (calendars, annual diaries, festival specials).",
         "2. Record resident calendar pre-orders and assign drop counts to route manifests.",
@@ -856,14 +917,23 @@
       "planTask": "P05",
       "sourceRow": 45,
       "priority": "High",
-      "status": "To do",
+      "status": "In review",
       "criteria": [
         "1. Agent can initiate emergency route reassignment to one or multiple substitute delivery staff for single or multi-day absences.",
         "2. Automatically split or transfer route run-sheets and bag-packing manifests to assigned substitutes.",
         "3. Track temporary assignment history and auto-revert route allocation upon regular staff return."
       ],
-      "evidence": [],
-      "review": null,
+      "evidence": [
+        "39 PostgreSQL, 27 unit/SSR, 7 Chrome application tests passed",
+        "Lint, typecheck, production build and formatting passed",
+        "operations_review found benefit, lease and substitution-cancellation defects; RED->GREEN fixes rereviewed clear",
+        "Historical logs/staff/manifest preservation, optional measured ratings, counts, split expiry and touch/dark/swipe behavior verified"
+      ],
+      "review": {
+        "reviewer": "operations_review",
+        "status": "clear",
+        "findingsFixed": 3
+      },
       "mergeCommit": null
     },
     {
@@ -1166,6 +1236,90 @@
       "from": "To do",
       "to": "In review",
       "event": "All implementation checks passed; independent fixes rereviewed clear; awaiting merge."
+    },
+    {
+      "date": "2026-11-10T02:02:53.916Z",
+      "task": "P06",
+      "from": "Not started",
+      "to": "To do",
+      "event": "Start approved supply, stock, returns and insert work after P05 review cleared."
+    },
+    {
+      "date": "2026-11-10T02:02:53.917Z",
+      "task": "US-017",
+      "from": "Not started",
+      "to": "To do",
+      "event": "Start approved supply, stock, returns and insert work after P05 review cleared."
+    },
+    {
+      "date": "2026-11-10T02:02:53.917Z",
+      "task": "US-023",
+      "from": "Not started",
+      "to": "To do",
+      "event": "Start approved supply, stock, returns and insert work after P05 review cleared."
+    },
+    {
+      "date": "2026-11-10T02:02:53.917Z",
+      "task": "US-034",
+      "from": "Not started",
+      "to": "To do",
+      "event": "Start approved supply, stock, returns and insert work after P05 review cleared."
+    },
+    {
+      "date": "2026-11-10T02:03:23.945Z",
+      "task": "P05",
+      "from": "To do",
+      "to": "In review",
+      "event": "Verified delivery, worker and field workflows; independent rereview clear; awaiting final merge."
+    },
+    {
+      "date": "2026-11-10T02:03:23.946Z",
+      "task": "US-003",
+      "from": "To do",
+      "to": "In review",
+      "event": "Verified delivery, worker and field workflows; independent rereview clear; awaiting final merge."
+    },
+    {
+      "date": "2026-11-10T02:03:23.946Z",
+      "task": "US-004",
+      "from": "To do",
+      "to": "In review",
+      "event": "Verified delivery, worker and field workflows; independent rereview clear; awaiting final merge."
+    },
+    {
+      "date": "2026-11-10T02:03:23.946Z",
+      "task": "US-009",
+      "from": "To do",
+      "to": "In review",
+      "event": "Verified delivery, worker and field workflows; independent rereview clear; awaiting final merge."
+    },
+    {
+      "date": "2026-11-10T02:03:23.946Z",
+      "task": "US-011",
+      "from": "To do",
+      "to": "In review",
+      "event": "Verified delivery, worker and field workflows; independent rereview clear; awaiting final merge."
+    },
+    {
+      "date": "2026-11-10T02:03:23.946Z",
+      "task": "US-026",
+      "from": "To do",
+      "to": "In review",
+      "event": "Verified delivery, worker and field workflows; independent rereview clear; awaiting final merge."
+    },
+    {
+      "date": "2026-11-10T02:03:23.946Z",
+      "task": "US-027",
+      "from": "To do",
+      "to": "In review",
+      "event": "Verified delivery, worker and field workflows; independent rereview clear; awaiting final merge."
+    },
+    {
+      "date": "2026-11-10T02:03:23.946Z",
+      "task": "US-037",
+      "from": "To do",
+      "to": "In review",
+      "event": "Verified delivery, worker and field workflows; independent rereview clear; awaiting final merge."
     }
   ]
 }
