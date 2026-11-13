@@ -67,6 +67,9 @@ const PaymentForm = observer(function PaymentForm({
       targetInvoiceId: '',
       confirmReceived: false,
       confirmationNote: '',
+      collectorCustody: '',
+      collectorStaffId: '',
+      collectorRouteId: '',
     }),
     [today],
   );
@@ -90,6 +93,22 @@ const PaymentForm = observer(function PaymentForm({
           e.preventDefault();
           void store.execute('record', {
             ...draft,
+            collectorCustody:
+              draft.method === 'CASH' && draft.confirmReceived
+                ? draft.collectorCustody || null
+                : null,
+            collectorStaffId:
+              draft.method === 'CASH' &&
+              draft.confirmReceived &&
+              draft.collectorCustody === 'STAFF'
+                ? draft.collectorStaffId || null
+                : null,
+            collectorRouteId:
+              draft.method === 'CASH' &&
+              draft.confirmReceived &&
+              draft.collectorCustody === 'STAFF'
+                ? draft.collectorRouteId || null
+                : null,
             residentId: store.selectedResidentId,
             targetInvoiceId:
               draft.purpose === 'ACCOUNT' && draft.targetInvoiceId
@@ -199,6 +218,48 @@ const PaymentForm = observer(function PaymentForm({
                   value={draft.confirmationNote}
                   onChange={(e) => change('confirmationNote', e.target.value)}
                 />
+              )}
+            </>
+          )}
+          {draft.method === 'CASH' && draft.confirmReceived && (
+            <>
+              <Select
+                label="Cash collection custody"
+                value={draft.collectorCustody}
+                options={[
+                  { value: '', label: 'Unknown; classify before cash closing' },
+                  { value: 'AGENCY', label: 'Cash received at agency counter' },
+                  { value: 'STAFF', label: 'Cash held by a staff collector' },
+                ]}
+                onChange={(e) => change('collectorCustody', e.target.value)}
+              />
+              {draft.collectorCustody === 'STAFF' && (
+                <>
+                  <Select
+                    label="Cash collector"
+                    value={draft.collectorStaffId}
+                    options={[
+                      { value: '', label: 'Choose collecting staff' },
+                      ...store.staffCollectors.map((s) => ({
+                        value: s.id,
+                        label: s.name,
+                      })),
+                    ]}
+                    onChange={(e) => change('collectorStaffId', e.target.value)}
+                  />
+                  <Select
+                    label="Cash collection route"
+                    value={draft.collectorRouteId}
+                    options={[
+                      { value: '', label: 'Choose collection route' },
+                      ...store.routes.map((r) => ({
+                        value: r.id,
+                        label: r.name,
+                      })),
+                    ]}
+                    onChange={(e) => change('collectorRouteId', e.target.value)}
+                  />
+                </>
               )}
             </>
           )}

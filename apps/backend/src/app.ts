@@ -38,6 +38,8 @@ import {
   clearanceResolvers,
 } from './modules/clearance/schema.js';
 import { creditTypeDefs, creditResolvers } from './modules/credit/schema.js';
+import { payrollTypeDefs, payrollResolvers } from './modules/payroll/schema.js';
+import { cashTypeDefs, cashResolvers } from './modules/cash/schema.js';
 export function createApp({
   databaseReady,
   frontendOrigin = 'http://localhost:3000',
@@ -74,7 +76,9 @@ export function createApp({
       ${cycleTypeDefs}
       ${paymentTypeDefs}
       ${clearanceTypeDefs}
-      ${creditTypeDefs}`,
+      ${creditTypeDefs}
+      ${payrollTypeDefs}
+      ${cashTypeDefs}`,
       resolvers: {
         Query: {
           ...operationsResolvers.Query,
@@ -90,6 +94,8 @@ export function createApp({
           ...paymentResolvers.Query,
           ...clearanceResolvers.Query,
           ...creditResolvers.Query,
+          ...payrollResolvers.Query,
+          ...cashResolvers.Query,
           health: () => ({ status: 'ok', service: 'daybook-api' }),
           me: (_root, _args, context) => {
             if (!context.agent)
@@ -113,6 +119,8 @@ export function createApp({
           ...paymentResolvers.Mutation,
           ...clearanceResolvers.Mutation,
           ...creditResolvers.Mutation,
+          ...payrollResolvers.Mutation,
+          ...cashResolvers.Mutation,
         },
       },
     }),

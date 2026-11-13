@@ -44,7 +44,7 @@ Configuration now uses typed GraphQL inputs, per-agency serialized mutation tran
 
 ## Outstanding
 
-P00–P08 are implemented and independently reviewed; P09–P14 remain. P08 notification sending remains a P10 dependency. No merge or remote push has occurred. Provider credentials and live-service acceptance are distinct from local contract tests and must not be reported as verified without evidence.
+P00–P09 are implemented and independently reviewed; P10–P14 remain. P08 notification sending remains a P10 dependency. No merge or remote push has occurred. Provider credentials and live-service acceptance are distinct from local contract tests and must not be reported as verified without evidence.
 
 ## P03 — reviewed catalog, residents and deposits
 
@@ -113,4 +113,17 @@ Exact full/partial payments and separate deposits have durable request recovery,
 - Verification: 74 PostgreSQL tests, 30 unit/SSR checks, 19 Chrome application tests, lint and typecheck passed. Production build and formatting results recorded below.
 - Confirmation is agent attestation, not bank verification. QR is a payment intent. No actual payments or messages occurred.
 - US-035 stays To do until P10 configured/consent-aware WhatsApp delivery; current intents are NOT_CONFIGURED. Other P08 tasks remain In review until final merge. Full Figma comparison remains P14.
-  `nP08 checkpoint: production build exited 0; repository formatting passed (end-of-line auto).
+  P08 checkpoint: production build exited 0; repository formatting passed (end-of-line auto).
+
+## P09 — reviewed staff pay, cash custody and signed closing
+
+Effective salary, per-copy and blended rules include employment dates, attendance, route allowances, approved unpaid expense claims and confirmed advances. Payslip previews use exact paise, actual substitute delivery snapshots and one original-copy commission; advances are capped against earnings and carry forward. Posting preserves source claims and remains separate from a confirmed payout. Explicit current-period corrections can pay former staff without inventing new employment.
+
+- Observed RED to GREEN included missing APIs/screens, reimbursement double-disbursement semantics, open-ended rule transitions, missing preparation, contradictory or incomplete employment boundaries, future posting, stale previews, receipt/payout state replay, cash custody, signed-day guards, digital deposits after cash close, cross-entry return deduplication and one-handover return claims.
+- Independent payroll/cash/UI review findings were reproduced and fixed; final focused rereviews are clear. UI regressions cover lost-response advance/return handover recovery, staff selection during calculation, retained drafts after failed writes and failed cash-date changes.
+- Verification passed: 85 real PostgreSQL regressions, 30 unit/SSR checks, 25 Chrome application tests, typecheck, lint and production build. A final 8-test payroll run also verifies stale attendance fingerprints and immutable posted attendance. Repository formatting is recorded below.
+- Cash custody is explicit and historical unknown custody stays unknown. Actual handovers enter the drawer once; a short handover's signed variance is an agency suspense memo, not staff debt. Late remittances are bounded, deduplicated actual inflows. Petty cash, bank deposits, cash advances, payroll payouts and refunds remain separate outflows. Signed-day snapshots do not change when later cash arrives.
+- Rules sharing the same employment start use one confirmed final boundary. Fixed monthly salary supports a final midmonth departure without automatic proration; ordinary fixed-rate changes remain constrained to month boundaries. Conflicting recorded boundaries are rejected rather than silently selecting one.
+- New pages compose shared UI, money formatting and theme styles; original-request recovery is shared with existing payments. Readable source/attendance/claim/handover/close histories replace raw implementation data. The synthetic rapid workflow completed within its browser test; this does not establish a measured production service target.
+- No actual salary, customer funds, provider messages or cloud changes occurred. P09/story tasks remain In review until the final merge. Exact Figma acceptance remains P14. P10 will reuse immutable document snapshots, notification intents and the existing worker.
+  P09 checkpoint: repository formatting and final unit/lint checks passed; all independent review comments resolved.

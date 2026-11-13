@@ -188,6 +188,18 @@ export function AgencyEntry({ children }: { children?: ReactNode }) {
                   active: pathname === '/staff',
                 },
                 {
+                  label: 'Staff pay & attendance',
+                  href: '/payroll',
+                  icon: 'staff',
+                  active: pathname === '/payroll',
+                },
+                {
+                  label: 'Cash handover & closing',
+                  href: '/cash',
+                  icon: 'ledger',
+                  active: pathname === '/cash',
+                },
+                {
                   label: 'Settings',
                   href: '/settings/territory',
                   icon: 'nav-settings',

@@ -174,9 +174,18 @@
     {
       "id": "P09",
       "title": "Staff pay, attendance, handover and cash closing",
-      "status": "Not started",
-      "evidence": [],
-      "review": null,
+      "status": "In review",
+      "evidence": [
+        "85 real PostgreSQL tests, 30 unit/SSR checks and 25 Chrome application tests passed",
+        "Final payroll stale-preview and posted-attendance checks: 8/8 targeted PostgreSQL tests passed",
+        "Typecheck, lint and production build passed; repository formatting recorded in implementation-progress.md",
+        "Independent payroll, cash and UI reviews fixed and rereviewed clear; no remaining actionable findings"
+      ],
+      "review": {
+        "reviewer": "auth_review, operations_review, foundation_review",
+        "outstanding": 0,
+        "result": "Clear after reproduced financial, employment-boundary and recovery fixes"
+      },
       "mergeCommit": null
     },
     {
@@ -670,14 +679,23 @@
       "planTask": "P09",
       "sourceRow": 26,
       "priority": "High",
-      "status": "Not started",
+      "status": "In review",
       "criteria": [
         "1. Configure pay rules per delivery boy: fixed monthly salary, commission per delivered paper, or blended rate.",
         "2. Auto-compute monthly staff earnings factoring route assignment, actual delivery days, and attendance logs.",
         "3. Record salary advance deductions, expense reimbursements, and generate monthly payslips."
       ],
-      "evidence": [],
-      "review": null,
+      "evidence": [
+        "85 real PostgreSQL tests, 30 unit/SSR checks and 25 Chrome application tests passed",
+        "Final payroll stale-preview and posted-attendance checks: 8/8 targeted PostgreSQL tests passed",
+        "Typecheck, lint and production build passed; repository formatting recorded in implementation-progress.md",
+        "Independent payroll, cash and UI reviews fixed and rereviewed clear; no remaining actionable findings"
+      ],
+      "review": {
+        "reviewer": "auth_review, operations_review, foundation_review",
+        "outstanding": 0,
+        "result": "Clear after reproduced financial, employment-boundary and recovery fixes"
+      },
       "mergeCommit": null
     },
     {
@@ -746,14 +764,23 @@
       "planTask": "P09",
       "sourceRow": 30,
       "priority": "High",
-      "status": "Not started",
+      "status": "In review",
       "criteria": [
         "1. Daily closing screen compares physical cash received from each delivery boy against digital/cash collection logs.",
         "2. Record cash drawer opening balance, daily cash inflows, petty cash expenditures, and closing deposit balance.",
         "3. Flag discrepancies or cash shortages with required agent closing sign-off and historical ledger audit."
       ],
-      "evidence": [],
-      "review": null,
+      "evidence": [
+        "85 real PostgreSQL tests, 30 unit/SSR checks and 25 Chrome application tests passed",
+        "Final payroll stale-preview and posted-attendance checks: 8/8 targeted PostgreSQL tests passed",
+        "Typecheck, lint and production build passed; repository formatting recorded in implementation-progress.md",
+        "Independent payroll, cash and UI reviews fixed and rereviewed clear; no remaining actionable findings"
+      ],
+      "review": {
+        "reviewer": "auth_review, operations_review, foundation_review",
+        "outstanding": 0,
+        "result": "Clear after reproduced financial, employment-boundary and recovery fixes"
+      },
       "mergeCommit": null
     },
     {
@@ -896,14 +923,23 @@
       "planTask": "P09",
       "sourceRow": 37,
       "priority": "Medium",
-      "status": "Not started",
+      "status": "In review",
       "criteria": [
         "1. Route summary view displaying expected cash collection, handed-over cash, and returned copies.",
         "2. One-click discrepancy flagging and automated debit/credit memo creation.",
         "3. Generates instant digital shift handover sign-off and updates daily cash register."
       ],
-      "evidence": [],
-      "review": null,
+      "evidence": [
+        "85 real PostgreSQL tests, 30 unit/SSR checks and 25 Chrome application tests passed",
+        "Final payroll stale-preview and posted-attendance checks: 8/8 targeted PostgreSQL tests passed",
+        "Typecheck, lint and production build passed; repository formatting recorded in implementation-progress.md",
+        "Independent payroll, cash and UI reviews fixed and rereviewed clear; no remaining actionable findings"
+      ],
+      "review": {
+        "reviewer": "auth_review, operations_review, foundation_review",
+        "outstanding": 0,
+        "result": "Clear after reproduced financial, employment-boundary and recovery fixes"
+      },
       "mergeCommit": null
     },
     {
@@ -1669,6 +1705,62 @@
       "from": "To do",
       "to": "In review",
       "event": "74 PG, 30 unit/UI and 19 Chrome tests passed; independent rereviews clear"
+    },
+    {
+      "date": "2026-11-13T03:00:07.678Z",
+      "task": "P09",
+      "from": "Not started",
+      "to": "To do",
+      "event": "Begin approved staff pay and cash handover implementation with failing financial regressions"
+    },
+    {
+      "date": "2026-11-13T03:00:07.679Z",
+      "task": "US-018",
+      "from": "Not started",
+      "to": "To do",
+      "event": "Begin approved staff pay and cash handover implementation with failing financial regressions"
+    },
+    {
+      "date": "2026-11-13T03:00:07.679Z",
+      "task": "US-022",
+      "from": "Not started",
+      "to": "To do",
+      "event": "Begin approved staff pay and cash handover implementation with failing financial regressions"
+    },
+    {
+      "date": "2026-11-13T03:00:07.679Z",
+      "task": "US-029",
+      "from": "Not started",
+      "to": "To do",
+      "event": "Begin approved staff pay and cash handover implementation with failing financial regressions"
+    },
+    {
+      "date": "2026-11-13T07:32:11.151Z",
+      "task": "P09",
+      "from": "To do",
+      "to": "In review",
+      "event": "85 PG, 30 unit/UI, 25 Chrome; build/types/lint/format passed; independent rereviews clear"
+    },
+    {
+      "date": "2026-11-13T07:32:11.151Z",
+      "task": "US-018",
+      "from": "To do",
+      "to": "In review",
+      "event": "85 PG, 30 unit/UI, 25 Chrome; build/types/lint/format passed; independent rereviews clear"
+    },
+    {
+      "date": "2026-11-13T07:32:11.151Z",
+      "task": "US-022",
+      "from": "To do",
+      "to": "In review",
+      "event": "85 PG, 30 unit/UI, 25 Chrome; build/types/lint/format passed; independent rereviews clear"
+    },
+    {
+      "date": "2026-11-13T07:32:11.151Z",
+      "task": "US-029",
+      "from": "To do",
+      "to": "In review",
+      "event": "85 PG, 30 unit/UI, 25 Chrome; build/types/lint/format passed; independent rereviews clear"
     }
   ]
 }

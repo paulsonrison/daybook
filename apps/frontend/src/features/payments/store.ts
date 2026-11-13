@@ -94,7 +94,23 @@ export interface Sheet {
   qrStatus: string;
   rows: SheetRow[];
 }
-export type Operation = 'record' | 'reconcile' | 'clear' | 'refund' | 'suspend';
+export type Operation =
+  | 'record'
+  | 'reconcile'
+  | 'clear'
+  | 'refund'
+  | 'suspend'
+  | 'payRule'
+  | 'endPayRule'
+  | 'attendance'
+  | 'staffFunds'
+  | 'payslip'
+  | 'payrollPayout'
+  | 'custody'
+  | 'handover'
+  | 'cashExpense'
+  | 'cashClose'
+  | 'payrollAdjustment';
 interface Envelope {
   kind: Operation;
   input: Record<string, unknown>;
@@ -128,6 +144,41 @@ const mutations: Record<
     type: 'ClearanceRefundInput',
     fields: 'id receiptCode amount status',
   },
+  payrollAdjustment: {
+    name: 'recordPayrollAdjustment',
+    type: 'PayrollAdjustmentInput',
+    fields: 'id',
+  },
+  payRule: { name: 'savePayRule', type: 'PayRuleInput', fields: 'id' },
+  endPayRule: { name: 'endPayRule', type: 'EndPayRuleInput', fields: 'id' },
+  attendance: {
+    name: 'recordAttendance',
+    type: 'AttendanceInput',
+    fields: 'id',
+  },
+  staffFunds: {
+    name: 'recordStaffFunds',
+    type: 'StaffFundsInput',
+    fields: 'id',
+  },
+  payslip: { name: 'postPayslip', type: 'PayslipInput', fields: 'id' },
+  payrollPayout: {
+    name: 'recordPayrollPayout',
+    type: 'PayrollPayoutInput',
+    fields: 'id',
+  },
+  custody: {
+    name: 'classifyCollection',
+    type: 'CollectionCustodyInput',
+    fields: 'id',
+  },
+  handover: { name: 'recordHandover', type: 'HandoverInput', fields: 'id' },
+  cashExpense: {
+    name: 'recordCashExpense',
+    type: 'CashExpenseInput',
+    fields: 'id',
+  },
+  cashClose: { name: 'closeCashDay', type: 'CashCloseInput', fields: 'id' },
   suspend: {
     name: 'suspendForCredit',
     type: 'CreditSuspensionInput',
@@ -139,12 +190,14 @@ export class PaymentsStore {
   agencyName = '';
   residents: Person[] = [];
   routes: { id: string; name: string; active: boolean }[] = [];
+  staffCollectors: { id: string; name: string; status: string }[] = [];
   today = '';
   selectedResidentId = '';
   state = 'loading';
   residentState = 'loading';
   error = '';
   notice = '';
+  lastCompletedRequestId = '';
   busy = false;
   pending: Envelope | null = null;
   recoveryUnavailable = false;
@@ -236,13 +289,14 @@ export class PaymentsStore {
       const data = await graphqlRequest<{
         me: { agencyId: string; agency: { name: string } };
         residents: Person[];
+        staff: PaymentsStore['staffCollectors'];
         routes: PaymentsStore['routes'];
         deliveryMetrics: { today: string };
         creditRiskSummary: { accounts: Risk[] };
         creditPolicy: CreditPolicy;
         collectionSettings: PaymentsStore['settings'];
       }>(
-        `{me{agencyId agency{name}} residents{id name code status depositBalance version routeId dropOrder} routes{id name active} deliveryMetrics{today} creditRiskSummary{accounts{residentId name code status version routeName balance overdueAmount overdueDays highRisk}} creditPolicy{maxOverdueAmount maxOverdueDays enabled version} collectionSettings{upiId payeeName version}}`,
+        `{me{agencyId agency{name}} residents{id name code status depositBalance version routeId dropOrder} routes{id name active} staff{id name status} deliveryMetrics{today} creditRiskSummary{accounts{residentId name code status version routeName balance overdueAmount overdueDays highRisk}} creditPolicy{maxOverdueAmount maxOverdueDays enabled version} collectionSettings{upiId payeeName version}}`,
       );
       runInAction(() => {
         if (generation !== this.generation) return;
@@ -250,6 +304,7 @@ export class PaymentsStore {
         this.agencyName = data.me.agency.name;
         this.residents = data.residents;
         this.routes = data.routes;
+        this.staffCollectors = data.staff;
         this.today = data.deliveryMetrics.today;
         this.risks = data.creditRiskSummary.accounts;
         this.policy = data.creditPolicy;
@@ -265,7 +320,15 @@ export class PaymentsStore {
                 typeof value.input === 'object' &&
                 value.input &&
                 typeof value.input.requestId === 'string' &&
-                data.residents.some((r) => r.id === value.residentId)
+                (data.residents.some((r) => r.id === value.residentId) ||
+                  (value.residentId === '' &&
+                    ![
+                      'record',
+                      'reconcile',
+                      'clear',
+                      'refund',
+                      'suspend',
+                    ].includes(value.kind)))
               )
                 this.pending = value;
               else throw new Error('Invalid recovery record');
@@ -410,6 +473,7 @@ export class PaymentsStore {
         result = data[operation.name];
       runInAction(() => {
         this.selectedResidentId = original.residentId;
+        this.lastCompletedRequestId = String(original.input.requestId);
         this.pending = null;
         this.persist();
         if (original.kind === 'record' || original.kind === 'reconcile') {
@@ -427,7 +491,11 @@ export class PaymentsStore {
         } else if (original.kind === 'refund') {
           this.lastRefund = result as { receiptCode: string; amount: string };
           this.notice = 'Refund recorded';
-        } else this.notice = 'Service suspended. WhatsApp is not configured.';
+        } else
+          this.notice =
+            original.kind === 'suspend'
+              ? 'Service suspended. WhatsApp is not configured.'
+              : 'Operation recorded';
       });
       await this.load();
       return true;

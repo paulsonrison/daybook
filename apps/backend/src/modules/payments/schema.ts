@@ -9,7 +9,7 @@ import {
 } from './service.js';
 export const paymentTypeDefs = `
 type Payment {id:ID!,residentId:ID!,requestId:ID!,purpose:String!,method:String!,amount:String!,date:String!,reference:String,targetInvoiceId:ID,status:String!,receiptCode:String,confirmationEvidence:String!,confirmedAt:String,postingDate:String,version:Int!,balance:String!,confirmationSource:String}
-input PaymentInput {requestId:ID!,residentId:ID!,purpose:String!,method:String!,amount:String!,date:String!,reference:String,targetInvoiceId:ID,confirmReceived:Boolean!,confirmationNote:String}
+input PaymentInput {requestId:ID!,residentId:ID!,purpose:String!,method:String!,amount:String!,date:String!,reference:String,targetInvoiceId:ID,confirmReceived:Boolean!,confirmationNote:String,collectorCustody:String,collectorStaffId:ID,collectorRouteId:ID}
 input PaymentReconciliationInput {requestId:ID!,paymentId:ID!,version:Int!,outcome:String!,reference:String,evidence:String!}
 extend type Query {payments(residentId:ID):[Payment!]!,paymentByRequest(requestId:ID!):Payment}
 extend type Mutation {recordPayment(input:PaymentInput!):Payment!,reconcilePayment(input:PaymentReconciliationInput!):Payment!}

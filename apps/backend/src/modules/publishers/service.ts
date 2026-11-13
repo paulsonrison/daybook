@@ -156,45 +156,51 @@ export interface ReturnInput {
   quantity: number;
   reason: string;
 }
-export function recordReturn(ctx: RequestContext, input: ReturnInput) {
-  return configMutation(ctx, (c) =>
-    onceRequest(
-      c,
-      ctx.agent!.agencyId,
-      input.requestId,
-      'supply.return',
-      input,
-      async () => {
-        const supply = await findSupply(c, idValue(input.supplyId));
-        if (!supply) return fail('Supply lot not found.', 'NOT_FOUND');
-        quantity(input.quantity);
-        if (new Date() >= new Date(supply.returnDeadline))
-          return fail(
-            'This supply lot passed its snapshotted publisher return cutoff.',
-          );
-        if (input.quantity > supply.quantity - supply.returned)
-          return fail('Return quantity exceeds the remaining eligible supply.');
-        const reason = cleanText(input.reason, 'return reason', 500),
-          creditPaise = supply.netPaise * BigInt(input.quantity),
-          id = randomUUID();
-        const result = await insertReturn(c, ctx.agent!.agencyId, {
-          id,
-          supplyId: supply.id,
-          quantity: input.quantity,
-          reason,
-          creditPaise,
-          date: localClock(new Date(), await publisherTimezone(c)).date,
-        });
-        await audit(c, ctx, 'supply_return', id, 'supply.returned', {
-          supplyId: supply.id,
-          quantity: input.quantity,
-          credit: result.credit,
-        });
-        return result;
-      },
-    ),
+export async function recordReturnInTransaction(
+  c: import('pg').PoolClient,
+  ctx: RequestContext,
+  input: ReturnInput,
+) {
+  return onceRequest(
+    c,
+    ctx.agent!.agencyId,
+    input.requestId,
+    'supply.return',
+    input,
+    async () => {
+      const supply = await findSupply(c, idValue(input.supplyId));
+      if (!supply) return fail('Supply lot not found.', 'NOT_FOUND');
+      quantity(input.quantity);
+      if (new Date() >= new Date(supply.returnDeadline))
+        return fail(
+          'This supply lot passed its snapshotted publisher return cutoff.',
+        );
+      if (input.quantity > supply.quantity - supply.returned)
+        return fail('Return quantity exceeds the remaining eligible supply.');
+      const reason = cleanText(input.reason, 'return reason', 500),
+        creditPaise = supply.netPaise * BigInt(input.quantity),
+        id = randomUUID();
+      const result = await insertReturn(c, ctx.agent!.agencyId, {
+        id,
+        supplyId: supply.id,
+        quantity: input.quantity,
+        reason,
+        creditPaise,
+        date: localClock(new Date(), await publisherTimezone(c)).date,
+      });
+      await audit(c, ctx, 'supply_return', id, 'supply.returned', {
+        supplyId: supply.id,
+        quantity: input.quantity,
+        credit: result.credit,
+      });
+      return result;
+    },
   );
 }
+export function recordReturn(ctx: RequestContext, input: ReturnInput) {
+  return configMutation(ctx, (c) => recordReturnInTransaction(c, ctx, input));
+}
+
 export function publisherStatement(
   ctx: RequestContext,
   publisherId: string,

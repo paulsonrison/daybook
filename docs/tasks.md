@@ -19,7 +19,7 @@ Lifecycle: **Not started → To do → In review → Done**. Review findings ret
 | P06  | Supply, returns, seasonal stock and inserts                 | In review   |
 | P07  | Invoice engine, arrears and immutable closing               | In review   |
 | P08  | Payments, clearance, credit limits and collection sheets    | In review   |
-| P09  | Staff pay, attendance, handover and cash closing            | Not started |
+| P09  | Staff pay, attendance, handover and cash closing            | In review   |
 | P10  | Durable worker, localized communications and direct contact | Not started |
 | P11  | Complete localization, reporting, analytics and appearance  | Not started |
 | P12  | Offline field sync and installable app shell                | Not started |
@@ -47,18 +47,18 @@ Lifecycle: **Not started → To do → In review → Done**. Review findings ret
 | US-015 | Vacation & Temporary Holds       | P04  | High     | In review   |
 | US-016 | Payment & Reconciliation         | P08  | High     | In review   |
 | US-017 | Publisher Indents & Returns      | P06  | Medium   | In review   |
-| US-018 | Staff Payroll & Commission       | P09  | High     | Not started |
+| US-018 | Staff Payroll & Commission       | P09  | High     | In review   |
 | US-019 | WhatsApp & SMS Dispatch          | P10  | High     | Not started |
 | US-020 | Agency Analytics & Reporting     | P11  | Medium   | Not started |
 | US-021 | Delivery Exceptions & Grievances | P05  | Medium   | In review   |
-| US-022 | Daily Cash Register & Closing    | P09  | High     | Not started |
+| US-022 | Daily Cash Register & Closing    | P09  | High     | In review   |
 | US-023 | Pamphlet & Insert Operations     | P06  | High     | In review   |
 | US-024 | Automated Ledger Closing         | P07  | High     | In review   |
 | US-025 | Automated Payment Alerts         | P10  | Medium   | Not started |
 | US-026 | Automated Daily Manifest Cron    | P05  | High     | In review   |
 | US-027 | Field Delivery UI                | P05  | High     | In review   |
 | US-028 | Offline Delivery Sync            | P12  | High     | Not started |
-| US-029 | Rapid Cash Handover UI           | P09  | Medium   | Not started |
+| US-029 | Rapid Cash Handover UI           | P09  | Medium   | In review   |
 | US-030 | UI Customization                 | P11  | Medium   | Not started |
 | US-031 | Multi-Tenant Architecture        | P01  | High     | In review   |
 | US-032 | Direct Communications            | P10  | Medium   | Not started |

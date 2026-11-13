@@ -10,6 +10,7 @@ import {
   type RequestContext,
 } from '../context.js';
 import { onceRequest } from '../requests.js';
+import { classifyInTransaction } from '../cash/service.js';
 import { calendarDate } from '../scheduling/calendar.js';
 import { agencyToday } from '../delivery/repository.js';
 import { moneyString, parseMoney } from '../money.js';
@@ -42,6 +43,9 @@ export interface PaymentInput {
   targetInvoiceId?: string | null;
   confirmReceived: boolean;
   confirmationNote?: string | null;
+  collectorCustody?: string | null;
+  collectorStaffId?: string | null;
+  collectorRouteId?: string | null;
 }
 export interface ReconciliationInput {
   requestId: string;
@@ -222,6 +226,21 @@ export function recordPayment(ctx: RequestContext, input: PaymentInput) {
             method: input.method,
             amount: moneyString(amountPaise),
           });
+        if (input.collectorCustody) {
+          if (input.method !== 'CASH' || !input.confirmReceived)
+            fail('Confirm actual cash before assigning its custody.');
+          await classifyInTransaction(c, ctx, {
+            requestId: input.requestId,
+            paymentId: payment.id,
+            custody: input.collectorCustody,
+            staffId: input.collectorStaffId ?? undefined,
+            routeId: input.collectorRouteId ?? undefined,
+            reason: input.confirmationNote!,
+          });
+        } else if (input.collectorStaffId || input.collectorRouteId)
+          fail(
+            'Choose explicit collector custody before assigning staff or route.',
+          );
         return { id: payment.id };
       },
     );
