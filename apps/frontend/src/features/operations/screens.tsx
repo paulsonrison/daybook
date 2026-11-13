@@ -1,5 +1,6 @@
 'use client';
 import { DeliveryDashboard } from '../delivery/metrics';
+import { CreditDashboard } from '../payments/credit-dashboard';
 import { useEffect, useState } from 'react';
 import { observer } from 'mobx-react-lite';
 import {
@@ -444,6 +445,7 @@ export const AgencyOverview = observer(function AgencyOverview() {
           }
         />
       </Card>
+      <CreditDashboard />
       <DeliveryDashboard />
     </div>
   );

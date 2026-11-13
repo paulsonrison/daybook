@@ -320,7 +320,18 @@ export const ResidentEditor = observer(function ResidentEditor({
       <Select
         label="Resident status"
         value={draft.status}
-        options={options(['ACTIVE', 'INACTIVE'])}
+        options={
+          record?.status === 'SUSPENDED'
+            ? [
+                ...options(['ACTIVE', 'INACTIVE']),
+                {
+                  value: 'SUSPENDED',
+                  label: 'Suspended (credit hold)',
+                  disabled: true,
+                },
+              ]
+            : options(['ACTIVE', 'INACTIVE'])
+        }
         onChange={(e) => change('status', e.target.value)}
       />
     </Editor>

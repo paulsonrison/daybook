@@ -44,7 +44,7 @@ Configuration now uses typed GraphQL inputs, per-agency serialized mutation tran
 
 ## Outstanding
 
-P06 is verified and independently reviewed; P07–P14 remain unimplemented. No merge or remote push has occurred. Provider credentials and live-service acceptance are distinct from local contract tests and must not be reported as verified without evidence.
+P00–P08 are implemented and independently reviewed; P09–P14 remain. P08 notification sending remains a P10 dependency. No merge or remote push has occurred. Provider credentials and live-service acceptance are distinct from local contract tests and must not be reported as verified without evidence.
 
 ## P03 — reviewed catalog, residents and deposits
 
@@ -103,3 +103,14 @@ Monthly, weekly, custom and selected-month previews use recorded delivery rates 
 - Ruling: a downward invoice revision settles its own debit first. Other account credit retains oldest-due allocation. A delivery receives one replacement-or-credit benefit; additional goodwill is a separate audited adjustment.
 - Ruling: a late hold does not erase an already invoiced delivery. Its financial correction is explicit, preserving recorded history. An unpaid monthly invoice retains its original coverage when edited on a later day.
 - Full frame-by-frame Figma comparison remains P14. Payment confirmation, clearance, credit control and collection reports are P08; no real customer payments or messages were sent.
+
+## P08 — reviewed payments, clearance, credit and collection sheets
+
+Exact full/partial payments and separate deposits have durable request recovery, explicit funds confirmation, immutable receipt balances and audit history. Pending confirmations never show paid. Clearance offsets deposits, archives service and separately confirms actual refunds. Credit alerts and suspension preserve truthful unconfigured notification intents. Route sheets include genuine independently decoded UPI QR codes and recoverable batch entry.
+
+- RED to GREEN: missing APIs, targeted allocation, historical balances, combined deposit/account-credit refund effects, tenant/refund guards, genuine QR, pending confirmation and stale clearance.
+- Independent review found empty-selection lock, lost unsent batch drafts, outdated QR printing and mixed payment/refund printing. Each reproduced and fixed; final rereviews clear. Additional observed regressions covered storage write/read failures, refresh recovery, stale paid state and credit-button reactivity.
+- Verification: 74 PostgreSQL tests, 30 unit/SSR checks, 19 Chrome application tests, lint and typecheck passed. Production build and formatting results recorded below.
+- Confirmation is agent attestation, not bank verification. QR is a payment intent. No actual payments or messages occurred.
+- US-035 stays To do until P10 configured/consent-aware WhatsApp delivery; current intents are NOT_CONFIGURED. Other P08 tasks remain In review until final merge. Full Figma comparison remains P14.
+  `nP08 checkpoint: production build exited 0; repository formatting passed (end-of-line auto).

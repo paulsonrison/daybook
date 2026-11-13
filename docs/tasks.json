@@ -158,9 +158,17 @@
     {
       "id": "P08",
       "title": "Payments, clearance, credit limits and collection sheets",
-      "status": "To do",
-      "evidence": [],
-      "review": null,
+      "status": "In review",
+      "evidence": [
+        "74 real PostgreSQL tests, 30 unit/SSR checks and 19 Chrome application tests passed",
+        "Typecheck and lint passed; production build and formatting recorded in implementation-progress.md",
+        "Independent auth_review, foundation_review and operations_review rereviews clear; payment recovery and print regressions fixed"
+      ],
+      "review": {
+        "reviewer": "auth_review, foundation_review, operations_review",
+        "outstanding": 0,
+        "result": "Clear after reproduced fixes and rereviews"
+      },
       "mergeCommit": null
     },
     {
@@ -613,14 +621,22 @@
       "planTask": "P08",
       "sourceRow": 24,
       "priority": "High",
-      "status": "To do",
+      "status": "In review",
       "criteria": [
         "1. Agent records full or partial invoice payments and caution deposits with payment method, date, receipt number, and UPI reference.",
         "2. System instantly updates resident account balance, clearing current dues and historical arrears.",
         "3. Automatically generates digital payment receipts and maintains audit ledger of collections."
       ],
-      "evidence": [],
-      "review": null,
+      "evidence": [
+        "74 real PostgreSQL tests, 30 unit/SSR checks and 19 Chrome application tests passed",
+        "Typecheck and lint passed; production build and formatting recorded in implementation-progress.md",
+        "Independent auth_review, foundation_review and operations_review rereviews clear; payment recovery and print regressions fixed"
+      ],
+      "review": {
+        "reviewer": "auth_review, foundation_review, operations_review",
+        "outstanding": 0,
+        "result": "Clear after reproduced fixes and rereviews"
+      },
       "mergeCommit": null
     },
     {
@@ -1015,9 +1031,12 @@
         "2. Automated visual alert on agent dashboard highlighting high-risk overdue accounts.",
         "3. One-click delivery suspension with automated WhatsApp notification of service hold sent to the resident."
       ],
-      "evidence": [],
+      "evidence": [
+        "Credit threshold, dashboard alerts and explicit service suspension implemented and tested in P08; notification intent truthfully NOT_CONFIGURED. Automated WhatsApp sending remains P10."
+      ],
       "review": null,
-      "mergeCommit": null
+      "mergeCommit": null,
+      "supportingPlanTasks": ["P10"]
     },
     {
       "id": "US-036",
@@ -1067,14 +1086,22 @@
       "planTask": "P08",
       "sourceRow": 46,
       "priority": "High",
-      "status": "To do",
+      "status": "In review",
       "criteria": [
         "1. Agent can trigger resident vacating/clearance workflow with termination effective date.",
         "2. Automatically reconcile refundable caution deposit against pending delivery arrears and unpaid invoices.",
         "3. Generate deposit refund receipt or balance collection notice and archive resident account."
       ],
-      "evidence": [],
-      "review": null,
+      "evidence": [
+        "74 real PostgreSQL tests, 30 unit/SSR checks and 19 Chrome application tests passed",
+        "Typecheck and lint passed; production build and formatting recorded in implementation-progress.md",
+        "Independent auth_review, foundation_review and operations_review rereviews clear; payment recovery and print regressions fixed"
+      ],
+      "review": {
+        "reviewer": "auth_review, foundation_review, operations_review",
+        "outstanding": 0,
+        "result": "Clear after reproduced fixes and rereviews"
+      },
       "mergeCommit": null
     },
     {
@@ -1083,14 +1110,22 @@
       "planTask": "P08",
       "sourceRow": 47,
       "priority": "High",
-      "status": "To do",
+      "status": "In review",
       "criteria": [
         "1. Generate route-wise collection sheets displaying door sequence, resident name, contact, total dues, and arrears aging.",
         "2. Include dynamic UPI payment QR codes and payment mode tick-boxes for physical field collection.",
         "3. Fast-entry batch interface for agent to log collections directly from returned field collection sheets."
       ],
-      "evidence": [],
-      "review": null,
+      "evidence": [
+        "74 real PostgreSQL tests, 30 unit/SSR checks and 19 Chrome application tests passed",
+        "Typecheck and lint passed; production build and formatting recorded in implementation-progress.md",
+        "Independent auth_review, foundation_review and operations_review rereviews clear; payment recovery and print regressions fixed"
+      ],
+      "review": {
+        "reviewer": "auth_review, foundation_review, operations_review",
+        "outstanding": 0,
+        "result": "Clear after reproduced fixes and rereviews"
+      },
       "mergeCommit": null
     },
     {
@@ -1606,6 +1641,34 @@
       "from": "To do",
       "to": "In review",
       "event": "System audit API regression fixed; 13 billing PostgreSQL tests passed and independent rereview clear."
+    },
+    {
+      "date": "2026-11-13T02:59:01.572Z",
+      "task": "P08",
+      "from": "To do",
+      "to": "In review",
+      "event": "74 PG, 30 unit/UI and 19 Chrome tests passed; independent rereviews clear"
+    },
+    {
+      "date": "2026-11-13T02:59:01.573Z",
+      "task": "US-016",
+      "from": "To do",
+      "to": "In review",
+      "event": "74 PG, 30 unit/UI and 19 Chrome tests passed; independent rereviews clear"
+    },
+    {
+      "date": "2026-11-13T02:59:01.573Z",
+      "task": "US-038",
+      "from": "To do",
+      "to": "In review",
+      "event": "74 PG, 30 unit/UI and 19 Chrome tests passed; independent rereviews clear"
+    },
+    {
+      "date": "2026-11-13T02:59:01.573Z",
+      "task": "US-039",
+      "from": "To do",
+      "to": "In review",
+      "event": "74 PG, 30 unit/UI and 19 Chrome tests passed; independent rereviews clear"
     }
   ]
 }

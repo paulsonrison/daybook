@@ -18,7 +18,7 @@ Lifecycle: **Not started → To do → In review → Done**. Review findings ret
 | P05  | Delivery operations, substitutions and exceptions           | In review   |
 | P06  | Supply, returns, seasonal stock and inserts                 | In review   |
 | P07  | Invoice engine, arrears and immutable closing               | In review   |
-| P08  | Payments, clearance, credit limits and collection sheets    | To do       |
+| P08  | Payments, clearance, credit limits and collection sheets    | In review   |
 | P09  | Staff pay, attendance, handover and cash closing            | Not started |
 | P10  | Durable worker, localized communications and direct contact | Not started |
 | P11  | Complete localization, reporting, analytics and appearance  | Not started |
@@ -45,7 +45,7 @@ Lifecycle: **Not started → To do → In review → Done**. Review findings ret
 | US-013 | Flexible Billing & Arrears       | P07  | High     | In review   |
 | US-014 | Trilingual UI Localization       | P11  | Medium   | Not started |
 | US-015 | Vacation & Temporary Holds       | P04  | High     | In review   |
-| US-016 | Payment & Reconciliation         | P08  | High     | To do       |
+| US-016 | Payment & Reconciliation         | P08  | High     | In review   |
 | US-017 | Publisher Indents & Returns      | P06  | Medium   | In review   |
 | US-018 | Staff Payroll & Commission       | P09  | High     | Not started |
 | US-019 | WhatsApp & SMS Dispatch          | P10  | High     | Not started |
@@ -67,6 +67,6 @@ Lifecycle: **Not started → To do → In review → Done**. Review findings ret
 | US-035 | Credit Control & Suspension      | P08  | High     | To do       |
 | US-036 | AI Assistant & Support           | P13  | High     | Not started |
 | US-037 | Emergency & Route Reallocation   | P05  | High     | In review   |
-| US-038 | Resident Settlement & Clearance  | P08  | High     | To do       |
-| US-039 | Field Collection Run-Sheets      | P08  | High     | To do       |
+| US-038 | Resident Settlement & Clearance  | P08  | High     | In review   |
+| US-039 | Field Collection Run-Sheets      | P08  | High     | In review   |
 | US-040 | Automated Cloud Backup           | P13  | High     | Not started |

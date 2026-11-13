@@ -19,11 +19,15 @@
     "dotenv": "^17.2.3",
     "graphql": "^16.11.0",
     "graphql-yoga": "^5.16.0",
-    "pg": "^8.16.3"
+    "pg": "^8.16.3",
+    "qrcode": "^1.5.4"
   },
   "devDependencies": {
     "@types/pg": "^8.15.6",
+    "@types/qrcode": "^1.5.6",
     "embedded-postgres": "^17.11.0-beta.19",
+    "jsqr": "^1.4.0",
+    "pngjs": "^7.0.0",
     "tsx": "^4.20.6"
   }
 }

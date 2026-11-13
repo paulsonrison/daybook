@@ -152,6 +152,18 @@ export function AgencyEntry({ children }: { children?: ReactNode }) {
                   active: pathname === '/collections',
                 },
                 {
+                  label: 'Route collection sheets',
+                  href: '/collection-sheets',
+                  icon: 'ledger',
+                  active: pathname === '/collection-sheets',
+                },
+                {
+                  label: 'Payments & accounts',
+                  href: '/payments',
+                  icon: 'ledger',
+                  active: pathname === '/payments',
+                },
+                {
                   label: 'Publishers & returns',
                   href: '/publishers',
                   icon: 'publications',

@@ -1,5 +1,6 @@
 'use client';
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 import { observer } from 'mobx-react-lite';
 import { runInAction } from 'mobx';
 import {
@@ -426,6 +427,11 @@ export const BillingScreen = observer(function BillingScreen() {
           footer={
             !editable && (
               <div className="db-row db-no-print">
+                <Link
+                  href={`/payments?resident=${bill.resident.id}&invoice=${bill.id}`}
+                >
+                  Record payment
+                </Link>
                 <Button disabled={disabled || bill.locked} onClick={store.edit}>
                   Edit bill
                 </Button>

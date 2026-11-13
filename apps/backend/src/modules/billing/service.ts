@@ -68,7 +68,9 @@ export const invoices = (ctx: RequestContext, residentId?: string) =>
       c,
       residentId ? idValue(residentId) : undefined,
     );
-    return Promise.all(headers.map((h) => invoiceView(c, h.id)));
+    const views: Awaited<ReturnType<typeof invoiceView>>[] = [];
+    for (const header of headers) views.push(await invoiceView(c, header.id));
+    return views;
   });
 export const billingPolicy = (ctx: RequestContext) =>
   financialRead(ctx, readPolicy);

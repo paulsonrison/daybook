@@ -69,7 +69,10 @@ export function saveResident(ctx: RequestContext, input: ResidentInput) {
       if (amount > 0n) return fail('Record additional deposits separately.');
     }
     const status = input.status ?? old?.status ?? 'ACTIVE';
-    if (!['ACTIVE', 'INACTIVE'].includes(status))
+    if (
+      !['ACTIVE', 'INACTIVE'].includes(status) &&
+      !(old?.status === 'SUSPENDED' && status === 'SUSPENDED')
+    )
       return fail('Choose an active or inactive resident status.');
     const requestId = input.id ? '' : idValue(input.requestId);
     const hash = fingerprint({

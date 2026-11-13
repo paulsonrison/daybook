@@ -29,6 +29,15 @@ import { insertTypeDefs, insertResolvers } from './modules/inserts/schema.js';
 import { billingTypeDefs, billingResolvers } from './modules/billing/schema.js';
 import { ledgerTypeDefs, ledgerResolvers } from './modules/ledger/api.js';
 import { cycleTypeDefs, cycleResolvers } from './modules/billing/cycles.js';
+import {
+  paymentTypeDefs,
+  paymentResolvers,
+} from './modules/payments/schema.js';
+import {
+  clearanceTypeDefs,
+  clearanceResolvers,
+} from './modules/clearance/schema.js';
+import { creditTypeDefs, creditResolvers } from './modules/credit/schema.js';
 export function createApp({
   databaseReady,
   frontendOrigin = 'http://localhost:3000',
@@ -62,7 +71,10 @@ export function createApp({
       ${insertTypeDefs}
       ${billingTypeDefs}
       ${ledgerTypeDefs}
-      ${cycleTypeDefs}`,
+      ${cycleTypeDefs}
+      ${paymentTypeDefs}
+      ${clearanceTypeDefs}
+      ${creditTypeDefs}`,
       resolvers: {
         Query: {
           ...operationsResolvers.Query,
@@ -75,6 +87,9 @@ export function createApp({
           ...billingResolvers.Query,
           ...ledgerResolvers.Query,
           ...cycleResolvers.Query,
+          ...paymentResolvers.Query,
+          ...clearanceResolvers.Query,
+          ...creditResolvers.Query,
           health: () => ({ status: 'ok', service: 'daybook-api' }),
           me: (_root, _args, context) => {
             if (!context.agent)
@@ -95,6 +110,9 @@ export function createApp({
           ...billingResolvers.Mutation,
           ...ledgerResolvers.Mutation,
           ...cycleResolvers.Mutation,
+          ...paymentResolvers.Mutation,
+          ...clearanceResolvers.Mutation,
+          ...creditResolvers.Mutation,
         },
       },
     }),

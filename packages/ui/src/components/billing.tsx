@@ -138,9 +138,10 @@ export function BillSummary({
   );
 }
 export interface PaymentConfirmationProps {
+  receipt?: string;
   status: 'confirmed' | 'checking' | 'unknown' | 'partial' | 'duplicate';
   amount: number | string | null;
-  remaining?: number | null;
+  remaining?: number | string | null;
   invoice: string;
   description?: string;
   method?: string;
@@ -150,6 +151,7 @@ export interface PaymentConfirmationProps {
   onCheckStatus?: () => void;
 }
 export function PaymentConfirmation({
+  receipt,
   status,
   amount,
   remaining,
@@ -206,10 +208,18 @@ export function PaymentConfirmation({
         </div>
       </div>
       <dl style={{ margin: '24px 0 32px', gap: 10 }} className="db-stack">
-        <div className="db-bill-total-row">
-          <dt>Invoice</dt>
-          <dd style={{ margin: 0 }}>{invoice}</dd>
-        </div>
+        {receipt && (
+          <div className="db-bill-total-row">
+            <dt>Receipt</dt>
+            <dd style={{ margin: 0 }}>{receipt}</dd>
+          </div>
+        )}
+        {invoice && (
+          <div className="db-bill-total-row">
+            <dt>Invoice</dt>
+            <dd style={{ margin: 0 }}>{invoice}</dd>
+          </div>
+        )}
         {(method || recordedAt) && (
           <div className="db-bill-total-row">
             <dt>{method}</dt>
