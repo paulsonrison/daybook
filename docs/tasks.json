@@ -208,7 +208,7 @@
     {
       "id": "P11",
       "title": "Complete localization, reporting, analytics and appearance",
-      "status": "Not started",
+      "status": "To do",
       "evidence": [],
       "review": null,
       "mergeCommit": null
@@ -595,7 +595,7 @@
       "planTask": "P11",
       "sourceRow": 22,
       "priority": "Medium",
-      "status": "Not started",
+      "status": "To do",
       "criteria": [
         "1. UI language switcher accessible on agent console (English, Malayalam, Hindi).",
         "2. All labels, table headers, validation messages, and invoice exports localized via i18n dictionaries.",
@@ -738,7 +738,7 @@
       "planTask": "P11",
       "sourceRow": 28,
       "priority": "Medium",
-      "status": "Not started",
+      "status": "To do",
       "criteria": [
         "1. Display KPI cards for gross monthly revenue, collected cash, outstanding arrears, and active daily circulation count.",
         "2. Visual breakdown charts for publication-wise readership, delivery line profitability, and default/arrears aging.",
@@ -975,7 +975,7 @@
       "planTask": "P11",
       "sourceRow": 38,
       "priority": "Medium",
-      "status": "Not started",
+      "status": "To do",
       "criteria": [
         "1. Toggle between Table/Grid view, Detailed Card view, and Map/Sequence route view.",
         "2. Persist layout view preference per user session/device in local storage.",
@@ -1867,6 +1867,34 @@
       "from": "To do",
       "to": "In review",
       "event": "P10 implemented with 109 database, 43 unit/shared-UI and 37 Chrome checks passing; independent reviews clear; main merge remains P14"
+    },
+    {
+      "date": "2026-11-14T14:08:57.656Z",
+      "task": "P11",
+      "from": "Not started",
+      "to": "To do",
+      "event": "Start approved P11 localization, preferences and reporting plan after verified P10 checkpoint"
+    },
+    {
+      "date": "2026-11-14T14:08:57.656Z",
+      "task": "US-014",
+      "from": "Not started",
+      "to": "To do",
+      "event": "Start approved P11 localization, preferences and reporting plan after verified P10 checkpoint"
+    },
+    {
+      "date": "2026-11-14T14:08:57.656Z",
+      "task": "US-020",
+      "from": "Not started",
+      "to": "To do",
+      "event": "Start approved P11 localization, preferences and reporting plan after verified P10 checkpoint"
+    },
+    {
+      "date": "2026-11-14T14:08:57.656Z",
+      "task": "US-030",
+      "from": "Not started",
+      "to": "To do",
+      "event": "Start approved P11 localization, preferences and reporting plan after verified P10 checkpoint"
     }
   ]
 }

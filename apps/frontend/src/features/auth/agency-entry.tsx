@@ -2,6 +2,11 @@
 import { useEffect, useState, type FormEvent, type ReactNode } from 'react';
 import { usePathname } from 'next/navigation';
 import {
+  PreferencesProvider,
+  PreferenceNotices,
+  WorkspaceLanguage,
+} from '../preferences/provider';
+import {
   AppShell,
   BrandMark,
   Button,
@@ -105,145 +110,160 @@ export function AgencyEntry({ children }: { children?: ReactNode }) {
           </Card>
         </main>
       ) : agent ? (
-        <AppShell
-          navigation={[
-            {
-              label: 'Workspace',
-              items: [
-                {
-                  label: 'Overview',
-                  href: '/',
-                  icon: 'dashboard',
-                  active: pathname === '/',
-                },
-                {
-                  label: 'Residents & subscriptions',
-                  href: '/residents',
-                  icon: 'nav-residents',
-                  active: pathname === '/residents',
-                },
-                {
-                  label: 'Publications & pricing',
-                  href: '/publications',
-                  icon: 'publications',
-                  active: pathname === '/publications',
-                },
-                {
-                  label: 'Routes & delivery',
-                  href: '/routes',
-                  icon: 'nav-route',
-                  active: pathname === '/routes',
-                },
-                {
-                  label: 'Daily delivery log',
-                  href: '/delivery',
-                  icon: 'nav-route',
-                  active: pathname === '/delivery',
-                },
-              ],
-            },
-            {
-              label: 'Operations',
-              items: [
-                {
-                  label: 'Collections',
-                  href: '/collections',
-                  icon: 'ledger',
-                  active: pathname === '/collections',
-                },
-                {
-                  label: 'Route collection sheets',
-                  href: '/collection-sheets',
-                  icon: 'ledger',
-                  active: pathname === '/collection-sheets',
-                },
-                {
-                  label: 'Payments & accounts',
-                  href: '/payments',
-                  icon: 'ledger',
-                  active: pathname === '/payments',
-                },
-                {
-                  label: 'Publishers & returns',
-                  href: '/publishers',
-                  icon: 'publications',
-                  active: pathname === '/publishers',
-                },
-                {
-                  label: 'Seasonal stock',
-                  href: '/inventory',
-                  icon: 'ledger',
-                  active: pathname === '/inventory',
-                },
-                {
-                  label: 'Advertisers & inserts',
-                  href: '/advertisers',
-                  icon: 'share',
-                  active: pathname === '/advertisers',
-                },
-                {
-                  label: 'Staff & payroll',
-                  href: '/staff',
-                  icon: 'staff',
-                  active: pathname === '/staff',
-                },
-                {
-                  label: 'Staff pay & attendance',
-                  href: '/payroll',
-                  icon: 'staff',
-                  active: pathname === '/payroll',
-                },
-                {
-                  label: 'Cash handover & closing',
-                  href: '/cash',
-                  icon: 'ledger',
-                  active: pathname === '/cash',
-                },
-                {
-                  label: 'Communications',
-                  href: '/communications',
-                  icon: 'messages',
-                  active: pathname === '/communications',
-                },
-                {
-                  label: 'Settings',
-                  href: '/settings/territory',
-                  icon: 'nav-settings',
-                  active: pathname.startsWith('/settings'),
-                },
-              ],
-            },
-          ]}
-          header={
-            <div
-              className="db-row"
-              style={{ justifyContent: 'space-between', width: '100%' }}
-            >
-              <div>
-                <strong aria-label="Current agency">{agent.agency.name}</strong>
-                <span className="db-muted"> · {agent.name}</span>
-              </div>
-              <Button variant="secondary" loading={busy} onClick={logout}>
-                Sign out
-              </Button>
-            </div>
-          }
-          footer={<span>{agent.agency.name}</span>}
+        <PreferencesProvider
+          key={`${agent.agencyId}:${agent.id}`}
+          scope={{ agencyId: agent.agencyId, agentId: agent.id }}
         >
-          {error && (
-            <Notification
-              tone="error"
-              title="Unable to complete the action"
-              description={error}
-            />
-          )}
-          {children ?? (
-            <Card>
-              <h2>Set up your delivery territory</h2>
-              <p>Your agency has no delivery territory yet.</p>
-            </Card>
-          )}
-        </AppShell>
+          <AppShell
+            navigation={[
+              {
+                label: 'Workspace',
+                items: [
+                  {
+                    label: 'Overview',
+                    href: '/',
+                    icon: 'dashboard',
+                    active: pathname === '/',
+                  },
+                  {
+                    label: 'Residents & subscriptions',
+                    href: '/residents',
+                    icon: 'nav-residents',
+                    active: pathname === '/residents',
+                  },
+                  {
+                    label: 'Publications & pricing',
+                    href: '/publications',
+                    icon: 'publications',
+                    active: pathname === '/publications',
+                  },
+                  {
+                    label: 'Routes & delivery',
+                    href: '/routes',
+                    icon: 'nav-route',
+                    active: pathname === '/routes',
+                  },
+                  {
+                    label: 'Daily delivery log',
+                    href: '/delivery',
+                    icon: 'nav-route',
+                    active: pathname === '/delivery',
+                  },
+                ],
+              },
+              {
+                label: 'Operations',
+                items: [
+                  {
+                    label: 'Collections',
+                    href: '/collections',
+                    icon: 'ledger',
+                    active: pathname === '/collections',
+                  },
+                  {
+                    label: 'Route collection sheets',
+                    href: '/collection-sheets',
+                    icon: 'ledger',
+                    active: pathname === '/collection-sheets',
+                  },
+                  {
+                    label: 'Payments & accounts',
+                    href: '/payments',
+                    icon: 'ledger',
+                    active: pathname === '/payments',
+                  },
+                  {
+                    label: 'Publishers & returns',
+                    href: '/publishers',
+                    icon: 'publications',
+                    active: pathname === '/publishers',
+                  },
+                  {
+                    label: 'Seasonal stock',
+                    href: '/inventory',
+                    icon: 'ledger',
+                    active: pathname === '/inventory',
+                  },
+                  {
+                    label: 'Advertisers & inserts',
+                    href: '/advertisers',
+                    icon: 'share',
+                    active: pathname === '/advertisers',
+                  },
+                  {
+                    label: 'Staff & payroll',
+                    href: '/staff',
+                    icon: 'staff',
+                    active: pathname === '/staff',
+                  },
+                  {
+                    label: 'Staff pay & attendance',
+                    href: '/payroll',
+                    icon: 'staff',
+                    active: pathname === '/payroll',
+                  },
+                  {
+                    label: 'Cash handover & closing',
+                    href: '/cash',
+                    icon: 'ledger',
+                    active: pathname === '/cash',
+                  },
+                  {
+                    label: 'Communications',
+                    href: '/communications',
+                    icon: 'messages',
+                    active: pathname === '/communications',
+                  },
+                  {
+                    label: 'Settings',
+                    href: '/settings/territory',
+                    icon: 'nav-settings',
+                    active: pathname.startsWith('/settings'),
+                  },
+                  {
+                    label: 'Appearance',
+                    href: '/settings/appearance',
+                    icon: 'settings',
+                    active: pathname === '/settings/appearance',
+                  },
+                ],
+              },
+            ]}
+            header={
+              <div
+                className="db-row"
+                style={{ justifyContent: 'space-between', width: '100%' }}
+              >
+                <div>
+                  <strong aria-label="Current agency">
+                    {agent.agency.name}
+                  </strong>
+                  <span className="db-muted"> · {agent.name}</span>
+                </div>
+                <Button variant="secondary" loading={busy} onClick={logout}>
+                  Sign out
+                </Button>
+                <WorkspaceLanguage />
+              </div>
+            }
+            footer={<span>{agent.agency.name}</span>}
+          >
+            <PreferenceNotices />
+            {error && (
+              <Notification
+                tone="error"
+                title="Unable to complete the action"
+                description={error}
+              />
+            )}
+            {children ?? (
+              <Card>
+                <h2>Set up your delivery territory</h2>
+                <p>Your agency has no delivery territory yet.</p>
+              </Card>
+            )}
+          </AppShell>
+        </PreferencesProvider>
       ) : (
         <main className="agency-auth">
           <Card>

@@ -3,6 +3,50 @@ import assert from 'node:assert/strict';
 import { readFileSync, readdirSync } from 'node:fs';
 import path from 'node:path';
 import { renderToStaticMarkup } from 'react-dom/server';
+test('persisted preference values stay within the shared theme contract and reject corrupt values', async () => {
+  const feature = await import('../src/preferences.js').catch(
+    (error: NodeJS.ErrnoException) => {
+      if (error.code === 'ERR_MODULE_NOT_FOUND') return null;
+      throw error;
+    },
+  );
+  assert.ok(
+    feature?.validatePreferences,
+    'Shared preference validation must exist',
+  );
+  const { colorSchemes, fonts } = await import('../src/tokens');
+  assert.deepEqual(
+    [...feature.preferenceSchemes].sort(),
+    Object.keys(colorSchemes).sort(),
+  );
+  assert.deepEqual(
+    [...feature.preferenceFonts].sort(),
+    Object.keys(fonts).sort(),
+  );
+  assert.deepEqual(feature.defaultPreferences.typography, defaultTypography);
+  assert.deepEqual(
+    feature.validatePreferences(feature.defaultPreferences),
+    feature.defaultPreferences,
+  );
+  assert.throws(() =>
+    feature.validatePreferences({
+      ...feature.defaultPreferences,
+      locale: 'ar',
+    }),
+  );
+  assert.throws(() =>
+    feature.validatePreferences({
+      ...feature.defaultPreferences,
+      typography: { ...feature.defaultPreferences.typography, size: NaN },
+    }),
+  );
+  assert.throws(() =>
+    feature.validatePreferences({
+      ...feature.defaultPreferences,
+      typography: { ...feature.defaultPreferences.typography, lineHeight: 9 },
+    }),
+  );
+});
 import {
   Button,
   Field,
@@ -16,6 +60,7 @@ import {
   formatMoney,
   validateDateRange,
   typographyVariables,
+  defaultTypography,
 } from '../src';
 
 test('contact actions use immediate safe links and distinguish unavailable contact details', async () => {

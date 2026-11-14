@@ -2,6 +2,10 @@ import { createSchema, createYoga } from 'graphql-yoga';
 import { GraphQLError } from 'graphql';
 import type { Pool } from 'pg';
 import { currentAgent } from './modules/auth/repository.js';
+import {
+  preferenceTypeDefs,
+  preferenceResolvers,
+} from './modules/preferences/schema.js';
 import { handleAuth } from './modules/auth/http.js';
 import type { RequestContext } from './modules/context.js';
 import {
@@ -99,9 +103,11 @@ export function createApp({
       ${payrollTypeDefs}
       ${cashTypeDefs}
       ${communicationTypeDefs}
-      ${documentTypeDefs}`,
+      ${documentTypeDefs}
+      ${preferenceTypeDefs}`,
       resolvers: {
         Query: {
+          ...preferenceResolvers.Query,
           ...operationsResolvers.Query,
           ...catalogResolvers.Query,
           ...subscriptionResolvers.Query,
@@ -129,6 +135,7 @@ export function createApp({
           },
         },
         Mutation: {
+          ...preferenceResolvers.Mutation,
           ...operationsResolvers.Mutation,
           ...catalogResolvers.Mutation,
           ...subscriptionResolvers.Mutation,

@@ -21,7 +21,7 @@ Lifecycle: **Not started → To do → In review → Done**. Review findings ret
 | P08  | Payments, clearance, credit limits and collection sheets    | In review   |
 | P09  | Staff pay, attendance, handover and cash closing            | In review   |
 | P10  | Durable worker, localized communications and direct contact | In review   |
-| P11  | Complete localization, reporting, analytics and appearance  | Not started |
+| P11  | Complete localization, reporting, analytics and appearance  | To do       |
 | P12  | Offline field sync and installable app shell                | Not started |
 | P13  | Tenant AI assistant and encrypted cloud backup              | Not started |
 | P14  | Whole-project acceptance review and merge                   | Not started |
@@ -43,13 +43,13 @@ Lifecycle: **Not started → To do → In review → Done**. Review findings ret
 | US-011 | Automated Delivery               | P05  | High     | In review   |
 | US-012 | Dynamic Pricing Engine           | P04  | High     | In review   |
 | US-013 | Flexible Billing & Arrears       | P07  | High     | In review   |
-| US-014 | Trilingual UI Localization       | P11  | Medium   | Not started |
+| US-014 | Trilingual UI Localization       | P11  | Medium   | To do       |
 | US-015 | Vacation & Temporary Holds       | P04  | High     | In review   |
 | US-016 | Payment & Reconciliation         | P08  | High     | In review   |
 | US-017 | Publisher Indents & Returns      | P06  | Medium   | In review   |
 | US-018 | Staff Payroll & Commission       | P09  | High     | In review   |
 | US-019 | WhatsApp & SMS Dispatch          | P10  | High     | In review   |
-| US-020 | Agency Analytics & Reporting     | P11  | Medium   | Not started |
+| US-020 | Agency Analytics & Reporting     | P11  | Medium   | To do       |
 | US-021 | Delivery Exceptions & Grievances | P05  | Medium   | In review   |
 | US-022 | Daily Cash Register & Closing    | P09  | High     | In review   |
 | US-023 | Pamphlet & Insert Operations     | P06  | High     | In review   |
@@ -59,7 +59,7 @@ Lifecycle: **Not started → To do → In review → Done**. Review findings ret
 | US-027 | Field Delivery UI                | P05  | High     | In review   |
 | US-028 | Offline Delivery Sync            | P12  | High     | Not started |
 | US-029 | Rapid Cash Handover UI           | P09  | Medium   | In review   |
-| US-030 | UI Customization                 | P11  | Medium   | Not started |
+| US-030 | UI Customization                 | P11  | Medium   | To do       |
 | US-031 | Multi-Tenant Architecture        | P01  | High     | In review   |
 | US-032 | Direct Communications            | P10  | Medium   | In review   |
 | US-033 | Regional Publications            | P03  | Medium   | In review   |

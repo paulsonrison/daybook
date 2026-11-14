@@ -7,7 +7,7 @@
     "build": "next build --webpack",
     "start": "next start",
     "typecheck": "tsc --noEmit",
-    "test": "node --conditions=react-server --import tsx --test src/features/payments/store.test.ts src/features/communications/attempts.test.ts src/lib/server/provider-proxy.test.ts",
+    "test": "node --conditions=react-server --import tsx --test src/features/payments/store.test.ts src/features/communications/attempts.test.ts src/features/preferences/store.test.ts src/lib/server/provider-proxy.test.ts",
     "lint": "eslint ."
   },
   "dependencies": {

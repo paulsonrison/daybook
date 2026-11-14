@@ -25,6 +25,10 @@
     "./documents": {
       "types": "./src/documents.d.ts",
       "default": "./src/documents.js"
+    },
+    "./preferences": {
+      "types": "./src/preferences.d.ts",
+      "default": "./src/preferences.js"
     }
   },
   "scripts": {
