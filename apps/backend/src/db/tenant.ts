@@ -19,6 +19,12 @@ export async function assertRuntimeRole(
     throw new Error(
       'Use a restricted runtime role without authentication-owner membership or administrative privileges.',
     );
+  const encoding = (await pool.query('SHOW server_encoding')).rows[0]
+    ?.server_encoding;
+  if (encoding !== 'UTF8')
+    throw new Error(
+      'A UTF8 database is required for supported resident names and languages.',
+    );
 }
 
 export async function withTenant<T>(

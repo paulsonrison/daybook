@@ -57,19 +57,25 @@ export const colorSchemes = {
 export type ColorScheme = keyof typeof colorSchemes;
 export type DisplayMode = 'light' | 'dark' | 'system';
 export const fonts = {
-  inter: { name: 'Inter', family: '"Inter Variable", Inter, sans-serif' },
+  inter: {
+    name: 'Inter',
+    family:
+      '"Inter Variable", Inter, "Noto Sans Malayalam Variable", "Noto Sans Devanagari Variable", sans-serif',
+  },
   manrope: {
     name: 'Manrope',
-    family: '"Manrope Variable", Manrope, "Inter Variable", sans-serif',
+    family:
+      '"Manrope Variable", Manrope, "Inter Variable", "Noto Sans Malayalam Variable", "Noto Sans Devanagari Variable", sans-serif',
   },
   nunito: {
     name: 'Nunito',
     family:
-      '"Nunito Sans Variable", "Nunito Sans", "Inter Variable", sans-serif',
+      '"Nunito Sans Variable", "Nunito Sans", "Inter Variable", "Noto Sans Malayalam Variable", "Noto Sans Devanagari Variable", sans-serif',
   },
   lora: {
     name: 'Lora',
-    family: '"Lora Variable", Lora, "Inter Variable", serif',
+    family:
+      '"Lora Variable", Lora, "Inter Variable", "Noto Sans Malayalam Variable", "Noto Sans Devanagari Variable", serif',
   },
 } as const;
 export type FontFamily = keyof typeof fonts;

@@ -3,12 +3,14 @@ import { GraphQLError } from 'graphql';
 import type { Pool, PoolClient } from 'pg';
 import { withTenant } from '../db/tenant.js';
 import type { AgentIdentity } from './auth/repository.js';
+import type { ProviderRegistry } from './communications/config.js';
 
 export interface RequestContext {
   agent: AgentIdentity | null;
   pool: Pool | undefined;
   request: Request;
   frontendOrigin: string;
+  providers?: ProviderRegistry;
 }
 export const fail = (message: string, code = 'BAD_USER_INPUT'): never => {
   throw new GraphQLError(message, { extensions: { code } });

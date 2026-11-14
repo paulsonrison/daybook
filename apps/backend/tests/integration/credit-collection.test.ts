@@ -2,15 +2,122 @@ import assert from 'node:assert/strict';
 import { after, test } from 'node:test';
 import { randomUUID } from 'node:crypto';
 import { testApi } from './support.js';
+import { providerRegistry } from '../../src/modules/communications/config.js';
+import { runCommunicationsCycle } from '../../src/modules/communications/worker.js';
 const api = testApi();
 after(() => api.pool.end());
-async function fixture() {
-  const cookie = await api.agency(),
-    route = await api.route(cookie),
-    today = (await api.query(cookie, '{deliveryMetrics{today}}')).data
+test('configured consented credit suspension queues a real hold document and original request reflects later provider acceptance', async () => {
+  process.env.DOCUMENT_LINK_SECRET =
+    'synthetic-hold-link-secret-012345678901234567890';
+  process.env.PUBLIC_APP_ORIGIN = 'https://holds.example.test';
+  let providers = providerRegistry({});
+  const scoped = testApi({
+    get: (agency, channel) => providers.get(agency, channel),
+  });
+  try {
+    const f = await fixture(scoped);
+    async function run(query: string, variables: Record<string, unknown> = {}) {
+      const result = await scoped.query(f.cookie, query, variables);
+      assert.ok(!result.errors, JSON.stringify(result));
+      return result.data;
+    }
+    const me = (await run('{me{agencyId}}')).me;
+    providers = providerRegistry({
+      TOKEN: 'synthetic',
+      APP: 'synthetic-app',
+      VERIFY: 'synthetic-verify',
+      DAYBOOK_COMMUNICATIONS_PROVIDERS: JSON.stringify({
+        [me.agencyId]: {
+          whatsapp: {
+            phoneNumberId: '1234567',
+            apiVersion: 'v27.0',
+            accessTokenEnv: 'TOKEN',
+            appSecretEnv: 'APP',
+            verifyTokenEnv: 'VERIFY',
+          },
+        },
+      }),
+    });
+    await opening(f, '120.00', 30, scoped);
+    await run(
+      'mutation{saveCreditPolicy(input:{maxOverdueAmount:"100.00",enabled:true}){version}saveCollectionSettings(input:{upiId:"holds@upi",payeeName:"Domain Tests",confirmOwnership:true}){version}}',
+    );
+    await run(
+      'mutation($input:ContactPreferenceInput!){saveContactPreference(input:$input){version}}',
+      {
+        input: {
+          requestId: randomUUID(),
+          residentId: f.resident.id,
+          version: 0,
+          locale: 'ml',
+          whatsapp: true,
+          sms: false,
+          confirmedConsent: true,
+          evidence: 'Synthetic explicit hold-notice consent',
+        },
+      },
+    );
+    await run(
+      'mutation($input:CommunicationSettingsInput!){saveCommunicationSettings(input:$input){version}}',
+      {
+        input: {
+          requestId: randomUUID(),
+          version: 0,
+          remindersEnabled: false,
+          frequencyDays: 7,
+          cooldownHours: 24,
+          reminderChannel: 'WHATSAPP',
+          templates: [
+            {
+              kind: 'CREDIT_HOLD',
+              locale: 'ml',
+              name: 'synthetic_hold_ml',
+              language: 'ml',
+              qrHeader: true,
+            },
+          ],
+          confirmTemplatesApproved: true,
+        },
+      },
+    );
+    const input = {
+      requestId: randomUUID(),
+      residentId: f.resident.id,
+      version: f.resident.version,
+      reason: 'Verified credit limit exceeded',
+    };
+    const mutation =
+      'mutation($input:CreditSuspensionInput!){suspendForCredit(input:$input){status notificationStatus}}';
+    assert.equal(
+      (await run(mutation, { input })).suspendForCredit.notificationStatus,
+      'WAITING_DOCUMENT',
+    );
+    let sent = 0;
+    const cycle = await runCommunicationsCycle(
+      scoped.pool,
+      me.agencyId,
+      providers,
+      async (_provider, message) => {
+        sent++;
+        assert.equal(message.template?.name, 'synthetic_hold_ml');
+        return { status: 'ACCEPTED', messageId: 'synthetic-hold-accepted' };
+      },
+    );
+    assert.equal(sent, 1, JSON.stringify(cycle));
+    const replay = (await run(mutation, { input })).suspendForCredit;
+    assert.equal(replay.status, 'SUSPENDED');
+    assert.equal(replay.notificationStatus, 'ACCEPTED');
+  } finally {
+    await scoped.pool.end();
+  }
+});
+async function fixture(client = api) {
+  const cookie = await client.agency(),
+    route = await client.route(cookie),
+    today = (await client.query(cookie, '{deliveryMetrics{today}}')).data
       .deliveryMetrics.today,
     resident = (
-      await api.query(
+      await client.query(
         cookie,
         'mutation($input:ResidentInput!){saveResident(input:$input){id version}}',
         {
@@ -32,11 +139,12 @@ async function opening(
   f: Awaited<ReturnType<typeof fixture>>,
   amount: string,
   days: number,
+  client = api,
 ) {
   const date = new Date(Date.parse(f.today + 'T00:00:00Z') - days * 86400000)
     .toISOString()
     .slice(0, 10);
-  await api.query(
+  await client.query(
     f.cookie,
     'mutation($input:AccountAdjustmentInput!){postAdjustment(input:$input){id}}',
     {

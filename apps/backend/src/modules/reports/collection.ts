@@ -69,6 +69,29 @@ export function saveCollectionSettings(
     return readCollectionSettings(c);
   });
 }
+export async function buildUpiIntent(
+  settings: { upiId: string | null; payeeName: string | null },
+  amountPaise: bigint,
+  reference: string,
+  note: string,
+) {
+  if (!settings.upiId || !settings.payeeName || amountPaise <= 0n)
+    return { upiUri: null, qrDataUrl: null };
+  const uri = new URL('upi://pay');
+  uri.searchParams.set('pa', settings.upiId);
+  uri.searchParams.set('pn', settings.payeeName);
+  uri.searchParams.set('am', moneyString(amountPaise));
+  uri.searchParams.set('cu', 'INR');
+  uri.searchParams.set('tr', reference);
+  uri.searchParams.set('tn', note);
+  const upiUri = uri.toString(),
+    qrDataUrl = await QRCode.toDataURL(upiUri, {
+      errorCorrectionLevel: 'M',
+      margin: 4,
+      width: 256,
+    });
+  return { upiUri, qrDataUrl };
+}
 export function buildCollectionSheet(
   ctx: RequestContext,
   input: { routeId: string; fromDrop?: number; toDrop?: number },
@@ -105,26 +128,12 @@ export function buildCollectionSheet(
       );
     const rows = [];
     for (const resident of eligible) {
-      let upiUri: string | null = null,
-        qrDataUrl: string | null = null;
-      if (settings.upiId && settings.payeeName) {
-        const uri = new URL('upi://pay');
-        uri.searchParams.set('pa', settings.upiId);
-        uri.searchParams.set('pn', settings.payeeName);
-        uri.searchParams.set('am', moneyString(resident.balancePaise));
-        uri.searchParams.set('cu', 'INR');
-        uri.searchParams.set(
-          'tr',
-          `COL${resident.residentId.replaceAll('-', '')}${today.replaceAll('-', '')}`,
-        );
-        uri.searchParams.set('tn', `Daybook ${resident.code}`);
-        upiUri = uri.toString();
-        qrDataUrl = await QRCode.toDataURL(upiUri, {
-          errorCorrectionLevel: 'M',
-          margin: 4,
-          width: 256,
-        });
-      }
+      const { upiUri, qrDataUrl } = await buildUpiIntent(
+        settings,
+        resident.balancePaise,
+        `COL${resident.residentId.replaceAll('-', '')}${today.replaceAll('-', '')}`,
+        `Daybook ${resident.code}`,
+      );
       rows.push({
         residentId: resident.residentId,
         name: resident.name,

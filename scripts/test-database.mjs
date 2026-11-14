@@ -26,6 +26,7 @@ const database = new EmbeddedPostgres({
   port,
   persistent: true,
   authMethod: 'scram-sha-256',
+  initdbFlags: ['--encoding=UTF8'],
   postgresFlags: ['-h', '127.0.0.1'],
   onLog: () => {},
   onError: (e) => console.error(e),
@@ -94,6 +95,9 @@ try {
           PORT: String(backendPort),
           DATABASE_URL: runtimeUrl,
           FRONTEND_ORIGIN: frontend,
+          PUBLIC_APP_ORIGIN: frontend,
+          DOCUMENT_LINK_SECRET: randomBytes(32).toString('hex'),
+          DAYBOOK_COMMUNICATIONS_PROVIDERS: '{}',
         },
       ],
       [

@@ -29,7 +29,9 @@
   --db-sidebar: #fff;
   --db-radius: 6px;
   --db-state-gap: 16px;
-  --db-font-family: 'Inter Variable', Inter, sans-serif;
+  --db-font-family:
+    'Inter Variable', Inter, 'Noto Sans Malayalam Variable',
+    'Noto Sans Devanagari Variable', sans-serif;
   --db-reading-size: 14px;
   --db-reading-weight: 400;
   --db-reading-style: normal;
@@ -1178,4 +1180,49 @@ textarea.db-input {
     border: 0;
     padding: 0;
   }
+}
+
+.db-document {
+  color: var(--db-text);
+  background: var(--db-surface);
+}
+.db-document h2 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+.db-document p {
+  overflow-wrap: anywhere;
+}
+.db-document table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.db-document th,
+.db-document td {
+  padding: 10px 8px;
+  border-bottom: 1px solid var(--db-border);
+  text-align: right;
+  vertical-align: top;
+}
+.db-document th:first-child,
+.db-document td:first-child {
+  text-align: left;
+}
+.db-document tr {
+  break-inside: avoid;
+}
+.db-document thead {
+  display: table-header-group;
+}
+.db-document-note {
+  white-space: pre-wrap;
+}
+.db-document-payment {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  break-inside: avoid;
+}
+.db-document-payment img {
+  flex: 0 0 192px;
 }

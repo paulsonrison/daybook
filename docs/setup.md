@@ -9,6 +9,10 @@
 
 npm workspace scripts execute in each package directory: backend dotenv reads `apps/backend/.env`; Next.js reads `apps/frontend/.env.local`; Docker Compose reads root `.env`.
 
+The database must use `UTF8` encoding for English, Malayalam and Hindi names and documents. Check `SHOW server_encoding`; application startup and migration 011 reject other encodings. For a new local cluster, initialize with `initdb --encoding=UTF8`. Existing databases need a deliberate, verified export and restore into a new UTF8 database; changing an environment variable does not convert stored data. Retain the original database until restoration and character checks pass.
+
+See [documents and messaging setup](communications.md) for PDF requirements, document-link secrets and server-side provider mappings.
+
 ## Troubleshooting
 
 - API unavailable: confirm backend startup, port 4000 and server-only `GRAPHQL_SERVER_URL`. Frontend requests use the same-origin `/api/graphql` proxy. Restart Next.js after changing environment values.

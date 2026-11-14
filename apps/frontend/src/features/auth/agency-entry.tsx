@@ -200,6 +200,12 @@ export function AgencyEntry({ children }: { children?: ReactNode }) {
                   active: pathname === '/cash',
                 },
                 {
+                  label: 'Communications',
+                  href: '/communications',
+                  icon: 'messages',
+                  active: pathname === '/communications',
+                },
+                {
                   label: 'Settings',
                   href: '/settings/territory',
                   icon: 'nav-settings',

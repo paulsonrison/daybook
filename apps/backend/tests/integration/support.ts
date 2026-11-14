@@ -1,12 +1,21 @@
 import { randomUUID } from 'node:crypto';
 import pg from 'pg';
 import { createApp } from '../../src/app.js';
-export function testApi() {
+import type { ProviderRegistry } from '../../src/modules/communications/config.js';
+export function testApi(
+  providers?: ProviderRegistry,
+  providerCallbackOrigin?: string,
+) {
   const pool = new pg.Pool({
     connectionString: process.env.TEST_RUNTIME_DATABASE_URL,
     max: 4,
   });
-  const app = createApp({ pool, databaseReady: async () => true });
+  const app = createApp({
+    pool,
+    databaseReady: async () => true,
+    providers,
+    providerCallbackOrigin,
+  });
   async function agency() {
     const response = await app.fetch(
       new Request('http://localhost/auth/register', {
@@ -57,5 +66,5 @@ export function testApi() {
     );
     return r.data.saveRoute;
   }
-  return { pool, agency, query, route };
+  return { pool, agency, query, route, fetch: app.fetch.bind(app) };
 }

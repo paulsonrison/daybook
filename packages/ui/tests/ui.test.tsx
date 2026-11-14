@@ -18,6 +18,32 @@ import {
   typographyVariables,
 } from '../src';
 
+test('contact actions use immediate safe links and distinguish unavailable contact details', async () => {
+  const path = '../src/index.ts';
+  const ui = await import(path);
+  assert.ok(ui.ContactActions, 'Reusable contact actions must exist');
+  const ContactActions = ui.ContactActions;
+  const html = renderToStaticMarkup(
+    <ContactActions
+      tel="tel:+919876543210"
+      whatsapp="https://wa.me/919876543210?text=Hello"
+    />,
+  );
+  assert.match(html, /href="tel:\+919876543210"/);
+  assert.match(html, /href="https:\/\/wa.me\/919876543210\?text=Hello"/);
+  assert.match(html, /target="_blank"/);
+  assert.match(html, /rel="noopener noreferrer"/);
+  assert.doesNotMatch(html, /Delivered|Message sent/);
+  const unsafe = renderToStaticMarkup(
+    <ContactActions
+      tel="javascript:alert(1)"
+      whatsapp="https://wa.me.attacker.example/123"
+    />,
+  );
+  assert.doesNotMatch(unsafe, /href=/);
+  assert.match(unsafe, /Contact unavailable/);
+});
+
 test('decimal money strings render every paisa without floating-point conversion', () => {
   assert.equal(formatMoney('90071992547409.93'), '₹9,00,71,99,25,47,409.93');
   assert.equal(formatMoney('-0.50'), '-₹0.50');

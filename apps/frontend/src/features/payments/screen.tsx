@@ -18,7 +18,8 @@ import {
   Select,
   formatMoney,
 } from '@daybook/ui';
-import { PaymentsStore, type Payment } from './store';
+import type { PaymentsStore, Payment } from './store';
+import { usePaymentsStore } from './hooks';
 export const PendingRecovery = observer(function PendingRecovery({
   store,
 }: {
@@ -544,14 +545,10 @@ const RefundDialog = observer(function RefundDialog({
   );
 });
 export const PaymentsScreen = observer(function PaymentsScreen() {
-  const [store] = useState(() => new PaymentsStore()),
+  const store = usePaymentsStore(),
     [reconcileId, setReconcileId] = useState(''),
     [clearanceOpen, setClearanceOpen] = useState(false),
     [refundOpen, setRefundOpen] = useState(false);
-  useEffect(() => {
-    void store.load();
-    return store.dispose;
-  }, [store]);
   if (store.state === 'loading')
     return <DataState kind="loading" title="Loading resident accounts…" />;
   if (store.state === 'error')

@@ -1,4 +1,5 @@
 'use client';
+import { ResidentContact } from '../communications/resident-contact';
 import { useEffect, useState } from 'react';
 import { FieldCollectionDrafts, type FieldDraft } from './field-drafts';
 import Link from 'next/link';
@@ -202,6 +203,11 @@ const FieldBatch = observer(function FieldBatch({
                   <p>
                     {row.phone} · Door {row.door ?? row.sequence}
                   </p>
+                  <ResidentContact
+                    key={row.residentId}
+                    residentId={row.residentId}
+                    name={row.name}
+                  />
                   <p>
                     Total due {formatMoney(row.balance)} · Overdue{' '}
                     {formatMoney(row.overdueAmount)} · {row.overdueDays} days

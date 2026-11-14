@@ -191,9 +191,18 @@
     {
       "id": "P10",
       "title": "Durable worker, localized communications and direct contact",
-      "status": "Not started",
-      "evidence": [],
-      "review": null,
+      "status": "In review",
+      "evidence": [
+        "109 real PostgreSQL tests, 43 unit/shared-UI checks and 37 Chrome application tests passed",
+        "Production build, typecheck, lint and formatting passed; production dependency audit: zero advisories",
+        "Actual invoice/receipt/payslip/refund/account PDFs, trilingual fonts/templates, revocable links, tenant-scoped consent, native contact recovery, scheduler/cooldown, signed callbacks and unknown-outcome decisions verified with synthetic providers",
+        "Independent auth_review, operations_review and foundation_review final P10 code reviews clear; exact whole-project Figma acceptance remains P14; live providers not contacted"
+      ],
+      "review": {
+        "reviewer": "auth_review, operations_review, foundation_review",
+        "outstanding": 0,
+        "result": "Clear after reproduced recovery, callback, scheduling and source-proof fixes; final verification passed"
+      },
       "mergeCommit": null
     },
     {
@@ -704,14 +713,23 @@
       "planTask": "P10",
       "sourceRow": 27,
       "priority": "High",
-      "status": "Not started",
+      "status": "In review",
       "criteria": [
         "1. Agent can trigger batch or single WhatsApp messages containing monthly invoice PDF links and UPI payment QR codes.",
         "2. Automated overdue payment reminder alerts sent to accounts with unpaid arrears.",
         "3. Support trilingual message templates formatted in Malayalam, English, and Hindi."
       ],
-      "evidence": [],
-      "review": null,
+      "evidence": [
+        "109 real PostgreSQL tests, 43 unit/shared-UI checks and 37 Chrome application tests passed",
+        "Production build, typecheck, lint and formatting passed; production dependency audit: zero advisories",
+        "Actual invoice/receipt/payslip/refund/account PDFs, trilingual fonts/templates, revocable links, tenant-scoped consent, native contact recovery, scheduler/cooldown, signed callbacks and unknown-outcome decisions verified with synthetic providers",
+        "Independent auth_review, operations_review and foundation_review final P10 code reviews clear; exact whole-project Figma acceptance remains P14; live providers not contacted"
+      ],
+      "review": {
+        "reviewer": "auth_review, operations_review, foundation_review",
+        "outstanding": 0,
+        "result": "Clear after reproduced recovery, callback, scheduling and source-proof fixes; final verification passed"
+      },
       "mergeCommit": null
     },
     {
@@ -841,14 +859,23 @@
       "planTask": "P10",
       "sourceRow": 33,
       "priority": "Medium",
-      "status": "Not started",
+      "status": "In review",
       "criteria": [
         "1. Midnight cron evaluates overdue resident balances against reminder frequency rules.",
         "2. Auto-dispatch trilingual WhatsApp message templates with dynamic payment links.",
         "3. Log communication history and suppress repeated alerts within cooldown periods."
       ],
-      "evidence": [],
-      "review": null,
+      "evidence": [
+        "109 real PostgreSQL tests, 43 unit/shared-UI checks and 37 Chrome application tests passed",
+        "Production build, typecheck, lint and formatting passed; production dependency audit: zero advisories",
+        "Actual invoice/receipt/payslip/refund/account PDFs, trilingual fonts/templates, revocable links, tenant-scoped consent, native contact recovery, scheduler/cooldown, signed callbacks and unknown-outcome decisions verified with synthetic providers",
+        "Independent auth_review, operations_review and foundation_review final P10 code reviews clear; exact whole-project Figma acceptance remains P14; live providers not contacted"
+      ],
+      "review": {
+        "reviewer": "auth_review, operations_review, foundation_review",
+        "outstanding": 0,
+        "result": "Clear after reproduced recovery, callback, scheduling and source-proof fixes; final verification passed"
+      },
       "mergeCommit": null
     },
     {
@@ -991,14 +1018,23 @@
       "planTask": "P10",
       "sourceRow": 40,
       "priority": "Medium",
-      "status": "Not started",
+      "status": "In review",
       "criteria": [
         "1. Click-to-call deep link (tel:) on customer phone numbers in run-sheets and profiles.",
         "2. Quick WhatsApp direct chat link pre-filling greeting and agency identification.",
         "3. Log communication attempt timestamps in resident activity audit trail."
       ],
-      "evidence": [],
-      "review": null,
+      "evidence": [
+        "109 real PostgreSQL tests, 43 unit/shared-UI checks and 37 Chrome application tests passed",
+        "Production build, typecheck, lint and formatting passed; production dependency audit: zero advisories",
+        "Actual invoice/receipt/payslip/refund/account PDFs, trilingual fonts/templates, revocable links, tenant-scoped consent, native contact recovery, scheduler/cooldown, signed callbacks and unknown-outcome decisions verified with synthetic providers",
+        "Independent auth_review, operations_review and foundation_review final P10 code reviews clear; exact whole-project Figma acceptance remains P14; live providers not contacted"
+      ],
+      "review": {
+        "reviewer": "auth_review, operations_review, foundation_review",
+        "outstanding": 0,
+        "result": "Clear after reproduced recovery, callback, scheduling and source-proof fixes; final verification passed"
+      },
       "mergeCommit": null
     },
     {
@@ -1061,16 +1097,23 @@
       "planTask": "P08",
       "sourceRow": 43,
       "priority": "High",
-      "status": "To do",
+      "status": "In review",
       "criteria": [
         "1. Configurable agency credit threshold (e.g., maximum unpaid arrears amount or 60+ days overdue).",
         "2. Automated visual alert on agent dashboard highlighting high-risk overdue accounts.",
         "3. One-click delivery suspension with automated WhatsApp notification of service hold sent to the resident."
       ],
       "evidence": [
-        "Credit threshold, dashboard alerts and explicit service suspension implemented and tested in P08; notification intent truthfully NOT_CONFIGURED. Automated WhatsApp sending remains P10."
+        "109 real PostgreSQL tests, 43 unit/shared-UI checks and 37 Chrome application tests passed",
+        "Production build, typecheck, lint and formatting passed; production dependency audit: zero advisories",
+        "Actual invoice/receipt/payslip/refund/account PDFs, trilingual fonts/templates, revocable links, tenant-scoped consent, native contact recovery, scheduler/cooldown, signed callbacks and unknown-outcome decisions verified with synthetic providers",
+        "Independent auth_review, operations_review and foundation_review final P10 code reviews clear; exact whole-project Figma acceptance remains P14; live providers not contacted"
       ],
-      "review": null,
+      "review": {
+        "reviewer": "auth_review, operations_review, foundation_review",
+        "outstanding": 0,
+        "result": "Clear after reproduced recovery, callback, scheduling and source-proof fixes; final verification passed"
+      },
       "mergeCommit": null,
       "supportingPlanTasks": ["P10"]
     },
@@ -1761,6 +1804,69 @@
       "from": "To do",
       "to": "In review",
       "event": "85 PG, 30 unit/UI, 25 Chrome; build/types/lint/format passed; independent rereviews clear"
+    },
+    {
+      "date": "2026-11-13T07:32:41.734Z",
+      "task": "P10",
+      "from": "Not started",
+      "to": "To do",
+      "event": "Start approved communications, document delivery and direct-contact implementation"
+    },
+    {
+      "date": "2026-11-13T07:32:41.734Z",
+      "task": "US-019",
+      "from": "Not started",
+      "to": "To do",
+      "event": "Start approved communications, document delivery and direct-contact implementation"
+    },
+    {
+      "date": "2026-11-13T07:32:41.734Z",
+      "task": "US-025",
+      "from": "Not started",
+      "to": "To do",
+      "event": "Start approved communications, document delivery and direct-contact implementation"
+    },
+    {
+      "date": "2026-11-13T07:32:41.734Z",
+      "task": "US-032",
+      "from": "Not started",
+      "to": "To do",
+      "event": "Start approved communications, document delivery and direct-contact implementation"
+    },
+    {
+      "date": "2026-11-14T12:59:25.337Z",
+      "task": "P10",
+      "from": "To do",
+      "to": "In review",
+      "event": "P10 implemented with 109 database, 43 unit/shared-UI and 37 Chrome checks passing; independent reviews clear; main merge remains P14"
+    },
+    {
+      "date": "2026-11-14T12:59:25.338Z",
+      "task": "US-019",
+      "from": "To do",
+      "to": "In review",
+      "event": "P10 implemented with 109 database, 43 unit/shared-UI and 37 Chrome checks passing; independent reviews clear; main merge remains P14"
+    },
+    {
+      "date": "2026-11-14T12:59:25.338Z",
+      "task": "US-025",
+      "from": "To do",
+      "to": "In review",
+      "event": "P10 implemented with 109 database, 43 unit/shared-UI and 37 Chrome checks passing; independent reviews clear; main merge remains P14"
+    },
+    {
+      "date": "2026-11-14T12:59:25.338Z",
+      "task": "US-032",
+      "from": "To do",
+      "to": "In review",
+      "event": "P10 implemented with 109 database, 43 unit/shared-UI and 37 Chrome checks passing; independent reviews clear; main merge remains P14"
+    },
+    {
+      "date": "2026-11-14T12:59:25.338Z",
+      "task": "US-035",
+      "from": "To do",
+      "to": "In review",
+      "event": "P10 implemented with 109 database, 43 unit/shared-UI and 37 Chrome checks passing; independent reviews clear; main merge remains P14"
     }
   ]
 }

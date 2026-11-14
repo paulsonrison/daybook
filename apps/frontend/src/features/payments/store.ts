@@ -95,6 +95,15 @@ export interface Sheet {
   rows: SheetRow[];
 }
 export type Operation =
+  | 'manualReminder'
+  | 'messageResolution'
+  | 'documentPrepare'
+  | 'documentGenerate'
+  | 'documentLink'
+  | 'documentRevoke'
+  | 'invoiceBatch'
+  | 'contactPreference'
+  | 'communicationSettings'
   | 'record'
   | 'reconcile'
   | 'clear'
@@ -120,10 +129,71 @@ const paymentFields =
   'id residentId requestId purpose method amount date reference targetInvoiceId status receiptCode confirmationEvidence confirmedAt postingDate version balance confirmationSource';
 const clearanceFields =
   'id residentId code terminationDate finalInvoiceId depositOffset refundDue collectionDue status';
+const holdNoticeLabels: Record<string, string> = {
+  NOT_CONFIGURED: 'not configured',
+  NO_CONSENT: 'consent required',
+  MISSING_TEMPLATE: 'approved template required',
+  WAITING_DOCUMENT: 'preparing document',
+  PENDING: 'queued',
+  ACCEPTED: 'accepted by provider; delivery unconfirmed',
+  DELIVERED: 'delivered',
+  READ: 'read',
+  UNKNOWN: 'outcome unknown',
+  FAILED: 'failed',
+  STALE: 'snapshot changed',
+  UNRESOLVED: 'earlier send requires review',
+  COOLDOWN: 'recipient cooldown',
+};
 const mutations: Record<
   Operation,
   { name: string; type: string; fields: string }
 > = {
+  manualReminder: {
+    name: 'queueReminder',
+    type: 'QueueReminderInput',
+    fields: 'id residentId kind channel status',
+  },
+  messageResolution: {
+    name: 'resolveMessageUncertainty',
+    type: 'MessageResolutionInput',
+    fields: 'id status',
+  },
+  documentPrepare: {
+    name: 'prepareDocument',
+    type: 'PrepareDocumentInput',
+    fields: 'id sourceId locale',
+  },
+  documentGenerate: {
+    name: 'generateDocument',
+    type: 'GenerateDocumentInput',
+    fields: 'id status sourceId locale',
+  },
+  documentLink: {
+    name: 'createDocumentLink',
+    type: 'DocumentLinkInput',
+    fields: 'id',
+  },
+  documentRevoke: {
+    name: 'revokeDocumentLink',
+    type: 'RevokeDocumentLinkInput',
+    fields: 'id',
+  },
+  invoiceBatch: {
+    name: 'queueInvoiceMessages',
+    type: 'InvoiceMessageBatchInput',
+    fields:
+      'id residentId invoiceId kind channel status reason attempts createdAt',
+  },
+  contactPreference: {
+    name: 'saveContactPreference',
+    type: 'ContactPreferenceInput',
+    fields: 'version',
+  },
+  communicationSettings: {
+    name: 'saveCommunicationSettings',
+    type: 'CommunicationSettingsInput',
+    fields: 'version',
+  },
   record: {
     name: 'recordPayment',
     type: 'PaymentInput',
@@ -198,6 +268,10 @@ export class PaymentsStore {
   error = '';
   notice = '';
   lastCompletedRequestId = '';
+  lastCompletedKind: Operation | null = null;
+  lastContactPreference: { residentId: string; requestId: string } | null =
+    null;
+  lastOperationResult: unknown = null;
   busy = false;
   pending: Envelope | null = null;
   recoveryUnavailable = false;
@@ -240,6 +314,8 @@ export class PaymentsStore {
   sheetBusy = false;
   sheetError = '';
   private generation = 0;
+  private lifecycle = 0;
+  private active = true;
   private selectionGeneration = 0;
   private sheetGeneration = 0;
   private preparedSheetInput: {
@@ -260,19 +336,44 @@ export class PaymentsStore {
     return this.readingLocked || this.recoveryUnavailable;
   }
   dispose() {
+    this.active = false;
+    this.lifecycle++;
     this.generation++;
     this.selectionGeneration++;
     this.sheetGeneration++;
   }
+  resume() {
+    this.active = true;
+    this.lifecycle++;
+    this.busy = false;
+    this.pending = null;
+    this.recoveryUnavailable = false;
+    this.selectedResidentId = '';
+    this.state = 'loading';
+    this.lastCompletedKind = null;
+    this.lastContactPreference = null;
+    this.lastOperationResult = null;
+  }
   private pendingKey() {
     return `daybook:financial-operation:${this.agencyId}`;
   }
-  private persist() {
+  private persist(completed?: Envelope, key = this.pendingKey()) {
     if (!this.agencyId) return false;
     try {
+      const saved = sessionStorage.getItem(key);
+      const expected = this.pending ?? completed;
+      if (
+        saved &&
+        JSON.stringify(JSON.parse(saved)) !== JSON.stringify(expected)
+      ) {
+        this.recoveryUnavailable = true;
+        this.error =
+          'Another original operation has an active recovery record. It was preserved; reload to check it.';
+        return false;
+      }
       if (this.pending)
-        sessionStorage.setItem(this.pendingKey(), JSON.stringify(this.pending));
-      else sessionStorage.removeItem(this.pendingKey());
+        sessionStorage.setItem(key, JSON.stringify(this.pending));
+      else sessionStorage.removeItem(key);
       return true;
     } catch {
       this.error = this.pending
@@ -282,6 +383,7 @@ export class PaymentsStore {
     }
   }
   async load() {
+    if (!this.active) return;
     const generation = ++this.generation;
     const initial = this.state !== 'ready';
     if (initial) this.state = 'loading';
@@ -427,7 +529,10 @@ export class PaymentsStore {
     residentId = this.selectedResidentId,
     retry = false,
   ): Promise<boolean> {
-    if (this.busy) return false;
+    if (!this.active || this.busy) return false;
+    const lifecycle = this.lifecycle,
+      agencyId = this.agencyId,
+      recoveryKey = this.pendingKey();
     if (this.recoveryUnavailable && !retry) {
       this.error =
         'Restore access to the original recovery record before starting a new financial action.';
@@ -445,7 +550,10 @@ export class PaymentsStore {
       input: JSON.parse(JSON.stringify(input)),
       residentId,
     };
-    if (!this.persist() && !retry) {
+    if (
+      !this.persist(undefined, recoveryKey) &&
+      (!retry || this.recoveryUnavailable)
+    ) {
       this.pending = null;
       return false;
     }
@@ -471,11 +579,24 @@ export class PaymentsStore {
           { input: original.input },
         ),
         result = data[operation.name];
+      if (
+        !this.active ||
+        lifecycle !== this.lifecycle ||
+        agencyId !== this.agencyId
+      )
+        return false;
       runInAction(() => {
         this.selectedResidentId = original.residentId;
         this.lastCompletedRequestId = String(original.input.requestId);
+        this.lastCompletedKind = original.kind;
+        if (original.kind === 'contactPreference')
+          this.lastContactPreference = {
+            residentId: original.residentId,
+            requestId: String(original.input.requestId),
+          };
+        this.lastOperationResult = result;
         this.pending = null;
-        this.persist();
+        this.persist(original, recoveryKey);
         if (original.kind === 'record' || original.kind === 'reconcile') {
           this.lastPayment = result as Payment;
           this.notice =
@@ -494,24 +615,39 @@ export class PaymentsStore {
         } else
           this.notice =
             original.kind === 'suspend'
-              ? 'Service suspended. WhatsApp is not configured.'
+              ? `Service suspended. Hold notice: ${holdNoticeLabels[(result as { notificationStatus?: string }).notificationStatus ?? ''] ?? 'check dispatch history'}.`
               : 'Operation recorded';
       });
       await this.load();
-      return true;
+      return (
+        this.active &&
+        lifecycle === this.lifecycle &&
+        agencyId === this.agencyId
+      );
     } catch (e) {
+      if (
+        !this.active ||
+        lifecycle !== this.lifecycle ||
+        agencyId !== this.agencyId
+      )
+        return false;
       runInAction(() => {
         this.error = (e as Error).message;
         if (!(e instanceof UnconfirmedRequestError)) {
           this.pending = null;
-          this.persist();
+          this.persist(original, recoveryKey);
         }
       });
       return false;
     } finally {
-      runInAction(() => {
-        this.busy = false;
-      });
+      if (
+        this.active &&
+        lifecycle === this.lifecycle &&
+        agencyId === this.agencyId
+      )
+        runInAction(() => {
+          this.busy = false;
+        });
     }
   }
   async retryOriginal() {

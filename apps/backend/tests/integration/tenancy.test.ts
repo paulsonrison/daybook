@@ -17,6 +17,21 @@ after(async () => {
 });
 const north = randomUUID(),
   south = randomUUID();
+test('runtime startup refuses a database that cannot store the supported Indic languages', async () => {
+  const name = `encoding_${randomUUID().replaceAll('-', '')}`;
+  await admin.query(
+    `CREATE DATABASE ${name} TEMPLATE template0 ENCODING 'WIN1252' LC_COLLATE 'C' LC_CTYPE 'C'`,
+  );
+  const url = new URL(process.env.TEST_RUNTIME_DATABASE_URL!);
+  url.pathname = '/' + name;
+  const nonUnicode = new pg.Pool({ connectionString: url.toString() });
+  try {
+    await assert.rejects(assertRuntimeRole(nonUnicode), /UTF8/);
+  } finally {
+    await nonUnicode.end();
+    await admin.query(`DROP DATABASE ${name}`);
+  }
+});
 test('runtime startup rejects inherited authentication privileges', async () => {
   const role = `unsafe_${randomUUID().replaceAll('-', '')}`;
   const client = await admin.connect();

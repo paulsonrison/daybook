@@ -44,7 +44,7 @@ Configuration now uses typed GraphQL inputs, per-agency serialized mutation tran
 
 ## Outstanding
 
-P00–P09 are implemented and independently reviewed; P10–P14 remain. P08 notification sending remains a P10 dependency. No merge or remote push has occurred. Provider credentials and live-service acceptance are distinct from local contract tests and must not be reported as verified without evidence.
+P00–P10 are implemented and independently reviewed; P11–P14 remain. P10 now includes configured, consent-aware service-hold notices. No merge or remote push has occurred. Provider credentials and live-service acceptance are distinct from local contract tests and must not be reported as verified without evidence.
 
 ## P03 — reviewed catalog, residents and deposits
 
@@ -127,3 +127,15 @@ Effective salary, per-copy and blended rules include employment dates, attendanc
 - New pages compose shared UI, money formatting and theme styles; original-request recovery is shared with existing payments. Readable source/attendance/claim/handover/close histories replace raw implementation data. The synthetic rapid workflow completed within its browser test; this does not establish a measured production service target.
 - No actual salary, customer funds, provider messages or cloud changes occurred. P09/story tasks remain In review until the final merge. Exact Figma acceptance remains P14. P10 will reuse immutable document snapshots, notification intents and the existing worker.
   P09 checkpoint: repository formatting and final unit/lint checks passed; all independent review comments resolved.
+
+## P10 — documents and communications implemented
+
+Immutable invoice, receipt, refund, payslip and account-notice PDFs reuse shared presentation, exact money and embedded Indic fonts. Owners select financial sources, generate/download PDFs, manage expiring/revocable links and prepare invoice batches. Dispatch history exposes each recorded PDF and its generation state. Missing configuration, consent or approved templates remains visibly blocked.
+
+- Official Meta/Twilio transports distinguish acceptance, delivery, definite rejection and uncertainty. Signed callbacks retain the exact signature inputs and configured agency identity. A durable inbox handles early/out-of-order events; uncertain submissions never resend blindly. Audited owner decisions remain distinct from provider evidence, and later authoritative acceptance takes precedence.
+- Current-local-date reminders evaluate at most 25 residents per durable cursor batch, render at most three documents and process at most five messages per cycle. Restart catch-up skips missed dates, expires obsolete unsent notices and preserves uncertain sends. Frequency/cooldown, current debt/consent/phone, source date, payment identity, PDF and link are checked before submission. Explicit manual reminders can run while automatic scheduling remains disabled. Exhausted PDF retries become failed notices.
+- Credit suspension prepares a real configured, consented WhatsApp hold notice; its original request returns the current status. Native call/WhatsApp controls are reused in resident records, delivery views and collection sheets. Each explicit click records an attempt with original-ID recovery, never a claimed connection or delivery.
+- English/Malayalam/Hindi messages and documents, explicit template approval attestation, current-phone consent, immediate opt-out cancellation, complete paged contact/dispatch histories and safe request recovery are implemented. Manual reminders preserve unsaved consent drafts.
+- Final verification: **109 PostgreSQL tests, 43 unit/shared-UI checks and 37 Chrome application tests passed**. Typecheck, lint, production build and formatting passed. Production dependency audit reports **zero advisories**. A full-browser run's only stale suspension-wording assertion was corrected, followed by a clean 37/37 rerun. Tests use disposable data and synthetic transports; no live provider acceptance is claimed.
+- Independent security, financial/operations and frontend/shared-UI final reviews are clear. Earlier findings have reproduced regressions, passing fixes and rereviews: callback visibility, late acceptance, recovery overwrite, unsaved drafts, stale scheduler backlog and bounded evaluation. Full Figma visual acceptance remains P14.
+- P10/US-019/025/032/035 move to In review until the final main merge. No real provider sends, funds transfers, deployments or merges occurred. P11's detailed localization/reporting/appearance plan is prepared; P11–P14 still require implementation.

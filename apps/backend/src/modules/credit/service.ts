@@ -1,4 +1,3 @@
-import { randomUUID } from 'node:crypto';
 import type { PoolClient } from 'pg';
 import {
   audit,
@@ -14,6 +13,7 @@ import { moneyString, parseMoney } from '../money.js';
 import { agencyToday } from '../delivery/repository.js';
 import { financialRead } from '../billing/transactions.js';
 import { financialResidents } from '../reports/financial-residents.js';
+import { queueCreditHoldNotice } from '../communications/account-notices.js';
 interface Policy {
   maxOverdueAmount: string | null;
   maxOverdueDays: number | null;
@@ -141,8 +141,8 @@ export function suspendForCredit(
     reason: string;
   },
 ) {
-  return configMutation(ctx, (c) =>
-    onceRequest(
+  return configMutation(ctx, async (c) => {
+    const saved = await onceRequest(
       c,
       ctx.agent!.agencyId,
       input.requestId,
@@ -169,36 +169,41 @@ export function suspendForCredit(
           "UPDATE daybook.residents SET status='SUSPENDED',version=version+1 WHERE id=$1",
           [resident.residentId],
         );
-        const notificationId = randomUUID();
-        await c.query(
-          "INSERT INTO daybook.notification_intents(id,agency_id,resident_id,kind,channel,recipient,payload,dedupe_key,created_by) VALUES($1,$2,$3,'CREDIT_HOLD','WHATSAPP',$4,$5,$6,$7)",
-          [
-            notificationId,
-            ctx.agent!.agencyId,
-            resident.residentId,
-            resident.phone,
-            JSON.stringify({
-              residentName: resident.name,
-              reason,
-              overdueAmount: resident.overdueAmount,
-              overdueDays: resident.overdueDays,
-            }),
-            `CREDIT_HOLD:${input.requestId}`,
-            ctx.agent!.id,
-          ],
+        const notification = await queueCreditHoldNotice(
+          c,
+          ctx,
+          resident.residentId,
+          input.requestId,
+          reason,
         );
+        const notificationId = notification.id;
         await audit(c, ctx, 'RESIDENT', resident.residentId, 'CREDIT_HOLD', {
           reason,
           notificationId,
-          notificationStatus: 'NOT_CONFIGURED',
+          notificationStatus: notification.status,
           policy: state.policy,
         });
         return {
           residentId: resident.residentId,
-          status: 'SUSPENDED',
-          notificationStatus: 'NOT_CONFIGURED',
+          notificationId,
         };
       },
-    ),
-  );
+    );
+    const current = (
+      await c.query<{
+        residentId: string;
+        status: string;
+        notificationStatus: string;
+      }>(
+        'SELECT r.id AS "residentId",r.status,n.status AS "notificationStatus" FROM daybook.residents r JOIN daybook.notification_intents n ON n.resident_id=r.id WHERE r.id=$1 AND n.dedupe_key=$2',
+        [saved.residentId, `CREDIT_HOLD:${input.requestId}`],
+      )
+    ).rows[0];
+    if (!current)
+      return fail(
+        'The original service hold record is unavailable.',
+        'NOT_FOUND',
+      );
+    return current;
+  });
 }

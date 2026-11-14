@@ -26,3 +26,4 @@ export * from './components/asset-image';
 export * from './components/record-card';
 export * from './components/workspace-states';
 export * from './components/typography-specimen';
+export * from './components/contact-actions';

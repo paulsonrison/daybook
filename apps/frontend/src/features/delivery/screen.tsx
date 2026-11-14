@@ -1,4 +1,5 @@
 'use client';
+import { ResidentContact } from '../communications/resident-contact';
 import { useEffect, useRef, useState } from 'react';
 import { observer } from 'mobx-react-lite';
 import {
@@ -48,7 +49,7 @@ const FieldDelivery = observer(function FieldDelivery({
       onPointerDown={(e) => {
         if (
           e.pointerType === 'touch' &&
-          !(e.target as HTMLElement).closest('button')
+          !(e.target as HTMLElement).closest('button,a,input,select')
         )
           pointer.current = { x: e.clientX, y: e.clientY };
       }}
@@ -75,6 +76,11 @@ const FieldDelivery = observer(function FieldDelivery({
             </p>
             <h2>{row.residentName}</h2>
             <p>{row.address}</p>
+            <ResidentContact
+              key={row.residentId}
+              residentId={row.residentId}
+              name={row.residentName}
+            />
           </div>
           <Badge
             tone={
@@ -343,6 +349,11 @@ export const DeliveryScreen = observer(function DeliveryScreen() {
                         <>
                           {r.residentName}
                           <div className="db-muted">{r.address}</div>
+                          <ResidentContact
+                            key={r.residentId}
+                            residentId={r.residentId}
+                            name={r.residentName}
+                          />
                         </>
                       ),
                     },

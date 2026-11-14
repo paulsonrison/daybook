@@ -1,4 +1,5 @@
 'use client';
+import { ResidentContact } from '../communications/resident-contact';
 import { useEffect, useState } from 'react';
 import { observer } from 'mobx-react-lite';
 import {
@@ -137,6 +138,7 @@ export const CatalogScreen = observer(function CatalogScreen({
           <div className="db-muted">
             {r.code} · {r.phone}
           </div>
+          <ResidentContact key={r.id} residentId={r.id} name={r.name} />
         </>
       ),
     },

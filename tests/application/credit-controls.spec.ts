@@ -42,7 +42,7 @@ test('overdue dashboard alert opens credit controls and one-click service suspen
     })
     .click();
   await expect(
-    page.getByText('Service suspended. WhatsApp is not configured.', {
+    page.getByText('Service suspended. Hold notice: not configured.', {
       exact: true,
     }),
   ).toBeVisible();

@@ -40,24 +40,43 @@ import {
 import { creditTypeDefs, creditResolvers } from './modules/credit/schema.js';
 import { payrollTypeDefs, payrollResolvers } from './modules/payroll/schema.js';
 import { cashTypeDefs, cashResolvers } from './modules/cash/schema.js';
+import {
+  communicationTypeDefs,
+  communicationResolvers,
+} from './modules/communications/schema.js';
+import {
+  documentTypeDefs,
+  documentResolvers,
+} from './modules/documents/schema.js';
+import { handleDocumentRequest } from './modules/documents/http.js';
+import { handleProviderRequest } from './modules/communications/http.js';
+import {
+  providerRegistry,
+  type ProviderRegistry,
+} from './modules/communications/config.js';
 export function createApp({
   databaseReady,
   frontendOrigin = 'http://localhost:3000',
   pool,
+  providers = providerRegistry(),
+  providerCallbackOrigin = process.env.PUBLIC_APP_ORIGIN,
 }: {
   databaseReady: () => Promise<boolean>;
   frontendOrigin?: string;
   pool?: Pool;
+  providers?: ProviderRegistry;
+  providerCallbackOrigin?: string;
 }) {
   return createYoga({
     graphqlEndpoint: '/graphql',
     graphiql: process.env.NODE_ENV !== 'production',
     cors: { origin: frontendOrigin, methods: ['GET', 'POST', 'OPTIONS'] },
-    context: async ({ request }) => ({
+    context: async ({ request }): Promise<RequestContext> => ({
       agent: pool ? await currentAgent(pool, request) : null,
       pool,
       request,
       frontendOrigin,
+      providers,
     }),
     schema: createSchema<RequestContext>({
       typeDefs: `type Health { status: String!, service: String! }
@@ -78,7 +97,9 @@ export function createApp({
       ${clearanceTypeDefs}
       ${creditTypeDefs}
       ${payrollTypeDefs}
-      ${cashTypeDefs}`,
+      ${cashTypeDefs}
+      ${communicationTypeDefs}
+      ${documentTypeDefs}`,
       resolvers: {
         Query: {
           ...operationsResolvers.Query,
@@ -96,6 +117,8 @@ export function createApp({
           ...creditResolvers.Query,
           ...payrollResolvers.Query,
           ...cashResolvers.Query,
+          ...communicationResolvers.Query,
+          ...documentResolvers.Query,
           health: () => ({ status: 'ok', service: 'daybook-api' }),
           me: (_root, _args, context) => {
             if (!context.agent)
@@ -121,6 +144,8 @@ export function createApp({
           ...creditResolvers.Mutation,
           ...payrollResolvers.Mutation,
           ...cashResolvers.Mutation,
+          ...communicationResolvers.Mutation,
+          ...documentResolvers.Mutation,
         },
       },
     }),
@@ -128,6 +153,25 @@ export function createApp({
       {
         onRequest({ request, endResponse }) {
           const path = new URL(request.url).pathname;
+          if (path.startsWith('/webhooks/')) {
+            if (!pool)
+              return endResponse(
+                new Response('Database unavailable', { status: 503 }),
+              );
+            return handleProviderRequest(
+              request,
+              pool,
+              providers,
+              providerCallbackOrigin,
+            ).then(endResponse);
+          }
+          if (path.startsWith('/documents/')) {
+            if (!pool)
+              return endResponse(
+                new Response('Database unavailable', { status: 503 }),
+              );
+            return handleDocumentRequest(request, pool).then(endResponse);
+          }
           if (path.startsWith('/auth/')) {
             if (!pool)
               return endResponse(
