@@ -60,11 +60,11 @@ The translation foundation and catalogue flows are verified. Keep Task 2 open wh
 
 ## Task 3 — Reconciled analytics
 
-- [ ] Write failing exact-source tests for monthly invoiced sales, confirmed collections by method, current outstanding/overdue debt, active circulation, publication readership, trends and churn. Include revisions, partial payments, refunds, deposits, cancelled subscriptions and amounts beyond floating-point precision.
-- [ ] Define revenue, cash collections, accrual costs, actual payouts and agency balances separately in a report contract. Reuse ledger/settlement and financial-resident rules rather than summing issued invoice totals twice.
-- [ ] Implement tenant/date-bound aggregation; use recorded delivery retail/procurement snapshots and attributable payroll/route costs for route contribution. Show unallocated shared costs and missing cost coverage explicitly. Do not invent a cost allocation or historic customer status.
-- [ ] Add arrears aging from unpaid debit due dates and settlements; expose source dates, denominators and unavailable/partial classifications. Reconcile chart totals to their KPI source figures.
-- [ ] Compose the overview and analytics screens from shared metrics/chart/table/card states; verify empty/loading/error/partial behavior and keyboard/mobile use.
+- [x] Write failing exact-source tests for monthly invoiced sales, confirmed collections by method, current outstanding/overdue debt, active circulation, publication readership, trends and churn. Include revisions, partial payments, refunds, deposits, cancelled subscriptions and amounts beyond floating-point precision.
+- [x] Define revenue, cash collections, accrual costs, actual payouts and agency balances separately in a report contract. Reuse ledger/settlement and financial-resident rules rather than summing issued invoice totals twice.
+- [x] Implement tenant/date-bound aggregation; use recorded delivery retail/procurement snapshots and attributable payroll/route costs for route contribution. Show unallocated shared costs and missing cost coverage explicitly. Do not invent a cost allocation or historic customer status.
+- [x] Add arrears aging from unpaid debit due dates and settlements; expose source dates, denominators and unavailable/partial classifications. Reconcile chart totals to their KPI source figures.
+- [x] Compose the overview and analytics screens from shared metrics/chart/table/card states; verify empty/loading/error/partial behavior and keyboard/mobile use.
 
 ## Task 4 — Authenticated monthly PDF and XLSX reports
 

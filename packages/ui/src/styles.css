@@ -804,6 +804,7 @@ textarea.db-input {
   font-variant-numeric: tabular-nums;
 }
 .db-chart {
+  overflow-x: auto;
   display: flex;
   align-items: end;
   justify-content: space-between;
@@ -812,13 +813,14 @@ textarea.db-input {
   padding-top: 16px;
 }
 .db-chart-column {
+  flex-basis: 60px;
   display: flex;
   flex: 1;
   flex-direction: column;
   align-items: center;
   justify-content: end;
   gap: 8px;
-  min-width: 0;
+  min-width: 60px;
 }
 .db-chart-bar {
   width: 100%;
@@ -826,6 +828,20 @@ textarea.db-input {
   background: var(--db-primary);
   border-radius: 4px;
   min-height: 1px;
+}
+.db-chart-bar-lane {
+  position: relative;
+  height: 220px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.db-chart-bar-lane::after {
+  content: '';
+  position: absolute;
+  top: 110px;
+  width: 100%;
+  border-top: 1px solid var(--db-border);
 }
 .db-chart-label {
   font-size: 10px;
@@ -1225,4 +1241,19 @@ textarea.db-input {
 }
 .db-document-payment img {
   flex: 0 0 192px;
+}
+
+.db-report-facts {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 10px 20px;
+}
+.db-report-facts dt {
+  color: var(--db-muted);
+}
+.db-report-facts dd {
+  margin: 0;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  overflow-wrap: anywhere;
 }

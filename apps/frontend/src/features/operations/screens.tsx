@@ -1,4 +1,5 @@
 'use client';
+import { AnalyticsOverview } from '../analytics/screen';
 import { DeliveryDashboard } from '../delivery/metrics';
 import { CreditDashboard } from '../payments/credit-dashboard';
 import { useEffect, useState } from 'react';
@@ -392,6 +393,7 @@ export const AgencyOverview = observer(function AgencyOverview() {
           </p>
         </div>
       </header>
+      <AnalyticsOverview />
       <div className="agency-metrics">
         <MetricCard
           title="Delivery territory"

@@ -681,4 +681,120 @@ export default {
     'റിപ്പോർട്ടുകളിൽ ഭാവി മാസങ്ങൾ ഉൾപ്പെടുത്താനാവില്ല.',
   'Recorded balances and aging do not reconcile. Reload the report.':
     'രേഖപ്പെടുത്തിയ ബാക്കിയും കാലപ്പഴക്ക കണക്കും ഒത്തുപോകുന്നില്ല. റിപ്പോർട്ട് വീണ്ടും ലോഡ് ചെയ്യുക.',
+  '{prepared} of {elapsed}': '{elapsed} ദിവസങ്ങളിൽ {prepared}',
+  '{start} → {end}': '{start} → {end}',
+  '1–30 days overdue': '1–30 ദിവസം കുടിശ്ശിക',
+  '31–60 days overdue': '31–60 ദിവസം കുടിശ്ശിക',
+  '61–90 days overdue': '61–90 ദിവസം കുടിശ്ശിക',
+  'Over 90 days overdue': '90 ദിവസത്തിലധികം കുടിശ്ശിക',
+  'Account receipts to invoiced sales':
+    'അക്കൗണ്ട് വരവുകളും ഇൻവോയ്സ് വിൽപ്പനയും തമ്മിലുള്ള അനുപാതം',
+  'Accounts with incomplete history': 'പൂർണ്ണ ചരിത്രമില്ലാത്ത അക്കൗണ്ടുകൾ',
+  'Actual payroll payouts': 'യഥാർത്ഥ ശമ്പള വിതരണം',
+  'Advances are financing recovery. Payroll payouts are not a second expense, and deposits are separate liabilities.':
+    'മുൻകൂർ തുകയുടെ തിരിച്ചുപിടിക്കൽ ചെലവല്ല. ശമ്പള വിതരണം രണ്ടാമത്തെ ചെലവല്ല; നിക്ഷേപങ്ങൾ പ്രത്യേക ബാധ്യതകളാണ്.',
+  'Agency analytics': 'ഏജൻസി വിശകലനം',
+  'Agency costs and cash outflows': 'ഏജൻസി ചെലവുകളും പണച്ചെലവും',
+  'Agency overview': 'ഏജൻസി അവലോകനം',
+  'Agency purchases are not proof of route consumption. Shared expenses and supplier returns are not allocated to routes.':
+    'ഏജൻസിയുടെ വാങ്ങലുകൾ റൂട്ടിലെ ഉപയോഗത്തിന്റെ തെളിവല്ല. പൊതു ചെലവുകളും വിതരണക്കാരന് തിരിച്ചുനൽകിയവയുടെ ക്രെഡിറ്റും റൂട്ടുകൾക്ക് വിഭജിച്ചിട്ടില്ല.',
+  'Aging shows gross unsettled debits. Unallocated credit can make net overdue unavailable.':
+    'കാലയളവ് വിശകലനം തീർപ്പാകാത്ത മൊത്തം ഡെബിറ്റുകളാണ് കാണിക്കുന്നത്. വകയിരുത്താത്ത ക്രെഡിറ്റ് ഉണ്ടെങ്കിൽ അറ്റ കുടിശ്ശിക ലഭ്യമാകണമെന്നില്ല.',
+  'Allocated advertiser sales': 'റൂട്ടിന് വകയിരുത്തിയ പരസ്യ വിൽപ്പന',
+  'Analytics unavailable': 'വിശകലനം ലഭ്യമല്ല',
+  'Attributable posted payroll':
+    'റൂട്ടിന് ചുമത്താവുന്ന രേഖപ്പെടുത്തിയ ശമ്പള ചെലവ്',
+  'Business summary': 'ബിസിനസ് സംഗ്രഹം',
+  'Chargeable copies': 'ഈടാക്കാവുന്ന കോപ്പികൾ',
+  'Chargeable retail value': 'ഈടാക്കാവുന്ന ചില്ലറ വിൽപ്പന മൂല്യം',
+  'Clearance termination dates; subscription cancellations are not account closures.':
+    'ക്ലിയറൻസ് അവസാനിപ്പിച്ച തീയതികളാണ് അടിസ്ഥാനം; സബ്‌സ്‌ക്രിപ്ഷൻ റദ്ദാക്കുന്നത് അക്കൗണ്ട് അടയ്ക്കുന്നതല്ല.',
+  'Closures from that cohort': 'ആ കൂട്ടത്തിൽ അടച്ച അക്കൗണ്ടുകൾ',
+  'Collected cash': 'പിരിച്ചെടുത്ത പണം',
+  'Collection chart unavailable': 'പിരിവ് ചാർട്ട് ലഭ്യമല്ല',
+  Complete: 'പൂർണ്ണം',
+  'Confirmed account cash and merchandise receipts; deposits excluded.':
+    'സ്ഥിരീകരിച്ച അക്കൗണ്ട് പണവരവും സാധന വിൽപ്പന വരവും; നിക്ഷേപങ്ങൾ ഉൾപ്പെടുന്നില്ല.',
+  'Confirmed clearance refunds': 'സ്ഥിരീകരിച്ച ക്ലിയറൻസ് തിരിച്ചടവുകൾ',
+  'Contribution before shared expenses': 'പൊതു ചെലവുകൾക്കുമുമ്പുള്ള ശേഷിപ്പ്',
+  'Copies without posted payroll cost':
+    'രേഖപ്പെടുത്തിയ ശമ്പള ചെലവില്ലാത്ത കോപ്പികൾ',
+  'Copies without procurement cost': 'വാങ്ങൽ ചെലവില്ലാത്ത കോപ്പികൾ',
+  'Credit balances': 'ക്രെഡിറ്റ് ബാലൻസുകൾ',
+  'Current arrears aging': 'നിലവിലെ കുടിശ്ശികയുടെ കാലയളവ്',
+  'Current balances as of {date}': '{date} ലെ നിലവിലെ ബാലൻസുകൾ',
+  'Current schedule as of {date}': '{date} ലെ നിലവിലെ വിതരണക്രമം',
+  'Customer cohort evidence': 'ഉപഭോക്തൃ കൂട്ടത്തിന്റെ തെളിവുകൾ',
+  'Deposit receipts with unknown method': 'രീതി വ്യക്തമല്ലാത്ത നിക്ഷേപ വരവുകൾ',
+  'Distinct readers': 'വ്യത്യസ്ത വായനക്കാർ',
+  'Do not draw a zero-value chart for missing data.':
+    'വിവരങ്ങൾ ഇല്ലാത്തപ്പോൾ പൂജ്യം മൂല്യമായി ചാർട്ടിൽ കാണിക്കരുത്.',
+  'Gross unsettled debit aging': 'തീർപ്പാകാത്ത മൊത്തം ഡെബിറ്റുകളുടെ കാലയളവ്',
+  'Gross unsettled overdue': 'തീർപ്പാകാത്ത മൊത്തം കുടിശ്ശിക',
+  'Incomplete period · total not finalized':
+    'അപൂർണ്ണ കാലയളവ് · ആകെ തുക അന്തിമമല്ല',
+  'Invoiced resident sales, cash merchandise and advertiser subtotal.':
+    'താമസക്കാർക്ക് ഇൻവോയ്സ് ചെയ്ത വിൽപ്പനയും പണമായി വിറ്റ സാധനങ്ങളും പരസ്യ വിൽപ്പന ഉപമൊത്തവും.',
+  'Known posted payroll expense': 'അറിയാവുന്ന രേഖപ്പെടുത്തിയ ശമ്പള ചെലവ്',
+  'Known procurement estimate': 'അറിയാവുന്ന വാങ്ങൽ ചെലവ് കണക്ക്',
+  'Known route contribution': 'അറിയാവുന്ന റൂട്ട് ശേഷിപ്പ്',
+  'Loading chart…': 'ചാർട്ട് ലോഡ് ചെയ്യുന്നു…',
+  'Missing prepared days are unknown, not zero circulation. Replacements are attributed to the original delivery date.':
+    'തയ്യാറാക്കൽ രേഖയില്ലാത്ത ദിവസങ്ങളിലെ വിതരണം അജ്ഞാതമാണ്; പൂജ്യമല്ല. പകരം കോപ്പികൾ യഥാർത്ഥ വിതരണ തീയതിയിലാണ് കണക്കാക്കുന്നത്.',
+  'Net overdue': 'അറ്റ കുടിശ്ശിക',
+  'Net recorded supply purchases': 'രേഖപ്പെടുത്തിയ വിതരണ വാങ്ങലിന്റെ അറ്റ തുക',
+  'No collection history': 'പിരിവ് ചരിത്രമില്ല',
+  'No recorded route activity': 'രേഖപ്പെടുത്തിയ റൂട്ട് പ്രവർത്തനമില്ല',
+  'Not due': 'അടയ്ക്കേണ്ട തീയതി എത്തിയിട്ടില്ല',
+  'Open accounts at month start': 'മാസാരംഭത്തിൽ തുറന്ന അക്കൗണ്ടുകൾ',
+  'Open-account cohort closure rate':
+    'മാസാരംഭത്തിലെ തുറന്ന അക്കൗണ്ട് കൂട്ടത്തിന്റെ സമാപന നിരക്ക്',
+  'Original exception copies without attributed cost':
+    'ചെലവ് ചുമത്താത്ത യഥാർത്ഥ വിതരണ അപവാദ കോപ്പികൾ',
+  'Original fulfilled copies': 'വിതരണം പൂർത്തിയായ യഥാർത്ഥ കോപ്പികൾ',
+  'Outstanding arrears': 'ശേഷിക്കുന്ന കുടിശ്ശിക',
+  'Posted payroll expense': 'രേഖപ്പെടുത്തിയ ശമ്പള ചെലവ്',
+  'Prepared calendar days': 'തയ്യാറാക്കൽ രേഖയുള്ള കലണ്ടർ ദിവസങ്ങൾ',
+  'Publication readership': 'പ്രസിദ്ധീകരണം തിരിച്ചുള്ള വായനക്കാർ',
+  'Receipts can recover older debt and may exceed 100% of selected-month invoiced sales.':
+    'വരവുകളിൽ പഴയ കടത്തിന്റെ തിരിച്ചടവും ഉൾപ്പെടാം; തിരഞ്ഞെടുത്ത മാസത്തെ ഇൻവോയ്സ് വിൽപ്പനയുടെ 100% കവിയാം.',
+  'Recorded account closures': 'രേഖപ്പെടുത്തിയ അക്കൗണ്ട് സമാപനങ്ങൾ',
+  'Recorded business activity with explicit source dates and missing-cost coverage.':
+    'ഉറവിട തീയതികളും ലഭ്യമല്ലാത്ത ചെലവുകളുടെ നിലയും വ്യക്തമാക്കുന്ന രേഖപ്പെടുത്തിയ ബിസിനസ് പ്രവർത്തനം.',
+  'Recorded chargeable retail value plus allocated advertiser sales, less known procurement estimates and attributable posted payroll. This is not net profit.':
+    'രേഖപ്പെടുത്തിയ ഈടാക്കാവുന്ന ചില്ലറ മൂല്യവും വകയിരുത്തിയ പരസ്യ വിൽപ്പനയും ചേർത്ത്, അറിയാവുന്ന വാങ്ങൽ ചെലവ് കണക്കും റൂട്ടിന് ചുമത്താവുന്ന ശമ്പളവും കുറയ്ക്കുന്നു. ഇത് അറ്റ ലാഭമല്ല.',
+  'Recorded circulation': 'രേഖപ്പെടുത്തിയ വിതരണം',
+  'Recorded circulation trend': 'രേഖപ്പെടുത്തിയ വിതരണ പ്രവണത',
+  'Recorded monthly sales': 'രേഖപ്പെടുത്തിയ മാസ വിൽപ്പന',
+  'Recorded open accounts at the start of the month; historical active status is not inferred.':
+    'മാസാരംഭത്തിൽ തുറന്നതായി രേഖപ്പെടുത്തിയ അക്കൗണ്ടുകൾ; പഴയ സജീവ നില അനുമാനിക്കുന്നില്ല.',
+  'Recorded registrations': 'രേഖപ്പെടുത്തിയ രജിസ്ട്രേഷനുകൾ',
+  'Recorded sources are incomplete.': 'രേഖപ്പെടുത്തിയ ഉറവിടങ്ങൾ അപൂർണ്ണമാണ്.',
+  'Recorded supplier return credits':
+    'വിതരണക്കാരന് തിരിച്ചുനൽകിയതിന്റെ രേഖപ്പെടുത്തിയ ക്രെഡിറ്റ്',
+  'Recorded supply purchases': 'രേഖപ്പെടുത്തിയ വിതരണ വാങ്ങലുകൾ',
+  'Refresh reports': 'റിപ്പോർട്ടുകൾ പുതുക്കുക',
+  'Refundable deposit receipts': 'തിരിച്ചുനൽകേണ്ട നിക്ഷേപ വരവുകൾ',
+  'Replacement copies': 'പകരം കോപ്പികൾ',
+  'Replacement copies without cost evidence':
+    'ചെലവിന്റെ തെളിവില്ലാത്ത പകരം കോപ്പികൾ',
+  'Report month': 'റിപ്പോർട്ട് മാസം',
+  'Report source snapshot: {time}': 'റിപ്പോർട്ട് ഉറവിട നില: {time}',
+  'Route contribution before shared expenses':
+    'പൊതു ചെലവുകൾക്കുമുമ്പുള്ള റൂട്ട് ശേഷിപ്പ്',
+  'Route contribution evidence': 'റൂട്ട് ശേഷിപ്പിന്റെ തെളിവുകൾ',
+  'Scheduled daily copies': 'ദിവസത്തേക്ക് നിശ്ചയിച്ച കോപ്പികൾ',
+  'Source coverage': 'ഉറവിടങ്ങളുടെ പൂർണ്ണത',
+  'Unable to load analytics.': 'വിശകലനം ലോഡ് ചെയ്യാനായില്ല.',
+  'Unallocated advertiser subtotal': 'വകയിരുത്താത്ത പരസ്യ വിൽപ്പന ഉപമൊത്തം',
+  'Unallocated credit offset': 'വകയിരുത്താത്ത ക്രെഡിറ്റ് കുറവ്',
+  'Unallocated posted payroll expense':
+    'വകയിരുത്താത്ത രേഖപ്പെടുത്തിയ ശമ്പള ചെലവ്',
+  'Unavailable costs and missing history are not zero. Route estimates exclude shared expenses and unsupported losses.':
+    'ലഭ്യമല്ലാത്ത ചെലവുകളും രേഖയില്ലാത്ത ചരിത്രവും പൂജ്യമല്ല. റൂട്ട് കണക്കിൽ പൊതു ചെലവുകളും തെളിവില്ലാത്ത നഷ്ടങ്ങളും ഉൾപ്പെടുന്നില്ല.',
+  'View agency analytics': 'ഏജൻസി വിശകലനം കാണുക',
+  'No recorded chart data': 'ചാർട്ടിനായി രേഖപ്പെടുത്തിയ വിവരങ്ങളില്ല',
+  'Chart unavailable': 'ചാർട്ട് ലഭ്യമല്ല',
+  'Missing records are unavailable, not zero.':
+    'രേഖകളില്ലാത്ത വിവരങ്ങൾ ലഭ്യമല്ല; പൂജ്യമല്ല.',
 };

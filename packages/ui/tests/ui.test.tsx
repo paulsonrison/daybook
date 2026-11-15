@@ -657,3 +657,38 @@ test('every extracted vector is local, has a reserved viewport, and preserves so
       );
   }
 });
+
+test('chart accessibility and visible labels preserve exact display amounts independently of bar scale', () => {
+  const html = renderToStaticMarkup(
+    <BarChart
+      title="Exact amounts"
+      data={[
+        {
+          label: 'Original route',
+          value: 10000,
+          displayValue: '₹90,071,992,547,409.93',
+        },
+      ]}
+    />,
+  );
+  assert.match(html, /Original route: ₹90,071,992,547,409.93/);
+  assert.match(html, /₹90,071,992,547,409.93<\/span>/);
+  assert.doesNotMatch(html, /Original route: 10000/);
+});
+
+test('signed charts show negative contributions below the baseline instead of a zero-height profit bar', () => {
+  const html = renderToStaticMarkup(
+    <BarChart
+      title="Route contribution"
+      signed
+      data={[
+        { label: 'Gain', value: 100, displayValue: '₹100.00' },
+        { label: 'Loss', value: -50, displayValue: '-₹50.00' },
+      ]}
+    />,
+  );
+  assert.match(html, /data-direction="negative"/);
+  assert.match(html, /height:55px/);
+  assert.match(html, /top:110px/);
+  assert.match(html, /Loss: -₹50.00/);
+});
