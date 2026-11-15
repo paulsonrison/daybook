@@ -34,7 +34,11 @@
       "types": "./src/messages.d.ts",
       "default": "./src/messages.js"
     },
-    "./i18n": "./src/i18n-context.tsx"
+    "./i18n": "./src/i18n-context.tsx",
+    "./reports": {
+      "types": "./src/reports.d.ts",
+      "default": "./src/reports.js"
+    }
   },
   "scripts": {
     "typecheck": "tsc --noEmit",

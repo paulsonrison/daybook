@@ -692,3 +692,38 @@ test('signed charts show negative contributions below the baseline instead of a 
   assert.match(html, /top:110px/);
   assert.match(html, /Loss: -₹50.00/);
 });
+
+test('shared agency report presentation escapes every supplied cell and keeps native headings and recorded amounts', async () => {
+  const feature = await import('../src/reports.js').catch(
+    (error: NodeJS.ErrnoException) => {
+      if (error.code === 'ERR_MODULE_NOT_FOUND') return null;
+      throw error;
+    },
+  );
+  assert.ok(feature?.renderAgencyReport);
+  const html = feature.renderAgencyReport({
+    version: 1,
+    title: 'മാസവിൽപ്പന റിപ്പോർട്ട്',
+    meta: [],
+    kind: 'SALES',
+    locale: 'ml',
+    reference: 'REPORT-1',
+    agencyName: '<script>bad()</script>',
+    month: '2026-01',
+    generatedAt: '2026-02-01T00:00:00Z',
+    balanceAsOf: '2026-02-01',
+    notes: ['<img src=x>'],
+    sections: [
+      {
+        title: 'വിൽപ്പന',
+        columns: ['വിവരണം', 'തുക'],
+        rows: [['<b>Original</b>', '9007199254740993.93']],
+      },
+    ],
+  });
+  assert.match(html, /വിൽപ്പന/);
+  assert.match(html, /9007199254740993.93/);
+  assert.match(html, /&lt;script&gt;/);
+  assert.match(html, /&lt;b&gt;Original&lt;\/b&gt;/);
+  assert.doesNotMatch(html, /<script>|<img/);
+});
