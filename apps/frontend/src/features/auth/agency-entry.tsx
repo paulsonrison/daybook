@@ -133,6 +133,12 @@ export function AgencyEntry({ children }: { children?: ReactNode }) {
                     active: pathname === '/analytics',
                   },
                   {
+                    label: 'Agency assistant',
+                    href: '/assistant',
+                    icon: 'dashboard',
+                    active: pathname === '/assistant',
+                  },
+                  {
                     label: 'Residents & subscriptions',
                     href: '/residents',
                     icon: 'nav-residents',

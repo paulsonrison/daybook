@@ -1,3 +1,4 @@
+import type { AiProvider } from './ai/provider.js';
 import { randomUUID } from 'node:crypto';
 import { GraphQLError } from 'graphql';
 import type { Pool, PoolClient } from 'pg';
@@ -7,6 +8,7 @@ import type { ProviderRegistry } from './communications/config.js';
 import type { Locale, MessageValues } from '@daybook/ui/messages';
 
 export interface RequestContext {
+  aiProvider?: AiProvider;
   locale?: Locale;
   agent: AgentIdentity | null;
   pool: Pool | undefined;

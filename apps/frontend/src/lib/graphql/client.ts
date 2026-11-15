@@ -1,3 +1,4 @@
+import { ASSISTANT_OPERATION } from './assistant-operation';
 import axios from 'axios';
 type GraphQLResponse<T> = { data?: T; errors?: { message: string }[] };
 const http = axios.create({
@@ -12,13 +13,32 @@ export class UnconfirmedRequestError extends Error {
     );
   }
 }
-export async function graphqlRequest<T>(
+export function graphqlRequest<T>(
   query: string,
   variables?: Record<string, unknown>,
 ): Promise<T> {
+  return send<T>({ query, variables });
+}
+export function assistantRequest<T>(input: {
+  question: string;
+  month?: string;
+}): Promise<T> {
+  return send<T>(
+    {
+      query: ASSISTANT_OPERATION,
+      operationName: 'DaybookAssistant',
+      variables: { input },
+    },
+    80000,
+  );
+}
+async function send<T>(
+  payload: Record<string, unknown>,
+  timeout = 10000,
+): Promise<T> {
   let data: GraphQLResponse<T>;
   try {
-    ({ data } = await http.post<GraphQLResponse<T>>('', { query, variables }));
+    ({ data } = await http.post<GraphQLResponse<T>>('', payload, { timeout }));
   } catch (error) {
     if (axios.isAxiosError<{ error?: unknown }>(error)) {
       const message = error.response?.data?.error;

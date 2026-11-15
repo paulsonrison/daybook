@@ -779,4 +779,49 @@ export default {
   'Chart unavailable': 'चार्ट उपलब्ध नहीं है',
   'Missing records are unavailable, not zero.':
     'गुम रिकॉर्ड अनुपलब्ध हैं, शून्य नहीं।',
+  'Your agency only': 'केवल आपकी एजेंसी',
+  'Agency assistant': 'एजेंसी सहायक',
+  'Ask about recorded sales, arrears, daily copies and supplier reconciliation.':
+    'दर्ज बिक्री, बकाया, दैनिक प्रतियों और आपूर्तिकर्ता मिलान के बारे में पूछें।',
+  'Read-only assistance': 'केवल जानकारी पढ़ने वाला सहायक',
+  'Questions are processed by a hosted AI provider when configured. The assistant cannot post payments, change records or access another agency.':
+    'कॉन्फ़िगर होने पर प्रश्न होस्ट किए गए AI प्रदाता द्वारा संसाधित होते हैं। सहायक भुगतान दर्ज नहीं कर सकता, रिकॉर्ड बदल नहीं सकता और दूसरी एजेंसी तक पहुँच नहीं सकता।',
+  'Your question': 'आपका प्रश्न',
+  'Do not include passwords or unnecessary personal information.':
+    'पासवर्ड या अनावश्यक व्यक्तिगत जानकारी शामिल न करें।',
+  'Report month (optional)': 'रिपोर्ट का महीना (वैकल्पिक)',
+  'Leave blank for the current agency month. Current balances always have their own date.':
+    'एजेंसी के वर्तमान महीने के लिए खाली छोड़ें। वर्तमान शेष की अपनी अलग तिथि होती है।',
+  'Preparing answer…': 'उत्तर तैयार हो रहा है…',
+  'Ask assistant': 'सहायक से पूछें',
+  'AI is not configured.': 'AI कॉन्फ़िगर नहीं है।',
+  'AI configuration needs attention.': 'AI कॉन्फ़िगरेशन की जाँच आवश्यक है।',
+  'AI service limit reached. Try again later.':
+    'AI सेवा की सीमा पूरी हो गई है। बाद में फिर प्रयास करें।',
+  'AI is busy. Try again shortly.':
+    'AI व्यस्त है। थोड़ी देर बाद फिर प्रयास करें।',
+  'AI is temporarily unavailable.': 'AI अस्थायी रूप से उपलब्ध नहीं है।',
+  'The AI response could not be verified.':
+    'AI के उत्तर की पुष्टि नहीं हो सकी।',
+  'The AI requested an unsupported operation.':
+    'AI ने असमर्थित कार्रवाई का अनुरोध किया।',
+  'This request cannot be answered by the agency assistant.':
+    'एजेंसी सहायक इस अनुरोध का उत्तर नहीं दे सकता।',
+  'The assistant could not complete the answer within its limit.':
+    'सहायक अपनी सीमा के भीतर उत्तर पूरा नहीं कर सका।',
+  'This request exceeds the AI input limit.':
+    'यह अनुरोध AI इनपुट सीमा से अधिक है।',
+  'Assistant request unavailable': 'सहायक अनुरोध उपलब्ध नहीं है',
+  'Your question is retained. No business records were changed.':
+    'आपका प्रश्न सुरक्षित है। कोई व्यावसायिक रिकॉर्ड नहीं बदला गया।',
+  'Generated explanation': 'AI द्वारा तैयार स्पष्टीकरण',
+  'AI text may contain errors. Use the verified figures below for financial amounts.':
+    'AI के पाठ में त्रुटियाँ हो सकती हैं। वित्तीय राशियों के लिए नीचे दिए पुष्ट आँकड़ों का उपयोग करें।',
+  'Verified agency figures': 'पुष्ट एजेंसी आँकड़े',
+  'Selected sales month: {month}': 'चुना गया बिक्री महीना: {month}',
+  'Confirmed account receipts': 'पुष्ट खाता प्राप्तियाँ',
+  'Verified figures are unavailable.': 'पुष्ट आँकड़े उपलब्ध नहीं हैं।',
+  'Assistant request could not be confirmed.':
+    'सहायक अनुरोध की पुष्टि नहीं हो सकी।',
+  'assistant question': 'सहायक के लिए प्रश्न',
 };

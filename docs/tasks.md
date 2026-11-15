@@ -23,7 +23,7 @@ Lifecycle: **Not started → To do → In review → Done**. Review findings ret
 | P10  | Durable worker, localized communications and direct contact | In review   |
 | P11  | Complete localization, reporting, analytics and appearance  | To do       |
 | P12  | Offline field sync and installable app shell                | Not started |
-| P13  | Tenant AI assistant and encrypted cloud backup              | Not started |
+| P13  | Tenant AI assistant and encrypted cloud backup              | To do       |
 | P14  | Whole-project acceptance review and merge                   | Not started |
 
 ## Source user stories
@@ -65,7 +65,7 @@ Lifecycle: **Not started → To do → In review → Done**. Review findings ret
 | US-033 | Regional Publications            | P03  | Medium   | In review   |
 | US-034 | Seasonal Merchandise             | P06  | Medium   | In review   |
 | US-035 | Credit Control & Suspension      | P08  | High     | In review   |
-| US-036 | AI Assistant & Support           | P13  | High     | Not started |
+| US-036 | AI Assistant & Support           | P13  | High     | To do       |
 | US-037 | Emergency & Route Reallocation   | P05  | High     | In review   |
 | US-038 | Resident Settlement & Clearance  | P08  | High     | In review   |
 | US-039 | Field Collection Run-Sheets      | P08  | High     | In review   |

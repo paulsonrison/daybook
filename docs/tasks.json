@@ -224,7 +224,7 @@
     {
       "id": "P13",
       "title": "Tenant AI assistant and encrypted cloud backup",
-      "status": "Not started",
+      "status": "To do",
       "evidence": [],
       "review": null,
       "mergeCommit": null
@@ -1123,7 +1123,7 @@
       "planTask": "P13",
       "sourceRow": 44,
       "priority": "High",
-      "status": "Not started",
+      "status": "To do",
       "criteria": [
         "1. AI assistant answers operational, billing, and route queries strictly scoped to the authenticated agent's tenant ID.",
         "2. Complete data isolation preventing leakage or cross-referencing of other agencies' metrics, customer lists, or data.",
@@ -1895,6 +1895,20 @@
       "from": "Not started",
       "to": "To do",
       "event": "Start approved P11 localization, preferences and reporting plan after verified P10 checkpoint"
+    },
+    {
+      "date": "2026-11-15T10:26:42.558Z",
+      "task": "US-036",
+      "from": "Not started",
+      "to": "To do",
+      "event": "Approved standalone hosted AI implementation; no model hosting or paid provisioning. Remaining P13 backup dependencies are unchanged."
+    },
+    {
+      "date": "2026-11-15T10:29:25.751Z",
+      "task": "P13",
+      "from": "Not started",
+      "to": "To do",
+      "event": "User approved prioritizing the independent hosted AI slice on codex/ai-intake-render. P11/P12 and P13 backups remain incomplete; no dependency acceptance waived."
     }
   ]
 }

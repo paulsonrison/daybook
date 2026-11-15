@@ -797,4 +797,48 @@ export default {
   'Chart unavailable': 'ചാർട്ട് ലഭ്യമല്ല',
   'Missing records are unavailable, not zero.':
     'രേഖകളില്ലാത്ത വിവരങ്ങൾ ലഭ്യമല്ല; പൂജ്യമല്ല.',
+  'Your agency only': 'നിങ്ങളുടെ ഏജൻസി മാത്രം',
+  'Agency assistant': 'ഏജൻസി സഹായി',
+  'Ask about recorded sales, arrears, daily copies and supplier reconciliation.':
+    'രേഖപ്പെടുത്തിയ വിൽപ്പന, കുടിശ്ശിക, ദിവസത്തെ കോപ്പികൾ, വിതരണക്കാരുടെ കണക്കുപൊരുത്തം എന്നിവ ചോദിക്കുക.',
+  'Read-only assistance': 'വിവരങ്ങൾ വായിക്കാൻ മാത്രമുള്ള സഹായം',
+  'Questions are processed by a hosted AI provider when configured. The assistant cannot post payments, change records or access another agency.':
+    'ക്രമീകരിച്ചിട്ടുണ്ടെങ്കിൽ ചോദ്യങ്ങൾ ഹോസ്റ്റുചെയ്ത AI സേവനദാതാവ് കൈകാര്യം ചെയ്യും. സഹായിക്ക് പണമടവുകൾ രേഖപ്പെടുത്താനോ വിവരങ്ങൾ മാറ്റാനോ മറ്റൊരു ഏജൻസിയിൽ പ്രവേശിക്കാനോ കഴിയില്ല.',
+  'Your question': 'നിങ്ങളുടെ ചോദ്യം',
+  'Do not include passwords or unnecessary personal information.':
+    'പാസ്‌വേഡുകളോ ആവശ്യമില്ലാത്ത വ്യക്തിഗത വിവരങ്ങളോ ഉൾപ്പെടുത്തരുത്.',
+  'Report month (optional)': 'റിപ്പോർട്ട് മാസം (ഐച്ഛികം)',
+  'Leave blank for the current agency month. Current balances always have their own date.':
+    'നിലവിലെ ഏജൻസി മാസത്തിന് ശൂന്യമായി വിടുക. നിലവിലെ ബാലൻസുകൾക്ക് എല്ലായ്പ്പോഴും അവയുടെ തീയതി ഉണ്ടായിരിക്കും.',
+  'Preparing answer…': 'ഉത്തരം തയ്യാറാക്കുന്നു…',
+  'Ask assistant': 'സഹായിയോട് ചോദിക്കുക',
+  'AI is not configured.': 'AI ക്രമീകരിച്ചിട്ടില്ല.',
+  'AI configuration needs attention.': 'AI ക്രമീകരണം പരിശോധിക്കണം.',
+  'AI service limit reached. Try again later.':
+    'AI സേവന പരിധിയിലെത്തി. പിന്നീട് വീണ്ടും ശ്രമിക്കുക.',
+  'AI is busy. Try again shortly.':
+    'AI തിരക്കിലാണ്. അല്പസമയത്തിനു ശേഷം വീണ്ടും ശ്രമിക്കുക.',
+  'AI is temporarily unavailable.': 'AI താൽക്കാലികമായി ലഭ്യമല്ല.',
+  'The AI response could not be verified.': 'AI മറുപടി സ്ഥിരീകരിക്കാനായില്ല.',
+  'The AI requested an unsupported operation.':
+    'പിന്തുണയ്ക്കാത്ത ഒരു പ്രവർത്തനം AI ആവശ്യപ്പെട്ടു.',
+  'This request cannot be answered by the agency assistant.':
+    'ഈ അഭ്യർത്ഥനയ്ക്ക് ഏജൻസി സഹായിക്ക് മറുപടി നൽകാനാവില്ല.',
+  'The assistant could not complete the answer within its limit.':
+    'പരിധിക്കുള്ളിൽ ഉത്തരം പൂർത്തിയാക്കാൻ സഹായിക്ക് കഴിഞ്ഞില്ല.',
+  'This request exceeds the AI input limit.':
+    'ഈ അഭ്യർത്ഥന AI ഇൻപുട്ട് പരിധി കവിയുന്നു.',
+  'Assistant request unavailable': 'സഹായി അഭ്യർത്ഥന ലഭ്യമല്ല',
+  'Your question is retained. No business records were changed.':
+    'നിങ്ങളുടെ ചോദ്യം സൂക്ഷിച്ചിട്ടുണ്ട്. ബിസിനസ് രേഖകളൊന്നും മാറ്റിയിട്ടില്ല.',
+  'Generated explanation': 'AI തയ്യാറാക്കിയ വിശദീകരണം',
+  'AI text may contain errors. Use the verified figures below for financial amounts.':
+    'AI എഴുതിയതിൽ പിശകുകൾ ഉണ്ടാകാം. സാമ്പത്തിക തുകകൾക്കായി താഴെയുള്ള സ്ഥിരീകരിച്ച കണക്കുകൾ ഉപയോഗിക്കുക.',
+  'Verified agency figures': 'സ്ഥിരീകരിച്ച ഏജൻസി കണക്കുകൾ',
+  'Selected sales month: {month}': 'തിരഞ്ഞെടുത്ത വിൽപ്പന മാസം: {month}',
+  'Confirmed account receipts': 'സ്ഥിരീകരിച്ച അക്കൗണ്ട് വരവുകൾ',
+  'Verified figures are unavailable.': 'സ്ഥിരീകരിച്ച കണക്കുകൾ ലഭ്യമല്ല.',
+  'Assistant request could not be confirmed.':
+    'സഹായി അഭ്യർത്ഥന സ്ഥിരീകരിക്കാനായില്ല.',
+  'assistant question': 'സഹായിയോടുള്ള ചോദ്യം',
 };

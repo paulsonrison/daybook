@@ -1,0 +1,12 @@
+# Hosted AI implementation plan
+
+Spec: docs/superpowers/specs/2026-11-15-hosted-ai-design.md. Execute inline with Superpowers TDD, verification and independent final review. Approved skills: governor, Superpowers, Karpathy, Context7 and Render Blueprints. Approval covers this design and implementation; cloud purchases and customer-data test calls are excluded.
+
+1. Provider boundary — failing tests for missing/configuration secrets, fixed host, bounded requests/responses/timeouts, malformed JSON, provider errors/429 and no raw secret echoes. Implement a typed Groq transport using Node fetch, injectable only server-side for synthetic tests.
+2. File decoding — write real CSV/XLSX/DOCX/text-PDF/scanned-PDF/image fixtures first. Select and audit lightweight libraries; bound file signatures, ZIP expansion, rows/pages/text and rendering concurrency. Preserve provenance and exact values. Reject unsupported legacy/malformed files honestly.
+3. Draft storage and review — migration015 forced tenant RLS and immutable source identity, authenticated bounded upload endpoint, extraction jobs/status/retry and draft schema. Tests prove foreign IDs are inaccessible, duplicate confirmation is safe and no model data directly creates financial entries.
+4. Assistant — narrow read-only operational tools from existing financial/delivery/publisher sources, server-selected tenant, limited tool loops, content/authorization refusals and provider-unavailable states. Real two-agency tests and malicious tool/prompt cases before implementation.
+5. Interface — shared upload/review controls and assistant screen, original evidence, editable suggestions, required confirmation, pending/error/quota states, English/Malayalam/Hindi labels and scoped request disposal. Real Chrome tests including existing shared server presentation.
+6. Render and acceptance — verified Blueprint schema/runbook, credential configuration, resource/storage/concurrency limits. Run unit/integration/browser/types/lint/build/dependency checks, obtain independent review and fix findings. Commit to feature branch; preserve full-project remaining work and do not merge main prematurely.
+
+Each task is complete only when its named checks pass. A checked provider contract does not establish OCR quality or live provider availability. Current root monthly-reports acceptance test is intentionally red from prior WIP; do not misreport the whole database suite as passing.

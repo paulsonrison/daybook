@@ -1,3 +1,4 @@
+import type { AiProvider } from '../../src/modules/ai/provider.js';
 import { randomUUID } from 'node:crypto';
 import pg from 'pg';
 import { createApp } from '../../src/app.js';
@@ -5,6 +6,7 @@ import type { ProviderRegistry } from '../../src/modules/communications/config.j
 export function testApi(
   providers?: ProviderRegistry,
   providerCallbackOrigin?: string,
+  aiProvider?: AiProvider,
 ) {
   const pool = new pg.Pool({
     connectionString: process.env.TEST_RUNTIME_DATABASE_URL,
@@ -15,6 +17,7 @@ export function testApi(
     databaseReady: async () => true,
     providers,
     providerCallbackOrigin,
+    aiProvider,
   });
   async function agency() {
     const response = await app.fetch(

@@ -1,3 +1,8 @@
+import { createAiProvider, type AiProvider } from './modules/ai/provider.js';
+import {
+  assistantTypeDefs,
+  assistantResolvers,
+} from './modules/assistant/schema.js';
 import { createSchema, createYoga } from 'graphql-yoga';
 import {
   analyticsTypeDefs,
@@ -74,12 +79,14 @@ export function createApp({
   frontendOrigin = 'http://localhost:3000',
   pool,
   providers = providerRegistry(),
+  aiProvider = createAiProvider(),
   providerCallbackOrigin = process.env.PUBLIC_APP_ORIGIN,
 }: {
   databaseReady: () => Promise<boolean>;
   frontendOrigin?: string;
   pool?: Pool;
   providers?: ProviderRegistry;
+  aiProvider?: AiProvider;
   providerCallbackOrigin?: string;
 }) {
   const requestLocales = new WeakMap<Request, Locale>();
@@ -98,7 +105,15 @@ export function createApp({
             ).locale
           : requestLocale(request);
       requestLocales.set(request, locale);
-      return { agent, pool, request, frontendOrigin, providers, locale };
+      return {
+        agent,
+        pool,
+        request,
+        frontendOrigin,
+        providers,
+        locale,
+        aiProvider,
+      };
     },
     schema: createSchema<RequestContext>({
       typeDefs: `type Health { status: String!, service: String! }
@@ -123,7 +138,8 @@ export function createApp({
       ${communicationTypeDefs}
       ${documentTypeDefs}
       ${preferenceTypeDefs}
-      ${analyticsTypeDefs}`,
+      ${analyticsTypeDefs}
+      ${assistantTypeDefs}`,
       resolvers: {
         Query: {
           ...analyticsResolvers.Query,
@@ -155,6 +171,7 @@ export function createApp({
           },
         },
         Mutation: {
+          ...assistantResolvers.Mutation,
           ...preferenceResolvers.Mutation,
           ...operationsResolvers.Mutation,
           ...catalogResolvers.Mutation,

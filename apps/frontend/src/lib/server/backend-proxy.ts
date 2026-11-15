@@ -1,3 +1,4 @@
+import { upstreamTimeout } from '../graphql/assistant-operation';
 import 'server-only';
 
 export async function backendProxy(
@@ -61,7 +62,10 @@ export async function backendProxy(
         body,
         cache: 'no-store',
         redirect: 'error',
-        signal: AbortSignal.any([request.signal, AbortSignal.timeout(10000)]),
+        signal: AbortSignal.any([
+          request.signal,
+          AbortSignal.timeout(upstreamTimeout(path, body)),
+        ]),
       },
     );
     const responseHeaders = new Headers({

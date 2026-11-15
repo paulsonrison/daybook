@@ -2623,4 +2623,68 @@ export default {
   'Unavailable costs and missing history are not zero. Route estimates exclude shared expenses and unsupported losses.':
     'Unavailable costs and missing history are not zero. Route estimates exclude shared expenses and unsupported losses.',
   'View agency analytics': 'View agency analytics',
+  'Agency assistant': 'Agency assistant',
+  'AI configuration needs attention.': 'AI configuration needs attention.',
+  'AI is busy. Try again shortly.': 'AI is busy. Try again shortly.',
+  'AI is not configured.': 'AI is not configured.',
+  'AI is temporarily unavailable.': 'AI is temporarily unavailable.',
+  'AI service limit reached. Try again later.':
+    'AI service limit reached. Try again later.',
+  'AI text may contain errors. Use the verified figures below for financial amounts.':
+    'AI text may contain errors. Use the verified figures below for financial amounts.',
+  'Ask about recorded sales, arrears, daily copies and supplier reconciliation.':
+    'Ask about recorded sales, arrears, daily copies and supplier reconciliation.',
+  'Ask assistant': 'Ask assistant',
+  'assistant question': 'assistant question',
+  'Assistant request could not be confirmed.':
+    'Assistant request could not be confirmed.',
+  'Assistant request unavailable': 'Assistant request unavailable',
+  'Confirmed account receipts': 'Confirmed account receipts',
+  'CSV could not be read. Use UTF-8, consistent columns, at most 2,000 data rows and 32 KiB per record.':
+    'CSV could not be read. Use UTF-8, consistent columns, at most 2,000 data rows and 32 KiB per record.',
+  'CSV requires a header and at least one data row.':
+    'CSV requires a header and at least one data row.',
+  'CSV upload exceeds the supported 1 MiB limit.':
+    'CSV upload exceeds the supported 1 MiB limit.',
+  'Do not include passwords or unnecessary personal information.':
+    'Do not include passwords or unnecessary personal information.',
+  'Generated explanation': 'Generated explanation',
+  'Leave blank for the current agency month. Current balances always have their own date.':
+    'Leave blank for the current agency month. Current balances always have their own date.',
+  'missing response': 'missing response',
+  'Preparing answer…': 'Preparing answer…',
+  'Questions are processed by a hosted AI provider when configured. The assistant cannot post payments, change records or access another agency.':
+    'Questions are processed by a hosted AI provider when configured. The assistant cannot post payments, change records or access another agency.',
+  'Read-only assistance': 'Read-only assistance',
+  'Report cell exceeds the supported text limit.':
+    'Report cell exceeds the supported text limit.',
+  'Report column limit exceeded.': 'Report column limit exceeded.',
+  'Report exceeds the supported 10,000-row limit.':
+    'Report exceeds the supported 10,000-row limit.',
+  'Report exceeds the supported snapshot size limit.':
+    'Report exceeds the supported snapshot size limit.',
+  'Report month (optional)': 'Report month (optional)',
+  'Report row does not match its columns.':
+    'Report row does not match its columns.',
+  'Report structure is unsupported.': 'Report structure is unsupported.',
+  'Report workbook exceeds the supported file size limit.':
+    'Report workbook exceeds the supported file size limit.',
+  'response bound': 'response bound',
+  'Selected sales month: {month}': 'Selected sales month: {month}',
+  'The AI requested an unsupported operation.':
+    'The AI requested an unsupported operation.',
+  'The AI response could not be verified.':
+    'The AI response could not be verified.',
+  'The assistant could not complete the answer within its limit.':
+    'The assistant could not complete the answer within its limit.',
+  'This request cannot be answered by the agency assistant.':
+    'This request cannot be answered by the agency assistant.',
+  'This request exceeds the AI input limit.':
+    'This request exceeds the AI input limit.',
+  'Verified agency figures': 'Verified agency figures',
+  'Verified figures are unavailable.': 'Verified figures are unavailable.',
+  'Your agency only': 'Your agency only',
+  'Your question': 'Your question',
+  'Your question is retained. No business records were changed.':
+    'Your question is retained. No business records were changed.',
 };
