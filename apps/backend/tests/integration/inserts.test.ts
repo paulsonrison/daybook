@@ -154,6 +154,25 @@ test('targeted insert counts reach ordered packing slips and require completion 
   );
   const bills = await api.query(f.cookie, '{advertiserInvoices{id total}}');
   assert.equal(bills.data.advertiserInvoices.length, 1);
+  const analytics = await api.query(
+    f.cookie,
+    'query($input:AnalyticsInput!){agencyAnalytics(input:$input){routes{routeId advertiserSales} advertiserAllocation{allocatedSubtotal unallocatedSubtotal unsupportedInvoices coverage}}}',
+    { input: { month: f.date.slice(0, 7) } },
+  );
+  assert.ok(analytics.data?.agencyAnalytics, JSON.stringify(analytics));
+  assert.equal(
+    analytics.data.agencyAnalytics.routes.find(
+      (r: { routeId: string }) => r.routeId === f.route.id,
+    )?.advertiserSales,
+    '2.50',
+  );
+  assert.deepEqual(analytics.data.agencyAnalytics.advertiserAllocation, {
+    allocatedSubtotal: '2.50',
+    unallocatedSubtotal: '0.00',
+    unsupportedInvoices: '0',
+    coverage: 'COMPLETE',
+  });
+
   const foreign = await api.query(
     await api.agency(),
     '{advertisers{id} insertOrders{id} advertiserInvoices{id}}',

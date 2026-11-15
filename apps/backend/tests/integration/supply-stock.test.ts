@@ -111,6 +111,18 @@ test('publisher return credits preserve original lot net cost and request retrie
     },
     JSON.stringify(statement),
   );
+  const analytics = await api.query(
+    cookie,
+    'query($input:AnalyticsInput!){agencyAnalytics(input:$input){agencyCosts{supplyPurchases supplyReturnCredits netSupplyPurchases allocationBasis}}}',
+    { input: { month: today.slice(0, 7) } },
+  );
+  assert.ok(analytics.data?.agencyAnalytics, JSON.stringify(analytics));
+  assert.deepEqual(analytics.data.agencyAnalytics.agencyCosts, {
+    supplyPurchases: '50.50',
+    supplyReturnCredits: '10.10',
+    netSupplyPurchases: '40.40',
+    allocationBasis: 'UNALLOCATED_AGENCY_PURCHASES_NOT_ROUTE_CONSUMPTION',
+  });
   const foreign = await api.query(await api.agency(), returnMutation, {
     input: { ...returned, requestId: randomUUID() },
   });

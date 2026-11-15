@@ -1,4 +1,8 @@
 import { createSchema, createYoga } from 'graphql-yoga';
+import {
+  analyticsTypeDefs,
+  analyticsResolvers,
+} from './modules/analytics/schema.js';
 import { GraphQLError } from 'graphql';
 import type { Pool } from 'pg';
 import { currentAgent } from './modules/auth/repository.js';
@@ -118,9 +122,11 @@ export function createApp({
       ${cashTypeDefs}
       ${communicationTypeDefs}
       ${documentTypeDefs}
-      ${preferenceTypeDefs}`,
+      ${preferenceTypeDefs}
+      ${analyticsTypeDefs}`,
       resolvers: {
         Query: {
+          ...analyticsResolvers.Query,
           ...preferenceResolvers.Query,
           ...operationsResolvers.Query,
           ...catalogResolvers.Query,

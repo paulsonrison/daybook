@@ -111,7 +111,14 @@ export async function markForDate(
   const planned = await plannedRows(client, date);
   let created = 0;
   for (const row of planned) {
-    if (await insertDelivery(client, agencyId, { ...row, id: randomUUID() }))
+    if (
+      await insertDelivery(
+        client,
+        agencyId,
+        { ...row, id: randomUUID() },
+        date === today,
+      )
+    )
       created++;
     if (date === today)
       await updateAssignedStaff(

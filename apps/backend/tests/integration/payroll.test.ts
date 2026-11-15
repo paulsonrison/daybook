@@ -167,6 +167,23 @@ test('final employment bounds every pay segment and fixed monthly salary can end
     );
     assert.ok(post.data?.postPayslip, JSON.stringify(post));
   }
+  const report = await api.query(
+    cookie,
+    'query{agencyAnalytics(input:{month:"2026-01"}){payroll{postedExpense unallocatedExpense attributableRouteExpense actualPayouts unsupportedPayslips coverage}}}',
+  );
+  assert.ok(report.data?.agencyAnalytics, JSON.stringify(report));
+  // All pay in this fixture is salary; neither attendance nor a missing delivery run invents a route cost.
+  assert.equal(
+    report.data.agencyAnalytics.payroll.attributableRouteExpense,
+    '0.00',
+  );
+  assert.equal(report.data.agencyAnalytics.payroll.actualPayouts, '0.00');
+  assert.equal(
+    report.data.agencyAnalytics.payroll.unallocatedExpense,
+    report.data.agencyAnalytics.payroll.postedExpense,
+  );
+  assert.equal(report.data.agencyAnalytics.payroll.unsupportedPayslips, '0');
+  assert.equal(report.data.agencyAnalytics.payroll.coverage, 'COMPLETE');
 });
 test('former staff can receive a current-period correction without inventing employment or rewriting the final payslip', async () => {
   const cookie = await api.agency(),
@@ -556,6 +573,25 @@ test('substitute earns original delivered copies once, replacement earns no extr
     },
   );
   assert.ok(posted.data?.postPayslip, JSON.stringify(posted));
+  const analytic = await api.query(
+    cookie,
+    'query{agencyAnalytics(input:{month:"2026-01"}){routes{routeId postedPayroll payrollCopiesWithoutPostedCost payrollCoverage} payroll{postedExpense unallocatedExpense attributableRouteExpense actualPayouts}}}',
+  );
+  assert.ok(analytic.data?.agencyAnalytics, JSON.stringify(analytic));
+  assert.deepEqual(analytic.data.agencyAnalytics.routes, [
+    {
+      routeId: route.id,
+      postedPayroll: '12.25',
+      payrollCopiesWithoutPostedCost: '0',
+      payrollCoverage: 'COMPLETE',
+    },
+  ]);
+  assert.deepEqual(analytic.data.agencyAnalytics.payroll, {
+    postedExpense: '12.25',
+    unallocatedExpense: '0.00',
+    attributableRouteExpense: '12.25',
+    actualPayouts: '0.00',
+  });
   const balances = await api.query(
     cookie,
     'query($staff:ID!){payrollRecords(staffId:$staff){funds{remaining}}}',

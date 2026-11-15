@@ -91,11 +91,19 @@ export async function insertDelivery(
     DeliveryRow,
     'price' | 'status' | 'source' | 'reason' | 'chargeableQuantity' | 'version'
   >,
+  captureProcurement = false,
 ) {
   return Boolean(
     (
       await client.query(
-        `INSERT INTO daybook.delivery_logs(id,agency_id,subscription_id,resident_id,publication_id,route_id,staff_id,delivery_date,dispatch,drop_order,resident_name,address,publication_name,route_name,staff_name,quantity,price_paise,price_rule_id,permanent_staff_id,permanent_staff_name,status,source,chargeable_quantity) VALUES($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17,$18,$19,$20,'DELIVERED','AUTO',$16) ON CONFLICT(agency_id,subscription_id,delivery_date) DO NOTHING`,
+        `INSERT INTO daybook.delivery_logs(id,agency_id,subscription_id,resident_id,publication_id,route_id,staff_id,delivery_date,dispatch,drop_order,resident_name,address,publication_name,route_name,staff_name,quantity,price_paise,price_rule_id,permanent_staff_id,permanent_staff_name,status,source,chargeable_quantity,procurement_unit_paise,procurement_basis,procurement_recorded_at)
+         SELECT $1::uuid,$2::uuid,$3::uuid,$4::uuid,$5::uuid,$6::uuid,$7::uuid,$8::date,$9::text,$10::integer,$11::text,$12::text,$13::text,$14::text,$15::text,$16::integer,$17::bigint,$18::uuid,$19::uuid,$20::text,'DELIVERED','AUTO',$16::integer,
+           CASE WHEN snapshot.capture THEN p.procurement_net_paise ELSE NULL END,
+           CASE WHEN snapshot.capture AND p.procurement_net_paise IS NOT NULL THEN 'PUBLICATION_AT_PREPARATION' ELSE 'UNRECORDED' END,
+           CASE WHEN snapshot.capture AND p.procurement_net_paise IS NOT NULL THEN clock_timestamp() ELSE NULL END
+         FROM daybook.publications p CROSS JOIN(SELECT ($21::boolean AND $8::date=daybook.agency_today()) AS capture) snapshot
+         WHERE p.agency_id=$2::uuid AND p.id=$5::uuid
+         ON CONFLICT(agency_id,subscription_id,delivery_date) DO NOTHING`,
         [
           row.id,
           agencyId,
@@ -117,6 +125,7 @@ export async function insertDelivery(
           row.ruleId,
           row.permanentStaffId,
           row.permanentStaffName,
+          captureProcurement,
         ],
       )
     ).rowCount,

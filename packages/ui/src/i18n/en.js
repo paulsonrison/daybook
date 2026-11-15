@@ -2514,4 +2514,10 @@ export default {
   Permanent: 'Permanent',
   Schedule: 'Schedule',
   Validity: 'Validity',
+  'Choose a valid report month (YYYY-MM).':
+    'Choose a valid report month (YYYY-MM).',
+  'Reports cannot include future months.':
+    'Reports cannot include future months.',
+  'Recorded balances and aging do not reconcile. Reload the report.':
+    'Recorded balances and aging do not reconcile. Reload the report.',
 };

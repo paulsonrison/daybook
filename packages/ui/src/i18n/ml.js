@@ -675,4 +675,10 @@ export default {
   'Unable to load subscriptions.': 'സബ്‌സ്‌ക്രിപ്ഷനുകൾ ലോഡ് ചെയ്യാനായില്ല.',
   'Unable to save. Your entered details are preserved.':
     'സേവ് ചെയ്യാനായില്ല. നൽകിയ വിവരങ്ങൾ നിലനിർത്തിയിട്ടുണ്ട്.',
+  'Choose a valid report month (YYYY-MM).':
+    'സാധുവായ റിപ്പോർട്ട് മാസം തിരഞ്ഞെടുക്കുക (YYYY-MM).',
+  'Reports cannot include future months.':
+    'റിപ്പോർട്ടുകളിൽ ഭാവി മാസങ്ങൾ ഉൾപ്പെടുത്താനാവില്ല.',
+  'Recorded balances and aging do not reconcile. Reload the report.':
+    'രേഖപ്പെടുത്തിയ ബാക്കിയും കാലപ്പഴക്ക കണക്കും ഒത്തുപോകുന്നില്ല. റിപ്പോർട്ട് വീണ്ടും ലോഡ് ചെയ്യുക.',
 };

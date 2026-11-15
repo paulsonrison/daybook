@@ -662,4 +662,10 @@ export default {
   'Unable to load subscriptions.': 'सदस्यताएँ लोड नहीं हो सकीं।',
   'Unable to save. Your entered details are preserved.':
     'सहेजा नहीं जा सका। भरी गई जानकारी सुरक्षित है।',
+  'Choose a valid report month (YYYY-MM).':
+    'मान्य रिपोर्ट महीना चुनें (YYYY-MM)।',
+  'Reports cannot include future months.':
+    'रिपोर्ट में आने वाले महीने शामिल नहीं किए जा सकते।',
+  'Recorded balances and aging do not reconcile. Reload the report.':
+    'दर्ज शेष और बकाया अवधि का हिसाब मेल नहीं खाता। रिपोर्ट फिर लोड करें।',
 };
