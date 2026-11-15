@@ -27,10 +27,10 @@ No paid resources or local models; no loss of existing records; no changed finan
 Files: database connection/bootstrap helpers; migration/verification scripts; Render configuration/launcher; real DB tests; deployment docs.
 
 - [x] Record approved scope and create an isolated `codex/free-completion` branch.
-- [ ] Add failing tests for migration fidelity, runtime restrictions, cold wakeup and quota-friendly health.
-- [ ] Create only a new Free Neon project; rehearse existing migrations and preserved-data restore on an isolated branch.
-- [ ] Verify migration checksums/session/financial evidence; quiesce and transfer the live source; switch only after successful checks. Retain rollback database.
-- [ ] Independent review, fixes and public HTTPS/browser verification.
+- [x] Add failing tests for migration fidelity, runtime restrictions, cold wakeup and quota-friendly health.
+- [x] Create only a new Free Neon project; rehearse existing migrations and preserved-data restore on an isolated branch.
+- [x] Verify migration checksums/session/financial evidence; quiesce and transfer the live source; switch only after successful checks. Retain rollback database.
+- [x] Independent review, fixes and public HTTPS/browser verification.
 
 ### Task 2: Encrypted storage and backups
 
@@ -78,3 +78,5 @@ User explicitly approved this free-service plan after connecting Neon. Current b
 Builder review found three design gaps; resolutions are recorded in the spec: durable all-writer maintenance, an explicit authoritative cutover before new writes and reverse-transfer-only rollback afterward, plus explicit free messaging exception and unfinished disconnected-provider gates. The initial Neon creation request was rejected because Free does not allow setting an idle timeout, even to its fixed default; no project was created. Retry omits that immutable setting and retains the free plan/0.25-CU cap. Current health is liveness-only and does not query the DB; preserve that existing behavior.
 
 Task1 checkpoint: the non-superuser transfer test now covers two agencies, per-agent preferences, exact9007199254740993paise, a10MiB stored document and generated length, target BYPASSRLS, failed-copy source restoration, nonempty target refusal, lost-COMMIT acknowledgement reconciled on a fresh session, preserved sessions and no replay over new target receipts. Actual production launcher target selection passes after observed RED. Independent helper and wrapper reviews are clear.100 workspace unit checks, types/lint and backend build pass; current official Render schema validates. Public source/cutover verification is next; no live-source migration has occurred yet.
+
+Task1 live evidence: transfer render-neon-20261115 committed79tables/47rows with SHA25666bf85cd4fc030036be279e671fd24df5ff4b3b777e4d675a68cce0e8541f763. Pre-cutover Chrome session/offline payment recovered with one confirmed receipt and no duplicate; direct-owner restart live. Original source retained/fenced. Direct-connection guard has3passing unit cases including reviewer-found uppercase/trailing-dot bypass, observed RED then fixed. Final real DB/production launcher regression passes in .cache/database-transfer-final.log. Private storage availability confirmed, Task2 starting.

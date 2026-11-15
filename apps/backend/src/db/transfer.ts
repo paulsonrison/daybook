@@ -21,6 +21,20 @@ export interface TransferResult {
   sha256: string;
 }
 const identifier = (value: string) => `"${value.replaceAll('"', '""')}"`;
+export function requireDirectMigrationUrl(value: string) {
+  const url = new URL(value);
+  if (!['postgresql:', 'postgres:'].includes(url.protocol))
+    throw new Error('Use a PostgreSQL migration connection.');
+  const hostname = url.hostname.toLowerCase().replace(/\.$/, '');
+  if (
+    hostname.endsWith('.neon.tech') &&
+    hostname.split('.')[0].endsWith('-pooler')
+  )
+    throw new Error(
+      'Use a direct Neon connection for database migration; pooling is only for application traffic.',
+    );
+  return value;
+}
 const fingerprint = (url: string) => {
   const parsed = new URL(url);
   return createHash('sha256')
@@ -136,6 +150,8 @@ export async function transferDatabase(
   targetUrl: string,
   options: { id: string; cutover: boolean },
 ): Promise<TransferResult> {
+  requireDirectMigrationUrl(sourceUrl);
+  requireDirectMigrationUrl(targetUrl);
   if (
     !/^[a-zA-Z0-9_-]{1,80}$/.test(options.id) ||
     fingerprint(sourceUrl) === fingerprint(targetUrl)

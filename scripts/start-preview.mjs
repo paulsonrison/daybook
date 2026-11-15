@@ -1,6 +1,9 @@
 import { spawn } from 'node:child_process';
 import { resolve } from 'node:path';
-import { transferDatabase } from '../apps/backend/dist/db/transfer.js';
+import {
+  transferDatabase,
+  requireDirectMigrationUrl,
+} from '../apps/backend/dist/db/transfer.js';
 import { preparePreviewDatabase } from '../apps/backend/dist/db/preview.js';
 const sourceUrl = process.env.MIGRATION_DATABASE_URL;
 const neonUrl = process.env.NEON_MIGRATION_DATABASE_URL;
@@ -43,11 +46,13 @@ process.on('SIGTERM', () => stop());
 process.on('SIGINT', () => stop());
 let runtimeUrl;
 try {
+  requireDirectMigrationUrl(ownerUrl);
   runtimeUrl = await preparePreviewDatabase(ownerUrl, password);
   if (neonUrl && sourceUrl) {
     const id = process.env.DAYBOOK_DATABASE_TRANSFER_ID;
     if (!id) throw new Error('Set the verified database transfer identity.');
     if (rehearsalUrl) {
+      requireDirectMigrationUrl(rehearsalUrl);
       await preparePreviewDatabase(rehearsalUrl, password);
       const trial = await transferDatabase(sourceUrl, rehearsalUrl, {
         id: `${id}-rehearsal`,
