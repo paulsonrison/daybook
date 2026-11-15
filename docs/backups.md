@@ -1,6 +1,6 @@
 # Encrypted backup implementation and verification
 
-The backup foundation is implemented and tested. Automatic backup jobs, durable quota reservations, system-status UI and independent live replication are still pending. These checks do not constitute whole-project acceptance.
+The backup foundation is implemented and tested. Automatic worker wiring, retention execution, system-status UI and a live database backup run are still pending. Durable job records and reservations are implemented; both storage providers have passed live synthetic replication checks. These checks do not constitute whole-project acceptance.
 
 ## Implemented
 
@@ -9,13 +9,14 @@ The backup foundation is implemented and tested. Automatic backup jobs, durable 
 - `encryption.ts` streams AES-256-GCM ciphertext with a fresh random nonce. The header, version, agency/scope UUID and backup UUID are authenticated. Recovery releases no plaintext until tag verification succeeds. Keys are externally configured and are never embedded in backup objects.
 - `storage/private.ts` derives exact scope prefixes from validated UUIDs, keeps uploads private, checks actual stream lengths, and bounds requests. A server acknowledgement cannot bypass source EOF validation. The same S3 adapter supports Neon and Backblaze B2.
 - `replication.ts` verifies each destination by downloading, authenticating and checking the restored size and SHA-256 against the original snapshot. Missing, failed or quota-limited destinations cannot report full protection. Durable job integration must atomically reserve capacity; `otherReserved` explicitly excludes the current job's own reservation.
+- `jobs.ts` and migration 015 keep operator-only records in `daybook.operator_backup_runs` and `daybook.operator_backup_objects`, with no HTTP-role grants. Claims are exclusive per UTC period, with 15-minute leases and at most three attempts. Expired final attempts settle from persisted replica evidence. Unknown upload outcomes retain their storage reservation. Reservations are serialized across jobs and capped at 1 GiB per destination. Owner metadata writes cooperate with database transfer locks and remain fenced on a retired source.
 - `policy.ts` retains seven daily, four weekly and three monthly recovery points plus the newest verified point after an outage. It only plans removal of uniquely identified, verified objects under the exact owned prefix. Case aliases, other scopes and unverified objects are excluded. It does not execute deletions.
 
 ## Observed evidence
 
 An isolated PostgreSQL 17 test performed a real `pg_dump`, encrypted the archive, authenticated it and restored it with `pg_restore` into a new disposable database. It checked two agencies, original sessions, native Malayalam/Hindi text, exact 9007199254740993-paise values, a 1 MiB binary object and generated length, the public migration marker, forced row security and security-function owners. An over-limit backup failed while the source remained usable. Recovery into a populated database was refused.
 
-The private `daybook-private` bucket on the approved Neon project passed a live streamed encrypted synthetic-file upload, authenticated download and exact-byte restore. This is storage verification, not yet a scheduled database backup or an independently replicated backup. Credentials and test session state remain outside version control.
+The private `daybook-private` bucket on the approved Neon project passed a live streamed encrypted synthetic-file upload, authenticated download and exact-byte restore. Backblaze B2 also passed live authenticated replication of the same small synthetic source. Both restored sizes and SHA-256 hashes matched. A real B2 read outside the allowed file prefix returned permission denied. These are storage checks, not yet a scheduled live database backup. Credentials and test session state remain outside version control.
 
 Independent review findings were fixed and regression-tested: hostname variants bypassing direct-connection validation; early upload acknowledgement hiding source failure; retention UUID case aliases; reservation double-counting; and process aborts reporting completion before the child closed. Raw PostgreSQL diagnostic output is not retained in application logs.
 
@@ -31,10 +32,18 @@ The runner creates its own disposable PostgreSQL cluster and synthetic data. It 
 
 ## Remaining release gates
 
-1. Add durable owner-only job metadata, atomic quota reservations, leases, bounded retries and visible destination health.
+1. Integrate the implemented durable metadata, reservations and leases with the bounded worker and visible destination health.
 2. Wire a bounded scheduled worker without passing database-owner credentials into HTTP processes.
-3. Connect the user's independent Backblaze B2 destination, configure restricted credentials and verify actual encrypted replication.
+3. Verify an actual database archive through both connected destinations and reconcile object inventory before restarting jobs after disaster recovery.
 4. Configure an external production encryption key and recovery procedure; retain the key separately from storage.
 5. Verify an actual live database archive and disposable restore, then enable and observe scheduling and retention.
 
 The preview notice stays until these gates and the remaining document intake, reporting, translation, layout and Figma acceptance work are complete.
+
+## Connected Backblaze destination — 16 November 2026
+
+The private bucket is `daybook-paulson-backups-20261115`, endpoint `s3.us-east-005.backblazeb2.com`, region `us-east-005`. Server-side encryption is enabled. Existing account storage and download caps were observed at $0; no billing or cap settings were changed.
+
+The user explicitly approved a non-master `daybook-backup-worker` key. It is restricted to this bucket and the `agencies/` prefix; listing all buckets is disabled. It expires on **14 February 2027 at 04:14 Asia/Calcutta** and needs rotation before then. The key is saved privately outside version control, has not been passed to HTTP processes, and is not yet wired into the production worker.
+
+Bucket lifecycle currently keeps all versions. Retention must handle hidden B2 versions and uncertain uploads before enabling scheduled deletion. A successful synthetic storage test does not complete those release gates.

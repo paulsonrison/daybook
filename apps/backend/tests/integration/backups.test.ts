@@ -2,7 +2,14 @@ import assert from 'node:assert/strict';
 import { test } from 'node:test';
 import { randomBytes, randomUUID, createHash } from 'node:crypto';
 import { createReadStream } from 'node:fs';
-import { readFile, writeFile, mkdtemp, unlink, rmdir } from 'node:fs/promises';
+import {
+  readFile,
+  writeFile,
+  mkdtemp,
+  unlink,
+  rmdir,
+  readdir,
+} from 'node:fs/promises';
 import { resolve, join } from 'node:path';
 import pg from 'pg';
 import { testApi } from './support.js';
@@ -22,17 +29,39 @@ test('real pg_dump encrypted archive restores into an empty disposable database 
     connectionString: process.env.TEST_ADMIN_DATABASE_URL,
   });
   await admin.connect();
+  const sourceName = `backup_source_${randomBytes(5).toString('hex')}`;
+  const sourceUrl = new URL(process.env.TEST_ADMIN_DATABASE_URL!);
+  sourceUrl.pathname = `/${sourceName}`;
+  const sourceRuntime = new URL(process.env.TEST_RUNTIME_DATABASE_URL!);
+  sourceRuntime.pathname = `/${sourceName}`;
+  const sourceAdmin = new pg.Client({ connectionString: sourceUrl.toString() });
+  const unrelatedApi = testApi();
+  const unrelatedCookie = await unrelatedApi.agency();
   const targetName = `backup_restore_${randomBytes(5).toString('hex')}`;
   const targetUrl = new URL(process.env.TEST_ADMIN_DATABASE_URL!);
   targetUrl.pathname = `/${targetName}`;
-  const api = testApi();
+  const api = testApi(
+    undefined,
+    undefined,
+    undefined,
+    sourceRuntime.toString(),
+  );
   let restoredApi: ReturnType<typeof testApi> | undefined,
     archive:
       Awaited<ReturnType<typeof feature.createDatabaseArchive>> | undefined;
   const directory = await mkdtemp(resolve('.cache/backup-restore-'));
   const restoredFile = join(directory, 'verified.dump');
   try {
+    await admin.query(`CREATE DATABASE ${sourceName}`);
     await admin.query(`CREATE DATABASE ${targetName}`);
+    await sourceAdmin.connect();
+    for (const name of (await readdir('apps/backend/db/migrations'))
+      .filter((n) => n.endsWith('.sql'))
+      .sort())
+      await sourceAdmin.query(
+        await readFile(`apps/backend/db/migrations/${name}`, 'utf8'),
+      );
+
     const cookies = [await api.agency(), await api.agency()];
     for (const cookie of cookies) {
       const route = await api.route(cookie);
@@ -70,22 +99,22 @@ test('real pg_dump encrypted archive restores into an empty disposable database 
     }
     const binary = randomBytes(1048576),
       binaryId = randomUUID();
-    await admin.query(
+    await sourceAdmin.query(
       'CREATE TABLE daybook.backup_binary_fixture(id uuid PRIMARY KEY,payload bytea NOT NULL,byte_length integer GENERATED ALWAYS AS (octet_length(payload)) STORED)',
     );
-    await admin.query(
+    await sourceAdmin.query(
       'INSERT INTO daybook.backup_binary_fixture(id,payload) VALUES($1,$2)',
       [binaryId, binary],
     );
-    await admin.query(
+    await sourceAdmin.query(
       'CREATE TABLE public.daybook_migrations(name text PRIMARY KEY,applied_at timestamptz NOT NULL DEFAULT now())',
     );
-    await admin.query(
+    await sourceAdmin.query(
       "INSERT INTO public.daybook_migrations(name) VALUES('restore-fixture')",
     );
     await assert.rejects(
       feature.createDatabaseArchive({
-        databaseUrl: process.env.TEST_ADMIN_DATABASE_URL!,
+        databaseUrl: sourceUrl.toString(),
         pgDumpPath: process.env.TEST_PG_DUMP_PATH,
         maxBytes: 1024,
       }),
@@ -96,7 +125,7 @@ test('real pg_dump encrypted archive restores into an empty disposable database 
       'Failed backup leaves source usable',
     );
     archive = await feature.createDatabaseArchive({
-      databaseUrl: process.env.TEST_ADMIN_DATABASE_URL!,
+      databaseUrl: sourceUrl.toString(),
       pgDumpPath: process.env.TEST_PG_DUMP_PATH,
     });
     const original = await readFile(archive.file);
@@ -119,7 +148,7 @@ test('real pg_dump encrypted archive restores into an empty disposable database 
     key.fill(0);
     await assert.rejects(
       feature.restoreEmptyDatabaseArchive({
-        databaseUrl: process.env.TEST_ADMIN_DATABASE_URL!,
+        databaseUrl: sourceUrl.toString(),
         file: restoredFile,
         pgRestorePath: process.env.TEST_PG_RESTORE_PATH,
       }),
@@ -161,7 +190,7 @@ test('real pg_dump encrypted archive restores into an empty disposable database 
           )
         ).rows,
         (
-          await admin.query(
+          await sourceAdmin.query(
             "SELECT p.proname,pg_get_userbyid(p.proowner) AS owner FROM pg_proc p JOIN pg_namespace n ON n.oid=p.pronamespace WHERE n.nspname='daybook' AND p.prosecdef ORDER BY p.proname",
           )
         ).rows,
@@ -190,6 +219,11 @@ test('real pg_dump encrypted archive restores into an empty disposable database 
     const runtime = new URL(process.env.TEST_RUNTIME_DATABASE_URL!);
     runtime.pathname = `/${targetName}`;
     restoredApi = testApi(undefined, undefined, undefined, runtime.toString());
+    assert.equal(
+      !!(await restoredApi.query(unrelatedCookie, '{me{id}}')).data?.me,
+      false,
+      'Another database session is not restored into this source backup',
+    );
     for (const cookie of cookies)
       assert.ok(
         (await restoredApi.query(cookie, '{me{id agencyId}}')).data?.me,
@@ -205,10 +239,13 @@ test('real pg_dump encrypted archive restores into an empty disposable database 
   } finally {
     await restoredApi?.pool.end();
     await api.pool.end();
+    await unrelatedApi.pool.end();
+    await sourceAdmin.end();
     await archive?.cleanup();
     await unlink(restoredFile).catch(() => {});
     await rmdir(directory);
     await admin.query(`DROP DATABASE ${targetName}`);
+    await admin.query(`DROP DATABASE ${sourceName}`);
     await admin.end();
   }
 });

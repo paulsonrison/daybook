@@ -194,6 +194,17 @@ test('database transfer preserves every tenant, exact data and retry identities;
         ],
       ),
     );
+    const backupRunId = randomUUID(),
+      backupObjectId = randomUUID(),
+      backupScopeId = randomUUID();
+    await sourceOwner.query(
+      "INSERT INTO daybook.operator_backup_runs(id,period,scope_id,key_id,status,attempts,object_id,archive_bytes,sha256) VALUES($1,'2026-11-16',$2,'migration-key','FAILED',1,$3,100,$4)",
+      [backupRunId, backupScopeId, backupObjectId, 'e'.repeat(64)],
+    );
+    await sourceOwner.query(
+      "INSERT INTO daybook.operator_backup_objects(object_id,destination,run_id,attempt,scope_id,key_id,status,reserved_bytes,sha256,created_at) VALUES($1,'neon',$2,1,$3,'migration-key','FAILED',136,$4,now())",
+      [backupObjectId, backupRunId, backupScopeId, 'e'.repeat(64)],
+    );
     const destination = new pg.Pool({ connectionString: urls[1], max: 1 });
     pools.push(destination);
     await destination.query(
@@ -226,6 +237,27 @@ test('database transfer preserves every tenant, exact data and retry identities;
       cutover: false,
     });
     assert.ok(trial.tables > 40);
+    assert.equal(
+      (
+        await destination.query(
+          'SELECT count(*)::int AS n FROM daybook.operator_backup_runs WHERE id=$1',
+          [backupRunId],
+        )
+      ).rows[0].n,
+      1,
+      'Owner backup job history must survive migration',
+    );
+    assert.equal(
+      (
+        await destination.query(
+          'SELECT reserved_bytes FROM daybook.operator_backup_objects WHERE object_id=$1',
+          [backupObjectId],
+        )
+      ).rows[0]?.reserved_bytes,
+      136,
+      'Uncertain upload capacity must survive migration',
+    );
+
     assert.match(trial.sha256, /^[a-f0-9]{64}$/);
     const exact = await withTenant(destination, agencyId, (c) =>
       c.query(
