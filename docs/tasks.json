@@ -216,9 +216,17 @@
     {
       "id": "P12",
       "title": "Offline field sync and installable app shell",
-      "status": "Not started",
-      "evidence": [],
-      "review": null,
+      "status": "In review",
+      "evidence": [
+        "PWA slice on codex/pwa-render: 100 unit/tooling/UI checks; workspace types/lint and production build; 15 field/payment/delivery PostgreSQL checks; restricted-owner bootstrap/restart and actual production health/auth check; five Chrome checks including offline delivery, cash lost acknowledgement, reload, session expiry, privacy races, conflicts, account change and mobile layout. Independent frontend/backend/deployment rereviews clear. Separate free preview publication being verified; main unchanged."
+      ],
+      "review": {
+        "reviewer": "foundation_review + operations_review",
+        "findings": 3,
+        "resolved": 3,
+        "outstanding": 0,
+        "result": "Clear for PWA/free-preview slice; main merge awaits whole-project acceptance."
+      },
       "mergeCommit": null
     },
     {
@@ -934,14 +942,22 @@
       "planTask": "P12",
       "sourceRow": 36,
       "priority": "High",
-      "status": "Not started",
+      "status": "In review",
       "criteria": [
         "1. Offline IndexedDB storage caches active daily route manifest and resident records.",
         "2. Queue field actions locally with optimistic UI updates during network dropouts.",
         "3. Auto-reconcile and sync queued updates on network reconnection with timestamp conflict resolution."
       ],
-      "evidence": [],
-      "review": null,
+      "evidence": [
+        "PWA slice on codex/pwa-render: 100 unit/tooling/UI checks; workspace types/lint and production build; 15 field/payment/delivery PostgreSQL checks; restricted-owner bootstrap/restart and actual production health/auth check; five Chrome checks including offline delivery, cash lost acknowledgement, reload, session expiry, privacy races, conflicts, account change and mobile layout. Independent frontend/backend/deployment rereviews clear. Separate free preview publication being verified; main unchanged."
+      ],
+      "review": {
+        "reviewer": "foundation_review + operations_review",
+        "findings": 3,
+        "resolved": 3,
+        "outstanding": 0,
+        "result": "Clear for PWA/free-preview slice; main merge awaits whole-project acceptance."
+      },
       "mergeCommit": null
     },
     {
@@ -1909,6 +1925,34 @@
       "from": "Not started",
       "to": "To do",
       "event": "User approved prioritizing the independent hosted AI slice on codex/ai-intake-render. P11/P12 and P13 backups remain incomplete; no dependency acceptance waived."
+    },
+    {
+      "date": "2026-11-15T11:59:11.446Z",
+      "task": "P12",
+      "from": "Not started",
+      "to": "To do",
+      "event": "Approved standalone PWA and separate free Render preview; detailed plan 2026-11-15-pwa-render.md; P11 remains unfinished."
+    },
+    {
+      "date": "2026-11-15T11:59:11.446Z",
+      "task": "US-028",
+      "from": "Not started",
+      "to": "To do",
+      "event": "Approved standalone PWA and separate free Render preview; detailed plan 2026-11-15-pwa-render.md; P11 remains unfinished."
+    },
+    {
+      "date": "2026-11-15T12:27:44.001Z",
+      "task": "P12",
+      "from": "To do",
+      "to": "In review",
+      "event": "PWA implementation and local production verification pass; independent reviews clear; separate free preview is being published; Done still requires main merge."
+    },
+    {
+      "date": "2026-11-15T12:27:44.001Z",
+      "task": "US-028",
+      "from": "To do",
+      "to": "In review",
+      "event": "PWA implementation and local production verification pass; independent reviews clear; separate free preview is being published; Done still requires main merge."
     }
   ]
 }

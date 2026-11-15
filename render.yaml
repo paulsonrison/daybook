@@ -1,0 +1,38 @@
+# Separate free preview. Do not adopt or rename existing services.
+services:
+  - type: web
+    name: daybook-paulson-preview
+    runtime: node
+    plan: free
+    region: singapore
+    branch: codex/pwa-render
+    autoDeployTrigger: off
+    buildCommand: npm ci --include=dev && npm run build
+    startCommand: node scripts/start-preview.mjs
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: '22'
+      - key: NEXT_TELEMETRY_DISABLED
+        value: '1'
+      - key: DAYBOOK_PREVIEW
+        value: 'true'
+      - key: DAYBOOK_AI_ENABLED
+        value: 'false'
+      - key: DAYBOOK_COMMUNICATIONS_PROVIDERS
+        value: '{}'
+      - key: MIGRATION_DATABASE_URL
+        fromDatabase:
+          name: daybook-preview-db
+          property: connectionString
+      - key: PREVIEW_RUNTIME_PASSWORD
+        generateValue: true
+      - key: DOCUMENT_LINK_SECRET
+        generateValue: true
+databases:
+  - name: daybook-preview-db
+    plan: free
+    region: singapore
+    postgresMajorVersion: '17'
+    databaseName: daybook_preview
+    ipAllowList: []

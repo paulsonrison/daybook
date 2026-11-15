@@ -106,3 +106,14 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+.preview-notice {
+  margin: 0;
+  padding: 10px 16px;
+  background: #fbf1dd;
+  color: #172d2b;
+  text-align: center;
+  font:
+    14px/1.5 system-ui,
+    sans-serif;
+}

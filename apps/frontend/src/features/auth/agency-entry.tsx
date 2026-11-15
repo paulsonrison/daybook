@@ -157,6 +157,12 @@ export function AgencyEntry({ children }: { children?: ReactNode }) {
                     active: pathname === '/routes',
                   },
                   {
+                    label: 'Field workspace',
+                    href: '/field.html',
+                    icon: 'nav-route',
+                    active: false,
+                  },
+                  {
                     label: 'Daily delivery log',
                     href: '/delivery',
                     icon: 'nav-route',

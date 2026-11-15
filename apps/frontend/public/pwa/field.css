@@ -1,0 +1,164 @@
+@font-face {
+  font-family: Inter;
+  src: url('/pwa/inter.woff2') format('woff2');
+  font-weight: 100 900;
+  font-display: swap;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: var(--db-background);
+  color: var(--db-text);
+  font:
+    16px/1.55 Inter,
+    system-ui,
+    sans-serif;
+}
+main {
+  max-width: 1040px;
+  margin: auto;
+  padding: 24px max(16px, env(safe-area-inset-left));
+}
+header {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+header a {
+  margin-left: auto;
+}
+.eyebrow {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 0;
+  color: var(--db-primary);
+}
+h1 {
+  font-size: 26px;
+  margin: 0;
+}
+h2 {
+  font-size: 20px;
+  margin: 0 0 12px;
+}
+h3 {
+  font-size: 17px;
+  margin: 0 0 6px;
+}
+p {
+  margin: 8px 0 14px;
+}
+a {
+  color: var(--db-primary);
+}
+.panel {
+  background: var(--db-surface);
+  border: 1px solid var(--db-border);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 16px 0;
+  overflow-wrap: anywhere;
+}
+.controls,
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: end;
+}
+label {
+  display: grid;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  flex: 1;
+  min-width: 150px;
+}
+input,
+select,
+button {
+  font: inherit;
+  min-height: 44px;
+  padding: 10px 12px;
+  border: 1px solid var(--db-control-border);
+  border-radius: 7px;
+  max-width: 100%;
+}
+input,
+select {
+  width: 100%;
+  background: var(--db-surface);
+  color: var(--db-text);
+}
+button {
+  background: var(--db-primary);
+  color: var(--db-on-primary);
+  font-weight: 600;
+  cursor: pointer;
+}
+button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+button:hover {
+  background: var(--db-primary-hover);
+}
+:focus-visible {
+  outline: 3px solid var(--db-focus);
+  outline-offset: 3px;
+}
+#notice:empty {
+  display: none;
+}
+#notice {
+  padding: 12px;
+  border: 1px solid var(--db-border);
+  border-radius: 8px;
+  background: var(--db-surface);
+}
+.review {
+  border-color: var(--db-warning);
+  background: var(--db-warning-bg);
+}
+.receipt {
+  border-color: var(--db-success);
+  background: var(--db-success-bg);
+}
+.muted {
+  color: var(--db-muted);
+}
+form {
+  margin-top: 16px;
+}
+.delivery {
+  padding: 12px 0;
+  border-top: 1px solid var(--db-border);
+}
+[hidden] {
+  display: none !important;
+}
+@media (max-width: 600px) {
+  main {
+    padding-top: 16px;
+  }
+  .panel {
+    padding: 16px;
+  }
+  header a {
+    margin-left: 0;
+  }
+  .controls > * {
+    flex: 1 1 100%;
+  }
+  h1 {
+    font-size: 23px;
+  }
+  .actions button {
+    flex: 1;
+  }
+}

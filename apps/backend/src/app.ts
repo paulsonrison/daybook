@@ -1,3 +1,4 @@
+import { fieldTypeDefs, fieldResolvers } from './modules/field/schema.js';
 import { createAiProvider, type AiProvider } from './modules/ai/provider.js';
 import {
   assistantTypeDefs,
@@ -139,9 +140,11 @@ export function createApp({
       ${documentTypeDefs}
       ${preferenceTypeDefs}
       ${analyticsTypeDefs}
-      ${assistantTypeDefs}`,
+      ${assistantTypeDefs}
+      ${fieldTypeDefs}`,
       resolvers: {
         Query: {
+          ...fieldResolvers.Query,
           ...analyticsResolvers.Query,
           ...preferenceResolvers.Query,
           ...operationsResolvers.Query,
@@ -171,6 +174,7 @@ export function createApp({
           },
         },
         Mutation: {
+          ...fieldResolvers.Mutation,
           ...assistantResolvers.Mutation,
           ...preferenceResolvers.Mutation,
           ...operationsResolvers.Mutation,

@@ -162,36 +162,43 @@ export function overrideDelivery(
   input: DeliveryOverrideInput,
 ) {
   return configMutation(ctx, (c) =>
-    onceRequest(
-      c,
-      ctx.agent!.agencyId,
-      input.requestId,
-      'delivery.override',
-      input,
-      async () => {
-        const row = await findDelivery(c, idValue(input.id));
-        if (!row) return fail('Delivery not found.', 'NOT_FOUND');
-        versionMatches(row.version, input.version);
-        if (!['DELIVERED', 'MISSED', 'DAMAGED'].includes(input.status))
-          return fail('Choose delivered, missed or damaged.');
-        const reason = cleanText(input.reason, 'override reason', 500);
-        const updated = await updateDelivery(
-          c,
-          row.id,
-          input.status,
-          'AGENT',
-          reason,
-          input.status === 'DELIVERED' ? row.quantity : 0,
-        );
-        await audit(c, ctx, 'delivery', row.id, 'delivery.overridden', {
-          before: row.status,
-          after: input.status,
-          reason,
-        });
-        const { pricePaise: _, ...result } = updated;
-        return result;
-      },
-    ),
+    overrideDeliveryInTransaction(c, ctx, input),
+  );
+}
+export function overrideDeliveryInTransaction(
+  c: PoolClient,
+  ctx: RequestContext,
+  input: DeliveryOverrideInput,
+) {
+  return onceRequest(
+    c,
+    ctx.agent!.agencyId,
+    input.requestId,
+    'delivery.override',
+    input,
+    async () => {
+      const row = await findDelivery(c, idValue(input.id));
+      if (!row) return fail('Delivery not found.', 'NOT_FOUND');
+      versionMatches(row.version, input.version);
+      if (!['DELIVERED', 'MISSED', 'DAMAGED'].includes(input.status))
+        return fail('Choose delivered, missed or damaged.');
+      const reason = cleanText(input.reason, 'override reason', 500);
+      const updated = await updateDelivery(
+        c,
+        row.id,
+        input.status,
+        'AGENT',
+        reason,
+        input.status === 'DELIVERED' ? row.quantity : 0,
+      );
+      await audit(c, ctx, 'delivery', row.id, 'delivery.overridden', {
+        before: row.status,
+        after: input.status,
+        reason,
+      });
+      const { pricePaise: _, ...result } = updated;
+      return result;
+    },
   );
 }
 export const pressHolidays = (ctx: RequestContext) =>

@@ -140,112 +140,117 @@ async function confirm(
   });
 }
 export function recordPayment(ctx: RequestContext, input: PaymentInput) {
-  return configMutation(ctx, async (c) => {
-    const result = await onceRequest(
-      c,
-      ctx.agent!.agencyId,
-      input.requestId,
-      'RECORD_PAYMENT',
-      input,
-      async () => {
-        const residentId = idValue(input.residentId),
-          resident = await billingResident(c, residentId);
-        if (!resident) return fail('Resident not found.', 'NOT_FOUND');
-        if (resident.status === 'CLOSED' && input.purpose === 'DEPOSIT')
-          return fail('This account is closed.');
-        if (
-          !['ACCOUNT', 'DEPOSIT'].includes(input.purpose) ||
-          !['CASH', 'UPI', 'BANK', 'CHEQUE'].includes(input.method)
+  return configMutation(ctx, (c) => recordPaymentInTransaction(c, ctx, input));
+}
+// Reused by field synchronization under the same agency mutation lock.
+export async function recordPaymentInTransaction(
+  c: PoolClient,
+  ctx: RequestContext,
+  input: PaymentInput,
+) {
+  const result = await onceRequest(
+    c,
+    ctx.agent!.agencyId,
+    input.requestId,
+    'RECORD_PAYMENT',
+    input,
+    async () => {
+      const residentId = idValue(input.residentId),
+        resident = await billingResident(c, residentId);
+      if (!resident) return fail('Resident not found.', 'NOT_FOUND');
+      if (resident.status === 'CLOSED' && input.purpose === 'DEPOSIT')
+        return fail('This account is closed.');
+      if (
+        !['ACCOUNT', 'DEPOSIT'].includes(input.purpose) ||
+        !['CASH', 'UPI', 'BANK', 'CHEQUE'].includes(input.method)
+      )
+        return fail('Choose a valid receipt purpose and payment method.');
+      const amountPaise = parseMoney(input.amount);
+      if (amountPaise === 0n) return fail('Enter a payment greater than zero.');
+      calendarDate(input.date);
+      if (input.date > (await agencyToday(c)))
+        return fail('A payment cannot be received in the future.');
+      const unresolved = (
+        await c.query(
+          "SELECT id FROM daybook.payments WHERE resident_id=$1 AND purpose=$2 AND status='PENDING'",
+          [residentId, input.purpose],
         )
-          return fail('Choose a valid receipt purpose and payment method.');
-        const amountPaise = parseMoney(input.amount);
-        if (amountPaise === 0n)
-          return fail('Enter a payment greater than zero.');
-        calendarDate(input.date);
-        if (input.date > (await agencyToday(c)))
-          return fail('A payment cannot be received in the future.');
-        const unresolved = (
-          await c.query(
-            "SELECT id FROM daybook.payments WHERE resident_id=$1 AND purpose=$2 AND status='PENDING'",
-            [residentId, input.purpose],
-          )
-        ).rowCount;
-        if (unresolved)
-          return fail(
-            'Resolve the original unconfirmed payment before recording another operation for this account.',
-            'CONFLICT',
-          );
-        const reference = referenceValue(input.reference),
-          targetInvoiceId = input.targetInvoiceId
-            ? idValue(input.targetInvoiceId)
-            : null;
-        if (targetInvoiceId) {
-          const target = await findInvoice(c, targetInvoiceId);
-          if (
-            !target ||
-            target.residentId !== residentId ||
-            target.state !== 'ISSUED'
-          )
-            return fail('Invoice not found for this resident.', 'NOT_FOUND');
-          if (input.purpose !== 'ACCOUNT')
-            return fail('Deposits cannot target an invoice.');
-        }
-        if (input.method === 'CHEQUE' && input.confirmReceived)
-          return fail(
-            'Cheques remain pending until a separate clearing confirmation.',
-          );
-        if (input.method === 'CHEQUE' && !reference)
-          return fail('Record the cheque number before saving it.');
-        const payment = await insertPayment(
-          c,
-          ctx.agent!.agencyId,
-          ctx.agent!.id,
-          {
-            id: randomUUID(),
-            residentId,
-            requestId: idValue(input.requestId),
-            purpose: input.purpose,
-            method: input.method,
-            amountPaise,
-            date: input.date,
-            reference,
-            targetInvoiceId,
-          },
+      ).rowCount;
+      if (unresolved)
+        return fail(
+          'Resolve the original unconfirmed payment before recording another operation for this account.',
+          'CONFLICT',
         );
-        if (input.confirmReceived)
-          await confirm(
-            c,
-            ctx,
-            payment,
-            reference,
-            cleanText(input.confirmationNote, 'confirmation evidence', 1000),
-          );
-        else
-          await audit(c, ctx, 'PAYMENT', payment.id, 'FUNDS_PENDING', {
-            purpose: input.purpose,
-            method: input.method,
-            amount: moneyString(amountPaise),
-          });
-        if (input.collectorCustody) {
-          if (input.method !== 'CASH' || !input.confirmReceived)
-            fail('Confirm actual cash before assigning its custody.');
-          await classifyInTransaction(c, ctx, {
-            requestId: input.requestId,
-            paymentId: payment.id,
-            custody: input.collectorCustody,
-            staffId: input.collectorStaffId ?? undefined,
-            routeId: input.collectorRouteId ?? undefined,
-            reason: input.confirmationNote!,
-          });
-        } else if (input.collectorStaffId || input.collectorRouteId)
-          fail(
-            'Choose explicit collector custody before assigning staff or route.',
-          );
-        return { id: payment.id };
-      },
-    );
-    return paymentView(c, (await findPayment(c, result.id))!);
-  });
+      const reference = referenceValue(input.reference),
+        targetInvoiceId = input.targetInvoiceId
+          ? idValue(input.targetInvoiceId)
+          : null;
+      if (targetInvoiceId) {
+        const target = await findInvoice(c, targetInvoiceId);
+        if (
+          !target ||
+          target.residentId !== residentId ||
+          target.state !== 'ISSUED'
+        )
+          return fail('Invoice not found for this resident.', 'NOT_FOUND');
+        if (input.purpose !== 'ACCOUNT')
+          return fail('Deposits cannot target an invoice.');
+      }
+      if (input.method === 'CHEQUE' && input.confirmReceived)
+        return fail(
+          'Cheques remain pending until a separate clearing confirmation.',
+        );
+      if (input.method === 'CHEQUE' && !reference)
+        return fail('Record the cheque number before saving it.');
+      const payment = await insertPayment(
+        c,
+        ctx.agent!.agencyId,
+        ctx.agent!.id,
+        {
+          id: randomUUID(),
+          residentId,
+          requestId: idValue(input.requestId),
+          purpose: input.purpose,
+          method: input.method,
+          amountPaise,
+          date: input.date,
+          reference,
+          targetInvoiceId,
+        },
+      );
+      if (input.confirmReceived)
+        await confirm(
+          c,
+          ctx,
+          payment,
+          reference,
+          cleanText(input.confirmationNote, 'confirmation evidence', 1000),
+        );
+      else
+        await audit(c, ctx, 'PAYMENT', payment.id, 'FUNDS_PENDING', {
+          purpose: input.purpose,
+          method: input.method,
+          amount: moneyString(amountPaise),
+        });
+      if (input.collectorCustody) {
+        if (input.method !== 'CASH' || !input.confirmReceived)
+          fail('Confirm actual cash before assigning its custody.');
+        await classifyInTransaction(c, ctx, {
+          requestId: input.requestId,
+          paymentId: payment.id,
+          custody: input.collectorCustody,
+          staffId: input.collectorStaffId ?? undefined,
+          routeId: input.collectorRouteId ?? undefined,
+          reason: input.confirmationNote!,
+        });
+      } else if (input.collectorStaffId || input.collectorRouteId)
+        fail(
+          'Choose explicit collector custody before assigning staff or route.',
+        );
+      return { id: payment.id };
+    },
+  );
+  return paymentView(c, (await findPayment(c, result.id))!);
 }
 export function reconcilePayment(
   ctx: RequestContext,

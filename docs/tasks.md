@@ -22,7 +22,7 @@ Lifecycle: **Not started → To do → In review → Done**. Review findings ret
 | P09  | Staff pay, attendance, handover and cash closing            | In review   |
 | P10  | Durable worker, localized communications and direct contact | In review   |
 | P11  | Complete localization, reporting, analytics and appearance  | To do       |
-| P12  | Offline field sync and installable app shell                | Not started |
+| P12  | Offline field sync and installable app shell                | In review   |
 | P13  | Tenant AI assistant and encrypted cloud backup              | To do       |
 | P14  | Whole-project acceptance review and merge                   | Not started |
 
@@ -57,7 +57,7 @@ Lifecycle: **Not started → To do → In review → Done**. Review findings ret
 | US-025 | Automated Payment Alerts         | P10  | Medium   | In review   |
 | US-026 | Automated Daily Manifest Cron    | P05  | High     | In review   |
 | US-027 | Field Delivery UI                | P05  | High     | In review   |
-| US-028 | Offline Delivery Sync            | P12  | High     | Not started |
+| US-028 | Offline Delivery Sync            | P12  | High     | In review   |
 | US-029 | Rapid Cash Handover UI           | P09  | Medium   | In review   |
 | US-030 | UI Customization                 | P11  | Medium   | To do       |
 | US-031 | Multi-Tenant Architecture        | P01  | High     | In review   |

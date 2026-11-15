@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#087f73" />
+    <title>Daybook · Field workspace</title>
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="/pwa/icon-192.png" />
+    <link rel="stylesheet" href="/pwa/shared.css" />
+    <link rel="stylesheet" href="/pwa/field.css" />
+    <script type="module" src="/pwa/field.js"></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <img src="/pwa/brand.svg" width="33" height="36" alt="Daybook" />
+        <div>
+          <p class="eyebrow">DAYBOOK</p>
+          <h1>Field workspace</h1>
+        </div>
+        <a href="/">Agency workspace</a>
+      </header>
+      <p id="network" role="status"></p>
+      <section class="panel" aria-label="Install Daybook">
+        <h2>Take Daybook with you</h2>
+        <p>
+          Install from your browser menu. On iPhone, use Share → Add to Home
+          Screen. Download a route while connected, then keep this screen open
+          to work offline.
+        </p>
+        <button id="install" hidden>Install Daybook</button>
+        <p>
+          After an offline reload, reconnect to verify your account before
+          viewing saved details. Pending entries stay on this device until
+          confirmed, discarded after review, or cleared by sign out/account
+          change.
+        </p>
+      </section>
+      <p id="notice" role="status" aria-live="polite"></p>
+      <section id="locked" class="panel">
+        <h2>Verify your account</h2>
+        <p>
+          Reconnect to verify your account and unlock saved route details. Your
+          pending entries are preserved.
+        </p>
+        <button id="verify">Verify account</button><a href="/">Sign in</a>
+      </section>
+      <div id="workspace" hidden>
+        <section class="panel">
+          <h2 id="identity"></h2>
+          <div class="controls">
+            <label>Route<select id="route"></select></label
+            ><label>Delivery date<input type="date" id="date" required /></label
+            ><button id="download">Download route</button
+            ><button id="sync">Sync pending entries</button
+            ><button id="signout">Sign out and clear device</button>
+          </div>
+          <p id="downloaded"></p>
+        </section>
+        <section aria-label="Pending entries" id="pending"></section>
+        <section aria-label="Confirmed entries" id="receipts"></section>
+        <section aria-label="Downloaded route" id="residents"></section>
+      </div>
+      <noscript
+        >Enable JavaScript to install Daybook and use the field
+        workspace.</noscript
+      >
+    </main>
+  </body>
+</html>
