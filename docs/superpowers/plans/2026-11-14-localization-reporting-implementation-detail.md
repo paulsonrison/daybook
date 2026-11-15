@@ -12,6 +12,10 @@
 
 **Documentation research:** Context7 retrieved the official [`write-excel-file` API](https://gitlab.com/catamphetamine/write-excel-file/-/blob/main/_autodocs/api-reference/writeXlsxFile.md) and [cell types](https://gitlab.com/catamphetamine/write-excel-file/-/blob/main/_autodocs/types.md): Node output supports a buffer/stream and explicit String cells differ from Formula cells. This is a candidate, not an installed or version-verified dependency. It also retrieved Yoga's [result-processing hook types](https://github.com/graphql-hive/graphql-yoga/blob/main/packages/graphql-yoga/src/plugins/types.ts), which expose the request, server context and replacement result. Check the installed Yoga types and selected writer release before adopting either API; test concurrent locale isolation and actual XLSX string/formula behavior.
 
+## Execution ruling — 15 November
+
+The translation foundation and catalogue flows are verified. Keep Task 2 open while implementing Tasks 3–5: its acceptance includes report screens and export templates that those tasks create. Add their dictionary entries with the implementation, then return to complete all remaining business-screen translations and run the full translation gate before closing P11. This changes the order of the closing translation pass, not its scope or acceptance. P12 still depends on a completed P11.
+
 ## Global constraints
 
 - “Dictionary keys cover all screens, validation, reports and templates; do not treat untranslated fallback as localization completion.”

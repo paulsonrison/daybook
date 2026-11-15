@@ -1,4 +1,6 @@
 'use client';
+import { useI18n } from '@daybook/ui/i18n';
+import { translateRendered } from '@daybook/ui/messages';
 import { ResidentContact } from '../communications/resident-contact';
 import { useEffect, useState } from 'react';
 import { observer } from 'mobx-react-lite';
@@ -20,6 +22,21 @@ export const CatalogScreen = observer(function CatalogScreen({
 }: {
   kind: 'publication' | 'resident';
 }) {
+  const { t, locale } = useI18n();
+  const codeLabels: Record<string, string> = {
+    ACTIVE: 'Active',
+    INACTIVE: 'Inactive',
+    SUSPENDED: 'Suspended',
+    CLOSED: 'Closed',
+    DAILY: 'Daily',
+    WEEKLY: 'Weekly',
+    FORTNIGHTLY: 'Fortnightly',
+    MONTHLY: 'Monthly',
+    YEARLY: 'Yearly',
+    MORNING: 'Morning',
+    EVENING: 'Evening',
+  };
+  const displayCode = (value: string) => t(codeLabels[value] ?? value);
   const [store] = useState(() => new CatalogStore());
   useEffect(() => {
     void store.load();
@@ -51,7 +68,15 @@ export const CatalogScreen = observer(function CatalogScreen({
   const source = kind === 'publication' ? store.publications : store.residents;
   const rows = source.filter((r) =>
     ('edition' in r
-      ? [r.name, r.edition, r.language, r.dispatch, r.frequency]
+      ? [
+          r.name,
+          r.edition,
+          r.language,
+          r.dispatch,
+          r.frequency,
+          displayCode(r.dispatch),
+          displayCode(r.frequency),
+        ]
       : [r.name, r.code, r.address, r.phone, r.sector]
     )
       .join(' ')
@@ -74,7 +99,7 @@ export const CatalogScreen = observer(function CatalogScreen({
   const publications: Column<Publication>[] = [
     {
       key: 'name',
-      header: 'Publication',
+      header: t('Publication'),
       render: (r) => (
         <>
           <strong>{r.name}</strong>
@@ -86,43 +111,43 @@ export const CatalogScreen = observer(function CatalogScreen({
     },
     {
       key: 'schedule',
-      header: 'Publishing',
-      render: (r) => `${r.frequency} · ${r.dispatch}`,
+      header: t('Publishing'),
+      render: (r) => `${displayCode(r.frequency)} · ${displayCode(r.dispatch)}`,
     },
     {
       key: 'weekday',
-      header: 'Weekday price',
+      header: t('Weekday price'),
       render: (r) => formatMoney(r.weekdayPrice),
     },
     {
       key: 'weekend',
-      header: 'Weekend price',
+      header: t('Weekend price'),
       render: (r) => formatMoney(r.weekendPrice),
     },
     {
       key: 'cost',
-      header: 'Net cost',
+      header: t('Net cost'),
       render: (r) => formatMoney(r.procurementNetCost),
     },
     {
       key: 'status',
-      header: 'Status',
+      header: t('Status'),
       render: (r) => (
         <Badge tone={r.active ? 'success' : 'neutral'}>
-          {r.active ? 'Active' : 'Inactive'}
+          {t(r.active ? 'Active' : 'Inactive')}
         </Badge>
       ),
     },
     {
       key: 'edit',
-      header: 'Action',
+      header: t('Action'),
       render: (r) => (
         <div className="db-row">
           <Button variant="tertiary" onClick={() => open(r)}>
-            Edit publication
+            {t('Edit publication')}
           </Button>
           <Button variant="tertiary" onClick={() => setPricingPublication(r)}>
-            Price rules
+            {t('Price rules')}
           </Button>
         </div>
       ),
@@ -131,7 +156,7 @@ export const CatalogScreen = observer(function CatalogScreen({
   const residents: Column<Resident>[] = [
     {
       key: 'name',
-      header: 'Resident',
+      header: t('Resident'),
       render: (r) => (
         <>
           <strong>{r.name}</strong>
@@ -144,50 +169,50 @@ export const CatalogScreen = observer(function CatalogScreen({
     },
     {
       key: 'address',
-      header: 'Delivery address',
+      header: t('Delivery address'),
       render: (r) => (
         <>
           {r.address}
           <div className="db-muted">
-            {r.sector} · Drop {r.dropOrder}
+            {r.sector} · {t('Drop {order}', { order: r.dropOrder })}
           </div>
         </>
       ),
     },
     {
       key: 'route',
-      header: 'Route',
+      header: t('Route'),
       render: (r) =>
         store.routes.find((route) => route.id === r.routeId)?.name ??
-        'Unavailable',
+        t('Unavailable'),
     },
     {
       key: 'deposit',
-      header: 'Refundable deposit',
+      header: t('Refundable deposit'),
       render: (r) => formatMoney(r.depositBalance),
     },
     {
       key: 'status',
-      header: 'Status',
+      header: t('Status'),
       render: (r) => (
         <Badge tone={r.status === 'ACTIVE' ? 'success' : 'neutral'}>
-          {r.status}
+          {displayCode(r.status)}
         </Badge>
       ),
     },
     {
       key: 'edit',
-      header: 'Action',
+      header: t('Action'),
       render: (r) => (
         <div className="db-row">
           <Button variant="tertiary" onClick={() => open(r)}>
-            Edit resident
+            {t('Edit resident')}
           </Button>
           <Button
             variant="tertiary"
             onClick={() => setSubscriptionsResident(r)}
           >
-            Manage subscriptions
+            {t('Manage subscriptions')}
           </Button>
         </div>
       ),
@@ -197,41 +222,43 @@ export const CatalogScreen = observer(function CatalogScreen({
     <div className="agency-page">
       <header className="agency-page-heading">
         <div>
-          <p className="db-eyebrow">Agency workspace</p>
-          <h1>{title}</h1>
+          <p className="db-eyebrow">{t('Agency workspace')}</p>
+          <h1>{t(title)}</h1>
           <p className="db-muted">
             {kind === 'publication'
-              ? 'Manage editions, publishing schedules and copy prices.'
-              : 'Maintain resident details, delivery order and refundable deposits.'}
+              ? t('Manage editions, publishing schedules and copy prices.')
+              : t(
+                  'Maintain resident details, delivery order and refundable deposits.',
+                )}
           </p>
         </div>
         <Button disabled={store.state !== 'ready'} onClick={() => open(null)}>
-          Add {kind}
+          {t(kind === 'publication' ? 'Add publication' : 'Add resident')}
         </Button>
       </header>
       {store.error && (
         <Notification
           tone="error"
-          title="Unable to refresh records"
-          description={store.error}
-          action={<Button onClick={store.load}>Try again</Button>}
+          title={t('Unable to refresh records')}
+          description={translateRendered(locale, store.error)}
+          action={<Button onClick={store.load}>{t('Try again')}</Button>}
         />
       )}
       {notice && (
         <Notification
           tone="success"
-          title="Changes saved"
-          description={notice}
+          title={t('Changes saved')}
+          description={translateRendered(locale, notice)}
           onDismiss={() => setNotice('')}
         />
       )}
       <Card>
         <div className="agency-toolbar">
           <SearchField
-            label="Search records"
+            label={t('Search records')}
             value={search}
             onValueChange={setSearch}
-            placeholder="Search by name, edition or address"
+            placeholder={t('Search by name, edition or address')}
           />
         </div>
         {kind === 'publication' ? (
@@ -239,12 +266,14 @@ export const CatalogScreen = observer(function CatalogScreen({
             rows={rows as Publication[]}
             columns={publications}
             rowKey={(r) => r.id}
-            caption="Publication catalog"
+            caption={t('Publication catalog')}
             state={state}
             onRetry={store.load}
-            emptyTitle="No publications yet"
+            emptyTitle={t('No publications yet')}
             emptyAction={
-              <Button onClick={() => open(null)}>Add first publication</Button>
+              <Button onClick={() => open(null)}>
+                {t('Add first publication')}
+              </Button>
             }
           />
         ) : (
@@ -252,12 +281,14 @@ export const CatalogScreen = observer(function CatalogScreen({
             rows={rows as Resident[]}
             columns={residents}
             rowKey={(r) => r.id}
-            caption="Resident directory"
+            caption={t('Resident directory')}
             state={state}
             onRetry={store.load}
-            emptyTitle="No residents yet"
+            emptyTitle={t('No residents yet')}
             emptyAction={
-              <Button onClick={() => open(null)}>Add first resident</Button>
+              <Button onClick={() => open(null)}>
+                {t('Add first resident')}
+              </Button>
             }
           />
         )}

@@ -66,6 +66,7 @@ export function inspectCoverage(inventory, catalogues) {
       if (
         locale !== 'en' &&
         value === catalogues.en?.[key] &&
+        /[a-zA-Z]/.test(key.replace(/\{[A-Za-z0-9_]+\}/g, '')) &&
         !localeNeutralKeys.has(key)
       )
         issues.push({

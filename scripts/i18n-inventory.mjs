@@ -124,6 +124,11 @@ export function scanSource(source, file) {
           (ts.isPropertyAssignment(p) &&
             p.name.getText(sf).replaceAll(/["']/g, '') === 'error'),
         attribute = ts.isJsxAttribute(p);
+      if (
+        ts.isExpressionStatement(p) &&
+        ['use client', 'use server', 'use strict'].includes(s)
+      )
+        return;
       const technicalProperty =
         ts.isPropertyAssignment(p) &&
         technicalProperties.has(p.name.getText(sf).replaceAll(/["']/g, ''));

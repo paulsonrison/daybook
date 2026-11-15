@@ -1,6 +1,8 @@
 'use client';
 import { useEffect, useState, type ReactNode } from 'react';
 import { observer } from 'mobx-react-lite';
+import { useI18n } from '@daybook/ui/i18n';
+import { translateRendered } from '@daybook/ui/messages';
 import {
   Button,
   Checkbox,
@@ -53,12 +55,13 @@ function DayChoices({
   value: number[];
   onChange: (value: number[]) => void;
 }) {
+  const { t } = useI18n();
   return (
-    <div role="group" aria-label="Weekdays">
+    <div role="group" aria-label={t('Weekdays')}>
       {days.map((label, day) => (
         <Checkbox
           key={day}
-          label={label}
+          label={t(label)}
           checked={value.includes(day)}
           onChange={(e) =>
             onChange(
@@ -85,6 +88,7 @@ const Panel = observer(function Panel({
   closeLabel: string;
   children: ReactNode;
 }) {
+  const { t, locale } = useI18n();
   return (
     <Dialog
       open
@@ -100,27 +104,27 @@ const Panel = observer(function Panel({
       {store.error && (
         <DataState
           kind="error"
-          title="Records unavailable"
-          description={store.error}
+          title={t('Records unavailable')}
+          description={translateRendered(locale, store.error)}
           onRetry={store.load}
         />
       )}{' '}
       {store.saveError && (
         <Notification
           tone="error"
-          title="Changes were not saved"
-          description={store.saveError}
+          title={t('Changes were not saved')}
+          description={translateRendered(locale, store.saveError)}
         />
       )}{' '}
       {store.notice && (
         <Notification
           tone="success"
-          title="Changes saved"
-          description={store.notice}
+          title={t('Changes saved')}
+          description={translateRendered(locale, store.notice)}
         />
       )}{' '}
       {store.state === 'loading' ? (
-        <DataState kind="loading" title="Loading records" />
+        <DataState kind="loading" title={t('Loading records')} />
       ) : store.state === 'ready' ? (
         children
       ) : null}
@@ -136,7 +140,18 @@ export const SubscriptionsPanel = observer(function SubscriptionsPanel({
   catalog: CatalogStore;
   onClose: () => void;
 }) {
+  const { t } = useI18n();
   const store = useSubscriptions();
+  const statusLabel = (value: string) =>
+    t(
+      (
+        {
+          ACTIVE: 'Active',
+          PAUSED: 'Paused',
+          CANCELLED: 'Cancelled',
+        } as Record<string, string>
+      )[value] ?? value,
+    );
   const empty = {
     id: undefined as string | undefined,
     version: undefined as number | undefined,
@@ -175,40 +190,48 @@ export const SubscriptionsPanel = observer(function SubscriptionsPanel({
   }
   const publicationName = (id: string) =>
     catalog.publications.find((p) => p.id === id)?.name ??
-    'Unavailable publication';
+    t('Unavailable publication');
   return (
     <Panel
-      title={`${resident.name} · subscriptions`}
-      closeLabel="Close subscriptions"
+      title={t('{name} · subscriptions', { name: resident.name })}
+      closeLabel={t('Close subscriptions')}
       store={store}
       onClose={onClose}
     >
       <DataTable
         rows={subscriptions}
         rowKey={(s) => s.id}
-        caption="Resident subscriptions"
-        emptyTitle="No subscriptions yet"
+        caption={t('Resident subscriptions')}
+        emptyTitle={t('No subscriptions yet')}
         columns={[
           {
             key: 'publication',
-            header: 'Publication',
+            header: t('Publication'),
             render: (s) => publicationName(s.publicationId),
           },
           {
             key: 'schedule',
-            header: 'Schedule',
-            render: (s) => `${s.cadence} · ${s.quantity} copies · ${s.status}`,
+            header: t('Schedule'),
+            render: (s) =>
+              t('{cadence} · {quantity} copies · {status}', {
+                cadence: t(
+                  cadenceOptions.find((option) => option.value === s.cadence)
+                    ?.label ?? s.cadence,
+                ),
+                quantity: s.quantity,
+                status: statusLabel(s.status),
+              }),
           },
           {
             key: 'edit',
-            header: 'Action',
+            header: t('Action'),
             render: (s) => (
               <Button
                 variant="tertiary"
                 disabled={store.saving}
                 onClick={() => edit(s)}
               >
-                Edit subscription
+                {t('Edit subscription')}
               </Button>
             ),
           },
@@ -235,19 +258,19 @@ export const SubscriptionsPanel = observer(function SubscriptionsPanel({
         }}
       >
         <fieldset disabled={store.saving}>
-          <h3>{draft.id ? 'Edit subscription' : 'Assign publication'}</h3>
+          <h3>{t(draft.id ? 'Edit subscription' : 'Assign publication')}</h3>
           <Select
-            label="Publication"
+            label={t('Publication')}
             required
             disabled={Boolean(draft.id)}
             value={draft.publicationId}
             options={[
-              { value: '', label: 'Choose publication' },
+              { value: '', label: t('Choose publication') },
               ...catalog.publications
                 .filter((p) => p.active || p.id === draft.publicationId)
                 .map((p) => ({
                   value: p.id,
-                  label: `${p.name} · ${p.edition} · ${p.dispatch}`,
+                  label: `${p.name} · ${p.edition} · ${t(p.dispatch === 'MORNING' ? 'Morning' : p.dispatch === 'EVENING' ? 'Evening' : p.dispatch)}`,
                 })),
             ]}
             onChange={(e) =>
@@ -255,15 +278,18 @@ export const SubscriptionsPanel = observer(function SubscriptionsPanel({
             }
           />
           <Select
-            label="Delivery cadence"
+            label={t('Delivery cadence')}
             value={draft.cadence}
-            options={cadenceOptions}
+            options={cadenceOptions.map((option) => ({
+              ...option,
+              label: t(option.label),
+            }))}
             onChange={(e) =>
               setDraft((d) => ({ ...d, cadence: e.target.value }))
             }
           />
           <Field
-            label="Subscription start"
+            label={t('Subscription start')}
             required
             type="date"
             value={draft.startDate}
@@ -272,7 +298,7 @@ export const SubscriptionsPanel = observer(function SubscriptionsPanel({
             }
           />
           <Field
-            label="Subscription end"
+            label={t('Subscription end')}
             type="date"
             value={draft.endDate}
             onChange={(e) =>
@@ -286,7 +312,7 @@ export const SubscriptionsPanel = observer(function SubscriptionsPanel({
             />
           )}
           <Field
-            label="Copies"
+            label={t('Copies')}
             type="number"
             required
             min={1}
@@ -297,38 +323,38 @@ export const SubscriptionsPanel = observer(function SubscriptionsPanel({
             }
           />
           <Select
-            label="Subscription status"
+            label={t('Subscription status')}
             value={draft.status}
             options={['ACTIVE', 'PAUSED', 'CANCELLED'].map((value) => ({
               value,
-              label: value,
+              label: statusLabel(value),
             }))}
             onChange={(e) =>
               setDraft((d) => ({ ...d, status: e.target.value }))
             }
           />
           <Button type="submit" loading={store.saving}>
-            Save subscription
+            {t('Save subscription')}
           </Button>
           {draft.id && (
             <Button variant="tertiary" onClick={() => setDraft(empty)}>
-              New assignment
+              {t('New assignment')}
             </Button>
           )}
         </fieldset>
       </form>
-      <h3>Vacation & suspension</h3>
+      <h3>{t('Vacation & suspension')}</h3>
       <ul>
         {holds.map((h) => (
           <li key={h.id}>
-            {h.startDate} → {h.resumeDate ?? 'Until resumed'} ·{' '}
-            {h.active ? 'Active' : 'Ended'}{' '}
+            {h.startDate} → {h.resumeDate ?? t('Until resumed')} ·{' '}
+            {t(h.active ? 'Active' : 'Ended')}{' '}
             <Button
               variant="tertiary"
               disabled={store.saving}
               onClick={() => editHold(h)}
             >
-              Edit hold
+              {t('Edit hold')}
             </Button>
           </li>
         ))}
@@ -351,10 +377,10 @@ export const SubscriptionsPanel = observer(function SubscriptionsPanel({
       >
         <fieldset disabled={store.saving}>
           <Select
-            label="Pause scope"
+            label={t('Pause scope')}
             value={hold.subscriptionId}
             options={[
-              { value: '', label: 'All resident publications' },
+              { value: '', label: t('All resident publications') },
               ...subscriptions.map((s) => ({
                 value: s.id,
                 label: publicationName(s.publicationId),
@@ -365,7 +391,7 @@ export const SubscriptionsPanel = observer(function SubscriptionsPanel({
             }
           />
           <Field
-            label="Pause start"
+            label={t('Pause start')}
             type="date"
             required
             value={hold.startDate}
@@ -374,27 +400,29 @@ export const SubscriptionsPanel = observer(function SubscriptionsPanel({
             }
           />
           <Field
-            label="Resume date"
+            label={t('Resume date')}
             type="date"
-            hint="Delivery resumes on this date. Leave blank for an indefinite suspension."
+            hint={t(
+              'Delivery resumes on this date. Leave blank for an indefinite suspension.',
+            )}
             value={hold.resumeDate}
             onChange={(e) =>
               setHold((h) => ({ ...h, resumeDate: e.target.value }))
             }
           />
           <Checkbox
-            label="Hold active"
+            label={t('Hold active')}
             checked={hold.active}
             onChange={(e) =>
               setHold((h) => ({ ...h, active: e.target.checked }))
             }
           />
           <Button type="submit" loading={store.saving}>
-            Save vacation hold
+            {t('Save vacation hold')}
           </Button>
           {hold.id && (
             <Button variant="tertiary" onClick={() => setHold(blankHold)}>
-              New hold
+              {t('New hold')}
             </Button>
           )}
         </fieldset>
@@ -409,6 +437,7 @@ export const PriceRulesPanel = observer(function PriceRulesPanel({
   publication: Publication;
   onClose: () => void;
 }) {
+  const { t } = useI18n();
   const store = useSubscriptions();
   const empty = {
     id: undefined as string | undefined,
@@ -425,8 +454,8 @@ export const PriceRulesPanel = observer(function PriceRulesPanel({
   }
   return (
     <Panel
-      title={`${publication.name} · price rules`}
-      closeLabel="Close price rules"
+      title={t('{name} · price rules', { name: publication.name })}
+      closeLabel={t('Close price rules')}
       store={store}
       onClose={onClose}
     >
@@ -435,38 +464,42 @@ export const PriceRulesPanel = observer(function PriceRulesPanel({
           (r) => r.publicationId === publication.id,
         )}
         rowKey={(r) => r.id}
-        caption="Effective price rules"
-        emptyTitle="No price overrides"
+        caption={t('Effective price rules')}
+        emptyTitle={t('No price overrides')}
         columns={[
           {
             key: 'validity',
-            header: 'Validity',
+            header: t('Validity'),
             render: (r) =>
-              `${r.startDate} → ${r.endDate ?? 'Permanent'} · ${r.active ? 'Active' : 'Inactive'}`,
+              t('{start} → {end} · {status}', {
+                start: r.startDate,
+                end: r.endDate ?? t('Permanent'),
+                status: t(r.active ? 'Active' : 'Inactive'),
+              }),
           },
           {
             key: 'days',
-            header: 'Weekdays',
+            header: t('Weekdays'),
             render: (r) =>
               r.weekdays.length
-                ? r.weekdays.map((d) => days[d]).join(', ')
-                : 'Every date in range',
+                ? r.weekdays.map((d) => t(days[d])).join(', ')
+                : t('Every date in range'),
           },
           {
             key: 'price',
-            header: 'Copy price',
+            header: t('Copy price'),
             render: (r) => formatMoney(r.price),
           },
           {
             key: 'edit',
-            header: 'Action',
+            header: t('Action'),
             render: (r) => (
               <Button
                 variant="tertiary"
                 disabled={store.saving}
                 onClick={() => edit(r)}
               >
-                Edit price rule
+                {t('Edit price rule')}
               </Button>
             ),
           },
@@ -489,7 +522,7 @@ export const PriceRulesPanel = observer(function PriceRulesPanel({
       >
         <fieldset disabled={store.saving}>
           <Field
-            label="Effective from"
+            label={t('Effective from')}
             type="date"
             required
             value={draft.startDate}
@@ -498,7 +531,7 @@ export const PriceRulesPanel = observer(function PriceRulesPanel({
             }
           />
           <Field
-            label="Effective through"
+            label={t('Effective through')}
             type="date"
             value={draft.endDate}
             onChange={(e) =>
@@ -506,33 +539,34 @@ export const PriceRulesPanel = observer(function PriceRulesPanel({
             }
           />
           <p className="db-muted">
-            Select weekdays for recurring rates. With no weekdays selected, the
-            price applies to every date in the bounded range.
+            {t(
+              'Select weekdays for recurring rates. With no weekdays selected, the price applies to every date in the bounded range.',
+            )}
           </p>
           <DayChoices
             value={draft.weekdays}
             onChange={(weekdays) => setDraft((d) => ({ ...d, weekdays }))}
           />
           <Field
-            label="Override price"
+            label={t('Override price')}
             required
             inputMode="decimal"
             value={draft.price}
             onChange={(e) => setDraft((d) => ({ ...d, price: e.target.value }))}
           />
           <Checkbox
-            label="Price rule active"
+            label={t('Price rule active')}
             checked={draft.active}
             onChange={(e) =>
               setDraft((d) => ({ ...d, active: e.target.checked }))
             }
           />
           <Button type="submit" loading={store.saving}>
-            Save price rule
+            {t('Save price rule')}
           </Button>
           {draft.id && (
             <Button variant="tertiary" onClick={() => setDraft(empty)}>
-              New price rule
+              {t('New price rule')}
             </Button>
           )}
         </fieldset>

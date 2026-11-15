@@ -1,5 +1,27 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
+
+test('language-free frames retain symbols and parameters but still require explicit native entries', async () => {
+  const { inspectCoverage } = await import('./i18n-coverage.mjs');
+  const key = '{start} → {end} · {status}';
+  const inventory = [{ message: key, locations: [] }];
+  const table = { [key]: key };
+  assert.equal(
+    inspectCoverage(inventory, { en: table, ml: table, hi: table }).complete,
+    true,
+  );
+  assert.equal(
+    inspectCoverage(inventory, { en: table, ml: table, hi: {} }).complete,
+    false,
+  );
+  assert.ok(
+    inspectCoverage(inventory, {
+      en: table,
+      ml: table,
+      hi: { [key]: '{start} → {end}' },
+    }).issues.some((row) => row.kind === 'parameters'),
+  );
+});
 test('localization coverage rejects fallback, empty native text and missing interpolation parameters', async () => {
   const feature = await import('./i18n-coverage.mjs').catch((error) => {
     if (error.code === 'ERR_MODULE_NOT_FOUND') return null;

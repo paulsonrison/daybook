@@ -85,7 +85,7 @@ test('agent assigns publication, sets vacation and configures effective price', 
     .click();
   await expect(
     panel.getByRole('row').filter({ hasText: 'Morning Daily' }),
-  ).toContainText('WEEKDAYS');
+  ).toContainText('Custom weekdays');
   await panel.getByLabel(/^Pause start/).fill('2024-02-01');
   await panel.getByLabel(/^Resume date/).fill('2024-02-10');
   await panel

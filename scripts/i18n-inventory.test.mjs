@@ -1,6 +1,18 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 
+test('framework directives are code while visible client-facing copy remains inventoried', async () => {
+  const { scanSource } = await import('./i18n-inventory.mjs');
+  const rows = scanSource(
+    '"use client"; function Screen(){"use strict"; return <h1>Client workspace</h1>;}',
+    'apps/frontend/src/features/example.tsx',
+  );
+  assert.deepEqual(
+    rows.map((row) => row.message),
+    ['Client workspace'],
+  );
+});
+
 test('operational error and warning assignments retain punctuation without accepting CSS', async () => {
   const { scanSource } = await import('./i18n-inventory.mjs');
   const rows = scanSource(

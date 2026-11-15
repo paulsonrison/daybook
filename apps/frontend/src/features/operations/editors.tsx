@@ -1,6 +1,8 @@
 'use client';
 import { useId, useState, type FormEvent, type ReactNode } from 'react';
 import { observer } from 'mobx-react-lite';
+import { useI18n } from '@daybook/ui/i18n';
+import { translateRendered } from '@daybook/ui/messages';
 import {
   Button,
   Checkbox,
@@ -26,6 +28,7 @@ export const Editor = observer(function Editor({
   onSave: () => Promise<void>;
   children: ReactNode;
 }) {
+  const { t, locale } = useI18n();
   const id = useId();
   return (
     <Dialog
@@ -36,7 +39,7 @@ export const Editor = observer(function Editor({
       footer={
         <div className="db-row">
           <Button variant="secondary" disabled={store.saving} onClick={onClose}>
-            Cancel
+            {t('Cancel')}
           </Button>
           <Button type="submit" form={id} loading={store.saving}>
             {label}
@@ -55,8 +58,8 @@ export const Editor = observer(function Editor({
         {store.saveError && (
           <Notification
             tone="error"
-            title="Changes were not saved"
-            description={store.saveError}
+            title={t('Changes were not saved')}
+            description={translateRendered(locale, store.saveError)}
           />
         )}
         <fieldset disabled={store.saving}>{children}</fieldset>

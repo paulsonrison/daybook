@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import { useI18n } from '@daybook/ui/i18n';
 import { observer } from 'mobx-react-lite';
 import { Checkbox, Field, Select } from '@daybook/ui';
 import { Editor } from '../operations/editors';
@@ -13,10 +14,21 @@ const days = [
   'Friday',
   'Saturday',
 ];
-const options = (values: string[]) =>
+const publicationKinds: Record<string, string> = {
+  NEWSPAPER: 'Newspaper',
+  MAGAZINE: 'Magazine',
+  PERIODICAL: 'Periodical',
+  SUPPLEMENT: 'Supplement',
+};
+const options = (
+  values: string[],
+  translate: (value: string) => string = (value) => value,
+) =>
   values.map((value) => ({
     value,
-    label: value.charAt(0) + value.slice(1).toLowerCase(),
+    label: translate(
+      publicationKinds[value] ?? value.charAt(0) + value.slice(1).toLowerCase(),
+    ),
   }));
 export const PublicationEditor = observer(function PublicationEditor({
   record,
@@ -27,6 +39,7 @@ export const PublicationEditor = observer(function PublicationEditor({
   store: CatalogStore;
   onClose: (saved?: boolean) => void;
 }) {
+  const { t } = useI18n();
   const [draft, setDraft] = useState({
     name: record?.name ?? '',
     edition: record?.edition ?? '',
@@ -47,8 +60,8 @@ export const PublicationEditor = observer(function PublicationEditor({
   ) => setDraft((d) => ({ ...d, [key]: value }));
   return (
     <Editor
-      title={record ? 'Edit publication' : 'Add publication'}
-      label="Save publication"
+      title={t(record ? 'Edit publication' : 'Add publication')}
+      label={t('Save publication')}
       store={store}
       onClose={() => onClose()}
       onSave={async () => {
@@ -65,55 +78,55 @@ export const PublicationEditor = observer(function PublicationEditor({
       }}
     >
       <Field
-        label="Publication name"
+        label={t('Publication name')}
         required
         maxLength={120}
         value={draft.name}
         onChange={(e) => change('name', e.target.value)}
       />
       <Field
-        label="Edition"
+        label={t('Edition')}
         required
         maxLength={100}
         value={draft.edition}
         onChange={(e) => change('edition', e.target.value)}
       />
       <Select
-        label="Publication type"
+        label={t('Publication type')}
         value={draft.kind}
-        options={options(['NEWSPAPER', 'MAGAZINE', 'PERIODICAL', 'SUPPLEMENT'])}
+        options={options(
+          ['NEWSPAPER', 'MAGAZINE', 'PERIODICAL', 'SUPPLEMENT'],
+          t,
+        )}
         onChange={(e) => change('kind', e.target.value)}
       />
       <Field
-        label="Language"
+        label={t('Language')}
         required
         maxLength={40}
         value={draft.language}
         onChange={(e) => change('language', e.target.value)}
       />
       <Select
-        label="Dispatch"
+        label={t('Dispatch')}
         value={draft.dispatch}
-        options={options(['MORNING', 'EVENING'])}
+        options={options(['MORNING', 'EVENING'], t)}
         onChange={(e) => change('dispatch', e.target.value)}
       />
       <Select
-        label="Publishing frequency"
+        label={t('Publishing frequency')}
         value={draft.frequency}
-        options={options([
-          'DAILY',
-          'WEEKLY',
-          'FORTNIGHTLY',
-          'MONTHLY',
-          'YEARLY',
-        ])}
+        options={options(
+          ['DAILY', 'WEEKLY', 'FORTNIGHTLY', 'MONTHLY', 'YEARLY'],
+          t,
+        )}
         onChange={(e) => change('frequency', e.target.value)}
       />
-      <div role="group" aria-label="Publishing weekdays">
+      <div role="group" aria-label={t('Publishing weekdays')}>
         {days.map((day, index) => (
           <Checkbox
             key={day}
-            label={day}
+            label={t(day)}
             checked={draft.publishingDays.includes(index)}
             onChange={(e) =>
               change(
@@ -128,7 +141,7 @@ export const PublicationEditor = observer(function PublicationEditor({
       </div>
       {['FORTNIGHTLY', 'MONTHLY', 'YEARLY'].includes(draft.frequency) && (
         <Field
-          label="Anchor issue date"
+          label={t('Anchor issue date')}
           type="date"
           required
           value={draft.anchorDate}
@@ -136,28 +149,30 @@ export const PublicationEditor = observer(function PublicationEditor({
         />
       )}
       <Field
-        label="Weekday price"
+        label={t('Weekday price')}
         inputMode="decimal"
         required
         value={draft.weekdayPrice}
         onChange={(e) => change('weekdayPrice', e.target.value)}
       />
       <Field
-        label="Weekend price"
+        label={t('Weekend price')}
         inputMode="decimal"
         required
         value={draft.weekendPrice}
         onChange={(e) => change('weekendPrice', e.target.value)}
       />
       <Field
-        label="Procurement net cost"
+        label={t('Procurement net cost')}
         inputMode="decimal"
-        hint="Cost per copy after publisher margin. Leave blank if unknown."
+        hint={t(
+          'Cost per copy after publisher margin. Leave blank if unknown.',
+        )}
         value={draft.procurementNetCost}
         onChange={(e) => change('procurementNetCost', e.target.value)}
       />
       <Checkbox
-        label="Active publication"
+        label={t('Active publication')}
         checked={draft.active}
         onChange={(e) => change('active', e.target.checked)}
       />
@@ -173,6 +188,7 @@ export const ResidentEditor = observer(function ResidentEditor({
   store: CatalogStore;
   onClose: (saved?: boolean) => void;
 }) {
+  const { t } = useI18n();
   const [requestId] = useState(() => crypto.randomUUID());
   const [draft, setDraft] = useState({
     name: record?.name ?? '',
@@ -192,8 +208,8 @@ export const ResidentEditor = observer(function ResidentEditor({
     setDraft((d) => ({ ...d, [key]: value }));
   return (
     <Editor
-      title={record ? 'Edit resident' : 'Add resident'}
-      label="Save resident"
+      title={t(record ? 'Edit resident' : 'Add resident')}
+      label={t('Save resident')}
       store={store}
       onClose={() => onClose()}
       onSave={async () => {
@@ -212,21 +228,21 @@ export const ResidentEditor = observer(function ResidentEditor({
       }}
     >
       <Field
-        label="Resident name"
+        label={t('Resident name')}
         required
         maxLength={120}
         value={draft.name}
         onChange={(e) => change('name', e.target.value)}
       />
       <Field
-        label="Delivery address"
+        label={t('Delivery address')}
         required
         maxLength={240}
         value={draft.address}
         onChange={(e) => change('address', e.target.value)}
       />
       <Field
-        label="Phone"
+        label={t('Phone')}
         type="tel"
         required
         maxLength={30}
@@ -234,11 +250,11 @@ export const ResidentEditor = observer(function ResidentEditor({
         onChange={(e) => change('phone', e.target.value)}
       />
       <Select
-        label="Delivery route"
+        label={t('Delivery route')}
         required
         value={draft.routeId}
         options={[
-          { value: '', label: 'Choose route' },
+          { value: '', label: t('Choose route') },
           ...store.routes
             .filter((r) => r.active || r.id === record?.routeId)
             .map((r) => ({ value: r.id, label: `${r.code} · ${r.name}` })),
@@ -262,17 +278,17 @@ export const ResidentEditor = observer(function ResidentEditor({
         }}
       />
       <Select
-        label="Sector"
+        label={t('Sector')}
         required
         value={draft.sector}
         options={[
-          { value: '', label: 'Choose sector' },
+          { value: '', label: t('Choose sector') },
           ...sectors.map((value) => ({ value, label: value })),
         ]}
         onChange={(e) => change('sector', e.target.value)}
       />
       <Field
-        label="Drop position"
+        label={t('Drop position')}
         type="number"
         min={1}
         max={99999}
@@ -283,10 +299,10 @@ export const ResidentEditor = observer(function ResidentEditor({
       />
       {!record && route && (
         <Select
-          label="Existing delivery point"
+          label={t('Existing delivery point')}
           value={draft.stopId}
           options={[
-            { value: '', label: 'Create a new delivery point' },
+            { value: '', label: t('Create a new delivery point') },
             ...route.stops
               .filter((stop) => !stop.residentId && stop.id)
               .map((stop) => ({
@@ -309,28 +325,28 @@ export const ResidentEditor = observer(function ResidentEditor({
       )}
       {!record && (
         <Field
-          label="Opening deposit"
+          label={t('Opening deposit')}
           inputMode="decimal"
           required
-          hint="Refundable cash deposit received with this registration."
+          hint={t('Refundable cash deposit received with this registration.')}
           value={draft.openingDeposit}
           onChange={(e) => change('openingDeposit', e.target.value)}
         />
       )}
       <Select
-        label="Resident status"
+        label={t('Resident status')}
         value={draft.status}
         options={
           record?.status === 'SUSPENDED'
             ? [
-                ...options(['ACTIVE', 'INACTIVE']),
+                ...options(['ACTIVE', 'INACTIVE'], t),
                 {
                   value: 'SUSPENDED',
-                  label: 'Suspended (credit hold)',
+                  label: t('Suspended (credit hold)'),
                   disabled: true,
                 },
               ]
-            : options(['ACTIVE', 'INACTIVE'])
+            : options(['ACTIVE', 'INACTIVE'], t)
         }
         onChange={(e) => change('status', e.target.value)}
       />
