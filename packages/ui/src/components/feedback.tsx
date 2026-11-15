@@ -1,4 +1,6 @@
+'use client';
 import type { CSSProperties, HTMLAttributes, ReactNode } from 'react';
+import { useI18n } from '../i18n-context';
 import type { Tone } from '../tokens';
 import { Icon } from './icon';
 import { Button } from './button';
@@ -29,11 +31,12 @@ export function Skeleton({
     />
   );
 }
-export function LoadingIndicator({ label = 'Loading…' }: { label?: string }) {
+export function LoadingIndicator({ label }: { label?: string }) {
+  const { t } = useI18n();
   return (
     <span role="status" className="db-row">
       <Icon name="loader" size={14} className="db-spin" />
-      {label}
+      {label ?? t('Loading…')}
     </span>
   );
 }
@@ -56,6 +59,7 @@ export function Notification({
   className = '',
   ...props
 }: NotificationProps) {
+  const { t } = useI18n();
   return (
     <div
       role={tone === 'error' ? 'alert' : 'status'}
@@ -89,7 +93,7 @@ export function Notification({
         <button
           className="db-dismiss"
           type="button"
-          aria-label="Dismiss notification"
+          aria-label={t('Dismiss notification')}
           onClick={onDismiss}
         >
           <Icon name="close" size={12} />
@@ -179,18 +183,34 @@ export function DataState({
   description,
   action,
   onRetry,
-  retryLabel = 'Try again',
+  retryLabel,
 }: DataStateProps) {
+  const { t } = useI18n();
   const content = stateMessages[kind];
   return (
     <section
       className="db-data-state"
       aria-busy={kind === 'loading' || undefined}
     >
-      <span className="db-eyebrow">{kind.replaceAll('-', ' ')}</span>
-      <h3>{title ?? content.title}</h3>
+      <span className="db-eyebrow">
+        {t(
+          {
+            loading: 'Loading',
+            empty: 'Empty',
+            'no-results': 'No results',
+            error: 'Error',
+            offline: 'Offline',
+            partial: 'Partial',
+            slow: 'Slow',
+            missing: 'Missing',
+            'access-denied': 'Access denied',
+            'session-expired': 'Session expired',
+          }[kind],
+        )}
+      </span>
+      <h3>{title ?? t(content.title)}</h3>
       <p role={kind === 'error' ? 'alert' : 'status'}>
-        {description ?? content.description}
+        {description ?? t(content.description)}
       </p>
       {kind === 'loading' && (
         <div className="db-stack" style={{ width: '100%' }}>
@@ -204,7 +224,7 @@ export function DataState({
           {action}
           {onRetry && (
             <Button variant="secondary" onClick={onRetry}>
-              {retryLabel}
+              {retryLabel ?? t('Try again')}
             </Button>
           )}
         </div>
@@ -215,15 +235,16 @@ export function DataState({
 export function TableSkeleton({
   rows = 4,
   columns = 3,
-  label = 'Loading records…',
+  label,
 }: {
   rows?: number;
   columns?: number;
   label?: string;
 }) {
+  const { t } = useI18n();
   return (
     <div className="db-stack" role="status" aria-busy="true">
-      <span className="db-sr-only">{label}</span>
+      <span className="db-sr-only">{label ?? t('Loading records…')}</span>
       {Array.from({ length: Math.min(20, Math.max(1, rows)) }, (_, row) => (
         <div
           key={row}

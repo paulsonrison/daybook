@@ -12,6 +12,7 @@ import { defaultTypography, type TypographyConfig } from '../theme';
 import { Field, Select } from './fields';
 import { Notification } from './feedback';
 import { validReadingSize } from '../utils';
+import { useI18n } from '../i18n-context';
 export function ColorSchemePicker({
   value,
   onChange,
@@ -19,8 +20,13 @@ export function ColorSchemePicker({
   value: ColorScheme;
   onChange: (value: ColorScheme) => void;
 }) {
+  const { t } = useI18n();
   return (
-    <div className="db-preference-grid" role="group" aria-label="Color scheme">
+    <div
+      className="db-preference-grid"
+      role="group"
+      aria-label={t('Color scheme')}
+    >
       {Object.entries(colorSchemes).map(([key, scheme]) => (
         <button
           key={key}
@@ -36,7 +42,7 @@ export function ColorSchemePicker({
           >
             <span style={{ background: scheme.accent }} />
           </span>
-          {scheme.name}
+          {t(scheme.name)}
         </button>
       ))}
     </div>
@@ -49,8 +55,9 @@ export function DisplayModePicker({
   value: DisplayMode;
   onChange: (value: DisplayMode) => void;
 }) {
+  const { t } = useI18n();
   return (
-    <div className="db-row" role="group" aria-label="Display mode">
+    <div className="db-row" role="group" aria-label={t('Display mode')}>
       {(['light', 'dark', 'system'] as const).map((mode) => (
         <button
           key={mode}
@@ -59,7 +66,7 @@ export function DisplayModePicker({
           aria-pressed={value === mode}
           onClick={() => onChange(mode)}
         >
-          {mode[0].toUpperCase() + mode.slice(1)}
+          {t(mode[0].toUpperCase() + mode.slice(1))}
         </button>
       ))}
     </div>
@@ -76,11 +83,16 @@ export function TypographyControls({
   status?: 'ready' | 'loading' | 'unavailable' | 'save-error';
   onRetry?: () => void;
 }) {
+  const { t } = useI18n();
   const update = (patch: Partial<TypographyConfig>) =>
     onChange({ ...value, ...patch });
   return (
     <div className="db-stack">
-      <div className="db-preference-grid" role="group" aria-label="Font family">
+      <div
+        className="db-preference-grid"
+        role="group"
+        aria-label={t('Font family')}
+      >
         {Object.entries(fonts).map(([key, font]) => (
           <button
             key={key}
@@ -92,11 +104,11 @@ export function TypographyControls({
             onClick={() => update({ family: key as FontFamily })}
           >
             {font.name}
-            {value.family === key && <small>Selected</small>}
+            {value.family === key && <small>{t('Selected')}</small>}
           </button>
         ))}
       </div>
-      <div className="db-row" role="group" aria-label="Reading size">
+      <div className="db-row" role="group" aria-label={t('Reading size')}>
         {Object.entries(readingSizes).map(([name, size]) => (
           <button
             key={name}
@@ -105,13 +117,22 @@ export function TypographyControls({
             aria-pressed={value.size === size}
             onClick={() => update({ size })}
           >
-            {size} px<small>{name}</small>
+            {size} px
+            <small>
+              {t(
+                name === 'compact'
+                  ? 'Compact'
+                  : name === 'large'
+                    ? 'Large'
+                    : 'Standard',
+              )}
+            </small>
           </button>
         ))}
       </div>
       <div className="db-date-range">
         <Field
-          label="Custom reading size"
+          label={t('Custom reading size')}
           type="number"
           min={12}
           max={24}
@@ -119,12 +140,12 @@ export function TypographyControls({
           onChange={(event) => update({ size: event.target.valueAsNumber })}
           error={
             !validReadingSize(value.size)
-              ? 'Enter a supported reading size (12–24 px).'
+              ? t('Enter a supported reading size (12–24 px).')
               : undefined
           }
         />
         <Select
-          label="Font weight"
+          label={t('Font weight')}
           value={value.weight}
           onChange={(event) =>
             update({
@@ -133,11 +154,11 @@ export function TypographyControls({
           }
           options={[400, 500, 600, 700].map((weight) => ({
             value: String(weight),
-            label: `${weight === 400 ? 'Regular' : weight === 500 ? 'Medium' : weight === 600 ? 'Semibold' : 'Bold'} · ${weight}`,
+            label: `${t(weight === 400 ? 'Regular' : weight === 500 ? 'Medium' : weight === 600 ? 'Semibold' : 'Bold')} · ${weight}`,
           }))}
         />
       </div>
-      <div className="db-row" role="group" aria-label="Font style">
+      <div className="db-row" role="group" aria-label={t('Font style')}>
         {(['normal', 'italic'] as const).map((style) => (
           <button
             key={style}
@@ -146,11 +167,11 @@ export function TypographyControls({
             aria-pressed={value.style === style}
             onClick={() => update({ style })}
           >
-            {style === 'normal' ? 'Regular' : 'Italic'}
+            {t(style === 'normal' ? 'Regular' : 'Italic')}
           </button>
         ))}
       </div>
-      <div className="db-row" role="group" aria-label="Line spacing">
+      <div className="db-row" role="group" aria-label={t('Line spacing')}>
         {Object.entries(lineSpacings).map(([name, lineHeight]) => (
           <button
             key={name}
@@ -160,15 +181,25 @@ export function TypographyControls({
             onClick={() => update({ lineHeight })}
           >
             {lineHeight}
-            <small>{name}</small>
+            <small>
+              {t(
+                name === 'tight'
+                  ? 'Tight'
+                  : name === 'relaxed'
+                    ? 'Relaxed'
+                    : 'Standard',
+              )}
+            </small>
           </button>
         ))}
       </div>
       {status === 'unavailable' && (
         <Notification
           tone="warning"
-          title="Font preview unavailable"
-          description="Use Inter fallback while retaining your selected font preference."
+          title={t('Font preview unavailable')}
+          description={t(
+            'Use Inter fallback while retaining your selected font preference.',
+          )}
           action={
             onRetry && (
               <button
@@ -176,7 +207,7 @@ export function TypographyControls({
                 className="db-button db-button--secondary"
                 onClick={onRetry}
               >
-                Retry font load
+                {t('Retry font load')}
               </button>
             )
           }
@@ -184,18 +215,24 @@ export function TypographyControls({
       )}
       {value.family === 'manrope' && value.style === 'italic' && (
         <Notification
-          title="Italic preview uses Inter"
-          description="Manrope has no bundled italic face. Your selected font preference is retained."
+          title={t('Italic preview uses Inter')}
+          description={t(
+            'Manrope has no bundled italic face. Your selected font preference is retained.',
+          )}
         />
       )}
       {status === 'save-error' && (
         <Notification
           tone="error"
-          title="Preferences were not saved"
-          description="Preview kept. Retry saving without discarding your selection."
+          title={t('Preferences were not saved')}
+          description={t(
+            'Preview kept. Retry saving without discarding your selection.',
+          )}
         />
       )}
-      {status === 'loading' && <p role="status">Loading font preview…</p>}
+      {status === 'loading' && (
+        <p role="status">{t('Loading font preview…')}</p>
+      )}
     </div>
   );
 }

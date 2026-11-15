@@ -1,4 +1,6 @@
+'use client';
 import type { ReactNode } from 'react';
+import { useI18n } from '../i18n-context';
 import { formatMoney } from '../utils';
 import { Badge, Card, StatusBadge } from './card';
 import { Button } from './button';
@@ -43,14 +45,19 @@ export function BillSummary({
   currency = 'INR',
   footer,
 }: BillSummaryProps) {
+  const { t } = useI18n();
   if (state === 'loading')
-    return <TableSkeleton label="Loading bill details…" rows={5} columns={4} />;
+    return (
+      <TableSkeleton label={t('Loading bill details…')} rows={5} columns={4} />
+    );
   if (state === 'error')
     return (
       <DataState
         kind="error"
-        title="Bill unavailable"
-        description="Your draft is preserved. No saved invoice was confirmed."
+        title={t('Bill unavailable')}
+        description={t(
+          'Your draft is preserved. No saved invoice was confirmed.',
+        )}
         onRetry={onRetry}
       />
     );
@@ -59,7 +66,9 @@ export function BillSummary({
       <div className="db-stack">
         <header className="db-bill-header">
           <div>
-            <p className="db-eyebrow">Bill to · {resident.reference}</p>
+            <p className="db-eyebrow">
+              {t('Bill to')} · {resident.reference}
+            </p>
             <h3 className="db-bill-name">{resident.name}</h3>
             <p className="db-bill-meta">{resident.address}</p>
           </div>
@@ -67,56 +76,62 @@ export function BillSummary({
             <StatusBadge status={status} />
             <strong>{invoice}</strong>
             <p className="db-bill-meta">
-              Issued {issued} · Due {due}
+              {t('Issued {issued} · Due {due}', { issued, due })}
             </p>
           </div>
         </header>
         <div className="db-row" style={{ justifyContent: 'space-between' }}>
           <strong>{period}</strong>
           <span className="db-bill-meta">
-            Actual delivered copies · {currency}
+            {t('Actual delivered copies')} · {currency}
           </span>
         </div>
         {lines.length === 0 ? (
           <Notification
-            title="No current deliveries"
-            description="Previous balances and account credits still apply."
+            title={t('No current deliveries')}
+            description={t(
+              'Previous balances and account credits still apply.',
+            )}
           />
         ) : (
           <DataTable
-            caption="Publication and delivery details"
+            caption={t('Publication and delivery details')}
             rows={lines}
             rowKey={(line) => line.id}
             columns={[
               {
                 key: 'publication',
-                header: 'Publication / delivery',
+                header: t('Publication / delivery'),
                 render: (line) => line.publication,
               },
               {
                 key: 'quantity',
-                header: 'Qty',
+                header: t('Qty'),
                 align: 'right',
-                render: (line) => line.quantity ?? 'Unavailable',
+                render: (line) => line.quantity ?? t('Unavailable'),
               },
               {
                 key: 'rate',
-                header: `Rate ${currency === 'INR' ? '₹' : currency}`,
+                header: t('Rate {currency}', {
+                  currency: currency === 'INR' ? '₹' : currency,
+                }),
                 align: 'right',
                 render: (line) =>
                   line.rate === null
-                    ? 'Rate required'
+                    ? t('Rate required')
                     : typeof line.rate === 'string'
                       ? line.rate
                       : line.rate.toFixed(2),
               },
               {
                 key: 'amount',
-                header: `Amount ${currency === 'INR' ? '₹' : currency}`,
+                header: t('Amount {currency}', {
+                  currency: currency === 'INR' ? '₹' : currency,
+                }),
                 align: 'right',
                 render: (line) =>
                   line.amount === null
-                    ? 'Unavailable'
+                    ? t('Unavailable')
                     : typeof line.amount === 'string'
                       ? line.amount
                       : line.amount.toFixed(2),
@@ -163,22 +178,25 @@ export function PaymentConfirmation({
   onNext,
   onCheckStatus,
 }: PaymentConfirmationProps) {
+  const { t } = useI18n();
   if (status === 'checking')
     return (
       <DataState
         kind="loading"
-        title="Checking payment status…"
-        description="The bill remains unpaid until confirmation returns."
+        title={t('Checking payment status…')}
+        description={t('The bill remains unpaid until confirmation returns.')}
       />
     );
   if (status === 'unknown')
     return (
       <DataState
         kind="slow"
-        title="Payment not confirmed"
-        description="The payment may already be recorded. Check the original request before allowing a new payment."
+        title={t('Payment not confirmed')}
+        description={t(
+          'The payment may already be recorded. Check the original request before allowing a new payment.',
+        )}
         onRetry={onCheckStatus}
-        retryLabel="Check payment status"
+        retryLabel={t('Check payment status')}
       />
     );
   const title =
@@ -193,7 +211,7 @@ export function PaymentConfirmation({
         <span className="db-confirmation-icon">
           <Icon name="paid" size={32} />
         </span>
-        <h3>{title}</h3>
+        <h3>{t(title)}</h3>
         {description && (
           <p className="db-confirmation-description">{description}</p>
         )}
@@ -202,7 +220,7 @@ export function PaymentConfirmation({
           style={{ alignItems: 'center', gap: 12, marginTop: 20 }}
         >
           <Badge tone={status === 'partial' ? 'warning' : 'success'}>
-            {status === 'partial' ? 'Partial' : 'Paid'}
+            {t(status === 'partial' ? 'Partial' : 'Paid')}
           </Badge>
           <strong className="db-metric">{formatMoney(amount)}</strong>
         </div>
@@ -210,13 +228,13 @@ export function PaymentConfirmation({
       <dl style={{ margin: '24px 0 32px', gap: 10 }} className="db-stack">
         {receipt && (
           <div className="db-bill-total-row">
-            <dt>Receipt</dt>
+            <dt>{t('Receipt')}</dt>
             <dd style={{ margin: 0 }}>{receipt}</dd>
           </div>
         )}
         {invoice && (
           <div className="db-bill-total-row">
-            <dt>Invoice</dt>
+            <dt>{t('Invoice')}</dt>
             <dd style={{ margin: 0 }}>{invoice}</dd>
           </div>
         )}
@@ -227,7 +245,7 @@ export function PaymentConfirmation({
           </div>
         )}
         <div className="db-bill-total-row">
-          <dt>Balance remaining</dt>
+          <dt>{t('Balance remaining')}</dt>
           <dd style={{ margin: 0 }}>{formatMoney(remaining)}</dd>
         </div>
       </dl>
@@ -235,12 +253,12 @@ export function PaymentConfirmation({
         {onReceipt && (
           <Button variant="secondary" onClick={onReceipt}>
             <Icon name="print" size={16} />
-            Print receipt
+            {t('Print receipt')}
           </Button>
         )}
         {onNext && (
           <Button onClick={onNext}>
-            Move to next
+            {t('Move to next')}
             <Icon name="next" size={16} />
           </Button>
         )}
@@ -265,30 +283,31 @@ export function NextRecord({
   onSummary?: () => void;
   skipped?: number;
 }) {
+  const { t } = useI18n();
   if (state === 'loading') return <TableSkeleton rows={1} />;
   const ended = state === 'end' || state === 'removed';
   return (
     <Card className="db-next-record-card">
       <div className="db-next-record">
         <div>
-          <p className="db-eyebrow">Next in delivery order</p>
+          <p className="db-eyebrow">{t('Next in delivery order')}</p>
           <h3 className="db-card-title" style={{ marginBlock: 8 }}>
             {state === 'end'
-              ? 'End of this delivery order'
+              ? t('End of this delivery order')
               : state === 'removed'
-                ? 'Resident no longer on this route'
-                : (name ?? 'Next resident unavailable')}
+                ? t('Resident no longer on this route')
+                : (name ?? t('Next resident unavailable'))}
           </h3>
           {description && <p>{description}</p>}
           <p className="db-field-hint">{context}</p>
         </div>
         {ended ? (
           <Button variant="secondary" onClick={onSummary} disabled={!onSummary}>
-            View route summary
+            {t('View route summary')}
           </Button>
         ) : (
           <Button onClick={onNext} disabled={!onNext || !name}>
-            Move to next
+            {t('Move to next')}
             <Icon name="next" size={24} />
           </Button>
         )}
@@ -296,8 +315,10 @@ export function NextRecord({
       {skipped > 0 && (
         <Notification
           tone="warning"
-          title={`${skipped} skipped accounts remain unpaid`}
-          description="Review them before closing the run."
+          title={t('{count} skipped accounts remain unpaid', {
+            count: skipped,
+          })}
+          description={t('Review them before closing the run.')}
         />
       )}
     </Card>

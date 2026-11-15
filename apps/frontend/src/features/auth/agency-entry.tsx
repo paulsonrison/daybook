@@ -5,9 +5,10 @@ import {
   PreferencesProvider,
   PreferenceNotices,
   WorkspaceLanguage,
+  WorkspaceShell,
+  WorkspaceSignOut,
 } from '../preferences/provider';
 import {
-  AppShell,
   BrandMark,
   Button,
   Card,
@@ -114,7 +115,7 @@ export function AgencyEntry({ children }: { children?: ReactNode }) {
           key={`${agent.agencyId}:${agent.id}`}
           scope={{ agencyId: agent.agencyId, agentId: agent.id }}
         >
-          <AppShell
+          <WorkspaceShell
             navigation={[
               {
                 label: 'Workspace',
@@ -240,9 +241,7 @@ export function AgencyEntry({ children }: { children?: ReactNode }) {
                   </strong>
                   <span className="db-muted"> · {agent.name}</span>
                 </div>
-                <Button variant="secondary" loading={busy} onClick={logout}>
-                  Sign out
-                </Button>
+                <WorkspaceSignOut busy={busy} onLogout={logout} />
                 <WorkspaceLanguage />
               </div>
             }
@@ -262,7 +261,7 @@ export function AgencyEntry({ children }: { children?: ReactNode }) {
                 <p>Your agency has no delivery territory yet.</p>
               </Card>
             )}
-          </AppShell>
+          </WorkspaceShell>
         </PreferencesProvider>
       ) : (
         <main className="agency-auth">

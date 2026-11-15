@@ -1,5 +1,7 @@
 import { randomBytes, randomUUID } from 'node:crypto';
 import type { Pool } from 'pg';
+import { translate, translateRendered } from '@daybook/ui/messages';
+import { requestLocale } from '../localization/service.js';
 import { withTenant } from '../../db/tenant.js';
 import { hashPassword, verifyPassword, tokenHash } from './credentials.js';
 import {
@@ -15,11 +17,12 @@ class AuthError extends Error {
   constructor(
     message: string,
     readonly status: number,
+    readonly fieldLabel?: string,
   ) {
     super(message);
   }
 }
-const json = (body: unknown, status = 200, cookie?: string) =>
+const jsonResponse = (body: unknown, status = 200, cookie?: string) =>
   Response.json(body, {
     status,
     headers: {
@@ -31,7 +34,7 @@ const cookie = (token: string, maxAge: number) =>
   `daybook_session=${token}; Path=/; HttpOnly; SameSite=Strict; Max-Age=${maxAge}${process.env.NODE_ENV === 'production' ? '; Secure' : ''}`;
 function text(value: unknown, label: string, max: number): string {
   if (typeof value !== 'string' || !value.trim() || value.length > max)
-    throw new AuthError(`Enter a valid ${label}.`, 400);
+    throw new AuthError(`Enter a valid ${label}.`, 400, label);
   return value.trim();
 }
 async function boundedBody(request: Request): Promise<string> {
@@ -60,6 +63,17 @@ export async function handleAuth(
   pool: Pool,
   origin: string,
 ): Promise<Response> {
+  const locale = requestLocale(request);
+  const json = (body: unknown, status = 200, cookie?: string) => {
+    if (
+      body &&
+      typeof body === 'object' &&
+      'error' in body &&
+      typeof body.error === 'string'
+    )
+      body = { ...body, error: translateRendered(locale, body.error) };
+    return jsonResponse(body, status, cookie);
+  };
   const action = new URL(request.url).pathname;
   try {
     if (action === '/auth/me' && request.method === 'GET') {
@@ -157,7 +171,16 @@ export async function handleAuth(
     );
   } catch (error) {
     return error instanceof AuthError
-      ? json({ error: error.message }, error.status)
+      ? json(
+          {
+            error: error.fieldLabel
+              ? translate(locale, 'Enter a valid {p0}.', {
+                  p0: translate(locale, error.fieldLabel),
+                })
+              : error.message,
+          },
+          error.status,
+        )
       : json({ error: 'Unable to complete this request. Try again.' }, 503);
   }
 }

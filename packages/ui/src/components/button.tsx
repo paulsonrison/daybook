@@ -1,4 +1,6 @@
+'use client';
 import type { ButtonHTMLAttributes } from 'react';
+import { useI18n } from '../i18n-context';
 import { Icon } from './icon';
 export type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   variant?: 'primary' | 'secondary' | 'tertiary' | 'destructive';
@@ -9,7 +11,7 @@ export type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
 export function Button({
   variant = 'primary',
   loading = false,
-  loadingLabel = 'Loading…',
+  loadingLabel,
   size = 'medium',
   disabled,
   className = '',
@@ -17,6 +19,7 @@ export function Button({
   type = 'button',
   ...props
 }: ButtonProps) {
+  const { t } = useI18n();
   return (
     <button
       {...props}
@@ -28,7 +31,7 @@ export function Button({
       {loading ? (
         <>
           <Icon name="loader" size={12} className="db-spin" />
-          {loadingLabel}
+          {loadingLabel ?? t('Loading…')}
         </>
       ) : (
         children
@@ -71,11 +74,12 @@ export function WorkflowButton({
   action,
   ...props
 }: Omit<ButtonProps, 'children'> & { action: keyof typeof workflowActions }) {
+  const { t } = useI18n();
   const selected = workflowActions[action];
   return (
     <Button variant={selected.variant} {...props}>
       <Icon name={selected.icon} size={16} />
-      {selected.label}
+      {t(selected.label)}
     </Button>
   );
 }

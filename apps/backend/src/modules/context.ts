@@ -4,16 +4,29 @@ import type { Pool, PoolClient } from 'pg';
 import { withTenant } from '../db/tenant.js';
 import type { AgentIdentity } from './auth/repository.js';
 import type { ProviderRegistry } from './communications/config.js';
+import type { Locale, MessageValues } from '@daybook/ui/messages';
 
 export interface RequestContext {
+  locale?: Locale;
   agent: AgentIdentity | null;
   pool: Pool | undefined;
   request: Request;
   frontendOrigin: string;
   providers?: ProviderRegistry;
 }
-export const fail = (message: string, code = 'BAD_USER_INPUT'): never => {
-  throw new GraphQLError(message, { extensions: { code } });
+export interface ValidationMessage {
+  key: string;
+  values: MessageValues;
+  labelParams: string[];
+}
+export const fail = (
+  message: string,
+  code = 'BAD_USER_INPUT',
+  daybookMessage?: ValidationMessage,
+): never => {
+  throw new GraphQLError(message, {
+    extensions: { code, ...(daybookMessage ? { daybookMessage } : {}) },
+  });
 };
 export function requireAgent(context: RequestContext) {
   if (!context.agent || !context.pool)
@@ -63,10 +76,23 @@ export async function configMutation<T>(
   }
 }
 export function cleanText(value: unknown, label: string, max = 120): string {
-  if (typeof value !== 'string') return fail(`Enter ${label}.`);
+  if (typeof value !== 'string')
+    return fail(`Enter ${label}.`, 'BAD_USER_INPUT', {
+      key: 'Enter {p0}.',
+      values: { p0: label },
+      labelParams: ['p0'],
+    });
   const text = value.normalize('NFKC').trim().replace(/\s+/g, ' ');
   if (!text || text.length > max || /[\x00-\x1f\x7f]/.test(text))
-    return fail(`Enter a valid ${label} (up to ${max} characters).`);
+    return fail(
+      `Enter a valid ${label} (up to ${max} characters).`,
+      'BAD_USER_INPUT',
+      {
+        key: 'Enter a valid {p0} (up to {p1} characters).',
+        values: { p0: label, p1: max },
+        labelParams: ['p0'],
+      },
+    );
   return text;
 }
 export function idValue(value: unknown): string {

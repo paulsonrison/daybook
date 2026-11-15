@@ -2,6 +2,13 @@ import { createSchema, createYoga } from 'graphql-yoga';
 import { GraphQLError } from 'graphql';
 import type { Pool } from 'pg';
 import { currentAgent } from './modules/auth/repository.js';
+import { withTenant } from './db/tenant.js';
+import type { Locale } from '@daybook/ui/messages';
+import { readAgentPreferences } from './modules/preferences/service.js';
+import {
+  localizationPlugin,
+  requestLocale,
+} from './modules/localization/service.js';
 import {
   preferenceTypeDefs,
   preferenceResolvers,
@@ -71,17 +78,24 @@ export function createApp({
   providers?: ProviderRegistry;
   providerCallbackOrigin?: string;
 }) {
+  const requestLocales = new WeakMap<Request, Locale>();
   return createYoga({
     graphqlEndpoint: '/graphql',
     graphiql: process.env.NODE_ENV !== 'production',
     cors: { origin: frontendOrigin, methods: ['GET', 'POST', 'OPTIONS'] },
-    context: async ({ request }): Promise<RequestContext> => ({
-      agent: pool ? await currentAgent(pool, request) : null,
-      pool,
-      request,
-      frontendOrigin,
-      providers,
-    }),
+    context: async ({ request }): Promise<RequestContext> => {
+      const agent = pool ? await currentAgent(pool, request) : null;
+      const locale =
+        agent && pool
+          ? (
+              await withTenant(pool, agent.agencyId, (c) =>
+                readAgentPreferences(c, agent.id),
+              )
+            ).locale
+          : requestLocale(request);
+      requestLocales.set(request, locale);
+      return { agent, pool, request, frontendOrigin, providers, locale };
+    },
     schema: createSchema<RequestContext>({
       typeDefs: `type Health { status: String!, service: String! }
       type Agency { id: ID!, name: String! }
@@ -157,6 +171,7 @@ export function createApp({
       },
     }),
     plugins: [
+      localizationPlugin(requestLocales),
       {
         onRequest({ request, endResponse }) {
           const path = new URL(request.url).pathname;

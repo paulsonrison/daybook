@@ -1,4 +1,6 @@
+'use client';
 import type { ReactNode } from 'react';
+import { useI18n } from '../i18n-context';
 import presets from '../recovery-presets.json';
 import type { Tone } from '../tokens';
 import { Button } from './button';
@@ -47,6 +49,7 @@ export function RecoveryPanel({
   pending?: boolean;
   actionLabels?: readonly string[];
 }) {
+  const { t } = useI18n();
   const preset = presets.find((item) => item.id === scenario)!;
   const tone: Tone = ['success', 'warning', 'error', 'info'].includes(
     preset.tone,
@@ -60,8 +63,8 @@ export function RecoveryPanel({
     >
       <Notification
         tone={tone}
-        title={title ?? preset.title}
-        description={description ?? preset.description}
+        title={title ?? t(preset.title)}
+        description={description ?? t(preset.description)}
         action={
           (actionLabels ?? preset.actions).length > 0 && (
             <>
@@ -72,14 +75,14 @@ export function RecoveryPanel({
                   disabled={!onAction || pending || preset.loading}
                   onClick={() => onAction?.(action)}
                 >
-                  {action}
+                  {actionLabels ? action : t(action)}
                 </Button>
               ))}
             </>
           )
         }
       />
-      {preset.loading && <TableSkeleton label={title ?? preset.title} />}
+      {preset.loading && <TableSkeleton label={title ?? t(preset.title)} />}
       {children}
     </div>
   );

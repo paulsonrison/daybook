@@ -8,6 +8,7 @@ import {
   type SelectHTMLAttributes,
 } from 'react';
 import type { SaveState } from '../tokens';
+import { useI18n } from '../i18n-context';
 import { Button } from './button';
 import { Icon } from './icon';
 export interface FieldDetails {
@@ -63,6 +64,7 @@ export function Field({
   className = '',
   ...props
 }: FieldProps) {
+  const { t } = useI18n();
   const generated = useId();
   const id = providedId ?? generated;
   return (
@@ -88,7 +90,7 @@ export function Field({
         {loading && (
           <span className="db-input-action" role="status">
             <Icon name="loader" size={12} className="db-spin" />
-            <span className="db-sr-only">Loading saved value…</span>
+            <span className="db-sr-only">{t('Loading saved value…')}</span>
           </span>
         )}
         {error && !loading && (
@@ -119,7 +121,7 @@ export function Select({
   error,
   loading = false,
   options,
-  placeholder = 'Select an option',
+  placeholder,
   state = 'ready',
   onRetry,
   id: providedId,
@@ -127,18 +129,19 @@ export function Select({
   disabled,
   ...props
 }: SelectProps) {
+  const { t } = useI18n();
   const generated = useId();
   const id = providedId ?? generated;
   const pending = loading || state === 'loading';
   const message =
     state === 'error'
-      ? 'Couldn’t load options. Your selection is preserved.'
+      ? t('Couldn’t load options. Your selection is preserved.')
       : state === 'empty'
-        ? 'No options are available.'
+        ? t('No options are available.')
         : state === 'no-results'
-          ? 'No matches. Change your search or clear filters.'
+          ? t('No matches. Change your search or clear filters.')
           : pending
-            ? 'Loading options…'
+            ? t('Loading options…')
             : undefined;
   const hasCurrentValue =
     props.value !== undefined &&
@@ -166,10 +169,10 @@ export function Select({
             props['aria-describedby'],
           )}
         >
-          <option value="">{placeholder}</option>
+          <option value="">{placeholder ?? t('Select an option')}</option>
           {hasCurrentValue && (
             <option value={String(props.value)}>
-              {String(props.value)} · unavailable
+              {t('{value} · unavailable', { value: String(props.value) })}
             </option>
           )}
           {options.map((option) => (
@@ -195,7 +198,7 @@ export function Select({
       {state === 'error' && onRetry && (
         <div>
           <Button variant="secondary" size="small" onClick={onRetry}>
-            Retry
+            {t('Retry')}
           </Button>
         </div>
       )}
@@ -227,15 +230,16 @@ export function SearchField({
   className = '',
   ...props
 }: SearchFieldProps) {
+  const { t } = useI18n();
   const generated = useId();
   const id = providedId ?? generated;
   const message =
     state === 'loading'
-      ? 'Loading options…'
+      ? t('Loading options…')
       : state === 'error'
-        ? 'Couldn’t load results. Your query is preserved.'
+        ? t('Couldn’t load results. Your query is preserved.')
         : state === 'no-results'
-          ? 'No matches. Change your search or clear filters.'
+          ? t('No matches. Change your search or clear filters.')
           : hint;
   return (
     <div className="db-field">
@@ -270,7 +274,7 @@ export function SearchField({
               <button
                 className="db-dismiss"
                 type="button"
-                aria-label="Clear search"
+                aria-label={t('Clear search')}
                 disabled={props.disabled}
                 onClick={() => onValueChange('')}
               >
@@ -285,7 +289,7 @@ export function SearchField({
         <div
           className="db-options"
           role="group"
-          aria-label={`${label} results`}
+          aria-label={t('{label} results', { label })}
         >
           {results.map((option) => (
             <button
@@ -303,7 +307,7 @@ export function SearchField({
       {state === 'error' && onRetry && (
         <div>
           <Button variant="secondary" size="small" onClick={onRetry}>
-            Retry
+            {t('Retry')}
           </Button>
         </div>
       )}
@@ -336,6 +340,7 @@ function Choice({
   indeterminate?: boolean;
   switchControl?: boolean;
 }) {
+  const { t } = useI18n();
   const generated = useId();
   const id = providedId ?? generated;
   const ref = useRef<HTMLInputElement>(null);
@@ -344,9 +349,9 @@ function Choice({
   }, [indeterminate]);
   const pending = saveState === 'saving';
   const message = pending
-    ? 'Saving selection…'
+    ? t('Saving selection…')
     : saveState === 'error'
-      ? 'Couldn’t save. Retry remains available.'
+      ? t('Couldn’t save. Retry remains available.')
       : hint;
   return (
     <div className="db-field">

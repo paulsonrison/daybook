@@ -12,6 +12,7 @@ import {
   TypographyControls,
 } from '@daybook/ui';
 import type { PreferenceValues } from '@daybook/ui/preferences';
+import { useI18n } from '@daybook/ui/i18n';
 import { usePreferences } from './provider';
 import type { PreferencesStore } from './store';
 const AppearanceForm = observer(function AppearanceForm({
@@ -19,6 +20,7 @@ const AppearanceForm = observer(function AppearanceForm({
 }: {
   store: PreferencesStore;
 }) {
+  const { t } = useI18n();
   const [draft, setDraft] = useState<PreferenceValues>(() => ({
     ...store.values,
     layout: store.effectiveLayout,
@@ -36,32 +38,32 @@ const AppearanceForm = observer(function AppearanceForm({
         disabled={store.locked}
         style={{ border: 0, padding: 0 }}
       >
-        <Card title="Display mode">
+        <Card title={t('Display mode')}>
           <DisplayModePicker
             value={draft.mode}
             onChange={(mode) => setDraft({ ...draft, mode })}
           />
         </Card>
-        <Card title="Color scheme">
+        <Card title={t('Color scheme')}>
           <ColorSchemePicker
             value={draft.scheme}
             onChange={(scheme) => setDraft({ ...draft, scheme })}
           />
         </Card>
-        <Card title="Typography">
+        <Card title={t('Typography')}>
           <TypographyControls
             value={draft.typography}
             onChange={(typography) => setDraft({ ...draft, typography })}
           />
         </Card>
-        <Card title="Operational layout">
+        <Card title={t('Operational layout')}>
           <Select
-            label="Operational layout"
+            label={t('Operational layout')}
             value={draft.layout}
             options={[
-              { value: 'TABLE', label: 'Table / compact grid' },
-              { value: 'CARDS', label: 'Detailed cards' },
-              { value: 'ROUTE', label: 'Route sequence' },
+              { value: 'TABLE', label: t('Table / compact grid') },
+              { value: 'CARDS', label: t('Detailed cards') },
+              { value: 'ROUTE', label: t('Route sequence') },
             ]}
             onChange={(event) =>
               setDraft({
@@ -71,8 +73,9 @@ const AppearanceForm = observer(function AppearanceForm({
             }
           />
           <p>
-            The layout is retained for this agent and device. Route sequence
-            uses recorded delivery order.
+            {t(
+              'The layout is retained for this agent and device. Route sequence uses recorded delivery order.',
+            )}
           </p>
         </Card>
         <Theme
@@ -81,14 +84,16 @@ const AppearanceForm = observer(function AppearanceForm({
           typography={draft.typography}
           data-db-preference-preview="true"
         >
-          <Card title="Workspace preview">
-            <p>Review your reading size, spacing and colors before saving.</p>
+          <Card title={t('Workspace preview')}>
+            <p>
+              {t('Review your reading size, spacing and colors before saving.')}
+            </p>
             <p lang="ml">മലയാളം വായനാ മാതൃക</p>
             <p lang="hi">हिन्दी पठन नमूना</p>
           </Card>
         </Theme>
         <Button type="submit" loading={store.busy}>
-          Save appearance preferences
+          {t('Save appearance preferences')}
         </Button>
       </fieldset>
     </form>
@@ -96,14 +101,16 @@ const AppearanceForm = observer(function AppearanceForm({
 });
 export const AppearanceScreen = observer(function AppearanceScreen() {
   const store = usePreferences();
+  const { t } = useI18n();
   return (
     <section className="db-stack">
       <header>
-        <p className="db-eyebrow">Workspace settings</p>
-        <h1>Appearance</h1>
+        <p className="db-eyebrow">{t('Workspace settings')}</p>
+        <h1>{t('Appearance')}</h1>
         <p>
-          Choose a readable workspace for this agent. Language is available in
-          the console header.
+          {t(
+            'Choose a readable workspace for this agent. Language is available in the console header.',
+          )}
         </p>
       </header>
       {store.state === 'loading' ? (

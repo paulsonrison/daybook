@@ -28,7 +28,7 @@ export function Workspace() {
 }
 ```
 
-Use a client component when passing event handlers in Next.js. The interactive library components declare their own client boundaries. Noninteractive presentation components remain usable from server components.
+Use a client component when passing event handlers in Next.js. Interactive and localized library components declare their own client boundaries. Server components can render `BillSummary` with serializable bill data; its table render functions stay inside the library's client composition. Callbacks belong in a client component. `/ui/server-presentation` exercises this contract in the application.
 
 ## Public entry points
 

@@ -11,6 +11,9 @@
     "npm": ">=10"
   },
   "scripts": {
+    "pretest": "npm run test:translations",
+    "test:translations": "node --test scripts/i18n-inventory.test.mjs scripts/i18n-coverage.test.mjs",
+    "check:translations": "node scripts/i18n-coverage.mjs --check",
     "dev": "concurrently -k -n frontend,backend \"npm run dev -w @daybook/frontend\" \"npm run dev -w @daybook/backend\"",
     "build": "npm run build --workspaces --if-present",
     "typecheck": "npm run typecheck --workspaces --if-present",

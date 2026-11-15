@@ -1,0 +1,526 @@
+export default {
+  Save: 'സേവ് ചെയ്യുക',
+  Cancel: 'റദ്ദാക്കുക',
+  Retry: 'വീണ്ടും ശ്രമിക്കുക',
+  Loading: 'ലോഡ് ചെയ്യുന്നു',
+  Settings: 'ക്രമീകരണങ്ങൾ',
+  Appearance: 'രൂപഭാവം',
+  Overview: 'അവലോകനം',
+  Workspace: 'പ്രവർത്തന ഇടം',
+  Operations: 'പ്രവർത്തനങ്ങൾ',
+  'Interface language': 'ഇന്റർഫേസ് ഭാഷ',
+  English: 'English',
+  'Display mode': 'പ്രദർശന രീതി',
+  Light: 'ലൈറ്റ്',
+  Dark: 'ഡാർക്ക്',
+  System: 'സിസ്റ്റം',
+  'Color scheme': 'വർണ്ണക്രമം',
+  Typography: 'അക്ഷരരൂപം',
+  'Font family': 'അക്ഷരകുടുംബം',
+  'Font weight': 'അക്ഷരത്തിന്റെ കനം',
+  'Font style': 'അക്ഷരശൈലി',
+  'Reading size': 'വായനാ അക്ഷരവലുപ്പം',
+  'Custom reading size': 'ഇഷ്ടാനുസൃത വായനാ അക്ഷരവലുപ്പം',
+  'Line spacing': 'വരികൾക്കിടയിലെ അകലം',
+  Regular: 'സാധാരണം',
+  Medium: 'ഇടത്തരം',
+  Semibold: 'അൽപം കട്ടിയുള്ളത്',
+  Bold: 'കട്ടിയുള്ളത്',
+  Italic: 'ചെരിഞ്ഞത്',
+  'Operational layout': 'പ്രവർത്തന വിന്യാസം',
+  'Table / compact grid': 'പട്ടിക / ചെറിയ ഗ്രിഡ്',
+  'Detailed cards': 'വിശദമായ കാർഡുകൾ',
+  'Route sequence': 'റൂട്ട് ക്രമം',
+  'Workspace settings': 'പ്രവർത്തന ഇടത്തിന്റെ ക്രമീകരണങ്ങൾ',
+  'Workspace preview': 'പ്രവർത്തന ഇടത്തിന്റെ മുൻകാഴ്ച',
+  'Save appearance preferences': 'രൂപഭാവ ക്രമീകരണങ്ങൾ സേവ് ചെയ്യുക',
+  'Preferences saved': 'ക്രമീകരണങ്ങൾ സേവ് ചെയ്തു',
+  'Preferences unavailable': 'ക്രമീകരണങ്ങൾ ലഭ്യമല്ല',
+  'Preference save unconfirmed':
+    'ക്രമീകരണങ്ങൾ സേവ് ചെയ്തതായി സ്ഥിരീകരിച്ചിട്ടില്ല',
+  'Check original preference save': 'ആദ്യ സേവ് അഭ്യർത്ഥന പരിശോധിക്കുക',
+  'Preference recovery storage unavailable':
+    'ക്രമീകരണങ്ങളുടെ വീണ്ടെടുക്കൽ സംഭരണം ലഭ്യമല്ല',
+  'Restore preference recovery': 'ക്രമീകരണങ്ങളുടെ വീണ്ടെടുക്കൽ പുനഃസ്ഥാപിക്കുക',
+  'Reload saved preferences': 'സേവ് ചെയ്ത ക്രമീകരണങ്ങൾ വീണ്ടും ലോഡ് ചെയ്യുക',
+  'Device layout not retained': 'ഈ ഉപകരണത്തിലെ വിന്യാസം നിലനിർത്താനായില്ല',
+  'Sign out': 'പുറത്തുകടക്കുക',
+  'Sign in': 'പ്രവേശിക്കുക',
+  'Create agency': 'ഏജൻസി സൃഷ്ടിക്കുക',
+  'Sign in to Daybook': 'Daybook-ൽ പ്രവേശിക്കുക',
+  'Checking your session…': 'നിങ്ങളുടെ സെഷൻ പരിശോധിക്കുന്നു…',
+  'Email address': 'ഇമെയിൽ വിലാസം',
+  Password: 'പാസ്‌വേഡ്',
+  'Agency name': 'ഏജൻസിയുടെ പേര്',
+  'Your name': 'നിങ്ങളുടെ പേര്',
+  'Back to sign in': 'പ്രവേശനത്തിലേക്ക് മടങ്ങുക',
+  'Create an agency': 'ഒരു ഏജൻസി സൃഷ്ടിക്കുക',
+  'Use 12–128 characters.': '12–128 അക്ഷരങ്ങൾ ഉപയോഗിക്കുക.',
+  'The agency workspace': 'ഏജൻസിയുടെ പ്രവർത്തന ഇടം',
+  'Unable to continue': 'തുടരാൻ കഴിയുന്നില്ല',
+  'Unable to complete the action': 'പ്രവർത്തനം പൂർത്തിയാക്കാൻ കഴിയുന്നില്ല',
+  'Residents & subscriptions': 'വരിക്കാരും സബ്‌സ്‌ക്രിപ്ഷനുകളും',
+  'Publications & pricing': 'പ്രസിദ്ധീകരണങ്ങളും നിരക്കുകളും',
+  'Routes & delivery': 'റൂട്ടുകളും വിതരണവും',
+  'Daily delivery log': 'ദൈനംദിന വിതരണ രേഖ',
+  Collections: 'പണപ്പിരിവ്',
+  'Route collection sheets': 'റൂട്ട് പണപ്പിരിവ് പട്ടികകൾ',
+  'Payments & accounts': 'പണമടവുകളും അക്കൗണ്ടുകളും',
+  'Publishers & returns': 'പ്രസാധകരും മടക്കങ്ങളും',
+  'Seasonal stock': 'കാലാനുസൃത സ്റ്റോക്ക്',
+  'Advertisers & inserts': 'പരസ്യദാതാക്കളും ലഘുലേഖകളും',
+  'Staff & payroll': 'ജീവനക്കാരും ശമ്പളവും',
+  'Staff pay & attendance': 'ജീവനക്കാരുടെ ശമ്പളവും ഹാജറും',
+  'Cash handover & closing': 'പണം കൈമാറ്റവും കണക്കടയ്ക്കലും',
+  Communications: 'ആശയവിനിമയം',
+  '{p0} copies': '{p0} പകർപ്പുകൾ',
+  '. Balances reflect confirmed entries at preparation time.':
+    '. തയ്യാറാക്കിയ സമയത്തെ സ്ഥിരീകരിച്ച ഇടപാടുകളാണ് ബാലൻസിൽ ഉൾപ്പെടുന്നത്.',
+  '. Confirm using your cash record or bank statement.':
+    '. നിങ്ങളുടെ പണരേഖയോ ബാങ്ക് സ്റ്റേറ്റ്മെന്റോ പരിശോധിച്ച് സ്ഥിരീകരിക്കുക.',
+  '. SMS:': '. എസ്‌എംഎസ്:',
+  '· Actual': '· യഥാർത്ഥം',
+  '· Attempted ·': '· ശ്രമിച്ചു ·',
+  '· Collection date': '· പണപ്പിരിവ് തീയതി',
+  '· Collection due': '· പിരിച്ചെടുക്കാനുള്ളത്',
+  '· Collection sheet': '· പണപ്പിരിവ് പട്ടിക',
+  '· Counted': '· എണ്ണിയത്',
+  '· Deposit': '· നിക്ഷേപം',
+  '· Door': '· വാതിൽ',
+  '· Drop': '· വിതരണ സ്ഥാനം',
+  '· Due': '· ബാക്കി',
+  '· Expected': '· പ്രതീക്ഷിച്ചത്',
+  '· Expires': '· കാലാവധി അവസാനിക്കുന്നത്',
+  '· Handed over': '· കൈമാറിയത്',
+  '· Memo': '· കുറിപ്പ്',
+  '· Opening': '· ആരംഭം',
+  '· Overdue': '· കുടിശ്ശിക',
+  '· page adjusted': '· പേജ് ക്രമീകരിച്ചു',
+  '· Per copy': '· ഓരോ പകർപ്പിനും',
+  '· Remaining to apply': '· വിനിയോഗിക്കാൻ ബാക്കി',
+  '· Returned copies': '· മടക്കിയ പകർപ്പുകൾ',
+  '· Route/day': '· റൂട്ട്/ദിവസം',
+  '· Salary': '· ശമ്പളം',
+  '· unavailable': '· ലഭ്യമല്ല',
+  '· Variance': '· വ്യത്യാസം',
+  '{p0} · price rules': '{p0} · നിരക്ക് നിയമങ്ങൾ',
+  '{p0} · subscriptions': '{p0} · സബ്‌സ്‌ക്രിപ്ഷനുകൾ',
+  '{p0} collection not confirmed': '{p0} പണപ്പിരിവ് സ്ഥിരീകരിച്ചിട്ടില്ല',
+  '{p0} collection{p1} pending confirmation':
+    '{p0} പണപ്പിരിവ്{p1} സ്ഥിരീകരണം കാത്തിരിക്കുന്നു',
+  '{p0} collection{p1} recorded{p2}': '{p0} പണപ്പിരിവ്{p1} രേഖപ്പെടുത്തി{p2}',
+  '{p0} copies compared with a recent average of {p1}. Review holds, schedules and route changes before pickup.':
+    'അടുത്തകാലത്തെ ശരാശരിയായ {p1} പകർപ്പുകളുമായി താരതമ്യം ചെയ്യുമ്പോൾ {p0} പകർപ്പുകൾ. പത്രങ്ങൾ എടുക്കുന്നതിന് മുമ്പ് താൽക്കാലിക നിർത്തലുകൾ, സമയക്രമങ്ങൾ, റൂട്ട് മാറ്റങ്ങൾ എന്നിവ പരിശോധിക്കുക.',
+  '{p0} jobs are awaiting retry or investigation.':
+    '{p0} ജോലികൾ വീണ്ടും ശ്രമിക്കാനോ പരിശോധിക്കാനോ കാത്തിരിക്കുന്നു.',
+  '{p0} jobs await retry or investigation.':
+    '{p0} ജോലികൾ വീണ്ടും ശ്രമിക്കാനോ പരിശോധിക്കാനോ കാത്തിരിക്കുന്നു.',
+  '{p0} resident accounts exceed credit limits':
+    '{p0} വരിക്കാരുടെ അക്കൗണ്ടുകൾ കടപരിധി കടന്നിരിക്കുന്നു',
+  '{p0} skipped accounts remain unpaid':
+    'ഒഴിവാക്കിയ {p0} അക്കൗണ്ടുകളിൽ പണം ഇനിയും അടച്ചിട്ടില്ല',
+  '0 results · pagination hidden':
+    '0 ഫലങ്ങൾ · പേജ് നിയന്ത്രണങ്ങൾ മറച്ചിരിക്കുന്നു',
+  'A bounded pay rule can only be shortened or explicitly marked as final employment.':
+    'കാലപരിധി നിശ്ചയിച്ച വേതനനിയമത്തിന്റെ കാലം ചുരുക്കുകയോ ജോലിയുടെ അവസാന കാലയളവായി വ്യക്തമായി രേഖപ്പെടുത്തുകയോ മാത്രമേ ചെയ്യാനാകൂ.',
+  'A clear start to your day.': 'നിങ്ങളുടെ ദിവസത്തിന് വ്യക്തമായൊരു തുടക്കം.',
+  'A clearer daily rhythm.': 'ദൈനംദിന ജോലിക്ക് കൂടുതൽ വ്യക്തമായ ക്രമം.',
+  'A corrected delivery is not on this bill line.':
+    'തിരുത്തിയ വിതരണ രേഖ ഈ ബിൽ ഇനത്തിൽ ഉൾപ്പെട്ടിട്ടില്ല.',
+  'A corrected publication is no longer available on this bill. Recalculate from the current records.':
+    'തിരുത്തിയ പ്രസിദ്ധീകരണം ഈ ബില്ലിൽ ഇപ്പോൾ ലഭ്യമല്ല. നിലവിലെ രേഖകളിൽ നിന്ന് വീണ്ടും കണക്കാക്കുക.',
+  'A delivery rate needs review': 'വിതരണ നിരക്ക് പരിശോധിക്കണം',
+  'A digital payment reference is required.':
+    'ഡിജിറ്റൽ പണമടവിന്റെ റഫറൻസ് ആവശ്യമാണ്.',
+  'A hold cannot move between resident accounts.':
+    'താൽക്കാലിക നിർത്തൽ ഒരു വരിക്കാരന്റെ അക്കൗണ്ടിൽ നിന്ന് മറ്റൊന്നിലേക്ക് മാറ്റാനാവില്ല.',
+  'A linked record is unavailable or still in use.':
+    'ബന്ധപ്പെട്ട രേഖ ലഭ്യമല്ല അല്ലെങ്കിൽ ഇപ്പോഴും ഉപയോഗത്തിലാണ്.',
+  'A payment cannot be received in the future.':
+    'ഭാവിയിലെ തീയതിയിൽ പണം ലഭിച്ചതായി രേഖപ്പെടുത്താനാവില്ല.',
+  'A posted payslip covers dates after this end date.':
+    'രേഖപ്പെടുത്തിയ ശമ്പളസ്ലിപ്പിൽ ഈ അവസാന തീയതിക്ക് ശേഷമുള്ള തീയതികളും ഉൾപ്പെടുന്നു.',
+  'A posted payslip locks this rule period.':
+    'രേഖപ്പെടുത്തിയ ശമ്പളസ്ലിപ്പ് കാരണം ഈ നിയമത്തിന്റെ കാലയളവ് ഇനി മാറ്റാനാവില്ല.',
+  'A previous recovery record could not be read. Review existing receipts before recording funds.':
+    'മുമ്പത്തെ വീണ്ടെടുക്കൽ രേഖ വായിക്കാനായില്ല. പണം രേഖപ്പെടുത്തുന്നതിന് മുമ്പ് നിലവിലുള്ള രസീതുകൾ പരിശോധിക്കുക.',
+  'A QR request opens a payment app. Funds stay unconfirmed until the agency verifies receipt.':
+    'QR അഭ്യർത്ഥന ഒരു പേയ്‌മെന്റ് ആപ്പ് തുറക്കുന്നു. ഏജൻസി പണം ലഭിച്ചതായി പരിശോധിക്കുന്നതുവരെ അതിന്റെ ലഭ്യത സ്ഥിരീകരിച്ചിട്ടില്ല.',
+  'A ready current-revision PDF, payment QR and active share link are required. Consent, current figures and provider settings are checked again before sending.':
+    'നിലവിലെ പതിപ്പിന്റെ തയ്യാറായ PDF, പേയ്‌മെന്റ് QR, പ്രവർത്തിക്കുന്ന പങ്കിടൽ ലിങ്ക് എന്നിവ ആവശ്യമാണ്. അയയ്ക്കുന്നതിന് മുമ്പ് സമ്മതം, നിലവിലെ കണക്കുകൾ, സേവനദാതാവിന്റെ ക്രമീകരണങ്ങൾ എന്നിവ വീണ്ടും പരിശോധിക്കും.',
+  'A reminder payment link is required.':
+    'ഓർമ്മപ്പെടുത്തലിനുള്ള പേയ്‌മെന്റ് ലിങ്ക് ആവശ്യമാണ്.',
+  'a resident': 'ഒരു വരിക്കാരൻ',
+  'A route supports up to 5000 delivery points.':
+    'ഒരു റൂട്ടിൽ പരമാവധി 5000 വിതരണ സ്ഥാനങ്ങൾ ഉൾപ്പെടുത്താം.',
+  'A secure callback URL is required.': 'സുരക്ഷിതമായ കോൾബാക്ക് URL ആവശ്യമാണ്.',
+  'A secure document link is required.': 'സുരക്ഷിതമായ പ്രമാണ ലിങ്ക് ആവശ്യമാണ്.',
+  'A secure QR URL is required.': 'സുരക്ഷിതമായ QR URL ആവശ്യമാണ്.',
+  'a staff member': 'ഒരു ജീവനക്കാരൻ',
+  'A temporary assignment already covers these dates.':
+    'ഈ തീയതികൾക്ക് ഒരു താൽക്കാലിക ചുമതല ഇതിനകം നിശ്ചയിച്ചിട്ടുണ്ട്.',
+  'A temporary route allocation does not cover this delivery point.':
+    'താൽക്കാലിക റൂട്ട് വിഭജനത്തിൽ ഈ വിതരണ സ്ഥാനം ഉൾപ്പെടുന്നില്ല.',
+  'A ten-digit Indian number or an international number with country code.':
+    'പത്ത് അക്കമുള്ള ഇന്ത്യൻ നമ്പറോ രാജ്യകോഡ് ഉൾപ്പെടുന്ന അന്താരാഷ്ട്ര നമ്പറോ നൽകുക.',
+  'Choose English, Malayalam or Hindi.':
+    'ഇംഗ്ലീഷ്, മലയാളം അല്ലെങ്കിൽ ഹിന്ദി തിരഞ്ഞെടുക്കുക.',
+  'Choose light, dark or system display mode.':
+    'ലൈറ്റ്, ഡാർക്ക് അല്ലെങ്കിൽ സിസ്റ്റം പ്രദർശന രീതി തിരഞ്ഞെടുക്കുക.',
+  'Choose an available color scheme.': 'ലഭ്യമായ ഒരു വർണ്ണക്രമം തിരഞ്ഞെടുക്കുക.',
+  'Choose table, cards or route sequence layout.':
+    'പട്ടിക, കാർഡുകൾ അല്ലെങ്കിൽ റൂട്ട് ക്രമം എന്ന വിന്യാസം തിരഞ്ഞെടുക്കുക.',
+  'Choose supported font, size, weight, style and line spacing.':
+    'പിന്തുണയ്ക്കുന്ന അക്ഷരരൂപം, വലുപ്പം, കനം, ശൈലി, വരിയകലം എന്നിവ തിരഞ്ഞെടുക്കുക.',
+  'Choose valid appearance preferences.':
+    'സാധുവായ രൂപഭാവ ക്രമീകരണങ്ങൾ തിരഞ്ഞെടുക്കുക.',
+  'Sign in to continue.': 'തുടരാൻ പ്രവേശിക്കുക.',
+  'This record changed. Reload it before saving.':
+    'ഈ രേഖ മാറിയിരിക്കുന്നു. സേവ് ചെയ്യുന്നതിന് മുമ്പ് വീണ്ടും ലോഡ് ചെയ്യുക.',
+  'This request identifier was already used for another operation.':
+    'ഈ അഭ്യർത്ഥനയുടെ ഐഡന്റിഫയർ മറ്റൊരു പ്രവർത്തനത്തിന് ഇതിനകം ഉപയോഗിച്ചിട്ടുണ്ട്.',
+  'Request origin is not allowed.': 'അഭ്യർത്ഥനയുടെ ഉറവിടം അനുവദനീയമല്ല.',
+  'Database unavailable.': 'ഡാറ്റാബേസ് ലഭ്യമല്ല.',
+  'The request could not be confirmed. Check your connection and review your records before trying again.':
+    'അഭ്യർത്ഥന സ്ഥിരീകരിക്കാനായില്ല. നിങ്ങളുടെ കണക്ഷൻ പരിശോധിച്ച് വീണ്ടും ശ്രമിക്കുന്നതിന് മുമ്പ് നിലവിലെ രേഖകൾ പരിശോധിക്കുക.',
+  'Enter {p0}.': 'ഈ ഫീൽഡ് നൽകുക: {p0}.',
+  'Enter a valid {p0} (up to {p1} characters).':
+    'ഈ ഫീൽഡ് ശരിയായി നൽകുക: {p0} (പരമാവധി {p1} അക്ഷരങ്ങൾ).',
+  'territory name': 'പ്രദേശത്തിന്റെ പേര്',
+  'absence reason': 'ഹാജരാകാത്തതിന്റെ കാരണം',
+  address: 'വിലാസം',
+  'adjustment reason': 'ക്രമീകരണത്തിന്റെ കാരണം',
+  'advertiser name': 'പരസ്യദാതാവിന്റെ പേര്',
+  'advertiser phone': 'പരസ്യദാതാവിന്റെ ഫോൺ നമ്പർ',
+  'agency name': 'ഏജൻസിയുടെ പേര്',
+  'agency UPI address': 'ഏജൻസിയുടെ UPI വിലാസം',
+  'approved payroll correction reason':
+    'അംഗീകരിച്ച ശമ്പളപ്പട്ടിക തിരുത്തലിന്റെ കാരണം',
+  'attendance note': 'ഹാജർ കുറിപ്പ്',
+  'bill correction reason': 'ബിൽ തിരുത്തലിന്റെ കാരണം',
+  'billing address': 'ബില്ലിനുള്ള വിലാസം',
+  'closing reason': 'അവസാനിപ്പിക്കുന്നതിന്റെ കാരണം',
+  'closing sign-off': 'അവസാനിപ്പിക്കുന്നതിനുള്ള അംഗീകാരം',
+  'complaint details': 'പരാതിയുടെ വിശദാംശങ്ങൾ',
+  'completion proof reference': 'പൂർത്തീകരണ തെളിവിന്റെ റഫറൻസ്',
+  'confirmation evidence': 'സ്ഥിരീകരണ തെളിവ്',
+  'consent or opt-out evidence': 'സമ്മതത്തിന്റെയോ പിൻവാങ്ങലിന്റെയോ തെളിവ്',
+  'custody reason': 'കൈവശം സൂക്ഷിക്കുന്നതിന്റെ കാരണം',
+  'delivery point': 'വിതരണ സ്ഥലം',
+  'door/address': 'വാതിൽ നമ്പർ/വിലാസം',
+  edition: 'പതിപ്പ്',
+  email: 'ഇമെയിൽ',
+  'email address': 'ഇമെയിൽ വിലാസം',
+  'expense approval evidence': 'ചെലവ് അംഗീകരിച്ചതിന്റെ തെളിവ്',
+  'expense or resolution reason': 'ചെലവിന്റെയോ പരിഹാരത്തിന്റെയോ കാരണം',
+  'insert title': 'അനുബന്ധത്തിന്റെ ശീർഷകം',
+  'international phone number': 'അന്താരാഷ്ട്ര ഫോൺ നമ്പർ',
+  'invoice note': 'ഇൻവോയ്സ് കുറിപ്പ്',
+  'item name': 'ഇനത്തിന്റെ പേര്',
+  locality: 'പ്രദേശത്തിന്റെ വിശദാംശം',
+  name: 'പേര്',
+  'overlap authorization reason': 'ഒരേ കാലയളവ് അനുവദിച്ചതിന്റെ കാരണം',
+  'override reason': 'വ്യത്യസ്ത തീരുമാനം അനുവദിച്ചതിന്റെ കാരണം',
+  'owner sign-off': 'ഉടമയുടെ അംഗീകാരം',
+  'pay change reason': 'ശമ്പള മാറ്റത്തിന്റെ കാരണം',
+  'payment reference': 'പണമടവിന്റെ റഫറൻസ്',
+  'phone number': 'ഫോൺ നമ്പർ',
+  'PIN code': 'പിൻ കോഡ്',
+  'posting description': 'അക്കൗണ്ട് രേഖയുടെ വിവരണം',
+  'posting reference': 'അക്കൗണ്ട് രേഖയുടെ റഫറൻസ്',
+  'press holiday reason': 'പ്രസ്സ് അവധിയുടെ കാരണം',
+  'provider reference': 'സേവനദാതാവിന്റെ റഫറൻസ്',
+  'provider verification evidence': 'സേവനദാതാവിന്റെ സ്ഥിരീകരണ തെളിവ്',
+  'publication language': 'പ്രസിദ്ധീകരണത്തിന്റെ ഭാഷ',
+  'publication name': 'പ്രസിദ്ധീകരണത്തിന്റെ പേര്',
+  'publisher name': 'പ്രസാധകന്റെ പേര്',
+  'publisher phone': 'പ്രസാധകന്റെ ഫോൺ നമ്പർ',
+  'reconciliation evidence': 'കണക്കൊത്തുനോക്കിയതിന്റെ തെളിവ്',
+  'refund confirmation evidence': 'പണം മടക്കിയതിന്റെ സ്ഥിരീകരണ തെളിവ്',
+  'refund reference': 'പണം മടക്കിയതിന്റെ റഫറൻസ്',
+  'resident name': 'താമസക്കാരന്റെ പേര്',
+  'resolution details': 'പരിഹാരത്തിന്റെ വിശദാംശങ്ങൾ',
+  'return reason': 'തിരികെ നൽകുന്നതിന്റെ കാരണം',
+  'route code': 'വിതരണപാതയുടെ കോഡ്',
+  'route name': 'വിതരണപാതയുടെ പേര്',
+  sector: 'മേഖല',
+  'staff ID': 'ജീവനക്കാരന്റെ ഐഡി',
+  'staff name': 'ജീവനക്കാരന്റെ പേര്',
+  'stock code': 'സ്റ്റോക്ക് കോഡ്',
+  'stock receipt note': 'സ്റ്റോക്ക് ലഭിച്ചതിന്റെ കുറിപ്പ്',
+  'suspension reason': 'താൽക്കാലികമായി നിർത്തുന്നതിന്റെ കാരണം',
+  'UPI payee name': 'UPI പണം സ്വീകരിക്കുന്നയാളുടെ പേര്',
+  'Preferences were not saved': 'ക്രമീകരണങ്ങൾ സേവ് ചെയ്തില്ല',
+  Selected: 'തിരഞ്ഞെടുത്തത്',
+  'Enter a supported reading size (12–24 px).':
+    'പിന്തുണയ്ക്കുന്ന വായനാ അക്ഷരവലുപ്പം നൽകുക (12–24 px).',
+  Compact: 'ഒതുക്കമുള്ളത്',
+  Large: 'വലുത്',
+  Standard: 'സാധാരണ അളവ്',
+  Tight: 'കുറഞ്ഞ അകലം',
+  Relaxed: 'കൂടിയ അകലം',
+  'Font preview unavailable': 'അക്ഷരരൂപത്തിന്റെ മുൻകാഴ്ച ലഭ്യമല്ല',
+  'Use Inter fallback while retaining your selected font preference.':
+    'തിരഞ്ഞെടുത്ത അക്ഷരരൂപം നിലനിർത്തിക്കൊണ്ട് പകരം Inter ഉപയോഗിക്കുക.',
+  'Retry font load': 'അക്ഷരരൂപം വീണ്ടും ലോഡ് ചെയ്യുക',
+  'Italic preview uses Inter':
+    'ചെരിഞ്ഞ അക്ഷരങ്ങളുടെ മുൻകാഴ്ച Inter ഉപയോഗിക്കുന്നു',
+  'Manrope has no bundled italic face. Your selected font preference is retained.':
+    'Manrope-ന്റെ ചെരിഞ്ഞ അക്ഷരരൂപം ഉൾപ്പെടുത്തിയിട്ടില്ല. തിരഞ്ഞെടുത്ത അക്ഷരരൂപം നിലനിർത്തുന്നു.',
+  'Preview kept. Retry saving without discarding your selection.':
+    'മുൻകാഴ്ച നിലനിർത്തിയിട്ടുണ്ട്. തിരഞ്ഞെടുത്തത് ഉപേക്ഷിക്കാതെ വീണ്ടും സേവ് ചെയ്യുക.',
+  'Loading font preview…': 'അക്ഷരരൂപത്തിന്റെ മുൻകാഴ്ച ലോഡ് ചെയ്യുന്നു…',
+  Default: 'സ്ഥിരസ്ഥിതി',
+  Dynamic: 'മാറുന്ന നിറങ്ങൾ',
+  'Green Apple': 'പച്ച ആപ്പിൾ',
+  Lavender: 'ലാവൻഡർ',
+  'Midnight Dusk': 'അർദ്ധരാത്രി സന്ധ്യ',
+  'Strawberry Daiquiri': 'സ്ട്രോബെറി ഡൈക്കിരി',
+  'Teal & Turquoise': 'നീലപ്പച്ചയും ടർക്കോയ്സും',
+  'Tidal Wave': 'വേലിയേറ്റത്തിര',
+  'Yin & Yang': 'യിനും യാങ്ങും',
+  Monochrome: 'ഏകനിറം',
+  'Loading…': 'ലോഡ് ചെയ്യുന്നു…',
+  'Dismiss notification': 'അറിയിപ്പ് ഒഴിവാക്കുക',
+  'Try again': 'വീണ്ടും ശ്രമിക്കുക',
+  'Loading records…': 'രേഖകൾ ലോഡ് ചെയ്യുന്നു…',
+  'Your route and entered values are preserved.':
+    'വിതരണപാതയും നൽകിയ വിവരങ്ങളും നിലനിർത്തിയിട്ടുണ്ട്.',
+  'No records yet': 'ഇതുവരെ രേഖകളില്ല',
+  'Add a record to get started.': 'ആരംഭിക്കാൻ ഒരു രേഖ ചേർക്കുക.',
+  'No matching records': 'പൊരുത്തപ്പെടുന്ന രേഖകളില്ല',
+  'Change your search or clear filters.':
+    'തിരച്ചിൽ മാറ്റുക അല്ലെങ്കിൽ ഫിൽട്ടറുകൾ നീക്കുക.',
+  'Records unavailable': 'രേഖകൾ ലഭ്യമല്ല',
+  'Keep the current route and retry loading this content.':
+    'നിലവിലെ വിതരണപാത നിലനിർത്തി ഈ വിവരങ്ങൾ വീണ്ടും ലോഡ് ചെയ്യുക.',
+  Offline: 'ഇന്റർനെറ്റ് ബന്ധമില്ല',
+  'Saved data stays readable. Server-confirmed actions wait for reconnection.':
+    'സേവ് ചെയ്ത വിവരങ്ങൾ വായിക്കാം. സെർവർ സ്ഥിരീകരണം ആവശ്യമായ പ്രവർത്തനങ്ങൾ ബന്ധം പുനഃസ്ഥാപിക്കുന്നതുവരെ കാത്തിരിക്കും.',
+  'Some records are unavailable': 'ചില രേഖകൾ ലഭ്യമല്ല',
+  'Loaded records remain visible. Totals are not finalized.':
+    'ലോഡ് ചെയ്ത രേഖകൾ കാണാം. ആകെ തുകകൾ അന്തിമമാക്കിയിട്ടില്ല.',
+  'This is taking longer than expected':
+    'പ്രതീക്ഷിച്ചതിലും കൂടുതൽ സമയമെടുക്കുന്നു',
+  'Your input is preserved. You can retry this request.':
+    'നൽകിയ വിവരങ്ങൾ നിലനിർത്തിയിട്ടുണ്ട്. ഈ അഭ്യർത്ഥന വീണ്ടും ശ്രമിക്കാം.',
+  'Page not found': 'പേജ് കണ്ടെത്തിയില്ല',
+  'This destination is unavailable. Return to the overview.':
+    'ഈ പേജ് ലഭ്യമല്ല. അവലോകനത്തിലേക്ക് മടങ്ങുക.',
+  'Access denied': 'പ്രവേശനം അനുവദിച്ചിട്ടില്ല',
+  'Your current role cannot open this workspace area.':
+    'നിലവിലെ ചുമതലയിൽ ഈ പ്രവർത്തനഭാഗം തുറക്കാനാവില്ല.',
+  'Session expired': 'സെഷൻ കാലഹരണപ്പെട്ടു',
+  'Sign in again, then return to your preserved draft.':
+    'വീണ്ടും സൈൻ ഇൻ ചെയ്ത് സൂക്ഷിച്ച കരടിലേക്ക് മടങ്ങുക.',
+  Empty: 'ശൂന്യം',
+  'No results': 'ഫലങ്ങളില്ല',
+  Error: 'പിശക്',
+  Partial: 'ഭാഗികം',
+  Slow: 'വേഗം കുറവ്',
+  Missing: 'ലഭ്യമല്ല',
+  'We’re checking this payment': 'ഈ പണമടവ് പരിശോധിക്കുന്നു',
+  'The connection dropped before confirmation. The payment may already be recorded.':
+    'സ്ഥിരീകരണത്തിന് മുമ്പ് ബന്ധം വിച്ഛേദിക്കപ്പെട്ടു. പണമടവ് ഇതിനകം രേഖപ്പെടുത്തിയിട്ടുണ്ടാകാം.',
+  'Check payment status': 'പണമടവിന്റെ നില പരിശോധിക്കുക',
+  'Loading residents…': 'താമസക്കാരുടെ വിവരങ്ങൾ ലോഡ് ചെയ്യുന്നു…',
+  'Keep filters available; disable billing until data arrives. Announce loading once. If it fails, show the retry state.':
+    'ഫിൽട്ടറുകൾ ലഭ്യമാക്കുക; വിവരങ്ങൾ വരുന്നതുവരെ ബില്ലിംഗ് അനുവദിക്കരുത്. ലോഡിംഗ് ഒരിക്കൽ അറിയിക്കുക. പരാജയപ്പെട്ടാൽ വീണ്ടും ശ്രമിക്കാനുള്ള നില കാണിക്കുക.',
+  'No residents on this route yet': 'ഈ വിതരണപാതയിൽ ഇതുവരെ താമസക്കാരില്ല',
+  'Add a resident or import a list to start building your delivery run.':
+    'വിതരണം ക്രമീകരിക്കാൻ താമസക്കാരനെ ചേർക്കുക അല്ലെങ്കിൽ പട്ടിക ഇറക്കുമതി ചെയ്യുക.',
+  'Add resident': 'താമസക്കാരനെ ചേർക്കുക',
+  'No matching residents': 'പൊരുത്തപ്പെടുന്ന താമസക്കാരില്ല',
+  'No results for “Lotus 99” in R01. Try another name or clear your filters.':
+    'R01-ൽ “Lotus 99” എന്നതിന് ഫലങ്ങളില്ല. മറ്റൊരു പേര് പരീക്ഷിക്കുക അല്ലെങ്കിൽ ഫിൽട്ടറുകൾ നീക്കുക.',
+  'Clear filters': 'ഫിൽട്ടറുകൾ നീക്കുക',
+  'We couldn’t load this route': 'ഈ വിതരണപാത ലോഡ് ചെയ്യാനായില്ല',
+  'Your route and October billing period are saved. Check the connection and try again.':
+    'വിതരണപാതയും ഒക്ടോബറിലെ ബില്ലിംഗ് കാലയളവും സേവ് ചെയ്തിട്ടുണ്ട്. ബന്ധം പരിശോധിച്ച് വീണ്ടും ശ്രമിക്കുക.',
+  'You’re offline · 3 updates waiting':
+    'ഇന്റർനെറ്റ് ബന്ധമില്ല · 3 പുതുക്കലുകൾ കാത്തിരിക്കുന്നു',
+  'Delivery updates are saved on this device and will sync when you reconnect.':
+    'വിതരണ പുതുക്കലുകൾ ഈ ഉപകരണത്തിൽ സേവ് ചെയ്തിട്ടുണ്ട്. ബന്ധം തിരിച്ചെത്തുമ്പോൾ സമന്വയിപ്പിക്കും.',
+  'View pending updates': 'കാത്തിരിക്കുന്ന പുതുക്കലുകൾ കാണുക',
+  'Syncing 3 delivery updates…': '3 വിതരണ പുതുക്കലുകൾ സമന്വയിപ്പിക്കുന്നു…',
+  'Prevent duplicate submission. Mark each item synced only after acknowledgement; retain failed items for retry.':
+    'ആവർത്തിച്ചുള്ള സമർപ്പണം തടയുക. സ്ഥിരീകരണം ലഭിച്ചശേഷം മാത്രം ഓരോ ഇനവും സമന്വയിപ്പിച്ചതായി അടയാളപ്പെടുത്തുക; പരാജയപ്പെട്ടവ വീണ്ടും ശ്രമിക്കാൻ നിലനിർത്തുക.',
+  'This bill changed elsewhere': 'ഈ ബിൽ മറ്റൊരിടത്ത് മാറ്റിയിട്ടുണ്ട്',
+  'Another operator saved a newer version of DB-2026-1048. Review both versions before continuing.':
+    'മറ്റൊരു ജീവനക്കാരൻ DB-2026-1048-ന്റെ പുതിയ പതിപ്പ് സേവ് ചെയ്തു. തുടരുന്നതിന് മുമ്പ് രണ്ട് പതിപ്പുകളും പരിശോധിക്കുക.',
+  'Review versions': 'പതിപ്പുകൾ പരിശോധിക്കുക',
+  'Keep local draft': 'ഉപകരണത്തിലെ കരട് നിലനിർത്തുക',
+  'Sign in to continue': 'തുടരാൻ സൈൻ ഇൻ ചെയ്യുക',
+  'Your session expired. Your unsaved bill stays on this device while you sign in again.':
+    'സെഷൻ കാലഹരണപ്പെട്ടു. വീണ്ടും സൈൻ ഇൻ ചെയ്യുമ്പോൾ സേവ് ചെയ്യാത്ത ബിൽ ഈ ഉപകരണത്തിൽ നിലനിൽക്കും.',
+  'Sign in again': 'വീണ്ടും സൈൻ ഇൻ ചെയ്യുക',
+  'Check delivered quantities': 'വിതരണം ചെയ്ത എണ്ണം പരിശോധിക്കുക',
+  'The Hindu · Daily: −1 copies. Enter a whole number from 0 to 30 for the selected delivery dates.':
+    'The Hindu · ദിവസേന: −1 പകർപ്പുകൾ. തിരഞ്ഞെടുത്ത വിതരണ തീയതികൾക്ക് 0 മുതൽ 30 വരെ പൂർണ്ണസംഖ്യ നൽകുക.',
+  'Review quantity': 'എണ്ണം പരിശോധിക്കുക',
+  'The Hindu has no confirmed rate for 14–15 October. Resolve the effective date range before generating this bill.':
+    'ഒക്ടോബർ 14–15-ന് The Hindu-വിന് സ്ഥിരീകരിച്ച നിരക്കില്ല. ബിൽ തയ്യാറാക്കുന്നതിന് മുമ്പ് നിരക്ക് ബാധകമായ തീയതികൾ ശരിയാക്കുക.',
+  'Review rates': 'നിരക്കുകൾ പരിശോധിക്കുക',
+  'This period already has a bill': 'ഈ കാലയളവിന് ഇതിനകം ബില്ലുണ്ട്',
+  'DB-2026-1048 already covers Anitha Nair’s October deliveries.':
+    'Anitha Nair-ന്റെ ഒക്ടോബർ വിതരണങ്ങൾ DB-2026-1048-ൽ ഇതിനകം ഉൾപ്പെടുത്തിയിട്ടുണ്ട്.',
+  'Open existing bill': 'നിലവിലുള്ള ബിൽ തുറക്കുക',
+  'Leave this bill without saving?':
+    'സേവ് ചെയ്യാതെ ഈ ബില്ലിൽ നിന്ന് പുറത്തുപോകണോ?',
+  'Your delivery quantity and credit changes have not been saved.':
+    'വിതരണ എണ്ണത്തിലെയും ക്രെഡിറ്റിലെയും മാറ്റങ്ങൾ സേവ് ചെയ്തിട്ടില്ല.',
+  'Keep editing': 'തിരുത്തൽ തുടരുക',
+  'Discard changes': 'മാറ്റങ്ങൾ ഉപേക്ഷിക്കുക',
+  'Record a partial payment': 'ഭാഗിക പണമടവ് രേഖപ്പെടുത്തുക',
+  'Anitha Nair · DB-2026-1048 Amount due ₹661.00 · Received ₹200.00 Balance after payment ₹461.00':
+    'Anitha Nair · DB-2026-1048 അടയ്ക്കേണ്ടത് ₹661.00 · ലഭിച്ചത് ₹200.00 പണമടവിന് ശേഷമുള്ള ബാക്കി ₹461.00',
+  'Confirm ₹200 payment': '₹200 പണമടവ് സ്ഥിരീകരിക്കുക',
+  'Payment exceeds the balance': 'പണമടവ് ബാക്കിയേക്കാൾ കൂടുതലാണ്',
+  'Amount entered ₹700.00 · Due ₹661.00 Extra ₹39.00 needs an explicit decision.':
+    'നൽകിയ തുക ₹700.00 · അടയ്ക്കേണ്ടത് ₹661.00 അധികമുള്ള ₹39.00-ന് വ്യക്തമായ തീരുമാനം വേണം.',
+  'Review amount': 'തുക പരിശോധിക്കുക',
+  'Recording ₹661 payment…': '₹661 പണമടവ് രേഖപ്പെടുത്തുന്നു…',
+  'Disable the submit action and use one request identity. The bill remains unpaid until confirmation returns.':
+    'സമർപ്പണം തടഞ്ഞ് ഒരേ അഭ്യർത്ഥനാ ഐഡി ഉപയോഗിക്കുക. സ്ഥിരീകരണം വരുന്നതുവരെ ബിൽ അടയ്ക്കാത്ത നിലയിൽ തുടരും.',
+  'These hold dates overlap': 'നിർത്തിവയ്ക്കുന്ന തീയതികൾ തമ്മിൽ ഒത്തുവരുന്നു',
+  'Joseph Mathew already has a hold from 01–04 Nov. Your new hold starts on 03 Nov.':
+    'Joseph Mathew-വിന് നവംബർ 01–04 വരെ ഇതിനകം നിർത്തിവയ്ക്കലുണ്ട്. പുതിയ നിർത്തിവയ്ക്കൽ നവംബർ 03-ന് തുടങ്ങുന്നു.',
+  'Review hold dates': 'നിർത്തിവയ്ക്കുന്ന തീയതികൾ പരിശോധിക്കുക',
+  'R01 needs a delivery operator': 'R01-ന് വിതരണ ജീവനക്കാരൻ വേണം',
+  'Biju P. is unavailable for this run. Assign a substitute before confirming dispatch.':
+    'ഈ വിതരണത്തിന് Biju P. ലഭ്യമല്ല. അയക്കൽ സ്ഥിരീകരിക്കുന്നതിന് മുമ്പ് പകരക്കാരനെ നിയോഗിക്കുക.',
+  'Assign substitute': 'പകരക്കാരനെ നിയോഗിക്കുക',
+  'Delivery update wasn’t saved': 'വിതരണ പുതുക്കൽ സേവ് ചെയ്തില്ല',
+  'Fathima Ali · Drop 004 is still marked Missed delivery. Your redelivery note is preserved.':
+    'Fathima Ali · വിതരണസ്ഥലം 004 ഇപ്പോഴും വിതരണം നഷ്ടപ്പെട്ടതായി രേഖപ്പെടുത്തിയിരിക്കുന്നു. വീണ്ടും വിതരണത്തിനുള്ള കുറിപ്പ് നിലനിർത്തിയിട്ടുണ്ട്.',
+  'Retry update': 'പുതുക്കൽ വീണ്ടും ശ്രമിക്കുക',
+  'You’ve reached the last resident': 'അവസാന താമസക്കാരനിൽ എത്തിയിരിക്കുന്നു',
+  'R01 collection review is complete. Some accounts may still have unpaid balances.':
+    'R01-ന്റെ പിരിവ് പരിശോധന പൂർത്തിയായി. ചില അക്കൗണ്ടുകളിൽ ഇനിയും അടയ്ക്കാത്ത ബാക്കി ഉണ്ടാകാം.',
+  'View route summary': 'വിതരണപാതയുടെ സംഗ്രഹം കാണുക',
+  'You don’t have access to close cash':
+    'പണക്കണക്ക് അവസാനിപ്പിക്കാൻ അനുമതിയില്ല',
+  'Your current role can view the ledger. An agency administrator can approve cash closing.':
+    'നിലവിലെ ചുമതലയിൽ ലെഡ്ജർ കാണാം. പണക്കണക്ക് അവസാനിപ്പിക്കുന്നത് ഏജൻസി അഡ്മിനിസ്ട്രേറ്റർക്ക് അംഗീകരിക്കാം.',
+  'Back to ledger': 'ലെഡ്ജറിലേക്ക് മടങ്ങുക',
+  'Ledger export failed': 'ലെഡ്ജർ കയറ്റുമതി പരാജയപ്പെട്ടു',
+  'Your ledger is unchanged. Retry the export with the same date range and filters.':
+    'ലെഡ്ജറിൽ മാറ്റമില്ല. അതേ തീയതികളും ഫിൽട്ടറുകളും ഉപയോഗിച്ച് വീണ്ടും കയറ്റുമതി ചെയ്യുക.',
+  'Retry export': 'കയറ്റുമതി വീണ്ടും ശ്രമിക്കുക',
+  'The bill is saved · sharing failed':
+    'ബിൽ സേവ് ചെയ്തു · പങ്കിടൽ പരാജയപ്പെട്ടു',
+  'DB-2026-1048 is ready. We couldn’t open the sharing service.':
+    'DB-2026-1048 തയ്യാറാണ്. പങ്കിടൽ സേവനം തുറക്കാനായില്ല.',
+  'Download PDF': 'PDF ഡൗൺലോഡ് ചെയ്യുക',
+  'Preferences couldn’t be saved': 'ക്രമീകരണങ്ങൾ സേവ് ചെയ്യാനായില്ല',
+  'Your preview is still visible. Retry to save Teal & Turquoise and your reading size to this workspace.':
+    'മുൻകാഴ്ച ഇപ്പോഴും കാണാം. ഈ പ്രവർത്തനസ്ഥലത്ത് നീലപ്പച്ചയും ടർക്കോയ്സും വായനാ അക്ഷരവലുപ്പവും സേവ് ചെയ്യാൻ വീണ്ടും ശ്രമിക്കുക.',
+  'Retry save': 'സേവ് ചെയ്യാൻ വീണ്ടും ശ്രമിക്കുക',
+  'Restore saved preferences': 'സേവ് ചെയ്ത ക്രമീകരണങ്ങൾ തിരിച്ചെടുക്കുക',
+  'Offline · saved records': 'ഇന്റർനെറ്റ് ബന്ധമില്ല · സേവ് ചെയ്ത രേഖകൾ',
+  'Retry table': 'പട്ടിക വീണ്ടും ലോഡ് ചെയ്യുക',
+  Pagination: 'പേജുകൾ',
+  'Showing {start}–{end} of {total} {label}':
+    'ആകെ {total} {label}: {start}–{end} കാണിക്കുന്നു',
+  records: 'രേഖകൾ',
+  Previous: 'മുമ്പത്തേത്',
+  'Page {current} of {pages}': 'ആകെ {pages} പേജുകളിൽ {current}',
+  Next: 'അടുത്തത്',
+  'Generate bill': 'ബിൽ തയ്യാറാക്കുക',
+  'Save bill': 'ബിൽ സേവ് ചെയ്യുക',
+  Edit: 'തിരുത്തുക',
+  Print: 'അച്ചടിക്കുക',
+  'Download & share': 'ഡൗൺലോഡ് ചെയ്ത് പങ്കിടുക',
+  'Mark as paid': 'അടച്ചതായി അടയാളപ്പെടുത്തുക',
+  'Move to next': 'അടുത്തതിലേക്ക് പോകുക',
+  'Loading bill details…': 'ബില്ലിന്റെ വിശദാംശങ്ങൾ ലോഡ് ചെയ്യുന്നു…',
+  'Bill unavailable': 'ബിൽ ലഭ്യമല്ല',
+  'Your draft is preserved. No saved invoice was confirmed.':
+    'കരട് നിലനിർത്തിയിട്ടുണ്ട്. സേവ് ചെയ്ത ഇൻവോയ്സ് സ്ഥിരീകരിച്ചിട്ടില്ല.',
+  'Bill to': 'ബിൽ നൽകുന്നത്',
+  'Issued {issued} · Due {due}': 'നൽകിയത് {issued} · അവസാന തീയതി {due}',
+  'Actual delivered copies': 'യഥാർത്ഥത്തിൽ വിതരണം ചെയ്ത പകർപ്പുകൾ',
+  'No current deliveries': 'നിലവിൽ വിതരണങ്ങളില്ല',
+  'Previous balances and account credits still apply.':
+    'മുൻ ബാക്കികളും അക്കൗണ്ട് ക്രെഡിറ്റുകളും ഇപ്പോഴും ബാധകമാണ്.',
+  'Publication and delivery details':
+    'പ്രസിദ്ധീകരണത്തിന്റെയും വിതരണത്തിന്റെയും വിശദാംശങ്ങൾ',
+  'Publication / delivery': 'പ്രസിദ്ധീകരണം / വിതരണം',
+  Qty: 'എണ്ണം',
+  Unavailable: 'ലഭ്യമല്ല',
+  'Rate required': 'നിരക്ക് ആവശ്യമാണ്',
+  'Rate {currency}': 'നിരക്ക് {currency}',
+  'Amount {currency}': 'തുക {currency}',
+  'Checking payment status…': 'പണമടവിന്റെ നില പരിശോധിക്കുന്നു…',
+  'The bill remains unpaid until confirmation returns.':
+    'സ്ഥിരീകരണം ലഭിക്കുന്നതുവരെ ബിൽ അടയ്ക്കാത്ത നിലയിൽ തുടരും.',
+  'Payment not confirmed': 'പണമടവ് സ്ഥിരീകരിച്ചിട്ടില്ല',
+  'The payment may already be recorded. Check the original request before allowing a new payment.':
+    'പണമടവ് ഇതിനകം രേഖപ്പെടുത്തിയിട്ടുണ്ടാകാം. പുതിയ പണമടവ് അനുവദിക്കുന്നതിന് മുമ്പ് യഥാർത്ഥ അഭ്യർത്ഥന പരിശോധിക്കുക.',
+  'Partial payment recorded': 'ഭാഗിക പണമടവ് രേഖപ്പെടുത്തി',
+  'Receipt already recorded': 'രസീത് ഇതിനകം രേഖപ്പെടുത്തിയിട്ടുണ്ട്',
+  'Payment recorded': 'പണമടവ് രേഖപ്പെടുത്തി',
+  Paid: 'അടച്ചു',
+  Receipt: 'രസീത്',
+  Invoice: 'ഇൻവോയ്സ്',
+  'Balance remaining': 'ശേഷിക്കുന്ന ബാക്കി',
+  'Print receipt': 'രസീത് അച്ചടിക്കുക',
+  'Next in delivery order': 'വിതരണ ക്രമത്തിൽ അടുത്തത്',
+  'End of this delivery order': 'ഈ വിതരണ ക്രമത്തിന്റെ അവസാനം',
+  'Resident no longer on this route': 'താമസക്കാരൻ ഇനി ഈ വിതരണപാതയിലില്ല',
+  'Next resident unavailable': 'അടുത്ത താമസക്കാരന്റെ വിവരം ലഭ്യമല്ല',
+  '{count} skipped accounts remain unpaid':
+    'ഒഴിവാക്കിയ {count} അക്കൗണ്ടുകളിൽ അടയ്ക്കാത്ത ബാക്കിയുണ്ട്',
+  'Review them before closing the run.':
+    'വിതരണയാത്ര അവസാനിപ്പിക്കുന്നതിന് മുമ്പ് അവ പരിശോധിക്കുക.',
+  'Enter a valid {p0}.': 'ഈ ഫീൽഡ് ശരിയായി നൽകുക: {p0}.',
+  'Enter a valid email address.': 'സാധുവായ ഇമെയിൽ വിലാസം നൽകുക.',
+  'Method not allowed.': 'ഈ രീതി അനുവദനീയമല്ല.',
+  'Not found.': 'കണ്ടെത്തിയില്ല.',
+  'Request is too large.': 'അഭ്യർത്ഥന വളരെ വലുതാണ്.',
+  'Send JSON data.': 'JSON വിവരങ്ങൾ അയക്കുക.',
+  'Enter valid form data.': 'സാധുവായ ഫോം വിവരങ്ങൾ നൽകുക.',
+  'Use a password between 12 and 128 characters.':
+    '12 മുതൽ 128 വരെ അക്ഷരങ്ങളുള്ള പാസ്‌വേഡ് ഉപയോഗിക്കുക.',
+  'Too many attempts. Try again in 15 minutes.':
+    'വളരെയധികം ശ്രമങ്ങൾ. 15 മിനിറ്റിന് ശേഷം വീണ്ടും ശ്രമിക്കുക.',
+  'Unable to create this account. Try signing in.':
+    'ഈ അക്കൗണ്ട് സൃഷ്ടിക്കാനായില്ല. സൈൻ ഇൻ ചെയ്യാൻ ശ്രമിക്കുക.',
+  'Email or password is incorrect.': 'ഇമെയിലോ പാസ്‌വേഡോ തെറ്റാണ്.',
+  'Unable to complete this request. Try again.':
+    'ഈ അഭ്യർത്ഥന പൂർത്തിയാക്കാനായില്ല. വീണ്ടും ശ്രമിക്കുക.',
+  'The layout is retained for this agent and device. Route sequence uses recorded delivery order.':
+    'വിന്യാസം ഈ ഏജന്റിനും ഉപകരണത്തിനുമായി നിലനിർത്തും. വിതരണപാതാ ക്രമം രേഖപ്പെടുത്തിയ വിതരണ ക്രമം ഉപയോഗിക്കുന്നു.',
+  'Review your reading size, spacing and colors before saving.':
+    'സേവ് ചെയ്യുന്നതിന് മുമ്പ് വായനാ അക്ഷരവലുപ്പം, അകലം, നിറങ്ങൾ എന്നിവ പരിശോധിക്കുക.',
+  'Choose a readable workspace for this agent. Language is available in the console header.':
+    'ഈ ഏജന്റിനായി വായിക്കാൻ സൗകര്യപ്രദമായ പ്രവർത്തനസ്ഥലം തിരഞ്ഞെടുക്കുക. കൺസോളിന്റെ മുകളിൽ ഭാഷ തിരഞ്ഞെടുക്കാം.',
+  'Check the original save before changing preferences again. Its original choices and request are retained.':
+    'ക്രമീകരണങ്ങൾ വീണ്ടും മാറ്റുന്നതിന് മുമ്പ് യഥാർത്ഥ സേവ് പരിശോധിക്കുക. ആദ്യ തിരഞ്ഞെടുപ്പുകളും അഭ്യർത്ഥനയും നിലനിർത്തിയിട്ടുണ്ട്.',
+  'Saved preferences could not be read.':
+    'സേവ് ചെയ്ത ക്രമീകരണങ്ങൾ വായിക്കാനായില്ല.',
+  'Restore access to the original preference recovery record before saving.':
+    'സേവ് ചെയ്യുന്നതിന് മുമ്പ് യഥാർത്ഥ ക്രമീകരണ പുനഃസ്ഥാപന രേഖയിലേക്കുള്ള പ്രവേശനം തിരിച്ചെടുക്കുക.',
+  'Device layout could not be read; your saved profile is used.':
+    'ഉപകരണത്തിലെ വിന്യാസം വായിക്കാനായില്ല; സേവ് ചെയ്ത പ്രൊഫൈൽ ഉപയോഗിക്കുന്നു.',
+  'Another original preference save needs review before continuing.':
+    'തുടരുന്നതിന് മുമ്പ് മറ്റൊരു യഥാർത്ഥ ക്രമീകരണ സേവ് പരിശോധിക്കണം.',
+  'Profile saved, but this device could not retain its layout choice.':
+    'പ്രൊഫൈൽ സേവ് ചെയ്തു, എന്നാൽ ഈ ഉപകരണത്തിന് വിന്യാസ തിരഞ്ഞെടുപ്പ് നിലനിർത്താനായില്ല.',
+  'Loading saved value…': 'സേവ് ചെയ്ത വിവരം ലോഡ് ചെയ്യുന്നു…',
+  'Select an option': 'ഒരു ഓപ്ഷൻ തിരഞ്ഞെടുക്കുക',
+  'Couldn’t load options. Your selection is preserved.':
+    'ഓപ്ഷനുകൾ ലോഡ് ചെയ്യാനായില്ല. തിരഞ്ഞെടുത്തത് നിലനിർത്തിയിട്ടുണ്ട്.',
+  'No options are available.': 'ഓപ്ഷനുകൾ ലഭ്യമല്ല.',
+  'No matches. Change your search or clear filters.':
+    'പൊരുത്തങ്ങളില്ല. തിരച്ചിൽ മാറ്റുക അല്ലെങ്കിൽ ഫിൽട്ടറുകൾ നീക്കുക.',
+  'Loading options…': 'ഓപ്ഷനുകൾ ലോഡ് ചെയ്യുന്നു…',
+  'Couldn’t load results. Your query is preserved.':
+    'ഫലങ്ങൾ ലോഡ് ചെയ്യാനായില്ല. തിരച്ചിൽ നിലനിർത്തിയിട്ടുണ്ട്.',
+  'Saving selection…': 'തിരഞ്ഞെടുപ്പ് സേവ് ചെയ്യുന്നു…',
+  'Couldn’t save. Retry remains available.':
+    'സേവ് ചെയ്യാനായില്ല. വീണ്ടും ശ്രമിക്കാം.',
+  '{value} · unavailable': '{value} · ലഭ്യമല്ല',
+  'Clear search': 'തിരച്ചിൽ നീക്കുക',
+  '{label} results': '{label} ഫലങ്ങൾ',
+};

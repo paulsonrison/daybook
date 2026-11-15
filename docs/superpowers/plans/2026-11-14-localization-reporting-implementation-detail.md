@@ -51,7 +51,7 @@
 - [ ] Inventory executable UI labels/table headers/hints/recovery messages and backend/auth validation, separating user data, paths and protocol enums. Add a checked inventory/coverage test first and observe missing translations fail.
 - [ ] Implement en/ml/hi catalogues with identical nonempty keys, typed interpolation/plural rules, shared labels and request-scoped error formatting. Preserve machine error codes and original-operation behavior.
 - [ ] Convert every operational/auth screen, shared control and dynamic validation/template/report message. Do not satisfy coverage with English fallback or DOM text replacement.
-- [ ] Verify installed framework/Yoga localization boundaries against official Context7 documentation before choosing request hooks. Concurrent requests with different locales must remain isolated.
+- [x] Verify installed framework/Yoga localization boundaries against official Context7 documentation before choosing request hooks. Concurrent requests with different locales must remain isolated.
 - [ ] Test English/Malayalam/Hindi navigation, validation, pending/error/success/missing states and actual PDF text/fonts. Persist the selected agent locale across refresh/sign-in without leakage.
 
 ## Task 3 — Reconciled analytics

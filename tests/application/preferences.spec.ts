@@ -1,5 +1,51 @@
 import { test, expect } from '@playwright/test';
 import { financialBrowser } from './financial-support';
+test('saved language renders native console labels after switching and reloading', async ({
+  page,
+  baseURL,
+}) => {
+  await financialBrowser(
+    page,
+    baseURL!,
+    `native-console-${crypto.randomUUID()}@example.test`,
+  );
+  await page.goto('/settings/appearance');
+  await page
+    .getByLabel('Interface language', { exact: true })
+    .selectOption('ml');
+  await expect(
+    page.getByRole('heading', { name: 'രൂപഭാവം', exact: true }),
+  ).toBeVisible();
+  await expect(
+    page.getByRole('button', { name: 'പുറത്തുകടക്കുക', exact: true }),
+  ).toBeVisible();
+  await expect(page.locator('[data-db-agent-preferences]')).toHaveAttribute(
+    'lang',
+    'ml',
+  );
+  await page.getByLabel('ഇന്റർഫേസ് ഭാഷ', { exact: true }).selectOption('hi');
+  await expect(
+    page.getByRole('heading', { name: 'दिखावट', exact: true }),
+  ).toBeVisible();
+  await expect(
+    page.getByText('सहेजने से पहले अक्षर का आकार, दूरी और रंग जाँचें।', {
+      exact: true,
+    }),
+  ).toBeVisible();
+  await expect(
+    page.getByText(
+      'Review your reading size, spacing and colors before saving.',
+      { exact: true },
+    ),
+  ).toHaveCount(0);
+  await page.reload();
+  await expect(
+    page.getByLabel('इंटरफ़ेस की भाषा', { exact: true }),
+  ).toHaveValue('hi');
+  await expect(
+    page.getByRole('button', { name: 'साइन आउट करें', exact: true }),
+  ).toBeVisible();
+});
 test('appearance choices and profile language survive refresh and an unconfirmed save reuses its original request', async ({
   page,
   baseURL,
@@ -69,19 +115,21 @@ test('appearance choices and profile language survive refresh and an unconfirmed
     .getByLabel('Interface language', { exact: true })
     .selectOption('ml');
   await expect(
-    page.getByText('Preferences saved', { exact: true }),
+    page.getByText('ക്രമീകരണങ്ങൾ സേവ് ചെയ്തു', { exact: true }),
   ).toBeVisible();
   await expect(
-    page.getByLabel('Operational layout', { exact: true }),
+    page.getByLabel('പ്രവർത്തന വിന്യാസം', { exact: true }),
   ).toHaveValue('ROUTE');
   await page.reload();
+  await expect(page.getByLabel('ഇന്റർഫേസ് ഭാഷ', { exact: true })).toHaveValue(
+    'ml',
+  );
   await expect(
-    page.getByLabel('Interface language', { exact: true }),
-  ).toHaveValue('ml');
-  await expect(
-    page.getByLabel('Operational layout', { exact: true }),
+    page.getByLabel('പ്രവർത്തന വിന്യാസം', { exact: true }),
   ).toHaveValue('CARDS');
-  await page.getByRole('button', { name: 'Sign out', exact: true }).click();
+  await page
+    .getByRole('button', { name: 'പുറത്തുകടക്കുക', exact: true })
+    .click();
   await expect(
     page.getByRole('heading', { name: 'Sign in to Daybook', exact: true }),
   ).toBeVisible();

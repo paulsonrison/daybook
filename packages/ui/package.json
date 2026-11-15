@@ -29,7 +29,12 @@
     "./preferences": {
       "types": "./src/preferences.d.ts",
       "default": "./src/preferences.js"
-    }
+    },
+    "./messages": {
+      "types": "./src/messages.d.ts",
+      "default": "./src/messages.js"
+    },
+    "./i18n": "./src/i18n-context.tsx"
   },
   "scripts": {
     "typecheck": "tsc --noEmit",

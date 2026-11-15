@@ -1,4 +1,6 @@
+'use client';
 import type { Key, ReactNode } from 'react';
+import { useI18n } from '../i18n-context';
 import { Button } from './button';
 import {
   DataState,
@@ -39,6 +41,7 @@ export function DataTable<T>({
   partialMessage,
   showCaption = false,
 }: DataTableProps<T>) {
+  const { t } = useI18n();
   if (state === 'loading') return <TableSkeleton columns={columns.length} />;
   if (state !== 'ready' && state !== 'partial' && state !== 'offline')
     return (
@@ -56,19 +59,19 @@ export function DataTable<T>({
       {(state === 'partial' || state === 'offline') && (
         <Notification
           tone="warning"
-          title={
+          title={t(
             state === 'offline'
               ? 'Offline · saved records'
-              : 'Some records are unavailable'
-          }
+              : 'Some records are unavailable',
+          )}
           description={
             partialMessage ??
-            'Loaded records remain visible. Totals are not finalized.'
+            t('Loaded records remain visible. Totals are not finalized.')
           }
           action={
             onRetry && (
               <Button size="small" variant="secondary" onClick={onRetry}>
-                Retry table
+                {t('Retry table')}
               </Button>
             )
           }
@@ -139,7 +142,7 @@ export function Pagination({
   pageSize,
   onPageChange,
   loading = false,
-  label = 'records',
+  label,
 }: {
   total: number;
   page: number;
@@ -148,22 +151,28 @@ export function Pagination({
   loading?: boolean;
   label?: string;
 }) {
+  const { t } = useI18n();
   const range = pageWindow(total, page, pageSize);
   if (range.total === 0)
     return (
       <p role="status" className="db-muted">
-        0 results · pagination hidden
+        {t('0 results · pagination hidden')}
       </p>
     );
   return (
     <nav
       className="db-pagination"
-      aria-label="Pagination"
+      aria-label={t('Pagination')}
       aria-busy={loading || undefined}
     >
       <span role="status">
-        Showing {range.start}–{range.end} of {range.total} {label}
-        {page > range.pages ? ' · page adjusted' : ''}
+        {t('Showing {start}–{end} of {total} {label}', {
+          start: range.start,
+          end: range.end,
+          total: range.total,
+          label: label ?? t('records'),
+        })}
+        {page > range.pages ? t(' · page adjusted') : ''}
       </span>
       <div className="db-row">
         <Button
@@ -172,11 +181,14 @@ export function Pagination({
           disabled={loading || range.current === 1}
           onClick={() => onPageChange(range.current - 1)}
         >
-          Previous
+          {t('Previous')}
         </Button>
         <span
           aria-current="page"
-          aria-label={`Page ${range.current} of ${range.pages}`}
+          aria-label={t('Page {current} of {pages}', {
+            current: range.current,
+            pages: range.pages,
+          })}
         >
           {range.current}
         </span>
@@ -186,7 +198,7 @@ export function Pagination({
           disabled={loading || range.current === range.pages}
           onClick={() => onPageChange(range.current + 1)}
         >
-          Next
+          {t('Next')}
         </Button>
       </div>
     </nav>

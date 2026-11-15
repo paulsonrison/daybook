@@ -5,9 +5,12 @@ import {
   useEffect,
   useState,
   type ReactNode,
+  type ComponentProps,
 } from 'react';
 import { observer } from 'mobx-react-lite';
-import { Button, Notification, Select, Theme } from '@daybook/ui';
+import { AppShell, Button, Notification, Select, Theme } from '@daybook/ui';
+import { I18nProvider, useI18n } from '@daybook/ui/i18n';
+import { translateRendered } from '@daybook/ui/messages';
 import { PreferencesStore } from './store';
 const PreferencesContext = createContext<PreferencesStore | null>(null);
 export function usePreferences() {
@@ -24,14 +27,17 @@ const PreferenceFrame = observer(function PreferenceFrame({
 }) {
   return (
     <PreferencesContext.Provider value={store}>
-      <Theme
-        data-db-agent-preferences={store.scope.agentId}
-        mode={store.values.mode}
-        scheme={store.values.scheme}
-        typography={store.values.typography}
-      >
-        {children}
-      </Theme>
+      <I18nProvider locale={store.values.locale}>
+        <Theme
+          lang={store.values.locale}
+          data-db-agent-preferences={store.scope.agentId}
+          mode={store.values.mode}
+          scheme={store.values.scheme}
+          typography={store.values.typography}
+        >
+          {children}
+        </Theme>
+      </I18nProvider>
     </PreferencesContext.Provider>
   );
 });
@@ -66,9 +72,10 @@ export function PreferencesProvider({
 }
 export const WorkspaceLanguage = observer(function WorkspaceLanguage() {
   const store = usePreferences();
+  const { t } = useI18n();
   return (
     <Select
-      label="Interface language"
+      label={t('Interface language')}
       value={store.values.locale}
       disabled={store.locked}
       options={[
@@ -87,19 +94,22 @@ export const WorkspaceLanguage = observer(function WorkspaceLanguage() {
 });
 export const PreferenceNotices = observer(function PreferenceNotices() {
   const store = usePreferences();
+  const { t, locale } = useI18n();
   return (
     <>
       {store.pending ? (
         <Notification
           tone="warning"
-          title="Preference save unconfirmed"
-          description="Check the original save before changing preferences again. Its original choices and request are retained."
+          title={t('Preference save unconfirmed')}
+          description={t(
+            'Check the original save before changing preferences again. Its original choices and request are retained.',
+          )}
           action={
             <Button
               loading={store.busy}
               onClick={() => void store.checkOriginal()}
             >
-              Check original preference save
+              {t('Check original preference save')}
             </Button>
           }
         />
@@ -107,11 +117,11 @@ export const PreferenceNotices = observer(function PreferenceNotices() {
       {store.recoveryUnavailable ? (
         <Notification
           tone="warning"
-          title="Preference recovery storage unavailable"
-          description={store.error}
+          title={t('Preference recovery storage unavailable')}
+          description={translateRendered(locale, store.error)}
           action={
             <Button onClick={store.retryRecovery}>
-              Restore preference recovery
+              {t('Restore preference recovery')}
             </Button>
           }
         />
@@ -119,11 +129,11 @@ export const PreferenceNotices = observer(function PreferenceNotices() {
       {store.error && !store.pending && !store.recoveryUnavailable ? (
         <Notification
           tone="error"
-          title="Preferences unavailable"
-          description={store.error}
+          title={t('Preferences unavailable')}
+          description={translateRendered(locale, store.error)}
           action={
             <Button onClick={() => void store.load()}>
-              Reload saved preferences
+              {t('Reload saved preferences')}
             </Button>
           }
         />
@@ -131,13 +141,46 @@ export const PreferenceNotices = observer(function PreferenceNotices() {
       {store.deviceWarning ? (
         <Notification
           tone="warning"
-          title="Device layout not retained"
-          description={store.deviceWarning}
+          title={t('Device layout not retained')}
+          description={translateRendered(locale, store.deviceWarning)}
         />
       ) : null}
       {store.lastSaved ? (
-        <Notification tone="success" title="Preferences saved" />
+        <Notification tone="success" title={t('Preferences saved')} />
       ) : null}
     </>
   );
 });
+export function WorkspaceShell(props: ComponentProps<typeof AppShell>) {
+  const { t } = useI18n();
+  return (
+    <AppShell
+      {...props}
+      tagline={props.tagline ?? t('The agency workspace')}
+      navigation={props.navigation.map((group) => ({
+        ...group,
+        label: t(group.label),
+        items: group.items.map((item) => ({ ...item, label: t(item.label) })),
+      }))}
+    />
+  );
+}
+export function WorkspaceSignOut({
+  busy,
+  onLogout,
+}: {
+  busy: boolean;
+  onLogout: () => void;
+}) {
+  const { t } = useI18n();
+  return (
+    <Button
+      variant="secondary"
+      loading={busy}
+      loadingLabel={t('Loading') + '…'}
+      onClick={onLogout}
+    >
+      {t('Sign out')}
+    </Button>
+  );
+}
