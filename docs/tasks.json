@@ -256,7 +256,8 @@
         "P10",
         "P11",
         "P12",
-        "P13"
+        "P13",
+        "P15"
       ],
       "evidence": [],
       "review": null,
@@ -1240,6 +1241,15 @@
       "evidence": [],
       "review": null,
       "mergeCommit": null
+    },
+    {
+      "id": "P15",
+      "title": "Free infrastructure, verified database migration and quota controls",
+      "status": "To do",
+      "dependencies": ["P01", "P12"],
+      "evidence": [],
+      "review": null,
+      "mergeCommit": null
     }
   ],
   "history": [
@@ -1955,6 +1965,13 @@
       "from": "To do",
       "to": "In review",
       "event": "PWA implementation and local production verification pass; independent reviews clear; separate free preview is being published; Done still requires main merge."
+    },
+    {
+      "date": "2026-11-15T16:34:29.619Z",
+      "task": "P15",
+      "from": "Not started",
+      "to": "To do",
+      "event": "User-approved free infrastructure work split from existing P13 To do; migration tested locally, Neon rehearsal verified; live cutover and further infrastructure remain pending."
     }
   ]
 }

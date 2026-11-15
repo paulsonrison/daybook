@@ -1,7 +1,11 @@
 import { spawn } from 'node:child_process';
 import { resolve } from 'node:path';
+import { transferDatabase } from '../apps/backend/dist/db/transfer.js';
 import { preparePreviewDatabase } from '../apps/backend/dist/db/preview.js';
-const ownerUrl = process.env.MIGRATION_DATABASE_URL;
+const sourceUrl = process.env.MIGRATION_DATABASE_URL;
+const neonUrl = process.env.NEON_MIGRATION_DATABASE_URL;
+const rehearsalUrl = process.env.NEON_REHEARSAL_DATABASE_URL;
+const ownerUrl = neonUrl || sourceUrl;
 const password = process.env.PREVIEW_RUNTIME_PASSWORD;
 if (!ownerUrl || !password)
   throw new Error('Preview database configuration is missing.');
@@ -40,6 +44,31 @@ process.on('SIGINT', () => stop());
 let runtimeUrl;
 try {
   runtimeUrl = await preparePreviewDatabase(ownerUrl, password);
+  if (neonUrl && sourceUrl) {
+    const id = process.env.DAYBOOK_DATABASE_TRANSFER_ID;
+    if (!id) throw new Error('Set the verified database transfer identity.');
+    if (rehearsalUrl) {
+      await preparePreviewDatabase(rehearsalUrl, password);
+      const trial = await transferDatabase(sourceUrl, rehearsalUrl, {
+        id: `${id}-rehearsal`,
+        cutover: false,
+      });
+      console.log('Database rehearsal verified:', JSON.stringify(trial));
+    }
+    const result = await transferDatabase(sourceUrl, neonUrl, {
+      id,
+      cutover: true,
+    });
+    console.log('Database migration verified:', JSON.stringify(result));
+    const pooled = new URL(runtimeUrl);
+    if (
+      pooled.hostname.endsWith('.neon.tech') &&
+      !pooled.hostname.split('.')[0].endsWith('-pooler')
+    ) {
+      pooled.hostname = pooled.hostname.replace('.', '-pooler.');
+      runtimeUrl = pooled.toString();
+    }
+  }
 } catch {
   console.error(
     'Preview database bootstrap failed. Check database readiness and owner role permissions.',
@@ -47,6 +76,8 @@ try {
   process.exit(1);
 }
 delete process.env.MIGRATION_DATABASE_URL;
+delete process.env.NEON_MIGRATION_DATABASE_URL;
+delete process.env.NEON_REHEARSAL_DATABASE_URL;
 delete process.env.PREVIEW_RUNTIME_PASSWORD;
 const backendPort = process.env.PREVIEW_BACKEND_PORT || '4000';
 launch(['--max-old-space-size=128', 'apps/backend/dist/server.js'], {

@@ -16,7 +16,7 @@ Changed records remain **Needs review** with the original proposal. Compare agai
 
 ## Hosting configuration
 
-`render.yaml` defines a separate free preview in Singapore: one combined Node web service and one private free PostgreSQL 17 database. The launcher prepares migrations with the database owner, then starts the API using a separate restricted login. The frontend receives no database or provider credentials. The health check verifies frontend, API and database availability.
+`render.yaml` defines a separate free preview in Singapore: one combined Node web service and one private free PostgreSQL 17 database. The launcher prepares migrations with the database owner, then starts the API using a separate restricted login. The frontend receives no database or provider credentials. The health check verifies frontend/API liveness without querying the database, so an idle Neon database can sleep. Database readiness is a separate check.
 
 The Blueprint must use **create new resources**, not adopt the existing PressTrack service. Automatic sync/deploy is disabled for controlled preview publication. Generated passwords and the document-signing secret stay in Render environment storage. AI and messaging providers are disabled by default.
 

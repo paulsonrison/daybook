@@ -8,23 +8,24 @@ Lifecycle: **Not started → To do → In review → Done**. Review findings ret
 
 ## Implementation work packages
 
-| Task | Work                                                        | Status      |
-| ---- | ----------------------------------------------------------- | ----------- |
-| P00  | Preserve UI foundation, baseline and tracking               | In review   |
-| P01  | Agent authentication and tenant database boundary           | In review   |
-| P02  | Territory, staff and ordered route management               | In review   |
-| P03  | Publications, residents and refundable deposits             | In review   |
-| P04  | Subscription recurrence, holds and effective pricing        | In review   |
-| P05  | Delivery operations, substitutions and exceptions           | In review   |
-| P06  | Supply, returns, seasonal stock and inserts                 | In review   |
-| P07  | Invoice engine, arrears and immutable closing               | In review   |
-| P08  | Payments, clearance, credit limits and collection sheets    | In review   |
-| P09  | Staff pay, attendance, handover and cash closing            | In review   |
-| P10  | Durable worker, localized communications and direct contact | In review   |
-| P11  | Complete localization, reporting, analytics and appearance  | To do       |
-| P12  | Offline field sync and installable app shell                | In review   |
-| P13  | Tenant AI assistant and encrypted cloud backup              | To do       |
-| P14  | Whole-project acceptance review and merge                   | Not started |
+| Task | Work                                                                | Status      |
+| ---- | ------------------------------------------------------------------- | ----------- |
+| P00  | Preserve UI foundation, baseline and tracking                       | In review   |
+| P01  | Agent authentication and tenant database boundary                   | In review   |
+| P02  | Territory, staff and ordered route management                       | In review   |
+| P03  | Publications, residents and refundable deposits                     | In review   |
+| P04  | Subscription recurrence, holds and effective pricing                | In review   |
+| P05  | Delivery operations, substitutions and exceptions                   | In review   |
+| P06  | Supply, returns, seasonal stock and inserts                         | In review   |
+| P07  | Invoice engine, arrears and immutable closing                       | In review   |
+| P08  | Payments, clearance, credit limits and collection sheets            | In review   |
+| P09  | Staff pay, attendance, handover and cash closing                    | In review   |
+| P10  | Durable worker, localized communications and direct contact         | In review   |
+| P11  | Complete localization, reporting, analytics and appearance          | To do       |
+| P12  | Offline field sync and installable app shell                        | In review   |
+| P13  | Tenant AI assistant and encrypted cloud backup                      | To do       |
+| P14  | Whole-project acceptance review and merge                           | Not started |
+| P15  | Free infrastructure, verified database migration and quota controls | To do       |
 
 ## Source user stories
 

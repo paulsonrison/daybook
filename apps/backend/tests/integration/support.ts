@@ -7,9 +7,10 @@ export function testApi(
   providers?: ProviderRegistry,
   providerCallbackOrigin?: string,
   aiProvider?: AiProvider,
+  databaseUrl = process.env.TEST_RUNTIME_DATABASE_URL,
 ) {
   const pool = new pg.Pool({
-    connectionString: process.env.TEST_RUNTIME_DATABASE_URL,
+    connectionString: databaseUrl,
     max: 4,
   });
   const app = createApp({
