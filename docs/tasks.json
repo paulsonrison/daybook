@@ -218,7 +218,8 @@
       "title": "Offline field sync and installable app shell",
       "status": "In review",
       "evidence": [
-        "PWA slice on codex/pwa-render: 100 unit/tooling/UI checks; workspace types/lint and production build; 15 field/payment/delivery PostgreSQL checks; restricted-owner bootstrap/restart and actual production health/auth check; five Chrome checks including offline delivery, cash lost acknowledgement, reload, session expiry, privacy races, conflicts, account change and mobile layout. Independent frontend/backend/deployment rereviews clear. Separate free preview publication being verified; main unchanged."
+        "PWA slice on codex/pwa-render: 100 unit/tooling/UI checks; workspace types/lint and production build; 15 field/payment/delivery PostgreSQL checks; restricted-owner bootstrap/restart and actual production health/auth check; five Chrome checks including offline delivery, cash lost acknowledgement, reload, session expiry, privacy races, conflicts, account change and mobile layout. Independent frontend/backend/deployment rereviews clear. Separate free preview publication being verified; main unchanged.",
+        "Free preview live and public-Chrome verified: https://daybook-paulson-preview-o1c8.onrender.com; Render deploy dep-dbsqbve7bikc73c6jfmg at 05d0080. HTTP health/manifest/worker/icons 200; signup/session, synthetic offline cash/reload/reconnect exactly one receipt, no API caching and sign-out clear pass. Existing services unchanged. Free database expires 2026-12-15. Main merge pending remaining project acceptance."
       ],
       "review": {
         "reviewer": "foundation_review + operations_review",
@@ -949,7 +950,8 @@
         "3. Auto-reconcile and sync queued updates on network reconnection with timestamp conflict resolution."
       ],
       "evidence": [
-        "PWA slice on codex/pwa-render: 100 unit/tooling/UI checks; workspace types/lint and production build; 15 field/payment/delivery PostgreSQL checks; restricted-owner bootstrap/restart and actual production health/auth check; five Chrome checks including offline delivery, cash lost acknowledgement, reload, session expiry, privacy races, conflicts, account change and mobile layout. Independent frontend/backend/deployment rereviews clear. Separate free preview publication being verified; main unchanged."
+        "PWA slice on codex/pwa-render: 100 unit/tooling/UI checks; workspace types/lint and production build; 15 field/payment/delivery PostgreSQL checks; restricted-owner bootstrap/restart and actual production health/auth check; five Chrome checks including offline delivery, cash lost acknowledgement, reload, session expiry, privacy races, conflicts, account change and mobile layout. Independent frontend/backend/deployment rereviews clear. Separate free preview publication being verified; main unchanged.",
+        "Free preview live and public-Chrome verified: https://daybook-paulson-preview-o1c8.onrender.com; Render deploy dep-dbsqbve7bikc73c6jfmg at 05d0080. HTTP health/manifest/worker/icons 200; signup/session, synthetic offline cash/reload/reconnect exactly one receipt, no API caching and sign-out clear pass. Existing services unchanged. Free database expires 2026-12-15. Main merge pending remaining project acceptance."
       ],
       "review": {
         "reviewer": "foundation_review + operations_review",

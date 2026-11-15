@@ -51,11 +51,22 @@ Files: Render deployment configuration, combined service launcher, migration/boo
 
 - [x] Validate a single-service build/start and restricted runtime DB role with synthetic local data.
 - [x] Run workspace verification and independent review; fix findings and repeat review.
-- [ ] Push the isolated branch. Prepare concrete free Render configuration, review/apply under the user's approval, and verify HTTPS, health, manifest and offline shell on the public URL.
-- [ ] Record evidence, URL and free preview limits. Keep task In review until final main merge.
+- [x] Push the isolated branch. Prepare concrete free Render configuration, review/apply under the user's approval, and verify HTTPS, health, manifest and offline shell on the public URL.
+- [x] Record evidence, URL and free preview limits. Keep task In review until final main merge.
 
 ## Evidence ledger
 
 Governance: user approved the unchanged PWA implementation/free-preview plan and Paulson's workspace. Active selection: skill-governor, Superpowers implementation/verification/review, Karpathy guidelines, verify-before-done, Render deployment. Next.js bundled PWA/manifest guides and version-specific Context7 documentation read before frontend edits. No new paid resources authorized.
 
 Local evidence: 100 workspace unit/tooling/UI checks, workspace types/lint, production build, 15 field/payment/delivery PostgreSQL checks, restricted-owner bootstrap/restart and combined production health/auth check, and five Chrome acceptance checks pass. Both P1 privacy findings and the startup signal finding are fixed; independent rereviews are clear. Browser checks include offline delivery, cash lost acknowledgement (one receipt), expiry lock with retained queue, reload, conflict preservation, account isolation, Cache Storage allowlist and mobile layout. Current official Render schema validation passes; CLI unavailable, Render planning remains the platform validation.
+
+Publication verified: Render deployment `dep-dbsqbve7bikc73c6jfmg` is live at https://daybook-paulson-preview-o1c8.onrender.com. Public HTTP probes and real Chrome signup/offline/reload/reconnect/one-receipt/cache/sign-out checks pass. Free private DB expires 15 December 2026. Existing PressTrack unchanged. Main is unchanged; P12/US-028 remain In review under the project lifecycle.
+
+| Active skill        | Audit | Evidence                                                                                                                                               |
+| ------------------- | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| skill-governor      | PASS  | Approved scope/selection retained; separate free resources reviewed before application; evidence ledger and final audit.                               |
+| Superpowers         | PASS  | Written approved-scope plan, observed field/privacy RED→GREEN checks, separate branch, independent reviews and fixes, real verification before commit. |
+| Karpathy guidelines | PASS  | Explicit cold-reload privacy assumption; existing domain transactions reused; no unrelated feature expansion.                                          |
+| Context7            | PASS  | Next.js 16.4.5 PWA headers/manifest documentation queried, plus installed version's guides read before edits.                                          |
+| verify-before-done  | PASS  | Actual types/lint, 100 checks, production build/start, PostgreSQL and Chrome outputs inspected; unfinished monthly-report acceptance disclosed.        |
+| Render deployment   | PASS  | Current schema/platform plan validation, create-new free resources only, approved workspace, live deployment and public HTTPS/browser verification.    |
