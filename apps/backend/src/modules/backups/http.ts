@@ -39,8 +39,11 @@ export async function handleBackupRequest(
   options: { pool?: Pool; request?: BackupRequest; secret?: string },
 ) {
   const path = new URL(request.url).pathname;
-  const respond = (state: string, status: number) =>
-    Response.json({ state }, { status, headers });
+  const respond = (
+    state: string,
+    status: number,
+    body: Record<string, unknown> = { state },
+  ) => Response.json(body, { status, headers });
   if (path === '/internal/jobs/tick') {
     if (request.method !== 'POST') return respond('METHOD_NOT_ALLOWED', 405);
     if (
@@ -65,13 +68,47 @@ export async function handleBackupRequest(
     if (!(await emptyBody(request))) return respond('INVALID_REQUEST', 400);
     try {
       const result = await options.request('tick');
+      const rawScheduled = result.scheduled;
+      const scheduled =
+        rawScheduled && typeof rawScheduled === 'object'
+          ? (rawScheduled as Record<string, unknown>)
+          : undefined;
+      const scheduleState =
+        typeof scheduled?.state === 'string' ? scheduled.state : undefined;
+      const counts = Object.fromEntries(
+        ['tenantsVisited', 'jobsCompleted', 'jobsFailed']
+          .map((key) => [key, scheduled?.[key]])
+          .filter(
+            ([, value]) =>
+              Number.isInteger(value) &&
+              Number(value) >= 0 &&
+              Number(value) <= 1000,
+          ),
+      );
+      const hasDeferredWork = scheduled?.hasDeferredWork;
+      const response = {
+        state: result.state,
+        ...(scheduleState
+          ? {
+              scheduled: {
+                state: scheduleState,
+                ...counts,
+                ...(typeof hasDeferredWork === 'boolean'
+                  ? { hasDeferredWork }
+                  : {}),
+              },
+            }
+          : {}),
+      };
       return respond(
-        result.state,
-        ['VERIFIED', 'SKIPPED'].includes(result.state)
+        response.state,
+        ['VERIFIED', 'SKIPPED'].includes(result.state) &&
+          scheduleState === 'COMPLETED'
           ? 200
           : result.state === 'THROTTLED'
             ? 429
             : 503,
+        response,
       );
     } catch {
       return respond('UNAVAILABLE', 503);

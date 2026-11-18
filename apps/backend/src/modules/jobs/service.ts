@@ -7,7 +7,7 @@ import { calendarDate } from '../scheduling/calendar.js';
 import { markForDate } from '../delivery/service.js';
 import { buildForDate } from '../manifests/service.js';
 import {
-  claimJob,
+  claimJobWithOutcome,
   enqueueJob,
   failJob,
   finishJob,
@@ -23,15 +23,41 @@ export async function runAgencyJobs(
   pool: Pool,
   tenant: WorkerTenant,
   now: Date,
-  options: {maxJobs?:number;signal?:AbortSignal} = {},
-): Promise<void> {
-  const maxJobs=options.maxJobs??100;
-  if(!Number.isInteger(maxJobs) || maxJobs<1 || maxJobs>100) throw new Error('Invalid scheduled job limit.');
-  if(options.signal?.aborted) return;
+  options: {
+    maxJobs?: number;
+    maxCatchupDays?: number;
+    catchupStatementTimeoutMs?: number;
+    signal?: AbortSignal;
+  } = {},
+): Promise<{ completed: number; failed: number; hasDeferredWork: boolean }> {
+  const maxJobs = options.maxJobs ?? 100;
+  if (!Number.isInteger(maxJobs) || maxJobs < 1 || maxJobs > 100)
+    throw new Error('Invalid scheduled job limit.');
+  const maxCatchupDays = options.maxCatchupDays ?? 31;
+  if (
+    !Number.isInteger(maxCatchupDays) ||
+    maxCatchupDays < 1 ||
+    maxCatchupDays > 31
+  )
+    throw new Error('Invalid scheduled catch-up limit.');
+  if (
+    options.catchupStatementTimeoutMs !== undefined &&
+    (!Number.isInteger(options.catchupStatementTimeoutMs) ||
+      options.catchupStatementTimeoutMs < 1000 ||
+      options.catchupStatementTimeoutMs > 30000)
+  )
+    throw new Error('Invalid scheduled query limit.');
+  if (options.signal?.aborted)
+    return { completed: 0, failed: 0, hasDeferredWork: true };
   const started = performance.now(),
     currentTime = () => new Date(now.getTime() + performance.now() - started);
   const clock = localClock(now, tenant.timezone);
+  let catchupDeferred = 0;
   await withTenant(pool, tenant.id, async (client) => {
+    if (options.catchupStatementTimeoutMs)
+      await client.query(
+        `SET LOCAL statement_timeout='${options.catchupStatementTimeoutMs}ms'`,
+      );
     await client.query(
       "SELECT pg_advisory_xact_lock(hashtextextended('scheduler:' || $1,0))",
       [tenant.id],
@@ -41,10 +67,13 @@ export async function runAgencyJobs(
         latest ?? localClock(new Date(tenant.createdAt), tenant.timezone).date,
       ),
       end = calendarDate(clock.date);
-    let processed = 0;
+    let processed = 0,
+      stamp = start.valueOf();
     for (
-      let stamp = start.valueOf();
-      stamp <= end.valueOf() && processed < 31 && !options.signal?.aborted;
+      ;
+      stamp <= end.valueOf() &&
+      processed < maxCatchupDays &&
+      !options.signal?.aborted;
       stamp += 86400000, processed++
     ) {
       const date = new Date(stamp).toISOString().slice(0, 10);
@@ -67,22 +96,38 @@ export async function runAgencyJobs(
         await enqueueJob(client, tenant.id, date, 'MANIFEST_EVENING', now);
       }
     }
+    if (stamp <= end.valueOf()) catchupDeferred = 1;
   });
-  for (let count = 0; count < maxJobs && !options.signal?.aborted; count++) {
-    const job = await withTenant(pool, tenant.id, (c) =>
-      claimJob(c, currentTime()),
+  let completed = 0,
+    failed = 0,
+    hasDeferredWork = catchupDeferred > 0;
+  for (let count = 0; count < maxJobs; count++) {
+    if (options.signal?.aborted) {
+      hasDeferredWork = true;
+      break;
+    }
+    const claim = await withTenant(pool, tenant.id, (c) =>
+      claimJobWithOutcome(c, currentTime()),
     );
+    failed += claim.exhausted;
+    const job = claim.job;
     if (!job) break;
-    if (options.signal?.aborted) break;
+    if (options.signal?.aborted) {
+      hasDeferredWork = true;
+      break;
+    }
     try {
-      await withTenant(pool, tenant.id, async (client) => {
+      const ran = await withTenant(pool, tenant.id, async (client) => {
         await client.query("SET LOCAL statement_timeout='30s'");
         await client.query(
           "SELECT pg_advisory_xact_lock(hashtextextended('config:' || $1,0))",
           [tenant.id],
         );
-        if (!(await lockClaim(client, job, currentTime())) || options.signal?.aborted)
-          return;
+        if (
+          !(await lockClaim(client, job, currentTime())) ||
+          options.signal?.aborted
+        )
+          return false;
         if (job.kind === 'MARK')
           await markForDate(client, tenant.id, job.date, now);
         else if (
@@ -109,11 +154,32 @@ export async function runAgencyJobs(
           await issueAutomaticInvoice(client, tenant.id, job.payload);
         else throw new Error('Unsupported job kind');
         await finishJob(client, job.id, currentTime(), job.attempts);
+        return true;
       });
+      if (ran) completed++;
+      else if (options.signal?.aborted) {
+        hasDeferredWork = true;
+        break;
+      }
     } catch {
       await withTenant(pool, tenant.id, (c) => failJob(c, job, currentTime()));
+      failed++;
     }
   }
+  if (options.signal?.aborted) hasDeferredWork = true;
+  const ready = await withTenant(
+    pool,
+    tenant.id,
+    async (client) =>
+      (
+        await client.query(
+          "SELECT EXISTS(SELECT 1 FROM daybook.job_runs WHERE attempts<5 AND ((status IN('PENDING','FAILED') AND available_at<=$1) OR (status='RUNNING' AND lease_until<=$1))) AS ready",
+          [currentTime().toISOString()],
+        )
+      ).rows[0].ready,
+  );
+  if (ready) hasDeferredWork = true;
+  return { completed, failed, hasDeferredWork };
 }
 export async function workerTenants(pool: Pool): Promise<WorkerTenant[]> {
   return (

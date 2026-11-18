@@ -49,7 +49,7 @@ export function backendEnvironment(env, { databaseUrl, origin, port }) {
     PUBLIC_APP_ORIGIN: origin,
   };
 }
-export function backupEnvironment(env) {
+export function backupEnvironment(env, { scheduleDatabaseUrl } = {}) {
   return {
     ...systemEnvironment(env),
     ...Object.fromEntries(
@@ -57,6 +57,9 @@ export function backupEnvironment(env) {
         /^DAYBOOK_BACKUP_[A-Z0-9_]+$/.test(k),
       ),
     ),
+    ...(scheduleDatabaseUrl
+      ? { DAYBOOK_SCHEDULE_DATABASE_URL: scheduleDatabaseUrl }
+      : {}),
     NODE_ENV: 'production',
   };
 }

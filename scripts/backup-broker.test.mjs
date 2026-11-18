@@ -36,6 +36,29 @@ test('HTTP environment cannot inherit owner, backup, provider or process injecti
   assert.ok(!Object.values(env).includes('hostile'));
 });
 
+test('only the isolated scheduled worker receives the application runtime URL', async () => {
+  const { backendEnvironment, backupEnvironment } =
+    await import('./runtime-environment.mjs');
+  const source = {
+    DAYBOOK_BACKUP_DATABASE_URL: 'owner',
+    DAYBOOK_BACKUP_KEY: 'key',
+    DAYBOOK_SCHEDULE_DATABASE_URL: 'injected',
+    DAYBOOK_PROVIDER_SMS_TOKEN: 'provider',
+    DAYBOOK_COMMUNICATIONS_PROVIDERS: 'configured',
+  };
+  const backend = backendEnvironment(source, {
+    databaseUrl: 'runtime',
+    origin: 'https://example.com',
+    port: '4000',
+  });
+  const worker = backupEnvironment(source, { scheduleDatabaseUrl: 'runtime' });
+  assert.equal(worker.DAYBOOK_SCHEDULE_DATABASE_URL, 'runtime');
+  assert.equal(backend.DAYBOOK_SCHEDULE_DATABASE_URL, undefined);
+  assert.equal(worker.DAYBOOK_BACKUP_DATABASE_URL, 'owner');
+  assert.equal(worker.DAYBOOK_PROVIDER_SMS_TOKEN, undefined);
+  assert.equal(worker.DAYBOOK_COMMUNICATIONS_PROVIDERS, undefined);
+});
+
 test('broker permits only fixed bounded operations and strips caller-supplied worker settings', async () => {
   const { attachBackupBroker } = await import('./backup-broker.mjs');
   const peer = spawn(
@@ -76,6 +99,7 @@ test('broker permits only fixed bounded operations and strips caller-supplied wo
     });
     assert.deepEqual(results.find((r) => r.id === 'valid').result, {
       state: 'NOT_CONFIGURED',
+      scheduled: { state: 'NOT_CONFIGURED' },
     });
   } finally {
     clearTimeout(timeout);

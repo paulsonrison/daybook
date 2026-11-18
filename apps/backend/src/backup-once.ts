@@ -4,6 +4,8 @@ import { executeBackup } from './modules/backups/runner.js';
 import pg from 'pg';
 import { readBackupStatus } from './modules/backups/status.js';
 import { backupClientMajor } from './modules/backups/client.js';
+import { assertRuntimeRole } from './db/tenant.js';
+import { runScheduledOnce } from './modules/jobs/once.js';
 const stores: PrivateObjectStore[] = [];
 function report(result: { state: string; [key: string]: unknown }) {
   if (process.send && process.connected)
@@ -24,14 +26,63 @@ function stop() {
 }
 process.on('SIGTERM', stop);
 process.on('SIGINT', stop);
+async function scheduledJobs(timeBudgetMs = 240000) {
+  const databaseUrl = process.env.DAYBOOK_SCHEDULE_DATABASE_URL;
+  if (!databaseUrl) return { state: 'NOT_CONFIGURED' };
+  const pool = new pg.Pool({
+    connectionString: databaseUrl,
+    max: 2,
+    connectionTimeoutMillis: 10000,
+    statement_timeout: 50000,
+    query_timeout: 55000,
+  });
+  pool.on('error', () => {});
+  try {
+    await assertRuntimeRole(pool);
+    const result = await runScheduledOnce(pool, new Date(), {
+      maxTenants: 5,
+      maxJobsPerTenant: 1,
+      timeBudgetMs,
+      signal: shutdown.signal,
+    });
+    const state = result.cancelled
+      ? 'CANCELLED'
+      : result.jobsFailed > 0
+        ? 'PARTIAL'
+        : result.hasDeferredWork
+          ? 'DEFERRED'
+          : 'COMPLETED';
+    return {
+      state,
+      tenantsVisited: result.tenantsVisited,
+      jobsCompleted: result.jobsCompleted,
+      jobsFailed: result.jobsFailed,
+      hasDeferredWork: result.hasDeferredWork,
+    };
+  } finally {
+    await pool.end();
+  }
+}
 try {
   const configuration = readBackupConfiguration(process.env);
   const operation = process.argv[2] ?? 'tick';
+  const startedAt = Date.now();
   if (!['tick', 'status'].includes(operation) || process.argv.length > 3)
     throw new Error('Invalid backup operation.');
   if (!configuration) {
-    report({ state: 'NOT_CONFIGURED' });
-    process.exitCode = 2;
+    if (operation === 'status') {
+      report({ state: 'NOT_CONFIGURED' });
+      process.exitCode = 2;
+    } else {
+      let scheduled;
+      try {
+        scheduled = await scheduledJobs();
+      } catch {
+        scheduled = { state: 'UNAVAILABLE' };
+      }
+      report({ state: 'NOT_CONFIGURED', scheduled });
+      process.exitCode = 2;
+    }
   } else {
     key = configuration.key;
     if (operation === 'status') {
@@ -70,7 +121,17 @@ try {
         destinations,
         signal: shutdown.signal,
       });
-      report(result);
+      let scheduled;
+      const remainingMs = Math.min(240000, 330000 - (Date.now() - startedAt));
+      try {
+        scheduled =
+          remainingMs >= 1000
+            ? await scheduledJobs(remainingMs)
+            : { state: 'DEFERRED' };
+      } catch {
+        scheduled = { state: 'UNAVAILABLE' };
+      }
+      report({ ...result, scheduled });
       if (!['VERIFIED', 'SKIPPED'].includes(result.state)) process.exitCode = 2;
     }
   }

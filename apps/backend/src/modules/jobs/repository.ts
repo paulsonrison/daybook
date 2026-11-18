@@ -34,16 +34,20 @@ export async function enqueueJob(
   );
 }
 export async function claimJob(client: PoolClient, now: Date) {
-  await client.query(
-    "UPDATE daybook.job_runs SET status='FAILED',last_error='Retry limit reached after an expired lease',lease_until=NULL WHERE status='RUNNING' AND lease_until<=$1 AND attempts>=5",
+  return (await claimJobWithOutcome(client, now)).job;
+}
+export async function claimJobWithOutcome(client: PoolClient, now: Date) {
+  const expired = await client.query(
+    "UPDATE daybook.job_runs SET status='FAILED',last_error='Retry limit reached after an expired lease',lease_until=NULL WHERE status='RUNNING' AND lease_until<=$1 AND attempts>=5 RETURNING id",
     [now.toISOString()],
   );
-  return (
+  const job = (
     await client.query<Job>(
       `UPDATE daybook.job_runs j SET status='RUNNING',attempts=j.attempts+1,lease_until=$1::timestamptz+interval '60 seconds' WHERE id=(SELECT id FROM daybook.job_runs WHERE attempts<5 AND ((status IN('PENDING','FAILED') AND available_at<=$1) OR (status='RUNNING' AND lease_until<=$1)) ORDER BY run_date,kind,id FOR UPDATE SKIP LOCKED LIMIT 1) RETURNING id,kind,payload,to_char(run_date,'YYYY-MM-DD') AS date,attempts`,
       [now.toISOString()],
     )
   ).rows[0];
+  return { job, exhausted: expired.rowCount ?? 0 };
 }
 export async function lockClaim(client: PoolClient, job: Job, now: Date) {
   return Boolean(

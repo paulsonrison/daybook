@@ -4,7 +4,7 @@ import { backupEnvironment } from './runtime-environment.mjs';
 /** Fixed commands only: requests cannot supply arguments, paths, credentials or SQL. */
 export function attachBackupBroker(
   peer,
-  { env = process.env, cwd = process.cwd() } = {},
+  { env = process.env, cwd = process.cwd(), scheduleDatabaseUrl } = {},
 ) {
   let worker;
   let closed = false;
@@ -42,7 +42,7 @@ export function attachBackupBroker(
       ],
       {
         cwd,
-        env: backupEnvironment(env),
+        env: backupEnvironment(env, { scheduleDatabaseUrl }),
         stdio: ['ignore', 'ignore', 'ignore', 'ipc'],
       },
     );

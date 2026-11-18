@@ -8,11 +8,23 @@ const api = testApi();
 after(() => api.pool.end());
 test('backup status requires a valid agency session and scheduler only accepts fresh body-free signed fixed commands', async () => {
   const secret = 'b'.repeat(64);
+  let scheduledState = 'COMPLETED';
   const app = createApp({
     pool: api.pool,
     databaseReady: async () => true,
     backupRequest: async (operation) => ({
       state: operation === 'status' ? 'NOT_CONFIGURED' : 'SKIPPED',
+      ...(operation === 'tick'
+        ? {
+            scheduled: {
+              state: scheduledState,
+              tenantsVisited: 2,
+              jobsCompleted: 1,
+              jobsFailed: 0,
+              hasDeferredWork: false,
+            },
+          }
+        : {}),
     }),
     schedulerSecret: secret,
   });
@@ -54,7 +66,16 @@ test('backup status requires a valid agency session and scheduler only accepts f
   );
   const result = await app.fetch(tick());
   assert.equal(result.status, 200);
-  assert.deepEqual(await result.json(), { state: 'SKIPPED' });
+  assert.deepEqual(await result.json(), {
+    state: 'SKIPPED',
+    scheduled: {
+      state: 'COMPLETED',
+      tenantsVisited: 2,
+      jobsCompleted: 1,
+      jobsFailed: 0,
+      hasDeferredWork: false,
+    },
+  });
   const server = createServer(app);
   await new Promise<void>((done) => server.listen(0, '127.0.0.1', done));
   try {
@@ -70,7 +91,29 @@ test('backup status requires a valid agency session and scheduler only accepts f
       200,
       'Actual Node adapter must accept an authenticated zero-byte POST',
     );
-    assert.deepEqual(await overHttp.json(), { state: 'SKIPPED' });
+    assert.deepEqual(await overHttp.json(), {
+      state: 'SKIPPED',
+      scheduled: {
+        state: 'COMPLETED',
+        tenantsVisited: 2,
+        jobsCompleted: 1,
+        jobsFailed: 0,
+        hasDeferredWork: false,
+      },
+    });
+    scheduledState = 'UNAVAILABLE';
+    const incomplete = await app.fetch(tick());
+    assert.equal(incomplete.status, 503);
+    assert.deepEqual(await incomplete.json(), {
+      state: 'SKIPPED',
+      scheduled: {
+        state: 'UNAVAILABLE',
+        tenantsVisited: 2,
+        jobsCompleted: 1,
+        jobsFailed: 0,
+        hasDeferredWork: false,
+      },
+    });
   } finally {
     await new Promise<void>((done) => server.close(() => done()));
   }

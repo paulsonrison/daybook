@@ -104,7 +104,9 @@ const backend = launch(
     stdio: ['inherit', 'inherit', 'inherit', 'ipc'],
   },
 );
-const detachBackups = attachBackupBroker(backend);
+const detachBackups = attachBackupBroker(backend, {
+  scheduleDatabaseUrl: runtimeUrl,
+});
 process.once('exit', detachBackups);
 const deadline = Date.now() + 60000;
 while (true) {
