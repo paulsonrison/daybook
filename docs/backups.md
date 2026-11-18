@@ -32,8 +32,8 @@ The runner creates its own disposable PostgreSQL cluster and synthetic data. It 
 
 ## Remaining release gates
 
-1. Deploy the bounded worker and visible destination health. Local PostgreSQL/HTTP and browser verification passes; the public service has not yet received this increment.
-2. Connect the free scheduler to the signed endpoint without passing database-owner credentials into HTTP processes.
+1. Observe the first actual Cloudflare Cron invocation and complete hosted retention acceptance. Worker, protection screen and signed scheduler forwarding are deployed.
+2. Connect the remaining durable application jobs to bounded scheduled invocations without passing database-owner credentials into HTTP processes.
 3. Reconcile object inventory before restarting jobs after disaster recovery. An actual database archive and isolated restore passed on 18 November 2026.
 4. Configure an external production encryption key and recovery procedure; retain the key separately from storage.
 5. Enable and observe scheduled execution and bounded retention; preserve the existing successful live backup/restore evidence.
@@ -60,4 +60,12 @@ The combined service parent retains the operator configuration and launches only
 
 `GET /operations/backups` requires an existing agency session and returns only system protection status, independent destination freshness and latest run outcome. It provides no backup download, object identifiers, paths or operator credentials. Settings → Appearance displays this summary in English, Malayalam and Hindi, including unavailable and unconfigured states. A failed newest archive prevents a healthy protection badge even when older verified copies remain recent.
 
-`POST /internal/jobs/tick` accepts only an empty body and a timestamp within five minutes, signed using HMAC-SHA256 over `timestamp + "\nPOST\n/internal/jobs/tick"`. The dedicated signing secret must be 64 hexadecimal characters. The parent admits at most one worker at a time and one tick per fifteen minutes; durable daily claims, attempt limits and capacity reservations remain authoritative across restarts. A scheduler transport and live connection are still pending; this endpoint alone does not establish scheduled execution.
+`POST /internal/jobs/tick` accepts only an empty body and a timestamp within five minutes, signed using HMAC-SHA256 over `timestamp + "\nPOST\n/internal/jobs/tick"`. The dedicated signing secret must be 64 hexadecimal characters. The parent admits at most one worker at a time and one tick per fifteen minutes; durable daily claims, attempt limits and capacity reservations remain authoritative across restarts.
+
+## Hosted connection —18 November 2026
+
+The reviewed application commits `caa764c` and `c648c48` are deployed on the existing free Render service. Its actual runtime reports PostgreSQL client major **18**, compatible with the primary's major 17. A missing or older client prevents the status response from claiming protection. The operator explicitly approved the protected settings import: all eleven existing environment settings were preserved and sixteen dedicated worker/signing settings were added. Values remain private and are excluded from HTTP/frontend child environments.
+
+The free Cloudflare Worker `daybook-free-scheduler` has the reviewed fixed-origin source, an encrypted signing secret and the hourly `7 * * * *` trigger. Its production and preview public URLs are disabled. The dashboard showed its next run at **18 November 2026, 04:07 UTC**. A real signed request through the public forwarding route returned HTTP 200; unauthenticated backup-status access returned 401 and the public health check returned 200. This manual invocation is distinct from observing an automatic Cron run, which remains pending.
+
+The new scheduler currently invokes backup work only. Catch-up agency jobs, document/message cycles and actual bounded retention execution are still required before the infrastructure task can enter final review. The existing actual database archive/restore evidence remains valid; a successful duplicate daily invocation does not prove a new hosted archive was created.

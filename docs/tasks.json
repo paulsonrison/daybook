@@ -234,7 +234,10 @@
       "id": "P13",
       "title": "Tenant AI assistant and encrypted cloud backup",
       "status": "To do",
-      "evidence": [],
+      "evidence": [
+        "Actual453704-byte encrypted primary archive independently verified from Neon and Backblaze; isolated PostgreSQL restore passed18Nov2026.",
+        "Backup worker/status boundary: independent review clear after reproduced fixes,126workspace checks plus2broker checks and7PG/HTTP checks passed; real browser states passed. Full AI intake/assistant acceptance remains pending."
+      ],
       "review": null,
       "mergeCommit": null
     },
@@ -1247,7 +1250,11 @@
       "title": "Free infrastructure, verified database migration and quota controls",
       "status": "To do",
       "dependencies": ["P01", "P12"],
-      "evidence": [],
+      "evidence": [
+        "Neon migration verified 79 tables/47 rows; original source fenced and retained.",
+        "Free Render deployments caa764c/c648c48 live; runtime PostgreSQL client18 verified.",
+        "Cloudflare protected hourly trigger configured; real signed HTTP request200, health200 and unauthenticated backup status401. Automatic Cron observation and bounded domain-job wiring remain pending."
+      ],
       "review": null,
       "mergeCommit": null
     }

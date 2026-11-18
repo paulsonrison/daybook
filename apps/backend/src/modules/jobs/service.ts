@@ -23,7 +23,11 @@ export async function runAgencyJobs(
   pool: Pool,
   tenant: WorkerTenant,
   now: Date,
+  options: {maxJobs?:number;signal?:AbortSignal} = {},
 ): Promise<void> {
+  const maxJobs=options.maxJobs??100;
+  if(!Number.isInteger(maxJobs) || maxJobs<1 || maxJobs>100) throw new Error('Invalid scheduled job limit.');
+  if(options.signal?.aborted) return;
   const started = performance.now(),
     currentTime = () => new Date(now.getTime() + performance.now() - started);
   const clock = localClock(now, tenant.timezone);
@@ -40,7 +44,7 @@ export async function runAgencyJobs(
     let processed = 0;
     for (
       let stamp = start.valueOf();
-      stamp <= end.valueOf() && processed < 31;
+      stamp <= end.valueOf() && processed < 31 && !options.signal?.aborted;
       stamp += 86400000, processed++
     ) {
       const date = new Date(stamp).toISOString().slice(0, 10);
@@ -64,11 +68,12 @@ export async function runAgencyJobs(
       }
     }
   });
-  for (let count = 0; count < 100; count++) {
+  for (let count = 0; count < maxJobs && !options.signal?.aborted; count++) {
     const job = await withTenant(pool, tenant.id, (c) =>
       claimJob(c, currentTime()),
     );
     if (!job) break;
+    if (options.signal?.aborted) break;
     try {
       await withTenant(pool, tenant.id, async (client) => {
         await client.query("SET LOCAL statement_timeout='30s'");
@@ -76,7 +81,8 @@ export async function runAgencyJobs(
           "SELECT pg_advisory_xact_lock(hashtextextended('config:' || $1,0))",
           [tenant.id],
         );
-        if (!(await lockClaim(client, job, currentTime()))) return;
+        if (!(await lockClaim(client, job, currentTime())) || options.signal?.aborted)
+          return;
         if (job.kind === 'MARK')
           await markForDate(client, tenant.id, job.date, now);
         else if (
