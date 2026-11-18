@@ -1257,7 +1257,7 @@
       "evidence": [
         "Neon migration verified 79 tables/47 rows; original source fenced and retained.",
         "Free Render deployments caa764c/c648c48 live; runtime PostgreSQL client18 verified.",
-        "Cloudflare protected hourly trigger configured; real signed HTTP request200, health200 and unauthenticated backup status401. Automatic Cron observation and bounded domain-job wiring remain pending."
+        "Cloudflare protected hourly trigger configured; real signed HTTP request returned 200, health returned 200 and unauthenticated backup status returned 401. The bounded five-agency scheduler is deployed on the free preview at 48f29ac; the 16:07 UTC tick was not yet visible in the first Cron Events check (Cloudflare notes new workers can take 30 minutes). Hosted retention execution, safe communications/document cycle and automatic Cron observation remain open."
       ],
       "review": null,
       "mergeCommit": null
