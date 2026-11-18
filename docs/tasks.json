@@ -212,7 +212,7 @@
       "evidence": [
         "Monthly operations, sales and recorded-tax snapshots now reuse tenant-scoped analytics sources; immutable report records, bounded PDF/XLSX artifacts and authenticated owner downloads implemented.",
         "Independent report/security review cleared after fixing retry identity across period changes, BANK method localization, PDF verification, shared bounded renderer use, and renderer-contention attempt exhaustion.",
-        "Backend 75/75 unit tests, focused monthly-report PostgreSQL acceptance including capacity retry, real Malayalam PDF generation, existing document PDF integration 5/5, workspace typecheck/lint/build and analytics/report application suite 5/5 pass. Translation coverage (89 English inventory issues; 1,528 each in Malayalam and Hindi across 2,227 messages), layouts and whole-project acceptance remain incomplete; P11 stays To do."
+        "Backend 75/75 unit tests, focused monthly-report PostgreSQL acceptance including capacity retry, real Malayalam PDF generation, existing document PDF integration 5/5, workspace typecheck/lint/build and analytics/report application suite 5/5 pass. English coverage is complete across 2,227 messages; translation coverage still has 1,527 untranslated messages each in Malayalam and Hindi. Layouts and whole-project acceptance remain incomplete; P11 stays To do."
       ],
       "review": null,
       "mergeCommit": null

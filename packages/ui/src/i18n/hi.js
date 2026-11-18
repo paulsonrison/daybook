@@ -852,5 +852,7 @@ export default {
     'रिपोर्ट तैयार नहीं हो सकी। आपका अनुरोध सुरक्षित है।',
   'Retry report': 'रिपोर्ट फिर से तैयार करें',
   'Report ready': 'रिपोर्ट तैयार है',
+  'Report rendering is busy. Retry shortly.':
+    'रिपोर्ट तैयार करने की प्रक्रिया व्यस्त है। थोड़ी देर बाद फिर कोशिश करें।',
   'Download {format}': '{format} डाउनलोड करें',
 };
