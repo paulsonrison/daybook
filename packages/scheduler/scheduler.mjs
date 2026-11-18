@@ -30,7 +30,7 @@ export async function runScheduledTick(
   ).join('');
   const response = await transport(ORIGIN + '/internal/jobs/tick', {
     method: 'POST',
-    redirect: 'error',
+    redirect: 'manual',
     signal: AbortSignal.timeout(480000),
     headers: { 'x-daybook-timestamp': timestamp, 'x-daybook-signature': hex },
   });

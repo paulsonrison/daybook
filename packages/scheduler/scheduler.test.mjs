@@ -17,7 +17,7 @@ test('scheduled tick signs only the approved empty request and does not retry pr
     );
     assert.equal(options.method, 'POST');
     assert.equal(options.body, undefined);
-    assert.equal(options.redirect, 'error');
+    assert.equal(options.redirect, 'manual');
     assert.equal(options.headers['x-daybook-timestamp'], '1794969900000');
     assert.equal(
       options.headers['x-daybook-signature'],
