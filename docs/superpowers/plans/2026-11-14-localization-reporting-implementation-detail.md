@@ -68,11 +68,13 @@ The translation foundation and catalogue flows are verified. Keep Task 2 open wh
 
 ## Task 4 — Authenticated monthly PDF and XLSX reports
 
-- [ ] Verify a suitable writer's official API/version and audit its production dependencies; add a genuine XLSX roundtrip test and authenticated export/tenant tests before implementing it.
-- [ ] Build bounded monthly operations, sales and tax-classification snapshots from the same analytics sources. Export only recorded tax treatment/amounts; unconfigured tax data remains unavailable, and no jurisdictional rate is invented.
-- [ ] Reuse escaped shared document presentation, local fonts and the existing bounded PDF engine. Add a dedicated report artifact table/route if its lifecycle differs from resident financial documents.
-- [ ] Reject formula injection, unsafe filenames, foreign artifact IDs and invalid/oversized periods. Test exact large values, localized column headers, actual PDF/XLSX content and immutable export snapshots.
-- [ ] Provide clear preparing/ready/failed/retry/download states, with original-request identity and authenticated downloads. Do not reuse resident bearer links for agency-wide reports.
+- [x] Verify the installed `write-excel-file` 4.1.1 API/dependency impact; test genuine XLSX roundtrip, authenticated export and tenant isolation.
+- [x] Build bounded monthly operations, sales and recorded-tax snapshots from the same locked analytics sources. Tax rows include only recorded no-tax confirmation or tax amounts; empty source data is disclosed and no jurisdictional rate is invented.
+- [x] Reuse escaped shared report presentation, bundled fonts and the existing bounded, sandboxed PDF renderer. Dedicated report/artifact tables preserve immutable snapshots and issued output.
+- [x] Reject formula injection, unsafe filename input, foreign artifact IDs and invalid/oversized periods. Test exact values beyond floating point, localized labels, real PDF/XLSX content, authenticated GET/HEAD and immutable snapshots.
+- [x] Provide preparing/ready/error/retry/download states and retain original preparation/generation identities across lost responses. Owner downloads are authenticated and do not use resident bearer links.
+
+Task 4 verification: 75 backend unit tests pass; focused report PostgreSQL acceptance passes with a real Malayalam PDF, embedded font, genuine Hindi XLSX bank-method label, formula-string cells, precise snapshot replay, and cross-tenant denial. Existing financial-document PDF integration passes 5/5. The report retry/download browser test passes with both preparation and generation responses deliberately lost and safely retried. Independent report and renderer rereviews are clear. P11 remains To do because localization coverage and Task 5 appearance/layout/whole-P11 gates are still open.
 
 ## Task 5 — Layout, appearance and whole-P11 acceptance
 

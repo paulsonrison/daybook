@@ -856,4 +856,19 @@ export default {
   'Assistant request could not be confirmed.':
     'സഹായി അഭ്യർത്ഥന സ്ഥിരീകരിക്കാനായില്ല.',
   'assistant question': 'സഹായിയോടുള്ള ചോദ്യം',
+  'Monthly exports': 'പ്രതിമാസ കയറ്റുമതികൾ',
+  'Prepare an immutable monthly report from recorded agency data, then download a private PDF or spreadsheet.':
+    'രേഖപ്പെടുത്തിയ ഏജൻസി വിവരങ്ങളിൽ നിന്ന് മാറ്റമില്ലാത്ത പ്രതിമാസ റിപ്പോർട്ട് തയ്യാറാക്കി സ്വകാര്യ PDF അല്ലെങ്കിൽ സ്പ്രെഡ്‌ഷീറ്റ് ഡൗൺലോഡ് ചെയ്യുക.',
+  'Report type': 'റിപ്പോർട്ട് തരം',
+  'Operations report': 'പ്രവർത്തന റിപ്പോർട്ട്',
+  'Sales report': 'വിൽപ്പന റിപ്പോർട്ട്',
+  'Recorded tax report': 'രേഖപ്പെടുത്തിയ നികുതി റിപ്പോർട്ട്',
+  'Prepare PDF': 'PDF തയ്യാറാക്കുക',
+  'Prepare spreadsheet': 'സ്പ്രെഡ്‌ഷീറ്റ് തയ്യാറാക്കുക',
+  'Preparing report…': 'റിപ്പോർട്ട് തയ്യാറാക്കുന്നു…',
+  'Report preparation failed. Your request is preserved.':
+    'റിപ്പോർട്ട് തയ്യാറാക്കാനായില്ല. നിങ്ങളുടെ അഭ്യർത്ഥന സംരക്ഷിച്ചിട്ടുണ്ട്.',
+  'Retry report': 'റിപ്പോർട്ട് വീണ്ടും ശ്രമിക്കുക',
+  'Report ready': 'റിപ്പോർട്ട് തയ്യാറാണ്',
+  'Download {format}': '{format} ഡൗൺലോഡ് ചെയ്യുക',
 };

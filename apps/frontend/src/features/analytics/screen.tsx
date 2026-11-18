@@ -17,6 +17,7 @@ import { formatMoney } from '@daybook/ui/money';
 import { translateRendered } from '@daybook/ui/messages';
 import { AnalyticsStore, type AnalyticsReport, type Coverage } from './store';
 import { basisPointsPercent, chartPoints } from './presentation';
+import { ReportsPanel } from './reports-panel';
 function useAnalytics() {
   const [store] = useState(() => new AnalyticsStore());
   useEffect(() => {
@@ -180,6 +181,7 @@ export const AnalyticsScreen = observer(function AnalyticsScreen() {
           {t('Refresh reports')}
         </Button>
       </div>
+      <ReportsPanel month={store.month} />
       {store.state === 'error' ? (
         <DataState
           kind="error"

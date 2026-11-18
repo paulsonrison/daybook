@@ -19,6 +19,13 @@ export function graphqlRequest<T>(
 ): Promise<T> {
   return send<T>({ query, variables });
 }
+/** Monthly report generation is explicitly bounded to the PDF renderer's deadline. */
+export function reportRequest<T>(
+  query: string,
+  variables?: Record<string, unknown>,
+): Promise<T> {
+  return send<T>({ query, variables }, 35000);
+}
 export function assistantRequest<T>(input: {
   question: string;
   month?: string;

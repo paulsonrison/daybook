@@ -26,6 +26,23 @@ test('only the fixed assistant operation gets a longer upstream deadline; other 
     variables: { input: { question: 'Show balances' } },
   });
   assert.equal(feature.upstreamTimeout('/graphql', body), 75000);
+  assert.equal(
+    feature.upstreamTimeout(
+      '/graphql',
+      JSON.stringify({ query: feature.REPORT_GENERATE_OPERATION }),
+    ),
+    30000,
+  );
+  assert.equal(
+    feature.upstreamTimeout(
+      '/graphql',
+      JSON.stringify({
+        operationName: 'GenerateReport',
+        query: 'mutation{recordPayment(input:{}){id}}',
+      }),
+    ),
+    10000,
+  );
   assert.equal(feature.upstreamTimeout('/auth/login', body), 10000);
   assert.equal(
     feature.upstreamTimeout(

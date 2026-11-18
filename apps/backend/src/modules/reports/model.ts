@@ -1,5 +1,15 @@
 import type { AgencyReportSnapshot } from '@daybook/ui/reports';
 export type { AgencyReportSnapshot } from '@daybook/ui/reports';
+export function assertReportArtifactSize(byteLength: number) {
+  if (
+    !Number.isSafeInteger(byteLength) ||
+    byteLength < 100 ||
+    byteLength > 10485760
+  )
+    throw new Error(
+      'Report artifact is outside the supported file size limit.',
+    );
+}
 /** Reject the entire report at its public limits; never quietly truncate a comprehensive export. */
 export function assertReportBounds(snapshot: AgencyReportSnapshot) {
   if (

@@ -838,4 +838,19 @@ export default {
   'Assistant request could not be confirmed.':
     'सहायक अनुरोध की पुष्टि नहीं हो सकी।',
   'assistant question': 'सहायक के लिए प्रश्न',
+  'Monthly exports': 'मासिक रिपोर्ट डाउनलोड',
+  'Prepare an immutable monthly report from recorded agency data, then download a private PDF or spreadsheet.':
+    'दर्ज एजेंसी डेटा से अपरिवर्तनीय मासिक रिपोर्ट तैयार करें और निजी PDF या स्प्रेडशीट डाउनलोड करें।',
+  'Report type': 'रिपोर्ट का प्रकार',
+  'Operations report': 'संचालन रिपोर्ट',
+  'Sales report': 'बिक्री रिपोर्ट',
+  'Recorded tax report': 'दर्ज कर रिपोर्ट',
+  'Prepare PDF': 'PDF तैयार करें',
+  'Prepare spreadsheet': 'स्प्रेडशीट तैयार करें',
+  'Preparing report…': 'रिपोर्ट तैयार हो रही है…',
+  'Report preparation failed. Your request is preserved.':
+    'रिपोर्ट तैयार नहीं हो सकी। आपका अनुरोध सुरक्षित है।',
+  'Retry report': 'रिपोर्ट फिर से तैयार करें',
+  'Report ready': 'रिपोर्ट तैयार है',
+  'Download {format}': '{format} डाउनलोड करें',
 };

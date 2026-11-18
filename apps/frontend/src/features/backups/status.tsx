@@ -62,8 +62,11 @@ export function BackupStatus() {
     }
   }, []);
   useEffect(() => {
-    void refresh();
-    return () => active.current?.abort();
+    const timer = window.setTimeout(() => void refresh(), 0);
+    return () => {
+      window.clearTimeout(timer);
+      active.current?.abort();
+    };
   }, [refresh]);
   return (
     <section aria-label={t('Backup protection')}>

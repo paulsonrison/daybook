@@ -148,3 +148,114 @@ test('an unavailable analytics read shows recovery instead of fabricated zero to
     page.getByRole('heading', { name: 'Analytics unavailable', exact: true }),
   ).toHaveCount(0);
 });
+
+test('report retries preserve the original period and request after the selection changes', async ({
+  page,
+  baseURL,
+}) => {
+  const { query } = await financialBrowser(
+    page,
+    baseURL!,
+    `report-recovery-${crypto.randomUUID()}@example.test`,
+  );
+  const date = (await query('{deliveryMetrics{today}}')).data.deliveryMetrics
+    .today;
+  const requests: { requestId: string; month: string; locale: string }[] = [];
+  let loseResponse = true;
+  await page.route('**/api/graphql', async (route) => {
+    const body = route.request().postDataJSON();
+    if (body.query.includes('exportReport')) {
+      requests.push(body.variables.input);
+      if (loseResponse) {
+        loseResponse = false;
+        await route.fetch();
+        await route.abort('failed');
+        return;
+      }
+    }
+    await route.continue();
+  });
+  await page.goto('/analytics');
+  await page.getByLabel('Report type', { exact: true }).selectOption('SALES');
+  await page.getByRole('button', { name: 'Prepare spreadsheet' }).click();
+  await expect(
+    page.getByText('Report preparation failed. Your request is preserved.'),
+  ).toBeVisible();
+  await page.getByLabel('Report month', { exact: true }).fill('2025-01');
+  await expect(page.getByLabel('Report month', { exact: true })).toHaveValue(
+    '2025-01',
+  );
+  await page.getByRole('button', { name: 'Retry report' }).click();
+  await expect(page.getByText('Report ready')).toBeVisible();
+  expect(requests).toHaveLength(2);
+  expect(requests[1]).toEqual(requests[0]);
+  expect(requests[0]).toMatchObject({ month: date.slice(0, 7), locale: 'en' });
+});
+
+test('monthly export retry preserves the exact month, locale, request identity and delivers a private workbook', async ({
+  page,
+  baseURL,
+}) => {
+  const { query } = await financialBrowser(
+    page,
+    baseURL!,
+    `monthly-report-${crypto.randomUUID()}@example.test`,
+  );
+  const date = (await query('{deliveryMetrics{today}}')).data.deliveryMetrics
+    .today;
+  const inputs: { requestId: string; month: string; locale: string }[] = [];
+  const generationIds: string[] = [];
+  let loseFirstResponse = true;
+  let loseFirstGeneration = true;
+  await page.route('**/api/graphql', async (route) => {
+    const body = route.request().postDataJSON();
+    if (body.query.includes('exportReport')) {
+      inputs.push(body.variables.input);
+      if (loseFirstResponse) {
+        loseFirstResponse = false;
+        await route.fetch();
+        await route.abort('failed');
+        return;
+      }
+    }
+    if (body.query.includes('generateReport')) {
+      generationIds.push(body.variables.input.requestId);
+      if (loseFirstGeneration) {
+        loseFirstGeneration = false;
+        await route.fetch();
+        await route.abort('failed');
+        return;
+      }
+    }
+    await route.continue();
+  });
+  await page.goto('/analytics');
+  await page.getByLabel('Report type', { exact: true }).selectOption('SALES');
+  await page.getByRole('button', { name: 'Prepare spreadsheet' }).click();
+  await expect(
+    page.getByText('Report preparation failed. Your request is preserved.'),
+  ).toBeVisible();
+  await page.getByLabel('Report month', { exact: true }).fill('2025-01');
+  await expect(page.getByLabel('Report month', { exact: true })).toHaveValue(
+    '2025-01',
+  );
+  await page.getByRole('button', { name: 'Retry report' }).click();
+  await expect(
+    page.getByText('Report preparation failed. Your request is preserved.'),
+  ).toBeVisible();
+  await page.getByRole('button', { name: 'Retry report' }).click();
+  await expect(page.getByText('Report ready', { exact: false })).toBeVisible();
+  expect(inputs).toHaveLength(2);
+  expect(inputs[1]).toEqual(inputs[0]);
+  expect(inputs[0]).toMatchObject({
+    month: date.slice(0, 7),
+    locale: 'en',
+  });
+  expect(generationIds).toHaveLength(2);
+  expect(generationIds[1]).toEqual(generationIds[0]);
+  const download = page.waitForEvent('download');
+  await page.getByRole('link', { name: 'Download XLSX' }).click();
+  expect((await download).suggestedFilename()).toMatch(
+    /^daybook-sales-\d{4}-\d{2}\.xlsx$/,
+  );
+});

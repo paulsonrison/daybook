@@ -52,6 +52,13 @@ export function reserveDocumentRenderer() {
       }
     },
     async render(model: FinancialDocumentModel) {
+      return this.renderHtml(
+        renderFinancialDocument(model),
+        model.locale,
+        'Daybook document',
+      );
+    },
+    async renderHtml(html: string, locale: string, title: string) {
       const css = await documentCss();
       const browser = await chromium.launch({
         channel: process.env.PDF_BROWSER_CHANNEL ?? 'chrome',
@@ -75,7 +82,7 @@ export function reserveDocumentRenderer() {
         const page = await context.newPage();
         page.setDefaultTimeout(10000);
         await page.setContent(
-          `<!doctype html><html lang="${model.locale}"><head><meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; font-src data:"><title>Daybook document</title><style>${css}</style></head><body class="db-theme">${renderFinancialDocument(model)}</body></html>`,
+          `<!doctype html><html lang="${locale}"><head><meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; font-src data:"><title>${title}</title><style>${css}</style></head><body class="db-theme">${html}</body></html>`,
           { waitUntil: 'load', timeout: 10000 },
         );
         await page.evaluate('document.fonts.ready');

@@ -72,6 +72,8 @@ import {
   documentResolvers,
 } from './modules/documents/schema.js';
 import { handleDocumentRequest } from './modules/documents/http.js';
+import { handleReportRequest } from './modules/reports/http.js';
+import { reportTypeDefs, reportResolvers } from './modules/reports/schema.js';
 import { handleProviderRequest } from './modules/communications/http.js';
 import {
   providerRegistry,
@@ -146,12 +148,14 @@ export function createApp({
       ${documentTypeDefs}
       ${preferenceTypeDefs}
       ${analyticsTypeDefs}
+      ${reportTypeDefs}
       ${assistantTypeDefs}
       ${fieldTypeDefs}`,
       resolvers: {
         Query: {
           ...fieldResolvers.Query,
           ...analyticsResolvers.Query,
+          ...reportResolvers.Query,
           ...preferenceResolvers.Query,
           ...operationsResolvers.Query,
           ...catalogResolvers.Query,
@@ -200,6 +204,7 @@ export function createApp({
           ...cashResolvers.Mutation,
           ...communicationResolvers.Mutation,
           ...documentResolvers.Mutation,
+          ...reportResolvers.Mutation,
         },
       },
     }),
@@ -232,6 +237,13 @@ export function createApp({
                 new Response('Database unavailable', { status: 503 }),
               );
             return handleDocumentRequest(request, pool).then(endResponse);
+          }
+          if (path.startsWith('/reports/')) {
+            if (!pool)
+              return endResponse(
+                new Response('Database unavailable', { status: 503 }),
+              );
+            return handleReportRequest(request, pool).then(endResponse);
           }
           if (path.startsWith('/auth/')) {
             if (!pool)

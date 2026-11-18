@@ -2701,4 +2701,19 @@ export default {
   'Your question': 'Your question',
   'Your question is retained. No business records were changed.':
     'Your question is retained. No business records were changed.',
+  'Monthly exports': 'Monthly exports',
+  'Prepare an immutable monthly report from recorded agency data, then download a private PDF or spreadsheet.':
+    'Prepare an immutable monthly report from recorded agency data, then download a private PDF or spreadsheet.',
+  'Report type': 'Report type',
+  'Operations report': 'Operations report',
+  'Sales report': 'Sales report',
+  'Recorded tax report': 'Recorded tax report',
+  'Prepare PDF': 'Prepare PDF',
+  'Prepare spreadsheet': 'Prepare spreadsheet',
+  'Preparing report…': 'Preparing report…',
+  'Report preparation failed. Your request is preserved.':
+    'Report preparation failed. Your request is preserved.',
+  'Retry report': 'Retry report',
+  'Report ready': 'Report ready',
+  'Download {format}': 'Download {format}',
 };

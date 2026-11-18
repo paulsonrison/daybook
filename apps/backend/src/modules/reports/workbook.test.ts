@@ -1,6 +1,43 @@
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
 import { unzipSync, strFromU8 } from 'fflate';
+import { renderAgencyReport } from '@daybook/ui/reports';
+import { assertReportArtifactSize } from './model.js';
+
+test('monthly PDF and workbook artifacts enforce the same hard output-size boundary', () => {
+  assertReportArtifactSize(100);
+  assertReportArtifactSize(10_485_760);
+  assert.throws(() => assertReportArtifactSize(99), /file size limit/);
+  assert.throws(() => assertReportArtifactSize(10_485_761), /file size limit/);
+  assert.throws(() => assertReportArtifactSize(Number.NaN), /file size limit/);
+});
+
+test('report HTML escapes untrusted labels and agency names before PDF rendering', () => {
+  const markup = renderAgencyReport({
+    version: 1,
+    kind: 'OPERATIONS',
+    locale: 'ml',
+    reference: 'REPORT-1',
+    title: '<script>alert(1)</script>',
+    agencyName: '<img src=x onerror=alert(1)>',
+    month: '2026-01',
+    generatedAt: '2026-02-01T00:00:00.000Z',
+    balanceAsOf: '2026-02-01',
+    meta: [],
+    notes: [],
+    sections: [
+      {
+        title: 'Records',
+        columns: ['Resident'],
+        rows: [['<svg onload=alert(1)>']],
+      },
+    ],
+  });
+  assert.match(markup, /&lt;script&gt;alert\(1\)&lt;\/script&gt;/);
+  assert.match(markup, /&lt;img src=x onerror=alert\(1\)&gt;/);
+  assert.match(markup, /&lt;svg onload=alert\(1\)&gt;/);
+  assert.doesNotMatch(markup, /<script|<img|<svg/);
+});
 test('monthly workbook is genuine XLSX with native text, exact money and untrusted text cells rather than formulas', async () => {
   const feature = await import('./workbook.js').catch(
     (error: NodeJS.ErrnoException) => {
@@ -44,7 +81,7 @@ test('monthly workbook is genuine XLSX with native text, exact money and untrust
   assert.ok(files['xl/workbook.xml']);
   const xml = Object.entries(files)
     .filter(([name]) => name.endsWith('.xml'))
-    .map(([, value]) => strFromU8(value))
+    .map(([, value]) => strFromU8(value, false))
     .join('\n');
   assert.match(xml, /വിൽപ്പന/);
   assert.match(xml, /9007199254740993.93/);
@@ -60,7 +97,7 @@ test('monthly workbook is genuine XLSX with native text, exact money and untrust
       .replaceAll('&gt;', '>')
       .replaceAll('&amp;', '&');
   const shared = [
-    ...strFromU8(files['xl/sharedStrings.xml']).matchAll(
+    ...strFromU8(files['xl/sharedStrings.xml'], false).matchAll(
       /<si>([\s\S]*?)<\/si>/g,
     ),
   ].map((match) =>
@@ -68,7 +105,7 @@ test('monthly workbook is genuine XLSX with native text, exact money and untrust
       .map((value) => decode(value[1]))
       .join(''),
   );
-  const sheet = strFromU8(files['xl/worksheets/sheet2.xml']);
+  const sheet = strFromU8(files['xl/worksheets/sheet2.xml'], false);
   const read = (reference: string) => {
     const cell = new RegExp(
       '<c[^>]*r="' + reference + '"[^>]*>([\\s\\S]*?)<\\/c>',
