@@ -37,16 +37,16 @@ Files: database connection/bootstrap helpers; migration/verification scripts; Re
 Files: `modules/backups/*`, storage adapters, migration for scoped backup/jobs metadata, worker/status UI and tests.
 
 - [x] Test AES-GCM tamper rejection, prefix/tenant boundaries, retention/quota, absent keys and failures.
-- [ ] Implement private upload storage and encrypted backup replication using scoped credentials and bounded streaming.
-- [ ] Verify actual dump/restore and connected destinations; expose independent destination health.
+- [x] Implement private upload storage and encrypted backup replication using scoped credentials and bounded streaming.
+- [x] Verify actual dump/restore and connected destinations; expose independent destination health. The primary archive restored on an isolated PostgreSQL rehearsal database, and both private destinations independently verified the encrypted archive.
 
 ### Task 3: Free bounded scheduling
 
 Files: authenticated internal job endpoint, Cloudflare scheduler package/config, existing domain worker entry points and tests.
 
-- [ ] Test secret/origin/replay limits, leases, clock boundaries and unavailable service recovery.
-- [ ] Reuse existing durable agency jobs and communications cycles in bounded invocations, with budget-aware scheduling and no paid fallback.
-- [ ] Deploy and verify actual scheduled execution when account access is connected.
+- [x] Test secret/origin/replay limits, leases, clock boundaries and unavailable service recovery.
+- [x] Deploy the fixed-origin, signed tick and bounded backup plus one-durable-job-per-agency slice; exclude provider credentials and outbound submissions.
+- [ ] Verify an actual automatic Cron execution; Cloudflare settings show the active hourly trigger, but its history still has no event after the 16:07 UTC tick. Safe communications/document-cycle execution and retention deletion also remain open.
 
 ### Task 4: Document intake and assistant completion
 
@@ -81,6 +81,8 @@ Task1 checkpoint: the non-superuser transfer test now covers two agencies, per-a
 
 Task1 live evidence: transfer render-neon-20261115 committed79tables/47rows with SHA25666bf85cd4fc030036be279e671fd24df5ff4b3b777e4d675a68cce0e8541f763. Pre-cutover Chrome session/offline payment recovered with one confirmed receipt and no duplicate; direct-owner restart live. Original source retained/fenced. Direct-connection guard has3passing unit cases including reviewer-found uppercase/trailing-dot bypass, observed RED then fixed. Final real DB/production launcher regression passes in .cache/database-transfer-final.log. Private storage availability confirmed, Task2 starting.
 
-Task2 foundation checkpoint: authenticated bounded encryption, private S3 adapter, verified replication and retention/health policies implemented with16focused checks. Actual PG17 dump/encrypt/disposable restore preserves sessions, exact money, binary/generated fields and security metadata. Neon private synthetic upload/restore verified. Independent review findings fixed and clear. Durable jobs/atomic reservations/status and live B2 replication remain pending; see docs/backups.md. User confirmed an existing B2 account and is completing sign-in in the original Chrome profile.
+Task2 foundation checkpoint: authenticated bounded encryption, private S3 adapter, verified replication and retention/health policies implemented with16focused checks. Actual PG17 dump/encrypt/disposable restore preserves sessions, exact money, binary/generated fields and security metadata. Neon private synthetic upload/restore verified. Independent review findings fixed and clear. Durable jobs/atomic reservations/status and live B2 replication remain pending at this historical checkpoint; see the dated updates below.
 
 Task2 update (16November): user-approved restricted B2 key provisioned; live dual-provider encrypted synthetic replication and prefix-denial check pass. Owner-only metadata migration015 and claim/reservation/finish APIs implemented. Independent final-attempt crash finding fixed;3real PG job cases pass, transfer now preserves backup metadata/reservations, actual dump/restore is isolated from unrelated test agencies. Worker integration, retention execution/status UI and actual live database backup remain open.
+
+Task2/Task3 update (18November): an actual 453,704-byte primary archive was independently fetched and checksum-verified from Neon and Backblaze, then restored into the isolated PostgreSQL rehearsal database with tenant row security intact. The restricted worker and backup-status UI are wired and deployed. Cloudflare shows the hourly trigger enabled and its next run at 17:07 UTC, but no automatic execution is recorded after the 16:07 UTC tick. Retention deletion and safe communications/document-cycle execution remain open.

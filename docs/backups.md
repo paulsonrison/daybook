@@ -1,6 +1,6 @@
 # Encrypted backup implementation and verification
 
-The backup foundation is implemented and tested. Automatic worker wiring, retention execution, system-status UI are still pending. Actual database backup and isolated restore have now passed on both providers. Durable job records and reservations are implemented; both storage providers have passed live synthetic replication checks. These checks do not constitute whole-project acceptance.
+Encrypted storage, actual database backup, isolated restore, the restricted worker boundary and system-status UI are implemented and tested. The Cloudflare hourly trigger is active, but its automatic run is not yet verified. Retention deletion/execution remains pending. Durable job records and reservations are implemented; both storage providers have passed live synthetic replication checks. These checks do not constitute whole-project acceptance.
 
 ## Implemented
 
