@@ -1,4 +1,19 @@
 export default {
+  'Backup protection': 'ബാക്കപ്പ് സംരക്ഷണം',
+  'Backup status could not be checked.': 'ബാക്കപ്പ് നില പരിശോധിക്കാനായില്ല.',
+  'Automatic backups are not configured.':
+    'സ്വയമേവയുള്ള ബാക്കപ്പ് ക്രമീകരിച്ചിട്ടില്ല.',
+  'Two recent verified copies': 'പരിശോധിച്ച രണ്ട് പുതിയ പകർപ്പുകൾ',
+  'Protection needs attention': 'സംരക്ഷണത്തിന് ശ്രദ്ധ ആവശ്യമാണ്',
+  'Latest backup attempt failed.':
+    'ഏറ്റവും പുതിയ ബാക്കപ്പ് ശ്രമം പരാജയപ്പെട്ടു.',
+  'Recent verified copy': 'പരിശോധിച്ച പുതിയ പകർപ്പ്',
+  'No recent verified copy': 'പരിശോധിച്ച പുതിയ പകർപ്പ് ഇല്ല',
+  'No verified copy': 'പരിശോധിച്ച പകർപ്പ് ഇല്ല',
+  'Last verified: {time}': 'അവസാനം പരിശോധിച്ചത്: {time}',
+  'Encrypted recovery copies are managed by the operator. This screen does not provide access to other agencies or backup files.':
+    'എൻക്രിപ്റ്റ് ചെയ്ത വീണ്ടെടുക്കൽ പകർപ്പുകൾ നടത്തിപ്പുകാരൻ കൈകാര്യം ചെയ്യുന്നു. ഈ സ്ക്രീനിലൂടെ മറ്റ് ഏജൻസികളിലേക്കോ ബാക്കപ്പ് ഫയലുകളിലേക്കോ പ്രവേശനം ലഭിക്കില്ല.',
+  'Refresh backup status': 'ബാക്കപ്പ് നില പുതുക്കുക',
   Save: 'സേവ് ചെയ്യുക',
   Cancel: 'റദ്ദാക്കുക',
   Retry: 'വീണ്ടും ശ്രമിക്കുക',

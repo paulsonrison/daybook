@@ -1,5 +1,7 @@
 import { spawn } from 'node:child_process';
 import { resolve } from 'node:path';
+import { backendEnvironment } from './runtime-environment.mjs';
+import { attachBackupBroker } from './backup-broker.mjs';
 import {
   transferDatabase,
   requireDirectMigrationUrl,
@@ -85,17 +87,19 @@ delete process.env.NEON_MIGRATION_DATABASE_URL;
 delete process.env.NEON_REHEARSAL_DATABASE_URL;
 delete process.env.PREVIEW_RUNTIME_PASSWORD;
 const backendPort = process.env.PREVIEW_BACKEND_PORT || '4000';
-launch(['--max-old-space-size=128', 'apps/backend/dist/server.js'], {
-  env: {
-    ...process.env,
-    NODE_ENV: 'production',
-    DATABASE_URL: runtimeUrl,
-    PORT: backendPort,
-    HOST: '127.0.0.1',
-    FRONTEND_ORIGIN: origin,
-    PUBLIC_APP_ORIGIN: origin,
+const backend = launch(
+  ['--max-old-space-size=128', 'apps/backend/dist/server.js'],
+  {
+    env: backendEnvironment(process.env, {
+      databaseUrl: runtimeUrl,
+      origin,
+      port: backendPort,
+    }),
+    stdio: ['inherit', 'inherit', 'inherit', 'ipc'],
   },
-});
+);
+const detachBackups = attachBackupBroker(backend);
+process.once('exit', detachBackups);
 const deadline = Date.now() + 60000;
 while (true) {
   if (stopping) break;

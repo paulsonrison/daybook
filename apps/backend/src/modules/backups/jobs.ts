@@ -1,6 +1,8 @@
 import { randomUUID } from 'node:crypto';
 import type { Pool, PoolClient } from 'pg';
 import { MAX_BACKUP_BYTES } from './encryption.js';
+import { backupRetention } from './policy.js';
+import type { PrivateObjectIdentity } from '../../storage/private.js';
 export interface BackupClaim {
   id: string;
   objectId: string;
@@ -21,6 +23,8 @@ async function transaction<T>(
   work: (client: PoolClient) => Promise<T>,
 ) {
   const client = await pool.connect();
+  const onDisconnect = () => {};
+  client.on('error', onDisconnect);
   try {
     await client.query('BEGIN');
     await client.query("SET LOCAL statement_timeout='15s'");
@@ -53,6 +57,7 @@ async function transaction<T>(
     throw error;
   } finally {
     client.release();
+    client.removeListener('error', onDisconnect);
   }
 }
 async function lease(client: PoolClient, claim: BackupClaim, now: Date) {
@@ -83,10 +88,11 @@ export async function claimBackup(
     );
     const row = (
       await client.query(
-        'SELECT * FROM daybook.operator_backup_runs WHERE period=$1 FOR UPDATE',
+        'SELECT * FROM daybook.operator_backup_runs WHERE period=$1 FOR UPDATE SKIP LOCKED',
         [input.period],
       )
     ).rows[0];
+    if (!row) return null;
     if (
       row.scope_id !== input.scopeId.toLowerCase() ||
       row.key_id !== input.keyId
@@ -281,5 +287,96 @@ export async function finishBackupRun(
       [claim.id, state, now],
     );
     return state;
+  });
+}
+
+/** Hold the same transfer fence through provider I/O and durable result recording. */
+export async function performBackupUpload(
+  pool: Pool,
+  claim: BackupClaim,
+  destination: Destination,
+  now: Date,
+  upload: () => Promise<boolean>,
+) {
+  if (!['neon', 'b2'].includes(destination))
+    throw new Error('Invalid backup destination.');
+  return transaction(pool, async (client) => {
+    await lease(client, claim, now);
+    const object = (
+      await client.query(
+        'SELECT status FROM daybook.operator_backup_objects WHERE object_id=$1 AND destination=$2',
+        [claim.objectId, destination],
+      )
+    ).rows[0];
+    if (!object) throw new Error('Reserve backup capacity before upload.');
+    if (object.status === 'VERIFIED') return true;
+    if (object.status !== 'RESERVED') return false;
+    await client.query("SET LOCAL idle_in_transaction_session_timeout='180s'");
+    const started = performance.now();
+    let verified = false;
+    try {
+      verified = await upload();
+    } catch {
+      verified = false;
+    }
+    const finished = new Date(now.valueOf() + performance.now() - started);
+    await lease(client, claim, finished);
+    await client.query(
+      "UPDATE daybook.operator_backup_objects SET status=$3,verified_at=CASE WHEN $3='VERIFIED' THEN $4::timestamptz ELSE NULL END WHERE object_id=$1 AND destination=$2",
+      [claim.objectId, destination, verified ? 'VERIFIED' : 'FAILED', finished],
+    );
+    return verified;
+  });
+}
+
+/** Remove at most one expired, verified object. Unknown uploads never release quota. */
+export async function expireOneBackup(
+  pool: Pool,
+  scopeId: string,
+  destination: Destination,
+  now: Date,
+  remove: (object: PrivateObjectIdentity) => Promise<void>,
+) {
+  clock(now);
+  if (!uuid.test(scopeId) || !['neon', 'b2'].includes(destination))
+    throw new Error('Invalid backup retention scope.');
+  const scope = scopeId.toLowerCase();
+  return transaction(pool, async (client) => {
+    const lock = await client.query(
+      "SELECT pg_try_advisory_xact_lock(hashtextextended('backup-retention:'||$1||':'||$2,0)) AS ready",
+      [scope, destination],
+    );
+    if (!lock.rows[0].ready) return false;
+    const records = (
+      await client.query(
+        "SELECT o.* FROM daybook.operator_backup_objects o JOIN daybook.operator_backup_runs r ON r.id=o.run_id WHERE o.scope_id=$1 AND o.destination=$2 AND o.status='VERIFIED' AND r.status<>'RUNNING' ORDER BY o.created_at DESC,o.object_id LIMIT 1001 FOR UPDATE OF o SKIP LOCKED",
+        [scope, destination],
+      )
+    ).rows;
+    if (records.length > 1000)
+      throw new Error('Backup retention inventory exceeds its bounded limit.');
+    const plan = backupRetention(
+      records.map((r) => ({
+        id: r.object_id,
+        agencyId: r.scope_id,
+        key: `agencies/${r.scope_id}/backups/${r.object_id}`,
+        createdAt: new Date(r.created_at).toISOString(),
+        verified: true,
+        bytes: r.reserved_bytes,
+      })),
+      scope,
+      now,
+    );
+    const objectId = plan.deleteIds.at(-1);
+    if (!objectId) return false;
+    await client.query("SET LOCAL idle_in_transaction_session_timeout='90s'");
+    await remove({ agencyId: scope, objectId, kind: 'backup' });
+    // Keep usage reserved until storage has confirmed all owned versions are absent.
+    await client.query('SELECT pg_advisory_xact_lock(78130425)');
+    await client.query(
+      "UPDATE daybook.operator_backup_objects SET status='DELETED',verified_at=NULL WHERE object_id=$1 AND destination=$2 AND status='VERIFIED'",
+      [objectId, destination],
+    );
+    return true;
   });
 }

@@ -3,11 +3,14 @@ import { createServer } from 'node:http';
 import { createApp } from './app.js';
 import { createPool } from './db/pool.js';
 import { assertRuntimeRole } from './db/tenant.js';
+import { requestBackup } from './modules/backups/ipc.js';
 const pool = createPool();
 await assertRuntimeRole(pool);
 const app = createApp({
   pool,
   frontendOrigin: process.env.FRONTEND_ORIGIN,
+  backupRequest: requestBackup,
+  schedulerSecret: process.env.DAYBOOK_SCHEDULER_SECRET,
   databaseReady: async () => {
     try {
       await pool.query('SELECT 1');

@@ -1,4 +1,6 @@
 import { fieldTypeDefs, fieldResolvers } from './modules/field/schema.js';
+import { handleBackupRequest } from './modules/backups/http.js';
+import type { BackupRequest } from './modules/backups/ipc.js';
 import { createAiProvider, type AiProvider } from './modules/ai/provider.js';
 import {
   assistantTypeDefs,
@@ -82,6 +84,8 @@ export function createApp({
   providers = providerRegistry(),
   aiProvider = createAiProvider(),
   providerCallbackOrigin = process.env.PUBLIC_APP_ORIGIN,
+  backupRequest,
+  schedulerSecret,
 }: {
   databaseReady: () => Promise<boolean>;
   frontendOrigin?: string;
@@ -89,6 +93,8 @@ export function createApp({
   providers?: ProviderRegistry;
   aiProvider?: AiProvider;
   providerCallbackOrigin?: string;
+  backupRequest?: BackupRequest;
+  schedulerSecret?: string;
 }) {
   const requestLocales = new WeakMap<Request, Locale>();
   return createYoga({
@@ -202,6 +208,12 @@ export function createApp({
       {
         onRequest({ request, endResponse }) {
           const path = new URL(request.url).pathname;
+          if (path === '/operations/backups' || path === '/internal/jobs/tick')
+            return handleBackupRequest(request, {
+              pool,
+              request: backupRequest,
+              secret: schedulerSecret,
+            }).then(endResponse);
           if (path.startsWith('/webhooks/')) {
             if (!pool)
               return endResponse(

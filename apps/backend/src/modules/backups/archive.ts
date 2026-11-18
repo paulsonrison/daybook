@@ -94,7 +94,9 @@ export async function createDatabaseArchive(configuration: {
   databaseUrl: string;
   pgDumpPath?: string;
   maxBytes?: number;
+  signal?: AbortSignal;
 }) {
+  configuration.signal?.throwIfAborted();
   const limit = configuration.maxBytes ?? MAX_BACKUP_BYTES;
   if (!Number.isSafeInteger(limit) || limit < 1 || limit > MAX_BACKUP_BYTES)
     throw new Error('Invalid database archive byte limit.');
@@ -120,7 +122,9 @@ export async function createDatabaseArchive(configuration: {
         env: connectionEnvironment(configuration.databaseUrl, caFile),
         windowsHide: true,
         stdio: ['ignore', 'pipe', 'pipe'],
-        signal: AbortSignal.timeout(180000),
+        signal: configuration.signal
+          ? AbortSignal.any([configuration.signal, AbortSignal.timeout(180000)])
+          : AbortSignal.timeout(180000),
       },
     );
     const completed = waitForBackupProcess(child);
@@ -160,7 +164,7 @@ export async function createDatabaseArchive(configuration: {
     throw error;
   }
 }
-/** Operator recovery only: never overwrite an existing database or run a clean/drop restore. */
+/** Operator recovery only: never overwrite existing data or use a clean/drop restore. */
 export async function restoreEmptyDatabaseArchive(configuration: {
   databaseUrl: string;
   file: string;
@@ -173,18 +177,19 @@ export async function restoreEmptyDatabaseArchive(configuration: {
     query_timeout: 15000,
   });
   client.on('error', () => {});
+  let temporary: Awaited<ReturnType<typeof scratch>> | undefined,
+    prepared = false;
   try {
     await client.connect();
-    const result = await client.query(
-      "SELECT EXISTS(SELECT 1 FROM pg_class c JOIN pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname NOT IN('pg_catalog','information_schema') AND n.nspname NOT LIKE 'pg_toast%' AND c.relkind IN('r','p','v','m','S','f')) AS occupied",
-    );
-    if (result.rows[0].occupied)
+    const occupied = (
+      await client.query(
+        "SELECT EXISTS(SELECT 1 FROM pg_class c JOIN pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname NOT IN('pg_catalog','information_schema') AND n.nspname NOT LIKE 'pg_toast%' AND c.relkind IN('r','p','v','m','S','f')) AS occupied",
+      )
+    ).rows[0].occupied;
+    if (occupied)
       throw new Error('Restore requires an empty disposable database.');
-  } finally {
-    await client.end();
-  }
-  const { directory, caFile } = await scratch();
-  try {
+    temporary = await scratch();
+    const { directory, caFile } = temporary;
     const listing = spawn(
       configuration.pgRestorePath || 'pg_restore',
       ['--list', configuration.file],
@@ -212,14 +217,48 @@ export async function restoreEmptyDatabaseArchive(configuration: {
       await listed.catch(() => {});
       throw error;
     }
-    // Empty PostgreSQL databases already contain public. Keep its ACL entries,
-    // but omit only its CREATE SCHEMA entry rather than dropping any schema.
-    const list = Buffer.concat(entries)
-      .toString('utf8')
-      .split('\n')
-      .filter((line) => !/^\d+; \d+ \d+ SCHEMA - public /.test(line))
-      .join('\n');
+    const lines = Buffer.concat(entries).toString('utf8').split(/\r?\n/);
+    const schemaOwner = lines
+      .map((line) => line.match(/^\d+; \d+ \d+ SCHEMA - daybook (.+)$/)?.[1])
+      .find(Boolean)
+      ?.trim();
+    const owner = (await client.query('SELECT current_user AS name')).rows[0]
+      .name as string;
+    if (schemaOwner !== owner)
+      throw new Error(
+        'Restore using the original Daybook migration owner role.',
+      );
+    const existing = (
+      await client.query(
+        "SELECT pg_get_userbyid(nspowner) AS owner FROM pg_namespace WHERE nspname='daybook'",
+      )
+    ).rows[0];
+    if (existing && existing.owner !== owner)
+      throw new Error('The empty recovery schema has a different owner.');
+    // Non-superuser owners need this bridge before pg_restore assigns definer owners.
+    // The roles are NOLOGIN and are never inherited by the HTTP runtime.
+    await client.query('CREATE SCHEMA IF NOT EXISTS daybook');
+    prepared = true;
+    await client.query(
+      'GRANT USAGE,CREATE ON SCHEMA daybook TO daybook_auth,daybook_scheduler',
+    );
     const listFile = join(directory, 'restore.list');
+    const applicationOwners = new Set([
+      owner,
+      'daybook_auth',
+      'daybook_scheduler',
+      'daybook_app',
+    ]);
+    const list = lines
+      .filter((line) => {
+        if (/^\d+; \d+ \d+ SCHEMA - (public|daybook) /.test(line)) return false;
+        // Managed hosts install their own administrator defaults. Preserve app ACLs,
+        // but do not attempt ALTER DEFAULT PRIVILEGES for a foreign platform role.
+        if (line.includes(' DEFAULT ACL '))
+          return applicationOwners.has(line.trimEnd().split(/\s+/).at(-1)!);
+        return true;
+      })
+      .join('\n');
     await writeFile(listFile, list, { flag: 'wx', mode: 0o600 });
     const child = spawn(
       configuration.pgRestorePath || 'pg_restore',
@@ -240,6 +279,18 @@ export async function restoreEmptyDatabaseArchive(configuration: {
     );
     await waitForBackupProcess(child);
   } finally {
-    await removeOwned(directory, ['restore.list', 'ca.pem']);
+    try {
+      if (prepared)
+        await client.query(
+          'REVOKE CREATE ON SCHEMA daybook FROM daybook_auth,daybook_scheduler',
+        );
+    } finally {
+      try {
+        if (temporary)
+          await removeOwned(temporary.directory, ['restore.list', 'ca.pem']);
+      } finally {
+        await client.end();
+      }
+    }
   }
 }

@@ -1,5 +1,8 @@
 import {
   GetObjectCommand,
+  HeadObjectCommand,
+  DeleteObjectCommand,
+  ListObjectVersionsCommand,
   PutObjectCommand,
   S3Client,
 } from '@aws-sdk/client-s3';
@@ -126,15 +129,16 @@ export class PrivateObjectStore {
   ): AsyncGenerator<Buffer> {
     const Key = objectKey(scope);
     sizeLimit(limit);
+    const signal = AbortSignal.timeout(60000);
     let body: Readable | undefined;
     try {
       const response = await this.client.send(
         new GetObjectCommand({ Bucket: this.configuration.bucket, Key }),
-        { abortSignal: AbortSignal.timeout(60000) },
+        { abortSignal: signal },
       );
       if (!(response.Body instanceof Readable))
         throw new Error('Missing private object body.');
-      body = response.Body;
+      body = addAbortSignal(signal, response.Body);
       if (
         !Number.isSafeInteger(response.ContentLength) ||
         response.ContentLength! < 0 ||
@@ -149,6 +153,89 @@ export class PrivateObjectStore {
       );
     } finally {
       body?.destroy();
+    }
+  }
+  /** Only operator backup retention may call this, after selecting verified expiry records. */
+  async purge(scope: PrivateObjectIdentity) {
+    const Key = objectKey(scope);
+    if (scope.kind !== 'backup')
+      throw new Error('Backup retention cannot remove source uploads.');
+    const host = new URL(this.configuration.endpoint).hostname.toLowerCase();
+    const versioned = /^s3\.[a-z0-9-]+\.backblazeb2\.com$/.test(host);
+    if (
+      !versioned &&
+      !(host.endsWith('.neon.tech') && host.includes('.storage.'))
+    )
+      throw new Error('Unsupported backup retention provider.');
+    const signal = AbortSignal.timeout(60000),
+      Bucket = this.configuration.bucket;
+    const versions = async () => {
+      let KeyMarker: string | undefined, VersionIdMarker: string | undefined;
+      const found: string[] = [],
+        seen = new Set<string>();
+      for (let page = 0; page < 4; page++) {
+        const response = await this.client.send(
+          new ListObjectVersionsCommand({
+            Bucket,
+            Prefix: Key,
+            MaxKeys: 100,
+            KeyMarker,
+            VersionIdMarker,
+          }),
+          { abortSignal: signal },
+        );
+        for (const item of [
+          ...(response.Versions ?? []),
+          ...(response.DeleteMarkers ?? []),
+        ])
+          if (item.Key === Key) {
+            if (!item.VersionId)
+              throw new Error('Backup object version is missing.');
+            found.push(item.VersionId);
+          }
+        if (!response.IsTruncated) return [...new Set(found)];
+        if (!response.NextKeyMarker || !response.NextVersionIdMarker)
+          throw new Error('Backup version listing is incomplete.');
+        const cursor = JSON.stringify([
+          response.NextKeyMarker,
+          response.NextVersionIdMarker,
+        ]);
+        if (seen.has(cursor))
+          throw new Error('Backup version pagination repeated.');
+        seen.add(cursor);
+        KeyMarker = response.NextKeyMarker;
+        VersionIdMarker = response.NextVersionIdMarker;
+      }
+      throw new Error('Backup versions exceed the bounded retention limit.');
+    };
+    try {
+      if (versioned) {
+        for (const VersionId of await versions())
+          await this.client.send(
+            new DeleteObjectCommand({ Bucket, Key, VersionId }),
+            { abortSignal: signal },
+          );
+        if ((await versions()).length)
+          throw new Error('Backup object versions still remain.');
+      } else
+        await this.client.send(new DeleteObjectCommand({ Bucket, Key }), {
+          abortSignal: signal,
+        });
+      try {
+        await this.client.send(new HeadObjectCommand({ Bucket, Key }), {
+          abortSignal: signal,
+        });
+      } catch (error) {
+        if (
+          (error as { $metadata?: { httpStatusCode?: number } })?.$metadata
+            ?.httpStatusCode === 404
+        )
+          return;
+        throw error;
+      }
+      throw new Error('Backup object is still present.');
+    } catch {
+      throw new Error('Private backup retention could not verify removal.');
     }
   }
   close() {

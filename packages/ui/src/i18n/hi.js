@@ -1,4 +1,18 @@
 export default {
+  'Backup protection': 'बैकअप सुरक्षा',
+  'Backup status could not be checked.': 'बैकअप की स्थिति जाँची नहीं जा सकी।',
+  'Automatic backups are not configured.':
+    'स्वचालित बैकअप कॉन्फ़िगर नहीं किए गए हैं।',
+  'Two recent verified copies': 'दो हालिया सत्यापित प्रतियाँ',
+  'Protection needs attention': 'सुरक्षा पर ध्यान देना आवश्यक है',
+  'Latest backup attempt failed.': 'नवीनतम बैकअप प्रयास विफल रहा।',
+  'Recent verified copy': 'हालिया सत्यापित प्रति',
+  'No recent verified copy': 'कोई हालिया सत्यापित प्रति नहीं',
+  'No verified copy': 'कोई सत्यापित प्रति नहीं',
+  'Last verified: {time}': 'अंतिम सत्यापन: {time}',
+  'Encrypted recovery copies are managed by the operator. This screen does not provide access to other agencies or backup files.':
+    'एन्क्रिप्ट की गई पुनर्प्राप्ति प्रतियाँ संचालक संभालता है। यह स्क्रीन अन्य एजेंसियों या बैकअप फ़ाइलों तक पहुँच नहीं देती।',
+  'Refresh backup status': 'बैकअप स्थिति ताज़ा करें',
   Save: 'सहेजें',
   Cancel: 'रद्द करें',
   Retry: 'फिर कोशिश करें',

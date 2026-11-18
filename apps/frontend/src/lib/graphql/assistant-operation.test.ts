@@ -8,6 +8,18 @@ test('only the fixed assistant operation gets a longer upstream deadline; other 
     },
   );
   assert.ok(feature?.upstreamTimeout);
+  assert.equal(
+    feature.upstreamTimeout('/operations/backups', undefined, 'GET'),
+    50000,
+  );
+  assert.equal(
+    feature.upstreamTimeout('/operations/backups', undefined, 'POST'),
+    10000,
+  );
+  assert.equal(
+    feature.upstreamTimeout('/operations/backups/other', undefined, 'GET'),
+    10000,
+  );
   const body = JSON.stringify({
     query: feature.ASSISTANT_OPERATION,
     operationName: 'DaybookAssistant',

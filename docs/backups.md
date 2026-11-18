@@ -1,6 +1,6 @@
 # Encrypted backup implementation and verification
 
-The backup foundation is implemented and tested. Automatic worker wiring, retention execution, system-status UI and a live database backup run are still pending. Durable job records and reservations are implemented; both storage providers have passed live synthetic replication checks. These checks do not constitute whole-project acceptance.
+The backup foundation is implemented and tested. Automatic worker wiring, retention execution, system-status UI are still pending. Actual database backup and isolated restore have now passed on both providers. Durable job records and reservations are implemented; both storage providers have passed live synthetic replication checks. These checks do not constitute whole-project acceptance.
 
 ## Implemented
 
@@ -32,11 +32,11 @@ The runner creates its own disposable PostgreSQL cluster and synthetic data. It 
 
 ## Remaining release gates
 
-1. Integrate the implemented durable metadata, reservations and leases with the bounded worker and visible destination health.
-2. Wire a bounded scheduled worker without passing database-owner credentials into HTTP processes.
-3. Verify an actual database archive through both connected destinations and reconcile object inventory before restarting jobs after disaster recovery.
+1. Deploy the bounded worker and visible destination health. Local PostgreSQL/HTTP and browser verification passes; the public service has not yet received this increment.
+2. Connect the free scheduler to the signed endpoint without passing database-owner credentials into HTTP processes.
+3. Reconcile object inventory before restarting jobs after disaster recovery. An actual database archive and isolated restore passed on 18 November 2026.
 4. Configure an external production encryption key and recovery procedure; retain the key separately from storage.
-5. Verify an actual live database archive and disposable restore, then enable and observe scheduling and retention.
+5. Enable and observe scheduled execution and bounded retention; preserve the existing successful live backup/restore evidence.
 
 The preview notice stays until these gates and the remaining document intake, reporting, translation, layout and Figma acceptance work are complete.
 
@@ -47,3 +47,17 @@ The private bucket is `daybook-paulson-backups-20261115`, endpoint `s3.us-east-0
 The user explicitly approved a non-master `daybook-backup-worker` key. It is restricted to this bucket and the `agencies/` prefix; listing all buckets is disabled. It expires on **14 February 2027 at 04:14 Asia/Calcutta** and needs rotation before then. The key is saved privately outside version control, has not been passed to HTTP processes, and is not yet wired into the production worker.
 
 Bucket lifecycle currently keeps all versions. Retention must handle hidden B2 versions and uncertain uploads before enabling scheduled deletion. A successful synthetic storage test does not complete those release gates.
+
+## Live database restore verified —18November2026
+
+A453704-byte archive of the actual primary was encrypted and independently downloaded, authenticated and checksum-verified from Neon and Backblaze. It restored into an isolated database on the rehearsal branch, retaining two agencies, two agents, one session, three ledger entries and fifteen migrations, with forced tenant row security intact. Source financial records were not modified. The verification database is now populated and must not be overwritten by a retry.
+
+Managed-host recovery requires the original migration owner. The helper prepares only an empty owned schema, temporarily gives existing NOLOGIN definer roles schema CREATE for ownership restoration, then revokes it in all completion paths. Application object ACLs and owners are preserved. Default privileges owned by foreign provider-administrator roles are left to the target provider; application-owned defaults are preserved. This path is regression-tested with a non-superuser migration owner and separate inaccessible platform role.
+
+## Worker and status boundary
+
+The combined service parent retains the operator configuration and launches only fixed `tick` and `status` commands over an IPC channel. Callers cannot supply executable paths, SQL, arguments or environment settings. The HTTP server receives a restricted environment containing its runtime database connection, document/link settings, AI settings and scheduler signing secret. Backup owner connections, encryption keys and storage credentials never enter the HTTP or frontend processes. Documented `AGENCY_*` messaging secret names remain supported; additional provider secret references use `DAYBOOK_PROVIDER_*` names.
+
+`GET /operations/backups` requires an existing agency session and returns only system protection status, independent destination freshness and latest run outcome. It provides no backup download, object identifiers, paths or operator credentials. Settings → Appearance displays this summary in English, Malayalam and Hindi, including unavailable and unconfigured states. A failed newest archive prevents a healthy protection badge even when older verified copies remain recent.
+
+`POST /internal/jobs/tick` accepts only an empty body and a timestamp within five minutes, signed using HMAC-SHA256 over `timestamp + "\nPOST\n/internal/jobs/tick"`. The dedicated signing secret must be 64 hexadecimal characters. The parent admits at most one worker at a time and one tick per fifteen minutes; durable daily claims, attempt limits and capacity reservations remain authoritative across restarts. A scheduler transport and live connection are still pending; this endpoint alone does not establish scheduled execution.

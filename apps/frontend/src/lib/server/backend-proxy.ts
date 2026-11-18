@@ -64,7 +64,7 @@ export async function backendProxy(
         redirect: 'error',
         signal: AbortSignal.any([
           request.signal,
-          AbortSignal.timeout(upstreamTimeout(path, body)),
+          AbortSignal.timeout(upstreamTimeout(path, body, request.method)),
         ]),
       },
     );

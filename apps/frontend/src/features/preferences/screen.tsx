@@ -15,6 +15,7 @@ import type { PreferenceValues } from '@daybook/ui/preferences';
 import { useI18n } from '@daybook/ui/i18n';
 import { usePreferences } from './provider';
 import type { PreferencesStore } from './store';
+import { BackupStatus } from '../backups/status';
 const AppearanceForm = observer(function AppearanceForm({
   store,
 }: {
@@ -118,7 +119,10 @@ export const AppearanceScreen = observer(function AppearanceScreen() {
       ) : store.state === 'error' ? (
         <DataState kind="error" onRetry={() => void store.load()} />
       ) : (
-        <AppearanceForm store={store} />
+        <>
+          <AppearanceForm store={store} />
+          <BackupStatus />
+        </>
       )}
     </section>
   );

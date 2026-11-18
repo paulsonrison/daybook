@@ -29,9 +29,22 @@ test('real pg_dump encrypted archive restores into an empty disposable database 
     connectionString: process.env.TEST_ADMIN_DATABASE_URL,
   });
   await admin.connect();
+  const restoreOwner = `backup_owner_${randomBytes(5).toString('hex')}`,
+    restorePassword = randomBytes(24).toString('hex');
+  await admin.query(
+    `CREATE ROLE ${restoreOwner} LOGIN CREATEROLE CREATEDB BYPASSRLS NOSUPERUSER PASSWORD '${restorePassword}'`,
+  );
+  for (const role of ['daybook_auth', 'daybook_scheduler', 'daybook_app'])
+    await admin.query(`GRANT ${role} TO ${restoreOwner} WITH ADMIN OPTION`);
+  const platformRole = `backup_platform_${randomBytes(5).toString('hex')}`;
+  await admin.query(
+    `CREATE ROLE ${platformRole} NOLOGIN NOSUPERUSER NOBYPASSRLS`,
+  );
   const sourceName = `backup_source_${randomBytes(5).toString('hex')}`;
   const sourceUrl = new URL(process.env.TEST_ADMIN_DATABASE_URL!);
   sourceUrl.pathname = `/${sourceName}`;
+  sourceUrl.username = restoreOwner;
+  sourceUrl.password = restorePassword;
   const sourceRuntime = new URL(process.env.TEST_RUNTIME_DATABASE_URL!);
   sourceRuntime.pathname = `/${sourceName}`;
   const sourceAdmin = new pg.Client({ connectionString: sourceUrl.toString() });
@@ -40,6 +53,8 @@ test('real pg_dump encrypted archive restores into an empty disposable database 
   const targetName = `backup_restore_${randomBytes(5).toString('hex')}`;
   const targetUrl = new URL(process.env.TEST_ADMIN_DATABASE_URL!);
   targetUrl.pathname = `/${targetName}`;
+  targetUrl.username = restoreOwner;
+  targetUrl.password = restorePassword;
   const api = testApi(
     undefined,
     undefined,
@@ -52,9 +67,13 @@ test('real pg_dump encrypted archive restores into an empty disposable database 
   const directory = await mkdtemp(resolve('.cache/backup-restore-'));
   const restoredFile = join(directory, 'verified.dump');
   try {
-    await admin.query(`CREATE DATABASE ${sourceName}`);
-    await admin.query(`CREATE DATABASE ${targetName}`);
+    await admin.query(`CREATE DATABASE ${sourceName} OWNER ${restoreOwner}`);
+    await admin.query(`CREATE DATABASE ${targetName} OWNER ${restoreOwner}`);
     await sourceAdmin.connect();
+    await sourceAdmin.query('CREATE SCHEMA daybook');
+    await sourceAdmin.query(
+      'GRANT USAGE,CREATE ON SCHEMA daybook TO daybook_auth,daybook_scheduler',
+    );
     for (const name of (await readdir('apps/backend/db/migrations'))
       .filter((n) => n.endsWith('.sql'))
       .sort())
@@ -62,6 +81,25 @@ test('real pg_dump encrypted archive restores into an empty disposable database 
         await readFile(`apps/backend/db/migrations/${name}`, 'utf8'),
       );
 
+    await sourceAdmin.query(
+      'REVOKE CREATE ON SCHEMA daybook FROM daybook_auth,daybook_scheduler',
+    );
+    const platformUrl = new URL(process.env.TEST_ADMIN_DATABASE_URL!);
+    platformUrl.pathname = `/${sourceName}`;
+    const platform = new pg.Client({
+      connectionString: platformUrl.toString(),
+    });
+    await platform.connect();
+    try {
+      await platform.query(
+        `ALTER DEFAULT PRIVILEGES FOR ROLE ${platformRole} IN SCHEMA public GRANT SELECT ON TABLES TO ${restoreOwner}`,
+      );
+    } finally {
+      await platform.end();
+    }
+    await sourceAdmin.query(
+      `ALTER DEFAULT PRIVILEGES FOR ROLE ${restoreOwner} IN SCHEMA daybook GRANT SELECT ON TABLES TO daybook_auth`,
+    );
     const cookies = [await api.agency(), await api.agency()];
     for (const cookie of cookies) {
       const route = await api.route(cookie);
@@ -162,6 +200,43 @@ test('real pg_dump encrypted archive restores into an empty disposable database 
     const target = new pg.Client({ connectionString: targetUrl.toString() });
     await target.connect();
     try {
+      assert.equal(
+        (
+          await target.query(
+            "SELECT has_schema_privilege('daybook_auth','daybook','CREATE') AS allowed",
+          )
+        ).rows[0].allowed,
+        false,
+        'Temporary definer-owner schema creation privilege is revoked',
+      );
+      assert.equal(
+        (
+          await target.query(
+            "SELECT has_schema_privilege('daybook_scheduler','daybook','CREATE') AS allowed",
+          )
+        ).rows[0].allowed,
+        false,
+      );
+      assert.equal(
+        (
+          await target.query(
+            'SELECT count(*)::int AS n FROM pg_default_acl WHERE defaclrole=$1::regrole',
+            [restoreOwner],
+          )
+        ).rows[0].n,
+        1,
+        'Application-owned defaults are preserved',
+      );
+      assert.equal(
+        (
+          await target.query(
+            'SELECT count(*)::int AS n FROM pg_default_acl WHERE defaclrole=$1::regrole',
+            [platformRole],
+          )
+        ).rows[0].n,
+        0,
+        'Foreign platform defaults are not modified',
+      );
       const restoredBinary = (
         await target.query(
           'SELECT payload,byte_length FROM daybook.backup_binary_fixture WHERE id=$1',
@@ -228,6 +303,95 @@ test('real pg_dump encrypted archive restores into an empty disposable database 
       assert.ok(
         (await restoredApi.query(cookie, '{me{id agencyId}}')).data?.me,
       );
+    const runner = await import('../../src/modules/backups/runner.js').catch(
+      () => null,
+    );
+    assert.ok(
+      runner?.executeBackup,
+      'A bounded durable backup invocation must exist',
+    );
+    const copies = new Map<string, Buffer>();
+    let uploads = 0;
+    const storage = {
+      async put(
+        object: { objectId: string },
+        stream: AsyncIterable<Uint8Array>,
+      ) {
+        const chunks = [];
+        for await (const chunk of stream) chunks.push(Buffer.from(chunk));
+        copies.set(object.objectId, Buffer.concat(chunks));
+        uploads++;
+      },
+      async *get(object: { objectId: string }) {
+        yield copies.get(object.objectId)!;
+      },
+    };
+    const options = {
+      databaseUrl: targetUrl.toString(),
+      scopeId: randomUUID(),
+      keyId: 'runner-fixture',
+      key: randomBytes(32),
+      pgDumpPath: process.env.TEST_PG_DUMP_PATH,
+      now: new Date('2026-11-20T02:00:00Z'),
+      destinations: [
+        { name: 'neon' as const, store: storage, limit: 33554468 },
+        { name: 'b2' as const, store: storage, limit: 33554468 },
+      ],
+    };
+    assert.equal(
+      (await runner.executeBackup({ ...options, signal: AbortSignal.abort() }))
+        .state,
+      'ABANDONED',
+      'A cancelled invocation never starts a daily backup',
+    );
+    assert.equal(
+      (await runner.executeBackup({ ...options, key: undefined })).state,
+      'NOT_CONFIGURED',
+    );
+    assert.equal((await runner.executeBackup(options)).state, 'VERIFIED');
+    assert.equal(uploads, 2);
+    assert.equal((await runner.executeBackup(options)).state, 'SKIPPED');
+    assert.equal(
+      uploads,
+      2,
+      'Repeating the same daily invocation never overwrites a verified object',
+    );
+    const failed = {
+      ...storage,
+      async put() {
+        throw new Error('Provider unavailable');
+      },
+    };
+    assert.equal(
+      (
+        await runner.executeBackup({
+          ...options,
+          now: new Date('2026-11-21T02:00:00Z'),
+          destinations: [
+            options.destinations[0],
+            { name: 'b2', store: failed, limit: 33554468 },
+          ],
+        })
+      ).state,
+      'PARTIAL',
+    );
+    const before = uploads;
+    assert.equal(
+      (
+        await runner.executeBackup({
+          ...options,
+          now: new Date('2026-11-22T02:00:00Z'),
+          destinations: options.destinations.map((d) => ({ ...d, limit: 100 })),
+        })
+      ).state,
+      'FAILED',
+    );
+    assert.equal(
+      uploads,
+      before,
+      'No upload happens when capacity cannot be reserved',
+    );
+    options.key.fill(0);
     await assert.rejects(
       feature.restoreEmptyDatabaseArchive({
         databaseUrl: targetUrl.toString(),
@@ -246,6 +410,8 @@ test('real pg_dump encrypted archive restores into an empty disposable database 
     await rmdir(directory);
     await admin.query(`DROP DATABASE ${targetName}`);
     await admin.query(`DROP DATABASE ${sourceName}`);
+    await admin.query(`DROP ROLE ${restoreOwner}`);
+    await admin.query(`DROP ROLE ${platformRole}`);
     await admin.end();
   }
 });

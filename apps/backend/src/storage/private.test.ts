@@ -147,3 +147,126 @@ test('early storage acknowledgement cannot hide a later source failure or extra 
     await assert.rejects(store.put(scope, lateSource(), 7));
   }
 });
+test('download deadline also aborts the response body after headers arrive', async () => {
+  const { PrivateObjectStore } = await feature();
+  const client = new S3Client({ region: 'test' }),
+    scope = {
+      agencyId: randomUUID(),
+      objectId: randomUUID(),
+      kind: 'backup' as const,
+    };
+  const body = new Readable({ read() {} });
+  client.send = (async (_command: any, options: any) => {
+    setTimeout(() => options.abortSignal.dispatchEvent(new Event('abort')), 10);
+    return { Body: body, ContentLength: 1 };
+  }) as typeof client.send;
+  const store = new PrivateObjectStore(config, client);
+  try {
+    const result = await Promise.race([
+      (async () => {
+        for await (const _ of store.get(scope, 1)) {
+        }
+        return 'completed';
+      })().catch(() => 'aborted'),
+      new Promise<string>((done) =>
+        setTimeout(() => done('still waiting'), 100),
+      ),
+    ]);
+    assert.equal(
+      result,
+      'aborted',
+      'A timeout after response headers must stop body consumption',
+    );
+  } finally {
+    body.destroy();
+    store.close();
+  }
+});
+test('retention purges exact Backblaze versions and delete markers, then verifies absence', async () => {
+  const { PrivateObjectStore } = await feature();
+  const client = new S3Client({ region: 'test' }),
+    agencyId = randomUUID(),
+    objectId = randomUUID(),
+    key = `agencies/${agencyId}/backups/${objectId}`;
+  const removed: string[] = [];
+  let listing = 0;
+  client.send = (async (command: any) => {
+    if (command.constructor.name === 'ListObjectVersionsCommand') {
+      listing++;
+      return listing === 1
+        ? {
+            Versions: [
+              { Key: key, VersionId: 'v1' },
+              { Key: key + '-foreign', VersionId: 'foreign' },
+            ],
+            DeleteMarkers: [{ Key: key, VersionId: 'marker' }],
+            IsTruncated: false,
+          }
+        : { Versions: [], DeleteMarkers: [], IsTruncated: false };
+    }
+    if (command.constructor.name === 'DeleteObjectCommand') {
+      assert.equal(command.input.Key, key);
+      removed.push(command.input.VersionId);
+      return {};
+    }
+    if (command.constructor.name === 'HeadObjectCommand')
+      throw Object.assign(new Error('missing'), {
+        $metadata: { httpStatusCode: 404 },
+      });
+    throw new Error('Unexpected operation');
+  }) as typeof client.send;
+  const store = new PrivateObjectStore(
+    { ...config, endpoint: 'https://s3.us-east-005.backblazeb2.com' },
+    client,
+  );
+  await store.purge({ agencyId, objectId, kind: 'backup' });
+  assert.deepEqual(removed, ['v1', 'marker']);
+  assert.equal(listing, 2);
+});
+test('retention never reports deletion after access denial, malformed pagination or a surviving version', async () => {
+  const { PrivateObjectStore } = await feature();
+  const scope = {
+    agencyId: randomUUID(),
+    objectId: randomUUID(),
+    kind: 'backup' as const,
+  };
+  const client = new S3Client({ region: 'test' });
+  for (const response of [
+    { IsTruncated: true },
+    {
+      Versions: [
+        {
+          Key: `agencies/${scope.agencyId}/backups/${scope.objectId}`,
+          VersionId: 'v1',
+        },
+      ],
+      IsTruncated: false,
+    },
+  ]) {
+    client.send = (async (command: any) => {
+      if (command.constructor.name === 'ListObjectVersionsCommand')
+        return response;
+      if (command.constructor.name === 'DeleteObjectCommand') return {};
+      throw Object.assign(new Error('denied'), {
+        $metadata: { httpStatusCode: 403 },
+      });
+    }) as typeof client.send;
+    await assert.rejects(
+      new PrivateObjectStore(
+        { ...config, endpoint: 'https://s3.us-east-005.backblazeb2.com' },
+        client,
+      ).purge(scope),
+    );
+  }
+  client.send = (async () => {
+    throw Object.assign(new Error('denied'), {
+      $metadata: { httpStatusCode: 403 },
+    });
+  }) as typeof client.send;
+  await assert.rejects(
+    new PrivateObjectStore(
+      { ...config, endpoint: 'https://br-test.storage.c-2.aws.neon.tech' },
+      client,
+    ).purge(scope),
+  );
+});

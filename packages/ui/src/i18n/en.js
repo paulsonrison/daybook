@@ -1,4 +1,18 @@
 export default {
+  'Backup protection': 'Backup protection',
+  'Backup status could not be checked.': 'Backup status could not be checked.',
+  'Automatic backups are not configured.':
+    'Automatic backups are not configured.',
+  'Two recent verified copies': 'Two recent verified copies',
+  'Protection needs attention': 'Protection needs attention',
+  'Latest backup attempt failed.': 'Latest backup attempt failed.',
+  'Recent verified copy': 'Recent verified copy',
+  'No recent verified copy': 'No recent verified copy',
+  'No verified copy': 'No verified copy',
+  'Last verified: {time}': 'Last verified: {time}',
+  'Encrypted recovery copies are managed by the operator. This screen does not provide access to other agencies or backup files.':
+    'Encrypted recovery copies are managed by the operator. This screen does not provide access to other agencies or backup files.',
+  'Refresh backup status': 'Refresh backup status',
   Save: 'Save',
   Cancel: 'Cancel',
   Retry: 'Retry',
