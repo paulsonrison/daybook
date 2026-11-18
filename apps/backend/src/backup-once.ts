@@ -3,8 +3,9 @@ import { PrivateObjectStore } from './storage/private.js';
 import { executeBackup } from './modules/backups/runner.js';
 import pg from 'pg';
 import { readBackupStatus } from './modules/backups/status.js';
+import { backupClientMajor } from './modules/backups/client.js';
 const stores: PrivateObjectStore[] = [];
-function report(result: { state: string; runId?: string }) {
+function report(result: { state: string; [key: string]: unknown }) {
   if (process.send && process.connected)
     process.send({ type: 'daybook.backup.result', result }, () =>
       process.disconnect(),
@@ -43,13 +44,18 @@ try {
       });
       pool.on('error', () => {});
       try {
-        report(
-          await readBackupStatus(
-            pool,
-            configuration.scopeId,
-            configuration.destinations.map((d) => d.name),
-          ),
+        const status = await readBackupStatus(
+          pool,
+          configuration.scopeId,
+          configuration.destinations.map((d) => d.name),
         );
+        const major = await backupClientMajor(configuration.pgDumpPath);
+        const clientReady = major !== null && major >= 17;
+        report({
+          ...status,
+          clientReady,
+          protected: status.protected && clientReady,
+        });
       } finally {
         await pool.end();
       }

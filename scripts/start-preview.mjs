@@ -2,6 +2,7 @@ import { spawn } from 'node:child_process';
 import { resolve } from 'node:path';
 import { backendEnvironment } from './runtime-environment.mjs';
 import { attachBackupBroker } from './backup-broker.mjs';
+import { backupClientMajor } from '../apps/backend/dist/modules/backups/client.js';
 import {
   transferDatabase,
   requireDirectMigrationUrl,
@@ -18,6 +19,11 @@ const origin = process.env.FRONTEND_ORIGIN || process.env.RENDER_EXTERNAL_URL;
 if (!origin || new URL(origin).origin !== origin)
   throw new Error('Set the public preview origin.');
 const children = [];
+console.log(
+  'Backup PostgreSQL client major:',
+  (await backupClientMajor(process.env.DAYBOOK_BACKUP_PG_DUMP_PATH)) ??
+    'unavailable',
+);
 let stopping = false;
 function stop(code = 0) {
   if (stopping) return;
