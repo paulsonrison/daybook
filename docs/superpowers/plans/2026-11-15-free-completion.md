@@ -46,7 +46,7 @@ Files: authenticated internal job endpoint, Cloudflare scheduler package/config,
 
 - [x] Test secret/origin/replay limits, leases, clock boundaries and unavailable service recovery.
 - [x] Deploy the fixed-origin, signed tick and bounded backup plus one-durable-job-per-agency slice; exclude provider credentials and outbound submissions.
-- [ ] Verify an actual automatic Cron execution; Cloudflare settings show the active hourly trigger, but its history still has no event after the 16:07 UTC tick. Safe communications/document-cycle execution and retention deletion also remain open.
+- [ ] Verify successful automatic Cron execution. The 16:07 UTC invocation failed because Workers rejected `redirect: 'error'`; version `2d9feca1` with `redirect: 'manual'` deployed, and the 00:07 UTC invocation reached the application but returned non-200. The branch now adds a numeric status diagnostic; deploy it and resolve the actual response before marking this verified. Safe communications/document-cycle execution and retention deletion also remain open.
 
 ### Task 4: Document intake and assistant completion
 

@@ -30,7 +30,7 @@ test('scheduled tick signs only the approved empty request and does not retry pr
   await runScheduledTick(env, transport, timestamp);
   await assert.rejects(
     runScheduledTick(env, transport, timestamp),
-    /unavailable/i,
+    /unavailable \(HTTP 503\)/i,
   );
   assert.equal(calls, 2);
   for (const invalid of [

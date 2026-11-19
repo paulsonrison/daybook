@@ -37,7 +37,7 @@ export async function runScheduledTick(
   await response.body?.cancel();
   if (response.status !== 200)
     throw new Error(
-      'Scheduled jobs are unavailable; durable state remains for the next scheduled invocation.',
+      `Scheduled jobs are unavailable (HTTP ${response.status}); durable state remains for the next scheduled invocation.`,
     );
 }
 export default {
